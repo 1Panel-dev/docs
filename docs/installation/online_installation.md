@@ -1,0 +1,25 @@
+## 1 环境要求
+
+!!! Abstract ""
+    **安装前请确保您的系统符合安装条件：**
+
+    * 操作系统: 支持主流 Linux 发行版本（基于 Debian / RedHat，包括国产操作系统）。
+    * 内存要求：建议可用内存在 512MB 以上。
+    * 浏览器要求：请使用 Chrome、FireFox、IE10+、Edge等现代浏览器。
+    * **可访问互联网**
+
+## 2 安装部署
+
+!!! Abstract ""
+    GitHub release 链接: https://github.com/1Panel-dev/1Panel/releases  
+
+    **在服务器上执行一键安装命令：**
+    ```properties
+    curl -sSL https://github.com/1Panel-dev/1Panel/releases/latest/download/quick_start.sh -o quick_start.sh && sh quick_start.sh
+    ```
+
+!!! Abstract ""
+    **安装成功后，通过浏览器访问如下页面登录 1Panel：**
+    ```
+    地址: http://目标服务器IP地址:9999
+    ```

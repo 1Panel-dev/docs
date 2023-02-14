@@ -1,0 +1,129 @@
+site_name: '1Panel 文档'
+site_url: 'https://1panel.cn'
+site_description: '1Panel 一款现代化的 Linux 面板'
+site_author: '1Panel 项目组'
+
+repo_name: '1Panel'
+repo_url: 'https://github.com/1Panel-dev/1Panel'
+
+edit_uri: https://github.com/1Panel-dev/docs/edit/master/docs/
+theme:
+    name: 'material'
+    logo: 'img/logo-white.png'
+    favicon: 'img/facio.ico'
+    language: 'zh'
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - django
+    palette:
+        - scheme: default
+          accent: blue
+          toggle:
+              icon: material/weather-sunny
+              name: Switch to dark mode
+        - scheme: slate
+          accent: blue
+          toggle:
+              icon: material/weather-night
+              name: Switch to light mode
+    features:
+        - navigation.instant
+        - navigation.tracking
+        - navigation.indexes
+        - navigation.top
+        - search.suggest
+        - search.highlight
+        - search.share
+        - header.autohide
+        - content.tabs.link
+    custom_dir: "theme"
+nav:
+    - 产品介绍: index.md
+    - 版本迭代: changelog.md
+    - 安装部署:
+        - 在线安装: installation/online_installation.md
+        - 命令行工具: installation/cli.md
+    - 功能手册:
+        - 首页: user_manual/homepage.md
+        - 应用商店: user_manual/app.md
+        - 网站:
+            - 网站: user_manual/websites/websites.md
+            - 证书: user_manual/websites/certificate.md
+        - 数据库: user_manual/homepage.md
+        - 容器: user_manual/homepage.md
+        - 计划任务: user_manual/homepage.md
+        - 主机:
+          - 文件: user_manual/hosts/file.md
+          - 监控: user_manual/hosts/monitor.md
+          - 终端: user_manual/hosts/terminal.md
+        - 面板日志: user_manual/homepage.md
+        - 面板设置: user_manual/homepage.md
+    - 常见问题:
+        - 安装部署问题: faq/installation_starts.md
+        - 功能相关:
+            - 数据集: faq/dataset_faq.md
+            - 仪表板: faq/panel_faq.md
+    - 开发文档:
+        - 开发环境搭建: dev_manual/dev_manual.md
+        - 开发问题: faq/dev_faq.md
+    - 联系我们: contact.md
+
+markdown_extensions:
+    - admonition
+    - codehilite:
+          guess_lang: True
+          linenums: False
+    - toc:
+          permalink: True
+    - footnotes
+    - attr_list
+    - def_list
+    - tables
+    - abbr
+    - md_in_html
+    - pymdownx.extra
+    - pymdownx.arithmatex
+    - pymdownx.betterem:
+          smart_enable: all
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.emoji:
+          emoji_generator: !!python/name:pymdownx.emoji.to_png
+    - pymdownx.inlinehilite
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tasklist
+    - pymdownx.tilde
+    - pymdownx.betterem
+    - pymdownx.progressbar
+    - lightgallery
+    - pymdownx.tabbed
+
+extra_css:
+    - css/extra.css
+
+copyright: Copyright &copy; 2014-2023 <a href="https://www.fit2cloud.com">杭州飞致云信息科技有限公司</a>, All Rights Reserved. <a href="http://www.beian.miit.gov.cn" target="_blank">京ICP备15023818号</a>
+
+plugins:
+    - search:
+          lang:
+              - en
+              - ja
+          separator: '[\s\-\.]+'
+extra:
+    version:
+        method: mike
+    analytics:
+        provider: google
+        property: UA-147297392-6
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/1Panel-dev
+        - icon: fontawesome/solid/envelope
+          link: mailto:support@fit2cloud.com
+        - icon: fontawesome/solid/phone
+          link: tel://400-052-0755
