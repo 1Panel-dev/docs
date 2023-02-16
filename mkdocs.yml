@@ -48,8 +48,21 @@ nav:
         - 首页: user_manual/cronjobs.md
         - 应用商店: user_manual/cronjobs.md
         - 网站:
-            - 网站: user_manual/websites/websites.md
-            - 证书: user_manual/websites/certificate.md
+            - 网站:
+                - 网站概述: user_manual/websites/websites.md
+                - 创建网站: user_manual/websites/website_create.md
+                - 基本设置: user_manual/websites/website_config_basic.md
+                - 安全设置: user_manual/websites/website_config_waf.md
+                - 其他设置: user_manual/websites/website_config_other.md
+                - 网站分组: user_manual/websites/website_group.md
+                - 网站备份: user_manual/websites/website_backup.md
+                - OpenResty 设置: user_manual/websites/openresty.md
+            - 证书:
+                - 证书概述: user_manual/websites/certificate.md
+                - 申请证书: user_manual/websites/certificate_create.md
+                - 续签证书: user_manual/websites/certificate_renew.md
+                - Acme 账户: user_manual/websites/certificate_acme.md
+                - DNS 账户: user_manual/websites/certificate_dns.md
         - 数据库:
             - MySQL: user_manual/databases/mysql.md
             - Redis: user_manual/databases/redis.md
