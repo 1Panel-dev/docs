@@ -18,18 +18,12 @@
 
 !!! Abstract "新增功能 :star2:"
 
-    - feat(数据源): 数据源敏感信息加密处理
-    - feat(数据源): 数据源分类改进 #3983
-    - feat(数据源): 数据源支持复制
+    - feat(数据源): 新增功能
 
 !!! Abstract "功能优化 :sunflower:"
 
-    - refactor(仪表板): 优化返回上级等按钮的显示
-    - refactor(仪表板): 增加仪表板取消发布时提示信息
-    - refactor(仪表板): 网页组件、媒体链接设置等提示文案优化
+    - refactor(仪表板): 功能优化
 
 !!! Abstract "问题修复 :palm_tree:"
 
-    - fix(仪表板): 修复 vuex 中 mobileLayoutStatus 状态问题 #4051
-    - fix(仪表板): 修复下拉过滤组件在仪表板自适应缩放时单选和多选高度不一致问题 #4019
-    - fix(仪表板): 修复全屏预览时 Tab 组件内的下拉组件无法展开问题
+    - fix(仪表板): 问题修复
