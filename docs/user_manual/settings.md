@@ -29,7 +29,17 @@
 
 !!! Abstract ""
 
-    创建和同步快照只支持选择第三方账号
+    快照用于全量备份 1Panel 所产生的数据，具体包括：
+    
+    - Docker 配置文件，路径为 /etc/docker/daemon.json；
+    - Docker 数据，可在【容器 - 配置】中查看；
+    - 本地备份数据，可在【面板设置 - 备份账号】中查看；
+    - 1Panel 产生的数据，将压缩整个 [安装目录]/1panel 目录，包括数据库文件；
+    - 1panel 二进制文件，路径为 /usr/local/bin/1panel；
+    - 1pctl 命令行工具，路径为 /usr/local/bin/1pctl；
+    - 1panel.service 路径为 /etc/systemd/system/1panel.service；
+
+    创建和同步快照只支持选择第三方账号。
 
 ## 关于
 
