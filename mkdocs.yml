@@ -46,7 +46,10 @@ nav:
         - 命令行工具: installation/cli.md
     - 功能手册:
         - 首页: user_manual/cronjobs.md
-        - 应用商店: user_manual/cronjobs.md
+        - 应用商店:
+              - 应用商店概述: user_manual/appstore/appstore.md
+              - 安装应用: user_manual/appstore/install.md
+              - 应用操作: user_manual/appstore/installed.md
         - 网站:
             - 网站:
                 - 网站概述: user_manual/websites/websites.md
