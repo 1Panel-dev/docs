@@ -3,7 +3,7 @@
 !!! Abstract ""
 
     - 支持从已添加的镜像仓库中拉取，等价于 docker pull 操作。
-    - 拉取镜像将耗费一段时间，如果关闭抽屉后还想查看拉取日志，则可以去主机-文件中，下载或查看 [安装目录]/1panel/tmp/docker_logs/image_pull_[时间戳].log。
+    - 拉取镜像将耗费一段时间，如果关闭抽屉后还想查看拉取日志，则可以去【主机 - 文件】中，下载或查看 [安装目录]/1panel/tmp/docker_logs/image_pull_[时间戳].log。
 
 ## 导入镜像
 
@@ -16,7 +16,7 @@
 !!! Abstract ""
 
     - 直接构建镜像，等价于 docker build 操作。
-    - 构建镜像将耗费一段时间，如果关闭抽屉后还想查看构建日志，则可以去主机-文件中，下载或查看 [安装目录]/1panel/tmp/docker_logs/image_build_[时间戳].log。
+    - 构建镜像将耗费一段时间，如果关闭抽屉后还想查看构建日志，则可以去【主机 - 文件】中，下载或查看 [安装目录]/1panel/tmp/docker_logs/image_build_[时间戳].log。
     
 ![img.png](../../img/containers/image_build.png)
 
@@ -35,7 +35,7 @@
 
 !!! Abstract ""
     
-    - 将镜像推送到镜像仓库，推送过程中，后台将自动修改对应的镜像 Tag，等价于 docker tag + docker tag 操作。
+    - 将镜像推送到镜像仓库，推送过程中，后台将自动修改对应的镜像 Tag，等价于 docker tag + docker push 操作。
 
 ## 导出镜像
 

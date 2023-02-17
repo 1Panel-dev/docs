@@ -6,22 +6,15 @@
     - **根据需要配置容器设置**。 
     - 镜像需要从镜像镜像菜单手动拉取。
 
-![img.png](../../img/containers/create_container.png)
+![img.png](../../img/containers/container_create.png)
 
-
-| Field/Option | Overview |
-| --------------------- | --------------------- |
-| Name                  | Give the container a descriptive name.|
-| Registry              | Select the registry that contains the image that you want to use for your container.|
-| Image                 | Enter the name of the image you want to use.|
-| Always pull the image | Toggle on to enforce pulling the image from the registry instead of using the locally cached copy (if you have used the image previously). |
 
 ## 检查容器
 
 !!! Abstract ""
     点击目标容器名称，有关容器的所有信息都将显示在右侧抽屉中。
 
-![img.png](../../img/containers/inspect_container.png)
+![img.png](../../img/containers/container_inspect.png)
 
 ## 查看容器日志
 
