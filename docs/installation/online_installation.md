@@ -15,11 +15,11 @@
 
     **在服务器上执行一键安装命令：**
     ```properties
-    curl -sSL https://github.com/1Panel-dev/1Panel/releases/latest/download/quick_start.sh -o quick_start.sh && sh quick_start.sh
+    INSTALL_MODE=stable bash -c "$(curl -sSL http://1panel.oss-cn-hangzhou.aliyuncs.com/package/quick_start.sh)"
     ```
 
 !!! Abstract ""
     **安装成功后，通过浏览器访问如下页面登录 1Panel：**
     ```
-    地址: http://目标服务器IP地址:9999
+    地址: http://目标服务器 IP 地址:9999
     ```
