@@ -15,7 +15,7 @@
 
     **在服务器上执行一键安装命令：**
     ```properties
-    INSTALL_MODE=stable bash -c "$(curl -sSL http://1panel.oss-cn-hangzhou.aliyuncs.com/package/quick_start.sh)"
+    INSTALL_MODE=stable bash -c "$(curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh)"
     ```
 
 !!! Abstract ""
