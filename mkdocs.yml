@@ -40,7 +40,6 @@ theme:
     custom_dir: "theme"
 nav:
     - 产品介绍: index.md
-    - 版本迭代: changelog.md
     - 安装部署:
         - 在线安装: installation/online_installation.md
         - 命令行工具: installation/cli.md
@@ -87,12 +86,9 @@ nav:
         - 面板设置: user_manual/settings.md
     - 常见问题:
         - 安装部署问题: faq/installation_starts.md
-        - 功能相关:
-            - 数据集: faq/dataset_faq.md
-            - 仪表板: faq/panel_faq.md
     - 开发文档:
         - 开发环境搭建: dev_manual/dev_manual.md
-        - 开发问题: faq/dev_faq.md
+    - 版本迭代: changelog.md
     - 联系我们: contact.md
 
 markdown_extensions:

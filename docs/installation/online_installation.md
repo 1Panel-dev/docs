@@ -15,11 +15,12 @@
 
     **在服务器上执行一键安装命令：**
     ```properties
-    INSTALL_MODE=stable bash -c "$(curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh)"
+    curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && sudo bash quick_start.sh
     ```
 
 !!! Abstract ""
     **安装成功后，通过浏览器访问如下页面登录 1Panel：**
     ```
-    地址: http://目标服务器 IP 地址:9999
+    http://目标服务器 IP 地址:9999
     ```
+    **如果使用的是云服务器，请至安全组开放 9999 端口**
