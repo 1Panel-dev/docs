@@ -42,9 +42,9 @@ nav:
     - 产品介绍: index.md
     - 安装部署:
         - 在线安装: installation/online_installation.md
+        - 在线升级: installation/online_upgrade.md
         - 命令行工具: installation/cli.md
     - 功能手册:
-        - 首页: user_manual/cronjobs.md
         - 应用商店:
               - 应用商店概述: user_manual/appstore/appstore.md
               - 安装应用: user_manual/appstore/install.md
