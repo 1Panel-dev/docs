@@ -18,9 +18,9 @@
 
 ## 3 教学视频
 
-### 1、应用管理
+### 1、安装部署及应用管理
 
-[![应用管理](./img/video/应用管理.jpg){ width="280"}](https://www.bilibili.com/video/BV1rY411z78k/)
+[![安装部署及应用管理](./img/video/应用管理.jpg){ width="280"}](https://www.bilibili.com/video/BV1rY411z78k/)
 ### 2、网站管理
 
 [![网站管理](./img/video/网站管理.jpg){ width="280" }](https://www.bilibili.com/video/BV1AP411Z7oK/)
