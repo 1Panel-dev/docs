@@ -85,7 +85,8 @@ nav:
         - 面板日志: user_manual/logs.md
         - 面板设置: user_manual/settings.md
     - 常见问题:
-        - 安装部署问题: faq/installation_starts.md
+        - 产品 FAQ: faq/faq.md
+        - 安装部署问题: faq/installation.md
     - 开发文档:
         - 开发环境搭建: dev_manual/dev_manual.md
     - 版本迭代: changelog.md
