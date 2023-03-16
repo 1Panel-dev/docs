@@ -2,11 +2,9 @@
 !!! Abstract ""
     1Panel 是一个现代化、开源的 Linux 服务器运维管理面板。
 
-## 1 界面展示
-
 ![界面展示](./img/index/overview.png){ width="1235px" }
 
-## 2 产品优势
+## 1 产品优势
 
 !!! Abstract ""
 
@@ -15,7 +13,7 @@
 	- **安全可靠**：最小漏洞暴露面，提供防火墙和安全审计等功能；
 	- **一键备份**：支持一键备份和恢复，备份数据云端存储，永不丢失。
 
-## 3 教学视频
+## 2 教学视频
 
 [![安装部署及应用管理](./img/video/安装部署及应用管理.jpg){ width="280"}](https://www.bilibili.com/video/BV1rY411z78k/)
 [![网站管理](./img/video/网站管理.jpg){ width="280" }](https://www.bilibili.com/video/BV1AP411Z7oK/)
