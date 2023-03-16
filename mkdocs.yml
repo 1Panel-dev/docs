@@ -142,7 +142,7 @@ extra:
         method: mike
     analytics:
         provider: google
-        property: UA-147297392-6
+        property: G-P2ER2N0NSN
     social:
         - icon: fontawesome/brands/github
           link: https://github.com/1Panel-dev
