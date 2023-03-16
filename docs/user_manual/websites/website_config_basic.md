@@ -7,7 +7,7 @@
 
 !!! Abstract ""
 
-    管理网站域名和端口
+    管理网站域名和端口。
 
 ![img.png](../../img/websites/config_basic_domain.png)
 
@@ -15,7 +15,7 @@
 
 !!! Abstract ""
 
-    查看网站目录
+    查看网站目录。
 
 ![img.png](../../img/websites/config_basic_folder.png)
 
@@ -23,7 +23,7 @@
 
 !!! Abstract ""
 
-    修改站点创建默认生成的提示页面
+    修改站点创建默认生成的提示页面。
 
 ![img_1.png](../../img/websites/basic_config_default.png)
 
@@ -31,7 +31,7 @@
 
 !!! Abstract ""
 
-    管理网站流量限制
+    管理网站流量限制。
 
 ![img.png](../../img/websites/basic_config_limit.png)
 
