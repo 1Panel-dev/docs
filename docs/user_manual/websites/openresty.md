@@ -1,9 +1,9 @@
-## OpenResty 管理
+## 1 OpenResty 管理
 !!! Abstract ""
 
     网站列表上方的工具栏 可以查看并配置 OpenResty 
 
-### 停止/启动/重启 OpenResty
+### 1.1 停止/启动/重启 OpenResty
 
 !!! Abstract ""
 
@@ -11,7 +11,7 @@
 
 ![img.png](../../img/websites/auto_create.png)
 
-### OpenResty 配置修改
+### 1.2 OpenResty 配置修改
 
 !!! Abstract ""
 
@@ -20,7 +20,7 @@
 
 ![img.png](../../img/websites/static_create.png)
 
-### 当前状态
+### 1.3 当前状态
 
 !!! Abstract ""
 
@@ -29,12 +29,12 @@
 ![img.png](../../img/websites/proxy_create.png)
 
 
-### 性能调整
+### 1.4 性能调整
 
     调整 OpenResty 的相关配置参数
 
 ![img.png](../../img/websites/proxy_create.png)
 
-### 日志
+### 1.5 日志
 
     查看 OpenResty 的日志

@@ -1,9 +1,9 @@
-## 其他设置
+## 1 其他设置
 !!! Abstract ""
 
     其他设置
 
-### 日志
+### 1.1 日志
 
 !!! Abstract ""
 
@@ -15,7 +15,7 @@
 
 ![img.png](../../img/websites/log.png)
 
-### 配置文件
+### 1.2 配置文件
 
 !!! Abstract ""
 
@@ -24,7 +24,7 @@
 
 ![img.png](../../img/websites/web_openresty.png)
 
-### 默认站点
+### 1.3 默认站点
 
 !!! Abstract ""
 
@@ -32,7 +32,7 @@
 
 ![img.png](../../img/websites/website_default.png)
 
-### 开启/停止网站
+### 1.4 开启/停止网站
 
 !!! Abstract ""
 
@@ -41,7 +41,7 @@
 ![img.png](../../img/websites/website_start.png)
 
 
-### 设置过期时间
+### 1.5 设置过期时间
 
 !!! Abstract ""
 
@@ -50,7 +50,7 @@
 ![img.png](../../img/websites/web_expire.png)
 
 
-### 删除网站
+### 1.6 删除网站
 
 !!! Abstract ""
 

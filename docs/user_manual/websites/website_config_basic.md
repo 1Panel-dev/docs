@@ -1,9 +1,9 @@
-## 网站基本配置
+
 !!! Abstract ""
 
-    基本配置包括域名设置、目录、文档、流量限制、HTTPS、其他等
+    基本配置包括域名设置、目录、文档、流量限制、HTTPS、其他等。
 
-### 域名设置
+## 1 域名设置
 
 !!! Abstract ""
 
@@ -11,7 +11,7 @@
 
 ![img.png](../../img/websites/config_basic_domain.png)
 
-### 网站目录
+## 2 网站目录
 
 !!! Abstract ""
 
@@ -19,7 +19,7 @@
 
 ![img.png](../../img/websites/config_basic_folder.png)
 
-### 默认文档
+## 3 默认文档
 
 !!! Abstract ""
 
@@ -27,7 +27,7 @@
 
 ![img_1.png](../../img/websites/basic_config_default.png)
 
-### 流量限制
+## 4 流量限制
 
 !!! Abstract ""
 
@@ -36,7 +36,7 @@
 ![img.png](../../img/websites/basic_config_limit.png)
 
 
-### HTTPS
+## 5 HTTPS
 
 !!! Abstract ""
 

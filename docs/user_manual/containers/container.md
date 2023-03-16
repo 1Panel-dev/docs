@@ -1,4 +1,4 @@
-## 添加容器
+## 1 添加容器
 
 !!! Abstract ""
 
@@ -9,14 +9,14 @@
 ![img.png](../../img/containers/container_create.png)
 
 
-## 检查容器
+## 2 检查容器
 
 !!! Abstract ""
     点击目标容器名称，有关容器的所有信息都将显示在右侧抽屉中。
 
 ![img.png](../../img/containers/container_inspect.png)
 
-## 查看容器日志
+## 3 查看容器日志
 
 !!! Abstract ""
 
@@ -26,7 +26,7 @@
 
 ![img.png](../../img/containers/container_log.png)
 
-## 访问容器的控制台
+## 4 访问容器的控制台
 
 !!! Abstract ""
 
@@ -36,7 +36,7 @@
 
 ![img.png](../../img/containers/container_terminal.png)
 
-## 查看容器统计信息
+## 5 查看容器统计信息
 
 !!! Abstract ""
     支持查看的信息包括：

@@ -1,9 +1,9 @@
-## 证书申请
+## 1 证书申请
 !!! Abstract ""
 
     申请证书
 
-### 前置条件
+### 1.1 前置条件
 
 !!! Abstract ""
 
@@ -12,7 +12,7 @@
 
 ![img.png](../../img/websites/auto_create.png)
 
-### DNS 账号模式申请证书
+### 1.2 DNS 账号模式申请证书
 
 !!! Abstract ""
 
@@ -23,7 +23,7 @@
 
 ![img.png](../../img/websites/static_create.png)
 
-### 手动解析模式申请证书
+### 1.3 手动解析模式申请证书
 
 !!! Abstract ""
 
@@ -36,7 +36,7 @@
 ![img.png](../../img/websites/proxy_create.png)
 
 
-### HTTP 模式申请证书
+### 1.4 HTTP 模式申请证书
 
 !!! Abstract ""
 

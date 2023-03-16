@@ -1,9 +1,9 @@
-## 网站安全设置
+## 1 网站安全设置
 !!! Abstract ""
 
     配置网站的 WAF 
 
-### CC 防护
+### 1.1 CC 防护
 
 !!! Abstract ""
 
@@ -17,7 +17,7 @@
 
 ![img.png](../../img/websites/waf_cc.png)
 
-### IP 白名单
+### 1.2 IP 白名单
 
 !!! Abstract ""
 
@@ -25,7 +25,7 @@
 
 ![img.png](../../img/websites/ip_white.png)
 
-### IP 黑名单
+### 1.3 IP 黑名单
 
 !!! Abstract ""
 
@@ -33,7 +33,7 @@
 
 ![img.png](../../img/websites/ip_black.png)
 
-### URL 白名单
+### 1.4 URL 白名单
 
 !!! Abstract ""
 
@@ -41,7 +41,7 @@
 
 ![img.png](../../img/websites/url_white.png)
 
-### URL 黑名单
+### 1.5 URL 黑名单
 
 !!! Abstract ""
 
@@ -49,26 +49,26 @@
 
 ![img.png](../../img/websites/url_black.png)
 
-### Cookie 黑名单
+### 1.6 Cookie 黑名单
 
     设置禁止 Cookie 中携带的数据黑名单
 
 ![img.png](../../img/websites/cookie_black.png)
 
-### Get 参数校验
+### 1.7 Get 参数校验
     
     设置禁止 Get 请求中携带的参数
 
 ![img.png](../../img/websites/get_check.png)
 
-### POST 参数校验
+### 1.8 POST 参数校验
 
     设置禁止 POST 请求中携带的参数
 
 ![img.png](../../img/websites/post_check.png)
 
 
-### 文件扩展名黑名单
+### 1.9 文件扩展名黑名单
     
     这是禁止上传的文件类型
 

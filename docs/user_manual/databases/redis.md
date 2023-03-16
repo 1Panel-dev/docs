@@ -1,14 +1,14 @@
-## 修改密码
+## 1 修改密码
 
 !!! Abstract ""
     默认为随机密码，root 为最高权限账号密码，请谨慎操作。
 
-## Redis Commander
+## 2 Redis Commander
 
 !!! Abstract ""
     WEB 图形化界面管理 redis 数据库的管理工具，此处不会详细讲解工具使用方法，[点击查看工具教程](http://joeferner.github.io/redis-commander/)
 
-## 数据库配置
+## 3 数据库配置
 
 !!! Abstract ""
     点击状态栏设置按钮，即可进入 Redis 具体设置界面，具体包括配置修改、当前状态、性能调整、端口、持久化。
@@ -21,26 +21,26 @@
     - **注意事项：** 错误的数据库配置将导致 Redis 服务不可用，请谨慎修改。
     - 如数据库配置不正确导致服务无法正常启动，可尝试恢复默认配置后保存。
 
-## 当前状态
+## 4 当前状态
 
 !!! Abstract ""
     当 Redis 查询缓慢时，可在设置界面，点击当前状态按钮，查看当前数据库包括内存分配、查询命中率等各个常用指标的状态，通过这些状态对 Redis 进行性能优化。
 
 ![img.png](../../img/databases/redis_status.png)
 
-## 性能调整
+## 5 性能调整
 
 !!! Abstract ""
     系统支持表单方式直接调整 Redis 相关参数，具体包括：超时时间、最大连接数、最大内存数。
 
 ![img.png](../../img/databases/redis_variables.png)
 
-## 端口
+## 6 端口
 
 !!! Abstract ""
     除了在用户安装 Redis 应用时可自由选择端口外，设置界面也可以直接进行端口的修改操作。
 
-## 持久化
+## 7 持久化
 
 !!! Abstract ""
     Redis 持久化分为两种：AOF 及 RDB，其中：

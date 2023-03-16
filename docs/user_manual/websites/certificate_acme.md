@@ -1,9 +1,9 @@
-## DNS 账户管理
+## 1 DNS 账户管理
 !!! Abstract ""
 
     支持 DNSPod 、 阿里云 DNS 、 CloudFlare 的账户
 
-### 创建 DNSPod 类型的账户
+### 1.1 创建 DNSPod 类型的账户
 
 !!! Abstract ""
 
@@ -13,7 +13,7 @@
 
 ![img.png](../../img/websites/auto_create.png)
 
-### 创建阿里云 DNS 类型的账户
+### 1.2 创建阿里云 DNS 类型的账户
 
 !!! Abstract ""
 
@@ -23,7 +23,7 @@
 
 ![img.png](../../img/websites/static_create.png)
 
-### 创建阿里云 CloudFlare 类型的账户
+### 1.3 创建阿里云 CloudFlare 类型的账户
 
 !!! Abstract ""
 

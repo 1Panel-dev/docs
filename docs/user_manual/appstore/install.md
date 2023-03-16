@@ -1,5 +1,3 @@
-## 安装应用
-
 !!! Abstract ""
 
     在应用商店列表中选择应用进行安装
@@ -7,15 +5,12 @@
 ![img.png](../../img/app/appstore.png){ width="900px" }
 
 
-### 安装步骤 (以 Halo 为例)
+### 1 安装步骤 (以 Halo 为例)
 
 !!! Abstract ""
 
-    1.点击安装进入应用详情
-
-!!! Abstract ""
-
-    2.选择版本 点击安装
+    1. 点击安装进入应用详情；  
+    2. 选择一个版本，点击安装。
     
 ![img.png](../../img/app/app_detail.png)
 

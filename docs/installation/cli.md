@@ -1,5 +1,5 @@
 
-## 1pctl
+## 1 1pctl
 
 !!! Abstract ""
     1Panel 默认内置了命令行运维工具 - 1pctl，通过执行 1pctl help 命令，可以查看相关的帮助文档。

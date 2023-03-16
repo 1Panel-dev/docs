@@ -1,12 +1,10 @@
-## 应用操作
-
 !!! Abstract ""
 
     在已安装列表，可以对应用进行同步、升级、重启、启动、停止、删除、备份、恢复等操作
 
 ![img.png](../../img/app/installed_list.png){ width="900px" }
 
-### 同步应用
+## 1 同步应用
 
 !!! Abstract ""
 
@@ -14,12 +12,12 @@
 
 ![img.png](../../img/app/app_sync.png)
 
-### 启动/停止/重启应用
+## 2 启动/停止/重启应用
 
 ![img.png](../../img/app/app_restart.png)
 
 
-### 应用详情
+## 3 应用详情
 
 !!! Abstract ""
 
@@ -28,7 +26,7 @@
 ![img.png](../../img/app/install_detail.png)
 
 
-### 删除应用
+## 4 删除应用
 
 !!! Abstract ""
 
@@ -40,7 +38,7 @@
 ![img.png](../../img/app/app_delete.png)
 
 
-### 备份/恢复应用
+## 5 备份/恢复应用
 
 !!! Abstract ""
         
@@ -59,7 +57,7 @@
 
 ![img.png](../../img/app/app_restore.png)
 
-### 升级应用
+## 6 升级应用
 
 !!! Abstract ""
 

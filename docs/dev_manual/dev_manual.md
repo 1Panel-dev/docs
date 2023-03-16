@@ -45,22 +45,22 @@
 
 ## 3 代码运行
 
-### 运行后端服务
+### 3.1 运行后端服务
 
 !!! Abstract ""
     新建一个 git 项目 输入主工程 git 地址: git@github.com:1Panel-dev/1Panel.git
 
 ![img.png](open.png){width="900px"}  
 
-### 新建 Go build 启动项
+### 3.2 新建 Go build 启动项
 
 ![img.png](go_build.png)
 
-### 运行后端
+### 3.3 运行后端
 
 ![img.png](start.png)
 
-### 运行前端
+### 3.4 运行前端
 
 !!! Abstract ""
 

@@ -1,9 +1,9 @@
-## 创建网站
+
 !!! Abstract ""
 
     支持一键部署、静态网站、反向代理等方式创建网站
 
-### 一键部署
+## 1 一键部署
 
 !!! Abstract ""
 
@@ -19,7 +19,7 @@
 
 ![img.png](../../img/websites/auto_create.png)
 
-### 静态网站
+## 2 静态网站
 
 !!! Abstract ""
 
@@ -34,7 +34,7 @@
 
 ![img.png](../../img/websites/static_create.png)
 
-### 反向代理
+## 3 反向代理
 
 !!! Abstract ""
 
