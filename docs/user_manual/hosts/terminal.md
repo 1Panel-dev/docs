@@ -12,7 +12,7 @@
 
 ![img.png](../../img/hosts/terminal.png)
 
-## 主2 机管理
+## 2 主机管理
 
 !!! Abstract ""
     维护主机信息，支持主机分组。
