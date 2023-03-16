@@ -18,7 +18,7 @@
 ## 3 phpMyAdmin
 
 !!! Abstract ""
-    WEB 图形化界面管理 mysql 数据库的管理工具，此处不会详细讲解工具使用方法，[点击查看工具教程](https://www.wpdaxue.com/series/phpmyadmin)
+    WEB 图形化界面管理 MySQL 数据库的管理工具，此处不会详细讲解工具使用方法，[点击查看工具教程](https://www.wpdaxue.com/series/phpmyadmin)
 
 ## 4 备份
 
