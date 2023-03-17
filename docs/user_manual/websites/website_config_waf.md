@@ -1,9 +1,9 @@
-## 1 网站安全设置
+
 !!! Abstract ""
 
     配置网站的 WAF。 
 
-### 1.1 CC 防护
+## 1 CC 防护
 
 !!! Abstract ""
 
@@ -17,7 +17,7 @@
 
 ![img.png](../../img/websites/waf_cc.png)
 
-### 1.2 IP 白名单
+## 2 IP 白名单
 
 !!! Abstract ""
 
@@ -25,7 +25,7 @@
 
 ![img.png](../../img/websites/ip_white.png)
 
-### 1.3 IP 黑名单
+## 3 IP 黑名单
 
 !!! Abstract ""
 
@@ -33,7 +33,7 @@
 
 ![img.png](../../img/websites/ip_black.png)
 
-### 1.4 URL 白名单
+## 4 URL 白名单
 
 !!! Abstract ""
 
@@ -41,7 +41,7 @@
 
 ![img.png](../../img/websites/url_white.png)
 
-### 1.5 URL 黑名单
+## 5 URL 黑名单
 
 !!! Abstract ""
 
@@ -49,7 +49,7 @@
 
 ![img.png](../../img/websites/url_black.png)
 
-### 1.6 Cookie 黑名单
+## 6 Cookie 黑名单
 
 !!! Abstract ""
 
@@ -57,7 +57,7 @@
 
 ![img.png](../../img/websites/cookie_black.png)
 
-### 1.7 Get 参数校验
+## 7 Get 参数校验
 
 !!! Abstract ""
     
@@ -65,7 +65,7 @@
 
 ![img.png](../../img/websites/get_check.png)
 
-### 1.8 POST 参数校验
+## 8 POST 参数校验
 
 !!! Abstract ""
 
@@ -74,7 +74,7 @@
 ![img.png](../../img/websites/post_check.png)
 
 
-### 1.9 文件扩展名黑名单
+## 9 文件扩展名黑名单
 
 !!! Abstract ""
     

@@ -1,9 +1,9 @@
-## 1 网站分组
+
 !!! Abstract ""
 
     管理网站分组
 
-### 1.1 创建分组
+## 1 创建分组
 
 !!! Abstract ""
 
@@ -11,7 +11,7 @@
 
 ![img.png](../../img/websites/website_group.png)
 
-### 1.2 默认分组
+## 2 默认分组
 
 !!! Abstract ""
     
@@ -19,7 +19,7 @@
 
 ![img.png](../../img/websites/default_group.png)
 
-### 1.3 修改分组
+## 3 修改分组
 
 !!! Abstract ""
 
