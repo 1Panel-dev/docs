@@ -4,4 +4,13 @@
     **宝塔是一款被广泛使用的 Linux 面板。与宝塔 Linux 面板相比，1Panel 的特色是开源和现代化。**  
 
     - 开源：1Panel 强调开源开放，广泛获取社区使用反馈，并快速迭代。
-    - 现代化：一方面，1Panel 采纳最新的前端技术，并通过精心设计的 UX 交互，为用户提供更好的用户使用体验；另一方便，1Panel 采用主流的容器技术，让 Linux 服务器的运维管理更简单、更安全。
+    - 现代化：一方面，1Panel 采纳最新的前端技术，并通过精心设计的 UX 交互，为用户提供更好的用户使用体验；另一方面，1Panel 采用主流的容器技术，让 Linux 服务器的运维管理更简单、更安全。
+
+## 2 是否考虑增加多主机管理？
+
+!!! Abstract ""
+    **1Panel 会关注在单机 Linux 的运维管理。**  
+
+    多主机管理推荐使用 [JumpServer 堡垒机](jumpserver) 来实现。尤其现在 JumpServer 也支持 Web 资产，可以通过Web 可视化连上 1Panel，实现多主机管理。
+
+[jumpserver]:https://github.com/jumpserver/jumpserver

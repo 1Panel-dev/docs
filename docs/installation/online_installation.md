@@ -13,10 +13,23 @@
 !!! Abstract ""
     GitHub release 链接: https://github.com/1Panel-dev/1Panel/releases  
 
-    **在服务器上执行一键安装命令：**
-    ```properties
-    curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && sudo bash quick_start.sh
-    ```
+=== "RedHat / CentOS"
+    !!! Abstract ""
+        ```properties
+        curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && sh quick_start.sh
+        ```
+
+=== "Ubuntu"
+    !!! Abstract ""
+        ```properties
+        curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && sudo bash quick_start.sh
+        ```
+
+=== "Debian"
+    !!! Abstract ""
+        ```properties
+        curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && bash quick_start.sh
+        ```
 
 !!! Abstract ""
     **安装成功后，控制台日志会提示对应端口号，可通过浏览器访问如下页面登录 1Panel：**
