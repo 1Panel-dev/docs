@@ -1,7 +1,3 @@
-## 1 证书申请
-!!! Abstract ""
-
-    申请证书
 
 ### 1.1 前置条件
 
@@ -34,7 +30,6 @@
     5. 点击确认
 
 ![img.png](../../img/websites/proxy_create.png)
-
 
 ### 1.4 HTTP 模式申请证书
 

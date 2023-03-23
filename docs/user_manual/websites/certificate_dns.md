@@ -1,7 +1,8 @@
 ## 1 DNS 账户管理
+
 !!! Abstract ""
 
-    支持 DNSPod 、 阿里云 DNS 、 CloudFlare 等类型的账户
+    支持 DNSPod 、 阿里云 DNS 、 CloudFlare 等类型的账户。
 
 ### 1.1 创建 DNSPod 类型的账户
 
@@ -35,4 +36,3 @@
     - API Key
 
 ![img.png](../../img/websites/proxy_create.png)
-

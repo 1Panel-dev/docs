@@ -13,7 +13,6 @@
     - 频率：CC 防护的频率设置。
 
     例如周期 60 频率 100 代表 60 秒内累计请求同一URL超过 100 次,触发 CC 防御,封锁此 IP。
-    
 
 ![img.png](../../img/websites/waf_cc.png)
 
@@ -72,7 +71,6 @@
     设置禁止 POST 请求中携带的参数。
 
 ![img.png](../../img/websites/post_check.png)
-
 
 ## 9 文件扩展名黑名单
 
