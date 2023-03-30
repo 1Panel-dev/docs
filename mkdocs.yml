@@ -86,7 +86,7 @@ nav:
         - 面板设置: user_manual/settings.md
     - 常见问题:
         - 产品 FAQ: faq/faq.md
-        - 安装部署问题: faq/installation.md
+        - 操作系统问题: faq/operating_system.md
     - 开发文档:
         - 开发环境搭建: dev_manual/dev_manual.md
     - 版本迭代: changelog.md
