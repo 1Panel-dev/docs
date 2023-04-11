@@ -3,4 +3,4 @@
 
     点击续签
 
-![img.png](../../img/websites/auto_create.png)
+![img.png](../../img/websites/certificate_renew.png)

@@ -4,4 +4,4 @@
 
     支持 DNSPod 、 阿里云 DNS 、 CloudFlare 的账户。
 
-![img.png](../../img/websites/proxy_create.png)
+![img.png](../../img/websites/certificate_acme.png)
