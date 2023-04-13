@@ -14,3 +14,12 @@
     多主机管理推荐使用 [JumpServer 堡垒机](jumpserver) 来实现。尤其现在 JumpServer 也支持 Web 资产，可以通过Web 可视化连上 1Panel，实现多主机管理。
 
 [jumpserver]:https://github.com/jumpserver/jumpserver
+
+## 3 1Panel 安装包多大？运行时占用系统资源多吗？会影响其他应用吗？
+
+!!! Abstract ""
+
+    - 1Panel 基于 Golang 语言编写，可执行文件大小约 40MB、运行时占用系系统内存约 150MB。
+    - 1Panel 基于 Docker 来部署管理其他应用，对系统的侵入影响非常小。
+
+[jumpserver]:https://github.com/jumpserver/jumpserver

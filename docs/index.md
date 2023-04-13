@@ -22,3 +22,6 @@
 [![容器管理](./img/video/容器管理.jpg){ width="280" }](https://www.bilibili.com/video/BV1hL411o7ck/)
 [![计划任务与主机管理](./img/video/计划任务与主机管理.jpg){ width="280" }](https://www.bilibili.com/video/BV1FY4y1R7p5/)
 [![面板日志与设置](./img/video/面板日志与设置.jpg){ width="280" }](https://www.bilibili.com/video/BV1uX4y1f7T2/)
+
+[![PHP 网站管理](./img/video/PHP-网站管理.jpg){ width="280" }](https://www.bilibili.com/video/BV1Um4y1m7XQ/)
+[![防火墙管理](./img/video/防火墙管理.jpg){ width="280" }](https://www.bilibili.com/video/BV14V4y1Z733/)
