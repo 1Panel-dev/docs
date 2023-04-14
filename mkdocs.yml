@@ -65,6 +65,8 @@ nav:
                 - 续签证书: user_manual/websites/certificate_renew.md
                 - Acme 账户: user_manual/websites/certificate_acme.md
                 - DNS 账户: user_manual/websites/certificate_dns.md
+            - 运行环境:
+                - PHP: user_manual/websites/php.md
         - 数据库:
             - MySQL: user_manual/databases/mysql.md
             - Redis: user_manual/databases/redis.md
