@@ -58,6 +58,10 @@
 
 ### 3.3 运行后端
 
+!!! Abstract ""
+
+    - 需要先进入工程目录下的子目录 frontend, 执行 npm run build:dev 打包前端资源
+
 ![img.png](start.png)
 
 ### 3.4 运行前端
