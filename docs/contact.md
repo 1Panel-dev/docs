@@ -8,7 +8,7 @@
     - 详细的问题描述；
     - 问题的截图说明。  
 
-    ![wechat-group](./img/wechat-group.png)
+    ![wechat-group](https://1panel.cn/img/wechat-group.jpg){ width="156" height="156" }
 
 ## 2 项目地址
 
