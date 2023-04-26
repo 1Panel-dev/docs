@@ -29,18 +29,19 @@
 
     ```
     system:
-        db_file: 1Panel.db
-        app_repo_owner: zhengkunwang223
-        app_repo_name: appstore
-        base_dir: /opt
-        mode: dev
-
+    db_file: 1Panel.db
+    base_dir: /opt
+    mode: dev
+    repo_url: https://resource.fit2cloud.com/1panel/package
+    is_demo: false
+    port: 9999
+    
     log:
-        level: debug
-        time_zone: Asia/Shanghai
-        log_name: 1Panel
-        log_suffix: .log
-        log_backup: 10
+    level: debug
+    time_zone: Asia/Shanghai
+    log_name: 1Panel
+    log_suffix: .log
+    max_backup: 10
     ```
 
 ## 3 代码运行
