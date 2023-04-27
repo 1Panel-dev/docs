@@ -16,7 +16,13 @@
 
     - [1Panel][1panel] ![1panel stars][1panel stars]
 
-## 3 联系方式
+## 3 开源社区论坛
+
+!!! Abstract ""
+
+    **飞致云官方开源社区论坛**：[开源社区论坛](https://bbs.fit2cloud.com/c/1p)
+    
+## 4 联系方式
 
 !!! Abstract ""
     - 官网：http://www.1panel.cn
