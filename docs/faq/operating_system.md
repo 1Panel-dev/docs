@@ -64,3 +64,16 @@
 
     - 更新 systemd 管理，支持 systemd 后问题即可解决
     - 参考文档：[Systemd support is now available in WSL!](https://devblogs.microsoft.com/commandline/systemd-support-is-now-available-in-wsl/)
+
+## 3 使用 Fedora 37 安装面板后打开防火墙发现面板创建的端口规则未效果
+
+!!! Abstract ""
+    **Fedora 37 默认区域不是 public 导致的，可以通过以下命令手动将默认区域设置为 public**
+
+    ```shell
+    firewall-cmd --set-default-zone=public
+    ```
+
+    ```shell
+    firewall-cmd --reload
+    ```
