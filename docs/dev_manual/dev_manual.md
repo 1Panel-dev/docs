@@ -29,19 +29,21 @@
 
     ```
     system:
-    db_file: 1Panel.db
-    base_dir: /opt
-    mode: dev
-    repo_url: https://resource.fit2cloud.com/1panel/package
-    is_demo: false
-    port: 9999
+        db_file: 1Panel.db
+        base_dir: /opt
+        mode: dev
+        repo_url: https://resource.fit2cloud.com/1panel/package
+        is_demo: false
+        port: 9999
+        username: admin #初始用户名
+        password: admin123 #初始密码
     
     log:
-    level: debug
-    time_zone: Asia/Shanghai
-    log_name: 1Panel
-    log_suffix: .log
-    max_backup: 10
+        level: debug
+        time_zone: Asia/Shanghai
+        log_name: 1Panel
+        log_suffix: .log
+        max_backup: 10
     ```
 
 ## 3 代码运行
@@ -71,4 +73,5 @@
 
     - 进入工程目录下的子目录 frontend, 用 npm i 安装前端依赖包  
     - 安装完成后，使用 npm run dev 命名启动前端,前端启动后即可通过 http://localhost:4004/ 地址访问
+    - 使用默认用户名 admin 默认密码 admin123 登录
 
