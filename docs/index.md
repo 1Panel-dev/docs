@@ -25,3 +25,4 @@
 
 [![PHP 网站管理](./img/video/PHP-网站管理.jpg){ width="280" }](https://www.bilibili.com/video/BV1Um4y1m7XQ/)
 [![防火墙管理](./img/video/防火墙管理.jpg){ width="280" }](https://www.bilibili.com/video/BV14V4y1Z733/)
+[![如何让你的 1Panel 更安全](./img/video/安全实践.jpg){ width="280" }](https://www.bilibili.com/video/BV1ih411c7U3/)
