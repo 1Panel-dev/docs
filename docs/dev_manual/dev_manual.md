@@ -33,6 +33,7 @@
         base_dir: /opt
         mode: dev
         repo_url: https://resource.fit2cloud.com/1panel/package
+        app_repo: https://apps-assets.fit2cloud.com
         is_demo: false
         port: 9999
         username: admin #初始用户名
