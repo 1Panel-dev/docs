@@ -1,6 +1,6 @@
 ## 1 s390x 架构
 
-### MySQL
+### 安装 MySQL
 
 !!! Abstract ""
     **由于 MySQL 官方未提供 s390x 架构镜像，所有在应用商店启用 MySQL 前，需要手动修改 MySQL 镜像版本**
@@ -39,7 +39,7 @@
 
 ## 2 armv7l 架构
 
-### MySQL
+### 安装 MySQL
 
 !!! Abstract ""
     **由于 MySQL 官方未提供 armv7l 架构镜像，所有在应用商店启用 MySQL 前，需要手动修改 MySQL 镜像版本**
@@ -64,7 +64,7 @@
 
     **1Panel 当前版本还不支持在 armv7l 架构服务器上安装 MySQL 8.0**
 
-### OpenResty
+### 安装 OpenResty
 
 !!! Abstract ""
     **由于 OpenResty 官方未提供 armv7l 架构镜像，所有在应用商店启用 OpenResty 前，需要手动修改 OpenResty 镜像版本**
