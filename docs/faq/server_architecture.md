@@ -3,7 +3,7 @@
 ### 安装 MySQL
 
 !!! Abstract ""
-    **由于 MySQL 官方未提供 s390x 架构镜像，所有在应用商店启用 MySQL 前，需要手动修改 MySQL 镜像版本**
+    **由于 MySQL 官方未提供 s390x 架构镜像，所以在应用商店启用 MySQL 前，需要手动修改 MySQL 镜像版本**
 
 !!! Abstract "MySQL 5.7"
 
@@ -42,7 +42,7 @@
 ### 安装 MySQL
 
 !!! Abstract ""
-    **由于 MySQL 官方未提供 armv7l 架构镜像，所有在应用商店启用 MySQL 前，需要手动修改 MySQL 镜像版本**
+    **由于 MySQL 官方未提供 armv7l 架构镜像，所以在应用商店启用 MySQL 前，需要手动修改 MySQL 镜像版本**
 
 !!! Abstract "MySQL 5.7"
 
@@ -67,7 +67,7 @@
 ### 安装 OpenResty
 
 !!! Abstract ""
-    **由于 OpenResty 官方未提供 armv7l 架构镜像，所有在应用商店启用 OpenResty 前，需要手动修改 OpenResty 镜像版本**
+    **由于 OpenResty 官方未提供 armv7l 架构镜像，所以在应用商店启用 OpenResty 前，需要手动修改 OpenResty 镜像版本**
 
 !!! Abstract ""
 
