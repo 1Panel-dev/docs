@@ -26,8 +26,22 @@
         ```shell
         sudo systemctl start firewalld
         ```
+        
+        **4、如果你在远程位置连接你的服务器，在启用 firewalld 防火墙之前，你必须显式允许进来的 SSH 连接。否则，你将永远都无法连接到机器上。**
 
-        **4、设置开机启动 firewalld**
+        ```shell
+        sudo firewall-cmd --zone=public --add-port=22/tcp --permanent
+        ```
+        
+        > 如果 SSH 运行在非标准端口，你需要将上述命令中的 22 端口替换为对应的 SSH 端口。
+
+        **5、重新加载防火墙规则，使更改生效**
+
+        ```shell
+        sudo firewall-cmd --reload
+        ```
+
+        **6、设置开机启动 firewalld**
         
         ```shell
         sudo systemctl enable firewalld
@@ -41,19 +55,27 @@
         sudo apt update
         ```
 
-        **2、安装 ufw**
+        **2、安装 UFW**
         
         ```shell
         sudo apt install ufw
         ```
 
-        **3、启动 ufw**
+        **3、如果你在远程位置连接你的服务器，在启用 UFW 防火墙之前，你必须显式允许进来的 SSH 连接。否则，你将永远都无法连接到机器上。**
+
+        ```shell
+        sudo ufw allow 22/tcp
+        ```
+        
+        > 如果 SSH 运行在非标准端口，你需要将上述命令中的 22 端口替换为对应的 SSH 端口。
+
+        **4、启动 UFW**
         
         ```shell
         sudo ufw enable
         ```
 
-## 2 防护墙状态
+## 2 防火墙状态
 
 !!! Abstract ""
     **点击防火墙开关按钮，即可开启或关闭防火墙。**
