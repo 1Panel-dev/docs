@@ -34,8 +34,25 @@
 
     - 亚马逊 S3 云存储
     - 阿里云 OSS
+    - 腾讯云 COS
+    - 微软 OneDrive
+    - 七牛云 Kodo
     - MINIO
     - SFTP
+
+### OneDrive 账号绑定
+    1. 点击 OneDrive 授权码获取按钮
+![img.png](../img/settings/onedrive_step1.png)
+
+    2. 输入 Onedrive 账号信息
+![img.png](../img/settings/onedrive_step2.png)
+
+    3. 信任 1panel 服务
+![img.png](../img/settings/onedrive_step3.png)
+
+    4. 复制授权码到 1Panel 授权码输入框
+![img.png](../img/settings/onedrive_step4.png)
+
 
 ### 部分对象存储服务商与亚马逊 S3 云存储的兼容性
 
