@@ -2,7 +2,7 @@
 !!! Abstract ""
     **1Panel 集成了两种广泛使用的 Linux 防火墙软件：Firewalld 和 UFW。**
 
-    - Centos 使用的是 Firewall 防火墙。
+    - RedHat/CentOS 使用的是 Firewall 防火墙。
     - Debian/Ubuntu使用的是 UFW 防火墙。
 
 ## 1 安装
