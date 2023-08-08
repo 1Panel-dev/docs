@@ -34,14 +34,22 @@
         ```
         
         > 如果 SSH 运行在非标准端口，你需要将上述命令中的 22 端口替换为对应的 SSH 端口。
+        
+        **5、放开 1Panel 系统端口。**
 
-        **5、重新加载防火墙规则，使更改生效**
+        ```shell
+        sudo firewall-cmd --zone=public --add-port=8090/tcp --permanent
+        ```
+
+        > 上述命令中的 8090 端口需要替换为安装 1Panel 系统时自定义的端口。
+
+        **6、重新加载防火墙规则，使更改生效**
 
         ```shell
         sudo firewall-cmd --reload
         ```
 
-        **6、设置开机启动 firewalld**
+        **7、设置开机启动 firewalld**
         
         ```shell
         sudo systemctl enable firewalld
@@ -69,7 +77,15 @@
         
         > 如果 SSH 运行在非标准端口，你需要将上述命令中的 22 端口替换为对应的 SSH 端口。
 
-        **4、启动 UFW**
+        **4、放开 1Panel 系统端口。**
+
+        ```shell
+        sudo ufw allow 8090/tcp
+        ```
+
+        > 上述命令中的 8090 端口需要替换为安装 1Panel 系统时自定义的端口。
+
+        **5、启动 UFW**
         
         ```shell
         sudo ufw enable

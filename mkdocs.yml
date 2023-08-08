@@ -86,6 +86,7 @@ nav:
           - 监控: user_manual/hosts/monitor.md
           - 终端: user_manual/hosts/terminal.md
           - 防火墙: user_manual/hosts/firewall.md
+          - 进程守护: user_manual/hosts/supervisor.md
         - 面板日志: user_manual/logs.md
         - 面板设置: user_manual/settings.md
     - 常见问题:
