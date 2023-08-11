@@ -24,5 +24,5 @@
             - [阿里云加速器](https://cr.console.aliyun.com/#/accelerator)：https://<你的ID>.mirror.aliyuncs.com
     - 私有仓库：搭建的私有镜像仓库，如 harber、nexus、docker-registry 等。
     - iptables：该设置将关闭 Docker 对 iptables 规则的自动配置，这可能会导致容器无法与外部网络通信。
-    - live-restore：停止 Docker 服务是，是否停止所有容器。
+    - live-restore：停止 Docker 服务时，是否停止所有容器。
     - cgroup-driver：默认情况下使用的 Cgroup Driver 为 cgroupfs。
