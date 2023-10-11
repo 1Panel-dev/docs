@@ -1,7 +1,13 @@
+
 ## 1 登录阿里云官方网站
 
 !!! Abstract ""
     在您的浏览器中打开阿里云的官方网站（https://www.aliyun.com/）并登录您的账号。
+
+!!! info "服务器优惠"
+    如果你还没有服务器，欢迎在[此页面选购](https://www.aliyun.com/daily-act/ecs/activity_selection?userCode=j57gyupo)，阿里云服务器0元试用，首购低至0.9元/月起。
+
+    [点此查看更多云产品优惠](https://www.aliyun.com/minisite/goods?userCode=j57gyupo)。
 
 ## 2 选择 ECS 实例
 
