@@ -5,9 +5,10 @@
     在您的浏览器中打开阿里云的官方网站（https://www.aliyun.com/）并登录您的账号。
 
 !!! info "服务器优惠"
-    如果你还没有服务器，欢迎在[此页面选购](https://www.aliyun.com/daily-act/ecs/activity_selection?userCode=j57gyupo)，阿里云服务器0元试用，首购低至0.9元/月起。
+    如果你还没有服务器，欢迎通过以下优惠链接选购。
 
-    [点此查看更多云产品优惠](https://www.aliyun.com/minisite/goods?userCode=j57gyupo)。
+    - 阿里云：[阿里云服务器0元试用，首购低至0.9元/月起](https://www.aliyun.com/daily-act/ecs/activity_selection?userCode=j57gyupo)，更多云产品优惠请点击[此链接](https://www.aliyun.com/minisite/goods?userCode=j57gyupo)；
+    - 腾讯云：[【腾讯云】2核2G3M云服务器7.92元/月起，2000元代金券免费领](https://curl.qcloud.com/dK2muFbM)，更多云产品优惠请点击[此链接](https://curl.qcloud.com/9Ogon25Y)；
 
 ## 2 选择 ECS 实例
 
