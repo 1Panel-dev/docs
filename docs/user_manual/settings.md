@@ -51,7 +51,7 @@
     3. 信任 1panel 服务
 ![img.png](../img/settings/onedrive_step3.png)
 
-    4. 复制授权码到 1Panel 授权码输入框
+    4. 复制授权码到 1Panel 授权码输入框 (注意不要包含 &session_state=xxx 部分)
 ![img.png](../img/settings/onedrive_step4.png)
 
 
