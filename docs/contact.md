@@ -1,28 +1,16 @@
-## 1 微信群
-
-!!! Abstract ""
-    如您在使用过程中遇到问题，欢迎您在群里进行反馈与咨询，请您在询问前尽可能全面的描述您的情况，例如：
-
-    - 当前使用的 [1Panel][1panel] 版本；
-    - 当前使用的浏览器类型；
-    - 详细的问题描述；
-    - 问题的截图说明。  
-
-    ![wechat-group](https://1panel.cn/img/wechat-group.jpg){ width="156" height="156" }
-
-## 2 项目地址
+## 1 GitHub 项目地址
 
 !!! Abstract ""
 
     - [1Panel][1panel] ![1panel stars][1panel stars]
 
-## 3 开源社区论坛
+## 2 社区论坛
 
 !!! Abstract ""
 
-    **飞致云官方开源社区论坛**：[开源社区论坛](https://bbs.fit2cloud.com/c/1p)
+    [开源社区论坛](https://bbs.fit2cloud.com/c/1p)
     
-## 4 联系方式
+## 3 联系方式
 
 !!! Abstract ""
     - 官网：http://www.1panel.cn
