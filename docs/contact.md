@@ -1,21 +1,19 @@
-## 1 GitHub 项目地址
+## 1 项目地址
 
 !!! Abstract ""
 
-    - [1Panel][1panel] ![1panel stars][1panel stars]
+    - [1Panel Issues](https://github.com/1Panel-dev/1Panel/issues)
 
 ## 2 社区论坛
 
 !!! Abstract ""
 
-    [开源社区论坛](https://bbs.fit2cloud.com/c/1p)
+    飞致云官方开源社区论坛：[开源社区论坛](https://bbs.fit2cloud.com/c/1p)
+    > 大家可以在这里搜索、咨询、讨论问题，发表自己的见解与想法。
     
 ## 3 联系方式
 
 !!! Abstract ""
-    - 官网：http://www.1panel.cn
-    - 邮箱：support@fit2cloud.com
-    - 电话：400-052-0755
 
-[1panel]: https://github.com/1Panel-dev/1Panel
-[1panel stars]: https://img.shields.io/github/stars/1Panel-dev/1Panel.svg
+    - 官网：http://www.1panel.cn
+    - 微信交流群：https://bbs.fit2cloud.com/t/topic/2147
