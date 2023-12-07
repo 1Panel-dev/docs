@@ -2,7 +2,7 @@
 !!! Abstract ""
     1Panel 是一个现代化、开源的 Linux 服务器运维管理面板。
 
-![界面展示](./img/index/overview.png){ width="1235px" }
+![UI展示](https://resource.fit2cloud.com/1panel/img/overview.png)
 
 ## 1 产品优势
 

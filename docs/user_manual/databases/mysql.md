@@ -40,7 +40,7 @@
 ![img.png](../../img/databases/recover_mysql_db.png)
 
 !!! Abstract ""
-    - 上传文件必须为 10M 以内。
+
     - 如从上传文件恢复，则需要保证上传文件压缩包内存在 test.sql 文件，否则无法正确导入。
     - 导入的 sql 文件格式必须符合标准，若你使用 phpmyadmin 导出的 sql 文件，可能会缺少版本 编码等信息，导致无法通过 mysqldump 正确导入。
     - 若无法正常导入，可以尝试使用 phpmyadmin 导入。
