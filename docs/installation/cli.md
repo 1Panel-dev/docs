@@ -72,7 +72,7 @@
       port                修改面板端口
     ```
 
-## 5 1pctl app
+## 5 1panel app
 
 !!! Abstract ""
     **应用商店相关命令，包括初始化应用等**
