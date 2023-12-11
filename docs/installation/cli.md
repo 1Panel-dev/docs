@@ -15,10 +15,10 @@
       stop                停止 1Panel 服务
       restart             重启 1Panel 服务
       uninstall           卸载 1Panel 服务
+      user-info           获取 1Panel 用户信息
       listen-ip           切换 1Panel 监听 IP
       version             查看 1Panel 版本信息
       update              修改 1Panel 系统信息
-      version             查看 1Panel 版本信息
       reset               重置 1Panel 系统信息
       restore             恢复 1Panel 服务及数据
     ```
@@ -44,7 +44,7 @@
 ## 3 1pctl listen-ip
 
 !!! Abstract ""
-    **修改 1Panel 监听IP**
+    **修改 1Panel 监听 IP**
 
     ```
     Usage:
@@ -72,7 +72,7 @@
       port                修改面板端口
     ```
 
-## 5 1panel app
+## 5 1pctl app
 
 !!! Abstract ""
     **应用商店相关命令，包括初始化应用等**
@@ -91,17 +91,3 @@
 ```shell
 1panel app init -k app_name -v v1.0.0
 ```
-
-## 4 1pctl listen-ip
-
-!!! Abstract ""
-    **切换监听 IP**
-
-    ```
-    Usage:
-      1panel listen-ip [command]
-    
-    Available Commands: 
-      ipv4        监听 IPv4
-      ipv6        监听 IPv6
-    ```
