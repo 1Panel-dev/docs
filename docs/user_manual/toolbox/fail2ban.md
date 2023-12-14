@@ -35,13 +35,35 @@
 
 === "Ubuntu / Debian"
     !!! Abstract ""
-        **安装 Fail2ban**
+        **1、安装 Fail2ban**
         
         ```shell
         sudo apt-get install fail2ban
         ```
 
-        > 安装成功后，Fail2ban 会默认启动。
+        **2、Debian 12 及以上的版本需要手动安装 rsyslog**
+
+        ```shell
+        sudo apt-get install rsyslog
+        ```
+
+        **3、启动 Fail2ban 服务**
+        
+        ```shell
+        sudo systemctl start fail2ban
+        ```
+        
+        **4、开机自启动**
+
+        ```shell
+        sudo systemctl enable fail2ban
+        ```
+        
+        **5、查看 Fail2ban 服务状态。**
+
+        ```shell
+        sudo systemctl status fail2ban
+        ```
 
 ## 2 默认配置
 
