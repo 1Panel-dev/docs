@@ -41,6 +41,31 @@
     - MINIO
     - SFTP
 
+### OneDrive 自定义配置
+
+!!! Abstract ""
+
+    **在调用 Onedrive API 时需要使用到 4 个参数：**
+
+    - client_id: 客户端ID
+    - client_secret: 客户端密码
+    - redirect_uri: 重定向地址
+    - scope: API权限
+
+1. 访问并登录 MicroSoft Azure：https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade
+
+2. 点击新注册，并填写注册信息，其中的重定向 URI 作为 重定向 Url 参数
+    ![img.png](../img/settings/onedrive_custom1.png)
+
+3. 主页上的 应用程序(客户端) ID 作为 客户端 ID
+    ![img.png](../img/settings/onedrive_custom2.png)
+
+4. 在 证书和密码 页面新建客户端密码，填写相关信息，生成的值作为 客户端密钥
+    ![img.png](../img/settings/onedrive_custom3.png)
+
+5. 在 API 权限页面选择需要的权限，添加权限，Microsoft Graph，委托的权限，勾选 Files.ReadWrite.All、offline_access、User.Read，这将作为 scope 传递
+    ![img.png](../img/settings/onedrive_custom4.png)
+
 ### OneDrive 账号绑定
     1. 点击 OneDrive 授权码获取按钮
 ![img.png](../img/settings/onedrive_step1.png)
