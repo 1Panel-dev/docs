@@ -79,6 +79,14 @@
     4. 复制授权码到 1Panel 授权码输入框 (注意不要包含 &session_state=xxx 部分)
 ![img.png](../img/settings/onedrive_step4.png)
 
+### WebDAV 连接 AList
+    1. 从应用商店安装好 AList 后（记得打开端口外部访问），在容器日志中查看初始化密码，跳转到 AList 管理界面。
+
+    2. 存储 菜单中添加对应的存储，记住该路径。
+![img.png](../img/settings/webdav-01.png)
+
+    3. 1Panel 备份账号中，WebDAV 添加该备份账号，这里的路径应该是 /dav/${2步骤中的路径}/xxx，如此处的 /dav/tmp/sftp/1panel，完成绑定。
+![img.png](../img/settings/webdav-02.png)
 
 ### 部分对象存储服务商与亚马逊 S3 云存储的兼容性
 
