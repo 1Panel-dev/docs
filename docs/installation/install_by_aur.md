@@ -16,16 +16,22 @@
 
 !!! Abstract ""
     AUR 链接（稳定版）: https://aur.archlinux.org/packages/1panel-bin
+    
     AUR 链接（测试版）: https://aur.archlinux.org/packages/1panel-dev-bin
 
 === "通过 AUR 手动安装（请使用非root权限安装）"
     !!! Abstract ""
         ```properties
         # 稳定版
+        
         git clone https://aur.archlinux.org/1panel-bin.git 1panel
+        
         # 测试版
+        
         git clone https://aur.archlinux.org/1panel-dev-bin.git 1panel
+        
         cd 1panel-bin
+        
         makepkg -si
         ```
 
@@ -33,8 +39,11 @@
     !!! Abstract ""
         ```properties
         # 稳定版
+        
         yay -S 1panel-bin
+        
         # 测试版
+        
         yay -S 1panel-dev-bin
         ```
 
@@ -42,8 +51,11 @@
     !!! Abstract ""
         ```properties
         # 稳定版
+        
         paru -S 1panel-bin
+        
         # 测试版
+        
         paru -S 1panel-dev-bin
         ```
 
