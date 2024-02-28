@@ -45,6 +45,7 @@ nav:
         - 阿里云镜像安装: installation/cloud_image.md
         - 在线升级: installation/online_upgrade.md
         - 命令行工具: installation/cli.md
+        - 通过ArchLinux AUR安装: installation/install_by_aur.md
     - 功能手册:
         - 应用商店:
               - 应用商店概述: user_manual/appstore/appstore.md
