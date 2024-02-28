@@ -16,7 +16,7 @@
     AUR 链接（稳定版）: https://aur.archlinux.org/packages/1panel-bin
     AUR 链接（测试版）: https://aur.archlinux.org/packages/1panel-dev-bin
 
-=== "通过 AUR 手动安装（请使用非root权限安装）"
+=== "通过 AUR 手动安装（请使用非root权限安装） !!! Abstract "
     !!! Abstract ""
         ```properties
         # 稳定版
@@ -27,7 +27,7 @@
         makepkg -si
         ```
 
-=== "通过 yay 安装"
+=== "通过 yay 安装 !!! Abstract "
     !!! Abstract""
         ```properties
         # 稳定版
@@ -36,7 +36,7 @@
         yay -S 1panel-dev-bin
         ```
 
-=== "通过paru安装"
+=== "通过paru安装 !!! Abstract "
     !!! Abstract ""
         ```properties
         # 稳定版
