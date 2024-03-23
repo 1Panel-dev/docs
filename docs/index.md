@@ -16,21 +16,6 @@
 
 ## 2 教学视频
 
-[![安装部署及应用管理](./img/video/安装部署及应用管理.jpg){ width="280"}](https://www.bilibili.com/video/BV1rY411z78k/)
-[![网站管理](./img/video/网站管理.jpg){ width="280" }](https://www.bilibili.com/video/BV1AP411Z7oK/)
-[![数据库管理](./img/video/数据库管理.jpg){ width="280" }](https://www.bilibili.com/video/BV1fP411o7vY/)
+!!! Abstract ""
 
-[![容器管理](./img/video/容器管理.jpg){ width="280" }](https://www.bilibili.com/video/BV1hL411o7ck/)
-[![计划任务与主机管理](./img/video/计划任务与主机管理.jpg){ width="280" }](https://www.bilibili.com/video/BV1FY4y1R7p5/)
-[![面板日志与设置](./img/video/面板日志与设置.jpg){ width="280" }](https://www.bilibili.com/video/BV1uX4y1f7T2/)
-
-[![PHP 网站管理](./img/video/PHP-网站管理.jpg){ width="280" }](https://www.bilibili.com/video/BV1Um4y1m7XQ/)
-[![防火墙管理](./img/video/防火墙管理.jpg){ width="280" }](https://www.bilibili.com/video/BV14V4y1Z733/)
-[![如何让你的 1Panel 更安全](./img/video/安全实践.jpg){ width="280" }](https://www.bilibili.com/video/BV1ih411c7U3/)
-
-[![通过 1Panel 快速安装禅道项目管理软件](./img/video/禅道.jpg){ width="280" }](https://www.bilibili.com/video/BV1RP411k7s7/)
-[![使用1Panel安装南墙Web应用防火墙](./img/video/南墙.jpg){ width="280" }](https://www.bilibili.com/video/BV1sm4y157aQ/)
-[![Node.js网站管理](./img/video/Nodejs.jpg){ width="280" }](https://www.bilibili.com/video/BV1uc411R7NS/)
-
-[![使用1Panel安装Gitea代码托管平台](./img/video/Gitea.jpg){ width="280" }](https://www.bilibili.com/video/BV1Ki4y1h7bL/)
-[![1Panel工具箱介绍](./img/video/工具箱.jpg){ width="280" }](https://www.bilibili.com/video/BV1NQ4y1g7oi/)
+	您可以在哔哩哔哩（B 站）上搜索相关教学视频。[点击这里](https://space.bilibili.com/510493147/channel/collectiondetail?sid=1199760)
