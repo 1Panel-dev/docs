@@ -38,6 +38,20 @@
         curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && bash quick_start.sh
         ```
 
+=== "openEuler / 其他"
+    !!! Abstract ""
+        第一步：安装 docker
+
+        ```properties
+        bash <(curl -sSL https://linuxmirrors.cn/docker.sh)
+        ```
+
+        第二步：安装 1Panel
+
+        ```properties
+        curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && sh quick_start.sh
+        ```
+
 !!! Abstract ""
     安装成功后，控制台会打印面板访问信息，可通过浏览器访问 1Panel：
 
