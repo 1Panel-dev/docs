@@ -4,16 +4,10 @@
     **安装前请确保您的系统符合安装条件：**
 
     * 操作系统：支持主流 Linux 发行版本（基于 Debian / RedHat，包括国产操作系统）；
-    * 服务器架构：x86_64、aarch64、armv7l、ppc64le、s390x；
+    * 服务器架构：x86_64；
+    * Docker 要求：服务器已经安装 Docker；    
     * 内存要求：建议可用内存在 1GB 以上；
-    * 浏览器要求：请使用 Chrome、FireFox、IE10+、Edge等现代浏览器；
-    * **可访问互联网**。
-
-!!! info "服务器优惠"
-    如果你还没有服务器，欢迎通过以下优惠链接选购。
-
-    - 阿里云：[阿里云服务器0元试用，首购低至0.9元/月起](https://www.aliyun.com/daily-act/ecs/activity_selection?userCode=j57gyupo)，更多云产品优惠请点击[此链接](https://www.aliyun.com/minisite/goods?userCode=j57gyupo)；
-    - 腾讯云：[【腾讯云】2核2G3M云服务器7.92元/月起，2000元代金券免费领](https://curl.qcloud.com/dK2muFbM)，更多云产品优惠请点击[此链接](https://curl.qcloud.com/9Ogon25Y)；
+    * 浏览器要求：请使用 Chrome、FireFox、IE10+、Edge等现代浏览器。
 
 ## 2 下载安装包
 
