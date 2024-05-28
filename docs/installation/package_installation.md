@@ -5,7 +5,6 @@
 
     * 操作系统：支持主流 Linux 发行版本（基于 Debian / RedHat，包括国产操作系统）；
     * 服务器架构：x86_64；
-    * Docker 要求：服务器已经安装 Docker；    
     * 内存要求：建议可用内存在 1GB 以上；
     * 浏览器要求：请使用 Chrome、FireFox、IE10+、Edge等现代浏览器。
 
@@ -39,13 +38,6 @@
     # 运行安装脚本
     /bin/bash install.sh
 	```
-
-!!! Abstract ""
-    如果 docker 在线安装失败，可以尝试使用以下脚本进行安装，之后再来运行 `install.sh` 安装脚本：
-
-    ```properties
-    bash <(curl -sSL https://linuxmirrors.cn/docker.sh)
-    ```
 
 ## 4 登录访问
 
