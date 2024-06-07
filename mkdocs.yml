@@ -70,7 +70,6 @@ nav:
             - 运行环境:
                 - PHP: user_manual/websites/php.md
                 - Node.js: user_manual/websites/node.md
-        - FTP: user_manual/ftp.md
         - 数据库:
             - MySQL: user_manual/databases/mysql.md
             - Redis: user_manual/databases/redis.md
