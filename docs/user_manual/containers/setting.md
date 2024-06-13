@@ -12,12 +12,7 @@
     - 镜像加速：国内访问 Docker Hub 有时会遇到困难，此时可以配置镜像加速器。
         - 配置加速地址：
             ```properties
-            https://hub-mirror.c.163.com
-            https://docker.m.daocloud.io
-            https://ghcr.io
-            https://mirror.baidubce.com
-            https://docker.nju.edu.cn
-
+            https://docker.1panel.live
             ```
         - 另外还推荐使用自己的镜像加速地址：
             - [DaoCloud 加速器](https://www.daocloud.io/mirror#accelerator-doc)：https://<你的ID>.m.daocloud.io
