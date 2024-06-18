@@ -14,7 +14,7 @@
 ### 2.1 环境准备
 
 !!! Abstract "后端"
-    1Panel 后端使用了 Golang 语言的 Gin 框架，并使用 go.mod 作为项目管理工具。开发者需要先在开发环境中安装 go 1.21 或者以上版本
+    1Panel 后端使用了 Golang 语言的 Gin 框架，并使用 go.mod 作为项目管理工具。开发者需要先在开发环境中安装 go 1.22 或者以上版本
 
 !!! Abstract "前端"
     1Panel 前端使用了 Vue.js 作为前端框架，Element-Plus 作为 UI 框架，并使用 npm 作为包管理工具。开发者请先下载 Node.js 作为运行环境，IDEA 用户建议安装 Vue.js 插件，便于开发。  

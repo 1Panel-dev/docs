@@ -26,6 +26,8 @@
         VerboseLog yes
         # 拒绝匿名登录
         NoAnonymous yes
+        # 开启被动端口范围 (这里需要根据实际需求调整端口范围)
+        PassivePortRange 39000 40000
         ```
 
         **4、启动 Pure-FTPd 服务**
@@ -51,14 +53,16 @@
         **2、修改默认配置**
         
         ```shell
-        # 默认配置位于 /etc/pure-ftpd/pure-ftpd.conf，在配置文件中找到下面几个参数进行修改：
+        # 与 centos 不同，这里需要在 /etc/pure-ftpd/conf 文件夹下增加配置文件：
 
         # 指定路径，PureDB用户数据库文件
-        PureDB /etc/pure-ftpd/pureftpd.pdb
+        echo /etc/pure-ftpd/pureftpd.pdb > /etc/pure-ftpd/conf/PureDB 
         # 开启日志
-        VerboseLog yes
+        echo yes > /etc/pure-ftpd/conf/VerboseLog 
         # 拒绝匿名登录
-        NoAnonymous yes
+        echo yes > /etc/pure-ftpd/conf/NoAnonymous
+        # 开启被动端口范围 (这里需要根据实际需求调整端口范围)
+        echo '39000 40000' > /etc/pure-ftpd/conf/PassivePortRange
         ```
 
         **3、建立数据库软链**
@@ -85,4 +89,8 @@
 !!! Abstract ""
 
     - 如果之前已经安装过 Pure-FTPd，可以直接通过界面同步按钮同步到 1panel 上，但是同步过程中无法同步密码，需要在界面上手动编辑；
+    - 如果无法正常连接，可以从以下方向检查：
+        - 防火墙是否开启，是否放行 Pure-FTPd 端口 ( 默认 21，可以通过 netstat -tunlp |grep pure-ftpd 或者 cat /etc/pure-ftpd/pure-ftpd.conf | grep Bind 查询)
+        - 是否放行 Pure-FTPd 被动端口 ( 可以通过 cat /etc/pure-ftpd/pure-ftpd.conf | grep PassivePortRange 或者 cat /etc/pure-ftpd/conf/PassivePortRange 文件查询 )
+        - 是否开启 selinux
 
