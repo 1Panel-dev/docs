@@ -93,6 +93,14 @@ nav:
           - FTP: user_manual/toolbox/ftp.md
           - Fail2ban: user_manual/toolbox/fail2ban.md
         - 面板日志: user_manual/logs.md
+        - 高级功能:
+              - WAF:
+                 - 概述: user_manual/xpack/waf/waf.md
+                 - 概览: user_manual/xpack/waf/dashboard.md
+                 - 全局设置: user_manual/xpack/waf/global.md
+                 - 网站设置: user_manual/xpack/waf/site.md  
+                 - 拦截记录: user_manual/xpack/waf/log.md  
+                 - 封锁记录: user_manual/xpack/waf/block.md  
         - 面板设置: user_manual/settings.md
     - 常见问题:
         - 产品 FAQ: faq/faq.md
