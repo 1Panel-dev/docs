@@ -53,15 +53,15 @@
         **2、修改默认配置**
         
         ```shell
-        # 与 centos 不同，这里需要在 /etc/pure-ftpd/conf 文件夹下增加配置文件：
+        # 与 centos 不同，这里需要在 /etc/pure-ftpd/conf 文件夹下执行下列命令，增加对应配置文件：
 
-        # 指定路径，PureDB用户数据库文件
-        echo /etc/pure-ftpd/pureftpd.pdb > /etc/pure-ftpd/conf/PureDB 
-        # 开启日志
+        # 创建 /etc/pure-ftpd/conf/PureDB 文件，内容指定路径 /etc/pure-ftpd/pureftpd.pdb
+        echo '/etc/pure-ftpd/pureftpd.pdb' > /etc/pure-ftpd/conf/PureDB
+        # 创建 /etc/pure-ftpd/conf/VerboseLog 文件，开启日志
         echo yes > /etc/pure-ftpd/conf/VerboseLog 
-        # 拒绝匿名登录
+        # 创建 /etc/pure-ftpd/conf/NoAnonymous 文件，拒绝匿名登录
         echo yes > /etc/pure-ftpd/conf/NoAnonymous
-        # 开启被动端口范围 (这里需要根据实际需求调整端口范围)
+        # 创建 /etc/pure-ftpd/conf/PassivePortRange 文件，开启被动端口范围 (这里需要根据实际需求调整端口范围)
         echo '39000 40000' > /etc/pure-ftpd/conf/PassivePortRange
         ```
 
