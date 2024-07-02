@@ -90,6 +90,7 @@ nav:
           - 防火墙: user_manual/hosts/firewall.md
         - 工具箱:
           - 进程守护: user_manual/toolbox/supervisor.md
+          - 病毒扫描: user_manual/toolbox/clamav.md
           - FTP: user_manual/toolbox/ftp.md
           - Fail2ban: user_manual/toolbox/fail2ban.md
         - 面板日志: user_manual/logs.md
