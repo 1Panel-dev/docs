@@ -29,22 +29,47 @@
         yum install clamav clamav-update -y
         ```
 
-        **3、启动 ClamAV 服务**
+        **3、修改 ClamAV 配置文件**
+        
+        ```shell
+        /etc/clamd.d/scan.conf 取消下面行注释
+        LogFile /var/log/clamd.scan
+        LogFileMaxSize 2M
+        PidFile /run/clamd.scan/clamd.pid
+        DatabaseDirectory /var/lib/clamav
+        LocalSocket /run/clamd.scan/clamd.sock
+        ```
+
+        **4、修改病毒库刷新配置文件**
+        
+        ```shell
+        /etc/freshclam.conf 取消下面行注释
+        DatabaseDirectory /var/lib/clamav
+        UpdateLogFile  /var/log/freshclam.log
+        PidFile  /var/run/freshclam.pid
+        DatabaseMirror database.clamav.net
+        Checks 12
+        ```
+
+        **5、启动 ClamAV 服务**
         
         ```shell
         systemctl start clamd@scan.service
+        systemctl start clamav-freshclam.service
         ```
         
-        **4、开机自启动**
+        **6、开机自启动**
 
         ```shell
         systemctl enable clamd@scan.service
+        systemctl enable clamav-freshclam.service
         ```
         
-        **5、查看 ClamAV 服务状态。**
+        **7、查看 ClamAV 服务状态。**
 
         ```shell
         systemctl status clamd@scan.service
+        systemctl status clamav-freshclam.service
         ```
 
 === "Ubuntu / Debian"
@@ -59,18 +84,21 @@
         
         ```shell
         sudo systemctl start clamav-daemon
+        sudo systemctl start clamav-freshclam.service
         ```
         
         **4、开机自启动**
 
         ```shell
         sudo systemctl enable clamav-daemon
+        sudo systemctl enable clamav-freshclam.service
         ```
         
         **5、查看 ClamAV 服务状态。**
 
         ```shell
         sudo systemctl status clamav-daemon
+        sudo systemctl status clamav-freshclam.service
         ```
 
 ## 4 病毒类型说明
@@ -105,4 +133,9 @@
 
 !!! Abstract ""
 
+    - 如果 clamav 服务无法启动，请检查配置信息以及日志;
     - 检查病毒库数据是否正常，在配置文件中会指定 DatabaseDirectory ，即病毒库存放位置，检查是否存在，不存在的话，手动执行一下 freshclam 命令。
+    - 如果手动执行 freshclam 也无法正常下载的话，可以从以下地址下载后传到该目录下。
+        + https://database.clamav.net/daily.cvd
+        + https://database.clamav.net/bytecode.cvd
+        + https://database.clamav.net/main.cvd
