@@ -26,7 +26,7 @@
         **2、安装 ClamAV**
         
         ```shell
-        yum install clamav clamav-update -y
+        yum install clamav clamd clamav-update -y
         ```
 
         **3、修改 ClamAV 配置文件**
