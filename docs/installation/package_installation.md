@@ -8,22 +8,22 @@
     * 内存要求：建议可用内存在 1GB 以上；
     * 浏览器要求：请使用 Chrome、FireFox、IE10+、Edge等现代浏览器。
 
-## 2 下载安装包
+## 2 下载离线包
 
 !!! Abstract ""
-    请自行下载 1Panel 最新版本的安装包，并复制到目标机器的 /tmp 目录下。  
-    安装包下载链接: https://community.fit2cloud.com/#/products/1panel/downloads
+    请自行下载 1Panel 最新版本的离线包，并复制到目标机器的 /tmp 目录下。
+    离线包下载链接: https://community.fit2cloud.com/#/products/1panel/downloads
 
 ## 3 安装部署
 
-### 3.1 解压安装包
+### 3.1 解压离线包
 
 !!! Abstract ""
     以 root 用户 ssh 登录到目标机器, 并执行如下命令：
 
     ``` 
     cd /tmp
-    # 解压安装包（1panel-v1.10.0-lts-linux-amd64.tar.gz 为示例安装包名称，操作时可根据实际安装包名称替换）
+    # 解压离线包（1panel-v1.10.0-lts-linux-amd64.tar.gz 为示例离线包名称，操作时可根据实际离线包名称替换）
     tar zxvf 1panel-v1.10.0-lts-linux-amd64.tar.gz
     ```
 
@@ -32,7 +32,7 @@
 !!! Abstract ""
 
 	```
-    # 进入安装包目录（1panel-v1.10.0-lts-linux-amd64 为示例安装包目录名称，操作时可根据实际安装包名称替换）
+    # 进入离线包目录（1panel-v1.10.0-lts-linux-amd64 为示例离线包目录名称，操作时可根据实际离线包名称替换）
     cd 1panel-v1.10.0-lts-linux-amd64
 
     # 运行安装脚本
