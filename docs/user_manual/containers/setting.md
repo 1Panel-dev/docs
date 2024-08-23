@@ -9,14 +9,12 @@
 
 !!! Abstract ""
 
-    - 镜像加速：国内访问 Docker Hub 有时会遇到困难，此时可以配置镜像加速器。
+    - 镜像加速：应用安装失败，镜像拉取超时，此时可以配置镜像加速器进行优化。
         - 配置加速地址：
             ```properties
             https://docker.1panel.live
             ```
-        - 另外还推荐使用自己的镜像加速地址：
-            - [DaoCloud 加速器](https://www.daocloud.io/mirror#accelerator-doc)：https://<你的ID>.m.daocloud.io
-            - [阿里云加速器](https://cr.console.aliyun.com/#/accelerator)：https://<你的ID>.mirror.aliyuncs.com
+        > 配置了上述加速地址后，如果拉取应用镜像仍然失败，[可以在论坛中进一步讨论](https://bbs.fit2cloud.com/t/topic/5886)
     - 私有仓库：搭建的私有镜像仓库，如 harber、nexus、docker-registry 等。
     - iptables：该设置将关闭 Docker 对 iptables 规则的自动配置，这可能会导致容器无法与外部网络通信。
     - live-restore：停止 Docker 服务是，是否停止所有容器。
