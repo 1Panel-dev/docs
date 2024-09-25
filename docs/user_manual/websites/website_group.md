@@ -1,9 +1,8 @@
-
-## 1 创建分组
-
 !!! Abstract ""
 
-    创建网站分组。
+    **用户为网站设置分组，以便于更好地组织和管理多个网站。**
+
+## 1 创建分组
 
 ![img.png](../../img/websites/website_group.png)
 
@@ -11,14 +10,10 @@
 
 !!! Abstract ""
     
-    设置网站默认分组，创建网站自动选择。
+    设置网站默认分组后，创建新网站时会自动将其归入该分组。
 
 ![img.png](../../img/websites/default_group.png)
 
 ## 3 修改分组
-
-!!! Abstract ""
-
-    修改分组名称。
     
 ![img.png](../../img/websites/edit_group.png)

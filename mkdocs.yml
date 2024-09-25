@@ -54,10 +54,9 @@ nav:
               - 应用操作: user_manual/appstore/installed.md
         - 网站:
             - 网站:
-                - 网站概述: user_manual/websites/websites.md
+                - 概述: user_manual/websites/websites.md
                 - 创建网站: user_manual/websites/website_create.md
                 - 基本设置: user_manual/websites/website_config_basic.md
-                - 安全设置: user_manual/websites/website_config_waf.md
                 - 其他设置: user_manual/websites/website_config_other.md
                 - 网站分组: user_manual/websites/website_group.md
                 - 网站备份: user_manual/websites/website_backup.md
