@@ -57,7 +57,7 @@
 
 ## 部署流程
 
-1. 单击[部署链接](https://computenest.console.aliyun.com/service/instance/create/default?type=user&ServiceId=service-4b2eae361ae8493d851a)，进入服务实例部署界面。
+1. 单击[部署链接](https://computenest.console.aliyun.com/service/instance/create/ap-southeast-1?ServiceName=1panel%20%E8%BF%90%E7%BB%B4%E9%9D%A2%E6%9D%BF%E7%A4%BE%E5%8C%BA%E7%89%88)，进入服务实例部署界面。
 2. 选择新建ECS实例并根据界面提示配置参数，配置完成后点击下一步：确认订单。
 
    ![alibabacloud_computenest_deploy_1.jpg](../../img/installation/alibabacloud_computenest_deploy_1.jpg)
