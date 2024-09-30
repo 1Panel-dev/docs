@@ -64,8 +64,8 @@
 
 3. 点击立即创建，等待服务实例创建完成。
 
-      ![alibabacloud_computenest_deploy_2.jpg](../../img/installation/alibabacloud_computenest_deploy_2.jpg)
+   ![alibabacloud_computenest_deploy_2.jpg](../../img/installation/alibabacloud_computenest_deploy_2.jpg)
 
 4. 服务实例创建成功后，进入服务实例详情页。在概览页可获取1Panel面板登录信息，点击外网面板地址，登录1Panel面板。
    
-      ![alibabacloud_computenest_deploy_3.jpg](../../img/installation/alibabacloud_computenest_deploy_3.jpg)
+   ![alibabacloud_computenest_deploy_3.jpg](../../img/installation/alibabacloud_computenest_deploy_3.jpg)
