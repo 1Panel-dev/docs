@@ -43,8 +43,10 @@ nav:
     - 安装部署:
         - 在线安装: installation/online_installation.md
         - 离线包安装: installation/package_installation.md
-        - 阿里云安装: installation/cloud_image.md
-        - 腾讯云安装: installation/tencent_cloud.md
+        - 云平台:
+            - 阿里云镜像部署: installation/ali_cloud.md
+            - 阿里云计算巢部署: installation/alibaba-cloud-computenest.md
+            - 腾讯云应用模板部署: installation/tencent_cloud.md
         - 在线升级: installation/online_upgrade.md
         - 命令行工具: installation/cli.md
     - 功能手册:
