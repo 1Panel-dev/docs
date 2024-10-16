@@ -8,7 +8,7 @@
 
 !!! Abstract ""
 
-    单击[部署链接](https://computenest.console.aliyun.com/service/instance/create/ap-southeast-1?ServiceName=1panel%20%E8%BF%90%E7%BB%B4%E9%9D%A2%E6%9D%BF%E7%A4%BE%E5%8C%BA%E7%89%88)，进入服务实例部署界面。
+    单击[部署链接](https://computenest.console.aliyun.com/service/instance/create/default?type=user&ServiceName=1panel%E8%BF%90%E7%BB%B4%E9%9D%A2%E6%9D%BF%E7%A4%BE%E5%8C%BA%E7%89%88)，进入服务实例部署界面。
 
 !!! Abstract ""
 
