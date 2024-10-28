@@ -9,7 +9,7 @@
 !!! Abstract ""
 
     - 1Panel 已经上架到阿里云云市场，您可以通过以下链接直接购买镜像：
-    [1Panel 云市场购买链接](https://market.aliyun.com//products/56014009/cmjj00062740.html)
+    [1Panel 云市场购买链接](https://market.aliyun.com/products/53690006/cmjj00062740.html?userCode=kmemb8jp)
     
     - 您也可以自行购买阿里云服务器，并在选择镜像时搜索 **1Panel**，即可快速选择镜像进行部署。
 
@@ -17,8 +17,7 @@
 
     如果您还没有服务器，可以通过以下优惠链接购买阿里云服务器：
 
-    - [阿里云服务器0元试用，首购低至0.9元/月起](https://www.aliyun.com/daily-act/ecs/activity_selection?userCode=j57gyupo)
-    - 更多云产品优惠请点击 [此链接](https://www.aliyun.com/minisite/goods?userCode=j57gyupo)
+    - [1Panel 专属阿里云特价链接 5.5 折优惠！](https://market.aliyun.com/common/dashi/1panel?userCode=kmemb8jp)
 
 ## 2 开放端口
 

@@ -12,7 +12,7 @@
 !!! info "服务器优惠"
     如果你还没有服务器，欢迎通过以下优惠链接选购。
 
-    - 阿里云：[阿里云服务器0元试用，首购低至0.9元/月起](https://www.aliyun.com/daily-act/ecs/activity_selection?userCode=j57gyupo)，更多云产品优惠请点击[此链接](https://www.aliyun.com/minisite/goods?userCode=j57gyupo)；
+    - 阿里云：[专属阿里云特价链接 5.5 折优惠](https://market.aliyun.com/products/53690006/cmjj00062740.html?userCode=kmemb8jp)，更多云产品优惠请点击[此链接](https://market.aliyun.com/common/dashi/1panel?userCode=kmemb8jp)；
     - 腾讯云：[【腾讯云】2核2G3M云服务器7.92元/月起，2000元代金券免费领](https://curl.qcloud.com/dK2muFbM)，更多云产品优惠请点击[此链接](https://curl.qcloud.com/9Ogon25Y)；
 
 ## 2 安装部署
