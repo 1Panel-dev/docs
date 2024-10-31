@@ -9,8 +9,8 @@
 !!! Abstract ""
 
     - 1Panel 已经上架到阿里云云市场，您可以通过以下链接直接购买镜像：
-    [1Panel 云市场购买链接](https://market.aliyun.com/products/53690006/cmjj00062740.html?userCode=kmemb8jp)
-    
+        - [社区版](https://market.aliyun.com/products/53690006/cmjj00062740.html?userCode=kmemb8jp)
+        - [专业版](https://market.aliyun.com/products/56014009/cmjj00068380.html?userCode=kmemb8jp)
     - 您也可以自行购买阿里云服务器，并在选择镜像时搜索 **1Panel**，即可快速选择镜像进行部署。
 
 !!! Abstract "服务器优惠"
