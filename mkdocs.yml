@@ -101,9 +101,9 @@ nav:
                  - 概述: user_manual/xpack/waf/waf.md
                  - 概览: user_manual/xpack/waf/dashboard.md
                  - 全局设置: user_manual/xpack/waf/global.md
-                 - 网站设置: user_manual/xpack/waf/site.md  
-                 - 拦截记录: user_manual/xpack/waf/log.md  
-                 - 封锁记录: user_manual/xpack/waf/block.md  
+                 - 网站设置: user_manual/xpack/waf/site.md
+                 - 拦截记录: user_manual/xpack/waf/log.md
+                 - 封锁记录: user_manual/xpack/waf/block.md
         - 面板设置: user_manual/settings.md
     - 常见问题:
         - 产品 FAQ: faq/faq.md
@@ -112,6 +112,7 @@ nav:
         - 服务器架构相关: faq/server_architecture.md
     - 开发文档:
         - 开发环境搭建: dev_manual/dev_manual.md
+        - API 接口配置: dev_manual/api_manual.md
     - 版本迭代: changelog.md
     - 联系我们: contact.md
 
