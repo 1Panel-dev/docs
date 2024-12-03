@@ -43,10 +43,16 @@
 
 ![img.png](../../img/app/install_detail.png)
 
+!!! Abstract ""
+
+    点击参数页面右上角的【编辑】按钮，可以对部分应用参数及应用高级设置进行修改，具体支持修改的参数与应用定义有关。
+
+![img.png](../../img/app/app_modify.png)
+
 ## 6 备份 / 恢复
 
 !!! Abstract ""
-        
+
     点击【备份】按钮，进入备份列表。
 
 ![img.png](../../img/app/app_backup.png)

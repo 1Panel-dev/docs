@@ -72,8 +72,12 @@ nav:
             - 运行环境:
                 - PHP: user_manual/websites/php.md
                 - Node.js: user_manual/websites/node.md
+                - Java: user_manual/websites/java.md
+                - Golang: user_manual/websites/golang.md
+                - Python: user_manual/websites/python.md
         - 数据库:
             - MySQL: user_manual/databases/mysql.md
+            - PostgreSQL: user_manual/databases/postgresql.md
             - Redis: user_manual/databases/redis.md
         - 容器:
             - 容器: user_manual/containers/container.md
