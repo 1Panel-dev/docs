@@ -94,12 +94,16 @@ nav:
           - 监控: user_manual/hosts/monitor.md
           - 终端: user_manual/hosts/terminal.md
           - 防火墙: user_manual/hosts/firewall.md
+          - 进程管理: user_manual/hosts/process.md
+          - SSH 管理: user_manual/hosts/ssh.md
         - 工具箱:
+          - 快速设置: user_manual/toolbox/quick_settings.md
+          - 缓存清理: user_manual/toolbox/clean.md
           - 进程守护: user_manual/toolbox/supervisor.md
           - 病毒扫描: user_manual/toolbox/clam.md
           - FTP: user_manual/toolbox/ftp.md
           - Fail2ban: user_manual/toolbox/fail2ban.md
-        - 面板日志: user_manual/logs.md
+        - 日志审计: user_manual/logs.md
         - 高级功能:
               - WAF:
                  - 概述: user_manual/xpack/waf/waf.md

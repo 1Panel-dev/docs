@@ -43,7 +43,7 @@
 
         > 安装成功后，supervisor 会默认启动。
 
-## 2、初始化
+## 2 初始化
 
 !!! Abstract ""
     
@@ -59,7 +59,7 @@
 ![重新初始化](../../img/hosts/supervisor_reinit.png){ width="900px" }
 
 
-## 3、创建
+## 3 创建
 
 !!! Abstract ""
     
@@ -68,7 +68,7 @@
 ![创建](../../img/hosts/supervisor_create.png){ width="900px" }
 
 
-## 4、守护进程管理
+## 4 守护进程管理
 
 !!! Abstract ""
 
@@ -77,7 +77,7 @@
 ![创建](../../img/hosts/supervisor_list.png){ width="900px" }
 
 
-## 4、Supervisor 管理
+## 5 Supervisor 管理
 
 !!! Abstract ""
 

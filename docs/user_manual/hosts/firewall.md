@@ -123,7 +123,19 @@
 
 ![img.png](../../img/hosts/firewall_port_create.png)
 
-## 4 IP 规则
+## 4 端口转发
+
+!!! Abstract ""
+    **点击创建端口转发按钮，即可设置端口转发规则。**
+
+    - 协议：默认为 TCP 协议，有 TCP、UDP、TCP/UDP 协议，根据你的实际情况选择。
+    - 源端口：发送至源端口的报文，将被转发至 `目标 IP:目标端口`，端口范围是：0-65535。
+    - 目标 IP：如果是本机端口转发，目标IP为：127.0.0.1；如果目标IP不填写，则默认为本机端口转发。
+    - 目标端口：接收转发报文的目标端口。
+
+![img.png](../../img/hosts/firewall_port_forward.png)
+
+## 5 IP 规则
 
 !!! Abstract ""
     **点击创建 IP 规则按钮，即可设置IP规则**
