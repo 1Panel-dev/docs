@@ -1,9 +1,10 @@
 
-!!! Abstract ""
+# Summary
 
-    - 1Panel 的网站管理功能旨在为用户提供便捷、高效的网站创建与管理体验。
-    - 通过 1Panel，用户可以轻松搭建多种类型的网站，包括静态网站、反向代理站点，以及支持 PHP、Java、Node.js、Go、Python 等运行环境的网站。
-    - 面板提供了全面的管理选项，支持域名绑定、SSL 证书配置、HTTPS 启用、伪静态设置、重定向、防盗链等功能。
-    - 此外，用户还可以通过 1Panel 实现网站数据的自动备份与恢复，确保数据安全。通过这些功能，1Panel 帮助用户轻松管理服务器上的各类网站。
+1Panel's website management feature aims to provide users with a convenient and efficient website creation and management experience.
 
-![img.png](../../img/websites/website.png){ width="900px" }
+With 1Panel, users can easily build various types of websites, including static websites, reverse proxy sites, and websites supporting PHP, Java, Node.js, Go, Python, and other runtime environments.
+
+The panel offers comprehensive management options, supporting domain name binding, SSL certificate configuration, HTTPS enablement, pseudo-static settings, redirection, anti-hotlinking, and more.
+
+Furthermore, users can also use 1Panel to implement automatic backup and recovery of website data, ensuring data security. Through these features, 1Panel helps users easily manage various websites on their servers.

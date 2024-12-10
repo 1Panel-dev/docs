@@ -1,63 +1,34 @@
 
-!!! Abstract ""
+# OpenResty Operations
 
-    网站列表上方的工具栏可用于查看和配置 OpenResty。
+The toolbar above the website list is used to view and configure OpenResty.
 
-## 1 停止 / 启动 / 重启
+## Stop/start/restart
 
-!!! Abstract ""
+OpenResty applications can be managed through `Start`, `Stop` and `Restart` buttons.
 
-    可以通过按钮停止、启动或重启来管理 OpenResty 应用。
+## Reload
 
-![img.png](../../img/websites/openresty_setting.png)
+Allows users to quickly apply configuration changes without downtime, ensuring high availability of website services.
 
-## 2 重载
+## Settings
 
-!!! Abstract ""
+### Current status
 
-    允许用户在无需停机的情况下快速应用配置更改，确保网站服务的高可用性。
+Displays the current status of OpenResty, including active connections, total connections, total handshake times, total request counts, request counts, response counts, and resident processes.
 
-![img.png](../../img/websites/openresty_reload.png)
+### Configuration File
 
-## 3 设置
+This section allows you to view and modify the OpenResty configuration file. To reset the configuration file to its default settings, click the `Default Configuration` button.
 
-### 3.1 当前状态
+### Performance Tuning
 
-!!! Abstract ""
+Adjust OpenResty's performance parameters as necessary.
 
-    查看当前网站状态，包括活动连接数、总连接数、总握手次数、总请求数、请求数、响应数及驻留进程等信息。
+### Log
 
-![img.png](../../img/websites/openresty_status.png)
+View OpenResty logs, supporting real-time tracking, download, and clearing operations, with the ability to filter logs by specific time periods and line numbers.
 
-### 3.2 配置修改
+## Clean reverse proxy cache
 
-!!! Abstract ""
-
-    - 配置 OpenResty 的配置文件
-    - 点击【默认配置】按钮可将配置文件恢复到默认状态
-
-![img.png](../../img/websites/openresty_conf.png)
-
-### 3.3 性能调整
-
-!!! Abstract ""
-
-    调整 OpenResty 的相关配置参数。
-
-![img.png](../../img/websites/openresty_performance.png)
-
-### 3.4 日志
-
-!!! Abstract ""
-
-    查看 OpenResty 日志，支持实时追踪、下载、清空等操作，并可按指定时间段和行数筛选日志。
-
-![img.png](../../img/websites/openresty_log.png)
-
-## 4 清除反代缓存
-
-!!! Abstract ""
-
-    清除反向代理缓存的功能，以确保用户获取最新的内容和资源。
-
-![img.png](../../img/websites/openresty_clear_cache.png)
+This feature is used to clear the reverse proxy cache, ensuring that users get the latest content and resources.

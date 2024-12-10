@@ -1,25 +1,27 @@
-!!! Abstract ""
+# Install Application
 
-    在应用商店列表中找到并安装目标应用，您可以通过应用分类浏览，或者直接在右上角的搜索框中输入关键字快速查找。
-    > 本文将以安装 Halo 为例进行演示。
+## Browse App list
 
-## 安装步骤
+Find and install the target application in the app store list. You can browse through application categories or directly enter keywords in the search box in the top right corner for quick search.
 
-!!! Abstract ""
+![Click install button](../../img/appstore/app_list.png)
 
-    1、点击【安装】按钮进入应用详情页面。
+## Start Installation
 
-![img.png](../../img/app/app_detail.png)
+Click the `Install` button to enter the application details page.
 
-!!! Abstract ""
-    
-    2、填写数据库、端口等参数。
+![Click install button](../../img/appstore/app_install.png)
 
-![img.png](../../img/app/app_param.png)
+## Fill in App parameters
 
+Fill in parameters such as database and port.
 
-!!! Abstract ""
-    
-    3、还支持高级设置选项，例如是否暴露外部端口、资源限制以及编辑 compose 文件等。最后，点击【确认】按钮，等待应用安装完成。
+![App parameters](../../img/appstore/app_parameters.png)
 
-![img.png](../../img/app/app_install.png)
+## Advanced setting
+
+Additionally, advanced setting options are supported, such as whether to expose external ports, resource limits, and editing compose files, etc.
+
+Finally, click the `Confirm` button and wait for the application installation to complete.
+
+![Advanced setting](../../img/appstore/app_advanced.png)

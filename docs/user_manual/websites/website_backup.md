@@ -1,36 +1,19 @@
+# Backup and Restore
 
-!!! Abstract ""
+This feature facilitates the backup and restoration of website data, including the importation of existing backups, thereby ensuring the security and manageability of website content.
 
-    **支持备份和恢复网站数据，以及导入现有备份，以确保网站内容的安全和易于管理。**
+## Create a backup
 
-## 1 创建备份
+After clicking the `Backup` button, 1Panel will generate a backup file for the website in the default backup directory.
+  
+## Restore from a backup
 
-!!! Abstract ""
+Select the target backup record from the backup list, then click the `Restore` button to initiate the restoration process.
 
-    点击【备份】按钮后，系统将在默认备份目录下生成网站的备份文件。
-    
-![img.png](../../img/websites/backup_list.png)
-    
-## 2 网站恢复
+## Download a backup
 
-!!! Abstract ""
+Website backup records can be downloaded to local storage for use on the backup upload page following download.
 
-    在备份列表中选择目标备份记录，然后点击【恢复】按钮以进行恢复操作。
+## Import a backup
 
-![img.png](../../img/websites/website_restore.png)
-
-## 3 备份下载
-
-!!! Abstract ""
-
-    支持将网站备份记录下载到本地，下载后可在上传备份页面使用该文件。
-
-![img.png](../../img/websites/website_bak_download.png)
-
-## 4 导入备份
-
-!!! Abstract ""
-
-    选择网站备份文件并进行上传。
-
-![img.png](../../img/websites/website_bak_import.png)
+Uploading a previously downloaded website backup file will generate a backup record, which can be used for future restoration.

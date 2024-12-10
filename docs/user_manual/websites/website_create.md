@@ -1,70 +1,44 @@
-!!! Abstract ""
+# Create a Website
 
-    **支持一键部署多种网站创建方式，包括运行环境（PHP、Java、Node.js、Go、Python）、反向代理和静态网站等，满足不同类型网站的快速搭建需求。**
+Supports various website creation methods, including deployed applications, runtime environments (PHP, Java, Node.js, Go, Python), reverse proxy, and static websites, to meet the fast construction needs of different types of websites.
 
-## 1 一键部署
+## General Settings
 
-!!! Abstract ""
+!!! note "Parameters"
+    - **Group**: Select the group to which the website belongs;
+    - **Primary domain**: Enter the primary domain name and its port to be bound;
+    - **Other domains**: Enter other domain names and their ports to be bound;
+    - **Listen IPv6**: Enable the server to receive client requests through IPv6 addresses;
+    - **Alias**: Set the folder name for the website directory;
+    - **Description**: Write a description of the purpose of the site;
 
-    **您可以通过应用商店中提供的应用，如 WordPress 和 Halo，轻松部署网站。**
+## Website backed with Application
 
-    - **分组**：选择网站所属的分组；
-    - **应用类型**：选择已安装的应用或新安装的应用；
-    - **应用参数**：如果选择新安装应用，请填写相关参数；
-    - **主域名**：输入需要绑定的主要域名及其端口；
-    - **其他域名**：输入需要绑定的其他域名及其端口；
-    - **监听 IPv6**：使服务器能够通过 IPv6 地址接收客户端请求；
-    - **代号**：设定网站目录的文件夹名称；
-    - **备注**：填写对该站点作用的描述；
+You can easily deploy a website using applications provided in the App Store, such as WordPress.
 
-![img.png](../../img/websites/auto_create.png)
+!!! note "Parameters"
+    - **Application Type**: Select an installed application or a new application to install;
+    - **Application Parameters**: If you choose to install a new application, please fill in the relevant parameters;
 
-## 2 运行环境
+## Website backed with Runtime
 
-!!! Abstract ""
+You can create a website using the added runtime environment.
 
-    **您可以利用已添加的运行环境来创建网站。**
+!!! note "Parameters"
+    - **Type**: Select the type of runtime environment (currently supports PHP, Java, Node.js, Go, and Python);
+    - **Runtime**: Choose a created runtime environment;
+    - **FTP**: Create an FTP account corresponding to the site, with the FTP directory pointing to the site's directory;
 
-    - **分组**：选择网站所属的分组；
-    - **运行环境**：从运行环境菜单中选择已创建的运行环境（目前支持 PHP、Java、Node.js、Go、Python）；
-    - **端口**：指定网站服务的端口；
-    - **主域名**：填写需要绑定的主要域名及其端口；
-    - **其他域名**：填写需要绑定的其他域名及其端口；
-    - **监听 IPv6**：使服务器能够通过 IPv6 地址接收客户端请求；
-    - **代号**：为网站目录指定一个代号，作为文件夹名称；
-    - **创建 FTP**：创建站点的同时，为站点创建一个对应 FTP 帐户，并且 FTP 目录指向站点所在目录；
-    - **备注**：提供该站点的功能描述。
+## Reverse proxy
 
-![img.png](../../img/websites/website_runtime_create.png)
+Create a reverse proxy website to forward requests to other services on this server or other servers.
 
-## 3 反向代理
+!!! note "Parameters"
+    - **Proxy Address**: Enter the address of the existing service;
 
-!!! Abstract ""
+## Static website
 
-    **支持创建反向代理网站，允许用户将请求转发到其他服务。**
+Create a static website, providing streamlined deployment and management capabilities, simplifying the process for users to publish and maintain static content.
 
-    - **分组**：选择网站所属的分组；
-    - **主域名**：填写要绑定的主要域名及其端口；
-    - **其他域名**：填写需要绑定的其他域名及其端口；
-    - **监听 IPv6**：使服务器能够通过 IPv6 地址接收客户端请求；
-    - **代号**：设定网站目录的文件夹名称；
-    - **代理地址**：输入已有服务的地址；
-    - **备注**：描述该站点的功能或用途。
-
-![img.png](../../img/websites/proxy_create.png)
-
-## 4 静态网站
-
-!!! Abstract ""
-
-    **支持快速创建静态网站，提供便捷的部署和管理功能，让用户轻松发布和维护静态内容。**
-    
-    - **分组**：选择网站所属的分组；
-    - **主域名**：填写需要绑定的主要域名及其端口；
-    - **其他域名**：填写需要绑定的其他域名及其端口；
-    - **监听 IPv6**：使服务器能够通过 IPv6 地址接收客户端请求；
-    - **代号**：设置代号，作为网站目录的文件夹名称；
-    - **创建 FTP**：创建站点的同时，为站点创建一个对应 FTP 帐户，并且 FTP 目录指向站点所在目录；
-    - **备注**：简要描述该站点的功能或用途。
-
-![img.png](../../img/websites/static_create.png)
+!!! note "Parameters"
+    - **FTP**: Create an FTP account corresponding to the site, with the FTP directory pointing to the site's directory;

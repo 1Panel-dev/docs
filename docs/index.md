@@ -1,21 +1,28 @@
+---
+hide:
+  - navigation
+---
 
-!!! Abstract ""
-    1Panel 是一个现代化、开源的 Linux 服务器运维管理面板。
+# Introduction
 
-![UI展示](https://resource.fit2cloud.com/1panel/img/overview.png)
+## What is 1Panel?
 
-## 1 产品优势
+🔥 Top-Rated Web-Based Linux Server Management Tool. 1Panel features an intuitive web interface that seamlessly integrates server management and monitoring, container management, database administration, website management, system backup and restoration, and more, letting you streamlines your server management experience.
 
-!!! Abstract ""
+![Overview](./img/overview.png)
 
-	- **高效管理**：用户可以通过 Web 图形界面轻松管理 Linux 服务器，实现主机监控、文件管理、数据库管理、容器管理等功能；
-	- **快速建站**：深度集成开源建站软件 WordPress 和 [Halo](https://github.com/halo-dev/halo/)，域名绑定、SSL 证书配置等操作一键搞定；
-	- **应用商店**：精选上架各类高质量的开源工具和应用软件，协助用户轻松安装并升级；
-	- **安全可靠**：基于容器管理并部署应用，实现最小的漏洞暴露面，同时提供防火墙和日志审计等功能；
-	- **一键备份**：支持一键备份和恢复，用户可以将数据备份到各类云端存储介质，永不丢失。
+- **Efficient Management**: Through a user-friendly web graphical interface, 1Panel enables users to effortlessly manage their Linux servers. Key features include host monitoring, file management, database administration, and container management.
+- **Rapid Website Deployment**: With deep integration of the popular open-source website building software WordPress, 1Panel streamlines the process of domain binding and SSL certificate configuration, all achievable with just one click.
+- **Application Store**: 1Panel curates a wide range of high-quality open-source tools and applications, facilitating easy installation and updates for its users.
+- **Security and Reliability**: By leveraging containerization and secure application deployment practices, 1Panel minimizes vulnerability exposure. It further enhances security through integrated firewall management and log auditing capabilities.
+- **One-Click Backup & Restore**: Data protection is made simple with 1Panel's one-click backup and restore functionality, supporting various cloud storage solutions to ensure data integrity and availability.
 
-## 2 教学视频
+## Quick Start
 
-!!! Abstract ""
+Execute the following command to install 1Panel with one click:
 
-	您可以在哔哩哔哩（B 站）上搜索相关教学视频。[点击这里](https://space.bilibili.com/510493147/channel/collectiondetail?sid=1199760)
+```sh
+curl -sSL https://resource.1panel.hk/quick_start.sh -o quick_start.sh && bash quick_start.sh
+```
+
+Have questions or suggestions? Please [submit a GitHub Issue](https://github.com/1Panel-dev/1Panel/issues/new/choose). We value your feedback!
