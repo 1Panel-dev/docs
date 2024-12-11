@@ -1,17 +1,13 @@
 
-## 创建 PHP 运行环境
+# PHP Runtime
 
-!!! Abstract ""
-    **点击创建运行环境按钮，选择 PHP 版本和扩展**
+## Create a PHP runtime environment
 
-    - 1Panel 支持维护 5.x、7.x 和 8.x 三个大版本，用户可以根据自己的需求选择合适的版本。
+By clicking the "Create Runtime Environment" button, you can select the PHP version and extensions.
 
-![img.png](../../img/websites/runtime_list.png)
+1Panel offers support for three major PHP versions: 5.x, 7.x, and 8.x, allowing users to select the most suitable version for their specific requirements.
 
-![img.png](../../img/websites/runtime_create.png)
-
-
-## PHP 扩展列表
+## List of PHP extensions
 
 <!-- START OF EXTENSIONS TABLE -->
 <!-- ########################################################### -->

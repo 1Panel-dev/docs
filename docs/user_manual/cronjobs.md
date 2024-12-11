@@ -1,157 +1,132 @@
-## 功能说明
+# Cron Jobs
 
-!!! Abstract ""
-    主要用于管理需要定时执行的任务，如定期执行某shell脚本、定期备份、定期访问url等，同时支持手动执行。
+## Summary
 
-![img.png](../img/cronjobs/cronjob_create.png)
+This feature is mainly used to manage tasks that need to be executed regularly, such as running a shell script, regular backup, regular URL access, etc., and also supports manual execution.
 
-## 任务类型
+## Task Types
 
-### 1 Shell 脚本
+### Shell
 
-!!! Abstract "配置说明"
-    - 执行周期：选择当前计划任务的执行时间，可以同时配置多个执行周期；
-    - 在容器中执行：勾选后可以选择某个容器，在容器中执行指定的脚本；
-    - 脚本内容：具体需要执行的脚本内容；
-    - 是否告警（✨专业版）：定时任务执行失败时可以触发告警通知；
-    - 保留份数：执行记录及执行日志的保留份数，默认保存为7份；
+!!! info "Configuration Description"
+    - Execution Period: Select the execution time of the current scheduled task, and you can configure multiple execution periods at the same time;
+    - Execute in Container: After checking, you can select a container and execute the specified script in the container;
+    - Script Content: The specific script content that needs to be executed;
+    - Retention Copies: The number of retention copies of execution records and execution logs, the default is 7 copies;
 
-### 2 备份应用
+### Backup App
 
-!!! Abstract "配置说明"
+!!! info "Configuration Description"
 
-    - 执行周期：选择当前计划任务的执行时间，可以同时配置多个执行周期；
-    - 备份应用：选择需要备份的应用，可以选择指定的应用备份，也可以备份所有应用；
-    - 备份账号：备份数据的存放位置，可以保存在当前服务器磁盘，或面板设置中配置的对象存储、FTP 等外部存储服务中；
-    - 压缩密码：备份数据压缩包的保护密码；
-    - 默认下载地址：当选择了多个备份账号，用于下载备份文件时默认使用的备份账号；
-    - 是否告警（✨专业版）：定时任务执行失败时可以触发告警通知；
-    - 保留份数：默认保存为7份，保留就近备份文件的数量，可以减少备份所使用的空间；
-    - 排除规则：备份数据压缩包中需要排除的文件，例如日志文件、临时目录等，支持配置多个排除规则；
+    - Execution Period: Select the execution time of the current scheduled task, and you can configure multiple execution periods at the same time;
+    - Backup Application: Select the application that needs to be backed up, you can choose to back up a specific application, or back up all applications;
+    - Backup Account: The location where the backup data is stored, it can be saved on the current server disk, or in the object storage, FTP and other external storage services configured in the panel;
+    - Compression Password: The protection password of the backup data compression package;
+    - Default Download Address: When multiple backup accounts are selected, it is used as the default backup account when downloading backup files;
+    - Retention Copies: The default is to save 7 copies, which can reduce the space used by the backup;
+    - Exclusion Rules: The files that need to be excluded in the backup data compression package, such as log files, temporary directories, etc., support the configuration of multiple exclusion rules;
 
-### 3 备份网站
+### Backup website
 
-!!! Abstract "配置说明"
+!!! info "Configuration Description"
 
-    - 执行周期：选择当前计划任务的执行时间，可以同时配置多个执行周期；
-    - 备份网站：选择需要备份的网站，可以选择指定的网站备份，也可以备份所有网站；
-    - 备份账号：备份数据的存放位置，可以保存在当前服务器磁盘，或面板设置中配置的对象存储、FTP 等外部存储服务中；
-    - 压缩密码：备份数据压缩包的保护密码；
-    - 默认下载地址：当选择了多个备份账号，用于下载备份文件时默认使用的备份账号；
-    - 是否告警（✨专业版）：定时任务执行失败时可以触发告警通知；
-    - 保留份数：默认保存为7份，保留就近备份文件的数量，可以减少备份所使用的空间；
-    - 排除规则：备份数据压缩包中需要排除的文件，例如日志文件、临时目录等，支持配置多个排除规则；
+    - Execution Period: Select the execution time of the current scheduled task, and you can configure multiple execution periods at the same time;
+    - Backup Website: Select the website that needs to be backed up, you can choose to back up a specific website, or back up all websites;
+    - Backup Account: The location where the backup data is stored, it can be saved on the current server disk, or in the object storage, FTP and other external storage services configured in the panel;
+    - Compression Password: The protection password of the backup data compression package;
+    - Default Download Address: When multiple backup accounts are selected, it is used as the default backup account when downloading backup files;
+    - Retention Copies: The default is to save 7 copies, which can reduce the space used by the backup;
+    - Exclusion Rules: The files that need to be excluded in the backup data compression package, such as log files, temporary directories, etc., support the configuration of multiple exclusion rules;
 
-### 4 备份数据库
+### Backup database
 
-!!! Abstract "配置说明"
+!!! info "Configuration Description"
 
-    - 执行周期：选择当前计划任务的执行时间，可以同时配置多个执行周期；
-    - 备份数据库：选择需要备份的数据库，可以选择指定的数据库备份，也可以备份所有数据库；
-    - 备份账号：备份数据的存放位置，可以保存在当前服务器磁盘，或面板设置中配置的对象存储、FTP 等外部存储服务中；
-    - 压缩密码：备份数据压缩包的保护密码；
-    - 默认下载地址：当选择了多个备份账号，用于下载备份文件时默认使用的备份账号；
-    - 是否告警（✨专业版）：定时任务执行失败时可以触发告警通知；
-    - 保留份数：默认保存为7份，保留就近备份文件的数量，可以减少备份所使用的空间；
-    - 排除规则：备份数据压缩包中需要排除的文件，例如日志文件、临时目录等，支持配置多个排除规则；
+    - Execution Period: Select the execution time of the current scheduled task, and you can configure multiple execution periods at the same time;
+    - Backup Database: Select the database that needs to be backed up, you can choose to back up a specific database, or back up all databases;
+    - Backup Account: The location where the backup data is stored, it can be saved on the current server disk, or in the object storage, FTP and other external storage services configured in the panel;
+    - Compression Password: The protection password of the backup data compression package;
+    - Default Download Address: When multiple backup accounts are selected, it is used as the default backup account when downloading backup files;
+    - Retention Copies: The default is to save 7 copies, which can reduce the space used by the backup;
+    - Exclusion Rules: The files that need to be excluded in the backup data compression package, such as log files, temporary directories, etc., support the configuration of multiple exclusion rules;
 
-## 5 备份目录
+### Backup directory
 
-!!! Abstract "配置说明"
+!!! info "Configuration Description"
 
-    - 执行周期：选择当前计划任务的执行时间，可以同时配置多个执行周期；
-    - 备份目录：选择需要备份的目录；
-    - 备份账号：备份数据的存放位置，可以保存在当前服务器磁盘，或面板设置中配置的对象存储、FTP 等外部存储服务中；
-    - 压缩密码：备份数据压缩包的保护密码；
-    - 默认下载地址：当选择了多个备份账号，用于下载备份文件时默认使用的备份账号；
-    - 是否告警（✨专业版）：定时任务执行失败时可以触发告警通知；
-    - 保留份数：默认保存为7份，保留就近备份文件的数量，可以减少备份所使用的空间；
-    - 排除规则：备份数据压缩包中需要排除的文件，例如日志文件、临时目录等，支持配置多个排除规则；
+    - Execution Period: Select the execution time of the current scheduled task, and you can configure multiple execution periods at the same time;
+    - Backup Directory: Select the directory that needs to be backed up;
+    - Backup Account: The location where the backup data is stored, it can be saved on the current server disk, or in the object storage, FTP and other external storage services configured in the panel;
+    - Compression Password: The protection password of the backup data compression package;
+    - Default Download Address: When multiple backup accounts are selected, it is used as the default backup account when downloading backup files;
+    - Retention Copies: The default is to save 7 copies, which can reduce the space used by the backup;
+    - Exclusion Rules: The files that need to be excluded in the backup data compression package, such as log files, temporary directories, etc., support the configuration of multiple exclusion rules;
 
-## 6 备份日志
+### Backup logs
 
-!!! Abstract ""
+Backup the following log content:
 
-    备份以下日志内容：
+- 1Panel System Log
+- Server SSH Login Log
+- All Website Logs
 
-    - 1Panel 系统日志
-    - 服务器的 SSH 登录日志
-    - 所有网站日志
+!!! info "Configuration Description"
 
-!!! Abstract "配置说明"
+    - Execution Period: Select the execution time of the current scheduled task, and you can configure multiple execution periods at the same time;
+    - Backup Account: The location where the backup data is stored, it can be saved on the current server disk, or in the object storage, FTP and other external storage services configured in the panel;
+    - Compression Password: The protection password of the backup data compression package;
+    - Default Download Address: When multiple backup accounts are selected, it is used as the default backup account when downloading backup files;
+    - Retention Copies: The default is to save 7 copies, which can reduce the space used by the backup;
 
-    - 执行周期：选择当前计划任务的执行时间，可以同时配置多个执行周期；
-    - 备份账号：备份数据的存放位置，可以保存在当前服务器磁盘，或面板设置中配置的对象存储、FTP 等外部存储服务中；
-    - 压缩密码：备份数据压缩包的保护密码；
-    - 默认下载地址：当选择了多个备份账号，用于下载备份文件时默认使用的备份账号；
-    - 是否告警（✨专业版）：定时任务执行失败时可以触发告警通知；
-    - 保留份数：默认保存为7份，保留就近备份文件的数量，可以减少备份所使用的空间；
+### Access URL
 
-## 7 访问 URL
+!!! info "Configuration Description"
 
-!!! Abstract "配置说明"
+    - Execution Period: Select the execution time of the current scheduled task, and you can configure multiple execution periods at the same time;
+    - Retention Copies: The number of retention copies of execution records and execution logs, the default is 7 copies;
+    - URL Address: The URL address that needs to be accessed regularly;
 
-    - 执行周期：选择当前计划任务的执行时间，可以同时配置多个执行周期；
-    - 是否告警（✨专业版）：定时任务执行失败时可以触发告警通知；
-    - 保留份数：执行记录及执行日志的保留份数，默认保存为7份；
-    - URL 地址：需要定时访问的 URL 地址；
+### Cut Website Logs
 
-## 8 切割网站日志
+When the scheduled task is executed, it will split the logs of the specified website and save the previously generated logs in the backup directory.
 
-!!! Abstract ""
+!!! info "Configuration Description"
 
-    计划任务执行时会将指定网站的日志进行切割，将之前产生的日志保存在备份目录下。
+    - Execution Period: Select the execution time of the current scheduled task, and you can configure multiple execution periods at the same time;
+    - Website: Select the website that needs to be split, you can choose a specific website, or choose all websites;    
+    - Retention Copies: The default is to save 7 copies, which can reduce the space used by the backup;
 
-!!! Abstract "配置说明"
+### Cache Clean
 
-    - 执行周期：选择当前计划任务的执行时间，可以同时配置多个执行周期；
-    - 网站：选择需要进行日志切割的网站，可以选择指定的网站，也可以选择所有网站；    
-    - 是否告警（✨专业版）：定时任务执行失败时可以触发告警通知；
-    - 保留份数：默认保存为7份，保留就近切割后日志文件的数量；
+Execute the `Cache clean` task in the `Toolbox` menu of the panel.
 
-## 9 缓存清理
+!!! info "Configuration Description"
 
-!!! Abstract ""
+    - Execution Period: Select the execution time of the current scheduled task, and you can configure multiple execution periods at the same time;
+    - Retention Copies: The number of retention copies of execution records and execution logs, the default is 7 copies;
 
-    定时执行面板 `工具箱` 菜单中的 `缓存清理` 任务。
+### System snapshot
 
-!!! Abstract "配置说明"
+Execute the [`Create Snapshot`](../settings/#5) task in the `Settings`-`Snapshots` menu of the panel.
 
-    - 执行周期：选择当前计划任务的执行时间，可以同时配置多个执行周期；
-    - 是否告警（✨专业版）：定时任务执行失败时可以触发告警通知；
-    - 保留份数：执行记录及执行日志的保留份数，默认保存为7份；
+!!! info "Configuration Description"
 
-## 10 系统快照
+    - Execution Period: Select the execution time of the current scheduled task, and you can configure multiple execution periods at the same time;
+    - Backup Account: The location where the backup data is stored, it can be saved on the current server disk, or in the object storage, FTP and other external storage services configured in the panel;
+    - Compression Password: The protection password of the backup data compression package;
+    - Default Download Address: When multiple backup accounts are selected, it is used as the default backup account when downloading backup files;
+    - Retention Copies: The default is to save 7 copies, which can reduce the space used by the backup;
+    - Exclusion Rules: The files that need to be excluded in the backup data compression package, such as log files, temporary directories, etc., support the configuration of multiple exclusion rules;
 
-!!! Abstract ""
+### Time Synchronization
 
-    定时执行面板 `面本设置`-`快照` 菜单中的 [`创建快照`](../settings/#5) 任务，。
+Synchronize the time with the NTP server configured on the `Quick settings` page of the `Toolbox`.
 
-!!! Abstract "配置说明"
+!!! info "Configuration Description"
 
-    - 执行周期：选择当前计划任务的执行时间，可以同时配置多个执行周期；
-    - 备份账号：备份数据的存放位置，可以保存在当前服务器磁盘，或面板设置中配置的对象存储、FTP 等外部存储服务中；
-    - 压缩密码：备份数据压缩包的保护密码；
-    - 默认下载地址：当选择了多个备份账号，用于下载备份文件时默认使用的备份账号；
-    - 是否告警（✨专业版）：定时任务执行失败时可以触发告警通知；
-    - 保留份数：默认保存为7份，保留就近备份文件的数量，可以减少备份所使用的空间；
-    - 排除规则：备份数据压缩包中需要排除的文件，例如日志文件、临时目录等，支持配置多个排除规则；
+    - Execution Period: Select the execution time of the current scheduled task, and you can configure multiple execution periods at the same time;
+    - Retention Copies: The number of retention copies of execution records and execution logs, the default is 7 copies;
 
-## 11 同步服务器时间
+## Execution Report
 
-!!! Abstract ""
-
-    定时从 `工具箱`-`快速设置` 页面配置的 NTP 服务器进行时间同步。
-
-!!! Abstract "配置说明"
-
-    - 执行周期：选择当前计划任务的执行时间，可以同时配置多个执行周期；
-    - 是否告警（✨专业版）：定时任务执行失败时可以触发告警通知；
-    - 保留份数：执行记录及执行日志的保留份数，默认保存为7份；
-
-## 执行报告
-
-!!! Abstract ""
-    显示该任务产生的所有报告详情，支持时间、状态筛选，如果计划任务为备份，则可通过报告详情的下载按钮直接下载。
-
-![img.png](../img/cronjobs/cronjob_record.png)
+Display all the report details generated by this task, support time and status filtering, and if the scheduled task is a backup, you can directly download the report details through the download button.

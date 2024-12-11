@@ -1,14 +1,12 @@
-!!! Abstract ""
+# Quick Settings
 
-    在 `工具箱`-`快速设置` 页面，可以对常用的系统设置进行修改，包括：
+On the `Toolbox`-`Quick Settings` page, you can modify common system settings, including:
 
-    - DNS
-    - Hosts
-    - Swap
-    - 主机名
-    - 操作系统用户密码
-    - NTP 服务器
-    - 系统时区
-    - 服务器时间
-
-![img.png](../../img/toolbox/quick_settings.png)
+- DNS
+- Hosts
+- Swap
+- Hostname
+- Password of Linux user
+- NTP server
+- System timezone
+- Server time

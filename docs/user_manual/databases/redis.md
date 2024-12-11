@@ -1,71 +1,64 @@
-## 1 修改密码
+# Redis
 
-!!! Abstract ""
-    默认为随机密码，root 为最高权限账号密码，请谨慎操作。
+## Mange Redis instance
 
-## 2 Redis Commander
+### Redis instance from App Store
 
-!!! Abstract ""
-    WEB 图形化界面管理 redis 数据库的管理工具，此处不会详细讲解工具使用方法，[点击查看工具教程](http://joeferner.github.io/redis-commander/)
+Redis database applications installed through the App Store will automatically appear in the redis instance list.
 
-## 3 数据库配置
+### Remote Redis instance
 
-!!! Abstract ""
-    点击状态栏设置按钮，即可进入 Redis 具体设置界面，具体包括配置修改、当前状态、性能调整、端口、持久化。
-    其中配置界面可对 Redis 配置进行手动调整。
+Beyond the local database installed via the App Store, you can also add existing redis addresses. By clicking the `Manage remote servers` button located at the top of the list, you will be directed to the remote server management page.
 
-![img.png](../../img/databases/redis_conf.png)
+Here, you can bind a remote server by filling in the connection and authentication information.
 
-!!! Abstract ""
-    - 系统 Redis 使用 Docker 安装，配置文件默认挂载在 /opt/1panel/apps/redis/[数据库名称]/conf/redis.conf。
-    - **注意事项：** 错误的数据库配置将导致 Redis 服务不可用，请谨慎修改。
-    - 如数据库配置不正确导致服务无法正常启动，可尝试恢复默认配置后保存。
+### Switching Redis Instances
 
-## 4 当前状态
+By clicking the dropdown menu at the top of the command line area, you can switch between different redis instances, managing settings under different instances.
 
-!!! Abstract ""
-    当 Redis 查询缓慢时，可在设置界面，点击当前状态按钮，查看当前数据库包括内存分配、查询命中率等各个常用指标的状态，通过这些状态对 Redis 进行性能优化。
+## Connection information
 
-![img.png](../../img/databases/redis_status.png)
+Clicking the `View connection info` button at the top of the list allows you to view the redis database's address, port, and root password, and also modify the database root password.
 
-## 5 性能调整
+!!! info "Info"
+    Resi databases installed via the App Store operate within a container. Depending on the scenario, you must choose the appropriate connection information as prompted on the page.
 
-!!! Abstract ""
-    系统支持表单方式直接调整 Redis 相关参数，具体包括：超时时间、最大连接数、最大内存数。
+## Redis instance Operations
 
-![img.png](../../img/databases/redis_variables.png)
+You can stop/start the current Redis instance in the status bar. And by clicking the `Configure` button, you can access the specific redis settings page, which encompasses configuration modification, current status, performance tuning, port and data persistence.
 
-## 6 端口
+### Configuration file
 
-!!! Abstract ""
-    除了在用户安装 Redis 应用时可自由选择端口外，设置界面也可以直接进行端口的修改操作。
+The configuration page enables manual adjustments to the database configuration.
 
-## 7 持久化
+!!! info "Info"
+    For Redis installed through the App Store, the default configuration file is located at `/opt/1panel/apps/redis/[App name]/conf/redis.conf`.
 
-!!! Abstract ""
-    Redis 持久化分为两种：AOF 及 RDB，其中：
-    
-    - RBD: 
-        - 实现： 父进程在保存 RDB 文件时，先 fork 出来一个子进程，然后子进程处理接下来的保存工作，父进程无需执行任何磁盘 I/O 操作。
-        - 优点： 将 Redis 在某个时间点上的数据集保存在一个文件中，适用于灾难恢复，可以最大化 Redis 性能，速度更快，并且在恢复大数据集时速度更快。
-        - 缺点： 有丢失数据的风险，需要设置备份频率，一旦发生故障停机时，可能会丢失数据，而且当数据集比较大时，fork 子进程将会非常耗时造成服务停止。
-    - AOF：
-        - 实现： 定时或者在每次写入命令时追加操作到日志文件中，日志文件只进行追加操作，当 AOF 文件变的过大时，自动对 AOF 进行重写，重写仅保留恢复当前数据集所需的最小命令集合。
-        - 优点： 有序保存了对数据库执行的所有写入操作，数据不容易丢失，即使发生故障停机，也只会丢失上一次写入日志文件操作之后的数据，更可靠且更容易对文件进行分析。
-        - 缺点： 一般相同的数据集来说，AOF 体积要更大，而且速度可能会慢于 RDB。
+!!! warning "Warning"
+    - In the event of incorrect database configuration leading to service startup failures, attempt to restore the default configuration and save it.
+    - It is crucial to exercise caution when modifying the database configuration, as incorrect settings can result in the Redis service becoming unavailable.
 
-![img.png](../../img/databases/redis_backup_aof.png)
+### Current state
 
-!!! Abstract ""
+To address slow database queries, navigate to the `Current state` page, and review the status of key metrics such as memory allocation and query hit rates to optimize database performance.
 
-    - appendonly: 是否开启 AOF 备份
-    - appendfsync: 同步频率
-        - always: 每次写入时；
-        - everysec: 每秒；
-        - no: 不同步。
+### Performance tuning
 
-![img.png](../../img/databases/redis_backup_rdb.png)
+The system offers a form-based interface for directly adjusting database performance parameters.
 
-!!! Abstract ""
+### Port
 
-    - 设置持久化策略，当 Redis 满足其中任意一个条件时，将触发 RDB 持久化。 
+In addition to setting the port during Redis application installation, the `Port` page also allows for port modifications.
+
+### Persistence
+
+Redis persistence is categorized into two primary types, AOF and RDB:
+
+- RDB:
+    - Implementation: When the parent process saves the RDB file, it first forks a child process, which then handles the subsequent saving work. The parent process does not need to perform any disk I/O operations.
+    - Advantages: It saves the Redis dataset at a certain point in time in a file, suitable for disaster recovery, can maximize Redis performance, is faster, and is also faster when recovering large datasets.
+    - Disadvantages: There is a risk of data loss, requiring the setting of backup frequencies. In the event of a failure shutdown, data may be lost, and when the dataset is large, forking a child process can be very time-consuming, causing service downtime.
+- AOF:
+    - Implementation: It appends operations to the log file either periodically or after each write command. The log file only performs append operations. When the AOF file becomes too large, it automatically rewrites the AOF, retaining only the minimum command set required to recover the current dataset.
+    - Advantages: It sequentially saves all write operations executed on the database, making data loss less likely. Even in the event of a failure shutdown, only the data after the last write operation to the log file will be lost, making it more reliable and easier to analyze the file.
+    - Disadvantages: For the same dataset, the AOF volume is generally larger, and the speed may be slower than RDB.

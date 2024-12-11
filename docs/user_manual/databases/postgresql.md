@@ -1,112 +1,78 @@
-## 1 管理数据库实例
+# PostgreSQL
 
-1.1 应用商店安装数据库
+## Mange DB instance
 
-!!! Abstract ""
-    通过应用商店安装的 PostgreSQL 数据库应用，会自动出现在数据库实例列表中。
+### PostgreSQL instance from App Store
 
-1.2 远程服务器
+PostgreSQL database applications installed through the App Store will automatically appear in the database instance list.
 
-!!! Abstract ""
-    除应用商店安装的本地数据库以外，还可以添加已存在的数据库服务地址。点击列表上方的【远程服务器】按钮，即可进入远程服务器管理页面。
+### Remote PostgreSQL instance
 
-![img.png](../../img/databases/postgresql_remote.png)
+Beyond the local database installed via the App Store, you can also add existing database addresses. By clicking the `Manage remote servers` button located at the top of the list, you will be directed to the remote server management page.
 
-![img.png](../../img/databases/postgresql_remote_add.png)
+Here, you can bind a remote server by filling in the connection and authentication information.
 
-1.3 切换数据库实例
+### Switching Database Instances
 
-!!! Abstract ""
-    点击数据库列表上方的下拉菜单，即可在不同的数据库实例间进行切换，管理不同数据库实例下的数据库及设置等。
+By clicking the dropdown menu at the top of the database list, you can switch between different database instances, managing databases and settings under different instances.
 
-![img.png](../../img/databases/postgresql_select.png)
+## Creating a database
 
-## 2 创建数据库
+!!! node "Parameters"
+    - Name: The name of the new database, supporting character encoding settings.
+    - Username: The username for accessing the database.
+    - Password: Defaults to a random password, which can be modified as needed.
 
-!!! Abstract ""
-    创建一个新的数据库，输入数据库名称、用户名、密码，设置访问权限，即可成功创建一个数据库。
+## Connection information
 
-![img.png](../../img/databases/create_postgresql_db.png)
+Clicking the `View connection info` button at the top of the list allows you to view the database's address, port, and root password, and also modify the database root password.
 
-!!! Abstract ""
-    - 数据库名：新建数据库的名称。
-    - 用户名：访问该数据库的用户名。
-    - 密码：默认为随机密码，需要可以自行修改。
-    - 访问权限：默认权限本地服务器权限，选项有:本地服务器，所有人，指定 IP。
+!!! info "Info"
+    Databases installed via the App Store operate within a container. Depending on the scenario, you must choose the appropriate connection information as prompted on the page.
 
-## 3 查看连接信息
+## Sync with server
 
-!!! Abstract ""
-    点击列表上方的【连接信息】按钮，即可查看数据库的地址、端口及管理员用户名和密码等连接信息，同时可以在这里修改管理员用户密码。
+If the database list information does not match the actual situation, possibly due to the use of other database tools or applications, clicking the "Sync with Server" button at the top of the list initiates an active query of the current database list directly from the database instance.
 
-![img.png](../../img/databases/postgresql_connect.png)
+## WEB UI
 
-!!! info "注意"
-    应用商店部署的数据库采用容器化方式运行，不同的场景需要根据页面提示选择对应的连接信息。
+To manage PostgreSQL databases using a WEB UI, click the `PGAdmin4` button at the top of the list, which will redirect you to the corresponding tool page.
 
-## 4 从服务器同步
+## Backup database
 
-!!! Abstract ""
-    当使用了其他数据库工具或应用程序操作了数据库，数据库列表信息与实际不一致时，可以点击列表上方的【从服务器同步】按钮，主动从数据库查询当前数据库列表。
+The backup operation in the operation column allows you to back up the current database content or manage existing backups.
 
-## 5 WEB 管理工具
+!!! info "Info"
+    - The default backup path is `/opt/1panel/backup/database/postgresql`.
+    - Backups are performed using `pg_dump`.
 
-!!! Abstract ""
-    如果需要使用 WEB 图形化界面管理 PostgreSQL 数据库，可以列表上方的【PGAdmin4】按钮，跳转到对应工具页面。
+## Restore from a backup
 
-## 6 备份
+By clicking the import backup button, you can choose to upload locally or restore from an existing backup file.
 
-!!! Abstract ""
-    点击备份列表按钮，选择备份，即可备份当前数据库文件。
+!!! info "Info"
 
-![img.png](../../img/databases/backup_postgresql_db.png)
+    - Ensure the `.sql` file is present in the uploaded archive when restoring from an uploaded file, as its absence will result in an unsuccessful import.
 
-!!! Abstract ""
-    - 默认数据库路径为 /opt/1panel/backup/database/postgresql。
-    - 备份使用 pg_dump 方式。
+## Change permissions
 
-## 7 恢复
+Click the `Change permissions` button in the operation column to modify whether the user bound to the current database is a superuser.
 
-!!! Abstract ""
-    点击导入备份按钮，可以选择本地上传，或选择已备份的文件还原。
+## DB instance Operations
 
-![img.png](../../img/databases/recover_postgresql_db.png)
+You can stop/start the current DB instance in the status bar. And by clicking the `Configure` button, you can access the specific database settings page, which encompasses configuration modification, port, logs, and slow logs.
 
-!!! Abstract ""
+### Configuration file
 
-    - 如从上传文件恢复，则需要保证上传文件压缩包内存在 test.sql 文件，否则无法正确导入。
+The configuration page enables manual adjustments to the database configuration.
 
-## 8 权限设置
+!!! info "Info"
+    For PostgreSQL installed through the App Store, the default configuration file is located at `/opt/1panel/apps/postgresql/[App name]/data/postgresql.cnf`.
 
-!!! Abstract ""
-    点击操作列的【权限】按钮，可以修改当前数据库绑定的用户是否为超级用户。
+!!! warning "Warning"
+    - In the event of incorrect database configuration leading to service startup failures, attempt to restore the default configuration and save it.
+    - It is crucial to exercise caution when modifying the database configuration, as incorrect settings can result in the PostgreSQL service becoming unavailable.
 
-## 9 修改密码
+### Port
 
-!!! Abstract ""
-    - 修改当前的数据库绑定用户的密码。
-    - **注意事项：** 当前修改的密码为非默认管理员密码。
-
-## 10 数据库配置
-
-!!! Abstract ""
-    点击状态栏设置按钮，即可进入数据库具体设置界面，具体包括配置修改、端口、日志查看。
-    其中配置界面可对数据库配置进行手动调整。
-
-![img.png](../../img/databases/postgresql_conf.png)
-
-!!! Abstract ""
-    - 系统 PostgreSQL 使用 Docker 安装，配置文件默认挂载在 /opt/1panel/apps/postgresql/[数据库名称]/data/postgresql.cnf。
-    - **注意事项：** 错误的数据库配置将导致 PostgreSQL 服务不可用，请谨慎修改。
-
-## 11 端口
-
-!!! Abstract ""
-    除了在用户安装 PostgreSQL 应用时可自由选择端口外，设置界面也可以直接进行端口的修改操作。
-
-## 12 日志
-
-!!! Abstract ""
-    - 系统 PostgreSQL 使用 Docker 安装，本处产生日志为对应 PostgreSQL 容器产生的日志。支持时间段筛选、追踪及下载操作。
-
-![img.png](../../img/databases/postgresql_log.png)
+In addition to setting the port during PostgreSQL application installation, the `Port` page also allows for port modifications.

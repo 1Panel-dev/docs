@@ -1,8 +1,7 @@
-## 1 Acme 账户管理
+# ACME Account
 
-!!! Abstract ""
+1Panel uses [Lego (Let's Encrypt client and ACME library written in Go)] to automate SSL certificate management.
 
-    点击证书列表上方的【Acme 账户】按钮，弹出 Acme 账户管理页面。在该页面中可以创建 Acme 账户或删除已有的 Acme 账户。
-    目前支持的账户类型有 Let's Encrypt 、 ZeroSSL 、 Buypass、Google Cloud。
+Click the `ACME Account` button above the certificate list to open the ACME account management page. Here, you can create or delete ACME accounts.
 
-![img.png](../../img/websites/certificate_acme.png)
+Currently supported account types include Let's Encrypt, ZeroSSL, Buypass, and Google Cloud.

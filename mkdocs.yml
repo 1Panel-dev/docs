@@ -5,7 +5,7 @@ site_description: "1Panel Top-Rated Web-based Linux Server Management Tool"
 repo_name: "1Panel"
 repo_url: "https://github.com/1Panel-dev/1Panel"
 edit_uri: https://github.com/1Panel-dev/docs/edit/i18n/docs/
-copyright: Copyright &copy; 2014-2024 Lingxia (Hong Kong) Software Co., Limited, All Rights Reserved.
+copyright: Copyright &copy; 2024 Lingxia (Hong Kong) Software Co., Limited, All Rights Reserved.
 
 ## customization
 theme:
@@ -37,6 +37,7 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true  
+  - tables
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -56,7 +57,7 @@ nav:
           - Install Application: user_manual/appstore/install.md
           - App Operations: user_manual/appstore/operations.md
       - Website:
-          - Website:
+          - Websites:
               - Summary: user_manual/websites/websites.md
               - Create a Website: user_manual/websites/website_create.md
               - Basic Settings: user_manual/websites/website_config_basic.md
@@ -66,23 +67,22 @@ nav:
               - Backup and Restore: user_manual/websites/website_backup.md
               - Delete a Website: user_manual/websites/website_delete.md
               - OpenResty Operations: user_manual/websites/openresty.md
-          - Certificate:
+          - SSL Certificate:
               - Summary: user_manual/websites/certificate.md
-              - Request Certificate: user_manual/websites/certificate_create.md
-              - Renew Certificate: user_manual/websites/certificate_renew.md
-              - Acme Account: user_manual/websites/certificate_acme.md
+              - Request a Certificate: user_manual/websites/certificate_request.md
+              - ACME Account: user_manual/websites/certificate_acme.md
               - DNS Provider: user_manual/websites/certificate_dns.md
           - Runtime:
-              - PHP: user_manual/websites/php.md
-              - Node.js: user_manual/websites/node.md
-              - Java: user_manual/websites/java.md
-              - Golang: user_manual/websites/golang.md
-              - Python: user_manual/websites/python.md
-      - Database:
-          - MySQL: user_manual/databases/mysql.md
+              - PHP: user_manual/websites/runtime_php.md
+              - Node.js: user_manual/websites/runtime_node.md
+              - Java: user_manual/websites/runtime_java.md
+              - Golang: user_manual/websites/runtime_golang.md
+              - Python: user_manual/websites/runtime_python.md
+      - Databases:
+          - MySQL and MariaDB: user_manual/databases/mysql.md
           - PostgreSQL: user_manual/databases/postgresql.md
           - Redis: user_manual/databases/redis.md
-      - Container:
+      - Containers:
           - Container: user_manual/containers/container.md
           - Compose: user_manual/containers/compose.md
           - Image: user_manual/containers/image.md
@@ -91,7 +91,7 @@ nav:
           - Registry: user_manual/containers/repo.md
           - Compose template: user_manual/containers/compose_template.md
           - Setting: user_manual/containers/setting.md
-      - Cron Job: user_manual/cronjobs.md
+      - Cron Jobs: user_manual/cronjobs.md
       - Host:
           - File: user_manual/hosts/file.md
           - Monitor: user_manual/hosts/monitor.md
@@ -106,6 +106,6 @@ nav:
           - Virus Scan: user_manual/toolbox/clam.md
           - FTP: user_manual/toolbox/ftp.md
           - Fail2ban: user_manual/toolbox/fail2ban.md
-      - Log: user_manual/logs.md
-      - Setting: user_manual/settings.md
+      - Logs: user_manual/logs.md
+      - Settings: user_manual/settings.md
   - Tutorials: tutorials.md
