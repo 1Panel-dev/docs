@@ -36,7 +36,10 @@ markdown_extensions:
   ## content tabs
   - pymdownx.superfences
   - pymdownx.tabbed:
-      alternate_style: true  
+      alternate_style: true
+  ## grid
+  - attr_list
+  - md_in_html      
   - tables
   - attr_list
   - pymdownx.emoji:
@@ -74,38 +77,39 @@ nav:
               - DNS Provider: user_manual/websites/certificate_dns.md
           - Runtime:
               - PHP: user_manual/websites/runtime_php.md
-              - Node.js: user_manual/websites/runtime_node.md
-              - Java: user_manual/websites/runtime_java.md
-              - Golang: user_manual/websites/runtime_golang.md
-              - Python: user_manual/websites/runtime_python.md
+            #   - Node.js: user_manual/websites/runtime_node.md
+            #   - Java: user_manual/websites/runtime_java.md
+            #   - Golang: user_manual/websites/runtime_golang.md
+            #   - Python: user_manual/websites/runtime_python.md
       - Databases:
           - MySQL and MariaDB: user_manual/databases/mysql.md
           - PostgreSQL: user_manual/databases/postgresql.md
           - Redis: user_manual/databases/redis.md
       - Containers:
-          - Container: user_manual/containers/container.md
-          - Compose: user_manual/containers/compose.md
-          - Image: user_manual/containers/image.md
-          - Network: user_manual/containers/network.md
-          - Volume: user_manual/containers/volume.md
-          - Registry: user_manual/containers/repo.md
-          - Compose template: user_manual/containers/compose_template.md
-          - Setting: user_manual/containers/setting.md
+          - Introduction: user_manual/containers/introduction.md
+          - Containers: user_manual/containers/containers.md
+          - Composes: user_manual/containers/composes.md
+          - Images: user_manual/containers/images.md
+          - Networks: user_manual/containers/networks.md
+          - Volumes: user_manual/containers/volumes.md
+        #   - Comtainer Registries : user_manual/containers/registries.md
+        #   - Compose Templates: user_manual/containers/compose_templates.md
+        #   - Settings: user_manual/containers/settings.md
       - Cron Jobs: user_manual/cronjobs.md
-      - Host:
-          - File: user_manual/hosts/file.md
-          - Monitor: user_manual/hosts/monitor.md
-          - Terminal: user_manual/hosts/terminal.md
-          - Firewall: user_manual/hosts/firewall.md
-          - Process: user_manual/hosts/process.md
-          - SSH Setting: user_manual/hosts/ssh.md
+    #   - Host:
+    #       - File: user_manual/hosts/file.md
+    #       - Monitor: user_manual/hosts/monitor.md
+    #       - Terminal: user_manual/hosts/terminal.md
+    #       - Firewall: user_manual/hosts/firewall.md
+    #       - Process: user_manual/hosts/process.md
+    #       - SSH Setting: user_manual/hosts/ssh.md
       - Toolbox:
           - Quick Setup: user_manual/toolbox/quick_settings.md
           - Cache clean: user_manual/toolbox/clean.md
-          - Supervisor: user_manual/toolbox/supervisor.md
+        #   - Supervisor: user_manual/toolbox/supervisor.md
           - Virus Scan: user_manual/toolbox/clam.md
           - FTP: user_manual/toolbox/ftp.md
-          - Fail2ban: user_manual/toolbox/fail2ban.md
-      - Logs: user_manual/logs.md
-      - Settings: user_manual/settings.md
-  - Tutorials: tutorials.md
+        #   - Fail2ban: user_manual/toolbox/fail2ban.md
+    #   - Logs: user_manual/logs.md
+    #   - Settings: user_manual/settings.md
+#   - Tutorials: tutorials.md
