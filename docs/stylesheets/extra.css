@@ -1,0 +1,9 @@
+:root {}
+
+.md-content img {
+    box-shadow: 4px 16px 20px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    border-style: solid;
+    border-color: rgba(107 114 128 / 0.15);
+    border-width: 1px;
+    border-radius: 0.25rem;
+}
