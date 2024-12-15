@@ -50,6 +50,9 @@ extra:
   version:
     method: mike
 
+plugins:
+  - glightbox
+
 ## content nav
 nav:
   - Introduction: index.md
