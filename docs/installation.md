@@ -1,8 +1,3 @@
----
-hide:
-  - navigation
----
-
 # Installation Guide
 
 ## Prerequisites
@@ -24,17 +19,11 @@ curl -sSL https://resource.1panel.hk/quick_start.sh -o quick_start.sh && bash qu
 
 After installation, the console will print the access information for 1Panel:
 
-![Access Info](../img/installation/access_info.png)
+![Access Info](./img/installation/access_info.png)
 
 !!! tips "Tips"
     - If you are using a cloud server, please release the service port of 1Panel in the security group.
-    - You can use [`1pctl user-info`](#1pctl-cli) command to get the security entrance again.
-
-## Upgrade 1Panel
-
-Login to the 1Panel Web console and click the `Check for Updates` button in the right bottom right corner to perform an online upgrade.
-
-![Check for updates](./img/installation/check_for_updates.png)
+    - You can use [`1pctl user-info`](#1pctl-cli) command to get the access information again.
 
 ## 1pctl CLI
 
@@ -61,7 +50,7 @@ Commands:
 
 ### 1pctl user-info
 
-Get the current access info.
+Use `1pctl user-info` command to get the current access info.
 
 ```text
 Panel address: http://$LOCAL_IP:30083/d454db640a
@@ -72,7 +61,7 @@ Tip: To change the password, you can execute the command: 1pctl update password
 
 ### 1pctl reset
 
-Reset 1Panel system information, including canceling secure entrance login, canceling two-factor authentication, etc..
+Use `1pctl reset` command to reset 1Panel system information, including canceling secure entrance login, canceling two-factor authentication, etc..
 
 ```text
 Reset system info
@@ -96,7 +85,7 @@ Use "1panel reset [command] --help" for more information about a command.
 
 ### 1pctl listen-ip
 
-Change 1Panel listening IP.
+Use `1pctl listen-ip` to change 1Panel listening IP.
 
 ```text
 Update panel info
@@ -117,7 +106,7 @@ Use "1panel listen-ip [command] --help" for more information about a command.
 
 ### 1pctl update
 
-Update 1Panel username, password and listening port.
+Use `1pctl update` command to update 1Panel username, password and listening port.
 
 ```text
 Update panel info

@@ -42,7 +42,6 @@ markdown_extensions:
   - attr_list
   - md_in_html      
   - tables
-  - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -54,15 +53,18 @@ extra:
 ## content nav
 nav:
   - Introduction: index.md
-  - Installation: installation.md
+  - Get Started:
+    - Quick Start: quick_start.md
+    - Advanced Installation Instructions: installation.md
+    - Upgrade 1Panel: upgrade.md
   - User Manual:
       - App Store:
-          - Summary: user_manual/appstore/appstore.md
+          - Introduction: user_manual/appstore/appstore.md
           - Install Application: user_manual/appstore/install.md
           - App Operations: user_manual/appstore/operations.md
       - Website:
           - Websites:
-              - Summary: user_manual/websites/websites.md
+              - Introduction: user_manual/websites/websites.md
               - Create a Website: user_manual/websites/website_create.md
               - Basic Settings: user_manual/websites/website_config_basic.md
               - Website Logs: user_manual/websites/website_logs.md
@@ -72,7 +74,7 @@ nav:
               - Delete a Website: user_manual/websites/website_delete.md
               - OpenResty Operations: user_manual/websites/openresty.md
           - SSL Certificate:
-              - Summary: user_manual/websites/certificate.md
+              - Introduction: user_manual/websites/certificate.md
               - Request a Certificate: user_manual/websites/certificate_request.md
               - ACME Account: user_manual/websites/certificate_acme.md
               - DNS Provider: user_manual/websites/certificate_dns.md
