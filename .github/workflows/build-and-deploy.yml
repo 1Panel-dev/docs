@@ -36,5 +36,5 @@ jobs:
             unzip site.zip
             rm -rf /opt/1panel/docs/*
             mv /tmp/site/* /opt/1panel/docs
-            /opt/nginx/bin/reload-nginx.sh
+            /usr/local/nginx/sbin/nginx -s reload
             rm -rf /tmp/site*
