@@ -1,0 +1,40 @@
+name: Build and deploy
+on:
+  workflow_dispatch:
+jobs:
+  compile-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check
+        uses: actions/checkout@v4
+      - name: Build
+        run: |
+          sudo apt-get update 
+          sudo apt-get install -y --no-install-recommends zip
+          docker run --rm -v ${PWD}:/docs registry.fit2cloud.com/public/mkdocs-material:latest build
+          zip -r -q -9 site.zip site
+          ls -la site.zip
+      - name: Upload
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.PANEL_CN_HOST }}
+          username: ${{ secrets.PANEL_CN_HOST_USERNAME }}
+          port: 22
+          key: ${{ secrets.PANEL_CN_HOST_KEY }}
+          source: "site.zip"
+          target: /tmp
+      - name: Deploy
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.PANEL_CN_HOST }}
+          username: ${{ secrets.PANEL_CN_HOST_USERNAME }}
+          key: ${{ secrets.PANEL_CN_HOST_KEY }}
+          port: 22
+          script: |
+            cd /tmp
+            rm -rf site
+            unzip site.zip
+            rm -rf /opt/1panel/docs/*
+            mv /tmp/site/* /opt/1panel/docs
+            /opt/nginx/bin/reload-nginx.sh
+            rm -rf /tmp/site*
