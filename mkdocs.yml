@@ -100,22 +100,24 @@ nav:
           - Volumes: user_manual/containers/volumes.md
         #   - Comtainer Registries : user_manual/containers/registries.md
         #   - Compose Templates: user_manual/containers/compose_templates.md
-        #   - Settings: user_manual/containers/settings.md
+          - Settings: user_manual/containers/settings.md
       - Cron Jobs: user_manual/cronjobs.md
-    #   - Host:
+      - System:
     #       - File: user_manual/hosts/file.md
     #       - Monitor: user_manual/hosts/monitor.md
     #       - Terminal: user_manual/hosts/terminal.md
-    #       - Firewall: user_manual/hosts/firewall.md
+          - Firewall: user_manual/system/firewall.md
     #       - Process: user_manual/hosts/process.md
     #       - SSH Setting: user_manual/hosts/ssh.md
       - Toolbox:
           - Quick Setup: user_manual/toolbox/quick_settings.md
           - Cache clean: user_manual/toolbox/clean.md
-        #   - Supervisor: user_manual/toolbox/supervisor.md
+          - Supervisor: user_manual/toolbox/supervisor.md
           - Virus Scan: user_manual/toolbox/clam.md
           - FTP: user_manual/toolbox/ftp.md
-        #   - Fail2ban: user_manual/toolbox/fail2ban.md
+          - Fail2ban: user_manual/toolbox/fail2ban.md
     #   - Logs: user_manual/logs.md
-    #   - Settings: user_manual/settings.md
+      - Settings: user_manual/settings.md
 #   - Tutorials: tutorials.md
+  - Development Manual:
+    - API Manual: dev_manual/api_manual.md

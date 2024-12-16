@@ -1,75 +1,62 @@
+# Fail2ban
 
-## 1 安装
+## Introduction
+
+Fail2Ban scans log files like /var/log/auth.log and bans IP addresses conducting too many failed login attempts. It does this by updating system firewall rules to reject new connections from those IP addresses, for a configurable amount of time. Fail2Ban comes out-of-the-box ready to read many standard log files, such as those for sshd and Apache, and is easily configured to read any log file of your choosing, for any error you wish.
+
+1Panel uses Fail2Ban to reduce the rate of incorrect authentication attempts.
+
+## Installing Fail2ban
 
 === "RedHat / CentOS"
-    !!! Abstract ""
-        **1、安装 epel 源**
-
-        ```shell
-        yum install -y epel-release
-        ```
-
-        **2、安装 Fail2ban**
-        
-        ```shell
-        yum install -y fail2ban
-        ```
-
-        **3、启动 Fail2ban 服务**
-        
-        ```shell
-        systemctl start fail2ban
-        ```
-        
-        **4、开机自启动**
-
-        ```shell
-        systemctl enable fail2ban
-        ```
-        
-        **5、查看 Fail2ban 服务状态。**
-
-        ```shell
-        systemctl status fail2ban
-        ```
+    1. Install the EPEL repository
+    ```shell
+    yum install -y epel-release
+    ```
+    2. Install Fail2ban
+    ```shell
+    yum install -y fail2ban
+    ```
+    3. Start the Fail2ban service
+    ```shell
+    systemctl start fail2ban
+    ```
+    4. Enable Fail2ban to start at boot
+    ```shell
+    systemctl enable fail2ban
+    ```
+    5. Check the status of the Fail2ban service
+    ```shell
+    systemctl status fail2ban
+    ```
 
 === "Ubuntu / Debian"
-    !!! Abstract ""
-        **1、安装 Fail2ban**
-        
-        ```shell
-        sudo apt-get install fail2ban
-        ```
+    1. Install Fail2ban
+    ```shell
+    sudo apt-get install fail2ban
+    ```
+    2. For Debian 12 and later versions, rsyslog needs to be installed manually
+    ```shell
+    sudo apt-get install rsyslog
+    ```
+    3. Start the Fail2ban service
+    ```shell
+    sudo systemctl start fail2ban
+    ```
+    4. Enable Fail2ban to start at boot
+    ```shell
+    sudo systemctl enable fail2ban
+    ```
+    5. Check the status of the Fail2ban service
+    ```shell
+    sudo systemctl status fail2ban
+    ```
 
-        **2、Debian 12 及以上的版本需要手动安装 rsyslog**
+## Configuration
 
-        ```shell
-        sudo apt-get install rsyslog
-        ```
+On the 1Panel console, Fail2ban configurations can be viewed and modified, enabling the management of IP lists that are either allowed or blocked.
 
-        **3、启动 Fail2ban 服务**
-        
-        ```shell
-        sudo systemctl start fail2ban
-        ```
-        
-        **4、开机自启动**
-
-        ```shell
-        sudo systemctl enable fail2ban
-        ```
-        
-        **5、查看 Fail2ban 服务状态。**
-
-        ```shell
-        sudo systemctl status fail2ban
-        ```
-
-## 2 默认配置
-
-!!! Abstract ""
-
-    1Panel 会默认使用以下配置：
+!!! Abstract "Default Configuration"
         ```properties
         #DEFAULT-START
         [DEFAULT]
@@ -81,28 +68,26 @@
         #DEFAULT-END
         
         [sshd]
-        ignoreip = 127.0.0.1/8               # 白名单
+        ignoreip = 127.0.0.1/8
         enabled = true
         filter = sshd
-        port = 22                            # 端口
-        maxretry = 2                         # 最大尝试次数
-        findtime = 300                       # 发现周期 单位s
-        bantime = 600                        # 封禁时间，单位s。-1为永久封禁
+        port = 22                         
+        maxretry = 2                       
+        findtime = 300
+        bantime = 600       
         action = %(action_mwl)s
-        banaction = iptables-multiport       # 禁用方式
-        logpath = /var/log/secure            # SSH 登陆日志位置
+        banaction = iptables-multiport
+        logpath = /var/log/secure
         ```
 
-## 3 故障排除
+## Troubleshooting
 
-!!! Abstract ""
-
-    - 如之前已经手动安装过 Fail2ban，需要将 [sshd] 部分的配置信息写入到 jail.local 中，重启 fail2ban 服务，否则可能出现获取黑名单报错的问题；
-    - 如果选择的禁用方式为 -muliport，则在封禁时，只会禁用配置中的端口，如默认配置中的 22；
-    - 如果需要修改禁用方式，需要先判读对应服务是否正常可用；
-        - RedHat/CentOS 使用的是 Firewall 防火墙。
-        - Debian/Ubuntu使用的是 UFW 防火墙。
-    - 日志路径需要根据操作系统修改。
-        - RedHat/CentOS 日志为 /var/log/secure。
-        - Debian/Ubuntu 日志为 /var/log/auth.log
-    - Debian 从 12 开始弃用了 rsyslog，使用时需要先自行安装；
+- If Fail2ban has been manually installed previously, it is necessary to write the configuration information of the [sshd] section into jail.local and restart the fail2ban service, otherwise, errors may occur when retrieving the blacklist.
+- If the chosen ban method is multiport, only the ports configured, such as the default configuration's 22, will be banned during the ban process.
+- If you need to modify the ban method, you must first determine whether the corresponding service is normally available.
+    - RedHat/CentOS use the Firewall firewall.
+    - Debian/Ubuntu use the UFW firewall.
+- The log path needs to be modified based on the operating system.
+    - For RedHat/CentOS, the log is /var/log/secure.
+    - For Debian/Ubuntu, the log is /var/log/auth.log.
+- Debian has abandoned rsyslog starting from version 12, and it needs to be installed manually before use.
