@@ -10,12 +10,12 @@
 我们设计了以下自定义 Token 格式，用于接口请求的身份验证：
 
 ```text
-Token = md5('1panel' + 1Panel-Token + UnixTimestamp)
+Token = md5('1panel' + API-Key + UnixTimestamp)
 ```
 组成部分：
 
 - 固定前缀: '1panel'
-- 1Panel-Token: 面板 API 接口密钥
+- API-Key: 面板 API 接口密钥
 - UnixTimestamp: 当前的时间戳（秒级）
 
 ### 请求 Header 设计
@@ -40,7 +40,7 @@ curl -X GET "http://localhost:4004/api/v1/resource" \
 func validateToken(c *gin.Context) error {
     panelToken := c.GetHeader("1Panel-Token")
     panelTimestamp := c.GetHeader("1Panel-Timestamp")
-    expectedToken := md5Sum("1panel" + panelToken + panelTimestamp)
+    systemToken := panelToken
     systemKey = ******* // 面板 API 密钥
     expectedToken := md5Sum("1panel" + systemKey + panelTimestamp)
     if systemToken != expectedToken {
