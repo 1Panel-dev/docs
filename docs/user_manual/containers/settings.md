@@ -13,4 +13,4 @@ For common configurations, 1Panel offers a visual configuration form:
 - cgroup driver
 - Unix domain socket
 
-In addition, you can use text mode to view and modify all configurations.
+In addition, you can use text mode to view and modify the whole configurations.
