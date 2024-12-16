@@ -57,3 +57,7 @@
 .browser-mockup>* {
   display: block;
 }
+
+.browser-mockup>a {
+  line-height: 0;
+}
