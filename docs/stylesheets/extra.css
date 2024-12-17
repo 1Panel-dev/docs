@@ -1,19 +1,39 @@
 :root {}
 
-/* .md-content img {
-  box-shadow: 4px 16px 20px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  border-style: solid;
-  border-color: rgba(107 114 128 / 0.15);
-  border-width: 1px;
-  border-radius: 0.25rem;
-} */
+/* 不添加额外样式的图片样式 */
+.md-content .original img:not(.browser-mockup img) {
+  display: block;
+  border: none;
+  box-shadow: none;
+}
 
+/* 不添加浏览器导航栏的图片样式 */
+.md-content img:not(.browser-mockup img) {
+  display: block;
+  box-shadow: 0 0.1em .5em 0 rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 4px;
+}
+
+.browser-mockup.none {
+  border-top: 0;
+  border-radius: 4px;
+}
+
+.browser-mockup.none img {
+  border-radius: 4px;
+}
+
+.browser-mockup.none:before {
+  display: none;
+}
+
+/* 添加浏览器导航栏的图片样式 */
 .browser-mockup {
   border-top: 2em solid rgba(230, 230, 230, 0.8);
   box-shadow: 0 0.1em .5em 0 rgba(0, 0, 0, 0.4);
-  /* box-shadow: 4px 16px 20px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); */
   position: relative;
-  border-radius: 3px 3px 0 0
+  border-radius: 4px 4px 0 0
 }
 
 .browser-mockup:before {

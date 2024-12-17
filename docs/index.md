@@ -10,6 +10,7 @@ hide:
 🔥 Top-Rated Web-Based Linux Server Management Tool. 1Panel features an intuitive web interface that seamlessly integrates server management and monitoring, container management, database administration, website management, system backup and restoration, and more, letting you streamline your server management experience.
 
 ![Overview](https://resource.1panel.hk/img/1panel.png)
+{ .original }
 
 ## Features
 
