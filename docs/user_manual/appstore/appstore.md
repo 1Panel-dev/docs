@@ -1,6 +1,6 @@
 # App Store
 
-The App Store aims to provide users with a convenient and efficient application deployment and management experience. Through the App Store, users can install various common site-building tools, services, and development environments with one click, such as WordPress, Halo, PHP, Node.js, MySQL, etc., without the need for complex manual configurations.
+The App Store aims to provide users with a convenient and efficient application deployment and management experience. Through the App Store, users can install various common site-building tools, services, and development environments with one click, such as WordPress, PHP, Node.js, MySQL, etc., without the need for complex manual configurations.
 
 !!! tip "Tips"
 
