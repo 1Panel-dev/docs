@@ -4,13 +4,13 @@
 
 The panel settings view offers support for various fundamental panel settings, encompassing:
 
-- Panel User: The 1Panel system only supports single-host single-user, and this is the validation information used to log in to the 1Panel panel, initialized by the user at the first login.
+- Panel User: The 1Panel system only supports single-host, single-user, and this is the validation information used to log in to the 1Panel panel, initialized by the user at the first login.
 - Panel Password: The password used to log in to the 1Panel panel.
 - Theme: The system supports light (light) and dark (dark) themes, which can be manually switched according to user habits, or can be selected to follow the system, automatically switching based on the theme mode used by the browser and operating system.
 - Menu Tabs: After enabling, it will list the most recently visited menus at the top of the page through multiple tabs.
 - Panel alias: Users can customize the panel name.
-- Language: The system currently supports Chinese and English.
-- Session timeout: This is the time after which the system automatically logs out if the user does not operate after logging in, with a minimum timeout time of 300 seconds.
+- Language: The system currently supports both Chinese and English.
+- Session timeout: This is the time after which the system automatically logs out if the user does not operate after logging in, with a minimum timeout of 300 seconds.
 - Server Address: Set the address of the current server, and after configuration, you can quickly open the service page of the specified application by clicking on the service port of the installed application in the app store.
 - Enable API: Allow third-party applications to access the API.
 - Preview program: After enabling, you can get the preview version of 1Panel to share feedback on new features and updates.
@@ -19,7 +19,7 @@ The panel settings view offers support for various fundamental panel settings, e
 
 For users with high system requirements, we have introduced some advanced security settings, including:
 
-- Panel Port: Modify the port used by the 1Panel service, but exercise caution to avoid conflicts with application ports that may prevent the service from starting. It is recommended to run `netstat -tunlp | grep [port]` before modifying the port to check if it is in use.
+- Panel Port: Modify the port used by the 1Panel service, but exercise caution to prevent conflicts with application ports that may prevent the service from starting. It is recommended to run `netstat -tunlp | grep [port]` before modifying the port to check if it is in use.
 - Bind info: Modify the IP address that the 1Panel service listens on, with caution to ensure that the listening address does not prevent the current client from accessing the panel.
 - Entrance: After enabling the secure entry, access to the panel is only possible through the specified secure entry, with support for configuring whether to enable related prompts.
 - Unauthorized setting: Configure the content returned when accessing the panel without using a secure entry.
@@ -97,7 +97,7 @@ When adding OneDrive account, 1Panel defaults to using a unified Azure applicati
 1. Access and log in to Microsoft Azure: https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade
 2. Click on New Registration and fill in the registration information, where the Redirect URI serves as the Redirect URL parameter
 3. The Application (Client) ID on the homepage serves as the Client ID
-4. On the Certificates & Secrets page, create a new client secret, fill in the relevant information, and the generated value serves as the Client Secret
+4. On the Certificates & Secrets page, create a new client secret, fill in the relevant information, and the generated value will serve as the Client Secret
 5. On the API Permissions page, select the required permissions, add permissions, Microsoft Graph, delegated permissions, and check Files.ReadWrite.All, offline_access, User.Read, which will be passed as the scope
 
 ### Auth code of OneDrive
@@ -108,6 +108,18 @@ You can follow the steps below to obtain the auth code for calling the OneDrive 
 2. Enter OneDrive account information
 3. Trust the 1Panel service
 4. Copy the authorization code from the address bar of browser into the 1Panel `Auth code` (note: do not include the &session_state=xxx part)
+
+### WebDAV with Alist
+
+[Alist](https://alist.nn.ci/) is a file list program that supports multiple storage, available for installation in the 1Panel App Store. Alist enables the conversion of various forms of network storage into WebDAV for integration with 1Panel backup accounts.
+When adding a WebDAV backup account provided by Alist in 1Panel, the parameters are listed as follows:
+
+- Address: The URL of the Alist web console
+- Username: The web username for Alist
+- Password: The web password for Alist
+- Backup directory: A fixed format starting with `/dav`, similar to `/dav/${Storage mount point in Alist}/${Subpath for 1Panel backup files}`
+
+For further assistance, refer to [the Alist documentation](https://alist.nn.ci/guide/webdav.html).
 
 ### Compatibility of Some Object Storage Service Providers with Amazon S3 Cloud Storage
 
