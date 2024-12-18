@@ -56,7 +56,7 @@ log:
 
 ### Running the Backend Service
 
-Create a new git project and enter the main project's git address: git@github.com:1Panel-dev/1Panel.git
+Create a new git project and enter the main project's git address: `git@github.com:1Panel-dev/1Panel.git`.
 
 ![img.png](open.png)
 
