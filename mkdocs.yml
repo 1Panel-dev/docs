@@ -111,7 +111,7 @@ nav:
     #       - SSH Setting: user_manual/hosts/ssh.md
       - Toolbox:
           - Quick Setup: user_manual/toolbox/quick_settings.md
-          - Cache clean: user_manual/toolbox/clean.md
+          - Cache Clean: user_manual/toolbox/clean.md
           - Supervisor: user_manual/toolbox/supervisor.md
           - Virus Scan: user_manual/toolbox/clam.md
           - FTP: user_manual/toolbox/ftp.md
@@ -120,4 +120,5 @@ nav:
       - Settings: user_manual/settings.md
 #   - Tutorials: tutorials.md
   - Development Manual:
+    - Building from Source: dev_manual/build_from_source.md
     - API Manual: dev_manual/api_manual.md
