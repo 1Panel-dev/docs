@@ -1,6 +1,6 @@
 # API Manual
 
-## API Document
+## API document
 
 1Panel leverages Swagger to offer built-in API documentation, accessible via the following URL:
 
