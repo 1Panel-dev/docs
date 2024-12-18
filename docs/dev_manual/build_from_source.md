@@ -14,17 +14,30 @@
 
 ### Environment Preparation
 
+#### Installing Docker
+
+As many features in 1Panel rely on Docker service, such as the App Store, runtime environment, and container management, it is necessary to have Docker service installed in the development environment when developing or modifying these features.
+
 #### Backend
 
 The 1Panel backend utilizes the Golang language with the Gin framework and employs go.mod as the project management tool. Developers must first install golang version 1.22 or higher in their development environment.
+
+!!! info "Requirements"
+    Golang version >= 1.22
 
 #### Frontend
 
 The 1Panel frontend leverages Vue.js as the frontend framework, Element-Plus as the UI framework, and npm as the package management tool. Developers should first download Node.js as the runtime environment. For IDEA users, it is recommended to install the Vue.js plugin to facilitate development.
 
+!!! info "Requirements"
+    Node.js version >= 20.2.*
+
 #### Installing npm
 
 Visit the [website](https://nodejs.org/en/download/), select the appropriate installation package, and proceed with the installation.
+
+!!! info "Requirements"
+    npm version >= 9.6.*
 
 ### Initial Configuration
 
