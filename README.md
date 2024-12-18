@@ -12,7 +12,7 @@ git clone https://github.com/1Panel-dev/docs.git
 
 ```bash
 cd docs
-pip install -r requirements/requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Modify documentation content
