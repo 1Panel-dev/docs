@@ -73,5 +73,5 @@ First, enter the frontend directory under the project directory and execute npm 
 ### Running the Frontend
 
 1. Enter the frontend directory under the project directory and use npm i to install frontend dependency packages  
-2. After installation, use npm run dev to start the frontend. Once the frontend is started, it can be accessed via http://localhost:4004/
+2. After installation, use `npm run dev` to start the frontend. Once the frontend is started, it can be accessed via http://localhost:4004/
 3. Use the default username admin and default password admin123 to log in
