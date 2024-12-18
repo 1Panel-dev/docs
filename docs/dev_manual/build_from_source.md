@@ -66,7 +66,7 @@ Create a new git project and enter the main project's git address: git@github.co
 
 ### Running the Backend
 
-First, enter the frontend directory under the project directory and execute npm run build:dev to package frontend resources
+First, enter the frontend directory under the project directory and execute `npm run build:dev` to package frontend resources.
 
 ![img.png](start.png)
 
