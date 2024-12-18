@@ -107,7 +107,7 @@ Execute the `Cache clean` task in the `Toolbox` menu of the panel.
 
 ### System snapshot
 
-Execute the [`Create Snapshot`](../settings/#5) task in the `Settings`-`Snapshots` menu of the panel.
+Execute the [`Create Snapshot`](../settings/#snapshots) task in the `Settings`-`Snapshots` menu of the panel.
 
 !!! info "Configuration Description"
 

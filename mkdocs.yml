@@ -120,4 +120,5 @@ nav:
       - Settings: user_manual/settings.md
 #   - Tutorials: tutorials.md
   - Development Manual:
+    - Building from Source: dev_manual/build_from_source.md
     - API Manual: dev_manual/api_manual.md
