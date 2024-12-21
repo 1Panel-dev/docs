@@ -11,6 +11,13 @@ You need a Linux server that meets the following requirements:
 
 ## Installation
 
+!!! info "Notice"
+    The 1Panel binary installed from this script includes additional features of the professional edition beyond the open-source repository code, which require a license for activation. 
+
+    We assure you that the application does not contain backdoors for data collection or script execution.
+
+    If you have any objections, you can build the 1Panel application yourself by following the ["Building from source" documentation](./dev_manual/build_from_source.md).
+
 Execute the script below and follow the prompts to install 1Panel:
 
 ```sh
