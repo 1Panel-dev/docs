@@ -75,6 +75,7 @@ nav:
                 - Java: user_manual/websites/java.md
                 - Golang: user_manual/websites/golang.md
                 - Python: user_manual/websites/python.md
+                - .NET: user_manual/websites/dotnet.md
         - 数据库:
             - MySQL: user_manual/databases/mysql.md
             - PostgreSQL: user_manual/databases/postgresql.md
