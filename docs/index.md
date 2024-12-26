@@ -24,5 +24,5 @@ hide:
 
 Are you getting stuck anywhere? Here are a few links to places to look:
 
-- For assistance with using 1Panel, you can seek guidance from both fellow 1Panel users and our experts on the [GitHub Discussions page](https://github.com/1Panel-dev/1Panel/discussions/), or join the 1Panel community on [Discord](https://discord.gg/CVD7jHkrWn)!.
+- For assistance with using 1Panel, you can seek guidance from both fellow 1Panel users and our experts on the [GitHub Discussions page](https://github.com/1Panel-dev/1Panel/discussions/), or join the 1Panel community on [Discord](https://discord.gg/bUpUqWqdRr)!.
 - If you suspect you're running into a bug, please check the [GitHub issue tracker](https://github.com/1panel-dev/1panel/issues) to see if any existing issues match your problem. If not, feel free to fill out our bug report template and submit a new issue.
