@@ -47,6 +47,15 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/1Panel-dev/1Panel
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/1panel_linux
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@1Panel-linux
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/bUpUqWqdRr
   version:
     method: mike
 
