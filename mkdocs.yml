@@ -58,6 +58,9 @@ extra:
       link: https://discord.gg/bUpUqWqdRr
   version:
     method: mike
+  analytics:
+    provider: google
+    property: G-3VTP3CVQW8
 
 plugins:
   - glightbox
