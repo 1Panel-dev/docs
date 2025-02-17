@@ -1,4 +1,4 @@
-This repository contains the [official documentation](https://docs.1panel.hk) for the [1Panel project](https://github.com/1Panel-dev/1Panel). The documentation is built using the [MkDocs](https://github.com/mkdocs/mkdocs) framework with the [Material for MkDocs](https://github.com/squidfunk/mkdocs-material) theme.
+This repository contains the [official documentation](https://docs.1panel.pro) for the [1Panel project](https://github.com/1Panel-dev/1Panel). The documentation is built using the [MkDocs](https://github.com/mkdocs/mkdocs) framework with the [Material for MkDocs](https://github.com/squidfunk/mkdocs-material) theme.
 
 ## Local Development
 

@@ -21,7 +21,7 @@ You need a Linux server that meets the following requirements:
 Execute the script below and follow the prompts to install 1Panel:
 
 ```sh
-curl -sSL https://resource.1panel.hk/quick_start.sh -o quick_start.sh && bash quick_start.sh
+curl -sSL https://resource.1panel.pro/quick_start.sh -o quick_start.sh && bash quick_start.sh
 ```
 
 After installation, the console will print the access information for 1Panel:

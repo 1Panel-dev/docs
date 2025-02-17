@@ -7,7 +7,7 @@
 Execute the script below and follow the prompts to install 1Panel:
 
 ```sh
-curl -sSL https://resource.1panel.hk/quick_start.sh -o quick_start.sh && bash quick_start.sh
+curl -sSL https://resource.1panel.pro/quick_start.sh -o quick_start.sh && bash quick_start.sh
 ```
 
 After installation, the console will print the access information for 1Panel:
@@ -63,7 +63,7 @@ Log in to your DNS provider's management console, using Cloudflare as an example
 ![Adding a DNS record](./img/installation/adding_a_dns_record.png)
 {: .browser-mockup .with-url }
 
-If everything goes smoothly, you can now access the newly installed WordPress application using `https://wpdemo.1panel.hk`.
+If everything goes smoothly, you can now access the newly installed WordPress application using `https://wpdemo.1panel.pro`.
 
 ## Enabling HTTPS in 1Panel (optional)
 
@@ -103,7 +103,7 @@ At the top of the list, click the `Manage DNS providers` button, select the Clou
 To request a certificate, follow these steps:
 
 1. Click the `Request` button in the top-left corner of the list, which will open the certificate request page.
-2. Enter the primary domain name of the certificate, for example, `wpdemo.1panel.hk`.
+2. Enter the primary domain name of the certificate, for example, `wpdemo.1panel.pro`.
 3. Select the ACME account created earlier.
 4. Choose `DNS account` as the verification method.
 5. Select the Cloudflare DNS account created before.
@@ -123,7 +123,7 @@ After the certificate application is complete, re-enter the website management p
 
 ## Accessing Your WordPress Site
 
-After completing the above steps, you can now access your newly created WordPress site by visiting `https://wpdemo.1panel.hk` in your web browser.
+After completing the above steps, you can now access your newly created WordPress site by visiting `https://wpdemo.1panel.pro` in your web browser.
 
 ![Accessing WordPress](./img/installation/accessing_wordpress.png)
 {: .browser-mockup .with-url }
