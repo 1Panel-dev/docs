@@ -76,6 +76,9 @@ nav:
                 - Golang: user_manual/websites/golang.md
                 - Python: user_manual/websites/python.md
                 - .NET: user_manual/websites/dotnet.md
+        - AI:
+            - 模型: user_manual/ai/model.md
+            - GPU 监控: user_manual/ai/gpu.md
         - 数据库:
             - MySQL: user_manual/databases/mysql.md
             - PostgreSQL: user_manual/databases/postgresql.md
