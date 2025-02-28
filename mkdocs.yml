@@ -99,6 +99,9 @@ nav:
             #   - Java: user_manual/websites/runtime_java.md
             #   - Golang: user_manual/websites/runtime_golang.md
             #   - Python: user_manual/websites/runtime_python.md
+      - AI:
+          - Model: user_manual/ai/model.md
+          - GPU Monitor: user_manual/ai/gpu.md
       - Databases:
           - MySQL and MariaDB: user_manual/databases/mysql.md
           - PostgreSQL: user_manual/databases/postgresql.md
