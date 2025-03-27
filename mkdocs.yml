@@ -79,6 +79,7 @@ nav:
         - AI:
             - 模型: user_manual/ai/model.md
             - GPU 监控: user_manual/ai/gpu.md
+        - MCP Server: user_manual/mcp/mcp_server.md
         - 数据库:
             - MySQL: user_manual/databases/mysql.md
             - PostgreSQL: user_manual/databases/postgresql.md
