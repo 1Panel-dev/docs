@@ -47,6 +47,7 @@ nav:
             - 阿里云镜像部署: installation/ali_cloud.md
             - 阿里云计算巢部署: installation/alibaba-cloud-computenest.md
             - 腾讯云应用模板部署: installation/tencent_cloud.md
+            - 腾讯云云应用部署: installation/tencent_cloudapp.md
         - 在线升级: installation/online_upgrade.md
         - 命令行工具: installation/cli.md
     - 功能手册:

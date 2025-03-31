@@ -1,9 +1,11 @@
-!!! Abstract ""
-    1Panel 已上架腾讯云云应用，通过云应用的部署方式，用户可以直接购买创建云服务器并自动完成 1Panel 的安装配置。
-
 ## 1 安装 1Panel 云应用
 
-云应用地址：[1Panel 社区版云应用](https://app.cloud.tencent.com/detail/SPU_BHDJDDBEBA6600)
+!!! Abstract ""
+    1Panel 社区版已上架腾讯云云应用，可直接在腾讯云服务器中快速部署。通过云应用的部署方式，用户可以直接购买创建云服务器并自动完成 1Panel 的安装配置。
+
+    第一步：关联我们的腾讯云合作伙伴账户，享受更多优惠福利：[点击链接进行关联](https://partner.cloud.tencent.com/invitation/10002820907763620ace838b1?inviteType=2)
+
+    第二步：打开 [1Panel 社区版云应用](https://app.cloud.tencent.com/detail/SPU_BHDJDDBEBA6600)，进入云应用页面。
 
 勾选同意用户协议后，点击安装应用即可进入 1Panel 社区版云应用安装页面。
 
