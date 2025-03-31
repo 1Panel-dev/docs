@@ -18,7 +18,7 @@
 ## 2 安装部署
 
 !!! Abstract ""
-    GitHub release 链接: https://github.com/1Panel-dev/1Panel/releases  
+    GitHub release 链接: https://github.com/1Panel-dev/1Panel/releases
 
 === "RedHat / CentOS"
     !!! Abstract ""
@@ -51,6 +51,13 @@
         ```properties
         curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && sh quick_start.sh
         ```
+
+!!! Abstract ""
+    如果遇到 Docker 安装失败等问题，可以尝试运行以下脚本：
+    ```shell
+    bash <(curl -sSL https://linuxmirrors.cn/docker.sh)
+    ```
+    了解更多信息，请访问官方网站：https://linuxmirrors.cn
 
 !!! Abstract ""
     安装成功后，控制台会打印面板访问信息，可通过浏览器访问 1Panel：
