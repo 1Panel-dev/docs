@@ -14,7 +14,7 @@
 1. 克隆仓库：
 
 ```bash
-git https://github.com/1Panel-dev/mcp-1panel.git
+git clone https://github.com/1Panel-dev/mcp-1panel.git
 cd mcp-1panel
 ```
 
