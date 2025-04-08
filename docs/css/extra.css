@@ -33,7 +33,7 @@
 .progress-bar {
   height: 1.2rem;
   float: left;
-  background-color: #2979ff;
+  background-color: #0a7be0;
 }
 
 .progress {
@@ -99,7 +99,7 @@
 }
 
 .md-nav__source {
-  background-color: #fc6554;
+  background-color: #0a7be0;
 }
 
 .md-grid {

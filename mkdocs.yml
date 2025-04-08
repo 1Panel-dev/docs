@@ -1,12 +1,12 @@
 site_name: '1Panel 文档'
 site_url: 'https://1panel.cn'
+site_author: '1Panel'
 site_description: '1Panel 一款现代化的 Linux 面板'
-site_author: '1Panel 开源项目组'
 
 repo_name: '1Panel'
 repo_url: 'https://github.com/1Panel-dev/1Panel'
+edit_uri: ''
 
-edit_uri: https://github.com/1Panel-dev/docs/edit/master/docs/
 theme:
     name: 'material'
     logo: 'img/logo-white.png'
@@ -182,6 +182,8 @@ extra:
         provider: google
         property: G-P2ER2N0NSN
     social:
+        - icon: Bilibili_Logo_Blue
+          link: https://space.bilibili.com/510493147/lists/1199760
         - icon: fontawesome/brands/github
           link: https://github.com/1Panel-dev
         - icon: fontawesome/solid/envelope
