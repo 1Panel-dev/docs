@@ -6,12 +6,13 @@
 
 ### 前提条件
 
-- Go 1.23.0 或更高版本 
-- 已有 1Panel
+- Go 1.23.0 或更高版本 (二进制使用方式)
+- Docker (Docker 使用方式)
+- 已安装 1Panel
 
-### 从源代码构建
+### 从源代码构建 (二进制)
 
-1. 克隆仓库：
+1. 克隆代码仓库：
 
 ```bash
 git clone https://github.com/1Panel-dev/mcp-1panel.git
@@ -24,17 +25,23 @@ cd mcp-1panel
 make build
 ```
 
-> 将 ./build/mcp-1panel 移动至系统环境变量
+将 `./build/mcp-1panel` 移动到系统环境变量 PATH 所包含的目录中。
 
-### 使用 go install 安装
+### 使用 `go install` 安装
 
 ```bash
 go install github.com/1Panel-dev/mcp-1panel@latest
 ```
 
-## 使用方法
+## 使用方式
 
-**Cursor**、**Windsurf** 配置示例:
+你可以将 1Panel MCP Server 与 Cursor 和 Windsurf 等工具配合使用。
+
+### stdio 模式
+
+#### 二进制方式
+
+确保已安装 Go 并已构建或安装该二进制文件：
 
 ```json
 {
@@ -50,7 +57,53 @@ go install github.com/1Panel-dev/mcp-1panel@latest
 }
 ```
 
-> 还可以使用Claude、Windsurf、Cline等MCP客户端。
+#### Docker 方式
+
+确保已安装 Docker：
+
+```json
+{
+  "mcpServers": {
+    "mcp-1panel": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "PANEL_HOST",
+        "-e",
+        "PANEL_ACCESS_TOKEN",
+        "1panel/1panel-mcp-server"
+      ],
+      "env": {
+        "PANEL_HOST": "such as http://localhost:8080",
+        "PANEL_ACCESS_TOKEN": "<your 1Panel access token>"
+      }
+    }
+  }
+}
+```
+
+### SSE 模式
+
+使用 SSE 启动 MCP server：
+
+```bash
+mcp-1panel -host <your 1Panel access address> -token <your 1Panel access token> -transport sse -addr "http://localhost:8000"
+```
+
+Cursor/Windsurf 配置示例：
+
+```json
+{
+  "mcpServers": {
+    "mcp-1panel": {
+        "url": "http://localhost:8000/sse"
+    }
+  }
+}
+```
 
 ### 命令行选项
 
@@ -70,7 +123,7 @@ go install github.com/1Panel-dev/mcp-1panel@latest
 
 服务器提供了各种与 1Panel 交互的工具：
 
-| 工具                         | 类别 | 描述               |
+| 工具                          | 类别 | 描述               |
 |-----------------------------|------|------------------|
 | **get_dashboard_info**      | 系统 | 列出概览页状态      |
 | **get_system_info**         | 系统 | 获取系统信息        |
