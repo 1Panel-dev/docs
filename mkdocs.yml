@@ -3,7 +3,7 @@ site_url: 'https://1panel.cn'
 site_author: '1Panel'
 site_description: '1Panel 一款现代化的 Linux 面板'
 
-repo_name: '1Panel'
+repo_name: '1Panel-dev/1Panel'
 repo_url: 'https://github.com/1Panel-dev/1Panel'
 edit_uri: ''
 
