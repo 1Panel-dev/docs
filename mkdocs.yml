@@ -79,6 +79,7 @@ nav:
                 - .NET: user_manual/websites/dotnet.md
         - AI:
             - 模型: user_manual/ai/model.md
+            - MCP: user_manual/ai/mcp.md
             - GPU 监控: user_manual/ai/gpu.md
         - MCP Server: user_manual/mcp/mcp_server.md
         - 数据库:
