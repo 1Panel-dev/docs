@@ -2,7 +2,7 @@
 
 !!! Abstract ""
     MCP（Model Context Protocol，模型上下文协议） 是由人工智能企业 Anthropic 推出的开放标准，旨在为大语言模型和 AI 助手提供统一、标准化的接口，让AI可以轻松操作外部工具，完成更加复杂的任务，从而发挥真正的“工具调用”能力。
-    
+
     然而在实际操作过程中，搭建 MCP Server 需要手动配置大量依赖，部署门槛较高，许多用户难以上手。为了解决这个问题，1Panel v1.10.29 LTS 版本推出了原生的 MCP Server 管理功能，该功能通过容器化方式实现一键部署 MCP Server，能够极大简化搭建流程。
 
 ![img.png](../../img/ai/mcp_list.png)
@@ -11,6 +11,7 @@
 
 !!! Abstract ""
     当前已支持两种方式运行的 MCP Server 的 stdio 模式发布为 SSE 模式，供 MCP 客户端调用：
+    
     - 支持通过 npx 命令启动 MCP Server
 	- 支持以二进制方式运行 MCP Server（需将二进制文件挂载至容器中）
 
