@@ -1,13 +1,13 @@
 ## 1 添加网络
 
-!!! Abstract ""
+!!! note ""
     1Panel 允许在环境中添加、删除网络，其中 none、host、bridge、1panel-network 四个网络为系统自带网络，无法删除。
 
     [我想了解更多容器网络相关的知识](https://docs.docker.com/network)
 
 ![img.png](../../img/containers/network_create.png)
 
-!!! Abstract ""
+!!! note ""
 
     **模式：Docker中的网络驱动（network driver）是可插拔的，1Panel 提供几种网络驱动以提供核心的网络功能，包括：**
         

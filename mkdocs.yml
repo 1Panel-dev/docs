@@ -1,193 +1,219 @@
 site_name: '1Panel 文档'
 site_url: 'https://1panel.cn'
 site_author: '1Panel'
-site_description: '1Panel 一款现代化的 Linux 面板'
+site_description: "1Panel 开源 Linux 服务器运维管理面板"
 
 repo_name: '1Panel-dev/1Panel'
 repo_url: 'https://github.com/1Panel-dev/1Panel'
 edit_uri: ''
 
 theme:
-    name: 'material'
-    logo: 'img/logo-white.png'
-    favicon: 'img/facio.ico'
-    language: 'zh'
-    highlightjs: true
-    hljs_languages:
-        - yaml
-        - django
-    palette:
-        - scheme: default
-          accent: blue
-          toggle:
-              icon: material/weather-sunny
-              name: Switch to dark mode
-        - scheme: slate
-          accent: blue
-          toggle:
-              icon: material/weather-night
-              name: Switch to light mode
-    features:
-        - navigation.instant
-        - navigation.tracking
-        - navigation.indexes
-        - navigation.top
-        - search.suggest
-        - search.highlight
-        - search.share
-        - header.autohide
-        - content.tabs.link
-    custom_dir: "theme"
+  name: 'material'
+  logo: 'img/logo-white.png'
+  favicon: 'img/facio.ico'
+  language: 'zh'
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - navigation.tracking
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - header.autohide
+  font: false
+  custom_dir: 'theme'
+  icon:
+    repo: fontawesome/brands/github
+
 nav:
-    - 产品介绍: index.md
-    - 安装部署:
-        - 在线安装: installation/online_installation.md
-        - 离线包安装: installation/package_installation.md
-        - 云平台:
-            - 阿里云镜像部署: installation/ali_cloud.md
-            - 阿里云计算巢部署: installation/alibaba-cloud-computenest.md
-            - 腾讯云应用模板部署: installation/tencent_cloud.md
-            - 腾讯云云应用部署: installation/tencent_cloudapp.md
-        - 在线升级: installation/online_upgrade.md
-        - 命令行工具: installation/cli.md
-    - 功能手册:
-        - 应用商店:
-              - 概述: user_manual/appstore/appstore.md
-              - 安装部署: user_manual/appstore/install.md
-              - 应用操作: user_manual/appstore/installed.md
-        - 网站:
-            - 网站:
-                - 概述: user_manual/websites/websites.md
-                - 创建网站: user_manual/websites/website_create.md
-                - 基本设置: user_manual/websites/website_config_basic.md
-                - 其他设置: user_manual/websites/website_config_other.md
-                - 网站分组: user_manual/websites/website_group.md
-                - 网站备份: user_manual/websites/website_backup.md
-                - OpenResty 设置: user_manual/websites/openresty.md
-            - 证书:
-                - 证书概述: user_manual/websites/certificate.md
-                - 申请证书: user_manual/websites/certificate_create.md
-                - 续签证书: user_manual/websites/certificate_renew.md
-                - Acme 账户: user_manual/websites/certificate_acme.md
-                - DNS 账户: user_manual/websites/certificate_dns.md
-            - 运行环境:
-                - PHP: user_manual/websites/php.md
-                - Node.js: user_manual/websites/node.md
-                - Java: user_manual/websites/java.md
-                - Golang: user_manual/websites/golang.md
-                - Python: user_manual/websites/python.md
-                - .NET: user_manual/websites/dotnet.md
-        - AI:
-            - 模型: user_manual/ai/model.md
-            - MCP: user_manual/ai/mcp.md
-            - GPU 监控: user_manual/ai/gpu.md
-        - MCP Server: user_manual/mcp/mcp_server.md
-        - 数据库:
-            - MySQL: user_manual/databases/mysql.md
-            - PostgreSQL: user_manual/databases/postgresql.md
-            - Redis: user_manual/databases/redis.md
-        - 容器:
-            - 容器: user_manual/containers/container.md
-            - 编排: user_manual/containers/compose.md
-            - 镜像: user_manual/containers/image.md
-            - 网络: user_manual/containers/network.md
-            - 存储卷: user_manual/containers/volume.md
-            - 仓库: user_manual/containers/repo.md
-            - 编排模版: user_manual/containers/compose_template.md
-            - 配置: user_manual/containers/setting.md
-        - 计划任务: user_manual/cronjobs.md
-        - 主机:
-          - 文件: user_manual/hosts/file.md
-          - 监控: user_manual/hosts/monitor.md
-          - 终端: user_manual/hosts/terminal.md
-          - 防火墙: user_manual/hosts/firewall.md
-          - 进程管理: user_manual/hosts/process.md
-          - SSH 管理: user_manual/hosts/ssh.md
-        - 工具箱:
-          - 快速设置: user_manual/toolbox/quick_settings.md
-          - 缓存清理: user_manual/toolbox/clean.md
-          - 进程守护: user_manual/toolbox/supervisor.md
-          - 病毒扫描: user_manual/toolbox/clam.md
-          - FTP: user_manual/toolbox/ftp.md
-          - Fail2ban: user_manual/toolbox/fail2ban.md
-        - 日志审计: user_manual/logs.md
-        - 高级功能:
-              - WAF:
-                 - 概述: user_manual/xpack/waf/waf.md
-                 - 概览: user_manual/xpack/waf/dashboard.md
-                 - 全局设置: user_manual/xpack/waf/global.md
-                 - 网站设置: user_manual/xpack/waf/site.md
-                 - 拦截记录: user_manual/xpack/waf/log.md
-                 - 封锁记录: user_manual/xpack/waf/block.md
-        - 面板设置: user_manual/settings.md
-    - 常见问题:
-        - 产品 FAQ: faq/faq.md
-        - 操作系统相关: faq/operating_system.md
-        - 系统功能相关: faq/system_function.md
-        - 服务器架构相关: faq/server_architecture.md
-    - 开发文档:
-        - 开发环境搭建: dev_manual/dev_manual.md
-        - API 接口配置: dev_manual/api_manual.md
-    - 版本迭代: changelog.md
-    - 联系我们: contact.md
+  - 产品介绍: index.md
+  - 安装部署:
+    - 在线安装: installation/online_installation.md
+    - 离线包安装: installation/package_installation.md
+    - 云平台:
+      - 阿里云镜像部署: installation/ali_cloud.md
+      - 阿里云计算巢部署: installation/alibaba-cloud-computenest.md
+      - 腾讯云应用模板部署: installation/tencent_cloud.md
+      - 腾讯云云应用部署: installation/tencent_cloudapp.md
+    - 在线升级: installation/online_upgrade.md
+    - 命令行工具: installation/cli.md
+  - 功能手册:
+    - 应用商店:
+      - 概述: user_manual/appstore/appstore.md
+      - 安装部署: user_manual/appstore/install.md
+      - 应用操作: user_manual/appstore/installed.md
+    - 网站:
+      - 概述: user_manual/websites/websites.md
+      - 创建网站: user_manual/websites/website_create.md
+      - 基本设置: user_manual/websites/website_config_basic.md
+      - 其他设置: user_manual/websites/website_config_other.md
+      - 网站分组: user_manual/websites/website_group.md
+      - 网站备份: user_manual/websites/website_backup.md
+      - OpenResty 设置: user_manual/websites/openresty.md
+    - 证书:
+      - 证书概述: user_manual/websites/certificate.md
+      - 申请证书: user_manual/websites/certificate_create.md
+      - 续签证书: user_manual/websites/certificate_renew.md
+      - Acme 账户: user_manual/websites/certificate_acme.md
+      - DNS 账户: user_manual/websites/certificate_dns.md
+    - 运行环境:
+      - PHP: user_manual/websites/php.md
+      - Node.js: user_manual/websites/node.md
+      - Java: user_manual/websites/java.md
+      - Golang: user_manual/websites/golang.md
+      - Python: user_manual/websites/python.md
+      - .NET: user_manual/websites/dotnet.md
+    - AI:
+      - 模型: user_manual/ai/model.md
+      - MCP: user_manual/ai/mcp.md
+      - GPU 监控: user_manual/ai/gpu.md
+    - MCP Server: user_manual/mcp/mcp_server.md
+    - 数据库:
+      - MySQL: user_manual/databases/mysql.md
+      - PostgreSQL: user_manual/databases/postgresql.md
+      - Redis: user_manual/databases/redis.md
+    - 容器:
+      - 容器: user_manual/containers/container.md
+      - 编排: user_manual/containers/compose.md
+      - 镜像: user_manual/containers/image.md
+      - 网络: user_manual/containers/network.md
+      - 存储卷: user_manual/containers/volume.md
+      - 仓库: user_manual/containers/repo.md
+      - 编排模版: user_manual/containers/compose_template.md
+      - 配置: user_manual/containers/setting.md
+    - 计划任务: user_manual/cronjobs.md
+    - 主机:
+      - 文件: user_manual/hosts/file.md
+      - 监控: user_manual/hosts/monitor.md
+      - 终端: user_manual/hosts/terminal.md
+      - 防火墙: user_manual/hosts/firewall.md
+      - 进程管理: user_manual/hosts/process.md
+      - SSH 管理: user_manual/hosts/ssh.md
+    - 工具箱:
+      - 快速设置: user_manual/toolbox/quick_settings.md
+      - 缓存清理: user_manual/toolbox/clean.md
+      - 进程守护: user_manual/toolbox/supervisor.md
+      - 病毒扫描: user_manual/toolbox/clam.md
+      - FTP: user_manual/toolbox/ftp.md
+      - Fail2ban: user_manual/toolbox/fail2ban.md
+    - 日志审计: user_manual/logs.md
+    - 高级功能:
+      - WAF:
+        - 概述: user_manual/xpack/waf/waf.md
+        - 概览: user_manual/xpack/waf/dashboard.md
+        - 全局设置: user_manual/xpack/waf/global.md
+        - 网站设置: user_manual/xpack/waf/site.md
+        - 拦截记录: user_manual/xpack/waf/log.md
+        - 封锁记录: user_manual/xpack/waf/block.md
+    - 面板设置: user_manual/settings.md
+  - 常见问题:
+    - 产品 FAQ: faq/faq.md
+    - 操作系统相关: faq/operating_system.md
+    - 系统功能相关: faq/system_function.md
+    - 服务器架构相关: faq/server_architecture.md
+  - 开发文档:
+    - 开发环境搭建: dev_manual/dev_manual.md
+    - API 接口配置: dev_manual/api_manual.md
+  - 版本迭代: changelog.md
+  - 联系我们: contact.md
 
 markdown_extensions:
-    - admonition
-    - codehilite:
-          guess_lang: True
-          linenums: False
-    - toc:
-          permalink: True
-    - footnotes
-    - attr_list
-    - def_list
-    - tables
-    - abbr
-    - md_in_html
-    - pymdownx.extra
-    - pymdownx.arithmatex
-    - pymdownx.betterem:
-          smart_enable: all
-    - pymdownx.caret
-    - pymdownx.critic
-    - pymdownx.details
-    - pymdownx.emoji:
-          emoji_generator: !!python/name:pymdownx.emoji.to_png
-    - pymdownx.inlinehilite
-    - pymdownx.magiclink
-    - pymdownx.mark
-    - pymdownx.smartsymbols
-    - pymdownx.superfences
-    - pymdownx.tasklist
-    - pymdownx.tilde
-    - pymdownx.betterem
-    - pymdownx.progressbar
-    - lightgallery
-    - pymdownx.tabbed
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: ⚓︎
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - theme/.icons
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.saneheaders
+  - pymdownx.magiclink:
+      repo_url_shortener: true
+      repo_url_shorthand: true
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  1Panel:
+    tag: v1.10.29
+  search:
+    separator: '[\s\-\.]+'
+    language: 'zh'
+    Content-Encoding: gzip
+    boost: 100
+  generator: false
+  version:
+    default: master
+    provider: mike
+  analytics:
+    provider: google
+    property: G-P2ER2N0NSN
+  social:
+    - icon: Bilibili_Logo_Blue
+      link: https://space.bilibili.com/510493147/lists/1199760
+    - icon: fontawesome/brands/github
+      link: https://github.com/1Panel-dev
+    - icon: fontawesome/solid/envelope
+      link: mailto:wanghe@fit2cloud.com
+    - icon: fontawesome/brands/skype
+      link: tel://400-052-0755
 
 extra_css:
-    - css/extra.css
+  - css/extra.css
+  - css/termynal.css
+  - css/custom.css
+  - stylesheets/extra.css
+
+extra_javascript:
+  - js/termynal.js
+  - js/custom.js
 
 copyright: Copyright &copy; 2014-2025 <a href="https://www.fit2cloud.com">杭州飞致云信息科技有限公司</a>, All Rights Reserved. <a href="http://www.beian.miit.gov.cn" target="_blank">浙ICP备14038283号-5</a>
 
 plugins:
-    - search:
-          lang:
-              - en
-              - ja
-          separator: '[\s\-\.]+'
-extra:
-    version:
-        method: mike
-    analytics:
-        provider: google
-        property: G-P2ER2N0NSN
-    social:
-        - icon: Bilibili_Logo_Blue
-          link: https://space.bilibili.com/510493147/lists/1199760
-        - icon: fontawesome/brands/github
-          link: https://github.com/1Panel-dev
-        - icon: fontawesome/solid/envelope
-          link: mailto:support@fit2cloud.com
-        - icon: fontawesome/solid/phone
-          link: tel://400-052-0755
+  - search:
+      lang:
+        - en
+        - ja
+      separator: '[\s\-\.]+'
+  - macros

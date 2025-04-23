@@ -1,6 +1,6 @@
 ## 1 使用自建 Nginx 反向代理 1Panel，导致主机和容器终端均不能正常使用。
 
-!!! Abstract ""
+!!! note ""
     **需要在 Nginx 配置文件中增加以下配置：**
 
     ```properties

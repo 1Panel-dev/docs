@@ -1,7 +1,7 @@
 
 ## 1 1pctl
 
-!!! Abstract ""
+!!! note ""
     1Panel 默认内置了命令行运维工具 **1pctl**，通过执行 1pctl help，可以查看相关的命令说明。
 
     ```
@@ -25,7 +25,7 @@
 
 ## 2 1pctl reset
 
-!!! Abstract ""
+!!! note ""
     **重置 1Panel 系统信息，包括取消安全入口登录，取消两步验证等**
 
     ```
@@ -43,7 +43,7 @@
 
 ## 3 1pctl listen-ip
 
-!!! Abstract ""
+!!! note ""
     **修改 1Panel 监听 IP**
 
     ```
@@ -58,7 +58,7 @@
 
 ## 4 1pctl update
 
-!!! Abstract ""
+!!! note ""
     **修改 1Panel 系统信息**
 
     ```
@@ -74,7 +74,7 @@
 
 ## 5 1panel app
 
-!!! Abstract ""
+!!! note ""
     **应用商店相关命令，包括初始化应用等**
 
     ```
@@ -88,6 +88,6 @@
 
 > 创建应用名为 `app_name`，版本为 `v1.0.0` 的应用，命令如下：
 
-```shell
+```bash
 1panel app init -k app_name -v v1.0.0
 ```

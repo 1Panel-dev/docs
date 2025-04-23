@@ -1,13 +1,13 @@
 ## 1 配置
 
-!!! Abstract ""
+!!! note ""
     
     - 支持查看 Docker 运行状态，并执行重启服务等操作。
     - 配置文件默认为：/etc/docker/daemon.json。
 
 ![img.png](../../img/containers/setting.png)
 
-!!! Abstract ""
+!!! note ""
 
     - 镜像加速：应用安装失败，镜像拉取超时，此时可以配置镜像加速器进行优化。
         - 配置加速地址：
@@ -22,7 +22,7 @@
 
 ## 2 使用 IPv6
 
-!!! Abstract ""
+!!! note ""
     
     - 确保自己的设备被分配了一个 IPv6。通过 ip addr show 查看当前设备的 IPv6。其输出的物理网卡存在包含 inet6 和 scope global 的行时，表示该网卡支持 IPv6。
         ```properties

@@ -28,7 +28,7 @@ Token = md5('1panel' + API-Key + UnixTimestamp)
 | 1Panel-Timestamp | 当前时间戳           |
 
 ### 示例请求头：
-```shell
+```bash
 curl -X GET "http://localhost:4004/api/v1/dashboard/current" \
 -H "1Panel-Token: <1panel_token>" \
 -H "1Panel-Timestamp: <current_unix_timestamp>"

@@ -2,22 +2,22 @@
 ## 1 安装
 
 === "RedHat / CentOS"
-    !!! Abstract ""
+    !!! note ""
         **1、安装 epel 源**
 
-        ```shell
+        ```bash
         yum install -y epel-release
         ```
 
         **2、安装 Pure-FTPd**
         
-        ```shell
+        ```bash
         yum -y install pure-ftpd
         ```
 
         **3、修改默认配置**
         
-        ```shell
+        ```bash
         # 默认配置位于 /etc/pure-ftpd/pure-ftpd.conf，在配置文件中找到下面几个参数进行修改：
 
         # 指定路径，PureDB用户数据库文件
@@ -32,27 +32,27 @@
 
         **4、启动 Pure-FTPd 服务**
         
-        ```shell
+        ```bash
         systemctl start pure-ftpd.service
         ```
         
         **5、查看 Pure-FTPd 服务状态。**
 
-        ```shell
+        ```bash
         systemctl status pure-ftpd.service
         ```
 
 === "Ubuntu / Debian"
-    !!! Abstract ""
+    !!! note ""
         **1、安装 Pure-FTPd**
         
-        ```shell
+        ```bash
         sudo apt-get install pure-ftpd
         ```
 
         **2、修改默认配置**
         
-        ```shell
+        ```bash
         # 与 centos 不同，这里需要在 /etc/pure-ftpd/conf 文件夹下执行下列命令，增加对应配置文件：
 
         # 创建 /etc/pure-ftpd/conf/PureDB 文件，内容指定路径 /etc/pure-ftpd/pureftpd.pdb
@@ -67,26 +67,26 @@
 
         **3、建立数据库软链**
         
-        ```shell
+        ```bash
         ln -s /etc/pure-ftpd/conf/PureDB /etc/pure-ftpd/auth/50puredb
         ```
 
         **4、启动 Pure-FTPd 服务**
         
-        ```shell
+        ```bash
         sudo systemctl start pure-ftpd.service
         ```
         
         
         **5、查看 Pure-FTPd 服务状态。**
 
-        ```shell
+        ```bash
         sudo systemctl status pure-ftpd.service
         ```
 
 ## 2 故障排除
 
-!!! Abstract ""
+!!! note ""
 
     - 如果之前已经安装过 Pure-FTPd，可以直接通过界面同步按钮同步到 1panel 上，但是同步过程中无法同步密码，需要在界面上手动编辑；
     - 如果无法正常连接，可以从以下方向检查：

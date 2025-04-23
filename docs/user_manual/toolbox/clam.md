@@ -1,12 +1,12 @@
 
 ## 1 介绍
 
-!!! Abstract ""
+!!! note ""
     ClamAV 是一个开源（GPLv2许可）的反病毒工具包，专为邮件网关上的电子邮件扫描而设计。它提供了多种实用工具，包括灵活且可扩展的多线程守护进程、命令行扫描器以及用于自动更新数据库的高级工具。该工具包的核心是一个作为共享库形式提供的反病毒引擎。
 
 ## 2 环境要求
 
-!!! Abstract ""
+!!! note ""
     **ClamAV 的最低建议配置为：**
 
     * CPU 要求：1 CPU，2.0 Ghz+；
@@ -16,22 +16,22 @@
 ## 3 安装
 
 === "RedHat / CentOS"
-    !!! Abstract ""
+    !!! note ""
         **1、安装 epel 源**
 
-        ```shell
+        ```bash
         yum install -y epel-release
         ```
 
         **2、安装 ClamAV**
         
-        ```shell
+        ```bash
         yum install clamav clamd clamav-update -y
         ```
 
         **3、修改 ClamAV 配置文件**
         
-        ```shell
+        ```bash
         /etc/clamd.d/scan.conf 取消下面行注释
         LogFile /var/log/clamd.scan
         LogFileMaxSize 2M
@@ -42,7 +42,7 @@
 
         **4、修改病毒库刷新配置文件**
         
-        ```shell
+        ```bash
         /etc/freshclam.conf 取消下面行注释
         DatabaseDirectory /var/lib/clamav
         UpdateLogFile  /var/log/freshclam.log
@@ -53,64 +53,64 @@
 
         **5、启动 ClamAV 服务**
         
-        ```shell
+        ```bash
         systemctl start clamd@scan.service
         systemctl start clamav-freshclam.service
         ```
         
         **6、开机自启动**
 
-        ```shell
+        ```bash
         systemctl enable clamd@scan.service
         systemctl enable clamav-freshclam.service
         ```
         
         **7、查看 ClamAV 服务状态。**
 
-        ```shell
+        ```bash
         systemctl status clamd@scan.service
         systemctl status clamav-freshclam.service
         ```
 
 === "Ubuntu / Debian"
-    !!! Abstract ""
+    !!! note ""
         **1、安装 ClamAV**
         
-        ```shell
+        ```bash
         sudo apt install clamav clamav-daemon -y
         ```
 
         **2、启动 ClamAV 服务**
         
-        ```shell
+        ```bash
         sudo systemctl start clamav-daemon
         sudo systemctl start clamav-freshclam.service
         ```
         
         **4、开机自启动**
 
-        ```shell
+        ```bash
         sudo systemctl enable clamav-daemon
         sudo systemctl enable clamav-freshclam.service
         ```
         
         **5、查看 ClamAV 服务状态。**
 
-        ```shell
+        ```bash
         sudo systemctl status clamav-daemon
         sudo systemctl status clamav-freshclam.service
         ```
 
 ## 4 扫描规则
 
-!!! Abstract "配置说明"
+!!! note "配置说明"
 
     - 扫描目录：病毒扫描任务扫描的目标目录
     - 感染文件策略：发现感染文件后，需要执行的操作方式，支持不操作、删除文件、移动文件到隔离目录、复制文件到隔离目录
     - 定时扫描（✨专业版）：配置定时任务，定时执行扫描任务
     - 是否告警（✨专业版）：扫描到感染文件后，发送短信告警
 
-!!! Abstract ""
+!!! note ""
 
     点击操作列的 `执行` 可以手动执行该条扫描规则，点击 `报告` 即可查看该条扫描规则的执行记录和扫描结果。
 
@@ -146,7 +146,7 @@
 
 ## 6 故障排除
 
-!!! Abstract ""
+!!! note ""
 
     - 如果 clamav 服务无法启动，请检查配置信息以及日志;
     - 检查病毒库数据是否正常，在配置文件中会指定 DatabaseDirectory ，即病毒库存放位置，检查是否存在，不存在的话，手动执行一下 freshclam 命令。

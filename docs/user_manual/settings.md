@@ -1,6 +1,6 @@
 ## 1 面板
 
-!!! Abstract ""
+!!! note ""
     支持面板的一些基础设置，具体包括：
 
     - 面板用户：1Panel 系统仅支持单主机单用户，此处是用于登录 1Panel 面板的验证信息，在初次登陆时由用户初始化。
@@ -19,7 +19,7 @@
 
 ## 2 安全
 
-!!! Abstract "配置说明"
+!!! note "配置说明"
     针对一些系统要求等级比较高的用户，我们增加了一些安全设置，具体包括：
 
     - 面板端口：修改 1Panel 服务使用的端口，但是需要谨慎操作，防止与应用端口冲突导致服务无法启动，建议修改端口前先执行 netstat -tunlp | grep [端口] 查看端口是否正在使用。
@@ -82,8 +82,7 @@
 
 ### 3.1 已支持的备份账号
 
-!!! Abstract ""
-
+!!! note ""
     **支持添加本地服务器磁盘和第三方账号：**
 
     - 亚马逊 S3 云存储
@@ -98,8 +97,7 @@
 
 ### 3.2 OneDrive 自定义配置
 
-!!! Abstract ""
-
+!!! note ""
     **在调用 Onedrive API 时需要使用到 4 个参数：**
 
     - client_id: 客户端ID
@@ -110,39 +108,49 @@
 1. 访问并登录 MicroSoft Azure：https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade
 
 2. 点击新注册，并填写注册信息，其中的重定向 URI 作为 重定向 Url 参数
-    ![img.png](../img/settings/onedrive_custom1.png)
+
+![img.png](../img/settings/onedrive_custom1.png)
 
 3. 主页上的 应用程序(客户端) ID 作为 客户端 ID
-    ![img.png](../img/settings/onedrive_custom2.png)
+
+![img.png](../img/settings/onedrive_custom2.png)
 
 4. 在 证书和密码 页面新建客户端密码，填写相关信息，生成的值作为 客户端密钥
-    ![img.png](../img/settings/onedrive_custom3.png)
+
+![img.png](../img/settings/onedrive_custom3.png)
 
 5. 在 API 权限页面选择需要的权限，添加权限，Microsoft Graph，委托的权限，勾选 Files.ReadWrite.All、offline_access、User.Read，这将作为 scope 传递
-    ![img.png](../img/settings/onedrive_custom4.png)
+
+![img.png](../img/settings/onedrive_custom4.png)
 
 ### 3.3 OneDrive 账号绑定
 
-    1. 点击 OneDrive 授权码获取按钮
+1. 点击 OneDrive 授权码获取按钮
+
 ![img.png](../img/settings/onedrive_step1.png)
 
-    2. 输入 Onedrive 账号信息
+2. 输入 Onedrive 账号信息
+
 ![img.png](../img/settings/onedrive_step2.png)
 
-    3. 信任 1panel 服务
+3. 信任 1panel 服务
+
 ![img.png](../img/settings/onedrive_step3.png)
 
-    4. 复制授权码到 1Panel 授权码输入框 (注意不要包含 &session_state=xxx 部分)
+4. 复制授权码到 1Panel 授权码输入框 (注意不要包含 &session_state=xxx 部分)
+
 ![img.png](../img/settings/onedrive_step4.png)
 
 ### 3.4 WebDAV 连接 AList
 
-    1. 从应用商店安装好 AList 后（记得打开端口外部访问），在容器日志中查看初始化密码，跳转到 AList 管理界面。
+1. 从应用商店安装好 AList 后（记得打开端口外部访问），在容器日志中查看初始化密码，跳转到 AList 管理界面。
 
-    2. 存储 菜单中添加对应的存储，记住该路径。
+2. 存储 菜单中添加对应的存储，记住该路径。
+
 ![img.png](../img/settings/webdav-01.png)
 
-    3. 1Panel 备份账号中，WebDAV 添加该备份账号，这里的路径应该是 /dav/${2步骤中的路径}/xxx，如此处的 /dav/tmp/sftp/1panel，完成绑定。
+3. 1Panel 备份账号中，WebDAV 添加该备份账号，这里的路径应该是 /dav/${2步骤中的路径}/xxx，如此处的 /dav/tmp/sftp/1panel，完成绑定。
+
 ![img.png](../img/settings/webdav-02.png)
 
 ### 3.5 部分对象存储服务商与亚马逊 S3 云存储的兼容性
@@ -166,8 +174,7 @@
 
 ## 4 快照
 
-!!! Abstract ""
-
+!!! note ""
     快照用于全量备份 1Panel 所产生的数据，具体包括：
     
     - Docker 配置文件，路径为 /etc/docker/daemon.json；
@@ -180,7 +187,7 @@
 
 ![img.png](../img/settings/snapshot.png)
 
-!!! Abstract ""
+!!! note ""
 
     - 创建和同步快照只支持选择第三方账号。
     - 快照恢复过程中，将对恢复前数据进行备份，默认的备份路径为 [安装目录]/original_[快照名]。
@@ -190,15 +197,16 @@
 
 ## 5 许可证
 
-!!! Abstract ""
+!!! note ""
     用于查看当前许可证状态，导入专业版许可证并成功激活后，可以使用专业版相关功能。
 
-    [点击了解更多]([专业版详细信息](https://www.lxware.cn/1panel)。)
+    [探索专业版带来的更多可能](https://www.lxware.cn/1panel)
 
 ## 6 关于
 
-!!! Abstract ""
+!!! note ""
 
     - 支持检查 1Panel 服务是否存在新版本，更新将替换 1panel 二进制文件、1pctl 命令行工具以及 1panel.service 文件。
     - 更新失败时，将回滚所有更新内容到更新前的状态，如更新后发现版本信息没有发生变化，则更新失败，可在【面板日志 - 系统日志】中查看失败原因，解决后重新完成更新操作。
+
 ![img.png](../img/settings/about.png)
