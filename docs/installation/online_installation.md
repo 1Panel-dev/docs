@@ -4,7 +4,7 @@
     **安装前请确保您的系统符合安装条件：**
 
     * 操作系统：支持主流 Linux 发行版本（基于 Debian / RedHat，包括国产操作系统）；
-    * 服务器架构：x86_64、aarch64、armv7l、ppc64le、s390x；
+    * 服务器架构：x86_64、aarch64、armv7l、ppc64le、s390x、riscv64；
     * 内存要求：建议可用内存在 1GB 以上；
     * 浏览器要求：请使用 Chrome、FireFox、IE10+、Edge等现代浏览器；
     * **可访问互联网**。
@@ -70,5 +70,5 @@
     - **ssh 登录 1Panel 服务器后，执行 1pctl user-info 命令可获取安全入口（entrance）**
 
 !!! Abstract ""
-    
+
     安装成功后，可使用 [1pctl](cli.md) 命令行工具来维护 1Panel
