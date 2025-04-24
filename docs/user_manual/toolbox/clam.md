@@ -54,6 +54,7 @@
         **5、启动 ClamAV 服务**
         
         ```bash
+        freshclam
         systemctl start clamd@scan.service
         systemctl start clamav-freshclam.service
         ```
@@ -83,6 +84,7 @@
         **2、启动 ClamAV 服务**
         
         ```bash
+        freshclam
         sudo systemctl start clamav-daemon
         sudo systemctl start clamav-freshclam.service
         ```
