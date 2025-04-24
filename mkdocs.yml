@@ -14,14 +14,12 @@ theme:
   language: 'zh'
   palette:
     - scheme: default
-      primary: blue
-      accent: blue
+      accent: red
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
     - scheme: slate
-      primary: blue
-      accent: blue
+      accent: red
       toggle:
         icon: material/weather-night
         name: Switch to light mode
@@ -182,9 +180,9 @@ extra:
     Content-Encoding: gzip
     boost: 100
   generator: false
-  version:
-    default: master
-    provider: mike
+  # version:
+  #   default: master
+  #   provider: mike
   analytics:
     provider: google
     property: G-P2ER2N0NSN
