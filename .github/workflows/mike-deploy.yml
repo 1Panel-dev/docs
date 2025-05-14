@@ -28,5 +28,5 @@ jobs:
         git config user.email "$(git log -n 1 --pretty=format:%ae)"
     - name: Build package
       run: |
-        git fetch origin deploy:deploy
-        mike deploy --push --branch deploy --rebase ${{ github.ref_name }}
+        git fetch origin zh-CN/deploy:zh-CN/deploy
+        mike deploy --push --branch zh-CN/deploy --rebase ${{ github.ref_name }}
