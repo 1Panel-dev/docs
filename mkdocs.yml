@@ -180,9 +180,8 @@ extra:
     Content-Encoding: gzip
     boost: 100
   generator: false
-  # version:
-  #   default: master
-  #   provider: mike
+  version:
+    provider: mike
   analytics:
     provider: google
     property: G-P2ER2N0NSN
