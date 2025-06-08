@@ -10,6 +10,7 @@
     可以通过按钮停止、启动或重启来管理 OpenResty 应用。
 
 ![img.png](../../img/websites/openresty_setting.png)
+{: .browser-mockup}
 
 ## 2 重载
 
@@ -18,6 +19,7 @@
     允许用户在无需停机的情况下快速应用配置更改，确保网站服务的高可用性。
 
 ![img.png](../../img/websites/openresty_reload.png)
+{: .browser-mockup}
 
 ## 3 设置
 
@@ -28,6 +30,7 @@
     查看当前网站状态，包括活动连接数、总连接数、总握手次数、总请求数、请求数、响应数及驻留进程等信息。
 
 ![img.png](../../img/websites/openresty_status.png)
+{: .browser-mockup}
 
 ### 3.2 配置修改
 
@@ -37,6 +40,7 @@
     - 点击【默认配置】按钮可将配置文件恢复到默认状态
 
 ![img.png](../../img/websites/openresty_conf.png)
+{: .browser-mockup}
 
 ### 3.3 性能调整
 
@@ -45,6 +49,7 @@
     调整 OpenResty 的相关配置参数。
 
 ![img.png](../../img/websites/openresty_performance.png)
+{: .browser-mockup}
 
 ### 3.4 日志
 
@@ -53,11 +58,19 @@
     查看 OpenResty 日志，支持实时追踪、下载、清空等操作，并可按指定时间段和行数筛选日志。
 
 ![img.png](../../img/websites/openresty_log.png)
+{: .browser-mockup}
 
-## 4 清除反代缓存
+### 3.5 模块
 
 !!! note ""
 
-    清除反向代理缓存的功能，以确保用户获取最新的内容和资源。
+    管理 OpenResty 模块，包括：
+    
+    - 查看已安装的模块列表
+    - 启用/禁用指定模块
+    - 创建、编辑、删除模块
 
-![img.png](../../img/websites/openresty_clear_cache.png)
+    模块配置发生变化后，需要点击【构建】按钮以应用配置，构建成功后会自动重启 OpenResty。
+
+![img.png](../../img/websites/openresty_module.png)
+{: .browser-mockup}
