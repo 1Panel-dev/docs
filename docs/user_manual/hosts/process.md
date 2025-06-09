@@ -10,6 +10,7 @@
     - 点击操作列的 `结束`，可以结束掉指定进程
 
 ![img.png](../../img/hosts/processes.png)
+{: .original}
 
 ## 2 查看网络连接信息
 
@@ -21,3 +22,4 @@
     - 列表中可以根据 PID 进行排序，根据连接状态进行筛选
 
 ![img.png](../../img/hosts/netstat.png)
+{: .original}

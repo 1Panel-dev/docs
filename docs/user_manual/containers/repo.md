@@ -6,3 +6,4 @@
     - 添加 http 协议仓库后，会自动在配置文件中添加该仓库的授信信息，需要重启 Docker 服务。
 
 ![img.png](../../img/containers/repo_create.png)
+{: .original}

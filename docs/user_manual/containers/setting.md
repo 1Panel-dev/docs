@@ -6,6 +6,7 @@
     - 配置文件默认为：/etc/docker/daemon.json。
 
 ![img.png](../../img/containers/setting.png)
+{: .original}
 
 !!! note ""
 
@@ -38,11 +39,14 @@
     
     - 面板设置中开启 IPv6，其中 fixed-cidr-v6 是上一步获取到的 IPv6 网段的子网（配置默认网络，前缀长度最大为 /80）。
         ![img.png](../../img/containers/ipv6-01.png)
+    {: .original}
 
     - 通过【网络】-【详情】检查是否生效。若生效，则 EnableIPv6 值为 true，IPAM.Config[1].Subnet 是上一步配置的 fixed-cidr-v6。
         ![img.png](../../img/containers/ipv6-02.png)
+    {: .original}
 
     - 创建 IPv6 网络。
         ![img.png](../../img/containers/ipv6-03.png)
+    {: .original}
 
     - 使用创建的 IPv6 网络创建容器。

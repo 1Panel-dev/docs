@@ -15,6 +15,7 @@
     其中配置界面可对 Redis 配置进行手动调整。
 
 ![img.png](../../img/databases/redis_conf.png)
+{: .original}
 
 !!! note ""
     - 系统 Redis 使用 Docker 安装，配置文件默认挂载在 /opt/1panel/apps/redis/[数据库名称]/conf/redis.conf。
@@ -27,6 +28,7 @@
     当 Redis 查询缓慢时，可在设置界面，点击当前状态按钮，查看当前数据库包括内存分配、查询命中率等各个常用指标的状态，通过这些状态对 Redis 进行性能优化。
 
 ![img.png](../../img/databases/redis_status.png)
+{: .original}
 
 ## 5 性能调整
 
@@ -34,6 +36,7 @@
     系统支持表单方式直接调整 Redis 相关参数，具体包括：超时时间、最大连接数、最大内存数。
 
 ![img.png](../../img/databases/redis_variables.png)
+{: .original}
 
 ## 6 端口
 
@@ -55,6 +58,7 @@
         - 缺点： 一般相同的数据集来说，AOF 体积要更大，而且速度可能会慢于 RDB。
 
 ![img.png](../../img/databases/redis_backup_aof.png)
+{: .original}
 
 !!! note ""
 
@@ -65,6 +69,7 @@
         - no: 不同步。
 
 ![img.png](../../img/databases/redis_backup_rdb.png)
+{: .original}
 
 !!! note ""
 

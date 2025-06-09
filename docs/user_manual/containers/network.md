@@ -6,6 +6,7 @@
     [我想了解更多容器网络相关的知识](https://docs.docker.com/network)
 
 ![img.png](../../img/containers/network_create.png)
+{: .original}
 
 !!! note ""
 

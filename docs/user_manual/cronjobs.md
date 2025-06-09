@@ -4,6 +4,7 @@
     主要用于管理需要定时执行的任务，如定期执行某shell脚本、定期备份、定期访问url等，同时支持手动执行。
 
 ![img.png](../img/cronjobs/cronjob_create.png)
+{: .original}
 
 ## 任务类型
 
@@ -151,3 +152,4 @@
     显示该任务产生的所有报告详情，支持时间、状态筛选，如果计划任务为备份，则可通过报告详情的下载按钮直接下载。
 
 ![img.png](../img/cronjobs/cronjob_record.png)
+{: .original}

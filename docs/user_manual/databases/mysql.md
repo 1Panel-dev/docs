@@ -11,8 +11,10 @@
     除应用商店安装的本地数据库以外，还可以添加已存在的数据库服务地址。点击列表上方的【远程服务器】按钮，即可进入远程服务器管理页面。
 
 ![img.png](../../img/databases/mysql_remote.png)
+{: .original}
 
 ![img.png](../../img/databases/mysql_remote_add.png)
+{: .original}
 
 1.3 切换数据库实例
 
@@ -20,6 +22,7 @@
     点击数据库列表上方的下拉菜单，即可在不同的数据库实例间进行切换，管理不同数据库实例下的数据库及设置等。
 
 ![img.png](../../img/databases/mysql_select.png)
+{: .original}
 
 ## 2 创建数据库
 
@@ -27,6 +30,7 @@
     创建一个新的数据库，首先输入数据库名称，选择编码格式，输入密码，设置访问权限，即可成功创建一个数据库。
 
 ![img.png](../../img/databases/create_mysql_db.png)
+{: .original}
 
 !!! note ""
     - 数据库名：新建数据库的名称，选择编码格式，默认为 UTF-8 格式。
@@ -40,6 +44,7 @@
     点击列表上方的【连接信息】按钮，即可查看数据库的地址、端口及 root 密码等连接信息，同时可以在这里修改数据库 root 密码。
 
 ![img.png](../../img/databases/mysql_connect.png)
+{: .original}
 
 !!! note "注意"
     应用商店部署的数据库采用容器化方式运行，不同的场景需要根据页面提示选择对应的连接信息。
@@ -65,6 +70,7 @@
     点击备份列表按钮，选择备份，即可备份当前数据库文件。
 
 ![img.png](../../img/databases/backup_mysql_db.png)
+{: .original}
 
 !!! note ""
     - 默认数据库路径为 /opt/1panel/backup/database/mysql。
@@ -76,6 +82,7 @@
     点击导入备份按钮，可以选择本地上传，或选择已备份的文件还原。
 
 ![img.png](../../img/databases/recover_mysql_db.png)
+{: .original}
 
 !!! note ""
 
@@ -89,6 +96,7 @@
     点击操作列的【权限】按钮，可以修改指定数据库的访问权限，目前支持配置为所有人可访问或指定 IP 可访问。
 
 ![img.png](../../img/databases/update_mysql_db_access.png)
+{: .original}
 
 !!! note ""
     - 所有人：任何人都可以远程连接至数据库。
@@ -108,6 +116,7 @@
     其中配置界面可对数据库配置进行手动调整。
 
 ![img.png](../../img/databases/mysql_conf.png)
+{: .original}
 
 !!! note ""
     - 系统 MySQL 使用 Docker 安装，配置文件默认挂载在 /opt/1panel/apps/mysql/[数据库名称]/conf/my.cnf。
@@ -120,6 +129,7 @@
     当数据库查询缓慢时，可在数据库设置界面，点击当前状态按钮，查看当前数据库包括缓存命中数、索引命中数等各个常用指标的状态，通过这些状态对数据库进行性能优化。
 
 ![img.png](../../img/databases/mysql_status.png)
+{: .original}
 
 ## 12 性能调整
 
@@ -127,6 +137,7 @@
     系统支持表单方式直接调整数据库性能相关参数名，如索引缓冲区、连接数等，并且预设常用的优化方案，用户可根据系统环境，直接选择优化方案。
 
 ![img.png](../../img/databases/mysql_variables.png)
+{: .original}
 
 ## 13 端口
 
@@ -140,3 +151,4 @@
     - 设置界面还支持查看 MySQL 产生的慢日志。
 
 ![img.png](../../img/databases/mysql_log.png)
+{: .original}

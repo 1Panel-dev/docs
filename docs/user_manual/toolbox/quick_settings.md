@@ -12,3 +12,4 @@
     - 服务器时间
 
 ![img.png](../../img/toolbox/quick_settings.png)
+{: .original}

@@ -19,6 +19,7 @@
     在 GPU 监控页面，可以查看到驱动版本，显卡型号以及显卡的使用率、温度、功耗等基础指标，还可以查看到目前正在使用显卡的进程信息。
 
 ![img.png](../../img/ai/gpu_monitor.png)
+{: .original}
 
 ## 3 配置应用商店应用（容器）使用 GPU
 
@@ -28,3 +29,4 @@
 > 在应用商店安装应用时，勾选高级设置中的 `GPU 加速` 即可让该应用获得 GPU 支持。
 
 ![img.png](../../img/ai/gpu_acceleration.png)
+{: .original}

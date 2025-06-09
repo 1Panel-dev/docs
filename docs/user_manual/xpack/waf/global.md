@@ -9,6 +9,7 @@
     
 
 ![img.png](../../../img/waf/global.png){ width="900px" }
+{: .original}
 
 ## 1 黑白名单
 
@@ -60,6 +61,7 @@
     
 
 ![img.png](../../../img/waf/cc.png){ width="900px" }
+{: .original}
 
 
 ### 2.2 攻击频率限制
@@ -70,6 +72,7 @@
     场景：某个 IP 一直攻击你的网站，触发了多次规则
 
 ![img.png](../../../img/waf/attack_cc.png){ width="900px" }
+{: .original}
 
 
 ### 2.3 404频率限制    
@@ -80,6 +83,7 @@
     场景：扫描器或者恶意爬虫一直爬你的网站
 
 ![img.png](../../../img/waf/404.png){ width="900px" }
+{: .original}
 
 
 ## 3 默认规则
@@ -148,6 +152,7 @@
     比如可以选择 URL 为 /login 的比如经过人机验证
 
 ![img.png](../../../img/waf/acl.png){ width="900px" }
+{: .original}
 
 ## 4.2 文件上传限制
 
@@ -156,6 +161,7 @@
     可以根据文件后缀限制上传文件的类型
 
 ![img.png](../../../img/waf/ext.png){ width="900px" }
+{: .original}
 
 ## 4.3 地区访问限制（✨专业版）
 
@@ -164,6 +170,7 @@
     可以限制或者仅允许某些地区的访问
 
 ![img.png](../../../img/waf/location.png){ width="900px" }
+{: .original}
 
 ## 4.4 CDN
 
@@ -175,6 +182,7 @@
     获取 X-Forwarded-For 的上一级代理地址：例如：X-Forwarded-For: client,proxy1,proxy2,proxy3 上一级代理会取最后一个 IP proxy3
 
 ![img.png](../../../img/waf/cdn.png){ width="900px" }
+{: .original}
 
 
 ## 5 配置
@@ -190,6 +198,7 @@
     可以自定义拦截页面
 
 ![img.png](../../../img/waf/html.png){ width="900px" }
+{: .original}
 
 
 ### 5.2 恶意 IP 组

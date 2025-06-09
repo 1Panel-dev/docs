@@ -173,7 +173,9 @@
   border-top: 2em solid rgba(230, 230, 230, 0.8);
   box-shadow: 0 0.1em .5em 0 rgba(0, 0, 0, 0.4);
   position: relative;
-  border-radius: 4px 4px 0 0
+  border-radius: 4px 4px 4px 4px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .browser-mockup:before {
@@ -216,6 +218,10 @@
 
 .browser-mockup>* {
   display: block;
+}
+
+.browser-mockup>img {
+  border-radius: 4px 4px 4px 4px;
 }
 
 .browser-mockup>a {

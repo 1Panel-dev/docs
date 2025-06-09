@@ -44,6 +44,7 @@ nav:
     - 在线安装: installation/online_installation.md
     - 离线包安装: installation/package_installation.md
     - 在线升级: installation/online_upgrade.md
+    - 从 V1 版本升级: installation/v1_migrate.md
     - 命令行工具: installation/cli.md
   - 功能手册:
     - 应用商店:
@@ -62,6 +63,8 @@ nav:
     - 证书:
       - 证书概述: user_manual/websites/certificate.md
       - 申请证书: user_manual/websites/certificate_create.md
+      - 上传证书: user_manual/websites/certificate_upload.md
+      - 自签证书: user_manual/websites/certificate_self_sign.md
       - 续签证书: user_manual/websites/certificate_renew.md
       - Acme 账户: user_manual/websites/certificate_acme.md
       - DNS 账户: user_manual/websites/certificate_dns.md
@@ -81,6 +84,7 @@ nav:
       - PostgreSQL: user_manual/databases/postgresql.md
       - Redis: user_manual/databases/redis.md
     - 容器:
+      - 概览: user_manual/containers/overview.md
       - 容器: user_manual/containers/container.md
       - 编排: user_manual/containers/compose.md
       - 镜像: user_manual/containers/image.md
@@ -89,14 +93,14 @@ nav:
       - 仓库: user_manual/containers/repo.md
       - 编排模版: user_manual/containers/compose_template.md
       - 配置: user_manual/containers/setting.md
-    - 计划任务: user_manual/cronjobs.md
-    - 主机:
+    - 系统:
       - 文件: user_manual/hosts/file.md
       - 监控: user_manual/hosts/monitor.md
-      - 终端: user_manual/hosts/terminal.md
       - 防火墙: user_manual/hosts/firewall.md
       - 进程管理: user_manual/hosts/process.md
       - SSH 管理: user_manual/hosts/ssh.md
+    - 计划任务: user_manual/cronjobs.md
+    - 终端: user_manual/terminal.md
     - 工具箱:
       - 快速设置: user_manual/toolbox/quick_settings.md
       - 缓存清理: user_manual/toolbox/clean.md
@@ -104,7 +108,6 @@ nav:
       - 病毒扫描: user_manual/toolbox/clam.md
       - FTP: user_manual/toolbox/ftp.md
       - Fail2ban: user_manual/toolbox/fail2ban.md
-    - 日志审计: user_manual/logs.md
     - 高级功能:
       - WAF:
         - 概述: user_manual/xpack/waf/waf.md
@@ -113,6 +116,7 @@ nav:
         - 网站设置: user_manual/xpack/waf/site.md
         - 拦截记录: user_manual/xpack/waf/log.md
         - 封锁记录: user_manual/xpack/waf/block.md
+    - 日志审计: user_manual/logs.md
     - 面板设置: user_manual/settings.md
   - 常见问题:
     - 产品 FAQ: faq/faq.md

@@ -6,6 +6,7 @@
     通过时间监控指标上方的时间选择组件，可以调整监控数据的时间范围。
 
 ![img.png](../../img/hosts/monitor.png)
+{: .original}
 
 ## 2 修改设置
 

@@ -9,14 +9,20 @@
     - 阿里云
     - 腾讯云
     - 华为云
-    - 火山引擎
-    - DNSPod（即将废弃）
+    - GoDaddy
     - Cloudflare
+    - Vercel
     - CloudDNS
     - NameSilo
     - NameCheap
     - Name.com
-    - GoDaddy
+    - FreeMyIP
+    - 雨云
+    - 西部数码
+    - ClouDNS
+    - Spaceship
+    - 火山引擎
+    - DNSPod（即将废弃）
 
 ![img.png](../../img/websites/certificate_dns.png)
 
