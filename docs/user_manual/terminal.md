@@ -11,6 +11,7 @@
     - 支持当前所有连接批量输入。
 
 ![img.png](../../img/hosts/terminal.png)
+{: .original}
 
 ## 2 主机管理
 
@@ -18,3 +19,4 @@
     维护主机信息，支持主机分组。
 
 ![img.png](../../img/hosts/host.png)
+{: .original}

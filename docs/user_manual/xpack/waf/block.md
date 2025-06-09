@@ -1,4 +1,3 @@
-
 !!! note ""
 
     封锁记录 可以查看 WAF 临时拉黑的 IP 
@@ -6,3 +5,4 @@
 
 
 ![img.png](../../../img/waf/block.png){ width="900px" }
+{: .original}

@@ -6,3 +6,4 @@
     [我想了解更多容器存储相关的知识](https://docs.docker.com/storage/volumes)
 
 ![img.png](../../img/containers/volume_create.png)
+{: .original}

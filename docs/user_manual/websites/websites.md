@@ -6,4 +6,5 @@
     - 面板提供了全面的管理选项，支持域名绑定、SSL 证书配置、HTTPS 启用、伪静态设置、重定向、防盗链等功能。
     - 此外，用户还可以通过 1Panel 实现网站数据的自动备份与恢复，确保数据安全。通过这些功能，1Panel 帮助用户轻松管理服务器上的各类网站。
 
-![img.png](../../img/websites/website.png){ width="900px" }
+![img.png](../../img/websites/website.png)
+{: .browser-mockup}

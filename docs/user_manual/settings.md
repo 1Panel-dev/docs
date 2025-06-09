@@ -16,6 +16,7 @@
     - 高级功能菜单隐藏：控制是否在左侧菜单中显示高级功能菜单项。
 
 ![img.png](../img/settings/panel.png)
+{: .original}
 
 ## 2 安全
 
@@ -34,6 +35,7 @@
     - 两步校验： 开启 MFA 登录验证，登录时输入用户名密码后，需要手机或者浏览器扫描二维码完成登录，提升系统安全等级。
 
 ![img.png](../img/settings/security.png)
+{: .original}
 
 !!! warning "注意"
     以上设置修改后会影响访问 1Panel 服务的方式，可能导致不能正常打开、登录 1Panel 面板的情况。
@@ -110,36 +112,44 @@
 2. 点击新注册，并填写注册信息，其中的重定向 URI 作为 重定向 Url 参数
 
 ![img.png](../img/settings/onedrive_custom1.png)
+{: .original}
 
 3. 主页上的 应用程序(客户端) ID 作为 客户端 ID
 
 ![img.png](../img/settings/onedrive_custom2.png)
+{: .original}
 
 4. 在 证书和密码 页面新建客户端密码，填写相关信息，生成的值作为 客户端密钥
 
 ![img.png](../img/settings/onedrive_custom3.png)
+{: .original}
 
 5. 在 API 权限页面选择需要的权限，添加权限，Microsoft Graph，委托的权限，勾选 Files.ReadWrite.All、offline_access、User.Read，这将作为 scope 传递
 
 ![img.png](../img/settings/onedrive_custom4.png)
+{: .original}
 
 ### 3.3 OneDrive 账号绑定
 
 1. 点击 OneDrive 授权码获取按钮
 
 ![img.png](../img/settings/onedrive_step1.png)
+{: .original}
 
 2. 输入 Onedrive 账号信息
 
 ![img.png](../img/settings/onedrive_step2.png)
+{: .original}
 
 3. 信任 1panel 服务
 
 ![img.png](../img/settings/onedrive_step3.png)
+{: .original}
 
 4. 复制授权码到 1Panel 授权码输入框 (注意不要包含 &session_state=xxx 部分)
 
 ![img.png](../img/settings/onedrive_step4.png)
+{: .original}
 
 ### 3.4 WebDAV 连接 AList
 
@@ -148,10 +158,12 @@
 2. 存储 菜单中添加对应的存储，记住该路径。
 
 ![img.png](../img/settings/webdav-01.png)
+{: .original}
 
 3. 1Panel 备份账号中，WebDAV 添加该备份账号，这里的路径应该是 /dav/${2步骤中的路径}/xxx，如此处的 /dav/tmp/sftp/1panel，完成绑定。
 
 ![img.png](../img/settings/webdav-02.png)
+{: .original}
 
 ### 3.5 部分对象存储服务商与亚马逊 S3 云存储的兼容性
 
@@ -186,6 +198,7 @@
     - 1panel.service 路径为 /etc/systemd/system/1panel.service；
 
 ![img.png](../img/settings/snapshot.png)
+{: .original}
 
 !!! note ""
 
@@ -210,3 +223,4 @@
     - 更新失败时，将回滚所有更新内容到更新前的状态，如更新后发现版本信息没有发生变化，则更新失败，可在【面板日志 - 系统日志】中查看失败原因，解决后重新完成更新操作。
 
 ![img.png](../img/settings/about.png)
+{: .original}

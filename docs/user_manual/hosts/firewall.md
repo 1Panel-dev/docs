@@ -1,4 +1,3 @@
-
 !!! note ""
     **1Panel 集成了两种广泛使用的 Linux 防火墙软件：Firewalld 和 UFW。**
 
@@ -97,6 +96,7 @@
     **点击防火墙开关按钮，即可开启或关闭防火墙。**
     
 ![img.png](../../img/hosts/firewall_switch.png)
+{: .original}
 
 !!! note ""
     **点击禁 ping 按钮，即可开启或关闭 PING 命令。**
@@ -104,6 +104,7 @@
     - 禁用 PING 命令的主要功能是：为了防止用户频繁 PING 服务器而导致服务器性能下降。
 
 ![img.png](../../img/hosts/firewall_ping.png)
+{: .original}
 
 ## 3 端口规则
 
@@ -120,8 +121,10 @@
     **端口放行成功后，可以查看防火墙列表查看当前端口的运行情况。**
 
 ![img.png](../../img/hosts/firewall_port_list.png)
+{: .original}
 
 ![img.png](../../img/hosts/firewall_port_create.png)
+{: .original}
 
 ## 4 端口转发
 
@@ -134,6 +137,7 @@
     - 目标端口：接收转发报文的目标端口。
 
 ![img.png](../../img/hosts/firewall_port_forward.png)
+{: .original}
 
 ## 5 IP 规则
 
@@ -144,5 +148,7 @@
     - 策略：默认为放行，有放行、屏蔽。
 
 ![img.png](../../img/hosts/firewall_ip_list.png)
+{: .original}
 
 ![img.png](../../img/hosts/firewall_ip_create.png)
+{: .original}

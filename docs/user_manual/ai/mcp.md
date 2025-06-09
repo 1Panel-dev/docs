@@ -6,6 +6,7 @@
     然而在实际操作过程中，搭建 MCP Server 需要手动配置大量依赖，部署门槛较高，许多用户难以上手。为了解决这个问题，1Panel v1.10.29 LTS 版本推出了原生的 MCP Server 管理功能，该功能通过容器化方式实现一键部署 MCP Server，能够极大简化搭建流程。
 
 ![img.png](../../img/ai/mcp_list.png)
+{: .original}
 
 ## 2 创建 MCP Server
 
@@ -18,10 +19,12 @@
 ### 2.1 npx 命令启动
 
 ![img.png](../../img/ai/create_mcp_server.png)
+{: .original}
 
 ### 2.2 二进制方式运行
 
 ![img.png](../../img/ai/mcp_binary.png)
+{: .original}
 
 ## 3 获取配置信息
 
@@ -30,6 +33,7 @@
     用户只需要复制客户端配置信息并粘贴至MCP客户端，即可开始使用拥有MCP加成的AI助手。这种方式无需手动查找或配置环境变量，实现了从部署到使用的无缝衔接。
 
 ![img.png](../../img/ai/mcp_server_config.png)
+{: .original}
 
 ## 4 统一域名与SSE路径
 
@@ -39,6 +43,7 @@
     这种方式不仅简化了公网访问的配置逻辑，也让运维操作更加集中统一。尤其是在大规模部署和企业内部网络的场景下，统一绑定网站域名能够避免暴露过多端口，减少安全风险，进一步提升部署的灵活性、安全性和可维护性。
 
 ![img.png](../../img/ai/mcp_website.png)
+{: .original}
 
 ## 5 白名单访问限制
 

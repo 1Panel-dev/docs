@@ -12,6 +12,7 @@
     - 清空日志内容
 
 ![img.png](../../img/websites/log.png)
+{: .browser-mockup}
 
 ## 2 配置文件
 
@@ -21,22 +22,31 @@
     - PHP 运行环境网站还支持修改 FPM 和 PHP 配置文件。
 
 ![img.png](../../img/websites/web_openresty.png)
+{: .browser-mockup}
 
-## 3 PHP
-
-!!! note ""
-
-    PHP 运行环境网站支持配置修改，包括禁用函数、调整上传限制以及切换 PHP 版本等功能。
-
-![img.png](../../img/websites/web_php.png)
-
-## 4 默认站点
+## 3 默认站点
 
 !!! note ""
 
     设置默认站点功能允许用户在未匹配到任何域名时，将请求自动定向到指定的默认网站。
 
 ![img.png](../../img/websites/website_default.png)
+{: .browser-mockup}
+
+## 4 默认页面
+
+!!! note ""
+
+    设置默认页面功能允许用户修改以下部分默认页面的内容。
+    
+    - **网站 404 错误页**
+    - **网站不存在页**
+    - **静态页面默认页**
+    - **PHP 网站默认页**
+    - **网站停用页**
+
+![img.png](../../img/websites/website_default_page.png)
+{: .browser-mockup}
 
 ## 5 开启 / 停止网站
 
@@ -45,6 +55,7 @@
     点击列表中的【已启动】或【已停止】按钮，可以切换网站的运行状态。
 
 ![img.png](../../img/websites/website_start.png)
+{: .browser-mockup}
 
 ## 6 设置过期时间
 
@@ -53,13 +64,17 @@
     设置网站过期时间后，系统将在到期时自动停止该站点，以确保资源的有效管理和使用。
 
 ![img.png](../../img/websites/web_expire.png)
+{: .browser-mockup}
 
 ## 7 删除网站
 
 !!! note ""
     
+    在网站列表更多操作中，可以删除指定网站。
+
     - **强制删除**：跳过删除过程中的错误，直接执行删除操作。
     - **删除应用**：可在删除网站时一并删除与之相关的 1Panel 应用。
     - **删除备份**：在删除网站的同时，也会删除其备份。
 
 ![img.png](../../img/websites/website_del.png)
+{: .browser-mockup}

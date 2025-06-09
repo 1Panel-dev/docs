@@ -6,6 +6,7 @@
 
 
 ![img.png](../../../img/waf/site.png){ width="900px" }
+{: .original}
 
 ## 1 频率限制
 
@@ -100,6 +101,7 @@
     可以根据文件后缀限制上传文件的类型
 
 ![img.png](../../../img/waf/ext.png){ width="900px" }
+{: .original}
 
 ## 3.3 地区访问限制（✨专业版）
 
@@ -108,6 +110,7 @@
     可以限制或者仅允许某些地区的访问
 
 ![img.png](../../../img/waf/location.png){ width="900px" }
+{: .original}
 
 ## 3.4 CDN
 
@@ -119,4 +122,5 @@
     获取 X-Forwarded-For 的上一级代理地址：例如：X-Forwarded-For: client,proxy1,proxy2,proxy3 上一级代理会取最后一个 IP proxy3
 
 ![img.png](../../../img/waf/cdn.png){ width="900px" }
+{: .original}
 

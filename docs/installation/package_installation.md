@@ -23,16 +23,16 @@
 
     ``` 
     cd /tmp
-    # 解压离线包（1panel-v1.10.0-lts-linux-amd64.tar.gz 为示例离线包名称，操作时可根据实际离线包名称替换）
-    tar zxvf 1panel-v1.10.0-lts-linux-amd64.tar.gz
+    # 解压离线包（1panel-v2.0.0-lts-linux-amd64.tar.gz 为示例离线包名称，操作时可根据实际离线包名称替换）
+    tar zxvf 1panel-v2.0.0-lts-linux-amd64.tar.gz
     ```
 
 ### 3.2 执行安装脚本
 
 !!! note ""
 	```
-    # 进入离线包目录（1panel-v1.10.0-lts-linux-amd64 为示例离线包目录名称，操作时可根据实际离线包名称替换）
-    cd 1panel-v1.10.0-lts-linux-amd64
+    # 进入离线包目录（1panel-v2.0.0-lts-linux-amd64 为示例离线包目录名称，操作时可根据实际离线包名称替换）
+    cd 1panel-v2.0.0-lts-linux-amd64
 
     # 运行安装脚本
     /bin/bash install.sh

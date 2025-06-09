@@ -7,9 +7,33 @@
     - 1Panel 支持维护 5.x、7.x 和 8.x 三个大版本，用户可以根据自己的需求选择合适的版本。
 
 ![img.png](../../img/websites/runtime_list.png)
+{: .browser-mockup}
 
-![img.png](../../img/websites/runtime_create.png)
+## 管理 PHP 扩展
 
+!!! note ""
+    点击 PHP 运行环境列表中的【扩展】按钮，可以查看当前 PHP 运行环境已加载的扩展，同时支持安装、卸载扩展。
+
+![img.png](../../img/websites/runtime_php_extensions.png)
+{: .browser-mockup}
+
+## 修改 PHP 配置
+
+!!! note ""
+    点击 PHP 运行环境列表中的【更多】操作中的【配置】选项，可以查看并修改当前 PHP 运行环境的配置。
+
+![img.png](../../img/websites/runtime_php_config.png)
+{: .browser-mockup}
+
+## 配置进程守护
+
+!!! note ""
+    点击 PHP 运行环境列表中的【更多】操作中的【进程守护】选项，可以查看并修改当前 PHP 运行环境的进程守护配置。
+
+    适用于 PHP 应用需要额外的常驻进程的场景。
+
+![img.png](../../img/websites/runtime_php_daemon.png)
+{: .browser-mockup}
 
 ## PHP 扩展列表
 
