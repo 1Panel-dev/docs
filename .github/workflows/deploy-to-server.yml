@@ -7,7 +7,6 @@ jobs:
     steps:
       - name: Check
         uses: actions/checkout@v4
-
       - name: ssh deploy
         uses: easingthemes/ssh-deploy@v2.2.11
         with:
