@@ -6,14 +6,9 @@
     - 开源：1Panel 强调开源开放，广泛获取社区使用反馈，并快速迭代。
     - 现代化：一方面，1Panel 采纳最新的前端技术，并通过精心设计的 UX 交互，为用户提供更好的用户使用体验；另一方面，1Panel 采用主流的容器技术，让 Linux 服务器的运维管理更简单、更安全。
 
-## 2 是否考虑增加多主机管理？
+    详细对比请查看：[1Panel vs. 宝塔面板](https://vsbt.1panel.cn/)
 
-!!! note ""
-    **1Panel 会关注在单机 Linux 的运维管理。**  
-
-    多主机管理推荐使用 [JumpServer 堡垒机](https://github.com/jumpserver/jumpserver) 来实现。尤其现在 JumpServer 也支持 Web 资产，可以通过Web 可视化连上 1Panel，实现多主机管理。
-
-## 3 1Panel 安装包多大？运行时占用系统资源多吗？会影响其他应用吗？
+## 2 1Panel 安装包多大？运行时占用系统资源多吗？会影响其他应用吗？
 
 !!! note ""
 
