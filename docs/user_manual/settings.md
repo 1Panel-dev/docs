@@ -213,7 +213,12 @@
 !!! note ""
     用于查看当前许可证状态，导入专业版许可证并成功激活后，可以使用专业版相关功能。
 
-    [探索专业版带来的更多可能](https://www.lxware.cn/1panel)
+    [点击了解专业版更多信息](https://www.lxware.cn/1panel)
+
+    用户可以添加多个专业许可证，每个专业版许可证可以绑定一个节点将其激活为专业版节点，同时可以绑定多个社区版节点。
+
+![img.png](../img/settings/licenses.png)
+{: .browser-mockup}
 
 ## 6 关于
 
