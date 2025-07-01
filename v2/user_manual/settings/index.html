@@ -2792,18 +2792,36 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#34-webdav-alist" class="md-nav__link">
+  <a href="#34" class="md-nav__link">
     <span class="md-ellipsis">
-      3.4 WebDAV 连接 AList
+      3.4 阿里云盘账号绑定
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#35-s3" class="md-nav__link">
+  <a href="#35" class="md-nav__link">
     <span class="md-ellipsis">
-      3.5 部分对象存储服务商与亚马逊 S3 云存储的兼容性
+      3.5 谷歌云盘账号绑定
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-webdav-alist" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6 WebDAV 连接 AList
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-s3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.7 部分对象存储服务商与亚马逊 S3 云存储的兼容性
     </span>
   </a>
   
@@ -3128,18 +3146,36 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#34-webdav-alist" class="md-nav__link">
+  <a href="#34" class="md-nav__link">
     <span class="md-ellipsis">
-      3.4 WebDAV 连接 AList
+      3.4 阿里云盘账号绑定
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#35-s3" class="md-nav__link">
+  <a href="#35" class="md-nav__link">
     <span class="md-ellipsis">
-      3.5 部分对象存储服务商与亚马逊 S3 云存储的兼容性
+      3.5 谷歌云盘账号绑定
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-webdav-alist" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6 WebDAV 连接 AList
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-s3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.7 部分对象存储服务商与亚马逊 S3 云存储的兼容性
     </span>
   </a>
   
@@ -3334,7 +3370,38 @@ Use &quot;1panel update [command] --help&quot; for more information about a comm
 <li>复制授权码到 1Panel 授权码输入框 (注意不要包含 &amp;session_state=xxx 部分)</li>
 </ol>
 <p class="original"><img alt="img.png" src="../../img/settings/onedrive_step4.png" /></p>
-<h3 id="34-webdav-alist">3.4 WebDAV 连接 AList<a class="headerlink" href="#34-webdav-alist" title="Permanent link">⚓︎</a></h3>
+<h3 id="34">3.4 阿里云盘账号绑定<a class="headerlink" href="#34" title="Permanent link">⚓︎</a></h3>
+<ol>
+<li>
+<p>登陆网页版阿里云盘 (<a href="https://www.alipan.com/">https://www.alipan.com/</a>)</p>
+</li>
+<li>
+<p>右键检查或者 F12 打开浏览器调试模式，找到 token 信息，复制值</p>
+</li>
+</ol>
+<p class="original"><img alt="img.png" src="../../img/settings/ali_pan_1.png" /></p>
+<ol>
+<li>将复制的值粘贴到 1 处，点击解析，自动解析出 3 和 4 输入框的值，修改备份目录后点击确认即可</li>
+</ol>
+<p class="original"><img alt="img.png" src="../../img/settings/ali_pan_2.png" /></p>
+<h3 id="35">3.5 谷歌云盘账号绑定<a class="headerlink" href="#35" title="Permanent link">⚓︎</a></h3>
+<ol>
+<li>
+<p>点击授权码的获取按钮，登陆谷歌账号</p>
+</li>
+<li>
+<p>跳转至 1Panel 应用，完成登陆</p>
+</li>
+</ol>
+<p class="original"><img alt="img.png" src="../../img/settings/google_drive_1.png" /></p>
+<ol>
+<li>完成授权后继续跳转，在浏览器地址中复制授权码（注意！这里只需要复制 code 的值）</li>
+</ol>
+<p class="original"><img alt="img.png" src="../../img/settings/google_drive_2.png" /></p>
+<ol>
+<li>粘贴复制的授权码到授权码输入框中，修改备份目录后点击确认即可</li>
+</ol>
+<h3 id="36-webdav-alist">3.6 WebDAV 连接 AList<a class="headerlink" href="#36-webdav-alist" title="Permanent link">⚓︎</a></h3>
 <ol>
 <li>
 <p>从应用商店安装好 AList 后（记得打开端口外部访问），在容器日志中查看初始化密码，跳转到 AList 管理界面。</p>
@@ -3348,7 +3415,7 @@ Use &quot;1panel update [command] --help&quot; for more information about a comm
 <li>1Panel 备份账号中，WebDAV 添加该备份账号，这里的路径应该是 /dav/${2步骤中的路径}/xxx，如此处的 /dav/tmp/sftp/1panel，完成绑定。</li>
 </ol>
 <p class="original"><img alt="img.png" src="../../img/settings/webdav-02.png" /></p>
-<h3 id="35-s3">3.5 部分对象存储服务商与亚马逊 S3 云存储的兼容性<a class="headerlink" href="#35-s3" title="Permanent link">⚓︎</a></h3>
+<h3 id="37-s3">3.7 部分对象存储服务商与亚马逊 S3 云存储的兼容性<a class="headerlink" href="#37-s3" title="Permanent link">⚓︎</a></h3>
 <table>
 <thead>
 <tr>
