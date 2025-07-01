@@ -151,7 +151,37 @@
 ![img.png](../img/settings/onedrive_step4.png)
 {: .original}
 
-### 3.4 WebDAV 连接 AList
+### 3.4 阿里云盘账号绑定
+
+1. 登陆网页版阿里云盘 (https://www.alipan.com/)
+
+2. 右键检查或者 F12 打开浏览器调试模式，找到 token 信息，复制值
+
+![img.png](../img/settings/ali_pan_1.png)
+{: .original}
+
+3. 将复制的值粘贴到 1 处，点击解析，自动解析出 3 和 4 输入框的值，修改备份目录后点击确认即可
+
+![img.png](../img/settings/ali_pan_2.png)
+{: .original}
+
+### 3.5 谷歌云盘账号绑定
+
+1. 点击授权码的获取按钮，登陆谷歌账号
+
+2. 跳转至 1Panel 应用，完成登陆
+
+![img.png](../img/settings/google_drive_1.png)
+{: .original}
+
+3. 完成授权后继续跳转，在浏览器地址中复制授权码（注意！这里只需要复制 code 的值）
+
+![img.png](../img/settings/google_drive_2.png)
+{: .original}
+
+4. 粘贴复制的授权码到授权码输入框中，修改备份目录后点击确认即可
+
+### 3.6 WebDAV 连接 AList
 
 1. 从应用商店安装好 AList 后（记得打开端口外部访问），在容器日志中查看初始化密码，跳转到 AList 管理界面。
 
@@ -165,7 +195,7 @@
 ![img.png](../img/settings/webdav-02.png)
 {: .original}
 
-### 3.5 部分对象存储服务商与亚马逊 S3 云存储的兼容性
+### 3.7 部分对象存储服务商与亚马逊 S3 云存储的兼容性
 
 |服务商|文档|兼容访问风格|兼容性|
 | ----- | ---- | ----- | ----- |
