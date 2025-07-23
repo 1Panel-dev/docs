@@ -6,6 +6,8 @@
 
 > 🔗 https://gitee.com/fit2cloud-feizhiyun/1panel-migrator/releases/
 
+**提示**：请确保安装包版本 **大于等于 v2.0.8**，该版本及以上才支持主从节点切换功能。
+
 每个版本会提供以下架构的安装包（文件名示例）：
 
 - `1panel-migrator-linux-amd64`
