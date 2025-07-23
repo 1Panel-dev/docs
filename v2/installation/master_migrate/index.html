@@ -12,31 +12,31 @@
         <meta name="author" content="1Panel">
       
       
-        <link rel="canonical" href="https://1panel.cn/v2/user_manual/containers/volume/">
+        <link rel="canonical" href="https://1panel.cn/v2/installation/master_migrate/">
       
       
-        <link rel="prev" href="../network/">
+        <link rel="prev" href="../v1_migrate_steps/">
       
       
-        <link rel="next" href="../repo/">
+        <link rel="next" href="../cli/">
       
       
-      <link rel="icon" href="../../../img/facio.ico">
+      <link rel="icon" href="../../img/facio.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
-        <title>存储卷 - 1Panel 文档</title>
+        <title>主从节点切换 - 1Panel 文档</title>
       
     
     
-    <link rel="stylesheet" href="../../../css/lightgallery.min.css">
-    <link href="../../../css/f2c-header.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/lightgallery.min.css">
+    <link href="../../css/f2c-header.css" rel="stylesheet" type="text/css" />
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -47,23 +47,23 @@
     
       
     
-    <script src="../../../js/lightgallery.min.js"></script>
-    <script src="../../../js/jquery-3.5.1.min.js"></script>
-    <script src="../../../js/mega.js"></script>
+    <script src="../../js/lightgallery.min.js"></script>
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/mega.js"></script>
 
     
       
     
     
-      <link rel="stylesheet" href="../../../css/extra.css">
+      <link rel="stylesheet" href="../../css/extra.css">
     
-      <link rel="stylesheet" href="../../../css/termynal.css">
+      <link rel="stylesheet" href="../../css/termynal.css">
     
-      <link rel="stylesheet" href="../../../css/custom.css">
+      <link rel="stylesheet" href="../../css/custom.css">
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -99,7 +99,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1" class="md-skip">
+        <a href="#1-1panel-migrator" class="md-skip">
           跳转至
         </a>
       
@@ -138,7 +138,7 @@
         <div class="mega-nav-banner">
             <div class="container">
                 <div class="mega-nav-banner-item">
-                    <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../../../img/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD Logo" /></a>
+                    <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../../img/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD Logo" /></a>
                 </div>
                 <div class="mega-nav-banner-item">
                     <p class="mega-nav-tagline">
@@ -181,9 +181,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../.." title="1Panel 文档" class="md-header__button md-logo" aria-label="1Panel 文档" data-md-component="logo">
+    <a href="../.." title="1Panel 文档" class="md-header__button md-logo" aria-label="1Panel 文档" data-md-component="logo">
       
-  <img src="../../../img/logo-white.png" alt="logo">
+  <img src="../../img/logo-white.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -200,7 +200,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              存储卷
+              主从节点切换
             
           </span>
         </div>
@@ -324,9 +324,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="1Panel 文档" class="md-nav__button md-logo" aria-label="1Panel 文档" data-md-component="logo">
+    <a href="../.." title="1Panel 文档" class="md-nav__button md-logo" aria-label="1Panel 文档" data-md-component="logo">
       
-  <img src="../../../img/logo-white.png" alt="logo">
+  <img src="../../img/logo-white.png" alt="logo">
 
     </a>
     1Panel 文档
@@ -353,7 +353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -372,8 +372,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -391,11 +393,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -411,7 +413,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             安装部署
@@ -425,7 +427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/online_installation/" class="md-nav__link">
+      <a href="../online_installation/" class="md-nav__link">
         
   
   
@@ -448,7 +450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/online_upgrade/" class="md-nav__link">
+      <a href="../online_upgrade/" class="md-nav__link">
         
   
   
@@ -515,7 +517,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/v1_migrate/" class="md-nav__link">
+      <a href="../v1_migrate/" class="md-nav__link">
         
   
   
@@ -538,7 +540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/v1_migrate_steps/" class="md-nav__link">
+      <a href="../v1_migrate_steps/" class="md-nav__link">
         
   
   
@@ -566,10 +568,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../installation/master_migrate/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    主从节点切换
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -580,6 +602,75 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-1panel-migrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 安装 1panel-migrator
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 安装 1panel-migrator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 安装包获取
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-amd64" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 安装步骤（以 amd64 架构为例）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 从节点 -&gt; 主节点
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 主节点 -&gt; 从节点
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -592,7 +683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/cli/" class="md-nav__link">
+      <a href="../cli/" class="md-nav__link">
         
   
   
@@ -619,10 +710,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -658,11 +747,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -678,7 +767,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             功能手册
@@ -740,7 +829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/appstore/" class="md-nav__link">
+      <a href="../../user_manual/appstore/appstore/" class="md-nav__link">
         
   
   
@@ -763,7 +852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/install/" class="md-nav__link">
+      <a href="../../user_manual/appstore/install/" class="md-nav__link">
         
   
   
@@ -786,7 +875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/installed/" class="md-nav__link">
+      <a href="../../user_manual/appstore/installed/" class="md-nav__link">
         
   
   
@@ -809,7 +898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/setting/" class="md-nav__link">
+      <a href="../../user_manual/appstore/setting/" class="md-nav__link">
         
   
   
@@ -894,7 +983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/websites/" class="md-nav__link">
+      <a href="../../user_manual/websites/websites/" class="md-nav__link">
         
   
   
@@ -917,7 +1006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/website_create/" class="md-nav__link">
+      <a href="../../user_manual/websites/website_create/" class="md-nav__link">
         
   
   
@@ -940,7 +1029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/website_config_basic/" class="md-nav__link">
+      <a href="../../user_manual/websites/website_config_basic/" class="md-nav__link">
         
   
   
@@ -963,7 +1052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/website_config_other/" class="md-nav__link">
+      <a href="../../user_manual/websites/website_config_other/" class="md-nav__link">
         
   
   
@@ -986,7 +1075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/website_group/" class="md-nav__link">
+      <a href="../../user_manual/websites/website_group/" class="md-nav__link">
         
   
   
@@ -1009,7 +1098,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/website_backup/" class="md-nav__link">
+      <a href="../../user_manual/websites/website_backup/" class="md-nav__link">
         
   
   
@@ -1032,7 +1121,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/openresty/" class="md-nav__link">
+      <a href="../../user_manual/websites/openresty/" class="md-nav__link">
         
   
   
@@ -1117,7 +1206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/certificate/" class="md-nav__link">
+      <a href="../../user_manual/websites/certificate/" class="md-nav__link">
         
   
   
@@ -1140,7 +1229,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/certificate_create/" class="md-nav__link">
+      <a href="../../user_manual/websites/certificate_create/" class="md-nav__link">
         
   
   
@@ -1163,7 +1252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/certificate_upload/" class="md-nav__link">
+      <a href="../../user_manual/websites/certificate_upload/" class="md-nav__link">
         
   
   
@@ -1186,7 +1275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/certificate_self_sign/" class="md-nav__link">
+      <a href="../../user_manual/websites/certificate_self_sign/" class="md-nav__link">
         
   
   
@@ -1209,7 +1298,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/certificate_renew/" class="md-nav__link">
+      <a href="../../user_manual/websites/certificate_renew/" class="md-nav__link">
         
   
   
@@ -1232,7 +1321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/certificate_acme/" class="md-nav__link">
+      <a href="../../user_manual/websites/certificate_acme/" class="md-nav__link">
         
   
   
@@ -1255,7 +1344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/certificate_dns/" class="md-nav__link">
+      <a href="../../user_manual/websites/certificate_dns/" class="md-nav__link">
         
   
   
@@ -1338,7 +1427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/php/" class="md-nav__link">
+      <a href="../../user_manual/websites/php/" class="md-nav__link">
         
   
   
@@ -1361,7 +1450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/node/" class="md-nav__link">
+      <a href="../../user_manual/websites/node/" class="md-nav__link">
         
   
   
@@ -1384,7 +1473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/java/" class="md-nav__link">
+      <a href="../../user_manual/websites/java/" class="md-nav__link">
         
   
   
@@ -1407,7 +1496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/golang/" class="md-nav__link">
+      <a href="../../user_manual/websites/golang/" class="md-nav__link">
         
   
   
@@ -1430,7 +1519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/python/" class="md-nav__link">
+      <a href="../../user_manual/websites/python/" class="md-nav__link">
         
   
   
@@ -1453,7 +1542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/dotnet/" class="md-nav__link">
+      <a href="../../user_manual/websites/dotnet/" class="md-nav__link">
         
   
   
@@ -1530,7 +1619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ai/model/" class="md-nav__link">
+      <a href="../../user_manual/ai/model/" class="md-nav__link">
         
   
   
@@ -1553,7 +1642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ai/mcp/" class="md-nav__link">
+      <a href="../../user_manual/ai/mcp/" class="md-nav__link">
         
   
   
@@ -1576,7 +1665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ai/gpu/" class="md-nav__link">
+      <a href="../../user_manual/ai/gpu/" class="md-nav__link">
         
   
   
@@ -1653,7 +1742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../databases/mysql/" class="md-nav__link">
+      <a href="../../user_manual/databases/mysql/" class="md-nav__link">
         
   
   
@@ -1676,7 +1765,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../databases/postgresql/" class="md-nav__link">
+      <a href="../../user_manual/databases/postgresql/" class="md-nav__link">
         
   
   
@@ -1699,7 +1788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../databases/redis/" class="md-nav__link">
+      <a href="../../user_manual/databases/redis/" class="md-nav__link">
         
   
   
@@ -1727,10 +1816,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -1756,11 +1843,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
         
           
           <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
@@ -1776,7 +1863,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_7">
             <span class="md-nav__icon md-icon"></span>
             容器
@@ -1790,7 +1877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+      <a href="../../user_manual/containers/overview/" class="md-nav__link">
         
   
   
@@ -1813,7 +1900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../container/" class="md-nav__link">
+      <a href="../../user_manual/containers/container/" class="md-nav__link">
         
   
   
@@ -1836,7 +1923,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../compose/" class="md-nav__link">
+      <a href="../../user_manual/containers/compose/" class="md-nav__link">
         
   
   
@@ -1859,7 +1946,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../image/" class="md-nav__link">
+      <a href="../../user_manual/containers/image/" class="md-nav__link">
         
   
   
@@ -1882,7 +1969,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../network/" class="md-nav__link">
+      <a href="../../user_manual/containers/network/" class="md-nav__link">
         
   
   
@@ -1902,30 +1989,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    存储卷
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../user_manual/containers/volume/" class="md-nav__link">
         
   
   
@@ -1936,33 +2003,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1 添加存储
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1975,7 +2015,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../repo/" class="md-nav__link">
+      <a href="../../user_manual/containers/repo/" class="md-nav__link">
         
   
   
@@ -1998,7 +2038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../compose_template/" class="md-nav__link">
+      <a href="../../user_manual/containers/compose_template/" class="md-nav__link">
         
   
   
@@ -2021,7 +2061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../setting/" class="md-nav__link">
+      <a href="../../user_manual/containers/setting/" class="md-nav__link">
         
   
   
@@ -2102,7 +2142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hosts/file/" class="md-nav__link">
+      <a href="../../user_manual/hosts/file/" class="md-nav__link">
         
   
   
@@ -2125,7 +2165,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hosts/monitor/" class="md-nav__link">
+      <a href="../../user_manual/hosts/monitor/" class="md-nav__link">
         
   
   
@@ -2148,7 +2188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hosts/firewall/" class="md-nav__link">
+      <a href="../../user_manual/hosts/firewall/" class="md-nav__link">
         
   
   
@@ -2171,7 +2211,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hosts/process/" class="md-nav__link">
+      <a href="../../user_manual/hosts/process/" class="md-nav__link">
         
   
   
@@ -2194,7 +2234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hosts/ssh/" class="md-nav__link">
+      <a href="../../user_manual/hosts/ssh/" class="md-nav__link">
         
   
   
@@ -2225,7 +2265,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cronjobs/" class="md-nav__link">
+      <a href="../../user_manual/cronjobs/" class="md-nav__link">
         
   
   
@@ -2248,7 +2288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../terminal/" class="md-nav__link">
+      <a href="../../user_manual/terminal/" class="md-nav__link">
         
   
   
@@ -2323,7 +2363,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../toolbox/quick_settings/" class="md-nav__link">
+      <a href="../../user_manual/toolbox/quick_settings/" class="md-nav__link">
         
   
   
@@ -2346,7 +2386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../toolbox/clean/" class="md-nav__link">
+      <a href="../../user_manual/toolbox/clean/" class="md-nav__link">
         
   
   
@@ -2369,7 +2409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../toolbox/supervisor/" class="md-nav__link">
+      <a href="../../user_manual/toolbox/supervisor/" class="md-nav__link">
         
   
   
@@ -2392,7 +2432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../toolbox/clam/" class="md-nav__link">
+      <a href="../../user_manual/toolbox/clam/" class="md-nav__link">
         
   
   
@@ -2415,7 +2455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../toolbox/ftp/" class="md-nav__link">
+      <a href="../../user_manual/toolbox/ftp/" class="md-nav__link">
         
   
   
@@ -2438,7 +2478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../toolbox/fail2ban/" class="md-nav__link">
+      <a href="../../user_manual/toolbox/fail2ban/" class="md-nav__link">
         
   
   
@@ -2565,7 +2605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/waf/waf/" class="md-nav__link">
+      <a href="../../user_manual/xpack/waf/waf/" class="md-nav__link">
         
   
   
@@ -2588,7 +2628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/waf/dashboard/" class="md-nav__link">
+      <a href="../../user_manual/xpack/waf/dashboard/" class="md-nav__link">
         
   
   
@@ -2611,7 +2651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/waf/global/" class="md-nav__link">
+      <a href="../../user_manual/xpack/waf/global/" class="md-nav__link">
         
   
   
@@ -2634,7 +2674,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/waf/site/" class="md-nav__link">
+      <a href="../../user_manual/xpack/waf/site/" class="md-nav__link">
         
   
   
@@ -2657,7 +2697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/waf/log/" class="md-nav__link">
+      <a href="../../user_manual/xpack/waf/log/" class="md-nav__link">
         
   
   
@@ -2680,7 +2720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/waf/block/" class="md-nav__link">
+      <a href="../../user_manual/xpack/waf/block/" class="md-nav__link">
         
   
   
@@ -2711,7 +2751,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/node/" class="md-nav__link">
+      <a href="../../user_manual/xpack/node/" class="md-nav__link">
         
   
   
@@ -2742,7 +2782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../logs/" class="md-nav__link">
+      <a href="../../user_manual/logs/" class="md-nav__link">
         
   
   
@@ -2765,7 +2805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../settings/" class="md-nav__link">
+      <a href="../../user_manual/settings/" class="md-nav__link">
         
   
   
@@ -2843,7 +2883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../faq/faq/" class="md-nav__link">
+      <a href="../../faq/faq/" class="md-nav__link">
         
   
   
@@ -2866,7 +2906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../faq/operating_system/" class="md-nav__link">
+      <a href="../../faq/operating_system/" class="md-nav__link">
         
   
   
@@ -2889,7 +2929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../faq/system_function/" class="md-nav__link">
+      <a href="../../faq/system_function/" class="md-nav__link">
         
   
   
@@ -2912,7 +2952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../faq/server_architecture/" class="md-nav__link">
+      <a href="../../faq/server_architecture/" class="md-nav__link">
         
   
   
@@ -2942,7 +2982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../changelog/" class="md-nav__link">
+      <a href="../../changelog/" class="md-nav__link">
         
   
   
@@ -2964,7 +3004,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contact/" class="md-nav__link">
+      <a href="../../contact/" class="md-nav__link">
         
   
   
@@ -3004,9 +3044,51 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-1panel-migrator" class="md-nav__link">
     <span class="md-ellipsis">
-      1 添加存储
+      1. 安装 1panel-migrator
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 安装 1panel-migrator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 安装包获取
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-amd64" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 安装步骤（以 amd64 架构为例）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 从节点 -&gt; 主节点
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 主节点 -&gt; 从节点
     </span>
   </a>
   
@@ -3028,14 +3110,55 @@
 
 
 
-  <h1>存储卷</h1>
+  <h1>主从节点切换</h1>
 
-<h2 id="1">1 添加存储<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
+<h2 id="1-1panel-migrator">1. 安装 1panel-migrator<a class="headerlink" href="#1-1panel-migrator" title="Permanent link">⚓︎</a></h2>
+<h3 id="11">1.1 安装包获取<a class="headerlink" href="#11" title="Permanent link">⚓︎</a></h3>
+<p>请访问 Gitee 发布页，手动下载适用于您服务器架构的安装包，并将其放置到 <code>/tmp</code> 目录：</p>
+<blockquote>
+<p>🔗 <a href="https://gitee.com/fit2cloud-feizhiyun/1panel-migrator/releases/">https://gitee.com/fit2cloud-feizhiyun/1panel-migrator/releases/</a></p>
+</blockquote>
+<p>每个版本会提供以下架构的安装包（文件名示例）：</p>
+<ul>
+<li><code>1panel-migrator-linux-amd64</code></li>
+<li><code>1panel-migrator-linux-arm64</code></li>
+<li><code>1panel-migrator-linux-arm</code></li>
+<li><code>1panel-migrator-linux-ppc64le</code></li>
+<li><code>1panel-migrator-linux-s390x</code></li>
+</ul>
+<h3 id="12-amd64">1.2 安装步骤（以 amd64 架构为例）<a class="headerlink" href="#12-amd64" title="Permanent link">⚓︎</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># 1. 进入临时目录</span>
+<span class="nb">cd</span><span class="w"> </span>/tmp
+
+<span class="c1"># 2. 添加执行权限</span>
+chmod<span class="w"> </span>+x<span class="w"> </span>1panel-migrator-linux-amd64
+
+<span class="c1"># 3. 移动至系统 PATH 中并重命名</span>
+mv<span class="w"> </span>1panel-migrator-linux-amd64<span class="w"> </span>/usr/local/bin/1panel-migrator
+</code></pre></div>
+<h2 id="2-">2. 从节点 -&gt; 主节点<a class="headerlink" href="#2-" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>Volume 是一个数据存储区域，可以挂载到容器中以提供持久存储。</p>
-<p><a href="https://docs.docker.com/storage/volumes">我想了解更多容器存储相关的知识</a></p>
+<p>从节点升级为主节点需要先在原来主节点上设置好主节点备份，仅存在备份文件的主节点支持升级到主节点</p>
 </div>
-<p class="original"><img alt="img.png" src="../../../img/containers/volume_create.png" /></p>
+<ol>
+<li>打开节点列表，点击上方主节点备份</li>
+<li>勾选备份节点，设置自动备份频率及保留份数，保存设置</li>
+<li>
+<p>点击执行备份，查看备份结果</p>
+<p><img alt="img.png" src="../../img/installation/master_backup.png" /></p>
+</li>
+<li>
+<p>打开需要升级的从节点，通过安装好的 1panel-migrator 执行升级命令 <code>1panel-migrator promote</code></p>
+<p><img alt="img.png" src="../../img/installation/promote.png" /></p>
+</li>
+</ol>
+<h2 id="3-">3. 主节点 -&gt; 从节点<a class="headerlink" href="#3-" title="Permanent link">⚓︎</a></h2>
+<ol>
+<li>
+<p>打开需要降级的主节点，通过安装好的 1panel-migrator 执行降级命令 <code>1panel-migrator demote</code></p>
+<p><img alt="img.png" src="../../img/installation/demote.png" /></p>
+</li>
+</ol>
 
 
 
@@ -3207,15 +3330,15 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
     
     
     
-      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
-        <script src="../../../js/termynal.js"></script>
+        <script src="../../js/termynal.js"></script>
       
-        <script src="../../../js/custom.js"></script>
+        <script src="../../js/custom.js"></script>
       
     
     <script>
