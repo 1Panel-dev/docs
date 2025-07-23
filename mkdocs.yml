@@ -47,6 +47,7 @@ nav:
     - 从 V1 版本升级:
       - 升级说明: installation/v1_migrate.md
       - 操作步骤: installation/v1_migrate_steps.md
+    - 主从节点切换: installation/master_migrate.md
     - 命令行工具: installation/cli.md
   - 功能手册:
     - 应用商店:
