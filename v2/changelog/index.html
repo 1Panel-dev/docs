@@ -2956,6 +2956,24 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v205" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.0.5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v204" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.0.4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v203" class="md-nav__link">
     <span class="md-ellipsis">
       v2.0.3
@@ -3088,6 +3106,24 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v205" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.0.5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v204" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.0.4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v203" class="md-nav__link">
     <span class="md-ellipsis">
       v2.0.3
@@ -3174,6 +3210,87 @@
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
+<h3 id="v205">v2.0.5<a class="headerlink" href="#v205" title="Permanent link">⚓︎</a></h3>
+<p>2025年7月24日</p>
+<div class="admonition note">
+<p class="admonition-title">新增功能 <img alt="🌟" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f31f.svg" title=":star2:" /></p>
+<ul>
+<li>【节点管理】新增主从节点角色切换功能</li>
+<li>【应用高可用】新增 MySQL、PostgreSQL 和 Redis 集群安装功能</li>
+<li>【面板设置】新增邮件告警功能</li>
+<li>【面板设置】支持土耳其语</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">功能优化 <img alt="🌻" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f33b.svg" title=":sunflower:" /></p>
+<ul>
+<li>【应用商店】安装应用时支持使用已存在的远程数据库</li>
+<li>【网站】移除 HTTPS 配置页面 HSTS 的必填标识</li>
+<li>【网站】优化部分负载均衡配置页面提示信息</li>
+<li>【运行环境】进入运行环境页面时新增 Docker 未安装提醒</li>
+<li>【运行环境】进入运行环境终端支持指定用户</li>
+<li>【运行环境】支持快速安装 sodium 扩展</li>
+<li>【容器】构建容器镜像改为异步执行</li>
+<li>【容器】创建容器后支持选择继续编辑或返回容器列表</li>
+<li>【容器】创建容器改为异步执行</li>
+<li>【计划任务】计划任务中容器选项新增容器状态显示</li>
+<li>【节点管理】新增“已删除”节点状态</li>
+<li>【节点管理】优化节点同步状态的显示</li>
+<li>【节点管理】增加节点启动中状态</li>
+<li>【面板设置】同步快照时备份账号选项新增类型显示</li>
+<li>【面板设置】支持自定义快照超时时间</li>
+<li>【系统】优化了备份临时文件目录</li>
+<li>【系统】编辑 Compose 等右侧抽屉页面已禁止点击空白处关闭</li>
+<li>【系统】优化节点切换的过渡动画效果</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">问题修复 <img alt="🌴" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f334.svg" title=":palm_tree:" /></p>
+<ul>
+<li>【概览】修复了概览页内存使用详情未包含共享内存的问题</li>
+<li>【应用商店】修复了应用标签在非中文语言下显示错误的问题</li>
+<li>【应用商店】修复了应用日志页面标题显示异常的问题</li>
+<li>【应用商店】修复了部分应用脚本执行失败的问题</li>
+<li>【应用商店】修复了本地应用未设置端口时错误显示跳转按钮的问题</li>
+<li>【应用商店】修复了 Mailserver 安装失败问题</li>
+<li>【应用商店】修复了应用备份设置密码后在其他服务器恢复会失败的问题</li>
+<li>【网站】修复了部分负载均衡配置页面显示异常的问题</li>
+<li>【网站】修复了删除 HTTPS 类型镜像仓库重启 Docker 异常的问题</li>
+<li>【证书】修复了编辑 IPv6 自签证书保存失败的问题</li>
+<li>【容器】修复了容器日志下载后文件中颜色显示异常的问题</li>
+<li>【容器】修复了连续开启容器日志跟踪开关导致系统日志异常的问题</li>
+<li>【容器】修复了部分场景下容器日志下载失败的问题</li>
+<li>【容器】修复了关闭日志追踪后容器日志筛选未生效的问题</li>
+<li>【容器】修复了编辑容器时无法配置 DNS 的问题</li>
+<li>【容器】修复了编辑容器任务日志中原容器名称获取失败的问题</li>
+<li>【文件】修复了打开部分 UTF-8 编码文件时乱码的问题</li>
+<li>【文件】修复了文件列表排序后文件大小计算错误的问题</li>
+<li>【防火墙】修复了部分场景下防火墙端口转发功能异常的问题</li>
+<li>【节点管理】修复了节点因目录不存在导致添加失败的问题</li>
+<li>【网站监控】修复了部分场景下切换到网站监控趋势统计时出错的问题</li>
+<li>【系统】修复了演示模式下可以进入文件终端的问题</li>
+</ul>
+</div>
+<h3 id="v204">v2.0.4<a class="headerlink" href="#v204" title="Permanent link">⚓︎</a></h3>
+<p>2025年7月7日</p>
+<div class="admonition note">
+<p class="admonition-title">功能优化 <img alt="🌻" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f33b.svg" title=":sunflower:" /></p>
+<ul>
+<li>【工具箱】新增 FTP 根目录敏感性校验</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">问题修复 <img alt="🌴" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f334.svg" title=":palm_tree:" /></p>
+<ul>
+<li>【概览】修复了监控数据未自动刷新的问题</li>
+<li>【应用商店】修复了因停止应用超时导致卸载失败的问题</li>
+<li>【AI】修复了 OpenResty 应用非 80/443 端口绑定 MCP 网站失败问题</li>
+<li>【工具箱】修复了修改子节点时区后导致系统退出登录的问题</li>
+<li>【WAF】修复了部分场景下查看拦截日志详情失败的问题</li>
+<li>【网站监控】修复了网站列表中独立 IP 数据读取错误的问题</li>
+<li>【系统】修复了部分场景下许可证校验异常的问题</li>
+</ul>
+</div>
 <h3 id="v203">v2.0.3<a class="headerlink" href="#v203" title="Permanent link">⚓︎</a></h3>
 <p>2025年7月4日</p>
 <div class="admonition note">
