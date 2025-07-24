@@ -21,3 +21,7 @@
 !!! note ""
 
 	您可以在哔哩哔哩（B 站）上搜索相关教学视频。[点击这里](https://space.bilibili.com/510493147/channel/collectiondetail?sid=1199760)
+
+## 3 致谢贡献者
+
+[点击获取你的贡献者证书，参与社区回馈活动。](https://www.lxware.cn/1panel-contributors#/)
