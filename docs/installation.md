@@ -31,6 +31,7 @@ After installation, the console will print the access information for 1Panel:
 !!! tips "Tips"
     - If you are using a cloud server, please release the service port of 1Panel in the security group.
     - You can use [`1pctl user-info`](#1pctl-cli) command to get the access information again.
+    - This will install the latest v1.10 LTS version of 1Panel.
 
 ## 1pctl CLI
 
