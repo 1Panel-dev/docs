@@ -2978,6 +2978,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v207" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.0.7
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v206" class="md-nav__link">
     <span class="md-ellipsis">
       v2.0.6
@@ -3137,6 +3146,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v207" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.0.7
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v206" class="md-nav__link">
     <span class="md-ellipsis">
       v2.0.6
@@ -3250,6 +3268,65 @@
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
+<h3 id="v207">v2.0.7<a class="headerlink" href="#v207" title="Permanent link">⚓︎</a></h3>
+<p>2025年8月7日</p>
+<div class="admonition note">
+<p class="admonition-title">新增功能 <img alt="🌟" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f31f.svg" title=":star2:" /></p>
+<ul>
+<li>【网站】新增 HTTPS 防窜站功能</li>
+<li>【MCP】支持创建 Streamable HTTP 类型 Mcp Server</li>
+<li>【SSH 管理】增强 SSH 密钥管理功能</li>
+<li>【计划任务】计划任务支持分组功能</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">功能优化 <img alt="🌻" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f33b.svg" title=":sunflower:" /></p>
+<ul>
+<li>【应用商店】删除应用支持通过回车键确认</li>
+<li>【应用商店】优化应用安装过程中拉取镜像超时的提示信息</li>
+<li>【应用商店】卸载应用时跳过删除升级中的应用</li>
+<li>【网站】优化网站日志读取加载逻辑</li>
+<li>【证书】禁止删除处于申请状态的证书</li>
+<li>【运行环境】优化 PHP 运行环境的列表展示效果</li>
+<li>【数据库】支持为远程数据库连接设置自定义超时时间</li>
+<li>【容器】清理容器和镜像等操作支持加入任务管理</li>
+<li>【文件】优化暗色模式下文本编辑框的显示效果</li>
+<li>【WAF】WAF 支持配置禁止蜘蛛访问</li>
+<li>【应用高可用】应用集群从节点安装时新增主节点 IP 校验</li>
+<li>【网站监控】优化网站监控日志占用</li>
+<li>【网站监控】优化网站监控中网站列表页面的加载速度</li>
+<li>【网站监控】网站监控详情页新增 HOST 字段</li>
+<li>【网站监控】新增 Openresty 版本过低提示</li>
+<li>【系统】优化节点切换时的页面刷新逻辑</li>
+<li>【系统】支持登录表单字段自动完成功能以提升与密码管理器的兼容性</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">问题修复 <img alt="🌴" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f334.svg" title=":palm_tree:" /></p>
+<ul>
+<li>【应用商店】修复了部分应用忽略升级未生效的问题</li>
+<li>【应用商店】修复了升级应用时镜像已修改但仍拉取旧镜像的问题</li>
+<li>【应用商店】修复了同步远程应用后导致本地应用标签丢失的问题</li>
+<li>【网站】修复了部分场景下反代配置异常导致列表报错的问题</li>
+<li>【证书】修复了部分场景下删除证书失败的问题</li>
+<li>【证书】修复了部分场景下证书申请日志显示异常的问题</li>
+<li>【运行环境】修复了部分场景下运行时网站停止后无法启动的问题</li>
+<li>【数据库】修复了修改 Redis 集群配置时报错的问题</li>
+<li>【数据库】修复了 PostgreSQL 数据库恢复异常的问题</li>
+<li>【数据库】修复了 Redis 集群连接信息显示异常的问题</li>
+<li>【文件】修复了多文件夹覆盖操作未更新文件内容的问题</li>
+<li>【防火墙】修复了系统防火墙在部分场景下路由跳转失败的问题</li>
+<li>【工具箱】修复了未设置自启动的进程守护在服务器重启后自动启动的问题</li>
+<li>【节点管理】修复了从节点无法查看主节点备份记录的问题</li>
+<li>【日志审计】修复了部分场景下 SSH 登录失败日志异常的问题</li>
+<li>【面板设置】修复了部分场景下菜单标签页名称显示错误的问题</li>
+<li>【面板设置】修复了无用户名密码时 Docker 代理地址错误的问题</li>
+<li>【系统】修复了部分场景下接口转发异常导致服务中断的问题</li>
+<li>【系统】修复了部分编辑器中 EditorConfig 规范警告的问题</li>
+<li>【系统】修复了部分操作系统下 tar.gz 压缩包解压失败的问题</li>
+<li>【系统】修复了部分场景下由于 SSH SDK 超时导致服务启动卡住的问题</li>
+</ul>
+</div>
 <h3 id="v206">v2.0.6<a class="headerlink" href="#v206" title="Permanent link">⚓︎</a></h3>
 <p>2025年7月30日</p>
 <div class="admonition note">
