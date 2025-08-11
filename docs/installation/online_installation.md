@@ -20,8 +20,10 @@
 !!! note ""
     GitHub release 链接: https://github.com/1Panel-dev/1Panel/releases
 
-执行以下安装脚本，根据命令行提示完成安装。
+    
 !!! note ""
+
+    执行以下安装脚本，根据命令行提示完成安装。
     ```bash
     bash -c "$(curl -sSL https://resource.fit2cloud.com/1panel/package/v2/quick_start.sh)"
     ```
@@ -42,8 +44,8 @@
     http://目标服务器 IP 地址:目标端口/安全入口
     ```
 
-    - **如果使用的是云服务器，请至安全组开放目标端口。**
-    - **ssh 登录 1Panel 服务器后，执行 1pctl user-info 命令可获取安全入口（entrance）**
+    - **如果使用的是云服务器，请在安全组中开放对应的目标端口。**
+    - **ssh 登录 1Panel 服务器后，执行 `1pctl user-info` 命令可获取安全入口（entrance）。**
 
 !!! note ""
     安装成功后，可使用 [1pctl](cli.md) 命令行工具来维护 1Panel

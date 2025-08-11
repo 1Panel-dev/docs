@@ -17,7 +17,7 @@
 ![img.png](../../img/hosts/ssh_session.png)
 {: .original}
 
-## 2 查看 SSH 登录日志
+## 3 查看 SSH 登录日志
 
 !!! note ""
     点击当前页面上方的 `登录日志` 选项，可以进入 SSH 登录日志列表。

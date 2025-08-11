@@ -23,7 +23,9 @@
       restore                     恢复 1Panel 服务及数据
     ```
 
-## 2 1pctl reset
+## 2 1pctl 典型应用说明
+
+### 2.1 1pctl reset
 
 !!! note ""
     **重置 1Panel 系统信息，包括取消安全入口登录，取消两步验证等**
@@ -41,7 +43,7 @@
       mfa         取消 1Panel 两步验证
     ```
 
-## 3 1pctl listen-ip
+### 2.2 1pctl listen-ip
 
 !!! note ""
     **修改 1Panel 监听 IP**
@@ -56,7 +58,7 @@
       ipv6                监听 IPv6
     ```
 
-## 4 1pctl update
+### 2.3 1pctl update
 
 !!! note ""
     **修改 1Panel 系统信息**

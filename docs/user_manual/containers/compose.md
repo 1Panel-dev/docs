@@ -7,7 +7,7 @@
     - 路径选择： 选择 1Panel 服务中已存在的 docker-compose.yml。 
     - 编排模版： 选择已存在的编排模版。
 
-    [我想了解更多容器编排相关的知识](https://docs.docker.com/compose)
+    [了解更多容器编排相关的知识](https://docs.docker.com/compose)
 
 ![img.png](../../img/containers/compose_create.png)
 {: .original}

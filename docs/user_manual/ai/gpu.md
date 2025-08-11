@@ -21,7 +21,7 @@
 ![img.png](../../img/ai/gpu_monitor.png)
 {: .original}
 
-## 3 配置应用商店应用（容器）使用 GPU
+## 3 使用 GPU
 
 !!! note ""
     显卡驱动安装完成后，还需要根据 [NVIDIA 官网指引](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)安装容器支持工具，才可以在应用商店应用或其他容器中使用 GPU 能力。

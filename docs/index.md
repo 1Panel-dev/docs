@@ -24,4 +24,6 @@
 
 ## 3 致谢贡献者
 
-[点击获取你的贡献者证书，参与社区回馈活动。](https://www.lxware.cn/1panel-contributors#/)
+!!! note ""
+
+    [点击获取你的贡献者证书，参与社区回馈活动。](https://www.lxware.cn/1panel-contributors#/)

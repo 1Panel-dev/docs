@@ -107,90 +107,110 @@
     - redirect_uri: 重定向地址
     - scope: API权限
 
-1. 访问并登录 MicroSoft Azure：https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade
+!!! note ""
 
-2. 点击新注册，并填写注册信息，其中的重定向 URI 作为 重定向 Url 参数
+    （1）访问并登录 MicroSoft Azure：https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade
+
+    （2）点击新注册，并填写注册信息，其中的重定向 URI 作为 重定向 Url 参数。
 
 ![img.png](../img/settings/onedrive_custom1.png)
 {: .original}
 
-3. 主页上的 应用程序(客户端) ID 作为 客户端 ID
+!!! note ""
+
+    （3）主页上的 应用程序(客户端) ID 作为 客户端 ID。
 
 ![img.png](../img/settings/onedrive_custom2.png)
 {: .original}
 
-4. 在 证书和密码 页面新建客户端密码，填写相关信息，生成的值作为 客户端密钥
+!!! note ""
+
+    （4）在【证书和密码】页面新建客户端密码，填写相关信息，生成的值作为 客户端密钥。
 
 ![img.png](../img/settings/onedrive_custom3.png)
 {: .original}
 
-5. 在 API 权限页面选择需要的权限，添加权限，Microsoft Graph，委托的权限，勾选 Files.ReadWrite.All、offline_access、User.Read，这将作为 scope 传递
+!!! note ""
+    
+    （5）在【API 权限】页面选择需要的权限，添加权限，Microsoft Graph，委托的权限，勾选 Files.ReadWrite。All、offline_access、User.Read，这将作为 scope 传递
 
 ![img.png](../img/settings/onedrive_custom4.png)
 {: .original}
 
 ### 3.3 OneDrive 账号绑定
 
-1. 点击 OneDrive 授权码获取按钮
+!!! note ""
+    （1）点击 OneDrive 授权码获取按钮。
 
 ![img.png](../img/settings/onedrive_step1.png)
 {: .original}
 
-2. 输入 Onedrive 账号信息
+!!! note ""
+    （2）输入 Onedrive 账号信息。
 
 ![img.png](../img/settings/onedrive_step2.png)
 {: .original}
 
-3. 信任 1panel 服务
+!!! note ""
+    （3）信任 1panel 服务。
 
 ![img.png](../img/settings/onedrive_step3.png)
 {: .original}
 
-4. 复制授权码到 1Panel 授权码输入框 (注意不要包含 &session_state=xxx 部分)
+!!! note ""
+    （4）复制授权码到 1Panel 授权码输入框 (注意不要包含 &session_state=xxx 部分)。
 
 ![img.png](../img/settings/onedrive_step4.png)
 {: .original}
 
 ### 3.4 阿里云盘账号绑定
 
-1. 登陆网页版阿里云盘 (https://www.alipan.com/)
+!!! note ""
+    （1）登陆网页版阿里云盘 (https://www.alipan.com/)。
 
-2. 右键检查或者 F12 打开浏览器调试模式，找到 token 信息，复制值
+    （2）右键检查或者 F12 打开浏览器调试模式，找到 token 信息，复制值。
 
 ![img.png](../img/settings/ali_pan_1.png)
 {: .original}
 
-3. 将复制的值粘贴到 1 处，点击解析，自动解析出 3 和 4 输入框的值，修改备份目录后点击确认即可
+!!! note ""
+    （3）将复制的值粘贴到 1 处，点击解析，自动解析出 3 和 4 输入框的值，修改备份目录后点击确认即可。
 
 ![img.png](../img/settings/ali_pan_2.png)
 {: .original}
 
 ### 3.5 谷歌云盘账号绑定
 
-1. 点击授权码的获取按钮，登陆谷歌账号
+!!! note ""
+    （1）点击授权码的获取按钮，登陆谷歌账号。
 
-2. 跳转至 1Panel 应用，完成登陆
+    （2）跳转至 1Panel 应用，完成登陆。
 
 ![img.png](../img/settings/google_drive_1.png)
 {: .original}
 
-3. 完成授权后继续跳转，在浏览器地址中复制授权码（注意！这里只需要复制 code 的值）
+!!! note ""
+    （3）完成授权后继续跳转，在浏览器地址中复制授权码（注意！这里只需要复制 code 的值）
 
 ![img.png](../img/settings/google_drive_2.png)
 {: .original}
 
-4. 粘贴复制的授权码到授权码输入框中，修改备份目录后点击确认即可
+!!! note ""
+    （4）粘贴复制的授权码到授权码输入框中，修改备份目录后点击确认即可
 
 ### 3.6 WebDAV 连接 AList
 
-1. 从应用商店安装好 AList 后（记得打开端口外部访问），在容器日志中查看初始化密码，跳转到 AList 管理界面。
+!!! note ""
 
-2. 存储 菜单中添加对应的存储，记住该路径。
+    （1）从应用商店安装好 AList 后（记得打开端口外部访问），在容器日志中查看初始化密码，跳转到 AList 管理界面。
+
+    （2）存储 菜单中添加对应的存储，记住该路径。
 
 ![img.png](../img/settings/webdav-01.png)
 {: .original}
 
-3. 1Panel 备份账号中，WebDAV 添加该备份账号，这里的路径应该是 /dav/${2步骤中的路径}/xxx，如此处的 /dav/tmp/sftp/1panel，完成绑定。
+!!! note ""
+    （3）1Panel 备份账号中，WebDAV 添加该备份账号，这里的路径应该是 /dav/${2步骤中的路径}/xxx，如此处的 /dav/tmp/sftp/1panel，完成绑定。
 
 ![img.png](../img/settings/webdav-02.png)
 {: .original}

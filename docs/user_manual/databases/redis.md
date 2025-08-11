@@ -6,7 +6,7 @@
 ## 2 Redis Commander
 
 !!! note ""
-    WEB 图形化界面管理 redis 数据库的管理工具，此处不会详细讲解工具使用方法，[点击查看工具教程](http://joeferner.github.io/redis-commander/)
+    WEB 图形化界面管理 redis 数据库的管理工具，工具使用方法详解见[工具教程](http://joeferner.github.io/redis-commander/)
 
 ## 3 数据库配置
 
@@ -19,8 +19,8 @@
 
 !!! note ""
     - 系统 Redis 使用 Docker 安装，配置文件默认挂载在 /opt/1panel/apps/redis/[数据库名称]/conf/redis.conf。
-    - **注意事项：** 错误的数据库配置将导致 Redis 服务不可用，请谨慎修改。
-    - 如数据库配置不正确导致服务无法正常启动，可尝试恢复默认配置后保存。
+    
+    **注意事项：** 错误的数据库配置将导致 Redis 服务不可用，请谨慎修改。如数据库配置不正确导致服务无法正常启动，可尝试恢复默认配置后保存。
 
 ## 4 当前状态
 

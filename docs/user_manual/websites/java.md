@@ -1,28 +1,28 @@
-## 创建 Java 运行环境
-
-**点击创建运行环境按钮，选择 Java 版本和运行目录等信息**
+## 1 创建 Java 运行环境
 
 !!! note ""
+
+    点击创建运行环境按钮，选择 Java 版本和运行目录等信息。
 
     - 目前支持 Java 1.8、11、17、18、21、22 大版本，用户可以根据自己的需求选择合适的版本。
 
 ![runtime_java_create.png](../../img/websites/runtime_java_create.png)
 {: .browser-mockup}
 
-## 操作 Java 运行环境
+## 2 操作 Java 运行环境
 
 !!! note ""
 
-    - 在列表页面，可以对 Java 运行环境进行停止、启动、重启、编辑、删除和查看日志等操作
+    - 在列表页面，可以对 Java 运行环境进行停止、启动、重启、编辑、删除和查看日志等操作。
 
 ![runtime_java_list.png](../../img/websites/runtime_java_list.png)
 {: .browser-mockup}
 
-## 日志查看
+## 3 日志查看
 
 !!! note ""
 
-    点击【查看】日志按钮，可以查看 Java 运行环境的运行日志
+    点击【查看】日志按钮，可以查看 Java 运行环境的运行日志。
 
 ![runtime_java_log.png](../../img/websites/runtime_java_log.png)
 {: .browser-mockup}
