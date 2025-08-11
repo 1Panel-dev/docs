@@ -619,11 +619,11 @@
         <li class="md-nav__item">
   <a href="#1-1panel-migrator" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 安装 1panel-migrator
+      1 安装 1panel-migrator
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. 安装 1panel-migrator">
+    <nav class="md-nav" aria-label="1 安装 1panel-migrator">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -636,9 +636,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#12-amd64" class="md-nav__link">
+  <a href="#12" class="md-nav__link">
     <span class="md-ellipsis">
-      1.2 安装步骤（以 amd64 架构为例）
+      1.2 安装步骤
     </span>
   </a>
   
@@ -652,7 +652,7 @@
         <li class="md-nav__item">
   <a href="#2-" class="md-nav__link">
     <span class="md-ellipsis">
-      2. 从节点 -&gt; 主节点
+      2 从节点 -&gt; 主节点
     </span>
   </a>
   
@@ -661,7 +661,7 @@
         <li class="md-nav__item">
   <a href="#3-" class="md-nav__link">
     <span class="md-ellipsis">
-      3. 主节点 -&gt; 从节点
+      3 主节点 -&gt; 从节点
     </span>
   </a>
   
@@ -3068,11 +3068,11 @@
         <li class="md-nav__item">
   <a href="#1-1panel-migrator" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 安装 1panel-migrator
+      1 安装 1panel-migrator
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. 安装 1panel-migrator">
+    <nav class="md-nav" aria-label="1 安装 1panel-migrator">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3085,9 +3085,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#12-amd64" class="md-nav__link">
+  <a href="#12" class="md-nav__link">
     <span class="md-ellipsis">
-      1.2 安装步骤（以 amd64 架构为例）
+      1.2 安装步骤
     </span>
   </a>
   
@@ -3101,7 +3101,7 @@
         <li class="md-nav__item">
   <a href="#2-" class="md-nav__link">
     <span class="md-ellipsis">
-      2. 从节点 -&gt; 主节点
+      2 从节点 -&gt; 主节点
     </span>
   </a>
   
@@ -3110,7 +3110,7 @@
         <li class="md-nav__item">
   <a href="#3-" class="md-nav__link">
     <span class="md-ellipsis">
-      3. 主节点 -&gt; 从节点
+      3 主节点 -&gt; 从节点
     </span>
   </a>
   
@@ -3134,12 +3134,10 @@
 
   <h1>主从节点切换</h1>
 
-<h2 id="1-1panel-migrator">1. 安装 1panel-migrator<a class="headerlink" href="#1-1panel-migrator" title="Permanent link">⚓︎</a></h2>
+<h2 id="1-1panel-migrator">1 安装 1panel-migrator<a class="headerlink" href="#1-1panel-migrator" title="Permanent link">⚓︎</a></h2>
 <h3 id="11">1.1 安装包获取<a class="headerlink" href="#11" title="Permanent link">⚓︎</a></h3>
-<p>请访问 Gitee 发布页，手动下载适用于您服务器架构的安装包，并将其放置到 <code>/tmp</code> 目录：</p>
-<blockquote>
-<p>🔗 <a href="https://gitee.com/fit2cloud-feizhiyun/1panel-migrator/releases/">https://gitee.com/fit2cloud-feizhiyun/1panel-migrator/releases/</a></p>
-</blockquote>
+<div class="admonition note">
+<p>请访问 <a href="https://gitee.com/fit2cloud-feizhiyun/1panel-migrator/releases/">1PanelGitee 发布页面</a>，手动下载适用于您服务器架构的安装包，并将其放置到 <code>/tmp</code> 目录：</p>
 <p><strong>提示</strong>：请确保安装包版本 <strong>大于等于 v2.0.8</strong>，该版本及以上才支持主从节点切换功能。</p>
 <p>每个版本会提供以下架构的安装包（文件名示例）：</p>
 <ul>
@@ -3149,39 +3147,35 @@
 <li><code>1panel-migrator-linux-ppc64le</code></li>
 <li><code>1panel-migrator-linux-s390x</code></li>
 </ul>
-<h3 id="12-amd64">1.2 安装步骤（以 amd64 架构为例）<a class="headerlink" href="#12-amd64" title="Permanent link">⚓︎</a></h3>
-<div class="highlight"><pre><span></span><code><span class="c1"># 1. 进入临时目录</span>
+</div>
+<h3 id="12">1.2 安装步骤<a class="headerlink" href="#12" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>以 amd64 架构为例说明 1panel-migrator 的安装步骤：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># （1）进入临时目录</span>
 <span class="nb">cd</span><span class="w"> </span>/tmp
 
-<span class="c1"># 2. 添加执行权限</span>
+<span class="c1"># （2）添加执行权限</span>
 chmod<span class="w"> </span>+x<span class="w"> </span>1panel-migrator-linux-amd64
 
-<span class="c1"># 3. 移动至系统 PATH 中并重命名</span>
+<span class="c1"># （3）移动至系统 PATH 中并重命名</span>
 mv<span class="w"> </span>1panel-migrator-linux-amd64<span class="w"> </span>/usr/local/bin/1panel-migrator
 </code></pre></div>
-<h2 id="2-">2. 从节点 -&gt; 主节点<a class="headerlink" href="#2-" title="Permanent link">⚓︎</a></h2>
+</div>
+<h2 id="2-">2 从节点 -&gt; 主节点<a class="headerlink" href="#2-" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>从节点升级为主节点需要先在原来主节点上设置好主节点备份，仅存在备份文件的主节点支持升级到主节点</p>
-</div>
-<ol>
-<li>打开节点列表，点击上方主节点备份</li>
-<li>勾选备份节点，设置自动备份频率及保留份数，保存设置</li>
-<li>
-<p>点击执行备份，查看备份结果</p>
+<p>（1）打开节点列表，点击上方主节点备份。</p>
+<p>（2）勾选备份节点，设置自动备份频率及保留份数，保存设置。</p>
+<p>（3）点击执行备份，查看备份结果。</p>
 <p><img alt="img.png" src="../../img/installation/master_backup.png" /></p>
-</li>
-<li>
-<p>打开需要升级的从节点，通过安装好的 1panel-migrator 执行升级命令 <code>1panel-migrator promote</code></p>
+<p>（4）打开需要升级的从节点，通过安装好的 1panel-migrator 执行升级命令 <code>1panel-migrator promote</code></p>
 <p><img alt="img.png" src="../../img/installation/promote.png" /></p>
-</li>
-</ol>
-<h2 id="3-">3. 主节点 -&gt; 从节点<a class="headerlink" href="#3-" title="Permanent link">⚓︎</a></h2>
-<ol>
-<li>
-<p>打开需要降级的主节点，通过安装好的 1panel-migrator 执行降级命令 <code>1panel-migrator demote</code></p>
+</div>
+<h2 id="3-">3 主节点 -&gt; 从节点<a class="headerlink" href="#3-" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
+<p>打开需要降级的主节点，通过安装好的 1panel-migrator 执行降级命令 <code>1panel-migrator demote</code>。</p>
 <p><img alt="img.png" src="../../img/installation/demote.png" /></p>
-</li>
-</ol>
+</div>
 
 
 

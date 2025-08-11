@@ -2789,9 +2789,10 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="4 自定义规则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#41" class="md-nav__link">
     <span class="md-ellipsis">
       4.1 自定义规则（✨专业版）
@@ -2799,8 +2800,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#42" class="md-nav__link">
     <span class="md-ellipsis">
       4.2 文件上传限制
@@ -2808,8 +2809,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#43" class="md-nav__link">
     <span class="md-ellipsis">
       4.3 地区访问限制（✨专业版）
@@ -2817,13 +2818,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#44-cdn" class="md-nav__link">
     <span class="md-ellipsis">
       4.4 CDN
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3445,9 +3451,10 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="4 自定义规则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#41" class="md-nav__link">
     <span class="md-ellipsis">
       4.1 自定义规则（✨专业版）
@@ -3455,8 +3462,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#42" class="md-nav__link">
     <span class="md-ellipsis">
       4.2 文件上传限制
@@ -3464,8 +3471,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#43" class="md-nav__link">
     <span class="md-ellipsis">
       4.3 地区访问限制（✨专业版）
@@ -3473,13 +3480,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#44-cdn" class="md-nav__link">
     <span class="md-ellipsis">
       4.4 CDN
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3625,24 +3637,24 @@ URL 模式：单位时间请求单个 URL 次数超过阈值即触发</p>
 <p>根据自己的需求制定 WAF 规则<br />
 包含自定义规则、文件上传限制、地区访问限制、CDN 配置</p>
 </div>
-<h2 id="41">4.1 自定义规则（✨专业版）<a class="headerlink" href="#41" title="Permanent link">⚓︎</a></h2>
+<h3 id="41">4.1 自定义规则（✨专业版）<a class="headerlink" href="#41" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
 <p>根据自己的需求制定 WAF 规则<br />
 可以匹配 URL IP Header Host 的参数，并选择相应的动作<br />
 比如可以选择 URL 为 /login 的比如经过人机验证</p>
 </div>
 <p class="original"><img alt="img.png" src="../../../../img/waf/acl.png" width="900px" /></p>
-<h2 id="42">4.2 文件上传限制<a class="headerlink" href="#42" title="Permanent link">⚓︎</a></h2>
+<h3 id="42">4.2 文件上传限制<a class="headerlink" href="#42" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
 <p>可以根据文件后缀限制上传文件的类型</p>
 </div>
 <p class="original"><img alt="img.png" src="../../../../img/waf/ext.png" width="900px" /></p>
-<h2 id="43">4.3 地区访问限制（✨专业版）<a class="headerlink" href="#43" title="Permanent link">⚓︎</a></h2>
+<h3 id="43">4.3 地区访问限制（✨专业版）<a class="headerlink" href="#43" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
 <p>可以限制或者仅允许某些地区的访问</p>
 </div>
 <p class="original"><img alt="img.png" src="../../../../img/waf/location.png" width="900px" /></p>
-<h2 id="44-cdn">4.4 CDN<a class="headerlink" href="#44-cdn" title="Permanent link">⚓︎</a></h2>
+<h3 id="44-cdn">4.4 CDN<a class="headerlink" href="#44-cdn" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
 <p>如果网站开启了 CDN 并且影响日志获取用户的 IP，可以开启此项<br />
 从 HTTP Header 中获取：从指定的请求 Header 中获取，需要确认 CDN 把真实 IP 放在哪个 Header，比如 CloudFlare 默认是放在 cf-connecting-ip 中<br />
