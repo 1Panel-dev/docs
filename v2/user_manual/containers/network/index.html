@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
     
     
       
@@ -2999,10 +2999,10 @@
 <div class="admonition note">
 <p><strong>模式：Docker中的网络驱动（network driver）是可插拔的，1Panel 提供几种网络驱动以提供核心的网络功能，包括：</strong></p>
 <ul>
-<li>bridge: docker 默认的 network driver。如果不显示指定 driver 类型，docker 默认会使用 bridge模式的 network。通常，当应用程序运行在独立的容器中，并且要相互通信，可以使用 bridge 模式。Bridge 模式下容器与 docker host 的网络是相互隔离的。</li>
-<li>ipvlan: IPvlan 驱动程序让用户完全控制 IPv4 和 IPv6 寻址。VLAN 驱动程序建立在此基础上，为操作员提供对二层 VLAN 标记的完全控制，甚至对底层网络集成感兴趣的用户提供 IPvlan L3 路由。</li>
-<li>macvlan: macvlan network 能够给容器分配一个 MAC地址，使的此容器就像一个此网络上的物理设备。Docker Daemon可以通过MAC地址给容器路由消息。对于一些遗留的应用需要直接连接到物理网络而不是通过 docker host 的网络栈转发时， macvlan 驱动是最好的选择。</li>
-<li>overlay: Overlay network能够连通不同的 docker daemon，能够使 swarm service之间能够相互通信。Overlay network 也能够使 swarm service 与独立的容器连通, 能够使位于不同 Docker daemon上的独立的容器连通。Overlay 模式省去了容器之间操作系统层级的路由工作。</li>
+<li>bridge: docker 默认的 network driver。如果不显示指定 driver 类型，docker 默认会使用 bridge模式的 network。通常，当应用程序运行在独立的容器中，并且要相互通信，可以使用 bridge 模式。Bridge 模式下容器与 docker host 的网络是相互隔离的</li>
+<li>ipvlan: IPvlan 驱动程序让用户完全控制 IPv4 和 IPv6 寻址。VLAN 驱动程序建立在此基础上，为操作员提供对二层 VLAN 标记的完全控制，甚至对底层网络集成感兴趣的用户提供 IPvlan L3 路由</li>
+<li>macvlan: macvlan network 能够给容器分配一个 MAC地址，使的此容器就像一个此网络上的物理设备。Docker Daemon可以通过MAC地址给容器路由消息。对于一些遗留的应用需要直接连接到物理网络而不是通过 docker host 的网络栈转发时， macvlan 驱动是最好的选择</li>
+<li>overlay: Overlay network能够连通不同的 docker daemon，能够使 swarm service之间能够相互通信。Overlay network 也能够使 swarm service 与独立的容器连通, 能够使位于不同 Docker daemon上的独立的容器连通。Overlay 模式省去了容器之间操作系统层级的路由工作</li>
 </ul>
 </div>
 
@@ -3176,11 +3176,11 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
     
     
     
-      <script src="../../../assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
         <script src="../../../js/termynal.js"></script>
       

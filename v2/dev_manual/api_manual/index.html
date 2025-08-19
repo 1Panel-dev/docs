@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
     
     
       
@@ -3220,20 +3220,28 @@
 <h2 id="2">2 注意事项<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <ul>
-<li>时间戳的有效性:需要确保服务器与客户端时间同步，否则会导致验证失败。建议使用 NTP 同步时间。</li>
-<li>白名单使用:将可信任的 IP 或 IP 段加入白名单，避免频繁 Token 验证的开销；如需放行所有 IP ，可以配置 <code>0.0.0.0</code>。</li>
+<li>时间戳的有效性:需要确保服务器与客户端时间同步，否则会导致验证失败。建议使用 NTP 同步时间</li>
+<li>白名单使用:将可信任的 IP 或 IP 段加入白名单，避免频繁 Token 验证的开销；如需放行所有 IP ，可以配置 <code>0.0.0.0</code></li>
 </ul>
 </div>
 <h2 id="3">3 常见问题<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>（1）如果 1Panel-Token或1Panel-Timestamp 错误怎么办？
-后台将返回 401 Unauthorized，并提示 "API 接口密钥错误"。</p>
-<p>（2）如何生成 1Panel-Token？</p>
+<ul>
+<li>
+<p>如果 1Panel-Token 或 1Panel-Timestamp 错误怎么办</p>
+<p>后台将返回 401 Unauthorized，并提示 "API 接口密钥错误"。</p>
+</li>
+<li>
+<p>如何生成 1Panel-Token</p>
 <p>请参考以下伪代码：</p>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">token</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">md5</span><span class="p">(</span><span class="s1">&#39;1panel&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">clientToken</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">unixTimestamp</span><span class="p">);</span>
 </code></pre></div>
-<p>（3）为什么需要两个 Header？
-提高验证的复杂度，同时增强安全性。</p>
+</li>
+<li>
+<p>为什么需要两个 Header</p>
+<p>提高验证的复杂度，同时增强安全性。</p>
+</li>
+</ul>
 </div>
 
 
@@ -3406,11 +3414,11 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
     
     
     
-      <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
         <script src="../../js/termynal.js"></script>
       

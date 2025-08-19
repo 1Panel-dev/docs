@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
     
     
       
@@ -3375,10 +3375,10 @@
 <p class="original"><img alt="img.png" src="../../../img/databases/create_mysql_db.png" /></p>
 <div class="admonition note">
 <ul>
-<li>数据库名：新建数据库的名称，选择编码格式，默认为 UTF-8 格式。</li>
-<li>用户名：访问该数据库的用户名。</li>
-<li>密码：默认为随机密码，需要可以自行修改。</li>
-<li>访问权限：默认权限本地服务器权限，选项有:本地服务器，所有人，指定 IP。</li>
+<li>数据库名：新建数据库的名称，选择编码格式，默认为 UTF-8 格式</li>
+<li>用户名：访问该数据库的用户名</li>
+<li>密码：默认为随机密码，需要可以自行修改</li>
+<li>访问权限：默认权限本地服务器权限，选项有:本地服务器，所有人，指定 IP</li>
 </ul>
 </div>
 <h2 id="3">3 查看连接信息<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
@@ -3410,8 +3410,8 @@
 <p class="original"><img alt="img.png" src="../../../img/databases/backup_mysql_db.png" /></p>
 <div class="admonition note">
 <ul>
-<li>默认数据库路径为 /opt/1panel/backup/database/mysql。</li>
-<li>备份使用 mysqldump 方式。</li>
+<li>默认数据库路径为 /opt/1panel/backup/database/mysql</li>
+<li>备份使用 mysqldump 方式</li>
 </ul>
 </div>
 <h2 id="7">7 恢复<a class="headerlink" href="#7" title="Permanent link">⚓︎</a></h2>
@@ -3421,9 +3421,9 @@
 <p class="original"><img alt="img.png" src="../../../img/databases/recover_mysql_db.png" /></p>
 <div class="admonition note">
 <ul>
-<li>如从上传文件恢复，则需要保证上传文件压缩包内存在 test.sql 文件，否则无法正确导入。</li>
-<li>导入的 sql 文件格式必须符合标准，若你使用 phpmyadmin 导出的 sql 文件，可能会缺少版本 编码等信息，导致无法通过 mysqldump 正确导入。</li>
-<li>若无法正常导入，可以尝试使用 phpmyadmin 导入。</li>
+<li>如从上传文件恢复，则需要保证上传文件压缩包内存在 test.sql 文件，否则无法正确导入</li>
+<li>导入的 sql 文件格式必须符合标准，若你使用 phpmyadmin 导出的 sql 文件，可能会缺少版本 编码等信息，导致无法通过 mysqldump 正确导入</li>
+<li>若无法正常导入，可以尝试使用 phpmyadmin 导入</li>
 </ul>
 </div>
 <h2 id="8">8 权限设置<a class="headerlink" href="#8" title="Permanent link">⚓︎</a></h2>
@@ -3433,16 +3433,16 @@
 <p class="original"><img alt="img.png" src="../../../img/databases/update_mysql_db_access.png" /></p>
 <div class="admonition note">
 <ul>
-<li>所有人：任何人都可以远程连接至数据库。</li>
-<li>IP 地址：仅限指定的 IP 访问，多个 IP 使用英文逗号分隔。</li>
-<li>若需要开启外网访问，仍需要在防火墙中放行 MySQL 端口（默认3306）。</li>
+<li>所有人：任何人都可以远程连接至数据库</li>
+<li>IP 地址：仅限指定的 IP 访问，多个 IP 使用英文逗号分隔</li>
+<li>若需要开启外网访问，仍需要在防火墙中放行 MySQL 端口（默认3306）</li>
 </ul>
 </div>
 <h2 id="9">9 修改密码<a class="headerlink" href="#9" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <ul>
-<li>修改当前的数据库账号的密码。</li>
-<li><strong>注意事项：</strong> 当前修改的密码为非 root 密码。</li>
+<li>修改当前的数据库账号的密码</li>
+<li><strong>注意事项：</strong> 当前修改的密码为非 root 密码</li>
 </ul>
 </div>
 <h2 id="10">10 数据库配置<a class="headerlink" href="#10" title="Permanent link">⚓︎</a></h2>
@@ -3453,9 +3453,9 @@
 <p class="original"><img alt="img.png" src="../../../img/databases/mysql_conf.png" /></p>
 <div class="admonition note">
 <ul>
-<li>系统 MySQL 使用 Docker 安装，配置文件默认挂载在 /opt/1panel/apps/mysql/[数据库名称]/conf/my.cnf。</li>
-<li><strong>注意事项：</strong> 错误的数据库配置将导致 MySQL 服务不可用，请谨慎修改。</li>
-<li>如数据库配置不正确导致服务无法正常启动，可尝试恢复默认配置后保存。</li>
+<li>系统 MySQL 使用 Docker 安装，配置文件默认挂载在 /opt/1panel/apps/mysql/[数据库名称]/conf/my.cnf</li>
+<li><strong>注意事项：</strong> 错误的数据库配置将导致 MySQL 服务不可用，请谨慎修改</li>
+<li>如数据库配置不正确导致服务无法正常启动，可尝试恢复默认配置后保存</li>
 </ul>
 </div>
 <h2 id="11_1">11 当前状态<a class="headerlink" href="#11_1" title="Permanent link">⚓︎</a></h2>
@@ -3475,8 +3475,8 @@
 <h2 id="14">14 日志<a class="headerlink" href="#14" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <ul>
-<li>系统 MySQL 使用 Docker 安装，本处产生日志为对应 MySQL 容器产生的日志。支持时间段筛选、追踪及下载操作。</li>
-<li>设置界面还支持查看 MySQL 产生的慢日志。</li>
+<li>系统 MySQL 使用 Docker 安装，本处产生日志为对应 MySQL 容器产生的日志。支持时间段筛选、追踪及下载操作</li>
+<li>设置界面还支持查看 MySQL 产生的慢日志</li>
 </ul>
 </div>
 <p class="original"><img alt="img.png" src="../../../img/databases/mysql_log.png" /></p>
@@ -3651,11 +3651,11 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
     
     
     
-      <script src="../../../assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
         <script src="../../../js/termynal.js"></script>
       

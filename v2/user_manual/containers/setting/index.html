@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
     
     
       
@@ -3073,14 +3073,14 @@
 <h2 id="1">1 配置<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <ul>
-<li>支持查看 Docker 运行状态，并执行重启服务等操作。</li>
-<li>配置文件默认为：/etc/docker/daemon.json。</li>
+<li>支持查看 Docker 运行状态，并执行重启服务等操作</li>
+<li>配置文件默认为：/etc/docker/daemon.json</li>
 </ul>
 </div>
 <p class="original"><img alt="img.png" src="../../../img/containers/setting.png" /></p>
 <div class="admonition note">
 <ul>
-<li>镜像加速：应用安装失败，镜像拉取超时，此时可以配置镜像加速器进行优化。<ul>
+<li>镜像加速：应用安装失败，镜像拉取超时，此时可以配置镜像加速器进行优化<ul>
 <li>配置加速地址：
     <div class="highlight"><pre><span></span><code><span class="na">https</span><span class="o">:</span><span class="s">//docker.1panel.live</span>
 </code></pre></div><blockquote>
@@ -3089,17 +3089,17 @@
 </li>
 </ul>
 </li>
-<li>私有仓库：搭建的私有镜像仓库，如 harber、nexus、docker-registry 等。</li>
-<li>iptables：该设置将关闭 Docker 对 iptables 规则的自动配置，这可能会导致容器无法与外部网络通信。</li>
-<li>live-restore：停止 Docker 服务是，是否停止所有容器。</li>
-<li>cgroup-driver：默认情况下使用的 Cgroup Driver 为 cgroupfs。</li>
+<li>私有仓库：搭建的私有镜像仓库，如 harber、nexus、docker-registry 等</li>
+<li>iptables：该设置将关闭 Docker 对 iptables 规则的自动配置，这可能会导致容器无法与外部网络通信</li>
+<li>live-restore：停止 Docker 服务是，是否停止所有容器</li>
+<li>cgroup-driver：默认情况下使用的 Cgroup Driver 为 cgroupfs</li>
 </ul>
 </div>
 <h2 id="2-ipv6">2 使用 IPv6<a class="headerlink" href="#2-ipv6" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <ul>
 <li>
-<p>确保自己的设备被分配了一个 IPv6。通过 ip addr show 查看当前设备的 IPv6。其输出的物理网卡存在包含 inet6 和 scope global 的行时，表示该网卡支持 IPv6。
+<p>确保自己的设备被分配了一个 IPv6。通过 ip addr show 查看当前设备的 IPv6。其输出的物理网卡存在包含 inet6 和 scope global 的行时，表示该网卡支持 IPv6
     <div class="highlight"><pre><span></span><code><span class="na">eth0</span><span class="o">:</span><span class="w"> </span><span class="s">&lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc mq state UP group default qlen 1000</span>
 <span class="w">    </span><span class="na">link/ether</span><span class="w"> </span><span class="s">00:16:xx:xx:xx:xx brd ff:ff:ff:ff:ff:ff</span>
 <span class="w">    </span><span class="na">inet</span><span class="w"> </span><span class="s">172.31.168.107/20 brd 172.31.175.255 scope global dynamic eth0</span>
@@ -3111,19 +3111,19 @@
 </code></pre></div></p>
 </li>
 <li>
-<p class="original">面板设置中开启 IPv6，其中 fixed-cidr-v6 是上一步获取到的 IPv6 网段的子网（配置默认网络，前缀长度最大为 /80）。
+<p class="original">面板设置中开启 IPv6，其中 fixed-cidr-v6 是上一步获取到的 IPv6 网段的子网（配置默认网络，前缀长度最大为 /80）
     <img alt="img.png" src="../../../img/containers/ipv6-01.png" /></p>
 </li>
 <li>
-<p class="original">通过【网络】-【详情】检查是否生效。若生效，则 EnableIPv6 值为 true，IPAM.Config[1].Subnet 是上一步配置的 fixed-cidr-v6。
+<p class="original">通过【网络】-【详情】检查是否生效。若生效，则 EnableIPv6 值为 true，IPAM.Config[1].Subnet 是上一步配置的 fixed-cidr-v6
     <img alt="img.png" src="../../../img/containers/ipv6-02.png" /></p>
 </li>
 <li>
-<p class="original">创建 IPv6 网络。
+<p class="original">创建 IPv6 网络
     <img alt="img.png" src="../../../img/containers/ipv6-03.png" /></p>
 </li>
 <li>
-<p>使用创建的 IPv6 网络创建容器。</p>
+<p>使用创建的 IPv6 网络创建容器</p>
 </li>
 </ul>
 </div>
@@ -3298,11 +3298,11 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
     
     
     
-      <script src="../../../assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
         <script src="../../../js/termynal.js"></script>
       

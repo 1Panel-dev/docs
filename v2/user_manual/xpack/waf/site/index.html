@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../../../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
     
     
       
@@ -3332,80 +3332,84 @@
 
 <div class="admonition note">
 <p>网站设置，可以查看并配置某个网站的 WAF 规则。<br />
-包括频率设置 默认规则 自定义规则 等</p>
+包括频率设置 默认规则 自定义规则 等。</p>
 </div>
 <p class="original"><img alt="img.png" src="../../../../img/waf/site.png" width="900px" /></p>
 <h2 id="1">1 频率限制<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>可以用来抵御 CC 攻击，包含访问频率限制、攻击频率限制、404 频率限制</p>
+<p>可以用来抵御 CC 攻击，包含访问频率限制、攻击频率限制、404 频率限制。</p>
 </div>
 <h3 id="11">1.1 访问频率限制<a class="headerlink" href="#11" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
-<p>如果单位时间内请求超过阈值，就拉黑 IP 一段时间<br />
-全局模式：单位时间请求任意 URL 次数之和超过阈值即触发<br />
-URL 模式：单位时间请求单个 URL 次数超过阈值即触发</p>
+<p>如果单位时间内请求超过阈值，就拉黑 IP 一段时间。</p>
+<ul>
+<li>全局模式：单位时间请求任意 URL 次数之和超过阈值即触发  </li>
+<li>URL 模式：单位时间请求单个 URL 次数超过阈值即触发</li>
+</ul>
 </div>
 <p><img alt="img.png" src="../../../../img/waf/cc.png" width="900px" /></p>
 <h2 id="2">2 默认规则<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>WAF 的默认规则，按照一定的规则来阻止恶意请求</p>
+<p>WAF 的默认规则，按照一定的规则来阻止恶意请求。</p>
 </div>
 <h3 id="21">2.1 参数规则<a class="headerlink" href="#21" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
-<p>过滤常见的恶意参数</p>
+<p>过滤常见的恶意参数。</p>
 </div>
 <h3 id="22-url">2.2 URL 规则<a class="headerlink" href="#22-url" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
-<p>过滤常见的恶意 URL</p>
+<p>过滤常见的恶意 URL。</p>
 </div>
 <h3 id="23-http">2.3 HTTP 规则<a class="headerlink" href="#23-http" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
-<p>设置允许访问的方法类型，如果想限制某些类型访问，请关闭这个类型的按钮，例如：仅允许 GET 类型访问，那么需要关闭除了 GET 之外的其他类型按钮</p>
+<p>设置允许访问的方法类型，如果想限制某些类型访问，请关闭这个类型的按钮，例如：仅允许 GET 类型访问，那么需要关闭除了 GET 之外的其他类型按钮。</p>
 </div>
 <h3 id="24-cookie">2.4 Cookie 规则<a class="headerlink" href="#24-cookie" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
-<p>过滤携带恶意 Cookie 的请求</p>
+<p>过滤携带恶意 Cookie 的请求。</p>
 </div>
 <h3 id="25-header">2.5 Header 规则<a class="headerlink" href="#25-header" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
-<p>过滤携带恶意 Header 的请求</p>
+<p>过滤携带恶意 Header 的请求。</p>
 </div>
 <h3 id="26-user-agent">2.6 User-Agent 规则<a class="headerlink" href="#26-user-agent" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
-<p>过滤携带恶意 User-Agent 的请求</p>
+<p>过滤携带恶意 User-Agent 的请求。</p>
 </div>
 <h3 id="27">2.7 其他<a class="headerlink" href="#27" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
-<p>SQL 注入防御 和 XSS 防御</p>
+<p>SQL 注入防御 和 XSS 防御。</p>
 </div>
 <h2 id="3">3 自定义规则<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>根据自己的需求制定 WAF 规则<br />
-包含自定义规则、文件上传限制、地区访问限制、CDN 配置</p>
+<p>根据自己的需求制定 WAF 规则。  </p>
+<ul>
+<li>包含自定义规则、文件上传限制、地区访问限制、CDN 配置</li>
+</ul>
 </div>
 <h2 id="31">3.1 自定义规则（✨专业版）<a class="headerlink" href="#31" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>根据自己的需求制定 WAF 规则<br />
-可以匹配 URL IP Header Host 的参数，并选择相应的动作<br />
-比如可以选择 URL 为 /login 的比如经过人机验证</p>
+<p>根据自己的需求制定 WAF 规则。可以匹配 URL IP Header Host 的参数，并选择相应的动作。比如可以选择 URL 为 /login 的比如经过人机验证。</p>
 </div>
 <p><img alt="img.png" src="../../../../img/waf/acl.png" width="900px" /></p>
 <h2 id="32">3.2 文件上传限制<a class="headerlink" href="#32" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>可以根据文件后缀限制上传文件的类型</p>
+<p>可以根据文件后缀限制上传文件的类型。</p>
 </div>
 <p class="original"><img alt="img.png" src="../../../../img/waf/ext.png" width="900px" /></p>
 <h2 id="33">3.3 地区访问限制（✨专业版）<a class="headerlink" href="#33" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>可以限制或者仅允许某些地区的访问</p>
+<p>可以限制或者仅允许某些地区的访问。</p>
 </div>
 <p class="original"><img alt="img.png" src="../../../../img/waf/location.png" width="900px" /></p>
 <h2 id="34-cdn">3.4 CDN<a class="headerlink" href="#34-cdn" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>如果网站开启了 CDN 并且影响日志获取用户的 IP，可以开启此项<br />
-从 HTTP Header 中获取：从指定的请求 Header 中获取，需要确认 CDN 把真实 IP 放在哪个 Header，比如 CloudFlare 默认是放在 cf-connecting-ip 中<br />
-从 Header 列表中获取： 从常用的 CDN 携带真实 IP 的 HTTP Header 中获取，取第一个能获取到的值    <br />
-获取 X-Forwarded-For 的上一级代理地址：例如：X-Forwarded-For: client,proxy1,proxy2,proxy3 上一级代理会取最后一个 IP proxy3</p>
+<p>如果网站开启了 CDN 并且影响日志获取用户的 IP，可以开启此项： </p>
+<ul>
+<li>从 HTTP Header 中获取：从指定的请求 Header 中获取，需要确认 CDN 把真实 IP 放在哪个 Header，比如 CloudFlare 默认是放在 cf-connecting-ip 中  </li>
+<li>从 Header 列表中获取： 从常用的 CDN 携带真实 IP 的 HTTP Header 中获取，取第一个能获取到的值      </li>
+<li>获取 X-Forwarded-For 的上一级代理地址：例如：X-Forwarded-For: client,proxy1,proxy2,proxy3 上一级代理会取最后一个 IP proxy3</li>
+</ul>
 </div>
 <p class="original"><img alt="img.png" src="../../../../img/waf/cdn.png" width="900px" /></p>
 
@@ -3579,11 +3583,11 @@ URL 模式：单位时间请求单个 URL 次数超过阈值即触发</p>
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
     
     
     
-      <script src="../../../../assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
         <script src="../../../../js/termynal.js"></script>
       
