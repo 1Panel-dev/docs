@@ -27,7 +27,7 @@
         systemctl enable fail2ban
         ```
         
-        **5、查看 Fail2ban 服务状态。**
+        **5、查看 Fail2ban 服务状态**
 
         ```bash
         systemctl status fail2ban
@@ -59,7 +59,7 @@
         sudo systemctl enable fail2ban
         ```
         
-        **5、查看 Fail2ban 服务状态。**
+        **5、查看 Fail2ban 服务状态**
 
         ```bash
         sudo systemctl status fail2ban
@@ -97,12 +97,12 @@
 
 !!! note ""
 
-    - 如之前已经手动安装过 Fail2ban，需要将 [sshd] 部分的配置信息写入到 jail.local 中，重启 fail2ban 服务，否则可能出现获取黑名单报错的问题；
-    - 如果选择的禁用方式为 -muliport，则在封禁时，只会禁用配置中的端口，如默认配置中的 22；
-    - 如果需要修改禁用方式，需要先判读对应服务是否正常可用；
-        - RedHat/CentOS 使用的是 Firewall 防火墙。
-        - Debian/Ubuntu使用的是 UFW 防火墙。
-    - 日志路径需要根据操作系统修改。
-        - RedHat/CentOS 日志为 /var/log/secure。
+    - 如之前已经手动安装过 Fail2ban，需要将 [sshd] 部分的配置信息写入到 jail.local 中，重启 fail2ban 服务，否则可能出现获取黑名单报错的问题
+    - 如果选择的禁用方式为 -muliport，则在封禁时，只会禁用配置中的端口，如默认配置中的 22
+    - 如果需要修改禁用方式，需要先判读对应服务是否正常可用
+        - RedHat/CentOS 使用的是 Firewall 防火墙
+        - Debian/Ubuntu使用的是 UFW 防火墙
+    - 日志路径需要根据操作系统修改
+        - RedHat/CentOS 日志为 /var/log/secure
         - Debian/Ubuntu 日志为 /var/log/auth.log
-    - Debian 从 12 开始弃用了 rsyslog，使用时需要先自行安装；
+    - Debian 从 12 开始弃用了 rsyslog，使用时需要先自行安装

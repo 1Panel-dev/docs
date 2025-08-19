@@ -9,9 +9,9 @@
 !!! note ""
     **ClamAV 的最低建议配置为：**
 
-    * CPU 要求：1 CPU，2.0 Ghz+；
-    * 内存要求：3 GiB+；
-    * 服务器架构：至少 5GiB 可用磁盘空间。
+    * CPU 要求：1 CPU，2.0 Ghz+
+    * 内存要求：3 GiB+
+    * 服务器架构：至少 5GiB 可用磁盘空间
 
 ## 3 安装
 
@@ -66,7 +66,7 @@
         systemctl enable clamav-freshclam.service
         ```
         
-        **7、查看 ClamAV 服务状态。**
+        **7、查看 ClamAV 服务状态**
 
         ```bash
         systemctl status clamd@scan.service
@@ -96,7 +96,7 @@
         sudo systemctl enable clamav-freshclam.service
         ```
         
-        **5、查看 ClamAV 服务状态。**
+        **5、查看 ClamAV 服务状态**
 
         ```bash
         sudo systemctl status clamav-daemon
@@ -151,9 +151,9 @@
 
 !!! note ""
 
-    - 如果 clamav 服务无法启动，请检查配置信息以及日志;
-    - 检查病毒库数据是否正常，在配置文件中会指定 DatabaseDirectory ，即病毒库存放位置，检查是否存在，不存在的话，手动执行一下 freshclam 命令。
-    - 如果手动执行 freshclam 也无法正常下载的话，可以从以下地址下载后传到该目录下。
+    - 如果 clamav 服务无法启动，请检查配置信息以及日志
+    - 检查病毒库数据是否正常，在配置文件中会指定 DatabaseDirectory ，即病毒库存放位置，检查是否存在，不存在的话，手动执行一下 freshclam 命令
+    - 如果手动执行 freshclam 也无法正常下载的话，可以从以下地址下载后传到该目录下
         + https://database.clamav.net/daily.cvd
         + https://database.clamav.net/bytecode.cvd
         + https://database.clamav.net/main.cvd

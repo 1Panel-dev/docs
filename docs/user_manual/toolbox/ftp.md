@@ -88,8 +88,8 @@
 
 !!! note ""
 
-    - 如果之前已经安装过 Pure-FTPd，可以直接通过界面同步按钮同步到 1panel 上，但是同步过程中无法同步密码，需要在界面上手动编辑；
-    - 如果无法正常连接，可以从以下方向检查：
+    - 如果之前已经安装过 Pure-FTPd，可以直接通过界面同步按钮同步到 1panel 上，但是同步过程中无法同步密码，需要在界面上手动编辑
+    - 如果无法正常连接，可以从以下方向检查
         - 防火墙是否开启，是否放行 Pure-FTPd 端口 ( 默认 21，可以通过 netstat -tunlp |grep pure-ftpd 或者 cat /etc/pure-ftpd/pure-ftpd.conf | grep Bind 查询)
         - 是否放行 Pure-FTPd 被动端口 ( 可以通过 cat /etc/pure-ftpd/pure-ftpd.conf | grep PassivePortRange 或者 cat /etc/pure-ftpd/conf/PassivePortRange 文件查询 )
         - 是否开启 selinux

@@ -72,24 +72,26 @@
 
 !!! note ""
 
-    - 时间戳的有效性:需要确保服务器与客户端时间同步，否则会导致验证失败。建议使用 NTP 同步时间。
-    - 白名单使用:将可信任的 IP 或 IP 段加入白名单，避免频繁 Token 验证的开销；如需放行所有 IP ，可以配置 `0.0.0.0`。
+    - 时间戳的有效性:需要确保服务器与客户端时间同步，否则会导致验证失败。建议使用 NTP 同步时间
+    - 白名单使用:将可信任的 IP 或 IP 段加入白名单，避免频繁 Token 验证的开销；如需放行所有 IP ，可以配置 `0.0.0.0`
 
 ## 3 常见问题
 
 !!! note ""
     
-    （1）如果 1Panel-Token或1Panel-Timestamp 错误怎么办？
-    后台将返回 401 Unauthorized，并提示 "API 接口密钥错误"。
+    - 如果 1Panel-Token 或 1Panel-Timestamp 错误怎么办
 
-    （2）如何生成 1Panel-Token？
+        后台将返回 401 Unauthorized，并提示 "API 接口密钥错误"。
 
-    请参考以下伪代码：
+    - 如何生成 1Panel-Token
+    
+        请参考以下伪代码：
+    
+        ```javascript
+        const token = md5('1panel' + clientToken + unixTimestamp);
+        ```
 
-    ```javascript
-    const token = md5('1panel' + clientToken + unixTimestamp);
-    ```
-
-    （3）为什么需要两个 Header？
-    提高验证的复杂度，同时增强安全性。
+    - 为什么需要两个 Header
+    
+        提高验证的复杂度，同时增强安全性。
 

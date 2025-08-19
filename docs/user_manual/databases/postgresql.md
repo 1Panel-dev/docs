@@ -33,10 +33,10 @@
 {: .original}
 
 !!! note ""
-    - 数据库名：新建数据库的名称。
-    - 用户名：访问该数据库的用户名。
-    - 密码：默认为随机密码，需要可以自行修改。
-    - 访问权限：默认权限本地服务器权限，选项有:本地服务器，所有人，指定 IP。
+    - 数据库名：新建数据库的名称
+    - 用户名：访问该数据库的用户名
+    - 密码：默认为随机密码，需要可以自行修改
+    - 访问权限：默认权限本地服务器权限，选项有:本地服务器，所有人，指定 IP
 
 ## 3 查看连接信息
 
@@ -68,8 +68,8 @@
 {: .original}
 
 !!! note ""
-    - 默认数据库路径为 /opt/1panel/backup/database/postgresql。
-    - 备份使用 pg_dump 方式。
+    - 默认数据库路径为 /opt/1panel/backup/database/postgresql
+    - 备份使用 pg_dump 方式
 
 ## 7 恢复
 
@@ -91,8 +91,8 @@
 ## 9 修改密码
 
 !!! note ""
-    - 修改当前的数据库绑定用户的密码。
-    - **注意事项：** 当前修改的密码为非默认管理员密码。
+    - 修改当前的数据库绑定用户的密码
+    - **注意事项：** 当前修改的密码为非默认管理员密码
 
 ## 10 数据库配置
 
@@ -104,8 +104,8 @@
 {: .original}
 
 !!! note ""
-    - 系统 PostgreSQL 使用 Docker 安装，配置文件默认挂载在 /opt/1panel/apps/postgresql/[数据库名称]/data/postgresql.cnf。
-    - **注意事项：** 错误的数据库配置将导致 PostgreSQL 服务不可用，请谨慎修改。
+    - 系统 PostgreSQL 使用 Docker 安装，配置文件默认挂载在 /opt/1panel/apps/postgresql/[数据库名称]/data/postgresql.cnf
+    - **注意事项：** 错误的数据库配置将导致 PostgreSQL 服务不可用，请谨慎修改
 
 ## 11 端口
 
@@ -115,7 +115,7 @@
 ## 12 日志
 
 !!! note ""
-    - 系统 PostgreSQL 使用 Docker 安装，本处产生日志为对应 PostgreSQL 容器产生的日志。支持时间段筛选、追踪及下载操作。
+    - 系统 PostgreSQL 使用 Docker 安装，本处产生日志为对应 PostgreSQL 容器产生的日志。支持时间段筛选、追踪及下载操作
 
 ![img.png](../../img/databases/postgresql_log.png)
 {: .original}

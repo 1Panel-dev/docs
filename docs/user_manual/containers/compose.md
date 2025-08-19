@@ -3,9 +3,9 @@
 !!! note ""
     提供三种方法可以从 1Panel 部署新 Compose
 
-    - 编辑： 使用 Web 编辑器定义服务。
-    - 路径选择： 选择 1Panel 服务中已存在的 docker-compose.yml。 
-    - 编排模版： 选择已存在的编排模版。
+    - 编辑： 使用 Web 编辑器定义服务
+    - 路径选择： 选择 1Panel 服务中已存在的 docker-compose.yml
+    - 编排模版： 选择已存在的编排模版
 
     [了解更多容器编排相关的知识](https://docs.docker.com/compose)
 
@@ -17,9 +17,9 @@
 !!! note ""
     Compose 按照来源可以区分为三种：
 
-    - Apps: 来源于应用商店应用部署；
-    - 1Panel: 来源于系统编排创建；
-    - Local: 服务器直接创建。
+    - Apps: 来源于应用商店应用部署
+    - 1Panel: 来源于系统编排创建
+    - Local: 服务器直接创建
 
     **编辑仅适用于 1Panel 部署的 Compose**
 

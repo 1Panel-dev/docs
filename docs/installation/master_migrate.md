@@ -37,7 +37,7 @@
 
 !!! note ""
 
-    从节点升级为主节点需要先在原来主节点上设置好主节点备份，仅存在备份文件的主节点支持升级到主节点
+    从节点升级为主节点需要先在原来主节点上设置好主节点备份，仅存在备份文件的主节点支持升级到主节点：
 
     （1）打开节点列表，点击上方主节点备份。
 
@@ -47,7 +47,7 @@
 
     ![img.png](../../img/installation/master_backup.png)
 
-    （4）打开需要升级的从节点，通过安装好的 1panel-migrator 执行升级命令 `1panel-migrator promote`
+    （4）打开需要升级的从节点，通过安装好的 1panel-migrator 执行升级命令 `1panel-migrator promote` 。
 
     ![img.png](../../img/installation/promote.png)
 
