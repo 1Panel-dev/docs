@@ -129,7 +129,7 @@ nav:
     - API 接口配置: dev_manual/api_manual.md
   - 版本迭代: changelog.md
   - 联系我们: contact.md
-  - 专业版本: https://1panel.cn/
+  - 商业版本: https://www.lxware.cn/1panel
 
 markdown_extensions:
   - admonition
