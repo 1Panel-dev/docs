@@ -12,7 +12,7 @@
 !!! note "服务器优惠"
     如果您还没有服务器，可以通过以下优惠链接购买阿里云服务器：
 
-    - [1Panel 专属阿里云特价链接 5.5 折优惠！](https://market.aliyun.com/common/dashi/1panel?userCode=kmemb8jp)
+    - [1Panel 专属阿里云特价链接 6.5 折优惠！](https://market.aliyun.com/common/dashi/1panel?userCode=kmemb8jp)
 
 ## 2 开放端口
 
