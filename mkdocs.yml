@@ -130,6 +130,7 @@ nav:
   - API 接口: dev_manual/api_manual.md
   - 版本迭代: changelog.md
   - 联系我们: contact.md
+  - 专业版本: https://1panel.cn/
 
 markdown_extensions:
   - admonition
