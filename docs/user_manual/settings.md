@@ -87,15 +87,17 @@
 !!! note ""
     **支持添加本地服务器磁盘和第三方账号：**
 
-    - 亚马逊 S3 云存储
     - 阿里云 OSS
     - 腾讯云 COS
+    - 亚马逊 S3 云存储
     - 微软 OneDrive
+    - 谷歌云盘
+    - 阿里云盘
+    - MINIO
+    - WebDAV
+    - SFTP
     - 七牛云 Kodo
     - 又拍云 对象存储
-    - MINIO
-    - SFTP
-    - WebDAV
 
 ### 3.2 OneDrive 自定义配置
 
@@ -182,21 +184,62 @@
 ### 3.5 谷歌云盘账号绑定
 
 !!! note ""
-    （1）点击授权码的获取按钮，登陆谷歌账号。 
+    **在调用 Google API 时需要使用到 3 个参数：**
 
-    （2）跳转至 1Panel 应用，完成登陆。 
+    - client_id: 客户端ID
+    - client_secret: 客户端密码
+    - redirect_uri: 重定向地址
+
+!!! note ""
+    （1）访问并登录 Google Cloud：https://console.cloud.google.com/projectselector2/auth/clients?hl=zh-cn&supportedpurview=project。
+
+    （2）点击创建项目，并填写项目名称。
+
+![img.png](../img/settings/google_step_1.png)
+{: .original}
+
+!!! note ""
+    （3）配置 Google Auth Platform，受众群体选择外部。
+
+![img.png](../img/settings/google_step_2.png)
+{: .original}
+
+!!! note ""
+    （4）创建 OAuth 客户端，应用类型选择 Web应用，添加重定向地址 https://localhost:8080，创建。
+
+![img.png](../img/settings/google_step_3.png)
+{: .original}
+
+!!! note ""
+    （5）复制对应的客户端 ID 以及客户端密钥。
+
+![img.png](../img/settings/google_step_4.png)
+{: .original}
+
+!!! note ""
+    （6）发布应用
+
+![img.png](../img/settings/google_step_5.png)
+{: .original}
+
+!!! note ""
+    （7）启用 google drive API 
+
+![img.png](../img/settings/google_step_6.png)
+{: .original}
+
+!!! note ""
+    （8）点击授权码的获取按钮，登陆谷歌账号，跳转至 1Panel 应用，完成登陆。 
 
 ![img.png](../img/settings/google_drive_1.png)
 {: .original}
 
 !!! note ""
-    （3）完成授权后继续跳转，在浏览器地址中复制授权码（注意！这里只需要复制 code 的值）
+    （9）完成授权后继续跳转，在浏览器地址中复制授权码（注意！这里只需要复制 code 的值），粘贴复制的授权码到授权码输入框中，修改备份目录后点击确认即可
 
 ![img.png](../img/settings/google_drive_2.png)
 {: .original}
 
-!!! note ""
-    （4）粘贴复制的授权码到授权码输入框中，修改备份目录后点击确认即可
 
 ### 3.6 WebDAV 连接 AList
 
@@ -233,6 +276,7 @@
 |又拍云|[https://help.upyun.com/knowledge-base/aws-s3%E5%85%BC%E5%AE%B9/](https://help.upyun.com/knowledge-base/aws-s3%E5%85%BC%E5%AE%B9/)|Virtual Hosted Style / <br>Path Style|✅|
 |华为云|文档未说明是否兼容，工单反馈不保证兼容性，实际测试可以使用|Virtual Hosted Style|❓|
 |Ucloud|只支持 8MB 大小的分片，本插件暂不支持<br>[https://docs.ucloud.cn/ufile/s3/s3\_introduction](https://docs.ucloud.cn/ufile/s3/s3_introduction)|\-|❌|
+
 
 ## 4 快照
 
