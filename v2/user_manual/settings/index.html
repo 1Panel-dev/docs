@@ -3380,15 +3380,17 @@ Use &quot;1panel update [command] --help&quot; for more information about a comm
 <div class="admonition note">
 <p><strong>支持添加本地服务器磁盘和第三方账号：</strong></p>
 <ul>
-<li>亚马逊 S3 云存储</li>
 <li>阿里云 OSS</li>
 <li>腾讯云 COS</li>
+<li>亚马逊 S3 云存储</li>
 <li>微软 OneDrive</li>
+<li>谷歌云盘</li>
+<li>阿里云盘</li>
+<li>MINIO</li>
+<li>WebDAV</li>
+<li>SFTP</li>
 <li>七牛云 Kodo</li>
 <li>又拍云 对象存储</li>
-<li>MINIO</li>
-<li>SFTP</li>
-<li>WebDAV</li>
 </ul>
 </div>
 <h3 id="32-onedrive">3.2 OneDrive 自定义配置<a class="headerlink" href="#32-onedrive" title="Permanent link">⚓︎</a></h3>
@@ -3447,17 +3449,46 @@ Use &quot;1panel update [command] --help&quot; for more information about a comm
 <p class="original"><img alt="img.png" src="../../img/settings/ali_pan_2.png" /></p>
 <h3 id="35">3.5 谷歌云盘账号绑定<a class="headerlink" href="#35" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
-<p>（1）点击授权码的获取按钮，登陆谷歌账号。 </p>
-<p>（2）跳转至 1Panel 应用，完成登陆。 </p>
+<p><strong>在调用 Google API 时需要使用到 3 个参数：</strong></p>
+<ul>
+<li>client_id: 客户端ID</li>
+<li>client_secret: 客户端密码</li>
+<li>redirect_uri: 重定向地址</li>
+</ul>
+</div>
+<div class="admonition note">
+<p>（1）访问并登录 Google Cloud：<a href="https://console.cloud.google.com/projectselector2/auth/clients?hl=zh-cn&amp;supportedpurview=project">https://console.cloud.google.com/projectselector2/auth/clients?hl=zh-cn&amp;supportedpurview=project</a>。</p>
+<p>（2）点击创建项目，并填写项目名称。</p>
+</div>
+<p class="original"><img alt="img.png" src="../../img/settings/google_step_1.png" /></p>
+<div class="admonition note">
+<p>（3）配置 Google Auth Platform，受众群体选择外部。</p>
+</div>
+<p class="original"><img alt="img.png" src="../../img/settings/google_step_2.png" /></p>
+<div class="admonition note">
+<p>（4）创建 OAuth 客户端，应用类型选择 Web应用，添加重定向地址 <a href="https://localhost:8080">https://localhost:8080</a>，创建。</p>
+</div>
+<p class="original"><img alt="img.png" src="../../img/settings/google_step_3.png" /></p>
+<div class="admonition note">
+<p>（5）复制对应的客户端 ID 以及客户端密钥。</p>
+</div>
+<p class="original"><img alt="img.png" src="../../img/settings/google_step_4.png" /></p>
+<div class="admonition note">
+<p>（6）发布应用</p>
+</div>
+<p class="original"><img alt="img.png" src="../../img/settings/google_step_5.png" /></p>
+<div class="admonition note">
+<p>（7）启用 google drive API </p>
+</div>
+<p class="original"><img alt="img.png" src="../../img/settings/google_step_6.png" /></p>
+<div class="admonition note">
+<p>（8）点击授权码的获取按钮，登陆谷歌账号，跳转至 1Panel 应用，完成登陆。 </p>
 </div>
 <p class="original"><img alt="img.png" src="../../img/settings/google_drive_1.png" /></p>
 <div class="admonition note">
-<p>（3）完成授权后继续跳转，在浏览器地址中复制授权码（注意！这里只需要复制 code 的值）</p>
+<p>（9）完成授权后继续跳转，在浏览器地址中复制授权码（注意！这里只需要复制 code 的值），粘贴复制的授权码到授权码输入框中，修改备份目录后点击确认即可</p>
 </div>
 <p class="original"><img alt="img.png" src="../../img/settings/google_drive_2.png" /></p>
-<div class="admonition note">
-<p>（4）粘贴复制的授权码到授权码输入框中，修改备份目录后点击确认即可</p>
-</div>
 <h3 id="36-webdav-alist">3.6 WebDAV 连接 AList<a class="headerlink" href="#36-webdav-alist" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
 <p>（1）从应用商店安装好 AList 后（记得打开端口外部访问），在容器日志中查看初始化密码，跳转到 AList 管理界面。 </p>
