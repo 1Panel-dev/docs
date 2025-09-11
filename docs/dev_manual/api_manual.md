@@ -38,7 +38,7 @@
     示例请求头：
     
     ```bash
-    curl -X GET "http://localhost:4004/api/v1/dashboard/current" \
+    curl -X POST "http://{host}:{port}/api/v2/toolbox/device/base" \
     -H "1Panel-Token: <1panel_token>" \
     -H "1Panel-Timestamp: <current_unix_timestamp>"
     ```
@@ -73,7 +73,7 @@
 !!! note ""
 
     - 时间戳的有效性:需要确保服务器与客户端时间同步，否则会导致验证失败。建议使用 NTP 同步时间
-    - 白名单使用:将可信任的 IP 或 IP 段加入白名单，避免频繁 Token 验证的开销；如需放行所有 IP ，可以配置 `0.0.0.0`
+    - 白名单使用:将可信任的 IP 或 IP 段加入白名单，避免频繁 Token 验证的开销；如需放行所有 IP ，可以配置 ，`0.0.0.0/0`（所有 IPv4），`::/0`（所有 IPv6）
 
 ## 3 常见问题
 
