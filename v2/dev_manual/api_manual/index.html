@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.19">
     
     
       
@@ -3212,7 +3212,7 @@
 </tbody>
 </table>
 <p>示例请求头：</p>
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span><span class="s2">&quot;http://localhost:4004/api/v1/dashboard/current&quot;</span><span class="w"> </span><span class="se">\</span>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">&quot;http://{host}:{port}/api/v2/toolbox/device/base&quot;</span><span class="w"> </span><span class="se">\</span>
 -H<span class="w"> </span><span class="s2">&quot;1Panel-Token: &lt;1panel_token&gt;&quot;</span><span class="w"> </span><span class="se">\</span>
 -H<span class="w"> </span><span class="s2">&quot;1Panel-Timestamp: &lt;current_unix_timestamp&gt;&quot;</span>
 </code></pre></div>
@@ -3243,7 +3243,7 @@
 <div class="admonition note">
 <ul>
 <li>时间戳的有效性:需要确保服务器与客户端时间同步，否则会导致验证失败。建议使用 NTP 同步时间</li>
-<li>白名单使用:将可信任的 IP 或 IP 段加入白名单，避免频繁 Token 验证的开销；如需放行所有 IP ，可以配置 <code>0.0.0.0</code></li>
+<li>白名单使用:将可信任的 IP 或 IP 段加入白名单，避免频繁 Token 验证的开销；如需放行所有 IP ，可以配置 ，<code>0.0.0.0/0</code>（所有 IPv4），<code>::/0</code>（所有 IPv6）</li>
 </ul>
 </div>
 <h2 id="3">3 常见问题<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
