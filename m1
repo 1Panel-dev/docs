@@ -1,0 +1,1 @@
+bash -c "$(curl -sSL https://resource.1panel.pro/quick_start.sh)"
