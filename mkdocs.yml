@@ -120,6 +120,7 @@ nav:
         - 拦截记录: user_manual/xpack/waf/log.md
         - 封锁记录: user_manual/xpack/waf/block.md
       - 💎节点管理: user_manual/xpack/node.md
+      - 💎网站防篡改: user_manual/xpack/tamper.md
     - 日志审计: user_manual/logs.md
     - 面板设置: user_manual/settings.md
   - 常见问题:
