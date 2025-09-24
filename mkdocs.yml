@@ -42,7 +42,6 @@ nav:
   - 产品介绍: index.md
   - 安装部署:
     - 在线安装: installation/online_installation.md
-    # - 离线包安装: installation/package_installation.md
     - 在线升级: installation/online_upgrade.md
     - 从 V1 版本升级:
       - 升级说明: installation/v1_migrate.md
@@ -131,7 +130,9 @@ nav:
   - API 接口: dev_manual/api_manual.md
   - 版本迭代: changelog.md
   - 联系我们: contact.md
-  - 商业版本: https://www.lxware.cn/1panel
+  - 商业版本:
+    - 专业版: https://www.lxware.cn/1panel
+    - 离线版: installation/package_installation.md
 
 markdown_extensions:
   - admonition
