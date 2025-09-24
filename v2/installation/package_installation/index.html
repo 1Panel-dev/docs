@@ -3319,9 +3319,13 @@
 <div class="admonition note">
 <p class="admonition-title">应用商店支持</p>
 <ul>
-<li>离线包中已预置常用应用的镜像，并会在安装完成后自动导入系统。 <ul>
+<li>离线包中已预置常用应用的镜像，并会在安装完成后自动导入系统。<ul>
 <li><strong>OpenResty 版本</strong>：<code>1.27.1.2-2-3-focal</code>  </li>
-<li><strong>MySQL 版本</strong>：<code>8.4.6</code>、<code>8.0.43</code>、<code>5.7.44</code>、<code>5.6.51</code></li>
+<li><strong>MySQL 版本</strong>：<ul>
+<li><strong>x86_64 包</strong>：<code>8.4.6</code>、<code>8.0.43</code>、<code>5.7.44</code>、<code>5.6.51</code>  </li>
+<li><strong>arm64 包</strong>：<code>8.4.6</code>、<code>8.0.43</code></li>
+</ul>
+</li>
 </ul>
 </li>
 <li>除了内置镜像，用户还可以通过导入外部镜像的方式来安装其他应用。<ul>
@@ -3339,12 +3343,11 @@
 </div>
 <h2 id="2">2. 环境要求<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p><strong>安装前请确认系统满足以下条件：</strong></p>
 <ul>
-<li>操作系统：支持主流 Linux 发行版（基于 Debian/RedHat，包括国产操作系统）</li>
-<li>服务器架构：x86_64</li>
-<li>内存：建议可用内存不小于 1GB</li>
-<li>浏览器：Chrome、FireFox、IE10+、Edge 等现代浏览器</li>
+<li><strong>操作系统</strong>：支持主流 Linux 发行版本（基于 Debian / RedHat，包括国产操作系统）</li>
+<li><strong>服务器架构</strong>：支持 <code>x86_64</code> 和 <code>arm64</code></li>
+<li><strong>内存要求</strong>：建议可用内存在 <strong>1GB 以上</strong></li>
+<li><strong>浏览器要求</strong>：请使用 <strong>Chrome、Firefox</strong> 等现代浏览器</li>
 </ul>
 </div>
 <h2 id="3">3. 下载离线包<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
@@ -3406,7 +3409,7 @@ docker<span class="w"> </span>save<span class="w"> </span>-o<span class="w"> </s
 </code></pre></div>
 </li>
 </ol>
-<p>完成上述步骤后，即可在应用商店中看到 JumpServer 应用并直接安装使用。</p>
+<p>完成上述步骤后，即可在应用商店安装 JumpServer 应用。</p>
 </div>
 
 
