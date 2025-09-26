@@ -131,8 +131,8 @@ nav:
   - 版本迭代: changelog.md
   - 联系我们: contact.md
   - 商业版本:
-    - 专业版: https://www.lxware.cn/1panel
-    - 离线版: installation/package_installation.md
+    - 1Panel 专业版: https://www.lxware.cn/1panel
+    - 1Panel 离线版: installation/package_installation.md
 
 markdown_extensions:
   - admonition
