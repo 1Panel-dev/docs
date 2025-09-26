@@ -76,25 +76,25 @@
 ## 6. 导入应用镜像
 
 !!! note ""
-    如需使用其他应用（如 JumpServer），可手动导入镜像，具体步骤如下：
+    如需使用其他应用（如 WordPress），可手动导入镜像，具体步骤如下：
 
     1. **在可联网机器上拉取并导出镜像**：
 
         ```bash
-        docker pull jumpserver/jms_all:v4.10.8
-        docker save -o /tmp/jumpserver_4.10.8.tar jumpserver/jms_all:v4.10.8
+        docker pull wordpress:6.8.2
+        docker save -o /tmp/wordpress_6.8.2.tar wordpress:6.8.2
         ```
 
-    2. **上传镜像文件**：将 `jumpserver_4.10.8.tar` 上传至 1Panel 服务器的 `/tmp` 目录
+    2. **上传镜像文件**：将 `wordpress_6.8.2.tar` 上传至 1Panel 服务器的 `/tmp` 目录
 
         ```bash
-        scp /tmp/jumpserver_4.10.8.tar root@<1Panel 离线服务器 IP>:/tmp/
+        scp /tmp/wordpress_6.8.2.tar root@<1Panel 离线服务器 IP>:/tmp/
         ```
 
     3. **导入镜像**：在 1Panel 服务器上执行：
 
         ```bash
-        docker load -i /tmp/jumpserver_4.10.8.tar
+        docker load -i /tmp/wordpress_6.8.2.tar
         ```
 
-    完成上述步骤后，即可在应用商店安装 JumpServer 应用。
+    完成上述步骤后，即可在应用商店安装 WordPress 应用。
