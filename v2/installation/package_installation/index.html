@@ -3394,26 +3394,26 @@ tar<span class="w"> </span>zxvf<span class="w"> </span>1panel-v2.0.11-offline-li
 </div>
 <h2 id="6">6. 导入应用镜像<a class="headerlink" href="#6" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>如需使用其他应用（如 JumpServer），可手动导入镜像，具体步骤如下：</p>
+<p>如需使用其他应用（如 WordPress），可手动导入镜像，具体步骤如下：</p>
 <ol>
 <li>
 <p><strong>在可联网机器上拉取并导出镜像</strong>：</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>pull<span class="w"> </span>jumpserver/jms_all:v4.10.8
-docker<span class="w"> </span>save<span class="w"> </span>-o<span class="w"> </span>/tmp/jumpserver_4.10.8.tar<span class="w"> </span>jumpserver/jms_all:v4.10.8
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>pull<span class="w"> </span>wordpress:6.8.2
+docker<span class="w"> </span>save<span class="w"> </span>-o<span class="w"> </span>/tmp/wordpress_6.8.2.tar<span class="w"> </span>wordpress:6.8.2
 </code></pre></div>
 </li>
 <li>
-<p><strong>上传镜像文件</strong>：将 <code>jumpserver_4.10.8.tar</code> 上传至 1Panel 服务器的 <code>/tmp</code> 目录</p>
-<div class="highlight"><pre><span></span><code>scp<span class="w"> </span>/tmp/jumpserver_4.10.8.tar<span class="w"> </span>root@&lt;1Panel<span class="w"> </span>离线服务器<span class="w"> </span>IP&gt;:/tmp/
+<p><strong>上传镜像文件</strong>：将 <code>wordpress_6.8.2.tar</code> 上传至 1Panel 服务器的 <code>/tmp</code> 目录</p>
+<div class="highlight"><pre><span></span><code>scp<span class="w"> </span>/tmp/wordpress_6.8.2.tar<span class="w"> </span>root@&lt;1Panel<span class="w"> </span>离线服务器<span class="w"> </span>IP&gt;:/tmp/
 </code></pre></div>
 </li>
 <li>
 <p><strong>导入镜像</strong>：在 1Panel 服务器上执行：</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>load<span class="w"> </span>-i<span class="w"> </span>/tmp/jumpserver_4.10.8.tar
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>load<span class="w"> </span>-i<span class="w"> </span>/tmp/wordpress_6.8.2.tar
 </code></pre></div>
 </li>
 </ol>
-<p>完成上述步骤后，即可在应用商店安装 JumpServer 应用。</p>
+<p>完成上述步骤后，即可在应用商店安装 WordPress 应用。</p>
 </div>
 
 
