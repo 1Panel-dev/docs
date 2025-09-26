@@ -1,4 +1,4 @@
-!!! note "**<font color="red">1Panel V2 离线版已正式发布！</font>** "    
+!!! note "**<font color="blue">1Panel V2 离线版已正式发布！</font>** "    
     - 1Panel V2 离线版已正式发布，[**点击查看详情**](https://1panel.cn/docs/v2/installation/package_installation/)。
 
 ## 1 环境要求
