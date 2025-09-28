@@ -8,11 +8,12 @@
     - 内存要求：建议可用内存在 1GB 以上 
     - 浏览器要求：请使用 Chrome、FireFox、IE10+、Edge 等现代浏览器 
     - **可访问互联网**
+    - 如果是内网环境，推荐实现 [离线安装包](https://1panel.cn/docs/v2/installation/package_installation/) 方式进行部署
 
 !!! note "服务器优惠"
     如果你还没有服务器，欢迎通过以下优惠链接选购。
 
-    - 阿里云：[专属阿里云特价链接 5.5 折优惠](https://market.aliyun.com/common/dashi/1panel?userCode=kmemb8jp) 
+    - 阿里云：[专属阿里云特价链接 7 折优惠](https://market.aliyun.com/common/dashi/1panel?userCode=kmemb8jp) 
     - 腾讯云：[【腾讯云】2核2G3M云服务器7.92元/月起，2000元代金券免费领](https://curl.qcloud.com/dK2muFbM)，更多云产品优惠请点击[此链接](https://curl.qcloud.com/9Ogon25Y) 
 
 ## 2 安装部署
