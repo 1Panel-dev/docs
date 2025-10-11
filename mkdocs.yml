@@ -44,6 +44,7 @@ nav:
     - 在线安装: installation/online_installation.md
     - 在线升级: installation/online_upgrade.md
     - 1Panel 离线版: installation/package_installation.md
+    - 阿里云镜像部署: installation/ali_cloud.md
     - 从 V1 版本升级:
       - 升级说明: installation/v1_migrate.md
       - 操作步骤: installation/v1_migrate_steps.md
