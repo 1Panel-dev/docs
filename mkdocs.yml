@@ -56,8 +56,6 @@ nav:
       - 安装部署: user_manual/appstore/install.md
       - 应用操作: user_manual/appstore/installed.md
       - 应用商店设置: user_manual/appstore/setting.md
-      - 常用软件安装:
-        - OpenResty 安装: user_manual/appstore/openresty.md
     - 网站:
       - 概述: user_manual/websites/websites.md
       - 创建网站: user_manual/websites/website_create.md
@@ -126,6 +124,8 @@ nav:
       - 💎网站防篡改: user_manual/xpack/tamper.md
     - 日志审计: user_manual/logs.md
     - 面板设置: user_manual/settings.md
+  - 常用软件:
+    - OpenResty 安装: user_manual/appstore/openresty.md
   - 常见问题:
     - 产品 FAQ: faq/faq.md
     - 操作系统相关: faq/operating_system.md
