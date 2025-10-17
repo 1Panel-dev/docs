@@ -126,6 +126,13 @@ nav:
     - 面板设置: user_manual/settings.md
   - 常用软件:
     - OpenResty 安装: user_manual/appstore/openresty.md
+    - MySQL 安装: user_manual/appstore/MySQL.md
+    - Redis 安装: user_manual/appstore/Redis.md
+    - MariaDB 安装: user_manual/appstore/MariaDB.md
+    - MongoDB 安装: user_manual/appstore/MongoDB.md
+    - MinIO 安装: user_manual/appstore/MinIO.md
+    - phpMyAdmin 安装: user_manual/appstore/phpMyAdmin.md
+    - AList 安装: user_manual/appstore/AList.md
   - 常见问题:
     - 产品 FAQ: faq/faq.md
     - 操作系统相关: faq/operating_system.md
