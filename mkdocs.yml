@@ -126,13 +126,19 @@ nav:
     - 面板设置: user_manual/settings.md
   - 常用软件:
     - OpenResty 安装: user_manual/appstore/openresty.md
-    - MySQL 安装: user_manual/appstore/MySQL.md
-    - Redis 安装: user_manual/appstore/Redis.md
-    - MariaDB 安装: user_manual/appstore/MariaDB.md
-    - MongoDB 安装: user_manual/appstore/MongoDB.md
-    - MinIO 安装: user_manual/appstore/MinIO.md
-    - phpMyAdmin 安装: user_manual/appstore/phpMyAdmin.md
-    - AList 安装: user_manual/appstore/AList.md
+    - MySQL 安装: user_manual/appstore/mysql.md
+    - Redis 安装: user_manual/appstore/redis.md
+    - MariaDB 安装: user_manual/appstore/mariadb.md
+    - MongoDB 安装: user_manual/appstore/mongodb.md
+    - MinIO 安装: user_manual/appstore/minio.md
+    - phpMyAdmin 安装: user_manual/appstore/phpmyadmin.md
+    - AList 安装: user_manual/appstore/alist.md
+    - Nextcloud 安装: user_manual/appstore/nextcloud.md
+    - Cloudreve 安装: user_manual/appstore/cloudreve.md
+    - Gitea 安装: user_manual/appstore/gitea.md
+    - WordPress 安装: user_manual/appstore/wordpress.md
+    - Halo 安装: user_manual/appstore/halo.md
+    - Ollama 安装: user_manual/appstore/ollama.md
   - 常见问题:
     - 产品 FAQ: faq/faq.md
     - 操作系统相关: faq/operating_system.md
