@@ -10,6 +10,22 @@
 
 ![img.png](../../img/websites/runtime_create.png)
 
+## 创建 本地 PHP 运行环境
+
+!!! note ""
+    **点击创建运行环境按钮，选择本地**
+
+    - 需要先在服务器上安装 php-fpm。
+
+![img.png](../../img/websites/runtime_local.png)
+
+!!! note ""
+    **1Panel 离线版**
+    
+    - 可以从其他 1Panel 服务器拷贝 /opt/1panel/runtime/php/[php_name] 目录，并上传到离线版 1Panel 服务器，并使用 docker compose up 命令启动，记住映射的端口
+    - 创建运行环境网站，选择刚刚创建的 PHP 运行环境，修改端口为刚才启动的端口
+
+![img.png](../../img/websites/runtime_local_website.png)
 
 ## PHP 扩展列表
 
