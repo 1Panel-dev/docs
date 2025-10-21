@@ -60,7 +60,7 @@ extra:
     method: mike
   analytics:
     provider: google
-    property: G-3VTP3CVQW8
+    property: G-1QN949WS47
 
 plugins:
   - glightbox
