@@ -9,6 +9,25 @@
 ![img.png](../../img/websites/runtime_list.png)
 {: .browser-mockup}
 
+### 1.1.创建 本地 PHP 运行环境
+
+!!! note ""
+    **点击创建运行环境按钮，选择本地**
+
+    - 需要先在服务器上安装 php-fpm。
+
+![img.png](../../img/websites/runtime_local.png)
+{: .browser-mockup}
+
+!!! note ""
+    **1Panel 离线版**
+
+    - 可以从其他 1Panel 服务器拷贝 /opt/1panel/runtime/php/[php_name] 目录，并上传到离线版 1Panel 服务器，并使用 docker compose up 命令启动，记住映射的端口
+    - 创建运行环境网站，选择刚刚创建的 PHP 运行环境，修改端口为刚才启动的端口
+
+![img.png](../../img/websites/runtime_local_website.png)
+{: .browser-mockup}
+
 ## 2 管理 PHP 扩展
 
 !!! note ""
@@ -31,6 +50,7 @@
     点击 PHP 运行环境列表中的【更多】操作中的【进程守护】选项，可以查看并修改当前 PHP 运行环境的进程守护配置。
 
     适用于 PHP 应用需要额外的常驻进程的场景。
+
 
 ![img.png](../../img/websites/runtime_php_daemon.png)
 {: .browser-mockup}
