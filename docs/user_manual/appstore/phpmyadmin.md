@@ -37,7 +37,7 @@
 ## 4. 访问 phpMyAdmin 服务
 
 !!! note ""
-     安装完成后，确认 1panel 配置默认访问地址
+     安装完成后，确认 1Panel 配置默认访问地址
 
 ![image-20251016172322315](../../img/app/setting_ip.png)
 

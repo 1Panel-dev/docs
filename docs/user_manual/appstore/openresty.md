@@ -9,14 +9,14 @@
 !!! note ""
     进入 1Panel 控制台后，点击左侧菜单的 **「应用商店」**。
 
-![img.png](../../img/app/appstore.png)
+![image-20251016110510084](../../img/app/appstore_white.png)
 
 ## 2. 搜索 OpenResty 并安装
 
 !!! note ""
     在右上角搜索框输入 **OpenResty**，点击应用卡片进入详情页，选择 **安装**。
 
-![img.png](../../img/app/openresty.png)
+![image-20251022205345484](../../img/app/openresty.png)
 
 ## 3. 配置安装参数
 
@@ -28,10 +28,10 @@
     - **HTTP 端口**（默认 80，如果与现有服务冲突可调整）
     - **HTTPS 端口**（默认 443，如果与现有服务冲突可调整）
     - **网站目录**（默认网站目录会放置在 1Panel 安装目录下，如需修改请以绝对路径填写）
-
+    
     确认设置无误后，点击 **确定** 按钮开始安装。
 
-![img.png](../../img/app/openresty_install.png)
+![image-20251022205428034](../../img/app/openresty_install.png)
 
 ## 4. 查看运行状态
 
@@ -47,9 +47,11 @@
     - **进入容器终端**：在容器内执行命令
     - **备份 / 恢复**：对应用数据进行备份和恢复
 
-![img.png](../../img/app/openresty_installed.png)
+![image-20251022205720006](../../img/app/openresty_installed.png)
 
 ## 5. 使用 OpenResty
 
 !!! note ""
     进入 1Panel 左侧的 **网站** 菜单，即可创建新网站并使用 OpenResty 服务。
+
+![image-20251022205757786](../../img/app/openresty_view.png)

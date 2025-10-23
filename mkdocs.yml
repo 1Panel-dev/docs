@@ -125,20 +125,36 @@ nav:
     - 日志审计: user_manual/logs.md
     - 面板设置: user_manual/settings.md
   - 常用软件:
-    - OpenResty 安装: user_manual/appstore/openresty.md
-    - MySQL 安装: user_manual/appstore/mysql.md
-    - Redis 安装: user_manual/appstore/redis.md
-    - MariaDB 安装: user_manual/appstore/mariadb.md
-    - MongoDB 安装: user_manual/appstore/mongodb.md
-    - MinIO 安装: user_manual/appstore/minio.md
-    - phpMyAdmin 安装: user_manual/appstore/phpmyadmin.md
     - AList 安装: user_manual/appstore/alist.md
-    - Nextcloud 安装: user_manual/appstore/nextcloud.md
+    - Bitwarden 安装: user_manual/appstore/bitwarden.md
+    - ChatGPT-Next-Web 安装: user_manual/appstore/chatgpt-next-web.md
     - Cloudreve 安装: user_manual/appstore/cloudreve.md
+    - DataEase 安装: user_manual/appstore/dataease.md
+    - ddns-go 安装: user_manual/appstore/ddns-go.md
+    - frp 安装: user_manual/appstore/frp.md
     - Gitea 安装: user_manual/appstore/gitea.md
-    - WordPress 安装: user_manual/appstore/wordpress.md
     - Halo 安装: user_manual/appstore/halo.md
+    - Home Assistant 安装: user_manual/appstore/home-assistant.md
+    - Jumpserver 安装: user_manual/appstore/jumpserver.md
+    - LobeChat 安装: user_manual/appstore/lobechat.md
+    - MariaDB 安装: user_manual/appstore/mariadb.md
+    - MaxKB 安装: user_manual/appstore/maxkb.md
+    - MinIO 安装: user_manual/appstore/minio.md
+    - MongoDB 安装: user_manual/appstore/mongodb.md
+    - MySQL 安装: user_manual/appstore/mysql.md
+    - Nextcloud 安装: user_manual/appstore/nextcloud.md
+    - Nginx Proxy Manager 安装: user_manual/appstore/nginx-proxy-manager.md
     - Ollama 安装: user_manual/appstore/ollama.md
+    - Open WebUI 安装: user_manual/appstore/openwebui.md
+    - OpenResty 安装: user_manual/appstore/openresty.md
+    - phpMyAdmin 安装: user_manual/appstore/phpmyadmin.md
+    - 青龙 安装: user_manual/appstore/qinglong.md
+    - Redis 安装: user_manual/appstore/redis.md
+    - RustDesk 安装: user_manual/appstore/rustdesk.md
+    - Stirling-PDF 安装: user_manual/appstore/stirling-pdf.md
+    - Uptime Kuma 安装: user_manual/appstore/uptime-kuma.md
+    - VS Code 安装: user_manual/appstore/vscode.md
+    - WordPress 安装: user_manual/appstore/wordpress.md
   - 常见问题:
     - 产品 FAQ: faq/faq.md
     - 操作系统相关: faq/operating_system.md
