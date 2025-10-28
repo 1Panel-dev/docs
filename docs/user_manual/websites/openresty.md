@@ -72,5 +72,12 @@
 
     模块配置发生变化后，需要点击【构建】按钮以应用配置，构建成功后会自动重启 OpenResty。
 
+
+!!! note ""
+
+    如果自定义构建模块，需要将模块的源码包放在  /opt/1panel/apps/openresty/openresty/build/tmp 目录下  (/opt 是 1Panel 的安装目录)  
+    参数类似 --add-module=/tmp/nginx-rtmp-module （必须是 /tmp）  
+    脚本参考 unzip -o /tmp/nginx-rtmp-module.zip -d /tmp （必须是 /tmp）  
+
 ![img.png](../../img/websites/openresty_module.png)
 {: .browser-mockup}
