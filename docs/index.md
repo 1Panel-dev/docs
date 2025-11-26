@@ -1,3 +1,7 @@
+!!! note ""
+    Gitee「最受欢迎开源软件」评选进行中，请大家投票支持 1Panel !
+	
+	投票链接：https://gitee.com/activity/2025opensource?ident=IYKHJW
 
 !!! note ""
     1Panel 是一个现代化、开源的 Linux 服务器运维管理面板。
