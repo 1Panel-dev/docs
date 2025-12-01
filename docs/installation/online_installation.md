@@ -3,10 +3,10 @@
 !!! note ""
     **安装前请确保您的系统符合安装条件：**
 
-    - 操作系统：支持主流 Linux 发行版本（基于 Debian / RedHat，包括国产操作系统） 
-    - 服务器架构：x86_64、aarch64、armv7l、ppc64le、s390x 
-    - 内存要求：建议可用内存在 1GB 以上 
-    - 浏览器要求：请使用 Chrome、FireFox、IE10+、Edge 等现代浏览器 
+    - 操作系统：支持主流 Linux 发行版本（基于 Debian / RedHat，包括国产操作系统）
+    - 服务器架构：x86_64、aarch64、armv7l、ppc64le、s390x、riscv64
+    - 内存要求：建议可用内存在 1GB 以上
+    - 浏览器要求：请使用 Chrome、FireFox、IE10+、Edge 等现代浏览器
     - **可访问互联网**
     - 如果是内网环境，推荐实现 [离线安装包](https://1panel.cn/docs/v2/installation/package_installation/) 方式进行部署
 
