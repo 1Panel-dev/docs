@@ -128,6 +128,7 @@ nav:
     - OpenResty: user_manual/appstore/openresty.md
     - MySQL: user_manual/appstore/mysql.md
     - Redis: user_manual/appstore/redis.md
+    - Zabbix: user_manual/appstore/zabbix.md
     - Halo: user_manual/appstore/halo.md
     - AList: user_manual/appstore/alist.md
     - WordPress: user_manual/appstore/wordpress.md
