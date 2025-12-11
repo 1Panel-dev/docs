@@ -8,7 +8,7 @@
 !!! note ""
     进入 1Panel 控制台后，点击左侧菜单的 **「应用商店」**。
 
-![image-20251016110510084](../../img/app/appstore_white.png)
+![image-20251016110510084](../../img/app/appstores.png)
 
 ## 2. 搜索 AList 并安装
 
