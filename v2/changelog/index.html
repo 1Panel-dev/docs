@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="../css/lightgallery.min.css">
     <link href="../css/f2c-header.css" rel="stylesheet" type="text/css" />
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -4572,6 +4572,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v2016" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.0.16
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v2015" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4951,6 +4962,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v2016" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.0.16
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v2015" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5160,6 +5182,81 @@
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
+<h3 id="v2016">v2.0.16<a class="headerlink" href="#v2016" title="Permanent link">⚓︎</a></h3>
+<p>2025年12月25日</p>
+<div class="admonition note">
+<p class="admonition-title">新增功能</p>
+<ul>
+<li>【网站】新增 TCP/UDP 代理功能</li>
+<li>【网站】支持批量配置网站 SSL 证书</li>
+<li>【证书】支持 IP 地址签发 SSL 证书</li>
+<li>【GPU 监控】支持查看 GPU 实时和历史监控数据</li>
+<li>【数据库】数据库恢复操作支持设置超时时间</li>
+<li>【终端】终端配置支持重置默认连接信息</li>
+<li>【防火墙】端口转发支持配置端口范围</li>
+<li>【多机管理】支持集中管理和更新各节点上的应用</li>
+<li>【系统】任务中心页面支持切换节点</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">功能优化</p>
+<ul>
+<li>【网站】优化非 443 端口网站的 HTTP 到 HTTPS 跳转规则</li>
+<li>【网站】优化网站创建界面和逻辑提升使用体验</li>
+<li>【网站】支持中文及特殊字符域名的 Unicode 显示</li>
+<li>【网站】优化网站配置页面左侧菜单滚动效果</li>
+<li>【运行环境】优化 PHP 扩展安装提示</li>
+<li>【运行环境】PHP 运行环境支持快速安装 lz4 扩展</li>
+<li>【容器】优化删除容器时的提示信息</li>
+<li>【容器】容器编排支持操作 .env 文件</li>
+<li>【容器】优化容器编排创建方式</li>
+<li>【容器】优化容器关联资源的样式显示</li>
+<li>【容器】优化镜像删除依赖提示消息</li>
+<li>【文件】支持查看大于 10MB 的文件</li>
+<li>【文件】优化文件上传页面按钮布局</li>
+<li>【防火墙】默认放通 UDP 443 端口支持 HTTP/3（QUIC）</li>
+<li>【终端】优化主机选择弹框样式</li>
+<li>【WAF】优化同步 WAF IP 组时的提示信息</li>
+<li>【面板设置】重启水印功能后保留自定义样式配置</li>
+<li>【系统】优化部分页面的提示信息显示位置</li>
+<li>【系统】优化两步验证输入框体验</li>
+<li>【系统】优化 1pctl 回滚命令后提示信息</li>
+<li>【系统】优化 SSH 会话获取逻辑以减少不必要的性能开销</li>
+<li>【系统】升级完成后清理多余的升级临时文件</li>
+<li>【系统】优化 Swagger API 文档格式</li>
+<li>【系统】简化进程数据处理逻辑以提升性能</li>
+<li>【系统】优化网络连接和 WebSocket 处理以提升性能</li>
+<li>【系统】优化进程和链接页面功能提升使用体验</li>
+<li>【系统】增强浏览器缓存管理和本地化支持</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">问题修复</p>
+<ul>
+<li>【应用商店】修复了部分应用无法正常选择 MySQL 字符集的问题</li>
+<li>【应用商店】修复了本地应用跨大版本更新配置不生效的问题</li>
+<li>【网站】修复了重定向配置超过 100 条后无法全部显示的问题</li>
+<li>【网站】修复了部分场景下一键部署类型网站创建失败的问题</li>
+<li>【网站】修复了部分场景下网站设置超时报错的问题</li>
+<li>【数据库】修复了部分场景下 PostgreSQL 数据库备份失败的问题</li>
+<li>【容器】修复了多 Compose YAML 组合操作失败的问题</li>
+<li>【容器】修复了容器编排创建失败后日志打印不完整的问题</li>
+<li>【容器】修复了部分场景下容器编排创建失败的问题</li>
+<li>【文件】修复了部分情况下删除不存在的软链接文件失败的问题</li>
+<li>【防火墙】修复了端口转发初始化状态判断异常的问题</li>
+<li>【防火墙】修复了 UFW 防火墙添加 IPv6 地址报错的问题</li>
+<li>【计划任务】修复了部分场景下手动停止任务无效的问题</li>
+<li>【多机管理】修复了异构架构从节点版本更新失败的问题</li>
+<li>【网站监控】修复了部分场景下蜘蛛数量显示错误的问题</li>
+<li>【面板设置】修复了创建快照时本地应用备份失败的问题</li>
+<li>【面板设置】修复了添加 HTTP/HTTPS 代理时容器配置报错的问题</li>
+<li>【系统】修复了监控数据写入可能阻塞的问题</li>
+<li>【系统】修复了部分任务名称未国际化的问题</li>
+<li>【系统】修复了部分场景下任务日志输出乱码的问题</li>
+<li>【系统】修复了部分场景下文件选择组件焦点异常丢失的问题</li>
+<li>【系统】修复了部分场景下版本更新失败的问题</li>
+</ul>
+</div>
 <h3 id="v2015">v2.0.15<a class="headerlink" href="#v2015" title="Permanent link">⚓︎</a></h3>
 <p>2025年12月8日</p>
 <div class="admonition note">
@@ -6278,11 +6375,11 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
     
     
     
-      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../js/termynal.js"></script>
       
