@@ -24,6 +24,7 @@
 
     - 可以从其他 1Panel 服务器拷贝 /opt/1panel/runtime/php/[php_name] 目录和镜像，并上传到离线版 1Panel 服务器，并使用 docker compose up 命令启动，记住映射的端口
     - 创建运行环境网站，选择刚刚创建的 PHP 运行环境，修改端口为刚才启动的端口
+    - 详细操作步骤可参考：[PHP 离线版使用文档](../../installation/package_installation.md/#8-php)
 
 ![img.png](../../img/websites/runtime_local_website.png)
 {: .browser-mockup}

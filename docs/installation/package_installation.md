@@ -225,19 +225,81 @@
 
     完成以上步骤后，即可让离线服务器加载最新的应用商店内容。
 
-## 8. 应用安装方式说明
+## 8. PHP 离线版
+
+!!! note "准备环境"
+    - 1Panel V2 离线服务器
+    - 1Panel V2 外网服务器
+
+    > 核心操作是：将外网服务器中编译好的 PHP 镜像导入到离线服务器上。
+
+### 8.1 外网 1Panel
+
+!!! note ""
+    在 1Panel 外网环境创建 PHP 运行环境，并安装相应扩展（需要记录 **镜像名称** 和端口）
+
+![offline_php_01](../../img/offline/offline_php_01.png)
+
+!!! note ""
+    使用上一步的 **镜像名称** 打包 PHP 镜像，在 `/opt/1panel/runtime/php/<PHP 运行环境名称>` 下执行：
+
+    ```bash
+    docker save -o php-8.4.6.tar 1panel-php-fpm:8.4.6
+    ```
+
+!!! note ""
+    压缩运行环境目录，在 `/opt/1panel/runtime/php/` 目录下执行：
+
+    ```bash
+    tar -czvf php846.tar.gz <PHP 运行环境名称>
+    ```
+
+### 8.2 离线 1Panel
+
+!!! note ""
+    拷贝压缩文件到 `/opt` 或其他目录并解压：
+    ```bash
+    tar -xzvf php846.tar.gz
+    ```
+
+!!! note ""
+    进入解压后的目录，加载镜像并启动 PHP 运行环境：
+    ```bash
+    docker load -i php-8.4.6.tar
+    docker compose up
+    ```
+
+    使用 cat .env 查看两个参数：
+
+    - PANEL_APP_PORT_HTTP （PHP 运行环境端口）
+    - PANEL_WEBSITE_DIR （网站目录）
+
+    > 注意：PANEL_WEBSITE_DIR 需要和 OpenResty 安装时的网站目录保持一致，如不一致请修改 .env 文件。
+
+!!! note ""
+    创建本地 PHP 运行环境
+
+![offline_php_02](../../img/offline/offline_php_02.png)
+
+!!! note ""
+    创建 PHP 网站
+    > 注意：端口填写你启动的 PHP 运行环境端口。
+
+![offline_php_03](../../img/offline/offline_php_03.png)
+
+## 9. 应用安装方式说明
 
 !!! note ""
     在离线版中，安装应用与通过「本地应用」安装应用存在一定差异，主要体现在以下几点：
 
-### 8.1 对比结果
+### 9.1 对比结果
 
 | 方式 | 应用来源 | 是否包含所有应用 | 是否自动集成功能菜单 |
 |------|----------|------------------|----------------------|
 | 离线版安装应用 | 离线包中已预置 | ✅ 是 | ✅ 是（如网站、数据库） |
 | 本地应用方式安装 | 用户手动上传 | ❌ 否 | ❌ 否 |
 
-### 8.2 推荐使用场景
+### 9.2 推荐使用场景
 
 !!! note ""
     - **离线版安装应用**：适合无网络环境下快速部署，所有功能完整，体验最佳。  
