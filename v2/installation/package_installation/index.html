@@ -694,7 +694,7 @@
   <a href="#71" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7.1 导入应用镜像
+        7.1 获取镜像
       
     </span>
   </a>
@@ -705,7 +705,18 @@
   <a href="#72" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7.2 更新应用
+        7.2 导入镜像
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 更新应用 / 运行环境
       
     </span>
   </a>
@@ -5064,7 +5075,7 @@
   <a href="#71" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7.1 导入应用镜像
+        7.1 获取镜像
       
     </span>
   </a>
@@ -5075,7 +5086,18 @@
   <a href="#72" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7.2 更新应用
+        7.2 导入镜像
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 更新应用 / 运行环境
       
     </span>
   </a>
@@ -5304,7 +5326,7 @@
   <a href="#71" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7.1 导入应用镜像
+        7.1 获取镜像
       
     </span>
   </a>
@@ -5315,7 +5337,18 @@
   <a href="#72" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7.2 更新应用
+        7.2 导入镜像
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 更新应用 / 运行环境
       
     </span>
   </a>
@@ -5498,12 +5531,77 @@ tar<span class="w"> </span>zxvf<span class="w"> </span>1panel-v2.0.12-offline-li
 <p>安装完成后，可使用 <a href="../cli/">1pctl 命令行工具</a> 进行日常维护。</p>
 </div>
 <h2 id="7">7. 应用商店<a class="headerlink" href="#7" title="Permanent link">⚓︎</a></h2>
-<h3 id="71">7.1 导入应用镜像<a class="headerlink" href="#71" title="Permanent link">⚓︎</a></h3>
+<h3 id="71">7.1 获取镜像<a class="headerlink" href="#71" title="Permanent link">⚓︎</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:6"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><input id="__tabbed_1_6" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">应用镜像</label><label for="__tabbed_1_2">Java 运行环境</label><label for="__tabbed_1_3">Node.js 运行环境</label><label for="__tabbed_1_4">Go 运行环境</label><label for="__tabbed_1_5">Python 运行环境</label><label for="__tabbed_1_6">.NET 运行环境</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition note">
 <p>点击应用 <strong>「安装」</strong> 按钮后，在 <strong>「高级设置」</strong> → <strong>「编辑 Compose 文件」</strong> 中查看 <code>image:</code> 字段，其后的内容即为目标镜像名称。</p>
 </div>
+</div>
+<div class="tabbed-block">
 <div class="admonition note">
-<p>如需使用其他应用（如 WordPress），可手动导入镜像，具体步骤如下：</p>
+<ul>
+<li>bitnamilegacy/java:1.8</li>
+<li>bitnamilegacy/java:11</li>
+<li>bitnamilegacy/java:17</li>
+<li>bitnamilegacy/java:21</li>
+<li>bitnamilegacy/java:22</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition note">
+<ul>
+<li>node:12.22.12</li>
+<li>node:14.21.3</li>
+<li>node:16.20.2</li>
+<li>1panel/node:18.20.8</li>
+<li>1panel/node:20.19.5</li>
+<li>1panel/node:21.7.3</li>
+<li>1panel/node:22.21.0</li>
+<li>1panel/node:24.10.0</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition note">
+<ul>
+<li>golang:1.21</li>
+<li>golang:1.22</li>
+<li>golang:1.23</li>
+<li>golang:1.24</li>
+<li>golang:1.25</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition note">
+<ul>
+<li>python:3.10.19</li>
+<li>python:3.11.14</li>
+<li>python:3.12.12</li>
+<li>python:3.13.9</li>
+<li>python:3.14.0</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition note">
+<ul>
+<li>mcr.microsoft.com/dotnet/aspnet:6.0</li>
+<li>mcr.microsoft.com/dotnet/aspnet:7.0</li>
+<li>mcr.microsoft.com/dotnet/aspnet:8.0</li>
+<li>mcr.microsoft.com/dotnet/aspnet:9.0</li>
+<li>mcr.microsoft.com/dotnet/aspnet:10.0</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<h3 id="72">7.2 导入镜像<a class="headerlink" href="#72" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>如需使用其他应用（如 WordPress）或运行环境，可手动导入镜像，具体步骤如下：</p>
 <ol>
 <li>
 <p><strong>在可联网机器上拉取并导出镜像</strong>：</p>
@@ -5522,9 +5620,10 @@ docker<span class="w"> </span>save<span class="w"> </span>-o<span class="w"> </s
 </code></pre></div>
 </li>
 </ol>
-<p>完成上述步骤后，即可在应用商店安装 WordPress 应用。</p>
+<p>完成上述步骤后，即可在应用商店安装 WordPress 应用。
+如果导入的是运行环境镜像，完成上述步骤后即可安装并使用对应版本的运行环境。</p>
 </div>
-<h3 id="72">7.2 更新应用<a class="headerlink" href="#72" title="Permanent link">⚓︎</a></h3>
+<h3 id="73">7.3 更新应用 / 运行环境<a class="headerlink" href="#73" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
 <p>离线应用商店更新功能需 <strong>v2.0.13-offline 及以上版本</strong> 才可使用；若当前版本低于此版本，请先完成升级。</p>
 </div>
