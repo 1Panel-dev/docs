@@ -109,13 +109,59 @@
 
 ## 7. 应用商店
 
-### 7.1 导入应用镜像
+### 7.1 获取镜像
+
+=== "应用镜像"
+    !!! note ""
+        点击应用 **「安装」** 按钮后，在 **「高级设置」** → **「编辑 Compose 文件」** 中查看 `image:` 字段，其后的内容即为目标镜像名称。
+
+=== "Java 运行环境"
+    !!! note ""
+        - bitnamilegacy/java:1.8
+        - bitnamilegacy/java:11
+        - bitnamilegacy/java:17
+        - bitnamilegacy/java:21
+        - bitnamilegacy/java:22
+
+=== "Node.js 运行环境"
+    !!! note ""
+        - node:12.22.12
+        - node:14.21.3
+        - node:16.20.2
+        - 1panel/node:18.20.8
+        - 1panel/node:20.19.5
+        - 1panel/node:21.7.3
+        - 1panel/node:22.21.0
+        - 1panel/node:24.10.0
+
+=== "Go 运行环境"
+    !!! note ""
+        - golang:1.21
+        - golang:1.22
+        - golang:1.23
+        - golang:1.24
+        - golang:1.25
+
+=== "Python 运行环境"
+    !!! note ""
+        - python:3.10.19
+        - python:3.11.14
+        - python:3.12.12
+        - python:3.13.9
+        - python:3.14.0
+
+=== ".NET 运行环境"
+    !!! note ""
+        - mcr.microsoft.com/dotnet/aspnet:6.0
+        - mcr.microsoft.com/dotnet/aspnet:7.0
+        - mcr.microsoft.com/dotnet/aspnet:8.0
+        - mcr.microsoft.com/dotnet/aspnet:9.0
+        - mcr.microsoft.com/dotnet/aspnet:10.0
+
+### 7.2 导入镜像
 
 !!! note ""
-    点击应用 **「安装」** 按钮后，在 **「高级设置」** → **「编辑 Compose 文件」** 中查看 `image:` 字段，其后的内容即为目标镜像名称。
-
-!!! note ""
-    如需使用其他应用（如 WordPress），可手动导入镜像，具体步骤如下：
+    如需使用其他应用（如 WordPress）或运行环境，可手动导入镜像，具体步骤如下：
 
     1. **在可联网机器上拉取并导出镜像**：
 
@@ -137,8 +183,9 @@
         ```
 
     完成上述步骤后，即可在应用商店安装 WordPress 应用。
+    如果导入的是运行环境镜像，完成上述步骤后即可安装并使用对应版本的运行环境。
 
-### 7.2 更新应用
+### 7.3 更新应用 / 运行环境
 
 !!! note ""
     离线应用商店更新功能需 **v2.0.13-offline 及以上版本** 才可使用；若当前版本低于此版本，请先完成升级。
