@@ -4701,22 +4701,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-moltbot" class="md-nav__link">
+  <a href="#3-moltbot-token" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. 初始化 Moltbot
+        3. 获取 Moltbot Token
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. 初始化 Moltbot">
+    <nav class="md-nav" aria-label="3. 获取 Moltbot Token">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#31" class="md-nav__link">
+  <a href="#4-moltbot-webui" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1. 进入安装目录
+        4. 访问 Moltbot WebUI
       
     </span>
   </a>
@@ -4724,32 +4724,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#32-moltbot" class="md-nav__link">
+  <a href="#5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.2. 初始化 Moltbot
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#33" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.3. 修改配置文件
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#34" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.4. 重建应用并访问
+        5. 配置聊天工具对接（可选）
       
     </span>
   </a>
@@ -4796,61 +4774,54 @@
 <ul>
 <li><strong>名称</strong> (输入框内可自定义应用名称，默认为 moltbot)</li>
 <li><strong>版本</strong> (下拉选择所需的 Moltbot 版本)</li>
+<li><strong>模型提供商</strong> (下拉选择所需的 AI 模型提供商)</li>
+<li><strong>API Key</strong> (调用模型提供商接口使用的 API Key，在模型提供商处获取)</li>
+<li><strong>模型</strong> (模型提供商代号/模型ID)</li>
 <li><strong>WebUI 端口</strong> (默认为 18789)</li>
 <li><strong>Bridge 端口</strong> (默认为 18790)</li>
 <li><strong>端口外部访问</strong> (开启后，将允许从外部网络访问此应用端口)</li>
 </ul>
 <p>确认设置无误后，点击 <strong>确认</strong> 按钮开始安装。</p>
 </div>
-<p><img alt="image-moltbot_install" src="../../../img/app/moltbot_install.png" /></p>
-<h2 id="3-moltbot">3. 初始化 Moltbot<a class="headerlink" href="#3-moltbot" title="Permanent link">⚓︎</a></h2>
-<h3 id="31">3.1. 进入安装目录<a class="headerlink" href="#31" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
-<p>进入已安装应用页面，找到 <strong>Moltbot 应用</strong>，点击顶部的 <strong>进入安装目录</strong> 按钮。</p>
+<p class="admonition-title">常见模型提供商与示例模型</p>
+<ul>
+<li>OpenAI: <code>openai/gpt-4o-mini</code></li>
+<li>Anthropic: <code>anthropic/claude-3-7-sonnet</code></li>
+<li>Gemini: <code>gemini/gemini-1.5-pro</code></li>
+<li>Groq: <code>groq/llama-3.1-70b-versatile</code></li>
+<li>Mistral: <code>mistral/large-latest</code></li>
+<li>Cohere: <code>cohere/command-r-plus</code></li>
+<li>MiniMax: <code>minimax/MiniMax-M2.1</code></li>
+<li>Moonshot (Kimi): <code>moonshot/kimi-k2.5</code></li>
+<li>Qwen: <code>qwen/qwen2.5-coder-32b-instruct</code></li>
+<li>ZAI (GLM): <code>zai/glm-4.7</code></li>
+<li>DeepSeek: <code>deepseek/deepseek-chat</code></li>
+</ul>
 </div>
-<p><img alt="image-moltbot_folder" src="../../../img/app/moltbot_folder.png" /></p>
-<h3 id="32-moltbot">3.2. 初始化 Moltbot<a class="headerlink" href="#32-moltbot" title="Permanent link">⚓︎</a></h3>
+<p><img alt="image-moltbot_install" src="../../../img/app/moltbot_install.png" /></p>
+<h2 id="3-moltbot-token">3. 获取 Moltbot Token<a class="headerlink" href="#3-moltbot-token" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>点击文件列表顶部的 <strong>终端</strong> 按钮，执行初始化命令：</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>-f<span class="w"> </span>docker-compose-cli.yml<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>moltbot-cli<span class="w"> </span>onboard
+<p>在 <strong>已安装应用页面</strong>，找到 Moltbot 应用点击文件夹图标进入应用数据目录，在目录下的 <code>data/conf</code> 文件夹，点击 <strong>moltbot.json</strong> 文件，复制其中 "gateway.auth.token" 的值，用作访问 Moltbot 应用时的 Token。</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;gateway&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="nt">&quot;mode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;local&quot;</span><span class="p">,</span>
+<span class="w">     </span><span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;c9917c5a066beeb26266d09baed99495e7563b33c771e89a&quot;</span>
+<span class="p">},</span>
+<span class="err">***</span>
 </code></pre></div>
 </div>
-<p><img alt="image-moltbot_terminal" src="../../../img/app/moltbot_terminal.png" /></p>
-<h3 id="33">3.3. 修改配置文件<a class="headerlink" href="#33" title="Permanent link">⚓︎</a></h3>
+<h3 id="4-moltbot-webui">4. 访问 Moltbot WebUI<a class="headerlink" href="#4-moltbot-webui" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
-<ol>
-<li>初始化完成后，进入 <code>data/conf</code> 目录，编辑 <strong>clawdbot.json</strong> 文件。</li>
-<li>新增 <code>gateway.controlUi.allowInsecureAuth</code> 配置：
- <div class="highlight"><pre><span></span><code><span class="nt">&quot;gateway&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">     </span><span class="nt">&quot;mode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;local&quot;</span><span class="p">,</span>
-<span class="w">     </span><span class="nt">&quot;auth&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">          </span><span class="nt">&quot;mode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;token&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;e6579fff7f378d12974b43bf95ace0b205b03c38b7a34ab2&quot;</span>
-<span class="w">     </span><span class="p">},</span>
-<span class="w">     </span><span class="nt">&quot;port&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">18789</span><span class="p">,</span>
-<span class="w">     </span><span class="nt">&quot;bind&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;loopback&quot;</span><span class="p">,</span>
-<span class="w">     </span><span class="nt">&quot;tailscale&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">          </span><span class="nt">&quot;mode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;off&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="nt">&quot;resetOnExit&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
-<span class="w">     </span><span class="p">},</span>
-<span class="w">     </span><span class="nt">&quot;controlUi&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">          </span><span class="nt">&quot;allowInsecureAuth&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
-<span class="w">     </span><span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></li>
-<li>复制其中 "gateway.auth.token" 的值，后续访问 Moltbot 应用时需要用到的 Token。</li>
-</ol>
-</div>
-<p><img alt="image-moltbot_conf" src="../../../img/app/moltbot_conf.png" /></p>
-<h3 id="34">3.4. 重建应用并访问<a class="headerlink" href="#34" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>返回 <strong>已安装应用页面</strong>，找到 Moltbot 应用，点击 <strong>重建</strong> 按钮来重新运行 Moltbot 应用。</p>
-</div>
-<p><img alt="image-moltbot_rebuild" src="../../../img/app/moltbot_rebuild.png" /></p>
-<div class="admonition note">
-<p>等待重建完成后，点击跳转按钮，在新打开的浏览器地址栏中，在 URL 后添加 <code>?token=你的 Moltbot Token</code>。</p>
+<p>返回 <strong>已安装应用页面</strong>，找到 Moltbot 应用，点击跳转按钮，在新打开的浏览器地址栏中，在 URL 后添加 <code>?token=你的 Moltbot Token</code>。
+ 成功进入后，即可在 Chat 页面与 Moltbot 进行对话了。</p>
 </div>
 <p><img alt="image-moltbot_visit" src="../../../img/app/moltbot_visit.png" /></p>
+<h3 id="5">5. 配置聊天工具对接（可选）<a class="headerlink" href="#5" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>如果你希望通过 Telegram、WhatsApp、Discord、iMessage 等聊天工具与机器人进行对话，可以在 <strong>已安装应用页面</strong> 找到 <strong>Moltbot 应用</strong>，点击顶部的 <strong>进入安装目录</strong> 按钮。点击文件列表顶部的 <strong>终端</strong> 按钮，在终端中执行以下命令配置对应的聊天工具对接。</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>-f<span class="w"> </span>docker-compose-cli.yml<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>moltbot-cli<span class="w"> </span>channels<span class="w"> </span>add
+</code></pre></div>
+</div>
 
 
 
