@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://1panel.cn/v2/user_manual/appstore/moltbot/">
       
       
+        <link rel="prev" href="../openresty/">
+      
+      
+        <link rel="next" href="../mysql/">
       
       
         
@@ -25,7 +29,7 @@
     
     
       
-        <title>使用 1Panel 可视化安装 Moltbot - 1Panel 文档</title>
+        <title>Moltbot - 1Panel 文档</title>
       
     
     
@@ -200,7 +204,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              使用 1Panel 可视化安装 Moltbot
+              Moltbot
             
           </span>
         </div>
@@ -3297,8 +3301,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -3364,15 +3370,17 @@
       
         
       
+        
+      
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -3393,7 +3401,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -3427,6 +3435,142 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Moltbot
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Moltbot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 打开应用商店
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-moltbot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 安装 Moltbot
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-moltbot-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 获取 Moltbot Token
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 获取 Moltbot Token">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-moltbot-webui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 访问 Moltbot WebUI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 配置聊天工具对接（可选）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -4802,7 +4946,7 @@
 <p><img alt="image-moltbot_install" src="../../../img/app/moltbot_install.png" /></p>
 <h2 id="3-moltbot-token">3. 获取 Moltbot Token<a class="headerlink" href="#3-moltbot-token" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>在 <strong>已安装应用页面</strong>，找到 Moltbot 应用点击文件夹图标进入应用数据目录，在目录下的 <code>data/conf</code> 文件夹，点击 <strong>moltbot.json</strong> 文件，复制其中 "gateway.auth.token" 的值，用作访问 Moltbot 应用时的 Token。</p>
+<p>在 <strong>已安装应用页面</strong>，找到 <strong>Moltbot</strong> 应用点击 <strong>文件夹图标</strong> 进入应用数据目录，在目录下的 <code>data/conf</code> 文件夹，点击 <strong>moltbot.json</strong> 文件，复制其中 "gateway.auth.token" 的值，用作访问 Moltbot 应用时的 Token。</p>
 <div class="highlight"><pre><span></span><code><span class="nt">&quot;gateway&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="nt">&quot;mode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;local&quot;</span><span class="p">,</span>
 <span class="w">     </span><span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;c9917c5a066beeb26266d09baed99495e7563b33c771e89a&quot;</span>
@@ -4812,7 +4956,7 @@
 </div>
 <h3 id="4-moltbot-webui">4. 访问 Moltbot WebUI<a class="headerlink" href="#4-moltbot-webui" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
-<p>返回 <strong>已安装应用页面</strong>，找到 Moltbot 应用，点击跳转按钮，在新打开的浏览器地址栏中，在 URL 后添加 <code>?token=你的 Moltbot Token</code>。
+<p>返回 <strong>已安装应用页面</strong>，找到 Moltbot 应用，点击 <strong>跳转</strong> 按钮，在新打开的浏览器地址栏中，在 URL 后添加 <code>?token=你的 Moltbot Token</code>。
  成功进入后，即可在 Chat 页面与 Moltbot 进行对话了。</p>
 </div>
 <p><img alt="image-moltbot_visit" src="../../../img/app/moltbot_visit.png" /></p>
