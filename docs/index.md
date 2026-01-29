@@ -1,4 +1,8 @@
 !!! note ""
+	🎉 **1Panel 荣获 Gitee 年度开源项目评选「基础软件赛道」第一名**  
+	👉 活动结果：https://gitee.com/activity/2025opensource/top
+
+!!! note ""
     1Panel 是一个现代化、开源的 Linux 服务器运维管理面板。
 
 ![UI展示](https://resource.fit2cloud.com/1panel/img/overview.png)
