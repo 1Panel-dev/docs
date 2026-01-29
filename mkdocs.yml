@@ -126,7 +126,6 @@ nav:
     - 面板设置: user_manual/settings.md
   - 常用软件:
     - OpenResty: user_manual/appstore/openresty.md
-    - Moltbot: user_manual/appstore/moltbot.md
     - MySQL: user_manual/appstore/mysql.md
     - Redis: user_manual/appstore/redis.md
     - Zabbix: user_manual/appstore/zabbix.md
