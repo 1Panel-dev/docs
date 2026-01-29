@@ -48,7 +48,7 @@
 ## 3. 获取 Moltbot Token
 
 !!! note ""
-     在 **已安装应用页面**，找到 Moltbot 应用点击文件夹图标进入应用数据目录，在目录下的 `data/conf` 文件夹，点击 **moltbot.json** 文件，复制其中 "gateway.auth.token" 的值，用作访问 Moltbot 应用时的 Token。
+     在 **已安装应用页面**，找到 **Moltbot** 应用点击 **文件夹图标** 进入应用数据目录，在目录下的 `data/conf` 文件夹，点击 **moltbot.json** 文件，复制其中 "gateway.auth.token" 的值，用作访问 Moltbot 应用时的 Token。
 
      ```json
      "gateway": {
@@ -61,7 +61,7 @@
 ### 4. 访问 Moltbot WebUI
 
 !!! note ""
-     返回 **已安装应用页面**，找到 Moltbot 应用，点击跳转按钮，在新打开的浏览器地址栏中，在 URL 后添加 `?token=你的 Moltbot Token`。
+     返回 **已安装应用页面**，找到 Moltbot 应用，点击 **跳转** 按钮，在新打开的浏览器地址栏中，在 URL 后添加 `?token=你的 Moltbot Token`。
      成功进入后，即可在 Chat 页面与 Moltbot 进行对话了。
 
 ![image-moltbot_visit](../../img/app/moltbot_visit.png)
