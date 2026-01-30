@@ -125,8 +125,8 @@ nav:
     - 日志审计: user_manual/logs.md
     - 面板设置: user_manual/settings.md
   - 常用软件:
+    - OpenClaw: user_manual/appstore/openclaw.md
     - OpenResty: user_manual/appstore/openresty.md
-    - Moltbot: user_manual/appstore/moltbot.md
     - MySQL: user_manual/appstore/mysql.md
     - Redis: user_manual/appstore/redis.md
     - Zabbix: user_manual/appstore/zabbix.md
@@ -136,6 +136,7 @@ nav:
     - phpMyAdmin: user_manual/appstore/phpmyadmin.md
     - MaxKB: user_manual/appstore/maxkb.md
     - Ollama: user_manual/appstore/ollama.md
+    - Moltbot: user_manual/appstore/moltbot.md
     - frp: user_manual/appstore/frp.md
     - 青龙: user_manual/appstore/qinglong.md
     - Nginx Proxy Manager: user_manual/appstore/nginx-proxy-manager.md
