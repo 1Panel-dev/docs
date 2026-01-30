@@ -66,7 +66,7 @@
 
 ![image-moltbot_params_token](../../img/app/moltbot_params_token.png)
 
-### 4. 访问 Moltbot WebUI
+## 4. 访问 Moltbot WebUI
 
 !!! note ""
      - 在 **已安装应用页面**，点击 `参数` 按钮进入编辑页面，选择自定义 **Web 访问地址**，将带有 `?token=你的 Moltbot Token` 的地址填入输入框并保存，方便后续访问应用。
@@ -79,7 +79,7 @@
 
 ![image-moltbot_visit](../../img/app/moltbot_visit.png)
 
-### 5. 配置聊天工具对接（可选）
+## 5. 配置聊天工具对接（可选）
 
 !!! note ""
      如果你希望通过 Telegram、WhatsApp、Discord、iMessage 等聊天工具与机器人进行对话，可以在 **已安装应用页面** 找到 **Moltbot 应用**，点击顶部的 **进入安装目录** 按钮。点击文件列表顶部的 **终端** 按钮，在终端中执行以下命令配置对应的聊天工具对接。
