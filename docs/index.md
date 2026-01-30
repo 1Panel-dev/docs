@@ -1,9 +1,13 @@
 !!! note ""
+	🚀 **OpenClaw 正式接入 1Panel 应用商店｜全网最快、最简单安装部署指南**  
+	👉 https://1panel.cn/docs/v2/user_manual/appstore/openclaw
+
+!!! note ""
 	🎉 **1Panel 荣获 Gitee 年度开源项目评选「基础软件赛道」第一名**  
 	👉 活动结果：https://gitee.com/activity/2025opensource/top
 
 !!! note ""
-    1Panel 是一个现代化、开源的 Linux 服务器运维管理面板。
+    1Panel 是一个现代化、开源的 Linux 服务器运维管理面板，提供了一个直观的 Web 界面，帮助用户轻松管理 Linux 服务器中的应用、网站、文件、数据库以及大语言模型（LLMs）等。
 
 ![UI展示](https://resource.fit2cloud.com/1panel/img/overview.png)
 { .original }
