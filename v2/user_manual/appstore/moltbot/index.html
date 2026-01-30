@@ -4918,11 +4918,12 @@
 <ul>
 <li><strong>名称</strong> (输入框内可自定义应用名称，默认为 moltbot)</li>
 <li><strong>版本</strong> (下拉选择所需的 Moltbot 版本)</li>
-<li><strong>模型提供商</strong> (下拉选择所需的 AI 模型提供商)</li>
-<li><strong>API Key</strong> (调用模型提供商接口使用的 API Key，在模型提供商处获取)</li>
-<li><strong>模型</strong> (模型提供商代号/模型ID)</li>
 <li><strong>WebUI 端口</strong> (默认为 18789)</li>
 <li><strong>Bridge 端口</strong> (默认为 18790)</li>
+<li><strong>模型提供商</strong> (下拉选择所需的 AI 模型提供商)</li>
+<li><strong>模型</strong> (模型提供商代号/模型ID)</li>
+<li><strong>API Key</strong> (调用模型提供商接口使用的 API Key，在模型提供商处获取)</li>
+<li><strong>Token / 令牌</strong> (默认先不填写 Token。应用安装成功后，通过配置文件获取 Token，然后回到已安装应用页面在参数中填写，方便后续使用。)</li>
 <li><strong>端口外部访问</strong> (开启后，将允许从外部网络访问此应用端口)</li>
 </ul>
 <p>确认设置无误后，点击 <strong>确认</strong> 按钮开始安装。</p>
@@ -4930,17 +4931,17 @@
 <div class="admonition note">
 <p class="admonition-title">常见模型提供商与示例模型</p>
 <ul>
+<li>DeepSeek: <code>deepseek/deepseek-chat</code></li>
+<li>Qwen: <code>qwen/qwen2.5-coder-32b-instruct</code></li>
+<li>MiniMax: <code>minimax/MiniMax-M2.1</code></li>
+<li>Moonshot (Kimi): <code>moonshot/kimi-k2.5</code></li>
+<li>ZAI (GLM): <code>zai/glm-4.7</code></li>
 <li>OpenAI: <code>openai/gpt-4o-mini</code></li>
 <li>Anthropic: <code>anthropic/claude-3-7-sonnet</code></li>
 <li>Gemini: <code>gemini/gemini-1.5-pro</code></li>
 <li>Groq: <code>groq/llama-3.1-70b-versatile</code></li>
 <li>Mistral: <code>mistral/large-latest</code></li>
 <li>Cohere: <code>cohere/command-r-plus</code></li>
-<li>MiniMax: <code>minimax/MiniMax-M2.1</code></li>
-<li>Moonshot (Kimi): <code>moonshot/kimi-k2.5</code></li>
-<li>Qwen: <code>qwen/qwen2.5-coder-32b-instruct</code></li>
-<li>ZAI (GLM): <code>zai/glm-4.7</code></li>
-<li>DeepSeek: <code>deepseek/deepseek-chat</code></li>
 </ul>
 </div>
 <p><img alt="image-moltbot_install" src="../../../img/app/moltbot_install.png" /></p>
@@ -4954,10 +4955,22 @@
 <span class="err">***</span>
 </code></pre></div>
 </div>
+<p><img alt="image-moltbot_folder" src="../../../img/app/moltbot_folder.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Token / 令牌</p>
+<p>回到 <strong>已安装应用页面</strong>，点击 <code>参数</code> 按钮编辑应用，将该 Token 填入输入框，方便后续使用。</p>
+</div>
+<p><img alt="image-moltbot_params_token" src="../../../img/app/moltbot_params_token.png" /></p>
 <h3 id="4-moltbot-webui">4. 访问 Moltbot WebUI<a class="headerlink" href="#4-moltbot-webui" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
-<p>返回 <strong>已安装应用页面</strong>，找到 Moltbot 应用，点击 <strong>跳转</strong> 按钮，在新打开的浏览器地址栏中，在 URL 后添加 <code>?token=你的 Moltbot Token</code>。
- 成功进入后，即可在 Chat 页面与 Moltbot 进行对话了。</p>
+<ul>
+<li>在 <strong>已安装应用页面</strong>，点击 <code>参数</code> 按钮进入编辑页面，选择自定义 <strong>Web 访问地址</strong>，将带有 <code>?token=你的 Moltbot Token</code> 的地址填入输入框并保存，方便后续访问应用。</li>
+<li>示例：<a href="http://172.16.10.181:18789?token=95917ab5e95cb55cad4821d309158d844fbc47ec1cf0494f">http://172.16.10.181:18789?token=95917ab5e95cb55cad4821d309158d844fbc47ec1cf0494f</a></li>
+</ul>
+</div>
+<p><img alt="image-moltbot_url" src="../../../img/app/moltbot_url.png" /></p>
+<div class="admonition note">
+<p>在 <strong>已安装应用页面</strong> 找到 Moltbot 应用，点击 <strong>跳转</strong> 按钮，选择带有 Token 的自定义访问地址，即可正常访问 Moltbot 应用。</p>
 </div>
 <p><img alt="image-moltbot_visit" src="../../../img/app/moltbot_visit.png" /></p>
 <h3 id="5">5. 配置聊天工具对接（可选）<a class="headerlink" href="#5" title="Permanent link">⚓︎</a></h3>
