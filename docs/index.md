@@ -7,7 +7,7 @@
 	👉 活动结果：https://gitee.com/activity/2025opensource/top
 
 !!! note ""
-    1Panel 是一个现代化、开源的 Linux 服务器运维管理面板，提供了一个直观的 Web 界面，帮助用户轻松管理 Linux 服务器中的应用、网站、文件、数据库以及大语言模型（LLMs）等。
+    1Panel 是一个现代化、开源的 Linux 服务器运维管理面板，提供直观易用的 Web 管理界面，让用户轻松掌控 Linux 服务器——无论是智能体、大模型、网站、数据库、容器、文件，还是计划任务，一切尽在指尖。
 
 ![UI展示](https://resource.fit2cloud.com/1panel/img/overview.png)
 { .original }
