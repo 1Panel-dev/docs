@@ -163,6 +163,7 @@ nav:
     - 操作系统相关: faq/operating_system.md
     - 系统功能相关: faq/system_function.md
     - 服务器架构相关: faq/server_architecture.md
+    - OpenClaw 相关: faq/openclaw.md
   - API 接口: dev_manual/api_manual.md
   - 版本迭代: changelog.md
   - 联系我们: contact.md
