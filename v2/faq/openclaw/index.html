@@ -12,34 +12,34 @@
         <meta name="author" content="1Panel">
       
       
-        <link rel="canonical" href="https://1panel.cn/v2/user_manual/databases/redis/">
+        <link rel="canonical" href="https://1panel.cn/v2/faq/openclaw/">
       
       
-        <link rel="prev" href="../postgresql/">
+        <link rel="prev" href="../server_architecture/">
       
       
-        <link rel="next" href="../../containers/overview/">
+        <link rel="next" href="../../dev_manual/api_manual/">
       
       
         
       
       
-      <link rel="icon" href="../../../img/facio.ico">
+      <link rel="icon" href="../../img/facio.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>Redis - 1Panel 文档</title>
+        <title>OpenClaw 相关 - 1Panel 文档</title>
       
     
     
-    <link rel="stylesheet" href="../../../css/lightgallery.min.css">
-    <link href="../../../css/f2c-header.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/lightgallery.min.css">
+    <link href="../../css/f2c-header.css" rel="stylesheet" type="text/css" />
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -50,23 +50,23 @@
     
       
     
-    <script src="../../../js/lightgallery.min.js"></script>
-    <script src="../../../js/jquery-3.5.1.min.js"></script>
-    <script src="../../../js/mega.js"></script>
+    <script src="../../js/lightgallery.min.js"></script>
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/mega.js"></script>
 
     
       
     
     
-      <link rel="stylesheet" href="../../../css/extra.css">
+      <link rel="stylesheet" href="../../css/extra.css">
     
-      <link rel="stylesheet" href="../../../css/termynal.css">
+      <link rel="stylesheet" href="../../css/termynal.css">
     
-      <link rel="stylesheet" href="../../../css/custom.css">
+      <link rel="stylesheet" href="../../css/custom.css">
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1" class="md-skip">
+        <a href="#1-openclaw" class="md-skip">
           跳转至
         </a>
       
@@ -140,7 +140,7 @@
         <div class="mega-nav-banner">
             <div class="container">
                 <div class="mega-nav-banner-item">
-                    <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../../../img/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD Logo" /></a>
+                    <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../../img/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD Logo" /></a>
                 </div>
                 <div class="mega-nav-banner-item">
                     <p class="mega-nav-tagline">
@@ -185,9 +185,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../.." title="1Panel 文档" class="md-header__button md-logo" aria-label="1Panel 文档" data-md-component="logo">
+    <a href="../.." title="1Panel 文档" class="md-header__button md-logo" aria-label="1Panel 文档" data-md-component="logo">
       
-  <img src="../../../img/logo-white.png" alt="logo">
+  <img src="../../img/logo-white.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -204,7 +204,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Redis
+              OpenClaw 相关
             
           </span>
         </div>
@@ -328,9 +328,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="1Panel 文档" class="md-nav__button md-logo" aria-label="1Panel 文档" data-md-component="logo">
+    <a href="../.." title="1Panel 文档" class="md-nav__button md-logo" aria-label="1Panel 文档" data-md-component="logo">
       
-  <img src="../../../img/logo-white.png" alt="logo">
+  <img src="../../img/logo-white.png" alt="logo">
 
     </a>
     1Panel 文档
@@ -357,7 +357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -447,7 +447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/online_installation/" class="md-nav__link">
+      <a href="../../installation/online_installation/" class="md-nav__link">
         
   
   
@@ -475,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/online_upgrade/" class="md-nav__link">
+      <a href="../../installation/online_upgrade/" class="md-nav__link">
         
   
   
@@ -503,7 +503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/package_installation/" class="md-nav__link">
+      <a href="../../installation/package_installation/" class="md-nav__link">
         
   
   
@@ -531,7 +531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/ali_cloud/" class="md-nav__link">
+      <a href="../../installation/ali_cloud/" class="md-nav__link">
         
   
   
@@ -612,7 +612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/v1_migrate/" class="md-nav__link">
+      <a href="../../installation/v1_migrate/" class="md-nav__link">
         
   
   
@@ -640,7 +640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/v1_migrate_steps/" class="md-nav__link">
+      <a href="../../installation/v1_migrate_steps/" class="md-nav__link">
         
   
   
@@ -676,7 +676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/master_migrate/" class="md-nav__link">
+      <a href="../../installation/master_migrate/" class="md-nav__link">
         
   
   
@@ -704,7 +704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/cli/" class="md-nav__link">
+      <a href="../../installation/cli/" class="md-nav__link">
         
   
   
@@ -736,10 +736,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -775,11 +773,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -800,7 +798,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -875,7 +873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/appstore/" class="md-nav__link">
+      <a href="../../user_manual/appstore/appstore/" class="md-nav__link">
         
   
   
@@ -903,7 +901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/install/" class="md-nav__link">
+      <a href="../../user_manual/appstore/install/" class="md-nav__link">
         
   
   
@@ -931,7 +929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/installed/" class="md-nav__link">
+      <a href="../../user_manual/appstore/installed/" class="md-nav__link">
         
   
   
@@ -959,7 +957,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/setting/" class="md-nav__link">
+      <a href="../../user_manual/appstore/setting/" class="md-nav__link">
         
   
   
@@ -1058,7 +1056,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/websites/" class="md-nav__link">
+      <a href="../../user_manual/websites/websites/" class="md-nav__link">
         
   
   
@@ -1086,7 +1084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/website_create/" class="md-nav__link">
+      <a href="../../user_manual/websites/website_create/" class="md-nav__link">
         
   
   
@@ -1114,7 +1112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/website_config_basic/" class="md-nav__link">
+      <a href="../../user_manual/websites/website_config_basic/" class="md-nav__link">
         
   
   
@@ -1142,7 +1140,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/website_config_other/" class="md-nav__link">
+      <a href="../../user_manual/websites/website_config_other/" class="md-nav__link">
         
   
   
@@ -1170,7 +1168,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/website_group/" class="md-nav__link">
+      <a href="../../user_manual/websites/website_group/" class="md-nav__link">
         
   
   
@@ -1198,7 +1196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/website_backup/" class="md-nav__link">
+      <a href="../../user_manual/websites/website_backup/" class="md-nav__link">
         
   
   
@@ -1226,7 +1224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/openresty/" class="md-nav__link">
+      <a href="../../user_manual/websites/openresty/" class="md-nav__link">
         
   
   
@@ -1325,7 +1323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/certificate/" class="md-nav__link">
+      <a href="../../user_manual/websites/certificate/" class="md-nav__link">
         
   
   
@@ -1353,7 +1351,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/certificate_create/" class="md-nav__link">
+      <a href="../../user_manual/websites/certificate_create/" class="md-nav__link">
         
   
   
@@ -1381,7 +1379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/certificate_upload/" class="md-nav__link">
+      <a href="../../user_manual/websites/certificate_upload/" class="md-nav__link">
         
   
   
@@ -1409,7 +1407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/certificate_self_sign/" class="md-nav__link">
+      <a href="../../user_manual/websites/certificate_self_sign/" class="md-nav__link">
         
   
   
@@ -1437,7 +1435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/certificate_renew/" class="md-nav__link">
+      <a href="../../user_manual/websites/certificate_renew/" class="md-nav__link">
         
   
   
@@ -1465,7 +1463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/certificate_acme/" class="md-nav__link">
+      <a href="../../user_manual/websites/certificate_acme/" class="md-nav__link">
         
   
   
@@ -1493,7 +1491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/certificate_dns/" class="md-nav__link">
+      <a href="../../user_manual/websites/certificate_dns/" class="md-nav__link">
         
   
   
@@ -1590,7 +1588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/php/" class="md-nav__link">
+      <a href="../../user_manual/websites/php/" class="md-nav__link">
         
   
   
@@ -1618,7 +1616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/node/" class="md-nav__link">
+      <a href="../../user_manual/websites/node/" class="md-nav__link">
         
   
   
@@ -1646,7 +1644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/java/" class="md-nav__link">
+      <a href="../../user_manual/websites/java/" class="md-nav__link">
         
   
   
@@ -1674,7 +1672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/golang/" class="md-nav__link">
+      <a href="../../user_manual/websites/golang/" class="md-nav__link">
         
   
   
@@ -1702,7 +1700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/python/" class="md-nav__link">
+      <a href="../../user_manual/websites/python/" class="md-nav__link">
         
   
   
@@ -1730,7 +1728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/dotnet/" class="md-nav__link">
+      <a href="../../user_manual/websites/dotnet/" class="md-nav__link">
         
   
   
@@ -1821,7 +1819,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ai/model/" class="md-nav__link">
+      <a href="../../user_manual/ai/model/" class="md-nav__link">
         
   
   
@@ -1849,7 +1847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ai/mcp/" class="md-nav__link">
+      <a href="../../user_manual/ai/mcp/" class="md-nav__link">
         
   
   
@@ -1877,7 +1875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ai/gpu/" class="md-nav__link">
+      <a href="../../user_manual/ai/gpu/" class="md-nav__link">
         
   
   
@@ -1910,10 +1908,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -1927,11 +1923,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
         
           
           <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
@@ -1952,7 +1948,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1970,7 +1966,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mysql/" class="md-nav__link">
+      <a href="../../user_manual/databases/mysql/" class="md-nav__link">
         
   
   
@@ -1998,7 +1994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../postgresql/" class="md-nav__link">
+      <a href="../../user_manual/databases/postgresql/" class="md-nav__link">
         
   
   
@@ -2023,35 +2019,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Redis
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../user_manual/databases/redis/" class="md-nav__link">
         
   
   
@@ -2067,101 +2038,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1 修改密码
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-redis-commander" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2 Redis Commander
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3 数据库配置
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4 当前状态
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5 性能调整
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6 端口
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7 持久化
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2249,7 +2125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../containers/overview/" class="md-nav__link">
+      <a href="../../user_manual/containers/overview/" class="md-nav__link">
         
   
   
@@ -2277,7 +2153,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../containers/container/" class="md-nav__link">
+      <a href="../../user_manual/containers/container/" class="md-nav__link">
         
   
   
@@ -2305,7 +2181,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../containers/compose/" class="md-nav__link">
+      <a href="../../user_manual/containers/compose/" class="md-nav__link">
         
   
   
@@ -2333,7 +2209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../containers/image/" class="md-nav__link">
+      <a href="../../user_manual/containers/image/" class="md-nav__link">
         
   
   
@@ -2361,7 +2237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../containers/network/" class="md-nav__link">
+      <a href="../../user_manual/containers/network/" class="md-nav__link">
         
   
   
@@ -2389,7 +2265,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../containers/volume/" class="md-nav__link">
+      <a href="../../user_manual/containers/volume/" class="md-nav__link">
         
   
   
@@ -2417,7 +2293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../containers/repo/" class="md-nav__link">
+      <a href="../../user_manual/containers/repo/" class="md-nav__link">
         
   
   
@@ -2445,7 +2321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../containers/compose_template/" class="md-nav__link">
+      <a href="../../user_manual/containers/compose_template/" class="md-nav__link">
         
   
   
@@ -2473,7 +2349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../containers/setting/" class="md-nav__link">
+      <a href="../../user_manual/containers/setting/" class="md-nav__link">
         
   
   
@@ -2568,7 +2444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hosts/file/" class="md-nav__link">
+      <a href="../../user_manual/hosts/file/" class="md-nav__link">
         
   
   
@@ -2596,7 +2472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hosts/monitor/" class="md-nav__link">
+      <a href="../../user_manual/hosts/monitor/" class="md-nav__link">
         
   
   
@@ -2624,7 +2500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hosts/firewall/" class="md-nav__link">
+      <a href="../../user_manual/hosts/firewall/" class="md-nav__link">
         
   
   
@@ -2652,7 +2528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hosts/process/" class="md-nav__link">
+      <a href="../../user_manual/hosts/process/" class="md-nav__link">
         
   
   
@@ -2680,7 +2556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hosts/ssh/" class="md-nav__link">
+      <a href="../../user_manual/hosts/ssh/" class="md-nav__link">
         
   
   
@@ -2716,7 +2592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cronjobs/" class="md-nav__link">
+      <a href="../../user_manual/cronjobs/" class="md-nav__link">
         
   
   
@@ -2744,7 +2620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../terminal/" class="md-nav__link">
+      <a href="../../user_manual/terminal/" class="md-nav__link">
         
   
   
@@ -2833,7 +2709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../toolbox/quick_settings/" class="md-nav__link">
+      <a href="../../user_manual/toolbox/quick_settings/" class="md-nav__link">
         
   
   
@@ -2861,7 +2737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../toolbox/clean/" class="md-nav__link">
+      <a href="../../user_manual/toolbox/clean/" class="md-nav__link">
         
   
   
@@ -2889,7 +2765,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../toolbox/supervisor/" class="md-nav__link">
+      <a href="../../user_manual/toolbox/supervisor/" class="md-nav__link">
         
   
   
@@ -2917,7 +2793,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../toolbox/clam/" class="md-nav__link">
+      <a href="../../user_manual/toolbox/clam/" class="md-nav__link">
         
   
   
@@ -2945,7 +2821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../toolbox/ftp/" class="md-nav__link">
+      <a href="../../user_manual/toolbox/ftp/" class="md-nav__link">
         
   
   
@@ -2973,7 +2849,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../toolbox/fail2ban/" class="md-nav__link">
+      <a href="../../user_manual/toolbox/fail2ban/" class="md-nav__link">
         
   
   
@@ -3125,7 +3001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/waf/waf/" class="md-nav__link">
+      <a href="../../user_manual/xpack/waf/waf/" class="md-nav__link">
         
   
   
@@ -3153,7 +3029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/waf/dashboard/" class="md-nav__link">
+      <a href="../../user_manual/xpack/waf/dashboard/" class="md-nav__link">
         
   
   
@@ -3181,7 +3057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/waf/global/" class="md-nav__link">
+      <a href="../../user_manual/xpack/waf/global/" class="md-nav__link">
         
   
   
@@ -3209,7 +3085,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/waf/site/" class="md-nav__link">
+      <a href="../../user_manual/xpack/waf/site/" class="md-nav__link">
         
   
   
@@ -3237,7 +3113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/waf/log/" class="md-nav__link">
+      <a href="../../user_manual/xpack/waf/log/" class="md-nav__link">
         
   
   
@@ -3265,7 +3141,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/waf/block/" class="md-nav__link">
+      <a href="../../user_manual/xpack/waf/block/" class="md-nav__link">
         
   
   
@@ -3301,7 +3177,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/node/" class="md-nav__link">
+      <a href="../../user_manual/xpack/node/" class="md-nav__link">
         
   
   
@@ -3329,7 +3205,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/tamper/" class="md-nav__link">
+      <a href="../../user_manual/xpack/tamper/" class="md-nav__link">
         
   
   
@@ -3365,7 +3241,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../logs/" class="md-nav__link">
+      <a href="../../user_manual/logs/" class="md-nav__link">
         
   
   
@@ -3393,7 +3269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../settings/" class="md-nav__link">
+      <a href="../../user_manual/settings/" class="md-nav__link">
         
   
   
@@ -3543,7 +3419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/openclaw/" class="md-nav__link">
+      <a href="../../user_manual/appstore/openclaw/" class="md-nav__link">
         
   
   
@@ -3571,7 +3447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/openresty/" class="md-nav__link">
+      <a href="../../user_manual/appstore/openresty/" class="md-nav__link">
         
   
   
@@ -3599,7 +3475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/mysql/" class="md-nav__link">
+      <a href="../../user_manual/appstore/mysql/" class="md-nav__link">
         
   
   
@@ -3627,7 +3503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/redis/" class="md-nav__link">
+      <a href="../../user_manual/appstore/redis/" class="md-nav__link">
         
   
   
@@ -3655,7 +3531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/zabbix/" class="md-nav__link">
+      <a href="../../user_manual/appstore/zabbix/" class="md-nav__link">
         
   
   
@@ -3683,7 +3559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/halo/" class="md-nav__link">
+      <a href="../../user_manual/appstore/halo/" class="md-nav__link">
         
   
   
@@ -3711,7 +3587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/alist/" class="md-nav__link">
+      <a href="../../user_manual/appstore/alist/" class="md-nav__link">
         
   
   
@@ -3739,7 +3615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/wordpress/" class="md-nav__link">
+      <a href="../../user_manual/appstore/wordpress/" class="md-nav__link">
         
   
   
@@ -3767,7 +3643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/phpmyadmin/" class="md-nav__link">
+      <a href="../../user_manual/appstore/phpmyadmin/" class="md-nav__link">
         
   
   
@@ -3795,7 +3671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/maxkb/" class="md-nav__link">
+      <a href="../../user_manual/appstore/maxkb/" class="md-nav__link">
         
   
   
@@ -3823,7 +3699,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/ollama/" class="md-nav__link">
+      <a href="../../user_manual/appstore/ollama/" class="md-nav__link">
         
   
   
@@ -3851,7 +3727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/moltbot/" class="md-nav__link">
+      <a href="../../user_manual/appstore/moltbot/" class="md-nav__link">
         
   
   
@@ -3879,7 +3755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/frp/" class="md-nav__link">
+      <a href="../../user_manual/appstore/frp/" class="md-nav__link">
         
   
   
@@ -3907,7 +3783,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/qinglong/" class="md-nav__link">
+      <a href="../../user_manual/appstore/qinglong/" class="md-nav__link">
         
   
   
@@ -3935,7 +3811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/nginx-proxy-manager/" class="md-nav__link">
+      <a href="../../user_manual/appstore/nginx-proxy-manager/" class="md-nav__link">
         
   
   
@@ -3963,7 +3839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/ddns-go/" class="md-nav__link">
+      <a href="../../user_manual/appstore/ddns-go/" class="md-nav__link">
         
   
   
@@ -3991,7 +3867,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/gitea/" class="md-nav__link">
+      <a href="../../user_manual/appstore/gitea/" class="md-nav__link">
         
   
   
@@ -4019,7 +3895,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/dataease/" class="md-nav__link">
+      <a href="../../user_manual/appstore/dataease/" class="md-nav__link">
         
   
   
@@ -4047,7 +3923,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/openwebui/" class="md-nav__link">
+      <a href="../../user_manual/appstore/openwebui/" class="md-nav__link">
         
   
   
@@ -4075,7 +3951,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/mariadb/" class="md-nav__link">
+      <a href="../../user_manual/appstore/mariadb/" class="md-nav__link">
         
   
   
@@ -4103,7 +3979,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/rustdesk/" class="md-nav__link">
+      <a href="../../user_manual/appstore/rustdesk/" class="md-nav__link">
         
   
   
@@ -4131,7 +4007,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/minio/" class="md-nav__link">
+      <a href="../../user_manual/appstore/minio/" class="md-nav__link">
         
   
   
@@ -4159,7 +4035,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/bitwarden/" class="md-nav__link">
+      <a href="../../user_manual/appstore/bitwarden/" class="md-nav__link">
         
   
   
@@ -4187,7 +4063,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/home-assistant/" class="md-nav__link">
+      <a href="../../user_manual/appstore/home-assistant/" class="md-nav__link">
         
   
   
@@ -4215,7 +4091,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/mongodb/" class="md-nav__link">
+      <a href="../../user_manual/appstore/mongodb/" class="md-nav__link">
         
   
   
@@ -4243,7 +4119,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/nextcloud/" class="md-nav__link">
+      <a href="../../user_manual/appstore/nextcloud/" class="md-nav__link">
         
   
   
@@ -4271,7 +4147,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/lobechat/" class="md-nav__link">
+      <a href="../../user_manual/appstore/lobechat/" class="md-nav__link">
         
   
   
@@ -4299,7 +4175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/jumpserver/" class="md-nav__link">
+      <a href="../../user_manual/appstore/jumpserver/" class="md-nav__link">
         
   
   
@@ -4327,7 +4203,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/stirling-pdf/" class="md-nav__link">
+      <a href="../../user_manual/appstore/stirling-pdf/" class="md-nav__link">
         
   
   
@@ -4355,7 +4231,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/chatgpt-next-web/" class="md-nav__link">
+      <a href="../../user_manual/appstore/chatgpt-next-web/" class="md-nav__link">
         
   
   
@@ -4383,7 +4259,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/cloudreve/" class="md-nav__link">
+      <a href="../../user_manual/appstore/cloudreve/" class="md-nav__link">
         
   
   
@@ -4411,7 +4287,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/uptime-kuma/" class="md-nav__link">
+      <a href="../../user_manual/appstore/uptime-kuma/" class="md-nav__link">
         
   
   
@@ -4439,7 +4315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../appstore/vscode/" class="md-nav__link">
+      <a href="../../user_manual/appstore/vscode/" class="md-nav__link">
         
   
   
@@ -4471,8 +4347,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -4490,11 +4368,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -4515,7 +4393,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -4533,7 +4411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../faq/faq/" class="md-nav__link">
+      <a href="../faq/" class="md-nav__link">
         
   
   
@@ -4561,7 +4439,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../faq/operating_system/" class="md-nav__link">
+      <a href="../operating_system/" class="md-nav__link">
         
   
   
@@ -4589,7 +4467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../faq/system_function/" class="md-nav__link">
+      <a href="../system_function/" class="md-nav__link">
         
   
   
@@ -4617,7 +4495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../faq/server_architecture/" class="md-nav__link">
+      <a href="../server_architecture/" class="md-nav__link">
         
   
   
@@ -4642,10 +4520,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../faq/openclaw/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenClaw 相关
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -4661,6 +4564,57 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-openclaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 OpenClaw 是什么？
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-1panel-openclaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 1Panel 如何安装 OpenClaw？
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ollama" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如何通过 Ollama 运行本地模型？
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -4680,7 +4634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev_manual/api_manual/" class="md-nav__link">
+      <a href="../../dev_manual/api_manual/" class="md-nav__link">
         
   
   
@@ -4707,7 +4661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../changelog/" class="md-nav__link">
+      <a href="../../changelog/" class="md-nav__link">
         
   
   
@@ -4734,7 +4688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contact/" class="md-nav__link">
+      <a href="../../contact/" class="md-nav__link">
         
   
   
@@ -4842,7 +4796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/package_installation/" class="md-nav__link">
+      <a href="../../installation/package_installation/" class="md-nav__link">
         
   
   
@@ -4895,10 +4849,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-openclaw" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1 修改密码
+        1 OpenClaw 是什么？
       
     </span>
   </a>
@@ -4906,10 +4860,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-redis-commander" class="md-nav__link">
+  <a href="#2-1panel-openclaw" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2 Redis Commander
+        2 1Panel 如何安装 OpenClaw？
       
     </span>
   </a>
@@ -4917,54 +4871,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#ollama" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3 数据库配置
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4 当前状态
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5 性能调整
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6 端口
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7 持久化
+        如何通过 Ollama 运行本地模型？
       
     </span>
   </a>
@@ -4988,77 +4898,21 @@
 
 
 
-  <h1>Redis</h1>
+  <h1>OpenClaw 相关</h1>
 
-<h2 id="1">1 修改密码<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
+<h2 id="1-openclaw">1 OpenClaw 是什么？<a class="headerlink" href="#1-openclaw" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>默认为随机密码，root 为最高权限账号密码，请谨慎操作。</p>
+<p>OpenClaw 是一个运行在你自己设备上的个人 AI 助理。它可以在你已经使用的各种沟通渠道中与你对话，包括：飞书、钉钉、企业微信、QQ、WhatsApp、Telegram、Slack、Discord、Google Chat、Signal、iMessage、Microsoft Teams、WebChat 等。</p>
+<p>如果你想要一个可以在本地 7x24 运行的个人 AI 助理，那就是它了。</p>
 </div>
-<h2 id="2-redis-commander">2 Redis Commander<a class="headerlink" href="#2-redis-commander" title="Permanent link">⚓︎</a></h2>
+<h2 id="2-1panel-openclaw">2 1Panel 如何安装 OpenClaw？<a class="headerlink" href="#2-1panel-openclaw" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>WEB 图形化界面管理 redis 数据库的管理工具，工具使用方法详解见<a href="http://joeferner.github.io/redis-commander/">工具教程</a></p>
+<p>OpenClaw 已上架 1Panel 应用商店，进入应用商店页面即可通过 <a href="../../user_manual/appstore/openclaw/">一键安装</a> 快速部署。</p>
 </div>
-<h2 id="3">3 数据库配置<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
+<h2 id="ollama">如何通过 Ollama 运行本地模型？<a class="headerlink" href="#ollama" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>点击状态栏设置按钮，即可进入 Redis 具体设置界面，具体包括配置修改、当前状态、性能调整、端口、持久化。
-其中配置界面可对 Redis 配置进行手动调整。</p>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/databases/redis_conf.png" /></p>
-<div class="admonition note">
-<ul>
-<li>系统 Redis 使用 Docker 安装，配置文件默认挂载在 /opt/1panel/apps/redis/[数据库名称]/conf/redis.conf</li>
-</ul>
-<p><strong>注意事项：</strong> 错误的数据库配置将导致 Redis 服务不可用，请谨慎修改。如数据库配置不正确导致服务无法正常启动，可尝试恢复默认配置后保存。</p>
-</div>
-<h2 id="4">4 当前状态<a class="headerlink" href="#4" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p>当 Redis 查询缓慢时，可在设置界面，点击当前状态按钮，查看当前数据库包括内存分配、查询命中率等各个常用指标的状态，通过这些状态对 Redis 进行性能优化。</p>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/databases/redis_status.png" /></p>
-<h2 id="5">5 性能调整<a class="headerlink" href="#5" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p>系统支持表单方式直接调整 Redis 相关参数，具体包括：超时时间、最大连接数、最大内存数。</p>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/databases/redis_variables.png" /></p>
-<h2 id="6">6 端口<a class="headerlink" href="#6" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p>除了在用户安装 Redis 应用时可自由选择端口外，设置界面也可以直接进行端口的修改操作。</p>
-</div>
-<h2 id="7">7 持久化<a class="headerlink" href="#7" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p>Redis 持久化分为两种：AOF 及 RDB，其中：</p>
-<ul>
-<li>RBD<ul>
-<li>实现： 父进程在保存 RDB 文件时，先 fork 出来一个子进程，然后子进程处理接下来的保存工作，父进程无需执行任何磁盘 I/O 操作</li>
-<li>优点： 将 Redis 在某个时间点上的数据集保存在一个文件中，适用于灾难恢复，可以最大化 Redis 性能，速度更快，并且在恢复大数据集时速度更快</li>
-<li>缺点： 有丢失数据的风险，需要设置备份频率，一旦发生故障停机时，可能会丢失数据，而且当数据集比较大时，fork 子进程将会非常耗时造成服务停止</li>
-</ul>
-</li>
-<li>AOF<ul>
-<li>实现： 定时或者在每次写入命令时追加操作到日志文件中，日志文件只进行追加操作，当 AOF 文件变的过大时，自动对 AOF 进行重写，重写仅保留恢复当前数据集所需的最小命令集合</li>
-<li>优点： 有序保存了对数据库执行的所有写入操作，数据不容易丢失，即使发生故障停机，也只会丢失上一次写入日志文件操作之后的数据，更可靠且更容易对文件进行分析</li>
-<li>缺点： 一般相同的数据集来说，AOF 体积要更大，而且速度可能会慢于 RDB</li>
-</ul>
-</li>
-</ul>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/databases/redis_backup_aof.png" /></p>
-<div class="admonition note">
-<ul>
-<li>appendonly: 是否开启 AOF 备份</li>
-<li>appendfsync: 同步频率<ul>
-<li>always: 每次写入时</li>
-<li>everysec: 每秒</li>
-<li>no: 不同步</li>
-</ul>
-</li>
-</ul>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/databases/redis_backup_rdb.png" /></p>
-<div class="admonition note">
-<ul>
-<li>设置持久化策略，当 Redis 满足其中任意一个条件时，将触发 RDB 持久化。 </li>
-</ul>
+<p>OpenClaw 支持对接 Ollama 本地大模型，无需依赖云端 Token，即可在本地完成对话与推理，兼顾隐私与成本。</p>
+<p>了解更多 OpenClaw 与 Ollama 的集成方式，请参考：<a href="https://openclaw.club/quick-start">OpenClaw 集成 Ollama 本地模型</a> 。</p>
 </div>
 
 
@@ -5233,15 +5087,15 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
     
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../../../js/termynal.js"></script>
+        <script src="../../js/termynal.js"></script>
       
-        <script src="../../../js/custom.js"></script>
+        <script src="../../js/custom.js"></script>
       
     
     <script>
