@@ -129,14 +129,14 @@ nav:
     - OpenResty: user_manual/appstore/openresty.md
     - MySQL: user_manual/appstore/mysql.md
     - Redis: user_manual/appstore/redis.md
-    - Zabbix: user_manual/appstore/zabbix.md
-    - Halo: user_manual/appstore/halo.md
-    - AList: user_manual/appstore/alist.md
-    - WordPress: user_manual/appstore/wordpress.md
-    - phpMyAdmin: user_manual/appstore/phpmyadmin.md
-    - MaxKB: user_manual/appstore/maxkb.md
     - Ollama: user_manual/appstore/ollama.md
-    - Moltbot: user_manual/appstore/moltbot.md
+    - Halo: user_manual/appstore/halo.md
+    - OpenList: user_manual/appstore/openlist.md
+    - MaxKB: user_manual/appstore/maxkb.md
+    - phpMyAdmin: user_manual/appstore/phpmyadmin.md
+    - WordPress: user_manual/appstore/wordpress.md
+    - Zabbix: user_manual/appstore/zabbix.md
+    - AList: user_manual/appstore/alist.md
     - frp: user_manual/appstore/frp.md
     - 青龙: user_manual/appstore/qinglong.md
     - Nginx Proxy Manager: user_manual/appstore/nginx-proxy-manager.md
@@ -153,6 +153,7 @@ nav:
     - Nextcloud: user_manual/appstore/nextcloud.md
     - LobeChat: user_manual/appstore/lobechat.md
     - Jumpserver: user_manual/appstore/jumpserver.md
+    - Moltbot: user_manual/appstore/moltbot.md
     - Stirling-PDF: user_manual/appstore/stirling-pdf.md
     - ChatGPT-Next-Web: user_manual/appstore/chatgpt-next-web.md
     - Cloudreve: user_manual/appstore/cloudreve.md
