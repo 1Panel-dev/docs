@@ -80,9 +80,178 @@
     Use "1panel update [command] --help" for more information about a command.
     ```
 
-## 3 备份账号
+## 3 面板告警
 
-### 3.1 已支持的备份账号
+!!! note "功能概述"
+    面板告警用于在 1Panel 检测到异常或重要事件时，通过 **邮箱**、**企业微信**、**钉钉**、**飞书**、**短信** 等渠道及时通知管理员。
+
+    - 邮箱告警：**社区版 / 专业版通用**，所有节点均可使用  
+    - 企业微信 / 钉钉 / 飞书 / 短信告警：**仅专业版节点可用**，需要在【面板设置 - 许可证】中导入专业版许可证并将节点激活为专业版后才能配置  
+
+    常见的告警场景包括：主机资源（CPU、内存、磁盘）异常、网站 / 应用运行异常、备份失败、登录异常等。
+
+### 3.1 通用配置
+
+!!! note ""
+    1. 登录 1Panel 面板，以管理员身份进入系统  
+    2. 打开左侧菜单 【面板设置】  
+    3. 在【安全】与【备份账号】之间点击【面板告警】  
+    4. 在告警页面中，可进行以下通用配置：
+        - 开启 / 关闭总开关  
+        - 选择告警渠道（邮箱、企业微信、钉钉、飞书、短信）  
+        - 配置默认收件人 / 通知人  
+        - 配置告警级别（如：仅严重告警、包含警告级别等）  
+        - 配置不同模块的告警项（如：主机、网站、数据库、容器、计划任务等）  
+
+![img.png](../img/settings/alert_setting_1.png)
+{: .original}
+
+### 3.2 邮箱告警
+
+!!! note "1Panel 中邮箱设置"
+
+    1. 进入 【面板设置 - 面板告警】  
+    2. 选择 **邮箱** 渠道并开启  
+    3. 填写 SMTP 相关信息：
+        - SMTP 服务器地址（如：smtp.qq.com、smtp.163.com 等）  
+        - 端口号（常见为 465/587，根据服务商要求选择 TLS/SSL）  
+        - 发件邮箱账号  
+        - 授权码 / 应用专用密码（不同邮箱服务商名称略有区别）  
+    4. 设置默认收件人邮箱地址（可填写多个，以逗号分隔）  
+    5. 保存配置后，点击【发送测试邮件】确认配置是否生效  
+
+![img.png](../img/settings/alert_setting_2.png)
+{: .original}
+
+!!! note "第三方邮箱服务商常见说明"
+
+    - **QQ 邮箱 / 163 邮箱等个人邮箱服务**  
+        - 需在邮箱安全设置中开启「POP3/SMTP 服务」或「客户端授权码」  
+        - 获取授权码后填入 1Panel 中的「密码 / 授权码」字段  
+    - **企业邮箱 / 自建邮件服务器**  
+        - 请从管理员处获取 SMTP 地址、端口、账号和密码  
+        - 如服务端启用 IP 访问控制，请将 **1Panel 所在服务器的 IP 地址加入白名单**，以确保发信请求不会被拒绝  
+
+### 3.3 企业微信告警
+
+!!! note "1Panel 中企业微信设置"
+
+    1. 确认当前节点已激活为 **专业版节点**  
+    2. 进入 【面板设置 - 面板告警】  
+    3. 选择 **企业微信** 渠道并开启  
+    4. 填写自定义机器人 Webhook 地址
+    5. 保存配置后，将在实际告警触发时向企业微信推送消息  
+
+![img.png](../img/settings/alert_setting_3.png)
+{: .original}
+
+!!! note "企业微信端配置（采用 IP 白名单）"
+
+    1. 登录企业微信管理后台  
+    2. 进入 【应用管理】 -> 选择为 1Panel 告警创建或指定的自建应用  
+    3. 在 **安全设置 / 可调用 IP 白名单** 中：
+        - 如**开启 IP 白名单**，则只允许白名单中的 IP 调用接口，建议将运行 1Panel 的服务器公网 IP 地址加入白名单  
+        - 如**未开启 / 未配置 IP 白名单**，则默认允许任意来源 IP 调用接口  
+    4. 若已配置白名单，需确保服务器网络出口 IP 与白名单配置一致，避免因出口 NAT 导致 IP 不匹配  
+
+    配置 IP 白名单后，仅允许来自白名单 IP 的服务器调用相关接口；如果更换服务器或出口 IP，需要同步更新白名单配置。
+
+![img.png](../img/settings/alert_wecom_1.png)
+{: .original}
+
+![img.png](../img/settings/alert_wecom_2.png)
+{: .original}
+
+![img.png](../img/settings/alert_wecom_3.png)
+{: .original}
+
+![img.png](../img/settings/alert_wecom_4.png)
+{: .original}
+
+![img.png](../img/settings/alert_wecom_5.png)
+{: .original}
+
+### 3.4 钉钉告警
+
+!!! note "1Panel 中钉钉设置"
+
+    1. 确认当前节点为专业版节点  
+    2. 在 【面板设置 - 面板告警】 中选择 **钉钉** 渠道并开启  
+    3. 填写自定义机器人 Webhook 地址 
+    4. 保存配置后，在对应告警触发时将向钉钉推送消息  
+
+![img.png](../img/settings/alert_setting_4.png)
+{: .original}
+
+!!! note "钉钉自定义机器人配置参考"
+    钉钉侧需要先创建自定义机器人，并获取 Webhook 地址和安全设置，再回填到 1Panel 中，参考钉钉开放平台文档：
+
+    - [自定义机器人创建与安装](https://open.dingtalk.com/document/dingstart/custom-bot-creation-and-installation)  
+    - [自定义机器人安全设置](https://open.dingtalk.com/document/dingstart/customize-robot-security-settings)  
+    - [获取自定义机器人 Webhook 地址](https://open.dingtalk.com/document/dingstart/obtain-the-webhook-address-of-a-custom-robot)  
+
+    典型步骤如下：
+
+    1. 在钉钉群中添加「自定义机器人」，选择自定义机器人类型并完成安装  
+    2. 在「安全设置」中选择 **IP 地址** 作为安全策略：
+        - 将 1Panel 所在服务器的出口 IP 地址添加到 IP 白名单
+    3. 在机器人配置页面获取 **Webhook 地址**，复制后粘贴到 1Panel 钉钉告警配置中的 Webhook 字段
+
+### 3.5 飞书告警
+
+!!! note "1Panel 中飞书设置"
+    
+    1. 确认当前节点为专业版节点  
+    2. 在 【面板设置 - 面板告警】 中选择 **飞书** 渠道并开启  
+    3. 填写自定义机器人 Webhook 地址
+    4. 保存配置后，当相关告警触发时将向飞书推送消息  
+
+![img.png](../img/settings/alert_setting_5.png)
+{: .original}
+
+!!! note "飞书端配置（采用 IP 白名单）"
+
+    1. 登录飞书开放平台 / 管理后台  
+    2. 找到对应的应用或机器人配置  
+    3. 在「安全设置 / IP 白名单」中：
+        - 添加 1Panel 所在服务器的公网 IP 地址  
+        - 保存并确保配置已发布生效  
+
+    如服务器出口 IP 发生变化（如更换机房、切换出口），需同步更新飞书侧的 IP 白名单，否则飞书可能拒绝来自 1Panel 的请求。
+
+!!! note "飞书自定义机器人配置参考"
+    飞书侧可以通过自定义机器人接收 1Panel 告警消息，典型流程参考飞书官方文档 [添加自定义机器人](https://open.feishu.cn/document/client-docs/bot-v3/add-custom-bot?lang=zh-CN)：
+
+    1. 在目标群组中添加「自定义机器人」，按照向导完成创建  
+    2. 在机器人配置页获取 **Webhook 地址**，复制后粘贴到 1Panel 飞书告警配置中的 Webhook 字段  
+    3. 在飞书开放平台或机器人配置中的「安全设置 / IP 白名单」位置：
+        - 将 1Panel 所在服务器的出口 IP 地址加入白名单  
+        - 避免使用完全开放的访问策略，降低被恶意调用的风险  
+    4. 保存配置后，当 1Panel 中相关告警触发时，将通过自定义机器人向对应飞书群推送消息  
+
+### 3.6 短信告警
+
+!!! note "1Panel 中短信设置"
+    1. 确认当前节点已激活为专业版节点  
+    2. 在 【面板设置 - 面板告警】 中选择 **短信** 渠道并开启  
+    3. 填写接收手机号码  
+    4. 保存配置后，当相关告警触发时将向对应的手机发送告警短信  
+
+![img.png](../img/settings/alert_setting_6.png)
+{: .original}
+
+### 3.7 告警调试与常见问题
+
+!!! note ""
+    - 如果某个渠道无法收到告警，请确认配置是否正确 
+    - 检查 1Panel 日志（【面板日志 - 系统日志】）中是否有相关报错信息  
+    - 确认对应渠道是否需要 **专业版节点** 才能使用  
+    - 确认企业微信 / 钉钉 / 飞书 后台的 **IP 白名单** 中，已经正确添加了 1Panel 服务器当前实际出口 IP  
+    - 如服务器位于内网且通过代理访问外网，请确保代理出口 IP 同样在第三方平台的 IP 白名单中
+
+## 4 备份账号
+
+### 4.1 已支持的备份账号
 
 !!! note ""
     **支持添加本地服务器磁盘和第三方账号：**
@@ -99,7 +268,7 @@
     - 七牛云 Kodo
     - 又拍云 对象存储
 
-### 3.2 OneDrive 自定义配置
+### 4.2 OneDrive 自定义配置
 
 !!! note ""
     **在调用 Onedrive API 时需要使用到 4 个参数：**
@@ -139,7 +308,7 @@
 ![img.png](../img/settings/onedrive_custom4.png)
 {: .original}
 
-### 3.3 OneDrive 账号绑定
+### 4.3 OneDrive 账号绑定
 
 !!! note ""
     （1）点击 OneDrive 授权码获取按钮。
@@ -165,7 +334,7 @@
 ![img.png](../img/settings/onedrive_step4.png)
 {: .original}
 
-### 3.4 阿里云盘账号绑定
+### 4.4 阿里云盘账号绑定
 
 !!! note ""
     （1）登陆网页版阿里云盘 (https://www.alipan.com/)。
@@ -181,7 +350,7 @@
 ![img.png](../img/settings/ali_pan_2.png)
 {: .original}
 
-### 3.5 谷歌云盘账号绑定
+### 4.5 谷歌云盘账号绑定
 
 !!! note ""
     **在调用 Google API 时需要使用到 3 个参数：**
@@ -241,7 +410,7 @@
 {: .original}
 
 
-### 3.6 WebDAV 连接 AList
+### 4.6 WebDAV 连接 AList
 
 !!! note ""
 
@@ -258,7 +427,7 @@
 ![img.png](../img/settings/webdav-02.png)
 {: .original}
 
-### 3.7 部分对象存储服务商与亚马逊 S3 云存储的兼容性
+### 4.7 部分对象存储服务商与亚马逊 S3 云存储的兼容性
 
 |服务商|文档|兼容访问风格|兼容性|
 | ----- | ---- | ----- | ----- |
@@ -278,7 +447,7 @@
 |Ucloud|只支持 8MB 大小的分片，本插件暂不支持<br>[https://docs.ucloud.cn/ufile/s3/s3\_introduction](https://docs.ucloud.cn/ufile/s3/s3_introduction)|\-|❌|
 
 
-## 4 快照
+## 5 快照
 
 !!! note ""
     快照用于全量备份 1Panel 所产生的数据，具体包括：
@@ -302,7 +471,7 @@
     - 如果上述操作都不能使服务正常运行，则需要手动拿到恢复前的备份文件，手动替换当前系统数据，然后重启系统 
     - 如机器迁移等，需要将快照放到备份账号对应的指定目录下，如服务器磁盘：/opt/1panel/backup/system_snapshot/  
 
-## 5 许可证
+## 6 许可证
 
 !!! note ""
     用于查看当前许可证状态，导入专业版许可证并成功激活后，可以使用专业版相关功能 
@@ -314,7 +483,7 @@
 ![img.png](../img/settings/licenses.png)
 {: .browser-mockup}
 
-## 6 关于
+## 7 关于
 
 !!! note ""
 
