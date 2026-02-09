@@ -28,4 +28,4 @@ jobs:
     - name: Build package
       run: |
         git fetch origin zh-CN/deploy:zh-CN/deploy
-        mike deploy --push --branch zh-CN/deploy --rebase ${{ github.ref_name }}
+        mike deploy --push --branch zh-CN/deploy ${{ github.ref_name }}
