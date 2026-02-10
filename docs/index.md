@@ -7,7 +7,7 @@ hide:
 
 ## What is 1Panel?
 
-🔥 Top-Rated Web-Based Linux Server Management Tool. 1Panel features an intuitive web interface that seamlessly integrates server management and monitoring, container management, database administration, website management, system backup and restoration, and more, letting you streamline your server management experience.
+🔥 1Panel offers an intuitive web interface for Linux server, making it easy to manage OpenClaw agents, LLMs, websites, databases, containers, files, and scheduled tasks.
 
 ![Overview](https://resource.1panel.pro/img/1panel.png)
 { .original }
