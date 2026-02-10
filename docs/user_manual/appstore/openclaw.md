@@ -5,6 +5,10 @@
 
      如果你想要一个感觉像本地助手、速度快、始终在线的单人个人助理，那就是它了。
 
+     **扫码加入交流群**
+
+     <img alt="扫码加入交流群" src="https://resource.fit2cloud.com/1panel/openclaw/img/wechat.png" width="150" height="150">
+
 ## 1. 打开应用商店
 
 !!! note ""
