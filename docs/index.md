@@ -1,13 +1,9 @@
 !!! note ""
-	🚀 **OpenClaw 正式接入 1Panel 应用商店｜全网最快、最简单安装部署指南**  
-	👉 https://1panel.cn/docs/v2/user_manual/appstore/openclaw
-
-!!! note ""
 	🎉 **1Panel 荣获 Gitee 年度开源项目评选「基础软件赛道」第一名**  
 	👉 活动结果：https://gitee.com/activity/2025opensource/top
 
 !!! note ""
-    1Panel 是一个现代化、开源的 Linux 服务器运维管理面板，提供直观易用的 Web 管理界面，让用户轻松掌控 Linux 服务器——无论是智能体、大模型、网站、数据库、容器、文件，还是计划任务，一切尽在指尖。
+    1Panel 是一个现代化、开源的 Linux 服务器运维管理面板，提供直观易用的 Web 管理界面，让用户轻松掌控 Linux 服务器——无论是智能体、本地大模型、网站、数据库、容器、文件，还是计划任务，一切尽在指尖。
 
 ![UI展示](https://resource.fit2cloud.com/1panel/img/overview.png)
 { .original }
@@ -16,7 +12,7 @@
 ## 1 产品优势
 
 !!! note ""
-
+	- **AI 集成**：快速缝部署 OpenClaw 智能体，通过 Ollama 托管本地大语言模型（LLMs），实时监控 GPU 使用情况
 	- **高效管理**：用户可以通过 Web 图形界面轻松管理 Linux 服务器，实现主机监控、文件管理、数据库管理、容器管理等功能  
 	- **快速建站**：深度集成开源建站软件 WordPress 和 [Halo](https://github.com/halo-dev/halo/)，域名绑定、SSL 证书配置等操作一键搞定  
 	- **应用商店**：精选上架各类高质量的开源工具和应用软件，协助用户轻松安装并升级  
