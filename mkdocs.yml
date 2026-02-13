@@ -56,6 +56,11 @@ nav:
       - 安装部署: user_manual/appstore/install.md
       - 应用操作: user_manual/appstore/installed.md
       - 应用商店设置: user_manual/appstore/setting.md
+    - AI:
+      - 智能体: https://openclaw.club/guides/quick-start
+      - 模型: user_manual/ai/model.md
+      - MCP: user_manual/ai/mcp.md
+      - GPU 监控: user_manual/ai/gpu.md
     - 网站:
       - 概述: user_manual/websites/websites.md
       - 创建网站: user_manual/websites/website_create.md
@@ -79,10 +84,6 @@ nav:
       - Golang: user_manual/websites/golang.md
       - Python: user_manual/websites/python.md
       - .NET: user_manual/websites/dotnet.md
-    - AI:
-      - 模型: user_manual/ai/model.md
-      - MCP: user_manual/ai/mcp.md
-      - GPU 监控: user_manual/ai/gpu.md
     - 数据库:
       - MySQL: user_manual/databases/mysql.md
       - PostgreSQL: user_manual/databases/postgresql.md
@@ -103,8 +104,8 @@ nav:
       - 防火墙: user_manual/hosts/firewall.md
       - 进程管理: user_manual/hosts/process.md
       - SSH 管理: user_manual/hosts/ssh.md
-    - 计划任务: user_manual/cronjobs.md
     - 终端: user_manual/terminal.md
+    - 计划任务: user_manual/cronjobs.md
     - 工具箱:
       - 快速设置: user_manual/toolbox/quick_settings.md
       - 缓存清理: user_manual/toolbox/clean.md
