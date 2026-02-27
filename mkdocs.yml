@@ -57,7 +57,7 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/bUpUqWqdRr
   version:
-    method: mike
+    provider: mike
   analytics:
     provider: google
     property: G-1QN949WS47

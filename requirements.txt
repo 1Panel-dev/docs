@@ -4,3 +4,4 @@ mdx_gh_links
 markdown
 mkdocs-glightbox
 pymdown-extensions
+mike>=1.1.2
