@@ -1,0 +1,36 @@
+name: Mkdocs Build
+
+on:
+  push:
+    branches: [ "i18n/en-v1", "i18n/en-v2" ]
+  workflow_dispatch:   
+
+jobs:
+  mike-deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.x'
+    - name: Split branch name
+        env:
+          BRANCH: ${{ github.ref_name }}
+        id: split
+        run: echo "version=${BRANCH##*/}" >> $GITHUB_OUTPUT
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip setuptools wheel
+        pip install -r ./requirements.txt
+        pip install mike
+    - name: Config Git
+      run: |
+        git config user.name "$(git log -n 1 --pretty=format:%an)"
+        git config user.email "$(git log -n 1 --pretty=format:%ae)"
+    - name: Build package
+      run: |
+        git fetch origin en/deploy:en/deploy
+        mike deploy --push --branch en/deploy ${{ steps.split.outputs.version }}
