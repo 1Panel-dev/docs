@@ -1,24 +1,15 @@
-# Networks
+!!! note ""
+    1Panel allows you to add and remove networks in the environment. The four networks **none, host, bridge, and 1panel-network** are built-in system networks and cannot be deleted.
 
-The Networks view lets you manage Docker networks without having to use the CLI.
+    [Learn more about container networks](https://docs.docker.com/network)
 
-## Create a network
+![img.png](../../img/containers/network_create.png)
+{: .original}
 
-By clicking the `Create` button, you can create a Docker network through the creation form.
+!!! note ""
+    **Mode: Network drivers in Docker are pluggable. 1Panel provides several network drivers to deliver core networking functionality, including:**
 
-!!! info "Supported network drivers"
-    - bridge: The default network driver.
-    - ipvlan: IPvlan networks provide full control over both IPv4 and IPv6 addressing.
-    - macvlan: Assign a MAC address to a container.
-    - overlay: Overlay networks connect multiple Docker daemons together.
-
-## Remove networks
-
-You can directly delete specific networks from the network list, or click the `Prune` button to clean up all unused networks.
-
-!!! tips "Tips"
-    The following four networks —— none, host, bridge, and 1panel-network —— are system-provided and should not be removed.
-
-## Additional resources
-
-- [Docker Network Documentation](https://docs.docker.com/network)
+    - bridge: The default Docker network driver. If no driver type is explicitly specified, Docker uses a bridge network by default. It is typically used for standalone containers that need to communicate with each other. Containers in bridge mode are isolated from the Docker host network.
+    - ipvlan: The IPvlan driver gives users full control over IPv4 and IPv6 addressing. The VLAN driver builds on this to provide complete control over Layer 2 VLAN tagging, and even IPvlan L3 routing for users interested in underlay network integration.
+    - macvlan: Macvlan networks allow you to assign a MAC address to a container, making it appear as a physical device on the network. The Docker Daemon routes traffic to containers by their MAC address. This driver is the best choice for legacy applications that need to connect directly to the physical network instead of routing through the Docker host’s network stack.
+    - overlay: Overlay networks connect multiple Docker Daemons and enable Swarm services to communicate with each other. They also allow Swarm services to communicate with standalone containers, and standalone containers across different Docker Daemons to communicate. Overlay mode eliminates OS-level routing between containers.
