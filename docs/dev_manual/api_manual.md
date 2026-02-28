@@ -1,4 +1,3 @@
-```
 This document details how to use custom Token verification to access panel APIs in third-party services.
 
 ## 1 API Configuration Instructions
