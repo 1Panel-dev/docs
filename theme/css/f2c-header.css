@@ -1,0 +1,114 @@
+/* 基础样式 */
+*,::after,::before{box-sizing:border-box;}
+
+/* 打印隐藏 */
+@media print{
+.hidden-print{display:none!important;}
+}
+
+/* 粘性定位 */
+.sticky{position: fixed;top: 0;right: 0;left: 0;z-index: 10;}
+
+/* 容器 */
+.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
+@media (min-width:576px){
+.container{max-width:540px;}
+}
+@media (min-width:768px){
+.container{max-width:720px;}
+}
+@media (min-width:992px){
+.container{max-width:960px;}
+}
+@media (min-width:1200px){
+.container{max-width:1140px;}
+}
+
+/* 可见性控制 */
+@media (max-width:767px){
+.visible-xs{display:block!important;}
+}
+
+/* 文本样式 */
+.text-muted{color:#6c757d!important;}
+
+/* 基础元素样式 */
+img{vertical-align:middle;border-style:none;}
+svg{overflow:hidden;vertical-align:middle;}
+button{border-radius:0;margin:0;font-family:inherit;font-size:inherit;line-height:inherit;overflow:visible;text-transform:none;-webkit-appearance:button;}
+button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color;}
+button::-moz-focus-inner{padding:0;border-style:none;}
+[type=button]::-moz-focus-inner{padding:0;border-style:none;}
+
+/* 链接样式 */
+a{text-decoration:none!important;}
+
+/* 列表样式 */
+ul{list-style: none;margin: 0;padding: 0;}
+
+/* 隐藏元素 */
+.visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;white-space:nowrap;width:1px;}
+
+/* Mega导航样式 */
+.mega-nav-sandbox{width:100%;}
+.mega-nav-sandbox *{letter-spacing:0;line-height:1.42857143;margin-bottom:0;margin-top:0;text-transform:none;}
+
+/* 导航横幅 */
+.mega-nav-banner{background-color:black;color:white;font-family:"klavika-web", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:16px;min-height:3em;align-items:center;display:flex;}
+.mega-nav-banner>.container{align-items:center;display:flex;}
+.mega-nav-banner .text-muted{color:#ffffff;}
+.mega-nav-banner-item:first-child{display:none;}
+.mega-nav-banner-item:last-child{margin-left:auto;}
+
+/* Logo样式 */
+.mega-nav-banner-logo>img{height:40px;}
+
+/* 标签行 */
+.mega-nav-tagline{align-items:center;display:inline-flex;margin-bottom:0;vertical-align:-1px;}
+
+/* 导航容器 */
+.mega-nav{display:inline-block;font-family:"klavika-web", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:14px;line-height:1.35714;}
+.mega-nav *{box-sizing:border-box;}
+
+/* 导航图标 */
+.mega-nav-icon{display:inline-block;fill:currentColor;height:1em;stroke:currentColor;width:1em;}
+.mega-nav-icon-angle-right{height:0.8em;transform:rotate(-90deg);width:0.8em;color:#8492a6;}
+.open>.mega-nav-ctrl .mega-nav-icon-angle-right{transform:rotate(0);}
+
+/* 导航控制按钮 */
+.mega-nav-ctrl{background-color:transparent;border:0;margin-left:0.5em;padding:0;text-align:center;vertical-align:middle;}
+.mega-nav-ctrl:active,.mega-nav-ctrl:focus,.mega-nav-ctrl:hover,.mega-nav-ctrl:visited{outline:none;}
+.mega-nav-ctrl-items{align-items:center;display:flex;padding-top:1px;}
+
+/* 图标轮廓 */
+.mega-nav-icon-outline{border:1px solid #8492a6;margin-top:-1px;padding:0.5em;}
+.mega-nav-icon-outline .mega-nav-icon{display:block;}
+
+/* 导航主体容器 */
+.mega-nav-body-ct{bottom:0;display:none;left:0;overflow-y:auto;position:fixed;right:0;top:0;z-index:1100;}
+.mega-nav.open .mega-nav-body-ct{display:block;}
+
+/* 导航主体 */
+.mega-nav-body{background-color:white;box-shadow:0 2px 16px rgba(79,99,122,0.2);color:black;margin:1em;padding:1em;border-radius: 6px;}
+
+/* 导航列表 */
+.mega-nav-ul{list-style: none;margin: 0 !important;padding: 0;min-width: 280px;font-size: 12px;}
+.mega-nav-ul li{padding: 10px 10px;}
+.mega-nav-ul li a{font-weight: 400;color: #3c4858;}
+.mega-nav-ul li a:hover{color: #007bff;}
+
+/* 响应式设计 */
+@media (min-width: 768px){
+.mega-nav-banner-item:first-child{display:block;}
+}
+
+@media (min-width: 992px){
+.mega-nav{position:relative;}
+.mega-nav::before{border-bottom:1em solid white;border-left:0.71429em solid transparent;border-right:0.71429em solid transparent;content:' ';display:none;height:0;left:50%;position:absolute;top:100%;transform:translateX(-50%);width:0;z-index:1101;}
+.mega-nav-body-ct{bottom:auto;left:auto;overflow:visible;position:absolute;right:0;top:100%;}
+.mega-nav-body{margin:1em 0 0;}
+}
+
+@media (max-width: 991px){
+.container{width:auto;}
+}
