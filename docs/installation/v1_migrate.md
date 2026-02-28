@@ -1,112 +1,91 @@
+!!! note "Upgrade Notice"
+    Due to significant architectural changes between V1 and V2, **direct online upgrade from V1 to V2 is NOT supported**.
 
-!!! note "升级须知"
+    1Panel V1 users must use the official migration tool **1panel-migrator**:
+    [1panel-migrator](https://gitee.com/fit2cloud-feizhiyun/1panel-migrator)
+    to smoothly upgrade from 1Panel V1 to V2.
 
-    由于 V2 版本较 V1 版本有比较大的架构变动，目前不支持从 V1 版本直接在线升级至 V2 版本。
+!!! warning "Important"
+    To ensure a safe and successful migration, please read the following carefully before proceeding.
 
-    1Panel V1 版本的用户，可以使用官方提供的迁移工具[ **1panel-migrator**](https://gitee.com/fit2cloud-feizhiyun/1panel-migrator)，将 1Panel V1 平滑升级至 1Panel V2。
-
-!!! warning "注意"
-    为确保迁移顺利、安全，请务必在执行前仔细阅读以下内容。
-
-### 1 创建快照
-
+### 1 Create Snapshots
 !!! note ""
-    为防止意外风险，强烈建议：
+    To prevent unexpected risks, it is **strongly recommended**:
+    - Log into **1Panel → Panel Settings** and manually create a system snapshot.
+    - Or create a snapshot of your cloud server via your cloud provider’s platform.
 
-    - 登录 **1Panel 控制台 → 面板设置** 页面，手动创建系统快照
-    - 或通过云服务商平台创建云主机快照
-
-### 2 版本说明
-
+### 2 Version Requirements
 !!! note ""
+    - Migration is **only supported for 1Panel `v1.10.29-lts` and above**.
+    - After migration, your system will be upgraded to **1Panel v2.0.0**.
 
-    - 仅支持 **1Panel `v1.10.29-lts` 及以上版本** 执行迁移操作
-    - 执行迁移后，系统将升级至 **1Panel v2.0.0 版本**
-
-### 3 专业版与许可证
-
+### 3 Pro Edition & License
 !!! note ""
+    - Existing licenses will be cleared; all installations migrate to **Community Edition**.
+    - V1 lifetime licenses cannot be used in V2 but can be upgraded at
+      [Lingxia Official Site](https://www.lxware.cn/).
+    - Before importing your license to V2, confirm it has been unbound at
+      [Lingxia Official Site](https://www.lxware.cn/).
 
-    - 原有许可证将被清除，统一迁移为 **社区版本**
-    - V1 的买断许可证无法在 V2 中使用，但可前往 [凌霞官网](https://www.lxware.cn/) 进行升级
-    - 许可证导入 V2 前，请先前往 [凌霞官网](https://www.lxware.cn/) 确认是否已成功解绑
+### 4 Data Update After Upgrade
 
-### 4 升级后数据更新说明
-
-#### 4.1 网站
-
+#### 4.1 Websites
 !!! note ""
+    - **Website home directory migration**
+      After migration, **all website configurations are stored under
+      `{1Panel Install Dir}/www`**, e.g. `/opt/1panel/www`.
 
-    - **网站主目录迁移**
+    - **OpenResty Version**
+      The system will automatically upgrade to **OpenResty `1.27.1.2-0-1-focal`**.
 
-    迁移完成后，**所有网站配置将存放于 `{1Panel 安装目录}/www`**，例如：`/opt/1panel/www`
+    - **OpenResty Main Configuration**
+      `1panel-migrator upgrade website` resets the main OpenResty config.
+      **Back up your customizations first** if you have modified it.
 
-    - **OpenResty 版本**
+    - **PHP Runtime Websites**
+      1. Built-in PHP environments will be removed.
+      2. **Existing PHP containers in websites will NOT be deleted**
+         and will be migrated as static websites.
+      3. You can later create V2 PHP environments and switch the migrated
+         static site back to a PHP site in website settings.
 
-    系统将自动升级至 **OpenResty `1.27.1.2-0-1-focal`**
+    - **Reverse Proxy Websites**
+      V2 redesigned the reverse proxy cache to use independent directories per site.
+      **Please disable reverse proxy cache for all websites**
+      before running `1panel-migrator upgrade website`.
 
-     - **OpenResty 主配置文件**
-
-    由于 `1panel-migrator upgrade website` 会重置 OpenResty 主配置文件，如有自定义修改，请提前备份。
-
-    - **PHP 运行环境网站**
-
-    （1）面板内置的 PHP 环境将被移除；
-
-    （2）**已创建网站中的 PHP 容器不会删除**，将被迁移至 静态网站；
-
-    （3）后续可创建 V2 版本的 PHP 运行环境，在原网站设置中将迁移的静态网站切换为 PHP 网站。
-
-    - **反向代理网站**
-
-    由于 V2 重构了反代缓存机制，改为每个网站使用独立目录，因此在执行 `1panel-migrator upgrade website` 前，请确认所有网站的反代缓存已关闭。
-
-#### 4.2 备份记录
-
+#### 4.2 Backup Records
 !!! note ""
+    For compatibility reasons:
+    - All **V1 website, app, and database backup records will be cleared**.
+    - Please reconfigure your backup policies after migration.
 
-    出于兼容性考虑：
-    
-    - 所有 **V1 的网站、应用和数据库备份记录将被清空**
-    - 请在迁移完成后重新配置备份策略
-
-#### 4.3 主机终端
-
+#### 4.3 Host Terminal
 !!! note ""
+    Host list, groups, and quick commands are only migrated when upgrading to a **master node**.
+    These data are **not migrated** for slave nodes.
 
-    主机列表、分组和快速命令仅在升级为主节点时迁移；若升级为从节点，这部分数据将不会迁移。
-
-#### 4.4 计划任务
-
+#### 4.4 Cron Jobs
 !!! note ""
+    - Cron jobs **themselves are migrated**.
+    - **Execution history will NOT be preserved**.
 
-    - **计划任务本身会迁移**
-    - **任务的执行记录不会保留**
-
-#### 4.5 快照
-
+#### 4.5 Snapshots
 !!! note ""
+    Due to architectural changes, **V1 snapshots cannot be migrated to V2**.
 
-    由于版本机制差异，**V1 的快照记录无法迁移至 V2。**
-
-#### 4.6 面板设置
-
+#### 4.6 Panel Settings
 !!! note ""
+    After upgrade, panel settings for all nodes will follow the **V2 master node configuration**.
 
-    升级完成后，所有节点的面板设置将以当前 V2 主节点的配置为准。
-
-#### 4.7 WAF 和网站监控
-
+#### 4.7 WAF & Website Monitoring
 !!! note ""
+    Due to architecture upgrade:
+    - Most **V1 WAF and website monitoring configurations are incompatible and will NOT be migrated**.
+    - WAF only preserves: black/white lists, IP groups, custom rules.
+    - Please reconfigure these features after migration.
 
-    由于架构升级：
-
-    - **V1 的 WAF 配置与网站监控记录大部分不兼容**，不会被迁移
-    - WAF 仅保留：黑白名单、IP组、自定义规则
-    - 迁移后请重新配置相关功能
-
-#### 4.8 问题反馈
-
+#### 4.8 Feedback
 !!! note ""
-
-    如果您在使用过程中遇到任何问题或有其他反馈，请在 [1Panel 主仓库](https://github.com/1Panel-dev/1Panel/issues) 提交 Issue。
+    If you encounter any issues or have feedback, please submit an Issue in the
+    [1Panel main repository](https://github.com/1Panel-dev/1Panel/issues).
