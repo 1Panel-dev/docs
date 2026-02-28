@@ -1,3 +1,10 @@
+---
+hide:
+  - navigation
+---
+
+# Introduction
+
 🎉 **1Panel Won First Place in the Infrastructure Software Category at Gitee Annual Open Source Project Awards**  
 👉 Results: https://gitee.com/activity/2025opensource/top
 
