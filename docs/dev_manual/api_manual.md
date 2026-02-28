@@ -1,12 +1,14 @@
-```markdown
 This document details how to use custom Token verification to access panel APIs in third-party services.
 
 ## 1 API Configuration Instructions
 
+```markdown
 After logging in, you can view all APIs by accessing the swagger address: `{host}:{port}/1panel/swagger/index.html`.
+```
 
 ### 1.1 Custom Token Format
 
+```markdown
 1Panel has designed the following custom Token format for identity authentication of API requests:
 
 ```text
@@ -18,9 +20,11 @@ Components:
 - Fixed prefix: '1panel'
 - API-Key: Panel API interface key
 - UnixTimestamp: Current Unix timestamp (in seconds)
+```
 
 ### 1.2 Request Header Design
 
+```markdown
 Each request must carry the following two Headers:
 
 | Header Name        | Description              |
@@ -34,6 +38,7 @@ Example request header:
 curl -X POST "http://{host}:{port}/api/v2/toolbox/device/base" \
 -H "1Panel-Token: <1panel_token>" \
 -H "1Panel-Timestamp: <current_unix_timestamp>"
+```
 ```
 
 ### 1.3 Example Implementation Code
