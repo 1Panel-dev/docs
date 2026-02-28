@@ -1,39 +1,51 @@
-# Containers
+## 1 Add Container
 
-The Containers view lists all your containers. You can create new containers here, and see resouce usage, logs of the running containers.
+!!! note ""
+    - Select **Containers** from the menu, then click **Create Container**
+    - Configure container settings as needed
+    - Images must be pulled manually from the Images menu
 
-## Create a container
+![img.png](../../img/containers/container_create.png)
+{: .original}
 
-By clicking the `Create` button, you can create a container through the creation form. Fill in the container configuration as needed, and the container image can be selected from the image list or manually entered with a specific image tag.
+## 2 Inspect Container
 
-## Container actions
+!!! note ""
+    Click the target container name, and all information about the container will be displayed in the right drawer.
 
-You can use the `Search` field to search for specific containers and filter them by status at the top of the container list.
+![img.png](../../img/containers/container_inspect.png)
+{: .original}
 
-From the Containers view you can perform the following actions:
+## 3 View Container Logs
 
-- Pause/Resume
-- Stop/Start/Restart
-- Delete
-- Create image
-- Open the port exposed by the container in a browser
+!!! note ""
+    - Supports viewing logs from the last day, last 4 hours, last 1 hour, and last 10 minutes
+    - **Follow**: Refresh container logs in real time
+    - **Download**: Download container logs
 
-After selecting multiple containers, you can use the operation buttons at the top of the list for batch operations.
+![img.png](../../img/containers/container_log.png)
+{: .original}
 
-## Logs
+## 4 Access Container Console
 
-By clicking the container name in the list, you can view the logs of the container.
+!!! note ""
+    - Select the command and user to grant access, then click **Connect**
 
-And you can change the time period of the displayed logs, view realtime logs by enabling the `Watch` option.
+    **Note**: For Alpine Linux containers, select the `/bin/ash` command. If you need to define a command other than the provided ones, switch the **Custom** option to on.
 
-## Inspect a container
+![img.png](../../img/containers/container_terminal.png)
+{: .original}
 
-By clicking the container name in the list, you can view the low-level information about the container.
+## 5 View Container Statistics
 
-## Terminal
+!!! note ""
+    Supported information includes:
+    - Memory usage
+    - CPU usage
+    - Disk I/O usage
+    - Network usage
 
-Clicking the `Open terminal` in the operations column allows you to connect to the terminal in the container and execute specific commands in the container.
+    **Refresh interval can be changed**.
 
-## Resource usage
-
-In the container list, you can view the current resource usage of the container. If you need to continuously monitor resource usage, you can click `Monitor` in the operations column.
+![img.png](../../img/containers/container_monitor.png)
+{: .original}
