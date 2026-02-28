@@ -1,23 +1,26 @@
-## 1 配置 SSH 服务
+## 1 Configure SSH Service
 
-!!! Abstract ""
-    在 SSH 管理配置页面，可以开启/关闭/重启 SSH 服务，设置 SSH 服务开机自启动，同时支持可视化调整监听端口、监听地址等常用配置，或者通过配置文件方式修改其他配置。
+!!! note ""
+    On the SSH management page, you can start, stop, or restart the SSH service, set it to run on boot, and visually configure common settings such as listening port and listening address. You can also edit other configurations via the configuration file.
 
 ![img.png](../../img/hosts/ssh_config.png)
+{: .original}
 
-## 2 管理 SSH 会话
+## 2 Manage SSH Sessions
 
-!!! Abstract ""
-    点击当前页面上方的 `会话` 选项，可以进入 SSH 会话列表。
+!!! note ""
+    Click the **Sessions** tab at the top to view the SSH session list.
 
-    - 在列表中可以查看系统中的所有活跃的 SSH 会话信息
-    - 点击操作列的 `断开`，可以断开指定的 SSH 会话
+    - The list shows all active SSH sessions on the system
+    - Click **Disconnect** in the action column to terminate a specific SSH session
 
 ![img.png](../../img/hosts/ssh_session.png)
+{: .original}
 
-## 2 查看 SSH 登录日志
+## 3 View SSH Login Logs
 
-!!! Abstract ""
-    点击当前页面上方的 `登录日志` 选项，可以进入 SSH 登录日志列表。
+!!! note ""
+    Click the **Login Logs** tab at the top to view the SSH login log list.
 
 ![img.png](../../img/hosts/ssh_log.png)
+{: .original}
