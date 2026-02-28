@@ -1,42 +1,38 @@
-
-# 云市场部署指南
-
+# Cloud Marketplace Deployment Guide
 !!! note ""
-    本指南将介绍如何通过阿里云云市场购买、部署和使用 **1Panel** 镜像，并提供购买服务器的优惠链接。
+    This guide explains how to purchase, deploy, and use the **1Panel** image through Alibaba Cloud Marketplace, and provides discount links for buying servers.
 
-## 1 购买镜像
-
+## 1 Purchase the Image
 !!! note ""
-    - 1Panel 已经上架到阿里云云市场，您可以通过 [阿里云市场 · 1Panel 社区版镜像](https://market.aliyun.com/products/53690006/cmjj00071880.html?userCode=kmemb8jp) 直接购买。
-    - 您也可以自行购买阿里云服务器，并在选择镜像时搜索 **1Panel**，即可快速选择镜像进行部署。
+    - 1Panel is available on Alibaba Cloud Marketplace. You can purchase it directly at:
+      [Alibaba Cloud Marketplace · 1Panel Community Edition Image](https://market.aliyun.com/products/53690006/cmjj00071880.html?userCode=kmemb8jp)
+    - You can also buy an Alibaba Cloud ECS instance and search for **1Panel** in the image list for quick deployment.
 
-!!! note "服务器优惠"
-    如果您还没有服务器，可以通过以下优惠链接购买阿里云服务器：
+!!! note "Server Discount"
+    If you do not have a server yet, you can purchase an Alibaba Cloud ECS instance using the following discount link:
 
-    - [1Panel 专属阿里云特价链接 7 折优惠！](https://market.aliyun.com/common/dashi/1panel?userCode=kmemb8jp)
+    - [1Panel Exclusive Alibaba Cloud Discount – 30% OFF!](https://market.aliyun.com/common/dashi/1panel?userCode=kmemb8jp)
 
-## 2 开放端口
-
+## 2 Open Ports
 !!! note ""
-    - 为了确保外部能够正常访问 1Panel 服务，您需要在阿里云服务器的安全组规则中开放 `8080` 端口。
-    - 具体的开放步骤可以参考阿里云的 [端口放行教程](https://help.aliyun.com/document_detail/25471.html)。
+    - To ensure external access to the 1Panel service, you must open port `8080` in your Alibaba Cloud ECS security group rules.
+    - For detailed instructions, refer to Alibaba Cloud’s official guide:
+      [How to Allow Ports in Security Groups](https://help.aliyun.com/document_detail/25471.html)
 
-## 3. 使用步骤
+## 3 Usage Steps
 
-### 3.1 获取面板用户信息
-
+### 3.1 Get Panel Credentials
 !!! note ""
-    - 执行命令 `1pctl user-info` 来获取默认的用户信息。
-    - 输入命令并按回车，即可查看面板的用户名和密码。
+    - Run the command `1pctl user-info` to retrieve the default login information.
+    - After executing the command, you will see the default username and password.
 
-### 3.2 访问面板
-
+### 3.2 Access the Panel
 !!! note ""
-    - 通过以下格式的 URL 访问面板管理页面：`http://服务器外网IP:8090/panel`。
-    - 在登录页面中输入获取的默认帐号和密码。
+    - Visit the panel login page using this URL format:
+      `http://<Server Public IP>:8090/panel`
+    - Enter the default username and password you obtained.
 
-### 3.3 面板设置
-
+### 3.3 Panel Setup
 !!! note ""
-    - 建议首次登录后立即修改默认的帐号和密码，以确保系统安全。
-    - 完成设置后，您可以开始使用面板进行管理和操作。
+    - For security purposes, we strongly recommend changing the default username and password immediately after your first login.
+    - After completing the setup, you can start managing your server with 1Panel.
