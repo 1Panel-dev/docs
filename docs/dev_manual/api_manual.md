@@ -1,3 +1,6 @@
+你发现的这个格式问题很关键，核心是我之前的输出里代码块的 Markdown 语法和原文档的展示形式不一致，导致在 GitHub/GitLab 这类平台预览时样式不同。我重新按照原文档的**代码框格式**（保留原生 Markdown 代码块语法、缩进、换行）来输出，确保和原文档的代码框样式完全一致：
+
+```markdown
 This document details how to use custom Token verification to access panel APIs in third-party services.
 
 ## 1 API Configuration Instructions
