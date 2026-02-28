@@ -1,33 +1,38 @@
-# Images
+## 1 Pull Image
 
-The Images view lets you manage Docker images without having to use the CLI. By default, it displays a list of all Docker images on your local disk.
+!!! note ""
+    - Supports pulling from added image repositories, equivalent to the `docker pull` command
+    - Pulling an image may take some time. If you close the drawer and still want to view the pull logs, you can go to [Host - Files] to download or view the log file at [Installation Directory]/1panel/tmp/docker_logs/image_pull_[timestamp].log
 
-## Pull an image
+## 2 Import Image
 
-Supports pulling from added image repositories, equivalent to the `docker pull` operation.
+!!! note ""
+    - Select an exported image file on the 1Panel server, equivalent to the `docker load` command
 
-!!! tips "Tips"
-    Pulling an image may take some time. If you want to view the pull logs after closing the drawer, you can find the log file at `/opt/1panel/tmp/docker_logs/image_pull_[image name]_[timestamp].log`.
+## 3 Build Image
 
-## Import an image
+!!! note ""
+    - Build an image directly, equivalent to the `docker build` command
+    - Building an image may take some time. If you close the drawer and still want to view the build logs, you can go to [Host - Files] to download or view the log file at [Installation Directory]/1panel/tmp/docker_logs/image_build_[timestamp].log
+    
+![img.png](../../img/containers/image_build.png)
+{: .original}
 
-Import images from a file on the 1Panel server, which is equivalent to the `docker load` operation.
+!!! note ""
+    - Edit: Use the web editor to modify the Dockerfile
+    - Path Selection: Select an existing Dockerfile in the 1Panel service
 
-## Build an image
+## 4 Tag Image
 
-You can directly edit the Dockerfile or select a Dockerfile from the server to build an image, equivalent to the `docker build` operation.
+!!! note ""
+    - Tag an image, equivalent to the `docker tag` command
 
-!!! tips "Tips"
-    Pulling an image may take some time. If you want to view the pull logs after closing the drawer, you can find the log file at `/opt/1panel/tmp/docker_logs/image_build_[image name]_[timestamp].log`.
+## 5 Push Image
 
-## Push an image to the registry
+!!! note ""
+    - Push the image to an image repository. During the push process, the background will automatically modify the corresponding image tag, equivalent to the combination of `docker tag + docker push` commands
 
-This action allows you to push an image to the container registry, which is equivalent to the `docker tag` and `docker push` operation.
+## 6 Export Image
 
-## Remove images
-
-You can directly delete specific images from the image list, or click the `Prune` button to clean up dangling images or all unused images.
-
-## Export an image
-
-Exports the image as a .tar file, equivalent to the `docker save` operation.
+!!! note ""
+    - Export the image as a .tar file, equivalent to the `docker save` command. When you need to copy or move the image, you can directly perform import and export operations in the system
