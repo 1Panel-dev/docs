@@ -1,5 +1,5 @@
 !!! note ""
-	登录 1Panel Web 控制台，在页面右下角点击 **【检查更新】** 进行在线升级。
+	Log into the 1Panel web console and click **Check for Updates** in the bottom-right corner of the page to perform an online upgrade.
 
 ![img.png](../img/installation/检查更新.png)
 {: .browser-mockup}
