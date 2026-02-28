@@ -1,19 +1,34 @@
-# Backup and Restore
+!!! note ""
+    Supports backing up and restoring website data, as well as importing existing backups to ensure website content security and ease of management.
 
-This feature facilitates the backup and restoration of website data, including the importation of existing backups, thereby ensuring the security and manageability of website content.
+## 1 Create Backup
 
-## Create a backup
+!!! note ""
+    Click **Backup List** in the **More** menu of the website list. The system will generate a backup file in the default backup directory.
 
-After clicking the `Backup` button, 1Panel will generate a backup file for the website in the default backup directory.
-  
-## Restore from a backup
+![img.png](../../img/websites/backup_list.png)
+{: .browser-mockup}
 
-Select the target backup record from the backup list, then click the `Restore` button to initiate the restoration process.
+## 2 Restore Website
 
-## Download a backup
+!!! note ""
+    Select the target backup record in the backup list and click **Restore** to perform the restoration.
 
-Website backup records can be downloaded to local storage for use on the backup upload page following download.
+![img.png](../../img/websites/website_restore.png)
+{: .browser-mockup}
 
-## Import a backup
+## 3 Download Backup
 
-Uploading a previously downloaded website backup file will generate a backup record, which can be used for future restoration.
+!!! note ""
+    Supports downloading website backups to your local machine for later use in the upload backup page.
+
+![img.png](../../img/websites/website_bak_download.png)
+{: .browser-mockup}
+
+## 4 Import Backup
+
+!!! note ""
+    Select and upload a website backup file.
+
+![img.png](../../img/websites/website_bak_import.png)
+{: .browser-mockup}
