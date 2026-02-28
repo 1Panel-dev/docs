@@ -1,132 +1,93 @@
-# Cron Jobs
+!!! note ""
+    This module is mainly used to manage scheduled tasks, such as periodically running a shell script, periodic backups, periodic URL visits, etc. Manual execution is also supported.
 
-## Introduction
+Basic concepts:
 
-This feature is mainly used to manage tasks that need to be executed regularly, such as running a shell script, regular backup, regular URL access, etc., and also supports manual execution.
+- **Task Type**: Supports Shell Script, App Backup, Website Backup, Database Backup, Directory/File Backup, Log Backup, URL Visit, Website Log Rotation, Cache Cleanup, System Snapshot, Server Time Sync.
+- **Group**: Classify tasks into different groups for quick filtering.
+- **Schedule**: Custom schedule uses the **minute hour day month weekday** format (e.g., `0 0 * * *`). See https://crontab.guru/ for reference. You can preview the latest 5 execution times after setting.
+- **Retention**: Keep only the latest *n* successful backups/logs to avoid unlimited growth.
+- **Backup Account**: Target storage for backup files, managed in **Panel Settings → Backup Accounts**. Multiple accounts are supported.
+- **Default Download Account**: One designated backup account used for download and file‑size checks. The task fails if this account upload fails; failures of other accounts are ignored.
+- **Compression Password**: Encrypt tar backups using openssl (disabled by default).
+- **Exclude Rules**: Skip specific files/directories during backup.
+- **Alert (✨ Pro Edition)**: Send notifications (SMS/email) if a task fails.
+- **Ignore Errors**: Continue backing up other items when one fails (e.g., backing up all databases).
+- **Timeout**: Maximum allowed execution time.
+- **Retry**: Number of retries after failure.
 
-## Task Types
+## 1 Task Types
 
-### Shell
+### 1.1 Shell Script
 
-!!! info "Configuration Description"
-    - Execution Period: Select the execution time of the current scheduled task, and you can configure multiple execution periods at the same time;
-    - Execute in Container: After checking, you can select a container and execute the specified script in the container;
-    - Script Content: The specific script content that needs to be executed;
-    - Retention Copies: The number of retention copies of execution records and execution logs, the default is 7 copies;
+!!! note "Configuration"
+    - **Run in Container**: Select a container and user to run the script inside.
+    - **Interpreter**: Predefined (bash, python, sh) or custom.
+    - **Script**: Direct input, script library, or server script file.
 
-### Backup App
+![img.png](../img/cronjobs/shell.png)
+{: .original}
 
-!!! info "Configuration Description"
+### 1.2 App Backup | Website Backup | Database Backup
 
-    - Execution Period: Select the execution time of the current scheduled task, and you can configure multiple execution periods at the same time;
-    - Backup Application: Select the application that needs to be backed up, you can choose to back up a specific application, or back up all applications;
-    - Backup Account: The location where the backup data is stored, it can be saved on the current server disk, or in the object storage, FTP and other external storage services configured in the panel;
-    - Compression Password: The protection password of the backup data compression package;
-    - Default Download Address: When multiple backup accounts are selected, it is used as the default backup account when downloading backup files;
-    - Retention Copies: The default is to save 7 copies, which can reduce the space used by the backup;
-    - Exclusion Rules: The files that need to be excluded in the backup data compression package, such as log files, temporary directories, etc., support the configuration of multiple exclusion rules;
+!!! note "Configuration"
+    These are similar: select the target to back up (supports “All”).
 
-### Backup website
+![img.png](../img/cronjobs/app.png)
+{: .original}
 
-!!! info "Configuration Description"
+### 1.3 Directory Backup
 
-    - Execution Period: Select the execution time of the current scheduled task, and you can configure multiple execution periods at the same time;
-    - Backup Website: Select the website that needs to be backed up, you can choose to back up a specific website, or back up all websites;
-    - Backup Account: The location where the backup data is stored, it can be saved on the current server disk, or in the object storage, FTP and other external storage services configured in the panel;
-    - Compression Password: The protection password of the backup data compression package;
-    - Default Download Address: When multiple backup accounts are selected, it is used as the default backup account when downloading backup files;
-    - Retention Copies: The default is to save 7 copies, which can reduce the space used by the backup;
-    - Exclusion Rules: The files that need to be excluded in the backup data compression package, such as log files, temporary directories, etc., support the configuration of multiple exclusion rules;
+!!! note "Configuration"
+    Back up files or directories. Supports multiple files or a single directory.
 
-### Backup database
+![img.png](../img/cronjobs/dir.png)
+{: .original}
 
-!!! info "Configuration Description"
+### 1.4 Log Backup
+!!! note ""
+    Backs up:
+    - 1Panel system logs
+    - Server SSH login logs
+    - All website logs
 
-    - Execution Period: Select the execution time of the current scheduled task, and you can configure multiple execution periods at the same time;
-    - Backup Database: Select the database that needs to be backed up, you can choose to back up a specific database, or back up all databases;
-    - Backup Account: The location where the backup data is stored, it can be saved on the current server disk, or in the object storage, FTP and other external storage services configured in the panel;
-    - Compression Password: The protection password of the backup data compression package;
-    - Default Download Address: When multiple backup accounts are selected, it is used as the default backup account when downloading backup files;
-    - Retention Copies: The default is to save 7 copies, which can reduce the space used by the backup;
-    - Exclusion Rules: The files that need to be excluded in the backup data compression package, such as log files, temporary directories, etc., support the configuration of multiple exclusion rules;
+### 1.5 URL Visit
+!!! note ""
+    **URL**: The address to visit periodically.
 
-### Backup directory
+### 1.6 Website Log Rotation
+!!! note ""
+    Rotates logs for the specified website and archives old logs.
 
-!!! info "Configuration Description"
+### 1.7 Cache Cleanup
+!!! note ""
+    Runs the **Toolbox → Cache Cleanup** task on schedule.
 
-    - Execution Period: Select the execution time of the current scheduled task, and you can configure multiple execution periods at the same time;
-    - Backup Directory: Select the directory that needs to be backed up;
-    - Backup Account: The location where the backup data is stored, it can be saved on the current server disk, or in the object storage, FTP and other external storage services configured in the panel;
-    - Compression Password: The protection password of the backup data compression package;
-    - Default Download Address: When multiple backup accounts are selected, it is used as the default backup account when downloading backup files;
-    - Retention Copies: The default is to save 7 copies, which can reduce the space used by the backup;
-    - Exclusion Rules: The files that need to be excluded in the backup data compression package, such as log files, temporary directories, etc., support the configuration of multiple exclusion rules;
+### 1.8 System Snapshot
+!!! note ""
+    Runs **Panel Settings → Snapshots → Create Snapshot** on schedule.
 
-### Backup logs
+### 1.9 Server Time Sync
+!!! note ""
+    Syncs time from the NTP server configured in **Toolbox → Quick Settings**.
 
-Backup the following log content:
+## Execution Reports
 
-- 1Panel System Log
-- Server SSH Login Log
-- All Website Logs
+### Download & View
+!!! note ""
+    For backup tasks, you can view backup count and download files directly from the list.
 
-!!! info "Configuration Description"
+![img.png](../img/cronjobs/backup_list.png)
+{: .original}
 
-    - Execution Period: Select the execution time of the current scheduled task, and you can configure multiple execution periods at the same time;
-    - Backup Account: The location where the backup data is stored, it can be saved on the current server disk, or in the object storage, FTP and other external storage services configured in the panel;
-    - Compression Password: The protection password of the backup data compression package;
-    - Default Download Address: When multiple backup accounts are selected, it is used as the default backup account when downloading backup files;
-    - Retention Copies: The default is to save 7 copies, which can reduce the space used by the backup;
+!!! note ""
+    Shows full report history with filtering by time and status.
 
-### Access URL
+![img.png](../img/cronjobs/record.png)
+{: .original}
 
-!!! info "Configuration Description"
-
-    - Execution Period: Select the execution time of the current scheduled task, and you can configure multiple execution periods at the same time;
-    - Retention Copies: The number of retention copies of execution records and execution logs, the default is 7 copies;
-    - URL Address: The URL address that needs to be accessed regularly;
-
-### Cut Website Logs
-
-When the scheduled task is executed, it will split the logs of the specified website and save the previously generated logs in the backup directory.
-
-!!! info "Configuration Description"
-
-    - Execution Period: Select the execution time of the current scheduled task, and you can configure multiple execution periods at the same time;
-    - Website: Select the website that needs to be split, you can choose a specific website, or choose all websites;    
-    - Retention Copies: The default is to save 7 copies, which can reduce the space used by the backup;
-
-### Cache Clean
-
-Execute the `Cache clean` task in the `Toolbox` menu of the panel.
-
-!!! info "Configuration Description"
-
-    - Execution Period: Select the execution time of the current scheduled task, and you can configure multiple execution periods at the same time;
-    - Retention Copies: The number of retention copies of execution records and execution logs, the default is 7 copies;
-
-### System snapshot
-
-Execute the [`Create Snapshot`](../settings/#snapshots) task in the `Settings`-`Snapshots` menu of the panel.
-
-!!! info "Configuration Description"
-
-    - Execution Period: Select the execution time of the current scheduled task, and you can configure multiple execution periods at the same time;
-    - Backup Account: The location where the backup data is stored, it can be saved on the current server disk, or in the object storage, FTP and other external storage services configured in the panel;
-    - Compression Password: The protection password of the backup data compression package;
-    - Default Download Address: When multiple backup accounts are selected, it is used as the default backup account when downloading backup files;
-    - Retention Copies: The default is to save 7 copies, which can reduce the space used by the backup;
-    - Exclusion Rules: The files that need to be excluded in the backup data compression package, such as log files, temporary directories, etc., support the configuration of multiple exclusion rules;
-
-### Time Synchronization
-
-Synchronize the time with the NTP server configured on the `Quick settings` page of the `Toolbox`.
-
-!!! info "Configuration Description"
-
-    - Execution Period: Select the execution time of the current scheduled task, and you can configure multiple execution periods at the same time;
-    - Retention Copies: The number of retention copies of execution records and execution logs, the default is 7 copies;
-
-## Execution Report
-
-Display all the report details generated by this task, support time and status filtering, and if the scheduled task is a backup, you can directly download the report details through the download button.
+## Import & Export
+!!! note ""
+    Tasks can be imported/exported via JSON.
+    - Tasks with broken associations are marked **Pending Edit**.
+    - Duplicate task names are skipped during import.
