@@ -1,25 +1,32 @@
-# Composes
+## 1 Create Orchestration
 
-Docker Compose simplifies the process of managing multi-container applications. The Composes view lists all compose projects, as well as applications from the App Store.
+!!! note ""
+    Three methods are available to deploy a new Compose from 1Panel:
 
-## Create a compose project
+    - Edit: Use the web editor to define services
+    - Path Selection: Select an existing docker-compose.yml file in the 1Panel service
+    - Orchestration Template: Choose from existing orchestration templates
 
-There are three methods to deploy a new compose project from 1Panel:
+    [Learn more about container orchestration](https://docs.docker.com/compose)
 
-- Edit: Define services using the Web editor.
-- Path selection: Choose an existing docker-compose.yml from a specified path on the server.
-- Compose template: Select an existing Compose template.
+![img.png](../../img/containers/compose_create.png)
+{: .original}
 
-## Edit a compose project
+## 2 Edit Orchestration
 
-Existing compose projects can be edited to modify their configurations.
+!!! note ""
+    Composes can be categorized by their source into three types:
 
-Compose projects can be categorized into three types based on their origin:
+    - Apps: Deployed from applications in the App Store
+    - 1Panel: Created through system orchestration
+    - Local: Directly created on the server
 
-- Apps Store: Created from app store application deployments;
-- 1Panel: Created from the 1Panel console;
-- Local: Created directly on the server via command line.
+    **Editing is only available for Composes deployed via 1Panel**
 
-## Container list of the compose project
+## 3 Orchestration Details
 
-By clicking the name of the compose project, you can enter the compose project details page, which displays the container list corresponding to the compose project.
+!!! note ""
+    Click the name in the orchestration list to enter the orchestration details page. This page displays the container list corresponding to the Compose. Starting/stopping operations for the Compose are only supported when the Compose is created by 1Panel.
+
+![img.png](../../img/containers/compose_detail.png)
+{: .original}
