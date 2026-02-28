@@ -1,16 +1,14 @@
-## 1 1Panel 和宝塔有什么区别？
-
+## 1 What is the difference between 1Panel and BT Panel?
 !!! note ""
-    **宝塔是一款被广泛使用的 Linux 面板。与宝塔 Linux 面板相比，1Panel 的特色是开源和现代化。**  
+    **BT Panel is a widely used Linux server control panel. Compared with BT Panel, 1Panel is distinguished by being open-source and modern.**
 
-    - 开源：1Panel 强调开源开放，广泛获取社区使用反馈，并快速迭代
-    - 现代化：一方面，1Panel 采纳最新的前端技术，并通过精心设计的 UX 交互，为用户提供更好的用户使用体验；另一方面，1Panel 采用主流的容器技术，让 Linux 服务器的运维管理更简单、更安全
+    - Open-source: 1Panel is fully open-source, collects extensive community feedback, and iterates rapidly.
+    - Modern: On one hand, 1Panel uses the latest frontend technologies with carefully designed UX for a better user experience.
+      On the other hand, 1Panel adopts mainstream container technology to make Linux server operation and maintenance simpler and more secure.
 
-    详细对比请查看：[1Panel vs 宝塔面板](https://vsbt.1panel.cn/)
+    For a detailed comparison, please visit: [1Panel vs BT Panel](https://vsbt.1panel.cn/)
 
-## 2 1Panel 安装包多大？运行时占用系统资源多吗？会影响其他应用吗？
-
+## 2 How big is the 1Panel installer? Does it consume many system resources? Will it affect other applications?
 !!! note ""
-
-    - 1Panel 基于 Golang 语言编写，可执行文件大小约 40MB、运行时占用系系统内存约 150MB
-    - 1Panel 基于 Docker 来部署管理其他应用，对系统的侵入影响非常小
+    - 1Panel is written in Go. The executable file is about 40 MB, and it uses approximately 150 MB of memory at runtime.
+    - 1Panel deploys and manages other applications based on Docker, so it has minimal intrusion and impact on the host system.
