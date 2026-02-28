@@ -1,75 +1,99 @@
-
-# FTP
-
-## Introduction
-
-1Panel uses [Pure-FTPd](https://www.pureftpd.org/project/pure-ftpd/) as the FTP server. Pure-FTPd is a free (BSD), secure, production-quality and standard-conformant FTP server. It doesn’t provide useless bells and whistles, but focuses on efficiency and ease of use. It provides simple answers to common needs, plus unique useful features for personal users as well as hosting providers.
-
-## Installing Pure-FTPd
+## 1 Installation
 
 === "RedHat / CentOS"
-    1. Install the EPEL repository
-    ```shell
-    yum install -y epel-release
-    ```
-    2. Install Pure-FTPd
-    ```shell
-    yum -y install pure-ftpd
-    ```
-    3. Configure Pure-FTPd
-    ```shell
-    # The default configuration is located at /etc/pure-ftpd/pure-ftpd.conf. Modify the following parameters in the configuration file:
-    ## Specify the path for the PureDB user database file
-    PureDB /etc/pure-ftpd/pureftpd.pdb
-    ## Enable logging
-    VerboseLog yes
-    ## Disable anonymous login
-    NoAnonymous yes
-    ## Enable and adjust the passive port range as needed
-    PassivePortRange 39000 40000
-    ```
-    4. Start the Pure-FTPd service
-    ```shell
-    systemctl start pure-ftpd.service
-    ```
-    5. Enable Pure-FTPd to start at boot
-    ```shell
-    systemctl enable pure-ftpd.service
-    ```
-    6. Check the status of the Pure-FTPd service
-    ```shell
-    systemctl status pure-ftpd.service
-    ```
+    !!! note ""
+        **1. Install EPEL repository**
+
+        ```bash
+        yum install -y epel-release
+        ```
+
+        **2. Install Pure-FTPd**
+        
+        ```bash
+        yum -y install pure-ftpd
+        ```
+
+        **3. Modify default configuration**
+        
+        ```bash
+        # Default config path: /etc/pure-ftpd/pure-ftpd.conf
+        # Find and update these parameters:
+
+        # Path to PureDB user database
+        PureDB /etc/pure-ftpd/pureftpd.pdb
+        # Enable logging
+        VerboseLog yes
+        # Deny anonymous login
+        NoAnonymous yes
+        # Enable passive port range (adjust as needed)
+        PassivePortRange 39000 40000
+        ```
+
+        **4. Start Pure-FTPd service**
+        
+        ```bash
+        systemctl start pure-ftpd.service
+        ```
+        
+        **5. Check service status**
+
+        ```bash
+        systemctl status pure-ftpd.service
+        ```
 
 === "Ubuntu / Debian"
-    1. Install Pure-FTPd
-    ```shell
-    sudo apt-get install pure-ftpd
-    ```
-    2. Configure Pure-FTPd
-    ```shell
-    ## Specify the path for the PureDB user database file
-    echo '/etc/pure-ftpd/pureftpd.pdb' > /etc/pure-ftpd/conf/PureDB
-    ## Enable logging
-    echo 'yes' > /etc/pure-ftpd/conf/VerboseLog
-    ## Disable anonymous login
-    echo 'yes' > /etc/pure-ftpd/conf/NoAnonymous
-    ## Enable and adjust the passive port range as needed
-    echo '39000 40000' > /etc/pure-ftpd/conf/PassivePortRange
-    ```
-    3. Create a symbolic link for the database
-    ```shell
-    ln -s /etc/pure-ftpd/conf/PureDB /etc/pure-ftpd/auth/50puredb
-    ```
-    4. Start the Pure-FTPd service
-    ```shell
-    systemctl start pure-ftpd.service
-    ```
-    5. Enable Pure-FTPd to start at boot
-    ```shell
-    systemctl enable pure-ftpd.service
-    ```
-    6. Check the status of the Pure-FTPd service
-    ```shell
-    systemctl status pure-ftpd.service
-    ```
+    !!! note ""
+        **1. Install Pure-FTPd**
+        
+        ```bash
+        sudo apt-get install pure-ftpd
+        ```
+
+        **2. Modify default configuration**
+        
+        ```bash
+        # Debian/Ubuntu use individual files under /etc/pure-ftpd/conf
+
+        # Set PureDB path
+        echo '/etc/pure-ftpd/pureftpd.pdb' > /etc/pure-ftpd/conf/PureDB
+        # Enable verbose logging
+        echo yes > /etc/pure-ftpd/conf/VerboseLog
+        # Deny anonymous access
+        echo yes > /etc/pure-ftpd/conf/NoAnonymous
+        # Set passive port range
+        echo '39000 40000' > /etc/pure-ftpd/conf/PassivePortRange
+        ```
+
+        **3. Create database symlink**
+        
+        ```bash
+        ln -s /etc/pure-ftpd/conf/PureDB /etc/pure-ftpd/auth/50puredb
+        ```
+
+        **4. Start Pure-FTPd service**
+        
+        ```bash
+        sudo systemctl start pure-ftpd.service
+        ```
+        
+        **5. Check service status**
+
+        ```bash
+        sudo systemctl status pure-ftpd.service
+        ```
+
+## 2 Troubleshooting
+
+!!! note ""
+    - If Pure-FTPd was already installed, you can sync it to 1Panel using the sync button in the UI. Passwords cannot be synced and must be edited manually.
+    - If you cannot connect properly, check:
+        - Whether the firewall is running and allows the Pure-FTPd port (default 21). Check with:
+          `netstat -tunlp | grep pure-ftpd`
+          or
+          `cat /etc/pure-ftpd/pure-ftpd.conf | grep Bind`
+        - Whether passive ports are allowed in the firewall. Check with:
+          `cat /etc/pure-ftpd/pure-ftpd.conf | grep PassivePortRange`
+          or
+          `cat /etc/pure-ftpd/conf/PassivePortRange`
+        - Whether SELinux is enabled
