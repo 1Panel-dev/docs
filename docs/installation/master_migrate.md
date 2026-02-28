@@ -1,60 +1,55 @@
-## 1 安装 1panel-migrator
+# Install and Use 1panel-migrator
 
-### 1.1 安装包获取
+## 1 Install 1panel-migrator
 
+### 1.1 Obtain the Installation Package
 !!! note ""
+    Please visit the [1Panel Gitee Release Page](https://gitee.com/fit2cloud-feizhiyun/1panel-migrator/releases/) to manually download the installation package matching your server architecture, then place it in the `/tmp` directory.
 
-     请访问 [1PanelGitee 发布页面](https://gitee.com/fit2cloud-feizhiyun/1panel-migrator/releases/)，手动下载适用于您服务器架构的安装包，并将其放置到 `/tmp` 目录：
+    **Note**: Ensure the package version is **v2.0.8 or higher** — only versions from v2.0.8 onward support master-slave node switching.
 
-    **提示**：请确保安装包版本 **大于等于 v2.0.8**，该版本及以上才支持主从节点切换功能。
-    
-    每个版本会提供以下架构的安装包（文件名示例）：
-    
+    Installation packages for the following architectures are provided for each release (filename examples):
     - `1panel-migrator-linux-amd64`
     - `1panel-migrator-linux-arm64`
     - `1panel-migrator-linux-arm`
     - `1panel-migrator-linux-ppc64le`
     - `1panel-migrator-linux-s390x`
 
-### 1.2 安装步骤
-
+### 1.2 Installation Steps
 !!! note ""
-
-    以 amd64 架构为例说明 1panel-migrator 的安装步骤：
+    The following steps use the amd64 architecture as an example:
 
     ```bash
-    # （1）进入临时目录
+    # (1) Navigate to the temporary directory
     cd /tmp
     
-    # （2）添加执行权限
+    # (2) Add executable permissions
     chmod +x 1panel-migrator-linux-amd64
     
-    # （3）移动至系统 PATH 中并重命名
+    # (3) Move to system PATH and rename
     mv 1panel-migrator-linux-amd64 /usr/local/bin/1panel-migrator
     ```
 
-## 2 从节点 -> 主节点
-
+## 2 Slave Node → Master Node
 !!! note ""
+    To promote a slave node to master, you must first configure master node backups on the original master node — only master nodes with existing backup files support promotion:
 
-    从节点升级为主节点需要先在原来主节点上设置好主节点备份，仅存在备份文件的主节点支持升级到主节点：
-
-    （1）打开节点列表，点击上方主节点备份。
-
-    （2）勾选备份节点，设置自动备份频率及保留份数，保存设置。
-
-    （3）点击执行备份，查看备份结果。
+    (1) Open the node list and click **Backup Master Node** at the top.
+    
+    (2) Select the nodes to back up, set the automatic backup frequency and retention count, then save the settings.
+    
+    (3) Click **Execute Backup** and check the backup result.
 
     ![img.png](../../img/installation/master_backup.png)
 
-    （4）打开需要升级的从节点，通过安装好的 1panel-migrator 执行升级命令 `1panel-migrator promote` 。
+    (4) Open the slave node to be promoted, and run the promotion command with the installed 1panel-migrator:  
+    `1panel-migrator promote`.
 
     ![img.png](../../img/installation/promote.png)
 
-## 3 主节点 -> 从节点
-
+## 3 Master Node → Slave Node
 !!! note ""
-
-    打开需要降级的主节点，通过安装好的 1panel-migrator 执行降级命令 `1panel-migrator demote`。
+    Open the master node to be demoted, and run the demotion command with the installed 1panel-migrator:  
+    `1panel-migrator demote`.
 
     ![img.png](../../img/installation/demote.png)
