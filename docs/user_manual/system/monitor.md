@@ -1,13 +1,23 @@
-## 1 查看监控
+## 1 View Monitoring
 
-!!! Abstract ""
-    点击【主机 - 监控】菜单，进入监控报表，直观的了解服务器的运行状态，包含【平均负载】、【CPU性能监控】、【内存使用监控】、【磁盘IO监控】、【网络IO监控】。
+!!! note ""
+    Go to **Host - Monitoring** to view the server status intuitively, including:
+    - Load Average
+    - CPU Usage Monitoring
+    - Memory Usage Monitoring
+    - Disk I/O Monitoring
+    - Network I/O Monitoring
 
-    通过时间监控指标上方的时间选择组件，可以调整监控数据的时间范围。
+    Use the time selector above the charts to adjust the time range of monitoring data.
 
 ![img.png](../../img/hosts/monitor.png)
+{: .original}
 
-## 2 修改设置
+## 2 Modify Settings
 
-!!! Abstract ""
-    在监控设置页面，可以开启/关闭监控功能，修改监控数据的保存时长，修改监控数据的采集间隔，或者手动清空监控记录。
+!!! note ""
+    On the monitoring settings page, you can:
+    - Enable or disable the monitoring function
+    - Change the retention period of monitoring data
+    - Adjust the monitoring data collection interval
+    - Manually clear monitoring records
