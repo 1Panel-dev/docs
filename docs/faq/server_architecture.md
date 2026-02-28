@@ -1,86 +1,69 @@
-## 1 s390x 架构
+## 1 s390x Architecture
 
-### 1.1 安装 MySQL
+### 1.1 Install MySQL
 
 !!! note ""
-    **由于 MySQL 官方未提供 s390x 架构镜像，所以在应用商店启用 MySQL 前，需要手动修改 MySQL 镜像版本。**
+    **MySQL does not provide official s390x images. You must manually change the MySQL image before installing it from the 1Panel App Store.**
 
 !!! note "MySQL 5.7"
-
-    - 下载 s390x 架构最新版本镜像
-
+    - Pull the latest s390x image
     ```bash
     docker pull ibmcom/mysql-s390x:5.7.34
     ```
-
-    - 将镜像重命名为 1Panel 应用商店中使用的 MySQL 版本
-    
+    - Tag it to match the version used in 1Panel App Store
     ```bash
     docker tag ibmcom/mysql-s390x:5.7.34 mysql:5.7.42
     ```
-
-    - 在应用商店中安装 MySQL，版本选择 5.7.42
+    - Install MySQL in the App Store and select version **5.7.42**
 
 !!! note "MySQL 8.0"
-
-    - 下载 s390x 架构最新版本镜像
-
+    - Pull the latest s390x image
     ```bash
     docker pull ibmcom/mysql-s390x:8.0.25
     ```
-
-    - 将镜像重命名为 1Panel 应用商店中使用的 MySQL 版本
-    
+    - Tag it to match the version used in 1Panel App Store
     ```bash
     docker tag ibmcom/mysql-s390x:8.0.25 mysql:8.0.33
     ```
+    - Install MySQL in the App Store and select version **8.0.33**
 
-    - 在应用商店中安装 MySQL，版本选择 8.0.33
+---
 
-## 2 armv7l 架构
+## 2 armv7l Architecture
 
-### 2.1 安装 MySQL
+### 2.1 Install MySQL
 
 !!! note ""
-    **由于 MySQL 官方未提供 armv7l 架构镜像，所以在应用商店启用 MySQL 前，需要手动修改 MySQL 镜像版本。**
+    **MySQL does not provide official armv7l images. You must manually change the MySQL image before installing it from the 1Panel App Store.**
 
 !!! note "MySQL 5.7"
-
-    - 下载 armv7l 架构最新版本镜像
-
+    - Pull the latest armv7l image
     ```bash
     docker pull biarms/mysql:5.7.33-beta-circleci
     ```
-
-    - 将镜像重命名为 1Panel 应用商店中使用的 MySQL 版本
-    
+    - Tag it to match the version used in 1Panel App Store
     ```bash
     docker tag biarms/mysql:5.7.33-beta-circleci mysql:5.7.42
     ```
-
-    - 在应用商店中安装 MySQL，版本选择 5.7.42
+    - Install MySQL in the App Store and select version **5.7.42**
 
 !!! note "MySQL 8.0"
+    **MySQL 8.0 is not yet supported on armv7l in the current 1Panel version.**
 
-    **1Panel 当前版本还不支持在 armv7l 架构服务器上安装 MySQL 8.0**
+---
 
-### 2.2 安装 OpenResty
-
-!!! note ""
-    **由于 OpenResty 官方未提供 armv7l 架构镜像，所以在应用商店启用 OpenResty 前，需要手动修改 OpenResty 镜像版本。**
+### 2.2 Install OpenResty
 
 !!! note ""
+    **OpenResty does not provide official armv7l images. You must manually change the OpenResty image before installing it from the 1Panel App Store.**
 
-    - 下载 armv7l 架构最新版本镜像
-
+!!! note ""
+    - Pull the latest armv7l image
     ```bash
     docker pull imzcc/openresty:1.21.4.1-7-alpine
     ```
-
-    - 将镜像重命名为 1Panel 应用商店中使用的 OpenResty 版本
-    
+    - Tag it to match the version used in 1Panel App Store
     ```bash
     docker tag imzcc/openresty:1.21.4.1-7-alpine openresty/openresty:1.21.4.1-7-focal
     ```
-
-    - 在应用商店中安装 OpenResty
+    - Install OpenResty in the App Store
