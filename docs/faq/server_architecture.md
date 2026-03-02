@@ -36,7 +36,6 @@
 ### 2.1 Install MySQL
 
 !!! note ""
-
     **MySQL does not provide official armv7l images. You must manually change the MySQL image before installing it from the 1Panel App Store.**
 
 !!! note "MySQL 5.7"
