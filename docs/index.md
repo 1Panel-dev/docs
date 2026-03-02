@@ -3,7 +3,7 @@
 
 It allows you to manage your VPS effortlessly—entirely from a web browser.
 
-![img.png](../img/overview.png)
+![img.png](./img/overview.png)
 
 Unlike traditional VPS control panels,  
 1Panel fully embraces AI, is built with the modern Go programming language, and supports container‑based application deployment and management.
