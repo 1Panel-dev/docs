@@ -1,6 +1,5 @@
-# 1Panel Offline Version Deployment Guide
+## 1. Features
 
-## 1. Key Features
 !!! note "Fully Standalone Operation"
     - The offline version does not connect to the internet or send any network requests.
     - Integrates all features of the community edition and runs independently in offline environments.
@@ -23,6 +22,7 @@
     - If Docker is not detected during installation, the script automatically installs Docker.
 
 ## 2. Environment Requirements
+
 !!! note ""
     - **Operating System**: Supports mainstream Linux distributions (Debian/RedHat-based, including domestic OSes)
     - **Server Architecture**: `x86_64` and `arm64`
@@ -30,6 +30,7 @@
     - **Browser**: Use modern browsers such as **Chrome, Firefox**
 
 ## 3. Download Offline Package
+
 !!! note ""
     ⚠️ **Important Warning: Do NOT purchase or download so-called "1Panel offline packages" from unofficial platforms like Xianyu**  
     🚫 These are **unauthorized pirated sources** — we cannot guarantee their security. They may be tampered with, contain trojans/viruses, and pose risks of server intrusion or data leakage.
@@ -46,6 +47,7 @@
 ## 4. Installation and Deployment
 
 ### 4.1 Extract Offline Package
+
 !!! note ""
     Download the latest 1Panel offline package, upload it to the `/tmp` directory of your server, and execute the following commands as the **root user** to prepare for installation:
 
@@ -56,6 +58,7 @@
     ```
 
 ### 4.2 Run Installation Script
+
 !!! note ""
     ```bash
     # Enter the extracted directory (replace with your actual directory name)
@@ -68,6 +71,7 @@
 ## 5. Version Upgrade
 
 ### 5.1 Extract Offline Package
+
 !!! note ""
     Download the latest 1Panel offline package, upload it to the `/tmp` directory of your server, and execute the following commands as the **root user** to prepare for upgrade:
 
@@ -78,6 +82,7 @@
     ```
 
 ### 5.2 Run Upgrade Script
+
 !!! note ""
     ```bash
     # Enter the extracted directory (replace with your actual directory name)
@@ -88,6 +93,7 @@
     ```
 
 ## 6. Access the Panel
+
 !!! note ""
     After successful installation, the console displays panel access information. Access via browser:
 
@@ -104,6 +110,7 @@
 ## 7. App Store
 
 ### 7.1 Obtain Images
+
 === "Application Images"
     !!! note ""
         After clicking an application's **Install** button, check the `image:` field in **Advanced Settings** → **Edit Compose File** — the value after this field is the target image name.
@@ -152,6 +159,7 @@
         - mcr.microsoft.com/dotnet/aspnet:10.0
 
 ### 7.2 Import Images
+
 !!! note ""
     To use other applications (e.g., WordPress) or runtime environments, manually import images with these steps:
 
@@ -175,6 +183,7 @@
     For runtime environment images, the corresponding version becomes available for installation after import.
 
 ### 7.3 Update Applications / Runtime Environments
+
 !!! note ""
     The offline App Store update feature requires **v2.0.13-offline or higher**. If your version is lower, upgrade first.
 
@@ -210,6 +219,7 @@
     These steps update the offline server with the latest App Store content.
 
 ## 8. PHP Offline Version
+
 !!! note "Prepare Environment"
     - 1Panel V2 offline server
     - 1Panel V2 internet-connected server
@@ -217,6 +227,7 @@
     > Core operation: Import precompiled PHP images from the internet-connected server to the offline server.
 
 ### 8.1 Internet-Connected 1Panel
+
 !!! note ""
     Create a PHP runtime environment in the internet-connected 1Panel and install required extensions (**record the image name and port**):
 
@@ -235,6 +246,7 @@
     ```
 
 ### 8.2 Offline 1Panel
+
 !!! note ""
     Copy the compressed file to `/opt` (or another directory) and extract it:
     ```bash
@@ -266,16 +278,19 @@
 ![offline_php_03](../../img/offline/offline_php_03.png)
 
 ## 9. Application Installation Notes
+
 !!! note ""
     There are differences between installing applications in the offline version vs. via "Local Applications", mainly:
 
 ### 9.1 Comparison
+
 | Method | Application Source | Includes All Applications | Automatically Integrates Feature Menus |
 |--------|--------------------|---------------------------|----------------------------------------|
 | Offline Version Installation | Pre-included in offline package | ✅ Yes | ✅ Yes (e.g., websites, databases) |
 | Local Application Installation | Manually uploaded by user | ❌ No | ❌ No |
 
 ### 9.2 Recommended Use Cases
+
 !!! note ""
     - **Offline Version Installation**: Ideal for fast deployment in network-free environments with complete features and optimal experience.  
         - Example: Applications like `OpenResty` and `MySQL` automatically integrate with **Website Management** and **Database Management** after installation, allowing direct creation of websites and databases.  
