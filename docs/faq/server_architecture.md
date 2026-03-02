@@ -29,7 +29,6 @@
     ```
     - Install MySQL in the App Store and select version **8.0.33**
 
----
 
 ## 2 armv7l Architecture
 
@@ -54,7 +53,6 @@
 
     **MySQL 8.0 is not yet supported on armv7l in the current 1Panel version.**
 
----
 
 ### 2.2 Install OpenResty
 
