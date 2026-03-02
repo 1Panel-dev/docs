@@ -1,32 +1,36 @@
----
-hide:
-  - navigation
----
+# 1Panel: Modern Open‑Source VPS Control Panel
+1Panel is a modern, open‑source VPS control panel that streamlines administration through an intuitive and clean web interface.
 
-# Introduction
+It allows you to manage your VPS effortlessly—entirely from a web browser.
 
-🎉 **1Panel Won First Place in the Infrastructure Software Category at Gitee Annual Open Source Project Awards**  
-👉 Results: https://gitee.com/activity/2025opensource/top
+Unlike traditional VPS control panels,  
+1Panel fully embraces AI, is built with the modern Go programming language, and supports container‑based application deployment and management.
 
-1Panel is a modern, open-source Linux server management panel with an intuitive and easy-to-use web interface, allowing users to easily manage their Linux servers — including AI agents, local large models, websites, databases, containers, files, and scheduled tasks — all at your fingertips.
+With 1Panel, you can efficiently manage your VPS—even without deep Linux command‑line expertise.
 
-![UI Preview](https://resource.fit2cloud.com/1panel/img/overview.png)
-{ .original }
-<!-- TODO: Update screenshot -->
+Now, let’s explore what 1Panel can do for you!
 
-## 1 Product Advantages
+## Key Features
+### 🔹 One‑Click OpenClaw Deployment
+Seamlessly deploy OpenClaw agents, host local LLMs using Ollama, and monitor GPU utilization—all within a unified workspace.
 
-- **AI Integration**: Quickly deploy the OpenClaw agent, host local large language models (LLMs) via Ollama, and monitor GPU usage in real time.
-- **Efficient Management**: Manage Linux servers easily through a web GUI, including host monitoring, file management, database management, container management, and more.
-- **Rapid Website Building**: Deeply integrated with open-source website builders WordPress and [Halo](https://github.com/halo-dev/halo/), supporting one-click domain binding, SSL certificate configuration, and other operations.
-- **App Store**: Curated selection of high-quality open-source tools and applications for easy installation and upgrades.
-- **Secure & Reliable**: Applications are managed and deployed based on containers for minimal vulnerability exposure, with built-in firewall and log auditing.
-- **One-Click Backup**: Supports one-click backup and restoration, allowing data to be backed up to various cloud storage services for permanent safety.
+### 🔹 One‑Click Website Deployment
+Launch production‑ready websites instantly with automatic domain binding, SSL certificate provisioning, and configuration—zero manual setup required.
 
-## 2 Tutorial Videos
+### 🔹 Curated App Marketplace
+Discover, install, and update trusted open‑source applications (Nextcloud, Bitwarden, Umami, and more) with a single click.
 
-You can find related tutorial videos on Bilibili. [Click here](https://space.bilibili.com/510493147/channel/collectiondetail?sid=1199760)
+### 🔹 Centralized Server Management
+Monitor system resources and manage files, databases, containers, and services effortlessly through a unified, intuitive dashboard.
 
-## 3 Acknowledgments to Contributors
+### 🔹 Enterprise‑Grade Security
+Strengthen your defenses with container isolation, firewall controls, audit logging, and secure deployment practices—ensuring compliance and peace of mind.
 
-[Click to get your contributor certificate and join the community rewards program.](https://www.lxware.cn/1panel-contributors#/)
+### 🔹 Intelligent Backup & Restore
+Schedule automated backups or perform instant restores to local storage or major cloud platforms (AWS S3, Cloudflare R2, and more), with flexible retention and destination options.
+
+## Community & Trust
+1Panel has earned over 34,000 stars on GitHub and surpassed 2 million installations worldwide.  
+Its features, performance, stability, and security are trusted by the global open‑source community.
+
+Welcome to try 1Panel and take full control of your VPS!
