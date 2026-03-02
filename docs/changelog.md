@@ -17,13 +17,16 @@
 2026‑02‑25
 
 !!! note "New Features"
+
     - **Agent**: Support custom model accounts
     - **Agent**: Adapt to latest OpenClaw version
 
 ### v2.1.0
+
 2026‑02‑12
 
 !!! note "New Features"
+
     - **Overview**: Notes module
     - **AI**: OpenClaw agent management
     - **SSL**: Custom ACME account validation
@@ -34,6 +37,7 @@
     - **System**: Key‑based login
 
 !!! note "Improvements"
+
     - **Overview**: Optimize app icon loading
     - **App Store**: Optimize remote app update logic
     - **App Store**: Optimize icon caching
@@ -58,6 +62,7 @@
     - **System**: Validate API parameters
 
 !!! note "Bug Fixes"
+
     - **Overview**: Hostname cache refresh
     - **App Store**: Hide password in plaintext
     - **Website**: Redirect rule display after disable
@@ -78,9 +83,11 @@
     - **System**: System update failure
 
 ### v2.0.17
+
 2026‑01‑16
 
 !!! note "New Features"
+
     - **App Store**: Multi‑node deployment
     - **SSL**: Porkbun DNS support
     - **Database**: Custom backup params for MySQL
@@ -92,6 +99,7 @@
     - **Settings**: Mux mode with SSL
 
 !!! note "Improvements"
+
     - **Website**: UDP listen for TCP/UDP proxy
     - **SSL**: IP cert chain config
     - **Database**: Cache default connection
@@ -105,6 +113,7 @@
     - **System**: Security entrance validation
 
 !!! note "Bug Fixes"
+
     - **App Store**: App icon display
     - **Website**: Duplicate HTTPS redirect
     - **Website**: 404 page sync
@@ -130,9 +139,11 @@
     - **System**: Blank bottom on expand
 
 ### v2.0.16
+
 2025‑12‑25
 
 !!! note "New Features"
+
     - **Website**: TCP/UDP proxy
     - **Website**: Bulk SSL assignment
     - **SSL**: IP certificate support
@@ -144,6 +155,7 @@
     - **System**: Switch node in Task Center
 
 !!! note "Improvements"
+
     - **Website**: HTTP→HTTPS for non‑443
     - **Website**: UI/UX for creation
     - **Website**: Unicode IDN domains
@@ -173,6 +185,7 @@
     - **System**: Browser cache & i18n
 
 !!! note "Bug Fixes"
+
     - **App Store**: MySQL charset selection
     - **App Store**: Local app major update config
     - **Website**: >100 redirects not shown
@@ -197,14 +210,17 @@
     - **System**: Version update failure
 
 ### v2.0.15
+
 2025‑12‑08
 
 !!! note "Improvements"
+
     - **Container**: Compose UI styling
     - **Container**: Volume/device cleanup close
     - **System**: Remove invalid stat check
 
 !!! note "Bug Fixes"
+
     - **App Store**: Update diff highlight
     - **App Store**: Remote MySQL root password
     - **Runtime**: Missing redirect after install
@@ -218,9 +234,11 @@
     - **System**: Captcha function
 
 ### v2.0.14
+
 2025‑12‑04
 
 !!! note "New Features"
+
     - **SSL**: AlibabaCloud ESA DNS
     - **SSL**: Amazon Route 53 DNS
     - **Database**: MySQL charsets & collation
@@ -232,6 +250,7 @@
     - **Cron**: Multiple URLs for visit task
 
 !!! note "Improvements"
+
     - **Overview**: CPU metrics detail
     - **Overview**: Distro info logic
     - **Overview**: Data cache
@@ -266,6 +285,7 @@
     - **System**: App list memory
 
 !!! note "Bug Fixes"
+
     - **Overview**: Uptime display on fast refresh
     - **App Store**: Compose change affect list
     - **App Store**: SQL Server version
@@ -287,9 +307,11 @@
     - **System**: Update service path
 
 ### v2.0.13
+
 2025‑11‑20
 
 !!! note "New Features"
+
     - **App Store**: App migrate node
     - **Website**: Bulk group
     - **Database**: Backup encryption
@@ -309,6 +331,7 @@
     - **System**: OpenWRT/Alpine (no systemctl)
 
 !!! note "Improvements"
+
     - **Overview**: Hide sensitive info
     - **Overview**: Real‑time process
     - **App Store**: Local app arch
@@ -355,6 +378,7 @@
     - **System**: Docker check before restart
 
 !!! note "Bug Fixes"
+
     - **Overview**: Space path display
     - **App Store**: Upgrade notice
     - **App Store**: Container search filter
@@ -380,9 +404,11 @@
     - **System**: Enter submit desc
 
 ### v2.0.12
+
 2025‑10‑22
 
 !!! note "New Features"
+
     - **Website**: Bulk actions
     - **SSL**: OVH DNS
     - **SSL**: ACME-DNS
@@ -404,6 +430,7 @@
     - **Settings**: Email SMTP user
 
 !!! note "Improvements"
+
     - **Overview**: Quick setting tooltip
     - **Overview**: Resource status style
     - **Overview**: Path alias
@@ -460,6 +487,7 @@
     - **System**: Custom backup count
 
 !!! note "Bug Fixes"
+
     - **Overview**: Network monitor layout
     - **App Store**: Post‑install param
     - **App Store**: Edit resource missing
@@ -490,14 +518,17 @@
     - **System**: 1pctl language
 
 ### v2.0.11
+
 2025‑09‑15
 
 !!! note "New Features"
+
     - **Overview**: Quick directory
     - **MCP**: uvx MCP Server
     - **Disk**: Disk management
 
 !!! note "Improvements"
+
     - **Website**: OpenResty build timeout
     - **SSL**: Sort by expire
     - **Runtime**: Log & terminal style
@@ -521,6 +552,7 @@
     - **System**: HTML log
 
 !!! note "Bug Fixes"
+
     - **App Store**: Ignore update still show
     - **Website**: Browser cache wrong
     - **Website**: Hotlink duplicate domain
@@ -542,9 +574,11 @@
     - **System**: API doc
 
 ### v2.0.10
+
 2025‑09‑02
 
 !!! note "New Features"
+
     - **Overview**: Copy system info
     - **App Store**: Copy password
     - **SSL**: Push cert to node
@@ -558,6 +592,7 @@
     - **System**: Historical changelog
 
 !!! note "Improvements"
+
     - **Overview**: Recommend logic
     - **App Store**: Upgrade diff
     - **App Store**: Restart policy
@@ -618,6 +653,7 @@
     - **System**: Log read
 
 !!! note "Bug Fixes"
+
     - **App Store**: Node.js shown not installed
     - **App Store**: Pagination not cache
     - **Website**: OpenResty module upgrade crash
@@ -650,9 +686,11 @@
     - **System**: Page flash
 
 ### v2.0.9
+
 2025‑08‑14
 
 !!! note "Bug Fixes"
+
     - **App Store**: Missing app tags
     - **Website**: IPv6 unstar
     - **Runtime**: PHP Supervisor error
@@ -664,21 +702,26 @@
     - **Settings**: Alert config missing
 
 ### v2.0.8
+
 2025‑08‑07
 
 !!! note "Bug Fixes"
+
     - **App Store**: Sync lock
 
 ### v2.0.7
+
 2025‑08‑07
 
 !!! note "New Features"
+
     - **Website**: HTTPS domain lock
     - **MCP**: Streamable HTTP MCP Server
     - **SSH**: Key management
     - **Cron**: Task grouping
 
 !!! note "Improvements"
+
     - **App Store**: Enter confirm delete
     - **App Store**: Pull timeout message
     - **App Store**: Skip upgrading on uninstall
@@ -698,6 +741,7 @@
     - **System**: Login autocomplete
 
 !!! note "Bug Fixes"
+
     - **App Store**: Ignore update not work
     - **App Store**: Upgrade pull old image
     - **App Store**: Sync lose local tag
@@ -721,20 +765,24 @@
     - **System**: SSH SDK timeout hang
 
 ### v2.0.6
+
 2025‑07‑30
 
 !!! note "New Features"
+
     - **Cron**: Import/export
     - **Cron**: Report log trace & download
     - **Settings**: Tencent COS Lite
     - **System**: Login button color
 
 !!! note "Improvements"
+
     - **Backup**: Optimize filename
     - **Settings**: API whitelist tooltip
     - **System**: Dark mode sidebar
 
 !!! note "Bug Fixes"
+
     - **App Store**: Edit unexposed app bind 127.0.0.1
     - **Website**: Custom domain 443 error
     - **Website**: OpenResty non‑80/443 domain port
@@ -752,15 +800,18 @@
     - **Settings**: Offline alert
 
 ### v2.0.5
+
 2025‑07‑24
 
 !!! note "New Features"
+
     - **Node**: Master/slave switch
     - **HA**: MySQL, PostgreSQL, Redis cluster
     - **Settings**: Email alert
     - **Settings**: Turkish
 
 !!! note "Improvements"
+
     - **App Store**: Use existing remote DB
     - **Website**: HSTS optional
     - **Website**: LB tooltip
@@ -781,6 +832,7 @@
     - **System**: Node switch animation
 
 !!! note "Bug Fixes"
+
     - **Overview**: RAM exclude shared
     - **App Store**: App tag wrong language
     - **App Store**: Log title
@@ -805,12 +857,15 @@
     - **System**: Demo terminal
 
 ### v2.0.4
+
 2025‑07‑07
 
 !!! note "Improvements"
+
     - **Toolbox**: FTP root check
 
 !!! note "Bug Fixes"
+
     - **Overview**: Monitor not auto refresh
     - **App Store**: Stop timeout uninstall
     - **AI**: OpenResty non‑80/443 MCP
@@ -820,9 +875,11 @@
     - **System**: License verify
 
 ### v2.0.3
+
 2025‑07‑04
 
 !!! note "Improvements"
+
     - **Overview**: Show installed apps
     - **App Store**: One‑click container terminal
     - **App Store**: Upgrade diff button
@@ -857,6 +914,7 @@
     - **System**: Uninstall data choice
 
 !!! note "Bug Fixes"
+
     - **Overview**: Wrong distro
     - **Overview**: Console error
     - **Overview**: Mount fail load
@@ -888,13 +946,16 @@
     - **System**: Dropdown overflow
 
 ### v2.0.2
+
 2025‑06‑20
 
 !!! note "New Features"
+
     - **SSL**: Rynu DNS
     - **SSL**: Baidu Cloud DNS
 
 !!! note "Improvements"
+
     - **App Store**: docker‑compose compat
     - **App Store**: Docker not install tip
     - **Runtime**: PHP pcntl extension
@@ -918,6 +979,7 @@
     - **System**: Drawer close
 
 !!! note "Bug Fixes"
+
     - **App Store**: Init container status
     - **App Store**: Local app port
     - **App Store**: Edit field validate
@@ -943,13 +1005,16 @@
     - **System**: 1pctl update port
 
 ### v2.0.1
+
 2025‑06‑13
 
 !!! note "New Features"
+
     - AI Website Builder
     - reg.ru DNS
 
 !!! note "Improvements"
+
     - PHP runtime jump to Files
     - Command container create
     - Toolbox doc link
@@ -957,6 +1022,7 @@
     - EN & zh‑TW translation
 
 !!! note "Bug Fixes"
+
     - Overview align
     - Overview status bar
     - HTTPS SSL protocol
@@ -973,38 +1039,49 @@
     - Slave non‑default port transfer
 
 ### v2.0.0
+
 2025‑06‑10
 
 !!! note "Highlights"
+
     - **Multi‑Server Management**
+    
       One master manages multiple slaves, cross‑server resource scheduling.
 
     - **Custom Repo & Offline Install**
+    
       Custom app/image repos for offline environments.
 
     - **Server File Transfer**
+    
       High‑speed rsync over SSH.
 
     - **Website Management Redesigned**
+    
       - Subwebsites
       - One‑click HTTPS & DB
       - Real IP, type switch, DB switch
 
     - **Website Load Balancer**
+    
       Visual config for high availability.
 
     - **Script Library**
+    
       Manage install scripts, upload custom, use in Cron.
 
     - **Container Page Redesigned**
+    
       - Overview page
       - More create params
       - Command‑line create
 
     - **Snapshot Redesigned**
+    
       Flexible policies.
 
 !!! Abstract "Full List"
+
     - **Task Center** for app/website tasks
     - **WAF** performance
     - Runtime: custom port, env, volume
