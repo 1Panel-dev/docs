@@ -34,6 +34,7 @@
     ```bash
     bash <(curl -sSL https://linuxmirrors.cn/docker.sh)
     ```
+    
     For more information, visit the official site: https://linuxmirrors.cn
 
 !!! note ""
@@ -42,6 +43,7 @@
     ```
     http://<Server Public IP>:<Target Port>/<Security Entrance>
     ```
+    
     - **For cloud servers, open the target port in the security group**
     - **After SSH login to the 1Panel server, run `1pctl user-info` to get the security entrance**
 
