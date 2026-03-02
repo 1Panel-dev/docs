@@ -8,10 +8,13 @@
 !!! note "MySQL 5.7"
 
     - Pull the latest s390x image
+    
     ```bash
     docker pull ibmcom/mysql-s390x:5.7.34
     ```
+    
     - Tag it to match the version used in 1Panel App Store
+    
     ```bash
     docker tag ibmcom/mysql-s390x:5.7.34 mysql:5.7.42
     ```
@@ -20,10 +23,13 @@
 !!! note "MySQL 8.0"
 
     - Pull the latest s390x image
+    
     ```bash
     docker pull ibmcom/mysql-s390x:8.0.25
     ```
+    
     - Tag it to match the version used in 1Panel App Store
+    
     ```bash
     docker tag ibmcom/mysql-s390x:8.0.25 mysql:8.0.33
     ```
@@ -40,13 +46,17 @@
 !!! note "MySQL 5.7"
 
     - Pull the latest armv7l image
+    
     ```bash
     docker pull biarms/mysql:5.7.33-beta-circleci
     ```
+    
     - Tag it to match the version used in 1Panel App Store
+    
     ```bash
     docker tag biarms/mysql:5.7.33-beta-circleci mysql:5.7.42
     ```
+    
     - Install MySQL in the App Store and select version **5.7.42**
 
 !!! note "MySQL 8.0"
@@ -62,11 +72,15 @@
 !!! note ""
 
     - Pull the latest armv7l image
+    
     ```bash
     docker pull imzcc/openresty:1.21.4.1-7-alpine
     ```
+    
     - Tag it to match the version used in 1Panel App Store
+    
     ```bash
     docker tag imzcc/openresty:1.21.4.1-7-alpine openresty/openresty:1.21.4.1-7-focal
     ```
+    
     - Install OpenResty in the App Store
