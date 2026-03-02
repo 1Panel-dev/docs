@@ -10,5 +10,6 @@
 
 ## 2 How big is the 1Panel installer? Does it consume many system resources? Will it affect other applications?
 !!! note ""
+
     - 1Panel is written in Go. The executable file is about 40 MB, and it uses approximately 150 MB of memory at runtime.
     - 1Panel deploys and manages other applications based on Docker, so it has minimal intrusion and impact on the host system.
