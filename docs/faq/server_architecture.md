@@ -34,6 +34,7 @@
     ```bash
     docker tag ibmcom/mysql-s390x:8.0.25 mysql:8.0.33
     ```
+    
     - Install MySQL in the App Store and select version **8.0.33**
 
 
