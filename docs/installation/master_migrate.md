@@ -1,5 +1,3 @@
-# Install and Use 1panel-migrator
-
 ## 1 Install 1panel-migrator
 
 ### 1.1 Obtain the Installation Package
