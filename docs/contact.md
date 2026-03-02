@@ -4,6 +4,7 @@
 
 ## 2 Community Forum
 !!! note ""
+
     Fit2Cloud Official Open Source Community Forum: [Community Forum](https://bbs.fit2cloud.com/c/1p)
     > You can search, ask questions, discuss topics, and share your ideas here.
 
