@@ -1,6 +1,5 @@
-# Installation Requirements and Deployment Guide
-
 ## 1 Environment Requirements
+
 !!! note ""
     **Ensure your system meets the following requirements before installation:**
 
@@ -18,10 +17,12 @@
     - Tencent Cloud: [Tencent Cloud - 2-core 2G 3M Cloud Server from ¥7.92/month, ¥2000 coupon pack free](https://curl.qcloud.com/dK2muFbM). For more cloud product discounts, click [this link](https://curl.qcloud.com/9Ogon25Y)
 
 ## 2 Installation and Deployment
+
 !!! note ""
     GitHub release link: https://github.com/1Panel-dev/1Panel/releases
 
 !!! note ""
+
     Run the following installation script and follow the command-line prompts to complete installation:
     ```bash
     bash -c "$(curl -sSL https://resource.fit2cloud.com/1panel/package/v2/quick_start.sh)"
@@ -29,6 +30,7 @@
 
 !!! note ""
     If you encounter issues like Docker installation failure, try this alternative script:
+    
     ```bash
     bash <(curl -sSL https://linuxmirrors.cn/docker.sh)
     ```
@@ -36,6 +38,7 @@
 
 !!! note ""
     After successful installation, the console will print panel access information. Access 1Panel via browser:
+    
     ```
     http://<Server Public IP>:<Target Port>/<Security Entrance>
     ```
