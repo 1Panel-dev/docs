@@ -1,5 +1,6 @@
 ## 1 Project Repository
 !!! note ""
+
     - [1Panel Issues](https://github.com/1Panel-dev/1Panel/issues)
 
 ## 2 Community Forum
@@ -10,5 +11,6 @@
 
 ## 3 Contact Information
 !!! note ""
+
     - Official Website: http://www.1panel.cn
     - WeChat Group: https://bbs.fit2cloud.com/t/topic/2147
