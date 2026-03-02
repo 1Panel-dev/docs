@@ -8,7 +8,7 @@
 !!! note ""
     After entering the 1Panel console, click **App Store** in the left menu.
 
-![image-20251016110510084](./img/app/appstores.png)
+![image-20251016110510084](../img/app/appstores.png)
 {: .original}
 
 ## 2. Search for AList and Install
