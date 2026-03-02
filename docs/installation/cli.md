@@ -35,6 +35,7 @@ Usage:
   1pctl reset [command]
 
 Available Commands:
+
   domain      Remove domain binding
   entrance    Disable secure entrance
   https       Disable HTTPS login
