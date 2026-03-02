@@ -12,6 +12,7 @@
 
 !!! note ""
     The system currently supports publishing MCP Servers running in **stdio mode** as **SSE mode** for MCP clients, using two methods:
+    
     - Starting the MCP Server via the `npx` command
     - Running the MCP Server as a binary (the binary file must be mounted into the container)
 
