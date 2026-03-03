@@ -1,10 +1,8 @@
+!!! note ""
+    - The website management feature in 1Panel is designed to provide users with a convenient and efficient experience for creating and managing websites.
+    - With 1Panel, users can easily build various types of websites, including static websites, reverse proxy sites, and websites supporting runtime environments such as PHP, Java, Node.js, Go, and Python.
+    - The panel offers comprehensive management options, including domain binding, SSL certificate configuration, HTTPS enabling, pseudo‑static settings, redirection, anti‑leech protection, and more.
+    - In addition, users can implement automatic backup and restoration of website data through 1Panel to ensure data security. With these features, 1Panel helps users easily manage all kinds of websites on their servers.
 
-# Introduction
-
-1Panel's website management feature aims to provide users with a convenient and efficient website creation and management experience.
-
-With 1Panel, users can easily build various types of websites, including static websites, reverse proxy sites, and websites supporting PHP, Java, Node.js, Go, Python, and other runtime environments.
-
-The panel offers comprehensive management options, supporting domain name binding, SSL certificate configuration, HTTPS enablement, pseudo-static settings, redirection, anti-hotlinking, and more.
-
-Furthermore, users can also use 1Panel to implement automatic backup and recovery of website data, ensuring data security. Through these features, 1Panel helps users easily manage various websites on their servers.
+![img.png](../../img/websites/website.png)
+{: .browser-mockup}

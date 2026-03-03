@@ -1,102 +1,153 @@
+!!! note ""
+    **1Panel integrates two widely used Linux firewalls: Firewalld and UFW.**
 
-# Firewall
+    - Firewalld is used on RedHat/CentOS
+    - UFW is used on Debian/Ubuntu
 
-1Panel integrates two widely used Linux firewall software: Firewalld and UFW.
-
-- Firewalld is used by RedHat/CentOS.
-- UFW is used by Debian/Ubuntu.
-
-## Installation
+## 1 Installation
 
 === "RedHat / CentOS"
-    1. Update the repository
-    ```shell
-    sudo yum update
-    ```
-    2. Install firewalld
-    ```shell
-    sudo yum install firewalld
-    ```
-    3. Start the firewalld service
-    ```shell
-    sudo systemctl start firewalld
-    ```
-    4. Before enabling the firewalld firewall, you must explicitly allow incoming SSH connections if you are connecting to your server remotely. Otherwise, you will never be able to connect to the machine.
-    ```shell
-    sudo firewall-cmd --zone=public --add-port=22/tcp --permanent
-    ```
+    !!! note ""
+        **1. Update packages**
 
-        !!! tips "Tips"
-            If SSH is running on a non-standard port, you need to replace the 22 port in the above command with the corresponding SSH port.
-    
-    5. Open the 1Panel system port.
-    ```shell
-    sudo firewall-cmd --zone=public --add-port=8090/tcp --permanent
-    ```
-   
-        !!! tips "Tips"
-            The 8090 port in the above command needs to be replaced with the custom port set during the installation of the 1Panel.
+        ```bash
+        sudo yum update
+        ```
 
-    6. Reload the firewall rules to apply the changes
-    ```shell
-    sudo firewall-cmd --reload
-    ```
-    7. Enable firewalld to start at boot
-    ```shell
-    sudo systemctl enable firewalld
-    ```
+        **2. Install firewalld**
+        
+        ```bash
+        sudo yum install firewalld
+        ```
+
+        **3. Start firewalld**
+        
+        ```bash
+        sudo systemctl start firewalld
+        ```
+        
+        **4. If you connect to your server remotely, you must explicitly allow SSH before enabling firewalld, or you will lose access.**
+
+        ```bash
+        sudo firewall-cmd --zone=public --add-port=22/tcp --permanent
+        ```
+        
+        > If SSH uses a non‑standard port, replace 22 with your actual SSH port.
+        
+        **5. Allow the 1Panel port.**
+
+        ```bash
+        sudo firewall-cmd --zone=public --add-port=8090/tcp --permanent
+        ```
+
+        > Replace 8090 with your actual 1Panel port.
+
+        **6. Reload firewall rules**
+
+        ```bash
+        sudo firewall-cmd --reload
+        ```
+
+        **7. Enable firewalld on boot**
+        
+        ```bash
+        sudo systemctl enable firewalld
+        ```
 
 === "Ubuntu / Debian"
-    1. Update the repository
-    ```shell
-    sudo apt update
-    ```
-    2. Install UFW
-    ```shell
-    sudo apt install ufw
-    ```
-    3. Before enabling the UFW firewall, you must explicitly allow incoming SSH connections if you are connecting to your server remotely. Otherwise, you will never be able to connect to the machine.
-    ```shell
-    sudo ufw allow 22/tcp
-    ```
+    !!! note ""
+        **1. Update packages**
 
-        !!! tips "Tips"
-            If SSH is running on a non-standard port, you need to replace the 22 port in the above command with the corresponding SSH port.
+        ```bash
+        sudo apt update
+        ```
 
-    4. Open the 1Panel system port.
-    ```shell
-    sudo ufw allow 8090/tcp
-    ```
-   
-        !!! tips "Tips"
-            The 8090 port in the above command needs to be replaced with the custom port set during the installation of the 1Panel.
+        **2. Install UFW**
+        
+        ```bash
+        sudo apt install ufw
+        ```
 
-    5. Start UFW
-    ```shell
-    sudo ufw enable
-    ```
+        **3. If you connect to your server remotely, you must explicitly allow SSH before enabling UFW, or you will lose access.**
 
-## Port rule
+        ```bash
+        sudo ufw allow 22/tcp
+        ```
+        
+        > If SSH uses a non‑standard port, replace 22 with your actual SSH port.
 
-By clicking the `Create Rule` button, you can set up port rules.
+        **4. Allow the 1Panel port.**
 
-- Protocol: The default is TCP protocol, with options including TCP, UDP, and TCP/UDP protocols. Choose based on your actual needs.
-- Port: Enter the port you want to set the rule for, customizable, with a port range of 0-65535.
-- Source: The default is all IPs, with options including all IPs and specific IPs.
-- Policy: The default is allow, with options including allow and deny.
+        ```bash
+        sudo ufw allow 8090/tcp
+        ```
 
-!!! tips "Tips"
-    **After successfully opening a port, you can view the firewall list to check the current port's operation status.**
+        > Replace 8090 with your actual 1Panel port.
 
-## Port-forward rule
+        **5. Enable UFW**
+        
+        ```bash
+        sudo ufw enable
+        ```
 
-Click the `Create Port-Forward rule` button to set up a port forwarding rule.
+## 2 Firewall Status
 
-- Protocol: Default is TCP protocol, with options including TCP, UDP, and TCP/UDP protocols. Choose based on your actual needs.
-- Source Port: The packet sent to the source port will be forwarded to `Target IP:Target Port`, with a port range of 0-65535.
-- Destination IP: If it is local port forwarding, the target IP is: 127.0.0.1; if the target IP is not filled in, it defaults to local port forwarding.
-- Destination Port: The target port that receives the forwarded packet.
+!!! note ""
+    **Click the firewall switch to turn it on or off.**
+    
+![img.png](../../img/hosts/firewall_switch.png)
+{: .original}
 
-## IP rule
+!!! note ""
+    **Click the Ping Disable button to enable or disable PING.**
 
-By clicking the `Create IP Rule` button, you can set up IP rules.
+    - Disabling PING prevents server performance degradation caused by frequent pings.
+
+![img.png](../../img/hosts/firewall_ping.png)
+{: .original}
+
+## 3 Port Rules
+
+!!! note ""
+    **Click Create Port Rule to configure port access.**
+
+    - Protocol: Default TCP; options: TCP, UDP, TCP/UDP
+    - Port: Custom port (0–65535)
+    - Source: Default All IPs; options: All IPs, Specified IP
+    - Policy: Default Allow; options: Allow, Deny
+
+!!! note ""
+    **After allowing ports, you can view the current status in the firewall list.**
+
+![img.png](../../img/hosts/firewall_port_list.png)
+{: .original}
+
+![img.png](../../img/hosts/firewall_port_create.png)
+{: .original}
+
+## 4 Port Forwarding
+
+!!! note ""
+    **Click Create Port Forwarding to set up forwarding rules.**
+
+    - Protocol: Default TCP; options: TCP, UDP, TCP/UDP
+    - Source Port: Packets to this port are forwarded to Target IP:Target Port (0–65535)
+    - Target IP: For local forwarding, use 127.0.0.1; empty means local forwarding
+    - Target Port: Port that receives forwarded traffic
+
+![img.png](../../img/hosts/firewall_port_forward.png)
+{: .original}
+
+## 5 IP Rules
+
+!!! note ""
+    **Click Create IP Rule to set IP access policies.**
+
+    - Specified IP
+    - Policy: Default Allow; options: Allow, Block
+
+![img.png](../../img/hosts/firewall_ip_list.png)
+{: .original}
+
+![img.png](../../img/hosts/firewall_ip_create.png)
+{: .original}

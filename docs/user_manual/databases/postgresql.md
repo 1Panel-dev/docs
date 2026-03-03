@@ -1,78 +1,120 @@
-# PostgreSQL
+## 1 Manage Database Instances
 
-## Mange DB instance
+### 1.1 Install Database from App Store
 
-### PostgreSQL instance from App Store
+!!! note ""
+    PostgreSQL databases installed through the App Store will automatically appear in the database instance list.
 
-PostgreSQL database applications installed through the App Store will automatically appear in the database instance list.
+### 1.2 Remote Server
 
-### Remote PostgreSQL instance
+!!! note ""
+    In addition to local databases installed from the App Store, you can also add existing database service addresses. Click the **Remote Server** button above the list to enter the remote server management page.
 
-Beyond the local database installed via the App Store, you can also add existing database addresses. By clicking the `Manage remote servers` button located at the top of the list, you will be directed to the remote server management page.
+![img.png](../../img/databases/postgresql_remote.png)
+{: .original}
 
-Here, you can bind a remote server by filling in the connection and authentication information.
+![img.png](../../img/databases/postgresql_remote_add.png)
+{: .original}
 
-### Switching Database Instances
+### 1.3 Switch Database Instance
 
-By clicking the dropdown menu at the top of the database list, you can switch between different database instances, managing databases and settings under different instances.
+!!! note ""
+    Click the drop-down menu above the database list to switch between different database instances and manage databases and settings under different instances.
 
-## Creating a database
+![img.png](../../img/databases/postgresql_select.png)
+{: .original}
 
-!!! node "Parameters"
-    - Name: The name of the new database, supporting character encoding settings.
-    - Username: The username for accessing the database.
-    - Password: Defaults to a random password, which can be modified as needed.
+## 2 Create Database
 
-## Connection information
+!!! note ""
+    To create a new database, enter the database name, username, password, and set access permissions.
 
-Clicking the `View connection info` button at the top of the list allows you to view the database's address, port, and root password, and also modify the database root password.
+![img.png](../../img/databases/create_postgresql_db.png)
+{: .original}
 
-!!! info "Info"
-    Databases installed via the App Store operate within a container. Depending on the scenario, you must choose the appropriate connection information as prompted on the page.
+!!! note ""
+    - Database Name: Name of the new database
+    - Username: Username for accessing the database
+    - Password: Random by default, can be modified manually
+    - Access Permission: Defaults to local server; options: local server, all hosts, specified IP
 
-## Sync with server
+## 3 View Connection Information
 
-If the database list information does not match the actual situation, possibly due to the use of other database tools or applications, clicking the "Sync with Server" button at the top of the list initiates an active query of the current database list directly from the database instance.
+!!! note ""
+    Click the **Connection Information** button above the list to view the database address, port, admin username and password, and other connection details. You can also change the admin password here.
 
-## WEB UI
+![img.png](../../img/databases/postgresql_connect.png)
+{: .original}
 
-To manage PostgreSQL databases using a WEB UI, click the `PGAdmin4` button at the top of the list, which will redirect you to the corresponding tool page.
+!!! note "Note"
+    Databases deployed from the App Store run in containers. Select the corresponding connection information according to the scenario shown on the page.
 
-## Backup database
+## 4 Sync from Server
 
-The backup operation in the operation column allows you to back up the current database content or manage existing backups.
+!!! note ""
+    If databases are modified using other tools or applications and the list becomes inconsistent, click **Sync from Server** to refresh the database list from the server.
 
-!!! info "Info"
-    - The default backup path is `/opt/1panel/backup/database/postgresql`.
-    - Backups are performed using `pg_dump`.
+## 5 WEB Management Tool
 
-## Restore from a backup
+!!! note ""
+    To manage PostgreSQL via a web GUI, click the **PGAdmin4** button above the list to jump to the corresponding tool page.
 
-By clicking the import backup button, you can choose to upload locally or restore from an existing backup file.
+## 6 Backup
 
-!!! info "Info"
+!!! note ""
+    Click the backup button to back up the current database.
 
-    - Ensure the `.sql` file is present in the uploaded archive when restoring from an uploaded file, as its absence will result in an unsuccessful import.
+![img.png](../../img/databases/backup_postgresql_db.png)
+{: .original}
 
-## Change permissions
+!!! note ""
+    - Default backup path: `/opt/1panel/backup/database/postgresql`
+    - Backup uses `pg_dump`
 
-Click the `Change permissions` button in the operation column to modify whether the user bound to the current database is a superuser.
+## 7 Restore
 
-## DB instance Operations
+!!! note ""
+    Click **Import Backup** to upload a local file or select an existing backup for restoration.
 
-You can stop/start the current DB instance in the status bar. And by clicking the `Configure` button, you can access the specific database settings page, which encompasses configuration modification, port, logs, and slow logs.
+![img.png](../../img/databases/recover_postgresql_db.png)
+{: .original}
 
-### Configuration file
+!!! note ""
+    - When restoring from an uploaded file, ensure the archive contains a `test.sql` file, otherwise import will fail.
 
-The configuration page enables manual adjustments to the database configuration.
+## 8 Permission Settings
 
-!!! info "Info"
-    For PostgreSQL installed through the App Store, the default configuration file is located at `/opt/1panel/apps/postgresql/[App name]/data/postgresql.cnf`.
+!!! note ""
+    Click the **Permissions** button in the action column to set whether the user bound to the current database is a superuser.
 
-!!! warning "Warning"
-    - In the event of incorrect database configuration leading to service startup failures, attempt to restore the default configuration and save it.
-    - It is crucial to exercise caution when modifying the database configuration, as incorrect settings can result in the PostgreSQL service becoming unavailable.
+## 9 Change Password
 
-### Port
+!!! note ""
+    Change the password for the user bound to the current database.
+    **Note**: This does **not** change the default admin password.
 
-In addition to setting the port during PostgreSQL application installation, the `Port` page also allows for port modifications.
+## 10 Database Configuration
+
+!!! note ""
+    Click the settings button in the status bar to enter the database settings interface, including configuration editing, port, and log viewing.
+    You can manually adjust database configuration in the configuration interface.
+
+![img.png](../../img/databases/postgresql_conf.png)
+{: .original}
+
+!!! note ""
+    - PostgreSQL is installed via Docker; configuration file is mounted at `/opt/1panel/apps/postgresql/[database-name]/data/postgresql.cnf`
+    - **Warning**: Incorrect configuration may make PostgreSQL unavailable; modify with caution
+
+## 11 Port
+
+!!! note ""
+    Besides setting the port during installation, you can modify it directly in the settings interface.
+
+## 12 Logs
+
+!!! note ""
+    - PostgreSQL runs in Docker; logs shown are from the corresponding container. Supports time filtering, real-time follow, and download operations.
+
+![img.png](../../img/databases/postgresql_log.png)
+{: .original}

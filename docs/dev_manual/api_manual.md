@@ -1,38 +1,95 @@
-# API Manual
+!!! note ""
+This document details how to use custom Token verification to access panel APIs in third-party services.
 
-## API document
+## 1 API Configuration Instructions
 
-1Panel leverages Swagger to offer built-in API documentation, accessible via the following URL:
+!!! note ""
+    
+    After logging in, you can view all APIs by accessing the swagger address: `{host}:{port}/1panel/swagger/index.html`.
 
-```text
-http://IP:port/1panel/swagger/index.html
-```
+### 1.1 Custom Token Format
 
-![API Document](../img/dev_manual/api_docs.png)
-{: .browser-mockup .with-url }
+!!! note ""
 
-## API authorization
+    1Panel has designed the following custom Token format for identity authentication of API requests:
 
-When calling the 1Panel API, authorization is required based on the following two request headers:
-
-| Header Name | Description |
-|:---|:---|
-| 1Panel-Token | 1Panel's custom token format, generated with `md5sum('1panel' + API-key + UnixTimestamp)` method |
-| 1Panel-Timestamp | The timestamp used in the 1Panel-Token |
-
-The API-key used to generate the 1Panel-Token can be viewed or reset on the 1Panel Console `Settings` - `Panel` page.
-
-![API key](../img/dev_manual/api_key.png)
-{: .browser-mockup .with-url }
-
-## Sample code
-
-=== "shell"
-    ```shell
-    # Replace with your actual API key
-    PANEL_API_KEY="Le7mny7s9DJrUP1pj6bbpGsqxHg6VJBG"
-    PANEL_TIMESTAMP=$(date +%s)
-    PANEL_TOKEN=$(echo -n "1panel${PANEL_API_KEY}${PANEL_TIMESTAMP}" | md5sum | awk '{print $1}')
-    # Replace `http://IP:port` with your actual 1Panel access address
-    curl -iL -H "1Panel-Token: ${PANEL_TOKEN}" -H "1Panel-Timestamp: ${PANEL_TIMESTAMP}" "http://IP:port/api/v1/dashboard/base/os"
+    ```text
+    Token = md5('1panel' + API-Key + UnixTimestamp)
     ```
+
+    Components:
+
+    - Fixed prefix: '1panel'
+    - API-Key: Panel API interface key
+    - UnixTimestamp: Current Unix timestamp (in seconds)
+
+### 1.2 Request Header Design
+
+!!! note ""
+
+    Each request must carry the following two Headers:
+    
+    | Header Name        | Description              |
+    |-------------------|--------------------------|
+    | 1Panel-Token      | Custom Token value       |
+    | 1Panel-Timestamp  | Current Unix timestamp   |
+
+    Example request header:
+    
+    ```bash
+    curl -X POST "http://{host}:{port}/api/v2/toolbox/device/base" \
+    -H "1Panel-Token: <1panel_token>" \
+    -H "1Panel-Timestamp: <current_unix_timestamp>"
+    ```
+
+### 1.3 Example Implementation Code
+
+!!! note ""
+    Take the Go language as an example to show the corresponding implementation code:
+
+    ```go
+    func validateToken(c *gin.Context) error {
+        panelToken := c.GetHeader("1Panel-Token")
+        panelTimestamp := c.GetHeader("1Panel-Timestamp")
+        systemToken := panelToken
+        systemKey = ******* // Panel API key
+        expectedToken := md5Sum("1panel" + systemKey + panelTimestamp)
+        if systemToken != expectedToken {
+            return fmt.Errorf("invalid token")
+        }
+        return nil
+    }
+    
+    func md5Sum(data string) string {
+        h := md5.New()
+        h.Write([]byte(data))
+        return hex.EncodeToString(h.Sum(nil))
+    }
+    ```
+
+## 2 Notes
+
+!!! note ""
+
+    - Timestamp validity: It is necessary to ensure time synchronization between the server and the client, otherwise verification will fail. It is recommended to use NTP for time synchronization.
+    - Whitelist usage: Add trusted IPs or IP segments to the whitelist to avoid the overhead of frequent Token verification; if you need to allow all IPs, you can configure `0.0.0.0/0` (all IPv4) and `::/0` (all IPv6).
+
+## 3 Frequently Asked Questions
+
+!!! note ""
+    
+    - What if the 1Panel-Token or 1Panel-Timestamp is incorrect?
+
+        The backend will return 401 Unauthorized with the prompt "API interface key error".
+
+    - How to generate 1Panel-Token
+    
+        Please refer to the following pseudocode:
+    
+        ```javascript
+        const token = md5('1panel' + clientToken + unixTimestamp);
+        ```
+
+    - Why two Headers are required
+    
+        To increase the complexity of verification and enhance security at the same time.

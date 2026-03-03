@@ -1,34 +1,72 @@
+!!! note ""
+    The toolbar above the website list can be used to view and configure OpenResty.
 
-# OpenResty Operations
+## 1 Stop / Start / Restart
 
-The toolbar above the website list is used to view and configure OpenResty.
+!!! note ""
+    You can manage the OpenResty application by clicking the Stop, Start, or Restart buttons.
 
-## Stop/start/restart
+![img.png](../../img/websites/openresty_setting.png)
+{: .browser-mockup}
 
-OpenResty applications can be managed through `Start`, `Stop` and `Restart` buttons.
+## 2 Reload
 
-## Reload
+!!! note ""
+    Allows you to quickly apply configuration changes without downtime, ensuring high availability of website services.
 
-Allows users to quickly apply configuration changes without downtime, ensuring high availability of website services.
+![img.png](../../img/websites/openresty_reload.png)
+{: .browser-mockup}
 
-## Settings
+## 3 Settings
 
-### Current status
+### 3.1 Current Status
 
-Displays the current status of OpenResty, including active connections, total connections, total handshake times, total request counts, request counts, response counts, and resident processes.
+!!! note ""
+    View the current status of the website, including active connections, total connections, total handshakes, total requests, number of requests, number of responses, and resident processes.
 
-### Configuration File
+![img.png](../../img/websites/openresty_status.png)
+{: .browser-mockup}
 
-This section allows you to view and modify the OpenResty configuration file. To reset the configuration file to its default settings, click the `Default Configuration` button.
+### 3.2 Configuration Modification
 
-### Performance Tuning
+!!! note ""
+    - Configure OpenResty's configuration files
+    - Click the **Default Configuration** button to restore the configuration file to its default state
 
-Adjust OpenResty's performance parameters as necessary.
+![img.png](../../img/websites/openresty_conf.png)
+{: .browser-mockup}
 
-### Log
+### 3.3 Performance Tuning
 
-View OpenResty logs, supporting real-time tracking, download, and clearing operations, with the ability to filter logs by specific time periods and line numbers.
+!!! note ""
+    Adjust relevant configuration parameters of OpenResty.
 
-## Clean reverse proxy cache
+![img.png](../../img/websites/openresty_performance.png)
+{: .browser-mockup}
 
-This feature is used to clear the reverse proxy cache, ensuring that users get the latest content and resources.
+### 3.4 Logs
+
+!!! note ""
+    View OpenResty logs, with support for real-time tracking, downloading, clearing, and filtering logs by specified time range and number of lines.
+
+![img.png](../../img/websites/openresty_log.png)
+{: .browser-mockup}
+
+### 3.5 Modules
+
+!!! note ""
+    Manage OpenResty modules, including:
+    
+    - View the list of installed modules
+    - Enable/disable specified modules
+    - Create, edit, and delete modules
+
+    After changing module configurations, click the **Build** button to apply the settings. OpenResty will automatically restart after a successful build.
+
+!!! note ""
+    If building custom modules, place the module's source package in the directory `/opt/1panel/apps/openresty/openresty/build/tmp` (/opt is the installation directory of 1Panel).  
+    The parameter format is similar to `--add-module=/tmp/nginx-rtmp-module` (must use /tmp).  
+    Example script: `unzip -o /tmp/nginx-rtmp-module.zip -d /tmp` (must use /tmp).  
+
+![img.png](../../img/websites/openresty_module.png)
+{: .browser-mockup}

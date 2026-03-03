@@ -1,39 +1,51 @@
-## 1 面板日志
+## 1 Panel Logs
 
-### 操作日志
+### 1.1 Operation Logs
 
-用于记录用户在 1Panel 上进行的操作。
+!!! note ""
+    Records user operations performed in 1Panel.
 
-![面板日志-操作日志](../img/logs/面板日志-操作日志.png)
+![Panel Logs - Operation Logs](../img/logs/面板日志-操作日志.png)
+{: .original}
 
-### 访问日志
+### 1.2 Access Logs
 
-用于记录 1Panel 控制台的访问日志。
+!!! note ""
+    Records access logs to the 1Panel dashboard.
 
-![面板日志-访问日志](../img/logs/面板日志-访问日志.png)
+![Panel Logs - Access Logs](../img/logs/面板日志-访问日志.png)
+{: .original}
 
-### 系统日志
+### 1.3 System Logs
 
-用于记录 1Panel 服务的运行日志，可用于开发人员等快速定位问题。
+!!! note ""
+    Records runtime logs of the 1Panel service, used by developers to quickly troubleshoot issues.
 
-![面板日志-系统日志](../img/logs/面板日志-系统日志.png)
+![Panel Logs - System Logs](../img/logs/面板日志-系统日志.png)
+{: .original}
 
-## 2 登录日志
+## 2 Login Logs
 
-主要记录服务器的 ssh 登录记录，可用于查询是否有人恶意登录和操作。
+!!! note ""
+    Mainly records server SSH login events, used to check for unauthorized logins and operations.
 
-!!! info "提示"
+!!! note "Tip"
+    Log content is read from the system SSH login files, usually located at
+    `/var/log/secure` or `/var/log/auth.log`.
 
-    日志内容从操作系统 SSH 登录日志文件中读取而来，文件位置一般为 `/var/log/secure` 或者 `/var/log/auth.log`。
+    To clear login logs, you can manually delete historical content in these files.
 
-    当需要清理登录日志时，可以手动删除上述文件中的历史内容。
+![Login Logs](../img/logs/登录日志.png)
+{: .original}
 
-![登录日志](../img/logs/登录日志.png)
+## 3 Website Logs
 
-## 3 网站日志
-
-用于查看在 1Panel 上创建的各个网站的日志，分为运行日志和错误日志，可以用于排查网站的访问问题。
+!!! note ""
+    Displays logs for websites created in 1Panel, including runtime logs and error logs,
+    which can be used to troubleshoot website access issues.
 
 ![img.png](../img/logs/网站日志-运行日志.png)
+{: .original}
 
 ![img.png](../img/logs/网站日志-错误日志.png)
+{: .original}

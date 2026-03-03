@@ -1,44 +1,92 @@
-# Creating a Website
+!!! note ""
+    Supports one‑click deployment of multiple website creation methods, including runtime environments (PHP, Java, Node.js, Go, Python), reverse proxies, and static websites, meeting the needs for rapid deployment of different types of websites.
 
-Supports various website creation methods, including deployed applications, runtime environments (PHP, Java, Node.js, Go, Python), reverse proxy, and static websites, to meet the fast construction needs of different types of websites.
+## 1 One‑Click Deployment
 
-## General Settings
+!!! note ""
+    You can easily deploy websites using applications from the App Store, such as WordPress and Halo.
 
-!!! note "Parameters"
-    - **Group**: Select the group to which the website belongs;
-    - **Primary domain**: Enter the primary domain name and its port to be bound;
-    - **Other domains**: Enter other domain names and their ports to be bound;
-    - **Listen IPv6**: Enable the server to receive client requests through IPv6 addresses;
-    - **Alias**: Set the folder name for the website directory;
-    - **Description**: Write a description of the purpose of the site;
+    - **Group**: Select the group the website belongs to
+    - **App Type**: Choose an installed app or install a new one
+    - **App Parameters**: Fill in relevant parameters if installing a new app
+    - **Primary Domain**: Enter the main domain and port to bind
+    - **Other Domains**: Enter additional domains and ports to bind
+    - **Listen on IPv6**: Allow the server to accept client requests via IPv6
+    - **Alias**: Set the folder name for the website directory
+    - **Enable HTTPS**: Turn on HTTPS and select an SSL certificate
+    - **Remark**: Describe the purpose of the site
 
-## Website backed with Application
+![img.png](../../img/websites/auto_create.png)
+{: .browser-mockup}
 
-You can easily deploy a website using applications provided in the App Store, such as WordPress.
+## 2 Runtime Environment
 
-!!! note "Parameters"
-    - **Application Type**: Select an installed application or a new application to install;
-    - **Application Parameters**: If you choose to install a new application, please fill in the relevant parameters;
+!!! note ""
+    You can create a website using an existing runtime environment.
 
-## Website backed with Runtime
+    - **Group**: Select the group the website belongs to
+    - **Type**: Choose the runtime type and an existing environment (supports PHP, Java, Node.js, Go, Python, .NET)
+    - **Port**: Specify the port for the website service
+    - **Primary Domain**: Enter the main domain and port to bind
+    - **Other Domains**: Enter additional domains and ports to bind
+    - **Listen on IPv6**: Allow the server to accept client requests via IPv6
+    - **Alias**: Set an alias as the folder name for the website directory
+    - **Create FTP**: Create an FTP account for the site with the directory pointing to the site folder
+    - **Create Database**: Create a database for the site at the same time
+    - **Enable HTTPS**: Turn on HTTPS and select an SSL certificate
+    - **Remark**: Describe the function of the site
 
-You can create a website using the added runtime environment.
+![img.png](../../img/websites/website_runtime_create.png)
+{: .browser-mockup}
 
-!!! note "Parameters"
-    - **Type**: Select the type of runtime environment (currently supports PHP, Java, Node.js, Go, and Python);
-    - **Runtime**: Choose a created runtime environment;
-    - **FTP**: Create an FTP account corresponding to the site, with the FTP directory pointing to the site's directory;
+## 3 Reverse Proxy
 
-## Reverse proxy
+!!! note ""
+    Supports creating reverse proxy websites to forward requests to other services.
 
-Create a reverse proxy website to forward requests to other services on this server or other servers.
+    - **Group**: Select the group the website belongs to
+    - **Primary Domain**: Enter the main domain and port to bind
+    - **Other Domains**: Enter additional domains and ports to bind
+    - **Listen on IPv6**: Allow the server to accept client requests via IPv6
+    - **Alias**: Set the folder name for the website directory
+    - **Proxy Address**: Enter the address of an existing service or select from installed apps
+    - **Enable HTTPS**: Turn on HTTPS and select an SSL certificate
+    - **Remark**: Describe the function or purpose of the site
 
-!!! note "Parameters"
-    - **Proxy Address**: Enter the address of the existing service;
+![img.png](../../img/websites/proxy_create.png)
+{: .browser-mockup}
 
-## Static website
+## 4 Static Website
 
-Create a static website, providing streamlined deployment and management capabilities, simplifying the process for users to publish and maintain static content.
+!!! note ""
+    Supports quick creation of static websites with convenient deployment and management, allowing you to easily publish and maintain static content.
+    
+    - **Group**: Select the group the website belongs to
+    - **Primary Domain**: Enter the main domain and port to bind
+    - **Other Domains**: Enter additional domains and ports to bind
+    - **Listen on IPv6**: Allow the server to accept client requests via IPv6
+    - **Alias**: Set an alias as the folder name for the website directory
+    - **Create FTP**: Create an FTP account for the site with the directory pointing to the site folder
+    - **Enable HTTPS**: Turn on HTTPS and select an SSL certificate
+    - **Remark**: Briefly describe the function or purpose of the site
 
-!!! note "Parameters"
-    - **FTP**: Create an FTP account corresponding to the site, with the FTP directory pointing to the site's directory;
+![img.png](../../img/websites/static_create.png)
+{: .browser-mockup}
+
+## 5 Sub‑Website
+
+!!! note ""
+    Create a sub‑website for an existing PHP or static website. The sub‑website can use a subdirectory of the parent site as its root directory.
+    
+    - **Group**: Select the group the website belongs to
+    - **Parent Website**: Select the parent website of this sub‑site
+    - **Runtime Directory**: Choose a subdirectory under the parent site’s runtime directory
+    - **Primary Domain**: Enter the main domain and port to bind
+    - **Other Domains**: Enter additional domains and ports to bind
+    - **Listen on IPv6**: Allow the server to accept client requests via IPv6
+    - **Alias**: Set an alias as the folder name for the website directory
+    - **Enable HTTPS**: Turn on HTTPS and select an SSL certificate
+    - **Remark**: Briefly describe the function or purpose of the site
+
+![img.png](../../img/websites/subsite_create.png)
+{: .browser-mockup}

@@ -1,93 +1,152 @@
-# MySQL and MariaDB
+## 1 Manage Database Instances
 
-## Mange DB instance
+### 1.1 Install Database from App Store
 
-### MySQL/MariaDB instance from App Store
+!!! note ""
+    MySQL and MariaDB databases installed through the App Store will automatically appear in the database instance list.
 
-MySQL and MariaDB database applications installed through the App Store will automatically appear in the database instance list.
+### 1.2 Remote Server
 
-### Remote MySQL/MariaDB instance
+!!! note ""
+    In addition to local databases installed from the App Store, you can also add existing database service addresses. Click the **Remote Server** button above the list to enter the remote server management page.
 
-Beyond the local database installed via the App Store, you can also add existing database addresses. By clicking the `Manage remote servers` button located at the top of the list, you will be directed to the remote server management page.
+![img.png](../../img/databases/mysql_remote.png)
+{: .original}
 
-Here, you can bind a remote server by filling in the connection and authentication information.
+![img.png](../../img/databases/mysql_remote_add.png)
+{: .original}
 
-### Switching Database Instances
+### 1.3 Switch Database Instance
 
-By clicking the dropdown menu at the top of the database list, you can switch between different database instances, managing databases and settings under different instances.
+!!! note ""
+    Click the drop-down menu above the database list to switch between different database instances and manage databases and settings under different instances.
 
-## Creating a database
+![img.png](../../img/databases/mysql_select.png)
+{: .original}
 
-!!! node "Parameters"
-    - Name: The name of the new database, supporting character encoding settings.
-    - Username: The username for accessing the database.
-    - Password: Defaults to a random password, which can be modified as needed.
-    - Permissions: Defaults to local server permissions, with options including: all users, and specified IPs.
+## 2 Create Database
 
-## Connection information
+!!! note ""
+    To create a new database, first enter the database name, select the encoding format, enter the password, and set access permissions.
 
-Clicking the `View connection info` button at the top of the list allows you to view the database's address, port, and root password, and also modify the database root password.
+![img.png](../../img/databases/create_mysql_db.png)
+{: .original}
 
-!!! info "Info"
-    Databases installed via the App Store operate within a container. Depending on the scenario, you must choose the appropriate connection information as prompted on the page.
+!!! note ""
+    - Database Name: Name of the new database, with default encoding UTF-8
+    - Username: Username for accessing the database
+    - Password: Random by default, can be modified manually
+    - Access Permission: Defaults to local server; options: local server, all hosts, specified IP
 
-## Sync with server
+## 3 View Connection Information
 
-If the database list information does not match the actual situation, possibly due to the use of other database tools or applications, clicking the "Sync with Server" button at the top of the list initiates an active query of the current database list directly from the database instance.
+!!! note ""
+    Click the **Connection Information** button above the list to view the database address, port, root password, and other connection details. You can also change the root password here.
 
-## WEB UI
+![img.png](../../img/databases/mysql_connect.png)
+{: .original}
 
-To manage MySQL databases using a WEB UI, click the `Manage database` button at the top of the list, which will redirect you to the corresponding tool page.
+!!! note "Note"
+    Databases deployed from the App Store run in containers. Select the corresponding connection information according to the scenario shown on the page.
 
-!!! info "Supported management tools"
+## 4 Sync from Server
+
+!!! note ""
+    If databases are modified using other tools or applications and the list becomes inconsistent, click **Sync from Server** to refresh the database list from the server.
+
+## 5 WEB Management Tool
+
+!!! note ""
+    To manage MySQL via a web GUI, click the **Manage** button above the list to jump to the corresponding tool.
+
+    Supported management tools:
     - [phpMyAdmin](https://www.wpdaxue.com/series/phpmyadmin)
     - Adminer
 
-## Backup database
+## 6 Backup
 
-The backup operation in the operation column allows you to back up the current database content or manage existing backups.
+!!! note ""
+    Click the backup button to back up the current database.
 
-!!! info "Info"
-    - The default backup path is `/opt/1panel/backup/database/mysql` or `/opt/1panel/backup/database/mariadb`.
-    - Backups are performed using `mysqldump`.
+![img.png](../../img/databases/backup_mysql_db.png)
+{: .original}
 
-## Restore from a backup
+!!! note ""
+    - Default backup path: `/opt/1panel/backup/database/mysql`
+    - Backup uses `mysqldump`
 
-By clicking the import backup button, you can choose to upload locally or restore from an existing backup file.
+## 7 Restore
 
-!!! info "Info"
+!!! note ""
+    Click **Import Backup** to upload a local file or select an existing backup for restoration.
 
-    - Ensure the `.sql` file is present in the uploaded archive when restoring from an uploaded file, as its absence will result in an unsuccessful import.
-    - The imported SQL file must adhere to standard formatting. SQL files exported using phpMyAdmin may be missing version and encoding information, potentially causing issues with mysqldump imports.
-    - If normal import attempts fail, consider using phpMyAdmin for the import process.
+![img.png](../../img/databases/recover_mysql_db.png)
+{: .original}
 
-## Change permissions
+!!! note ""
+    - When restoring from an uploaded file, ensure the archive contains a `test.sql` file, otherwise import will fail
+    - Imported SQL files must follow standard format; SQL files exported from phpMyAdmin may lack version/encoding info and fail with `mysqldump`
+    - If import fails, try using phpMyAdmin instead
 
-Click the `Change permissions` button in the operation column to modify the access permissions for a specific database. Currently, you can configure access for all users or specific IPs.
+## 8 Permission Settings
 
-## DB instance Operations
+!!! note ""
+    Click the **Permissions** button in the action column to modify access permissions for a specific database. Supports access from all hosts or specified IPs.
 
-You can stop/start the current DB instance in the status bar. And by clicking the `Configure` button, you can access the specific database settings page, which encompasses configuration modification, current status, performance tuning, port, logs, and slow logs.
+![img.png](../../img/databases/update_mysql_db_access.png)
+{: .original}
 
-### Configuration file
+!!! note ""
+    - All Hosts: Anyone can connect remotely
+    - IP Address: Only specified IPs are allowed; separate multiple IPs with commas
+    - To enable public access, allow the MySQL port (default 3306) in the firewall
 
-The configuration page enables manual adjustments to the database configuration.
+## 9 Change Password
 
-!!! info "Info"
-    For MySQL/MariaDB installed through the App Store, the default configuration file is located at `/opt/1panel/apps/[mysql/mariadb]/[App name]/conf/my.cnf`.
+!!! note ""
+    Change the password for the current database user.
+    **Note**: This does **not** change the root password.
 
-!!! warning "Warning"
-    - In the event of incorrect database configuration leading to service startup failures, attempt to restore the default configuration and save it.
-    - It is crucial to exercise caution when modifying the database configuration, as incorrect settings can result in the MySQL service becoming unavailable.
+## 10 Database Configuration
 
-### Current state
+!!! note ""
+    Click the settings button in the status bar to enter the database settings interface, including configuration editing, current status, performance tuning, port, logs, and slow query logs.
+    You can manually adjust database configuration in the configuration interface.
 
-To address slow database queries, navigate to the `Current state` page, and review the status of key metrics such as cache hit rates and index hit rates to optimize database performance.
+![img.png](../../img/databases/mysql_conf.png)
+{: .original}
 
-### Performance tuning
+!!! note ""
+    - MySQL is installed via Docker; configuration file is mounted at `/opt/1panel/apps/mysql/[database-name]/conf/my.cnf`
+    - **Warning**: Incorrect configuration may make MySQL unavailable; modify with caution
+    - If the service fails to start due to invalid configuration, restore the default settings and save
 
-The system offers a form-based interface for directly adjusting database performance parameters, including index buffer and connection numbers. Furthermore, it provides pre-set optimization plans that users can choose based on their system environment.
+## 11 Current Status
 
-### Port
+!!! note ""
+    When database queries are slow, go to the database settings and click **Current Status** to view key metrics such as cache hit ratio and index hit ratio for performance optimization.
 
-In addition to setting the port during MySQL application installation, the `Port` page also allows for port modifications.
+![img.png](../../img/databases/mysql_status.png)
+{: .original}
+
+## 12 Performance Tuning
+
+!!! note ""
+    The system supports form-based tuning of performance parameters such as index buffer and max connections. Common optimization presets are available for direct selection based on your environment.
+
+![img.png](../../img/databases/mysql_variables.png)
+{: .original}
+
+## 13 Port
+
+!!! note ""
+    Besides setting the port during installation, you can modify it directly in the settings interface.
+
+## 14 Logs
+
+!!! note ""
+    - MySQL runs in Docker; logs shown are from the corresponding container. Supports time filtering, real-time follow, and download
+    - Slow query logs are also available in the settings interface
+
+![img.png](../../img/databases/mysql_log.png)
+{: .original}

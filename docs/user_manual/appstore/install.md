@@ -1,31 +1,26 @@
-# Install Application
+!!! note ""
+    Locate and install the target application in the App Store list. You can browse by application category, or quickly search by entering keywords in the search box in the upper right corner.
+    > This article uses **Halo** installation as an example.
 
-## Exploring the App Store
+## 1 Application Installation
 
-Find and install the target application in the app store list. You can browse through application categories or directly enter keywords in the search box in the top right corner for quick search.
+!!! note ""
+    (1) Click the **Install** button to enter the application details page.
 
-![App List](../../img/appstore/app_list.png)
-{: .browser-mockup .with-url }
+![img.png](../../img/app/app_detail.png)
+{: .browser-mockup}
 
-## Installing an App
+!!! note ""
+    (2) Fill in parameters such as database and port.
 
-Click the `Install` button to enter the application details page.
+![img.png](../../img/app/app_param.png)
+{: .browser-mockup}
 
-![Click install button](../../img/appstore/app_install.png)
-{: .browser-mockup .with-url }
+!!! note ""
+    (3) Configure advanced settings, such as whether to expose external ports, set resource limits, and edit the Compose file. Finally, click the **Confirm** button. The application installation log interface will appear; wait for the installation to complete.
 
-## Filling in App parameters
+![img.png](../../img/app/installation_log.png)
+{: .browser-mockup}
 
-Fill in parameters such as database and port.
-
-![App parameters](../../img/appstore/app_parameters.png)
-{: .browser-mockup .with-url }
-
-## Advanced settings
-
-Additionally, advanced settings are supported, such as whether to expose external ports, resource limits, and editing compose files, etc.
-
-Finally, click the `Confirm` button and wait for the application installation to complete.
-
-![Advanced setting](../../img/appstore/app_advanced.png)
-{: .browser-mockup .with-url }
+![img.png](../../img/app/app_install.png)
+{: .browser-mockup}

@@ -1,40 +1,40 @@
-## 1 文件操作
+## 1 File Operations
 
-!!! Abstract ""
-    文件管理实现了很多实用的文件操作，除了基本的剪切、复制、粘贴、删除操作，还支持上传和下载文件、解压和解压、加密和解密、批量操作。
+!!! note ""
+    File management provides many practical file operations. In addition to basic cut, copy, paste, and delete, it also supports file upload and download, compression and decompression, encryption and decryption, and batch operations.
 
-## 2 修改权限
+## 2 Change Permissions
 
-!!! Abstract ""
-    点击文件列表“权限”列中的值（类似 0755、0644），可对文件的权限进行修改。
+!!! note ""
+    Click the value in the **Permissions** column of the file list (such as 0755, 0644) to modify file permissions.
 
-!!! Abstract ""
-    Linux 中文件权限可按照以下三个不用角色分别进行设置：
+!!! note ""
+    In Linux, file permissions can be set for three different roles:
 
-    - 文件所有者
-    - 所属用户组
-    - 其它用户
+    - File owner
+    - Group
+    - Other users
 
-    在修改权限的窗口中，可直接勾选不同角色所具备的权限，下方的权限代码会随之自动变化。
+    In the permission editing window, you can directly check the permissions for different roles, and the permission code below will change automatically.
 
-    如果你要修改的是目录的权限，勾选“同时修改子目录权限”后，目录中的所有文件和目录的权限也都会发生变化。
+    If you are modifying a directory, check **Apply to subdirectories** to update permissions for all files and subdirectories inside.
 
-## 3 上传文件
+## 3 Upload Files
 
-!!! Abstract ""
-    点击工具栏中的“上传”按钮，可将本地电脑的文件上传到服务器上：
+!!! note ""
+    Click the **Upload** button in the toolbar to upload files from your local computer to the server.
 
-## 4 在线下载文件
+## 4 Online Download
 
-!!! Abstract ""
-    如果想从其它服务器上下载文件到当前服务器上，可点击工具栏上的“在线下载”按钮进行操作：
+!!! note ""
+    To download files from another server to the current server, click the **Online Download** button in the toolbar.
 
-## 5 下载文件
+## 5 Download Files
 
-!!! Abstract ""
-    如果需要将服务器上的文件下载到本地，点击文件右侧下拉菜单中的“下载”即可：
+!!! note ""
+    To download files from the server to your local machine, click **Download** in the dropdown menu next to the file.
 
-## 6 压缩和解压
+## 6 Compress and Decompress
 
-!!! Abstract ""
-    文件管理支持多种格式的压缩和解压，默认压缩格式为 .tar.gz，为 Linux 下最为常见的打包压缩格式，建议使用：
+!!! note ""
+    File management supports compression and decompression in multiple formats. The default format is `.tar.gz`, the most common packaging and compression format on Linux.

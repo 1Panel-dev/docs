@@ -1,28 +1,38 @@
----
-hide:
-  - navigation
----
+# 1Panel: Modern Open‑Source VPS Control Panel
+1Panel is a modern, open‑source VPS control panel that streamlines administration through an intuitive and clean web interface.
 
-# Introduction
+It allows you to manage your VPS effortlessly—entirely from a web browser.
 
-## What is 1Panel?
+![img.png](./img/overview.png)
 
-🔥 1Panel offers an intuitive web interface for Linux server, making it easy to manage OpenClaw agents, LLMs, websites, databases, containers, files, and scheduled tasks.
+Unlike traditional VPS control panels,  
+1Panel fully embraces AI, is built with the modern Go programming language, and supports container‑based application deployment and management.
 
-![Overview](https://resource.1panel.pro/img/1panel.png)
-{ .original }
+With 1Panel, you can efficiently manage your VPS—even without deep Linux command‑line expertise.
 
-## Features
+Now, let’s explore what 1Panel can do for you!
 
-- **Efficient Management**: Through a user-friendly web graphical interface, 1Panel enables users to effortlessly manage their Linux servers. Key features include host monitoring, file management, database administration, and container management.
-- **Rapid Website Deployment**: With deep integration of the popular open-source website building software WordPress, 1Panel streamlines the process of domain binding and SSL certificate configuration, all achievable with just one click.
-- **Application Store**: 1Panel curates a wide range of high-quality open-source tools and applications, facilitating easy installation and updates for its users.
-- **Security and Reliability**: By leveraging containerization and secure application deployment practices, 1Panel minimizes vulnerability exposure. It further enhances security through integrated firewall management and log auditing capabilities.
-- **One-Click Backup & Restore**: Data protection is made simple with 1Panel's one-click backup and restore functionality, supporting various cloud storage solutions to ensure data integrity and availability.
+## Key Features
+### 🔹 One‑Click OpenClaw Deployment
+Seamlessly deploy OpenClaw agents, host local LLMs using Ollama, and monitor GPU utilization—all within a unified workspace.
 
-## Getting Help
+### 🔹 One‑Click Website Deployment
+Launch production‑ready websites instantly with automatic domain binding, SSL certificate provisioning, and configuration—zero manual setup required.
 
-Are you getting stuck anywhere? Here are a few links to places to look:
+### 🔹 Curated App Marketplace
+Discover, install, and update trusted open‑source applications (Nextcloud, Bitwarden, Umami, and more) with a single click.
 
-- For assistance with using 1Panel, you can seek guidance from both fellow 1Panel users and our experts on the [GitHub Discussions page](https://github.com/1Panel-dev/1Panel/discussions/), or join the 1Panel community on [Discord](https://discord.gg/bUpUqWqdRr)!.
-- If you suspect you're running into a bug, please check the [GitHub issue tracker](https://github.com/1panel-dev/1panel/issues) to see if any existing issues match your problem. If not, feel free to fill out our bug report template and submit a new issue.
+### 🔹 Centralized Server Management
+Monitor system resources and manage files, databases, containers, and services effortlessly through a unified, intuitive dashboard.
+
+### 🔹 Enterprise‑Grade Security
+Strengthen your defenses with container isolation, firewall controls, audit logging, and secure deployment practices—ensuring compliance and peace of mind.
+
+### 🔹 Intelligent Backup & Restore
+Schedule automated backups or perform instant restores to local storage or major cloud platforms (AWS S3, Cloudflare R2, and more), with flexible retention and destination options.
+
+## Community & Trust
+1Panel has earned over 34,000 stars on GitHub and surpassed 2 million installations worldwide.  
+Its features, performance, stability, and security are trusted by the global open‑source community.
+
+Welcome to try 1Panel and take full control of your VPS!

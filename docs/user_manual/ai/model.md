@@ -50,3 +50,39 @@
     Currently supported management tools include:
     
     - [OpenWebUI](https://github.com/open-webui/open-webui)
+
+### 0 Prerequisites
+
+!!! note ""
+    Before creating a model with TensorRT LLM, you must first install the NVIDIA GPU driver and configure the NVIDIA Container Toolkit. Refer to the documentation: [Installing the NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html).
+
+### 1 Create Model
+
+!!! note ""
+    On the TensorRT LLM Model Management page, click the **Create** button, enter parameters such as the model name, then click **Confirm** to create the model.
+
+!!! info "Parameter Description"
+    - **Name**: Name of the model.
+    - **Container Name**: The TensorRT LLM Model Management feature launches a container using the TensorRT LLM image to run the model. The container name must be unique and defaults to the model name.
+    - **Image**: TensorRT LLM image, defaults to the official NVIDIA image.
+    - **Version**: Image tag of the TensorRT LLM image, corresponding to different TensorRT LLM versions. Available versions can be found in the [NVIDIA TensorRT LLM Official Repository](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/tensorrt-llm/containers/release/tags).
+    - **Model Directory**: Select a local model directory on the server to mount into the container. The model folder must be placed in this directory in advance.
+    - **Startup Command**: The command executed to run the model when starting the container, defaults to the official NVIDIA startup command (custom commands are supported). Note the model path in the startup command: 1Panel maps the local model directory (specified above) to the `/models` directory in the container. 
+      - If the selected model directory is the final model path (e.g., `/home/DeepSeek-V3`), simply append `/models` after `trtllm-server` in the startup command.
+      - If the selected model directory is the parent directory of the model folder (e.g., the final model path is `/home/DeepSeek-V3` and the selected model directory is `/home`), append `/models/DeepSeek-V3` after `trtllm-server` in the startup command.
+    - **Port**: Configure port mapping for the TensorRT LLM container. For example, map port 8000 in the container to port 8000 on the server, allowing access to the TensorRT LLM service via `Server IP:8000` (external port access must be enabled).
+    - **Environment Variables**: Configure environment variables for the TensorRT LLM container.
+    - **Mounts**: Mount additional directories for the TensorRT LLM container. Local directories on the server can be mounted to the container for access within the container.
+
+![img.png](../../img/ai/create_trtllm.png)
+{: .original}
+
+### 2 View Model Logs
+
+!!! note ""
+    On the TensorRT LLM Model Management page, click the **View Logs** button in the row of the target model to check the model startup and runtime logs.
+
+### 3 Other Model Operations
+
+!!! note ""
+    On the TensorRT LLM Model Management page, you can perform operations such as stop, start, restart, delete, and edit on the model.

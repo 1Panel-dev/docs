@@ -1,64 +1,74 @@
-# Redis
+## 1 Change Password
 
-## Mange Redis instance
+!!! note ""
+    The default password is random. `root` is the account with the highest privileges; please operate with caution.
 
-### Redis instance from App Store
+## 2 Redis Commander
 
-Redis database applications installed through the App Store will automatically appear in the redis instance list.
+!!! note ""
+    A web-based GUI tool for managing Redis databases. For detailed usage, see the [official documentation](http://joeferner.github.io/redis-commander/).
 
-### Remote Redis instance
+## 3 Database Configuration
 
-Beyond the local database installed via the App Store, you can also add existing redis addresses. By clicking the `Manage remote servers` button located at the top of the list, you will be directed to the remote server management page.
+!!! note ""
+    Click the settings button in the status bar to enter the Redis settings interface, which includes configuration editing, current status, performance tuning, port, and persistence.
+    You can manually adjust Redis configuration in the configuration interface.
 
-Here, you can bind a remote server by filling in the connection and authentication information.
+![img.png](../../img/databases/redis_conf.png)
+{: .original}
 
-### Switching Redis Instances
+!!! note ""
+    - Redis is installed via Docker; the configuration file is mounted at `/opt/1panel/apps/redis/[database-name]/conf/redis.conf`
+    
+    **Warning**: Incorrect configuration may make Redis unavailable; modify with caution. If the service fails to start due to invalid configuration, restore the default settings and save.
 
-By clicking the dropdown menu at the top of the command line area, you can switch between different redis instances, managing settings under different instances.
+## 4 Current Status
 
-## Connection information
+!!! note ""
+    When Redis queries are slow, you can go to the settings interface and click **Current Status** to view key metrics such as memory allocation and query hit ratio for performance optimization.
 
-Clicking the `View connection info` button at the top of the list allows you to view the redis database's address, port, and root password, and also modify the database root password.
+![img.png](../../img/databases/redis_status.png)
+{: .original}
 
-!!! info "Info"
-    Resi databases installed via the App Store operate within a container. Depending on the scenario, you must choose the appropriate connection information as prompted on the page.
+## 5 Performance Tuning
 
-## Redis instance Operations
+!!! note ""
+    The system supports form-based adjustment of Redis parameters, including: timeout, max connections, and max memory.
 
-You can stop/start the current Redis instance in the status bar. And by clicking the `Configure` button, you can access the specific redis settings page, which encompasses configuration modification, current status, performance tuning, port and data persistence.
+![img.png](../../img/databases/redis_variables.png)
+{: .original}
 
-### Configuration file
+## 6 Port
 
-The configuration page enables manual adjustments to the database configuration.
+!!! note ""
+    Besides setting the port during Redis installation, you can modify it directly in the settings interface.
 
-!!! info "Info"
-    For Redis installed through the App Store, the default configuration file is located at `/opt/1panel/apps/redis/[App name]/conf/redis.conf`.
+## 7 Persistence
 
-!!! warning "Warning"
-    - In the event of incorrect database configuration leading to service startup failures, attempt to restore the default configuration and save it.
-    - It is crucial to exercise caution when modifying the database configuration, as incorrect settings can result in the Redis service becoming unavailable.
+!!! note ""
+    Redis supports two persistence modes: AOF and RDB.
+    
+    - RDB
+        - Implementation: The parent process forks a child process to save the RDB file; the parent process does not perform disk I/O.
+        - Advantages: Saves a point-in-time snapshot of the dataset, ideal for disaster recovery; maximizes Redis performance and is faster for large dataset recovery.
+        - Disadvantages: Risk of data loss; depends on backup frequency. Forking can be time-consuming for large datasets and may pause the service.
+    - AOF
+        - Implementation: Appends write operations to a log file either on each write or periodically. The log is rewritten automatically when it becomes too large, keeping only the minimal commands needed to restore the current dataset.
+        - Advantages: Logs all write operations in order; more durable, less data loss on crash, and easier to analyze.
+        - Disadvantages: Larger file size for the same dataset; may be slower than RDB.
 
-### Current state
+![img.png](../../img/databases/redis_backup_aof.png)
+{: .original}
 
-To address slow database queries, navigate to the `Current state` page, and review the status of key metrics such as memory allocation and query hit rates to optimize database performance.
+!!! note ""
+    - appendonly: Whether to enable AOF persistence
+    - appendfsync: Sync frequency
+        - always: Sync on every write
+        - everysec: Sync every second
+        - no: No explicit sync
 
-### Performance tuning
+![img.png](../../img/databases/redis_backup_rdb.png)
+{: .original}
 
-The system offers a form-based interface for directly adjusting database performance parameters.
-
-### Port
-
-In addition to setting the port during Redis application installation, the `Port` page also allows for port modifications.
-
-### Persistence
-
-Redis persistence is categorized into two primary types, AOF and RDB:
-
-- RDB:
-    - Implementation: When the parent process saves the RDB file, it first forks a child process, which then handles the subsequent saving work. The parent process does not need to perform any disk I/O operations.
-    - Advantages: It saves the Redis dataset at a certain point in time in a file, suitable for disaster recovery, can maximize Redis performance, is faster, and is also faster when recovering large datasets.
-    - Disadvantages: There is a risk of data loss, requiring the setting of backup frequencies. In the event of a failure shutdown, data may be lost, and when the dataset is large, forking a child process can be very time-consuming, causing service downtime.
-- AOF:
-    - Implementation: It appends operations to the log file either periodically or after each write command. The log file only performs append operations. When the AOF file becomes too large, it automatically rewrites the AOF, retaining only the minimum command set required to recover the current dataset.
-    - Advantages: It sequentially saves all write operations executed on the database, making data loss less likely. Even in the event of a failure shutdown, only the data after the last write operation to the log file will be lost, making it more reliable and easier to analyze the file.
-    - Disadvantages: For the same dataset, the AOF volume is generally larger, and the speed may be slower than RDB.
+!!! note ""
+    Set the persistence policy. RDB persistence is triggered when **any** of the conditions are met.
