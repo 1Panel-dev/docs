@@ -19,5 +19,5 @@
 !!! note ""
     Manage host information and support host grouping.
 
-![img.png](../../img/hosts/host.png)
+![img.png](../img/hosts/host.png)
 {: .original}
