@@ -11,7 +11,7 @@
     - Supports quick commands (predefined in **Terminal → Quick Commands**)
     - Supports batch input across all active connections
 
-![img.png](../../img/hosts/terminal.png)
+![img.png](../img/hosts/terminal.png)
 {: .original}
 
 ## 2 Host Management
