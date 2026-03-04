@@ -4,9 +4,9 @@
 
     Currently supported providers:
 
-    - 阿里云
-    - 腾讯云
-    - 华为云
+    - Alibaba Cloud
+    - Tencent Cloud
+    - Huawei Cloud
     - GoDaddy
     - Cloudflare
     - Vercel
@@ -15,12 +15,12 @@
     - NameCheap
     - Name.com
     - FreeMyIP
-    - 雨云
-    - 西部数码
+    - Rain cloud
+    - West Digital
     - ClouDNS
     - Spaceship
-    - 火山引擎
-    - DNSPod（即将废弃）
+    - Volcano Engine
+    - DNSPod（About to be phased out）
 
 ![img.png](../../img/websites/certificate_dns.png)
 
