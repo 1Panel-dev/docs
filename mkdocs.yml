@@ -102,10 +102,10 @@ nav:
     - Container:
       - Overview: user_manual/containers/overview.md
       - Containers: user_manual/containers/container.md
-      - Compose: user_manual/containers/compose.md
+      - Composes: user_manual/containers/compose.md
       - Images: user_manual/containers/image.md
       - Network: user_manual/containers/network.md
-      - Volumes: user_manual/containers/volume.md
+      - Volumes: user_manual/containers/volumes.md
       - Registry: user_manual/containers/repo.md
       - Compose Template: user_manual/containers/compose_template.md
       - Settings: user_manual/containers/setting.md
