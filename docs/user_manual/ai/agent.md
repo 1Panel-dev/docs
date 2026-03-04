@@ -48,7 +48,7 @@ Docker not detected, install it? [y/n]: y
 ## 2.5. Step 5: Configure Image Accelerator and Set Default Parameters
 After Docker is installed, the system will prompt whether to configure the image accelerator and then guide you to set the 1Panel port, secure access entry, panel user password, etc., as shown in the figure below. Configure these settings according to your actual situation, and ensure that the specified port is open.
 
-![img.png](./img/ai/1Panel_Image_Accelerator_Configuration_Log.png)
+![img.png](../../img/ai/1Panel_Image_Accelerator_Configuration_Log.png)
 
 ## 2.6. Step 6: Obtain 1Panel Login Information
 After completing all settings, the system will automatically print out the 1Panel login and access information, as shown in the figure below. Save this information for subsequent use.
