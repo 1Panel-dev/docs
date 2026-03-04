@@ -112,3 +112,7 @@ ul{list-style: none;margin: 0;padding: 0;}
 @media (max-width: 991px){
 .container{width:auto;}
 }
+
+#topnav, .mega-nav-sandbox, .mega-nav-banner {
+    display: none !important;
+}
