@@ -2,454 +2,454 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.1panel.pro/v2/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/changelog/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/contact/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/dev_manual/api_manual/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/faq/faq/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/faq/openclaw/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/faq/operating_system/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/faq/server_architecture/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/faq/system_function/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/img/toolbox/toolbox/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/img/websites/websites/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/installation/ali_cloud/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/installation/cli/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/installation/master_migrate/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/installation/online_installation/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/installation/online_upgrade/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/installation/package_installation/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/installation/v1_migrate/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/installation/v1_migrate_steps/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/cronjobs/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/logs/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/settings/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/terminal/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/ai/gpu/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/ai/mcp/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/ai/model/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/alist/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/appstore/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/bitwarden/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/gitea/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/halo/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/home-assistant/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/install/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/installed/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/jumpserver/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/lobechat/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/mariadb/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/maxkb/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/minio/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/moltbot/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/mongodb/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/mysql/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/nextcloud/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/nginx-proxy-manager/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/ollama/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/openclaw/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/openlist/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/openresty/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/openwebui/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/operations/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/phpmyadmin/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/qinglong/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/redis/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/rustdesk/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/setting/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/stirling-pdf/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/uptime-kuma/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/vscode/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/wordpress/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/appstore/zabbix/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/containers/compose_template/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/containers/composes/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/containers/container/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/containers/image/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/containers/network/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/containers/overview/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/containers/repo/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/containers/settings/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/containers/volumes/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/databases/mysql/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/databases/postgresql/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/databases/redis/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/mcp/mcp_server/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/system/file/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/system/firewall/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/system/monitor/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/system/process/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/system/ssh/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/toolbox/clam/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/toolbox/clean/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/toolbox/fail2ban/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/toolbox/ftp/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/toolbox/quick_settings/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/toolbox/supervisor/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/websites/certificate/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/websites/certificate_acme/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/websites/certificate_create/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/websites/certificate_dns/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/websites/certificate_renew/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/websites/certificate_self_sign/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/websites/certificate_upload/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/websites/dotnet/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/websites/golang/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/websites/java/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/websites/node/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/websites/openresty/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/websites/php/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/websites/python/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/websites/website_backup/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/websites/website_config_basic/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/websites/website_config_other/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/websites/website_config_waf/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/websites/website_create/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/websites/website_group/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/websites/websites/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/xpack/node/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/xpack/tamper/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/xpack/waf/block/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/xpack/waf/dashboard/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/xpack/waf/global/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/xpack/waf/log/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/xpack/waf/site/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
     <url>
          <loc>https://docs.1panel.pro/v2/user_manual/xpack/waf/waf/</loc>
-         <lastmod>2026-03-03</lastmod>
+         <lastmod>2026-03-04</lastmod>
     </url>
 </urlset>
