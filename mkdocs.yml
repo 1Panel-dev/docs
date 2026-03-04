@@ -68,7 +68,7 @@ nav:
       - App Operations: user_manual/appstore/installed.md
       - App Store Settings: user_manual/appstore/setting.md
     - AI:
-      - Agent: https://openclaw.club/guides/quick-start
+      - Agent: user_manual/ai/agent.md
       - Model: user_manual/ai/model.md
       - MCP: user_manual/ai/mcp.md
       - GPU Monitor: user_manual/ai/gpu.md
@@ -102,19 +102,19 @@ nav:
     - Container:
       - Overview: user_manual/containers/overview.md
       - Containers: user_manual/containers/container.md
-      - Compose: user_manual/containers/compose.md
+      - Composes: user_manual/containers/compose.md
       - Images: user_manual/containers/image.md
       - Network: user_manual/containers/network.md
-      - Volumes: user_manual/containers/volume.md
+      - Volumes: user_manual/containers/volumes.md
       - Registry: user_manual/containers/repo.md
       - Compose Template: user_manual/containers/compose_template.md
       - Settings: user_manual/containers/setting.md
     - System:
-      - File: user_manual/hosts/file.md
-      - Monitor: user_manual/hosts/monitor.md
-      - Firewall: user_manual/hosts/firewall.md
-      - Process: user_manual/hosts/process.md
-      - SSH Management: user_manual/hosts/ssh.md
+      - File: user_manual/system/file.md
+      - Monitor: user_manual/system/monitor.md
+      - Firewall: user_manual/system/firewall.md
+      - Process: user_manual/system/process.md
+      - SSH Management: user_manual/system/ssh.md
     - Terminal: user_manual/terminal.md
     - Cron Jobs: user_manual/cronjobs.md
     - Toolbox:
