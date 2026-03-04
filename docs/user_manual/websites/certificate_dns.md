@@ -20,7 +20,7 @@
     - ClouDNS
     - Spaceship
     - Volcano Engine
-    - DNSPod（即将废弃）
+    - DNSPod（About to be phased out）
 
 ![img.png](../../img/websites/certificate_dns.png)
 
