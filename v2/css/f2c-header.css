@@ -1,4 +1,4 @@
-/* 基础样式（保留，通用且不影响其他内容） */
+/* 基础样式（保留） */
 *,::after,::before{box-sizing:border-box;}
 
 /* 打印隐藏 */
@@ -6,30 +6,20 @@
 .hidden-print{display:none!important;}
 }
 
-/* 容器（保留，通用布局） */
+/* 容器（保留） */
 .container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
-@media (min-width:576px){
-.container{max-width:540px;}
-}
-@media (min-width:768px){
-.container{max-width:720px;}
-}
-@media (min-width:992px){
-.container{max-width:960px;}
-}
-@media (min-width:1200px){
-.container{max-width:1140px;}
-}
+@media (min-width:576px){.container{max-width:540px;}}
+@media (min-width:768px){.container{max-width:720px;}}
+@media (min-width:992px){.container{max-width:960px;}}
+@media (min-width:1200px){.container{max-width:1140px;}}
 
 /* 可见性控制 */
-@media (max-width:767px){
-.visible-xs{display:block!important;}
-}
+@media (max-width:767px){.visible-xs{display:block!important;}}
 
 /* 文本样式 */
 .text-muted{color:#6c757d!important;}
 
-/* 基础元素样式（精简，只保留通用部分） */
+/* 基础元素样式（保留） */
 img{vertical-align:middle;border-style:none;}
 svg{overflow:hidden;vertical-align:middle;}
 button{border-radius:0;margin:0;font-family:inherit;font-size:inherit;line-height:inherit;overflow:visible;text-transform:none;-webkit-appearance:button;}
@@ -46,25 +36,43 @@ ul{list-style: none;margin: 0;padding: 0;}
 /* 隐藏元素 */
 .visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;white-space:nowrap;width:1px;}
 
-/* ========== 核心：强制隐藏所有黑色导航栏相关元素 ========== */
-#topnav, 
-.mega-nav-sandbox, 
-.mega-nav-banner,
-div[class*="mega-nav"], 
-header[class*="topnav"], 
-.f2c-header,
-.sticky { /* 移除粘性定位的黑框容器 */
+/* ========== 终极修复：彻底隐藏黑框（含通告栏根容器） ========== */
+/* 1. 隐藏旧的飞致云导航相关 */
+#topnav, .mega-nav-sandbox, .mega-nav-banner, div[class*="mega-nav"] {
     display: none !important;
-    visibility: hidden !important;
     height: 0 !important;
-    width: 0 !important;
-    margin: 0 !important;
     padding: 0 !important;
-    border: none !important;
-    background: none !important;
+    margin: 0 !important;
 }
 
-/* 响应式适配（仅保留通用容器适配，移除导航栏相关） */
-@media (max-width: 991px){
-.container{width:auto;}
+/* 2. 关键修复：隐藏截图中的黑色通告栏（含关闭按钮的那个容器） */
+/* 匹配 MkDocs Material 的通告栏，或自定义的黑框根容器 */
+.md-announce, 
+body > div:first-child, 
+body > header:first-child,
+/* 兜底：匹配任何置顶的黑色顶部容器 */
+div[style*="position: fixed"][style*="top: 0"][style*="background: black"],
+div[class*="announce"],
+div[class*="banner"] {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0px !important;
+    width: 100% !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    z-index: -1 !important;
+}
+
+/* ========== 修复蓝色导航栏置顶 ========== */
+/* 确保 Material 蓝色导航栏回到最顶部 */
+.md-header {
+    top: 0 !important;
+    z-index: 1000 !important;
+    position: fixed !important;
+}
+
+/* 确保页面内容不会被置顶的蓝导航栏遮挡（如果需要） */
+.md-main {
+    margin-top: 64px !important;
 }
