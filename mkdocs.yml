@@ -1,17 +1,19 @@
-site_name: '1Panel Documentation'
-site_url: 'https://docs.1panel.pro'
-site_author: '1Panel'
-site_description: '1Panel Open-source Linux Server Operation & Management Panel'
+## basic info
+site_name: "1Panel Documentation"
+site_url: "https://docs.1panel.pro"
+site_description: "1Panel Open-source Linux Server Operation & Management Panel"
+site_author: "1Panel"
+repo_name: "1Panel"
+repo_url: "https://github.com/1Panel-dev/1Panel"
+edit_uri: https://github.com/1Panel-dev/docs/edit/i18n/docs/
+copyright: Copyright &copy; 2025 Lingxia (Hong Kong) Software Co., Limited, All Rights Reserved.
 
-repo_name: '1Panel-dev/1Panel'
-repo_url: 'https://github.com/1Panel-dev/1Panel'
-edit_uri: ''
-
+## customization
 theme:
-  name: 'material'
-  logo: 'img/logo-white.png'
-  favicon: 'img/facio.ico'
-  language: 'en'
+  name: "material"
+  logo: "img/logo-white.png"
+  favicon: "img/facio.ico"
+  language: "en"
   palette:
     - scheme: default
       primary: blue
@@ -26,6 +28,12 @@ theme:
         icon: material/weather-night
         name: Switch to light mode
   features:
+    - announce.dismiss
+    - content.action.edit
+    - content.code.annotate
+    - content.code.copy
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.tracking
     - navigation.indexes
     - navigation.top
@@ -33,11 +41,14 @@ theme:
     - search.highlight
     - search.share
     - header.autohide
-  font: false
-  custom_dir: 'theme'
+  font:
+    text: Roboto
+    code: Roboto Mono
+  custom_dir: "theme"
   icon:
     repo: fontawesome/brands/github
 
+## content nav
 nav:
   - Overview: index.md
   - Installation:
@@ -174,34 +185,36 @@ nav:
     - 1Panel Offline Edition: installation/package_installation.md
 
 markdown_extensions:
+  - toc:
+      permalink: true
+  ## admonitions
   - admonition
-  - abbr
+  - pymdownx.details
+  - pymdownx.superfences
+  ## content tabs
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  ## grid
   - attr_list
+  - md_in_html      
+  - tables
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # 保留原配置的所有扩展
+  - abbr
   - def_list
   - footnotes
   - meta
-  - toc:
-      permalink: ⚓︎
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.critic
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      options:
-        custom_icons:
-          - theme/.icons
   - pymdownx.inlinehilite
   - pymdownx.keys
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.saneheaders
   - pymdownx.magiclink:
       repo_url_shortener: true
@@ -210,8 +223,6 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.snippets:
       check_paths: true
-  - pymdownx.tabbed:
-      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
@@ -229,30 +240,29 @@ extra:
     provider: mike
   analytics:
     provider: google
-    property: G-P2ER2N0NSN
+    property: G-1QN949WS47
   social:
-    - icon: Bilibili_Logo_Blue
-      link: https://space.bilibili.com/510493147/lists/1199760
     - icon: fontawesome/brands/github
-      link: https://github.com/1Panel-dev
-    - icon: fontawesome/solid/envelope
-      link: mailto:wanghe@fit2cloud.com
-    - icon: fontawesome/brands/skype
-      link: tel://400-052-0755
+      link: https://github.com/1Panel-dev/1Panel
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/1panel_linux
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@1Panel-linux
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/bUpUqWqdRr
 
 extra_css:
+  - stylesheets/extra.css    
   - css/extra.css
   - css/termynal.css
   - css/custom.css
-  - stylesheets/extra.css
 
 extra_javascript:
   - js/termynal.js
   - js/custom.js
 
-copyright: Copyright &copy; 2014-2026 <a href="https://www.fit2cloud.com">Fit2Cloud Co., Ltd.</a> All Rights Reserved. <a href="http://www.beian.miit.gov.cn" target="_blank">浙ICP备14038283号-5</a>
-
 plugins:
+  - glightbox
   - search:
       lang:
         - en

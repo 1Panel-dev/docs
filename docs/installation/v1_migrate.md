@@ -3,7 +3,7 @@
     Due to significant architectural changes between V1 and V2, **direct online upgrade from V1 to V2 is NOT supported**.
 
     1Panel V1 users must use the official migration tool **1panel-migrator**:
-    [1panel-migrator](https://gitee.com/fit2cloud-feizhiyun/1panel-migrator)
+    [1panel-migrator](https://github.com/1Panel-dev/1panel-migrator)
     to smoothly upgrade from 1Panel V1 to V2.
 
 !!! warning "Important"
