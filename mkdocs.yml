@@ -68,7 +68,7 @@ nav:
       - App Operations: user_manual/appstore/installed.md
       - App Store Settings: user_manual/appstore/setting.md
     - AI:
-      - Agent: https://openclaw.club/guides/quick-start
+      - Agent: user_manual/ai/agent.md
       - Model: user_manual/ai/model.md
       - MCP: user_manual/ai/mcp.md
       - GPU Monitor: user_manual/ai/gpu.md
