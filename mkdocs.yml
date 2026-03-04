@@ -110,11 +110,11 @@ nav:
       - Compose Template: user_manual/containers/compose_template.md
       - Settings: user_manual/containers/setting.md
     - System:
-      - File: user_manual/hosts/file.md
-      - Monitor: user_manual/hosts/monitor.md
-      - Firewall: user_manual/hosts/firewall.md
-      - Process: user_manual/hosts/process.md
-      - SSH Management: user_manual/hosts/ssh.md
+      - File: user_manual/system/file.md
+      - Monitor: user_manual/system/monitor.md
+      - Firewall: user_manual/system/firewall.md
+      - Process: user_manual/system/process.md
+      - SSH Management: user_manual/system/ssh.md
     - Terminal: user_manual/terminal.md
     - Cron Jobs: user_manual/cronjobs.md
     - Toolbox:
