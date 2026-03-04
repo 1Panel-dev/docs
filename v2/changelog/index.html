@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
     
     
       
@@ -4722,6 +4722,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v212" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.1.2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v211" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5145,6 +5156,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v212" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.1.2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v211" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5398,6 +5420,75 @@
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
+<h3 id="v212">v2.1.2<a class="headerlink" href="#v212" title="Permanent link">⚓︎</a></h3>
+<p>2026年3月4日</p>
+<div class="admonition note">
+<p class="admonition-title">新增功能</p>
+<ul>
+<li>【应用商店】新增已安装应用排序功能</li>
+<li>【智能体】支持创建 CoPaw 类型智能体</li>
+<li>【智能体】新增 Telegram 渠道支持</li>
+<li>【智能体】新增 Discord 渠道支持</li>
+<li>【智能体】新增浏览器配置</li>
+<li>【智能体】支持时区配置</li>
+<li>【智能体】Ollama 模型账号支持选择 API 类型</li>
+<li>【智能体】新增 Z.ai 模型账号支持</li>
+<li>【智能体】新增方舟 Coding Plan 模型账号支持</li>
+<li>【智能体】新增阿里云百炼 Coding Plan 模型账号支持</li>
+<li>【智能体】新增 anthropic-messages API 类型的自定义模型账号</li>
+<li>【证书】DNS 账号支持 Technitium</li>
+<li>【终端】支持自定义字体</li>
+<li>【终端】支持自定义前景色和背景色</li>
+<li>【面板设置】支持切换面板运行区域</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">功能优化</p>
+<ul>
+<li>【应用商店】优化远程应用同步逻辑</li>
+<li>【应用商店】优化已安装应用卡片显示样式</li>
+<li>【智能体】创建模型账号支持用户选择是否记住认证信息</li>
+<li>【智能体】配置更新时保留飞书账户映射关系</li>
+<li>【智能体】优化 Kimi Coding 模型账号创建逻辑</li>
+<li>【网站】优化网站代理 API 和日志处理</li>
+<li>【网站】优化创建网站时的域名处理逻辑</li>
+<li>【网站】主域名支持使用通配符申请泛域名证书</li>
+<li>【GPU 监控】优化菜单选中状态样式</li>
+<li>【数据库】连接信息支持一键复制完整 URL</li>
+<li>【容器】优化容器编排页面布局</li>
+<li>【容器】新增 extra_hosts 支持</li>
+<li>【容器】优化容器日志查看器并改进日志下载选项</li>
+<li>【文件】优化文件管理页面名称列宽</li>
+<li>【文件】文件编辑支持记住上次打开的文件</li>
+<li>【文件】优化文件解压处理流程</li>
+<li>【监控】优化系统监控间隔提示信息</li>
+<li>【面板设置】优化两步验证刷新时间提示信息</li>
+<li>【面板设置】增强通行密钥登录功能</li>
+<li>【系统】部分接口排序参数改为可选以便第三方系统调用</li>
+<li>【系统】更新 Prettier 配置避免不必要的格式化</li>
+<li>【系统】优化国际化文案</li>
+<li>【系统】完成部分系统安全更新</li>
+<li>【系统】优化 SQLite 连接配置</li>
+<li>【系统】优化部分系统命令的调用方式</li>
+<li>【系统】部分系统设置新增缓存机制提升性能</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">问题修复</p>
+<ul>
+<li>【应用商店】修复部分应用恢复失败问题</li>
+<li>【应用商店】修复部分应用 README 内容加载异常问题</li>
+<li>【网站】修复子网站停止后无法再启动问题</li>
+<li>【网站】修复了网站反向代理在特殊配置下无法操作的问题</li>
+<li>【网站】修复部分类型网站删除后报错问题</li>
+<li>【数据库】修复了部分场景下应用恢复后启动失败的问题</li>
+<li>【容器】修复部分场景下创建 Compose 失败问题</li>
+<li>【文件】修复文件管理点击压缩文件后预览抽屉打开问题</li>
+<li>【终端】修复修改终端设置后出现多余空行问题</li>
+<li>【网站监控】修复了部分场景下按日期搜索失败的问题</li>
+<li>【日志审计】修复部分场景下登录日志记录异常问题</li>
+</ul>
+</div>
 <h3 id="v211">v2.1.1<a class="headerlink" href="#v211" title="Permanent link">⚓︎</a></h3>
 <p>2026年2月25日</p>
 <div class="admonition note">
