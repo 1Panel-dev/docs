@@ -3,6 +3,7 @@
 This document mainly introduces the installation and deployment process of OpenClaw on Linux clients or servers. We recommend using 1Panel, an open-source Linux operation and maintenance management panel, for installation and deployment, which makes the entire process simple and fast. After OpenClaw is installed, the Feishu channel docking configuration can also be quickly completed through the 1Panel operation and maintenance management panel, facilitating the rapid implementation of a Feishu-based personal AI assistant.
 
 ## 1. Resource and Environment Preparation
+!!! note ""
 The following resource and environment preparations are required for the installation and deployment of OpenClaw:
 
 ### Client/Server Preparation
@@ -17,6 +18,7 @@ The following resource and environment preparations are required for the install
 - Local Models
 
 ### 1Panel v2.1.0 Installation and Deployment
+!!! note ""
 Refer to the official 1Panel documentation for installation and deployment details at the following link: https://1panel.cn/docs/v2/installation/online_installation/
 
 Based on the above environment, the entire installation and deployment process can be completed in four parts: 1Panel installation and deployment, large language model API Key preparation, OpenClaw installation and deployment, and Feishu channel configuration. For detailed instructions, see the following documentation.
