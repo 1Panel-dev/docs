@@ -1,7 +1,3 @@
-:root > * {
-  --md-primary-fg-color: #005EEB;
-}
-
 .progress-label {
   position: absolute;
   text-align: center;
@@ -87,9 +83,6 @@
   animation: heart 1000ms infinite;
 }
 
-.md-nav__source {
-  background-color: #005EEB;
-}
 
 /* 自定义 Admonitions */
 :root {
@@ -130,10 +123,6 @@
 
 .md-top {
   margin-top: 2rem;
-}
-
-.md-footer {
-  background-color: #005EEB;
 }
 
 .md-nav--primary .md-nav__title .md-logo {
