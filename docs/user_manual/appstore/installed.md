@@ -70,8 +70,16 @@
 !!! note ""
     You can also download the backup file, then upload and restore it using the **Import Backup** function.
 
+![img.png](../../img/app/download_backup.png)
 ![img.png](../../img/app/backup_import.png)
 {: .browser-mockup}
+
+!!! note ""
+    You can also migarte the backup file to your other nodes using the **Migrate** function.
+
+![img.png](../../img/app/migrate.png)
+
+
 
 ## 7 Upgrade
 
