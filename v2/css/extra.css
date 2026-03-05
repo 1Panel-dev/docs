@@ -1,3 +1,13 @@
+/* 导航栏 */
+.md-header {
+  background-color: #4051b5 !important; /* !important 确保覆盖主题默认样式 */
+}
+
+/* 侧边栏仓库链接区域 */
+.md-nav__source {
+  background-color: #4051b5 !important;
+}
+
 .progress-label {
   position: absolute;
   text-align: center;
