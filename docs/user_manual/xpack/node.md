@@ -58,15 +58,11 @@
 !!! note ""
     Before adding a node, an availability check verifies network connectivity and authentication validity. Only nodes that pass the check can be added successfully.
 
-![img.png](../../img/xpack/node_add_check.png)
-{: .browser-mockup}
-
 ### 3.3 Add Node
 
 !!! note ""
     After passing the availability check, click **OK** to finish adding the node.
 
-![img.png](../../img/xpack/node_add_success.png)
 
 ## 4 Node Management
 
