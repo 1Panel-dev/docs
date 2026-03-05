@@ -20,26 +20,31 @@ The following resource and environment preparations are required for the install
 ### 1Panel v2.1.0 Installation and Deployment
 !!! note ""
 Refer to the official 1Panel documentation for installation and deployment details at the following link: https://1panel.cn/docs/v2/installation/online_installation/
-
+!!! note ""
 Based on the above environment, the entire installation and deployment process can be completed in four parts: 1Panel installation and deployment, large language model API Key preparation, OpenClaw installation and deployment, and Feishu channel configuration. For detailed instructions, see the following documentation.
 
 ## 2. Large Language Model API Application
+!!! note ""
 You can check the list of models supported on the OpenClaw official website and obtain the API Key of the large language model respectively. This document takes DeepSeek as an example. For other public models and local models, prepare the relevant API Keys by referring to the corresponding documents on your own.
 
 ### 2.1. Step 1: Register on the DeepSeek Developer Platform
+!!! note ""
 Access the DeepSeek Developer Platform via the link: https://platform.deepseek.com/, first complete personal real-name authentication and registration, and then make a recharge, as shown in the figure below.
 
 ![img.png](../../img/ai/DeepSeek_Developer_Platform_Billing_Page.png)
 
 ### 2.2. Step 2: Obtain the DeepSeek API Key
+!!! note ""
 As shown in the figure below, enter the API keys page, click "Create API key", and keep the generated API Key in a safe place for subsequent use after creation.
 
 ![img.png](../../img/ai/DeepSeek_API_Key_Creation_Page.png)
 
 ## 3. OpenClaw Installation and Deployment
+!!! note ""
 The installation of OpenClaw is deployed based on the agent management of 1Panel, and the DeepSeek large model API key obtained in the previous step needs to be used during the deployment process. In 1Panel, the deployment of OpenClaw and the management of large model API key accounts are divided into two separate parts and decoupled from each other, mainly to facilitate the adjustment of model configurations for your OpenClaw personal assistant.
 
 ### 3.1. Step 1: Add a Model Account
+!!! note ""
 Enter the "Agent" management menu under "AI" management, click to enter and switch to "Model Account" management first, then click "Add model account". Select the model provider and enter the model account information as required to complete the model account creation.
 
 ![img.png](../../img/ai/1Panel_Add_Model_Account_Page.png)
