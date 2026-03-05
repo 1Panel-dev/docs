@@ -5,10 +5,6 @@
 
     If you want a single-person personal assistant that feels like a local helper, is fast, and always online – this is it.
 
-    **Scan to join the discussion group**
-
-    <img alt="Scan to join the discussion group" src="https://resource.fit2cloud.com/1panel/openclaw/img/wechat.png" width="150" height="150">
-
 ## 1. Open the App Store
 
 !!! note ""

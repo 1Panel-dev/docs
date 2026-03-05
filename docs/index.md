@@ -32,17 +32,6 @@ bash -c "$(curl -sSL https://resource.1panel.pro/v2/quick_start.sh)"
 
 [![Star History Chart](https://api.star-history.com/svg?repos=1Panel-dev/1Panel&type=Date)](https://star-history.com/#1Panel-dev/1Panel&Date)
 
-## Pro Edition
-
-Compared to the OSS Edition, 1Panel Pro Edition provides users with a wealth of enhanced features and technical support services. Enhanced features include WAF enhancement, website tamper protection, website monitoring, GPU monitoring, custom logo and theme color, etc. [Click to view the detailed introduction of the Pro Edition](https://1panel.pro/pricing).
-
-## Security Information
-
-If you discover any security issues, please refer to [SECURITY.md](/SECURITY.md).
-
-## License
-
-Licensed under The GNU General Public License version 3 (GPLv3)  (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
 <https://www.gnu.org/licenses/gpl-3.0.html>
 
