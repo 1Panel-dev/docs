@@ -2902,33 +2902,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#3-obtain-openclaw-token" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Obtain OpenClaw Token
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-access-openclaw-webui" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Access OpenClaw WebUI
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-configure-chat-tool-integration-optional" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Configure Chat Tool Integration (Optional)
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -3428,33 +3401,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#3-obtain-openclaw-token" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Obtain OpenClaw Token
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-access-openclaw-webui" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Access OpenClaw WebUI
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-configure-chat-tool-integration-optional" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Configure Chat Tool Integration (Optional)
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -3489,75 +3435,8 @@
 </div>
 <p class="original"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/app/appstores.png" data-desc-position="bottom"><img alt="image-appstores" src="../../../img/app/appstores.png"></a></p>
 <h2 id="2-install-openclaw">2. Install OpenClaw<a class="headerlink" href="#2-install-openclaw" title="Permanent link">¶</a></h2>
-<div class="admonition note">
-<p>Enter <strong>OpenClaw</strong> in the search box in the upper right corner, click the application card to go to the details page, then select <strong>Install</strong>.</p>
-</div>
-<div class="admonition note">
-<p>You can configure the following as needed:</p>
-<ul>
-<li><strong>Name</strong>: Customize the application name (default: openclaw)</li>
-<li><strong>Version</strong>: Select the desired OpenClaw version from the dropdown</li>
-<li><strong>WebUI Port</strong>: Defaults to 18789</li>
-<li><strong>Bridge Port</strong>: Defaults to 18790</li>
-<li><strong>Model Provider</strong>: Select the AI model provider from the dropdown</li>
-<li><strong>Model</strong>: Model provider code/Model ID</li>
-<li><strong>API Key</strong>: API Key for calling the model provider's interface (obtained from the model provider)</li>
-<li><strong>Token</strong>: Leave the Token blank by default. After the application is installed successfully, obtain the Token from the configuration file, then return to the Installed Applications page to fill it in the parameters for future use.</li>
-<li><strong>Port External Access</strong>: When enabled, allows external network access to the application ports</li>
-</ul>
-<p>After confirming the settings are correct, click the <strong>Confirm</strong> button to start installation.</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Common Model Providers and Example Models</p>
-<ul>
-<li>MiniMax: <code>minimax/MiniMax-M2.1</code></li>
-<li>DeepSeek: <code>deepseek/deepseek-chat</code></li>
-<li>Qwen: <code>qwen/qwen2.5-coder-32b-instruct</code></li>
-<li>Moonshot (Kimi): <code>moonshot/kimi-k2.5</code></li>
-<li>ZAI (GLM): <code>zai/glm-4.7</code></li>
-<li>OpenAI: <code>openai/gpt-4o-mini</code></li>
-<li>Anthropic: <code>anthropic/claude-3-7-sonnet</code></li>
-<li>Gemini: <code>gemini/gemini-1.5-pro</code></li>
-<li>Groq: <code>groq/llama-3.1-70b-versatile</code></li>
-<li>Mistral: <code>mistral/large-latest</code></li>
-<li>Cohere: <code>cohere/command-r-plus</code></li>
-</ul>
-</div>
-<p class="original"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/app/openclaw_install.png" data-desc-position="bottom"><img alt="image-openclaw_install" src="../../img/app/openclaw_install.png"></a></p>
-<h2 id="3-obtain-openclaw-token">3. Obtain OpenClaw Token<a class="headerlink" href="#3-obtain-openclaw-token" title="Permanent link">¶</a></h2>
-<div class="admonition note">
-<p>On the <strong>Installed Applications page</strong>, find the <strong>OpenClaw</strong> application and click the <strong>folder icon</strong> to enter the application data directory. In the <code>data/conf</code> folder under this directory, click the <code>openclaw.json</code> file and copy the value of "gateway.auth.token" to use as the Token for accessing the OpenClaw application.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">"gateway"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="nt">"mode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"local"</span><span class="p">,</span>
-<span class="w">     </span><span class="nt">"token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"c9917c5a066beeb26266d09baed99495e7563b33c771e89a"</span>
-<span class="p">},</span>
-<span class="err">***</span>
-</code></pre></div>
-</div>
-<p class="original"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/app/openclaw_folder.png" data-desc-position="bottom"><img alt="image-openclaw_folder" src="../../img/app/openclaw_folder.png"></a></p>
-<div class="admonition note">
-<p class="admonition-title">Token</p>
-<p>Return to the <strong>Installed Applications page</strong>, click the <code>Parameters</code> button to edit the application, and fill in the Token in the input box for future use.</p>
-</div>
-<p class="original"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/app/openclaw_params_token.png" data-desc-position="bottom"><img alt="image-openclaw_params_token" src="../../img/app/openclaw_params_token.png"></a></p>
-<h2 id="4-access-openclaw-webui">4. Access OpenClaw WebUI<a class="headerlink" href="#4-access-openclaw-webui" title="Permanent link">¶</a></h2>
-<div class="admonition note">
-<ul>
-<li>On the <strong>Installed Applications page</strong>, click the <code>Parameters</code> button to enter the edit page, select a custom <strong>Web Access Address</strong>, fill in the address with <code>?token=Your OpenClaw Token</code> and save for easy access to the application later.</li>
-<li>Example: <a href="http://172.16.10.181:18789?token=95917ab5e95cb55cad4821d309158d844fbc47ec1cf0494f">http://172.16.10.181:18789?token=95917ab5e95cb55cad4821d309158d844fbc47ec1cf0494f</a></li>
-</ul>
-</div>
-<p class="original"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/app/openclaw_url.png" data-desc-position="bottom"><img alt="image-openclaw_url" src="../../img/app/openclaw_url.png"></a></p>
-<div class="admonition note">
-<p>On the <strong>Installed Applications page</strong>, find the OpenClaw application, click the <strong>Jump</strong> button, and select the custom access address with Token to access the OpenClaw application normally.</p>
-</div>
-<h2 id="5-configure-chat-tool-integration-optional">5. Configure Chat Tool Integration (Optional)<a class="headerlink" href="#5-configure-chat-tool-integration-optional" title="Permanent link">¶</a></h2>
-<div class="admonition note">
-<p>If you want to chat with the robot through chat tools such as Telegram, WhatsApp, Discord, iMessage, etc., find the <strong>OpenClaw application</strong> on the <strong>Installed Applications page</strong> and click the <strong>Enter Installation Directory</strong> button at the top. Click the <strong>Terminal</strong> button at the top of the file list, and execute the following command in the terminal to configure the corresponding chat tool integration.</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>-f<span class="w"> </span>docker-compose-cli.yml<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>openclaw-cli<span class="w"> </span>channels<span class="w"> </span>add
-</code></pre></div>
-</div>
-<p>{: .original}</p>
+<p>For specific installation details, please refer to..
+<a href="../../ai/agent/">AI Agent document</a></p>
 
 
 

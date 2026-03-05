@@ -3549,7 +3549,7 @@
 <p>MCP (Model Context Protocol) is an open standard introduced by AI company <strong>Anthropic</strong>. It provides a unified, standardized interface for large language models and AI assistants, enabling them to easily interact with external tools and complete more complex tasks, thereby unleashing their true <strong>tool-calling capabilities</strong>.</p>
 <p>However, in practice, manually setting up an MCP Server requires configuring numerous dependencies, resulting in a high deployment barrier for many users. To solve this problem, 1Panel v1.10.29 LTS has introduced a native <strong>MCP Server Management</strong> feature. This feature supports one-click deployment of MCP Server via containerization, greatly simplifying the setup process.</p>
 </div>
-<p class="original"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/ai/mcp_list.png" data-desc-position="bottom"><img alt="img.png" src="../../img/ai/mcp_list.png"></a></p>
+<p class="original"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/ai/mcp_list.png" data-desc-position="bottom"><img alt="img.png" src="../../../img/ai/mcp_list.png"></a></p>
 <h2 id="2-create-mcp-server">2 Create MCP Server<a class="headerlink" href="#2-create-mcp-server" title="Permanent link">¶</a></h2>
 <div class="admonition note">
 <p>The system currently supports publishing MCP Servers running in <strong>stdio mode</strong> as <strong>SSE mode</strong> for MCP clients, using two methods:</p>
@@ -3561,19 +3561,19 @@
 <h3 id="21-start-via-npx-command">2.1 Start via npx Command<a class="headerlink" href="#21-start-via-npx-command" title="Permanent link">¶</a></h3>
 <p class="original"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/ai/create_mcp_server.png" data-desc-position="bottom"><img alt="img.png" src="../../../img/ai/create_mcp_server.png"></a></p>
 <h3 id="22-run-as-binary">2.2 Run as Binary<a class="headerlink" href="#22-run-as-binary" title="Permanent link">¶</a></h3>
-<p class="original"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/ai/mcp_binary.png" data-desc-position="bottom"><img alt="img.png" src="../../img/ai/mcp_binary.png"></a></p>
+<p class="original"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/ai/mcp_binary.png" data-desc-position="bottom"><img alt="img.png" src="../../../img/ai/mcp_binary.png"></a></p>
 <h2 id="3-obtain-configuration-information">3 Obtain Configuration Information<a class="headerlink" href="#3-obtain-configuration-information" title="Permanent link">¶</a></h2>
 <div class="admonition note">
 <p>After an MCP Server is successfully deployed, 1Panel automatically generates client configuration for each instance, including port, address, SSE path, etc. Click the <strong>Config</strong> button to quickly view the client configuration.</p>
 <p>Users only need to copy and paste the configuration into their MCP client to use the AI assistant enhanced with MCP. This eliminates the need to manually look up or set environment variables, enabling a seamless experience from deployment to usage.</p>
 </div>
-<p class="original"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/ai/mcp_server_config.png" data-desc-position="bottom"><img alt="img.png" src="../../img/ai/mcp_server_config.png"></a></p>
+<p class="original"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/ai/mcp_server_config.png" data-desc-position="bottom"><img alt="img.png" src="../../../img/ai/mcp_server_config.png"></a></p>
 <h2 id="4-unified-domain-and-sse-path">4 Unified Domain and SSE Path<a class="headerlink" href="#4-unified-domain-and-sse-path" title="Permanent link">¶</a></h2>
 <div class="admonition note">
 <p>1Panel allows binding multiple MCP Server instances to the <strong>same website domain</strong>, with each instance distinguished only by a unique SSE path. This means users do not need to open separate ports for each MCP Server — all services can be exposed through a single port.</p>
 <p>This approach simplifies public network configuration and centralizes operation and maintenance. Especially in large‑scale deployments and enterprise internal networks, using a unified domain avoids exposing too many ports, reduces security risks, and improves deployment flexibility, security, and maintainability.</p>
 </div>
-<p class="original"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/ai/mcp_website.png" data-desc-position="bottom"><img alt="img.png" src="../../img/ai/mcp_website.png"></a></p>
+<p class="original"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/ai/mcp_website.png" data-desc-position="bottom"><img alt="img.png" src="../../../img/ai/mcp_website.png"></a></p>
 <h2 id="5-whitelist-access-restriction">5 Whitelist Access Restriction<a class="headerlink" href="#5-whitelist-access-restriction" title="Permanent link">¶</a></h2>
 <div class="admonition note">
 <p>1Panel supports configuring an <strong>IP access whitelist</strong> for each MCP Server website, effectively securing MCP Server data. Users can add IP addresses or IP ranges to the whitelist, ensuring only whitelisted IPs can access the MCP Server. All requests from non‑whitelisted IPs are automatically rejected.</p>
