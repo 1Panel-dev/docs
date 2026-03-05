@@ -10,7 +10,7 @@
 
 !!! note ""
 
-    Visit the [1Panel Gitee Release Page](https://gitee.com/fit2cloud-feizhiyun/1panel-migrator/releases/) to manually download the installation package matching your server architecture, then place it in the `/tmp` directory:
+    Visit the [1Panel GitHub Release Page](https://github.com/1Panel-dev/1panel-migrator/releases) to manually download the installation package matching your server architecture, then place it in the `/tmp` directory:
 
     Installation packages for the following architectures are provided for each release (filename examples):
     
