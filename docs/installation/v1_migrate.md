@@ -22,17 +22,15 @@
 !!! note ""
 
     - Migration is **only supported for 1Panel `v1.10.29-lts` and above**.
-    - After migration, your system will be upgraded to **1Panel v2.0.0**.
+    - After migration, your system will be upgraded to **1Panel v2.1.2**.
 
 ### 3 Pro Edition & License
 
 !!! note ""
 
-    - Existing licenses will be cleared; all installations migrate to **Community Edition**.
-    - V1 lifetime licenses cannot be used in V2 but can be upgraded at
-      [Lingxia Official Site](https://www.lxware.cn/).
-    - Before importing your license to V2, confirm it has been unbound at
-      [Lingxia Official Site](https://www.lxware.cn/).
+    - Existing licenses will be cleared, and the system will be migrated to the **Community Edition**.
+    - One-time purchase licenses from V1 cannot be used in V2.
+    - Lifetime licenses have no version restriction and do not require an upgrade.
 
 ### 4 Data Update After Upgrade
 
