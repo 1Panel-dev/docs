@@ -5,8 +5,6 @@
 
     If you want a single-person personal assistant that feels like a local helper, is fast, and always online – this is it.
 
-    **Scan to join the discussion group**
-
 ## 1. Open the App Store
 
 !!! note ""
