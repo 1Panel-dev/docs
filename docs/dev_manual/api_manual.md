@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 !!! note ""
 This document details how to use custom Token verification to access panel APIs in third-party services.
 

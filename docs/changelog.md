@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # 1Panel Changelog – Full English Translation
 
 ## 1 Versioning

@@ -115,47 +115,7 @@
 ![img.png](../img/settings/alert_setting_2.png)
 {: .original}
 
-### 3.3 WeCom Alerts (Pro)
-!!! note "1Panel WeCom Setup"
-    1. Ensure node is **Pro**
-    2. Enable **WeCom**
-    3. Enter bot Webhook URL
-    4. Save
-
-![img.png](../img/settings/alert_setting_3.png)
-{: .original}
-
-### 3.4 DingTalk Alerts (Pro)
-!!! note "1Panel DingTalk Setup"
-    1. Pro node required
-    2. Enable **DingTalk**
-    3. Enter bot Webhook URL
-    4. Save
-
-![img.png](../img/settings/alert_setting_4.png)
-{: .original}
-
-### 3.5 Feishu Alerts (Pro)
-!!! note "1Panel Feishu Setup"
-    1. Pro node required
-    2. Enable **Feishu**
-    3. Enter bot Webhook URL
-    4. Save
-
-![img.png](../img/settings/alert_setting_5.png)
-{: .original}
-
-### 3.6 SMS Alerts (Pro)
-!!! note "1Panel SMS Setup"
-    1. Pro node required
-    2. Enable **SMS**
-    3. Enter phone numbers
-    4. Save
-
-![img.png](../img/settings/alert_setting_6.png)
-{: .original}
-
-### 3.7 Troubleshooting
+### 3.3 Troubleshooting
 !!! note ""
     - Verify channel configuration
     - Check **Panel Logs → System Logs**
@@ -191,16 +151,13 @@
 ### 4.3 OneDrive Authorization
 Follow the wizard to obtain and enter the authorization code.
 
-### 4.4 AliyunDrive Binding
-Log in to the web version, get token from browser devtools, paste into 1Panel.
-
-### 4.5 Google Drive Binding
+### 4.4 Google Drive Binding
 Create a project in Google Cloud, enable Drive API, obtain OAuth credentials.
 
-### 4.6 WebDAV to AList
+### 4.5 WebDAV to AList
 Install AList, set storage, then add WebDAV backup account in 1Panel.
 
-### 4.7 S3 Compatibility
+### 4.6 S3 Compatibility
 Many object storage providers are S3‑compatible. See table in original text.
 
 ## 5 Snapshots
