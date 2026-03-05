@@ -3627,7 +3627,7 @@
 <h2 id="1-install-1panel-migrator">1 Install 1panel-migrator<a class="headerlink" href="#1-install-1panel-migrator" title="Permanent link">¶</a></h2>
 <h3 id="11-obtain-the-installation-package">1.1 Obtain the Installation Package<a class="headerlink" href="#11-obtain-the-installation-package" title="Permanent link">¶</a></h3>
 <div class="admonition note">
-<p>Please visit the <a href="https://gitee.com/fit2cloud-feizhiyun/1panel-migrator/releases/">1Panel Gitee Release Page</a> to manually download the installation package matching your server architecture, then place it in the <code>/tmp</code> directory.</p>
+<p>Please visit the <a href="https://github.com/1Panel-dev/1panel-migrator/releases">1Panel GitHub Release Page</a> to manually download the installation package matching your server architecture, then place it in the <code>/tmp</code> directory.</p>
 <p><strong>Note</strong>: Ensure the package version is <strong>v2.0.8 or higher</strong> — only versions from v2.0.8 onward support master-slave node switching.</p>
 <p>Installation packages for the following architectures are provided for each release (filename examples):
 - <code>1panel-migrator-linux-amd64</code>
@@ -3658,13 +3658,11 @@ mv<span class="w"> </span>1panel-migrator-linux-amd64<span class="w"> </span>/us
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/installation/master_backup.png" data-desc-position="bottom"><img alt="img.png" src="../../img/installation/master_backup.png"></a></p>
 <p>(4) Open the slave node to be promoted, and run the promotion command with the installed 1panel-migrator:<br>
 <code>1panel-migrator promote</code>.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/installation/promote.png" data-desc-position="bottom"><img alt="img.png" src="../../img/installation/promote.png"></a></p>
 </div>
 <h2 id="3-master-node-slave-node">3 Master Node → Slave Node<a class="headerlink" href="#3-master-node-slave-node" title="Permanent link">¶</a></h2>
 <div class="admonition note">
 <p>Open the master node to be demoted, and run the demotion command with the installed 1panel-migrator:<br>
 <code>1panel-migrator demote</code>.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../img/installation/demote.png" data-desc-position="bottom"><img alt="img.png" src="../../img/installation/demote.png"></a></p>
 </div>
 
 
