@@ -3,6 +3,11 @@
   background-color: #4051b5 !important; /* !important 确保覆盖主题默认样式 */
 }
 
+/*导航标签栏 */
+.md-tabs {
+  background-color: #4051b5 !important;
+}
+
 /* 侧边栏仓库链接区域 */
 .md-nav__source {
   background-color: #4051b5 !important;
