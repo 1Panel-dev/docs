@@ -33,16 +33,10 @@ Basic concepts:
 !!! note "Configuration"
     These are similar: select the target to back up (supports “All”).
 
-![img.png](../img/cronjobs/app.png)
-{: .original}
-
 ### 1.3 Directory Backup
 
 !!! note "Configuration"
     Back up files or directories. Supports multiple files or a single directory.
-
-![img.png](../img/cronjobs/dir.png)
-{: .original}
 
 ### 1.4 Log Backup
 !!! note ""
@@ -77,14 +71,9 @@ Basic concepts:
 !!! note ""
     For backup tasks, you can view backup count and download files directly from the list.
 
-![img.png](../img/cronjobs/backup_list.png)
-{: .original}
 
 !!! note ""
     Shows full report history with filtering by time and status.
-
-![img.png](../img/cronjobs/record.png)
-{: .original}
 
 ## Import & Export
 !!! note ""

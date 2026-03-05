@@ -125,16 +125,12 @@
 !!! note ""
     Static websites can switch to PHP type by selecting a PHP runtime environment. PHP websites can switch between different PHP environments.
 
-![img.png](../../img/websites/basic_config_php.png)
-{: .browser-mockup}
 
 ## 14 Resource
 
 !!! note ""
     Associate the current website with a database. Backing up the website will also back up the associated database. Switching databases may break previous backups.
 
-![img.png](../../img/websites/basic_config_resource.png)
-{: .browser-mockup}
 
 ## 15 Other
 

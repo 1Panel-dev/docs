@@ -13,5 +13,3 @@
 !!! note ""
     - On the list page, you can perform the following operations on the Python runtime environment: stop, start, restart, edit, delete, and view logs.
 
-![runtime_python_list.png](../../img/websites/runtime_python_list.png)
-{: .original}

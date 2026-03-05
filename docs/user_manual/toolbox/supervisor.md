@@ -53,8 +53,6 @@
 !!! note ""
     If the service name or configuration changes later, you can reinitialize on the settings page.
 
-![Reinitialize](../../img/hosts/supervisor_reinit.png){ width="900px" }
-{: .original}
 
 ## 3 Create Process
 
@@ -69,8 +67,6 @@
 !!! note ""
     You can manage daemons on the list page: start, stop, restart, view logs, edit, delete, modify source files, etc.
 
-![List](../../img/hosts/supervisor_list.png){ width="900px" }
-{: .original}
 
 ## 5 Supervisor Management
 

@@ -25,24 +25,17 @@
     - Create a website with the runtime environment, select the newly created PHP runtime environment, and modify the port to the one just started.
     - For detailed steps, refer to: [PHP Offline Version Documentation](../../installation/package_installation.md/#8-php)
 
-![img.png](../../img/websites/runtime_local_website.png)
-{: .browser-mockup}
 
 ## 2 Manage PHP Extensions
 
 !!! note ""
     Click the **Extensions** button in the PHP runtime environment list to view loaded extensions for the current PHP runtime environment, and install or uninstall extensions as needed.
 
-![img.png](../../img/websites/runtime_php_extensions.png)
-{: .browser-mockup}
-
 ## 3 Modify PHP Configuration
 
 !!! note ""
     Click the **Configuration** option in the **More** operations of the PHP runtime environment list to view and modify the configuration of the current PHP runtime environment.
 
-![img.png](../../img/websites/runtime_php_config.png)
-{: .browser-mockup}
 
 ## 4 Configure Process Daemon
 
@@ -50,9 +43,6 @@
     Click the **Process Daemon** option in the **More** operations of the PHP runtime environment list to view and modify the process daemon configuration of the current PHP runtime environment.
 
     This is suitable for scenarios where PHP applications require additional resident processes.
-
-![img.png](../../img/websites/runtime_php_daemon.png)
-{: .browser-mockup}
 
 ## 5 PHP Extension List
 

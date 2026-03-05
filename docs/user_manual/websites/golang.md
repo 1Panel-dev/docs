@@ -11,6 +11,3 @@
 
 !!! note ""
     - On the list page, you can perform the following operations on the Golang runtime environment: stop, start, restart, edit, delete, and view logs.
-
-![runtime_golang_list.png](../../img/websites/runtime_golang_list.png)
-{: .browser-mockup}

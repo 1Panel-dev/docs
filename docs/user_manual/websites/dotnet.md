@@ -12,5 +12,3 @@
 
 !!! note ""
     - On the list page, you can perform the following operations on the .NET runtime environment: stop, start, restart, edit, delete, and view logs.
-
-![runtime_net_list.png](../../img/websites/runtime_net_list.png)
