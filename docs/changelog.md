@@ -3,20 +3,9 @@ hide:
   - navigation
 ---
 
-# 1Panel Changelog – Full English Translation
+# 1Panel Changelog
 
-## 1 Versioning
-
-!!! note ""
-    **Versioning**: Like other leading open‑source projects, 1Panel releases a new feature version **monthly**. Critical bugs receive prompt patch updates.
-
-    **Format**: `v{major}.{feature}.{patch}`
-    - v2.0.1: Bugfix release after v2.0.0
-    - v2.1.0: Feature release after v2.0.0
-
----
-
-## 2 Release Notes
+## Release Notes
 
 ### v2.1.2
 
