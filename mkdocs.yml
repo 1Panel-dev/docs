@@ -54,8 +54,6 @@ nav:
   - Installation:
     - Online Install: installation/online_installation.md
     - Online Upgrade: installation/online_upgrade.md
-    - 1Panel Offline Edition: installation/package_installation.md
-    - Alibaba Cloud Image: installation/ali_cloud.md
     - Upgrade from V1:
       - Upgrade Notes: installation/v1_migrate.md
       - Steps: installation/v1_migrate_steps.md
@@ -179,10 +177,6 @@ nav:
     - OpenClaw Related: faq/openclaw.md
   - API: dev_manual/api_manual.md
   - Changelog: changelog.md
-  - Contact Us: contact.md
-  - Commercial:
-    - 1Panel Pro: https://www.lxware.cn/1panel
-    - 1Panel Offline Edition: installation/package_installation.md
 
 markdown_extensions:
   - toc:
