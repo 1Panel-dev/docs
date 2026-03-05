@@ -1,8 +1,8 @@
 ## basic info
-site_name: "1Panel Documentation"
+site_name: "1Panel Docs"
 site_url: "https://docs.1panel.pro"
-site_description: "1Panel Open-source Linux Server Operation & Management Panel"
-site_author: "1Panel"
+site_description: "1Panel online documentation"
+site_author: "1Panel Team"
 repo_name: "1Panel"
 repo_url: "https://github.com/1Panel-dev/1Panel"
 edit_uri: https://github.com/1Panel-dev/docs/edit/i18n/docs/
@@ -136,31 +136,25 @@ nav:
     - Panel Settings: user_manual/settings.md
   - Popular Self-Hosted Apps:
     - OpenClaw: user_manual/appstore/openclaw.md
-    - OpenResty: user_manual/appstore/openresty.md
-    - MySQL: user_manual/appstore/mysql.md
-    - Redis: user_manual/appstore/redis.md
-    - Ollama: user_manual/appstore/ollama.md
+    - Ollama: user_manual/appstore/ollama.md  
     - WordPress: user_manual/appstore/wordpress.md
     - Bitwarden: user_manual/appstore/bitwarden.md
     - Nextcloud: user_manual/appstore/nextcloud.md
-    - OpenList: user_manual/appstore/openlist.md
+    - RustDesk: user_manual/appstore/rustdesk.md
+    - frp: user_manual/appstore/frp.md
+    - Home Assistant: user_manual/appstore/home-assistant.md
+    - OpenResty: user_manual/appstore/openresty.md
+    - MySQL: user_manual/appstore/mysql.md
+    - Redis: user_manual/appstore/redis.md
+    - MongoDB: user_manual/appstore/mongodb.md
+    - MinIO: user_manual/appstore/minio.md
+    - MariaDB: user_manual/appstore/mariadb.md
     - phpMyAdmin: user_manual/appstore/phpmyadmin.md
     - Jumpserver: user_manual/appstore/jumpserver.md
     - Zabbix: user_manual/appstore/zabbix.md
-    - frp: user_manual/appstore/frp.md
-    - Nginx Proxy Manager: user_manual/appstore/nginx-proxy-manager.md
-    - ddns-go: user_manual/appstore/ddns-go.md
-    - Gitea: user_manual/appstore/gitea.md
-    - Open WebUI: user_manual/appstore/openwebui.md
-    - MariaDB: user_manual/appstore/mariadb.md
-    - RustDesk: user_manual/appstore/rustdesk.md
-    - MinIO: user_manual/appstore/minio.md
-    - Home Assistant: user_manual/appstore/home-assistant.md
-    - MongoDB: user_manual/appstore/mongodb.md
-    - Stirling-PDF: user_manual/appstore/stirling-pdf.md
-    - Cloudreve: user_manual/appstore/cloudreve.md
     - Uptime Kuma: user_manual/appstore/uptime-kuma.md
-    - VS Code: user_manual/appstore/vscode.md
+    - Gitea: user_manual/appstore/gitea.md
+    - Stirling-PDF: user_manual/appstore/stirling-pdf.md
   - API: dev_manual/api_manual.md
   - Changelog: changelog.md
 
