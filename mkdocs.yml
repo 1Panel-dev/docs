@@ -55,8 +55,8 @@ nav:
     - Online Install: installation/online_installation.md
     - Online Upgrade: installation/online_upgrade.md
     - Upgrade from V1:
-      - Upgrade Notes: installation/v1_migrate.md
-      - Steps: installation/v1_migrate_steps.md
+      - Before upgrade: installation/v1_migrate.md
+      - Upgrade steps: installation/v1_migrate_steps.md
     - Master-Slave Switch: installation/master_migrate.md
     - CLI Tool: installation/cli.md
   - User Manual:
