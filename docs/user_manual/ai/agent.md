@@ -1,10 +1,12 @@
 # OpenClaw Installation and Deployment Guide
+
 !!! note ""
     This document mainly introduces the installation and deployment process of OpenClaw on Linux clients or servers. We recommend using 1Panel, an open-source Linux operation and maintenance management panel, for installation and deployment, which makes the entire process simple and fast. After OpenClaw is installed, the Feishu channel docking configuration can also be quickly completed through the 1Panel operation and maintenance management panel, facilitating the rapid implementation of a Feishu-based personal AI assistant.
 
 ## 1. Resource and Environment Preparation
+
 !!! note ""
-The following resource and environment preparations are required for the installation and deployment of OpenClaw:
+    The following resource and environment preparations are required for the installation and deployment of OpenClaw:
 
 ### Client/Server Preparation
 - Operating System: Supports mainstream Linux distributions (based on Debian/RedHat, including domestic operating systems)
@@ -18,39 +20,48 @@ The following resource and environment preparations are required for the install
 - Local Models
 
 ### 1Panel v2.1.0 Installation and Deployment
+
 !!! note ""
-Refer to the official 1Panel documentation for installation and deployment details at the following link: https://1panel.cn/docs/v2/installation/online_installation/
+    Refer to the official 1Panel documentation for installation and deployment details at the following link: https://1panel.cn/docs/v2/installation/online_installation/
+
 !!! note ""
-Based on the above environment, the entire installation and deployment process can be completed in four parts: 1Panel installation and deployment, large language model API Key preparation, OpenClaw installation and deployment, and Feishu channel configuration. For detailed instructions, see the following documentation.
+    Based on the above environment, the entire installation and deployment process can be completed in four parts: 1Panel installation and deployment, large language model API Key preparation, OpenClaw installation and deployment, and Feishu channel configuration. For detailed instructions, see the following documentation.
 
 ## 2. Large Language Model API Application
+
 !!! note ""
-You can check the list of models supported on the OpenClaw official website and obtain the API Key of the large language model respectively. This document takes DeepSeek as an example. For other public models and local models, prepare the relevant API Keys by referring to the corresponding documents on your own.
+    You can check the list of models supported on the OpenClaw official website and obtain the API Key of the large language model respectively. This document takes DeepSeek as an example. For other public models and local models, prepare the relevant API Keys by referring to the corresponding documents on your own.
 
 ### 2.1. Step 1: Register on the DeepSeek Developer Platform
+
 !!! note ""
-Access the DeepSeek Developer Platform via the link: https://platform.deepseek.com/, first complete personal real-name authentication and registration, and then make a recharge, as shown in the figure below.
+    Access the DeepSeek Developer Platform via the link: https://platform.deepseek.com/, first complete personal real-name authentication and registration, and then make a recharge, as shown in the figure below.
 
 ![img.png](../../img/ai/DeepSeek_Developer_Platform_Billing_Page.png)
 
 ### 2.2. Step 2: Obtain the DeepSeek API Key
+
 !!! note ""
-As shown in the figure below, enter the API keys page, click "Create API key", and keep the generated API Key in a safe place for subsequent use after creation.
+    As shown in the figure below, enter the API keys page, click "Create API key", and keep the generated API Key in a safe place for subsequent use after creation.
 
 ![img.png](../../img/ai/DeepSeek_API_Key_Creation_Page.png)
 
 ## 3. OpenClaw Installation and Deployment
+
 !!! note ""
-The installation of OpenClaw is deployed based on the agent management of 1Panel, and the DeepSeek large model API key obtained in the previous step needs to be used during the deployment process. In 1Panel, the deployment of OpenClaw and the management of large model API key accounts are divided into two separate parts and decoupled from each other, mainly to facilitate the adjustment of model configurations for your OpenClaw personal assistant.
+    The installation of OpenClaw is deployed based on the agent management of 1Panel, and the DeepSeek large model API key obtained in the previous step needs to be used during the deployment process. In 1Panel, the deployment of OpenClaw and the management of large model API key accounts are divided into two separate parts and decoupled from each other, mainly to facilitate the adjustment of model configurations for your OpenClaw personal assistant.
 
 ### 3.1. Step 1: Add a Model Account
+
 !!! note ""
-Enter the "Agent" management menu under "AI" management, click to enter and switch to "Model Account" management first, then click "Add model account". Select the model provider and enter the model account information as required to complete the model account creation.
+    Enter the "Agent" management menu under "AI" management, click to enter and switch to "Model Account" management first, then click "Add model account". Select the model provider and enter the model account information as required to complete the model account creation.
 
 ![img.png](../../img/ai/1Panel_Add_Model_Account_Page.png)
 
 ### 3.2. Step 2: Create an Agent
-After preparing the model account, switch to the "Agent" page and click "Create Agent", then enter the relevant parameters as required, as shown in the figure below：
+
+!!! note ""
+    After preparing the model account, switch to the "Agent" page and click "Create Agent", then enter the relevant parameters as required, as shown in the figure below：
 
 ![img.png](../../img/ai/1Panel_Create_Agent_Parameter_Page.png)
 
@@ -76,21 +87,28 @@ After configuring all the above parameters, click "Confirm" directly to start th
 ![img.png](../../img/ai/1Panel_OpenClaw_Installation_Log.png)
 
 ### 3.3. Step 3: Verify the Successful Deployment of OpenClaw
-After the installation and deployment of OpenClaw are completed, enter the agent list page and click "WebUI" to jump directly to the OpenClaw page, as shown in the figure below.
+
+!!! note ""
+    After the installation and deployment of OpenClaw are completed, enter the agent list page and click "WebUI" to jump directly to the OpenClaw page, as shown in the figure below.
 
 ![img.png](../../img/ai/1Panel_Agent_List_OpenClaw_Page.png)
 
-After entering the OpenClaw page, send a message and check if the AI assistant responds. A normal response, as shown in the figure below, indicates that OpenClaw has been successfully deployed.
+!!! note ""
+    After entering the OpenClaw page, send a message and check if the AI assistant responds. A normal response, as shown in the figure below, indicates that OpenClaw has been successfully deployed.
 
 ![img.png](../../img/ai/OpenClaw_WebUI_Chat_Test_Page.png)
 
 ## 4. Feishu Channel Configuration
-Up to this point, OpenClaw has been fully deployed. Next, we will configure the Feishu channel. To configure the Feishu channel, we first need to create an available robot in Feishu. Follow the steps below to complete the configuration step by step.
+
+!!! note ""
+    Up to this point, OpenClaw has been fully deployed. Next, we will configure the Feishu channel. To configure the Feishu channel, we first need to create an available robot in Feishu. Follow the steps below to complete the configuration step by step.
 
 Note: A personal Feishu account is used in this guide. For enterprise accounts, version release and permission authorization require administrator approval, while other operation steps remain the same.
 
 ### 4.1. Step 1: Create a Custom Enterprise App
-First, log in to Feishu and enter the Feishu Open Platform (link: https://open.feishu.cn/app), then access the "Developer Console" and select "Custom Apps", click "Create Custom App", as shown in the figure below.
+
+!!! note ""
+    First, log in to Feishu and enter the Feishu Open Platform (link: https://open.feishu.cn/app), then access the "Developer Console" and select "Custom Apps", click "Create Custom App", as shown in the figure below.
 
 ![img.png](../../img/ai/Feishu_Open_Platform_Custom_Apps_List.png)
 
