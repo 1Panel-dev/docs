@@ -16,4 +16,4 @@
 ## 2. Install OpenClaw
 
 For specific installation details, please refer to..
-[AI Agent使用文档](../../../../user_manual/ai/agent.md)
+[AI Agent使用文档](../../user_manual/ai/agent.md)
