@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # 1Panel: Modern Open‑Source VPS Control Panel
 
 !!! note ""
