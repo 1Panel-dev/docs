@@ -20,7 +20,7 @@
         ```bash
         systemctl start supervisord
         ```
-     !!! note ""   
+    !!! note ""
         **4. Enable on boot**
 
         ```bash
