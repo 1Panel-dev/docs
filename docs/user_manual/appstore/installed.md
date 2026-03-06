@@ -78,7 +78,7 @@
     You can also migarte the backup file to your other nodes using the **Migrate** function.
 
 ![img.png](../../img/app/migrate.png)
-
+{: .browser-mockup}
 
 
 ## 7 Upgrade
