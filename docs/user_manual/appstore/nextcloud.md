@@ -9,7 +9,7 @@
     After entering the 1Panel console, click **App Store** in the left menu.
 
 ![image-20251016110510084](../../img/app/appstores.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2. Search for Nextcloud and Install
 
@@ -17,7 +17,7 @@
     Enter **Nextcloud** in the search box in the upper right corner, click the application card to go to the details page, then select **Install**.
 
 ![image-20251017113630514](../../img/app/nextcloud.png)
-{: .original}
+{: .browser-mockup}
 
 ## 3. Configure Installation Parameters
 
@@ -33,7 +33,7 @@
     After confirming the settings are correct, click the **Confirm** button to start installation.
 
 ![image-20251017133618550](../../img/app/nextcloud_install.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Wait for the installation to complete.
@@ -44,16 +44,16 @@
     The default port is 443, so for the first access, you need to use the format `https://IP:Port` in the browser address bar.
 
 ![image-20251017134623486](../../img/app/nextcloud_view.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     You can click **Edit** on the **Containers** page to modify the port configuration.
 
 ![image-20251017134941753](../../img/app/nextcloud_port.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Change it to port 80 to access via HTTP directly.
 
 ![image-20251017135035543](../../img/app/nextcloud_portchange.png)
-{: .original}
+{: .browser-mockup}
