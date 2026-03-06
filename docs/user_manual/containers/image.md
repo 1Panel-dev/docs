@@ -16,7 +16,7 @@
     - Building an image may take some time. If you close the drawer and still want to view the build logs, you can go to [Host - Files] to download or view the log file at [Installation Directory]/1panel/tmp/docker_logs/image_build_[timestamp].log
     
 ![img.png](../../img/containers/image_build.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     - Edit: Use the web editor to modify the Dockerfile
