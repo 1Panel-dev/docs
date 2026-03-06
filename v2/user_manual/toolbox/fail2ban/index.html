@@ -3450,15 +3450,23 @@
 <p><strong>1. Install EPEL repository</strong></p>
 <div class="highlight"><pre><span></span><code>yum<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>epel-release
 </code></pre></div>
+</div>
+<div class="admonition note">
 <p><strong>2. Install Fail2ban</strong></p>
 <div class="highlight"><pre><span></span><code>yum<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>fail2ban
 </code></pre></div>
+</div>
+<div class="admonition note">
 <p><strong>3. Start Fail2ban service</strong></p>
 <div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>start<span class="w"> </span>fail2ban
 </code></pre></div>
+</div>
+<div class="admonition note">
 <p><strong>4. Enable on boot</strong></p>
 <div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>fail2ban
 </code></pre></div>
+</div>
+<div class="admonition note">
 <p><strong>5. Check Fail2ban status</strong></p>
 <div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>status<span class="w"> </span>fail2ban
 </code></pre></div>
@@ -3469,15 +3477,23 @@
 <p><strong>1. Install Fail2ban</strong></p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>fail2ban
 </code></pre></div>
+</div>
+<div class="admonition note">
 <p><strong>2. For Debian 12 and above, install rsyslog manually</strong></p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>rsyslog
 </code></pre></div>
+</div>
+<div class="admonition note">
 <p><strong>3. Start Fail2ban service</strong></p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>fail2ban
 </code></pre></div>
+</div>
+<div class="admonition note">
 <p><strong>4. Enable on boot</strong></p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>fail2ban
 </code></pre></div>
+</div>
+<div class="admonition note">
 <p><strong>5. Check Fail2ban status</strong></p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>fail2ban
 </code></pre></div>
