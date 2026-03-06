@@ -9,10 +9,7 @@
     - Browser: Use modern browsers such as Chrome, Firefox, IE10+, Edge
     - **Internet access is required**
 
-## 2 Installation and Deployment
-
-!!! note ""
-    GitHub release link: https://github.com/1Panel-dev/1Panel/releases
+## 2 Installation Steps
 
 !!! note ""
 
