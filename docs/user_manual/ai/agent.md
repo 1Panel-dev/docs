@@ -9,6 +9,8 @@
     The following resource and environment preparations are required for the installation and deployment of OpenClaw:
 
 ### Client/Server Preparation
+
+!!! note ""
 - Operating System: Supports mainstream Linux distributions (based on Debian/RedHat, including domestic operating systems)
 - Server Architecture: x86_64, aarch64
 - Memory Requirement: It is recommended to have more than 2GB of available memory
