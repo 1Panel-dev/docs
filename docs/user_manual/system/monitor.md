@@ -11,7 +11,7 @@
     Use the time selector above the charts to adjust the time range of monitoring data.
 
 ![img.png](../../img/hosts/monitor.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2 Modify Settings
 
