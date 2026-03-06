@@ -9,7 +9,7 @@
     After entering the 1Panel console, click **App Store** in the left menu.
 
 ![image-20251016110510084](../../img/app/appstores.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2. Search for Uptime Kuma and Install
 
@@ -17,7 +17,7 @@
     Enter **Uptime Kuma** in the search box in the upper right corner, click the application card to go to the details page, then select **Install**.
 
 ![image-20251021163433091](../../img/app/uptime-kuma.png)
-{: .original}
+{: .browser-mockup}
 
 ## 3. Configure Installation Parameters
 
@@ -32,7 +32,7 @@
     After confirming the settings are correct, click the **Confirm** button to start installation.
 
 ![image-20251021163633965](../../img/app/uptime-kuma_install.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Wait for the installation to complete.
@@ -43,16 +43,16 @@
     After installation, confirm the default access address in 1Panel. Skip this step if already configured.
 
 ![image-20251016172322315](../../img/app/setting_ip.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Return to the App Store and click **Jump** to access the Uptime Kuma service.
 
 ![image-20251021163916064](../../img/app/uptime-kuma_jump.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Create an administrator account to start using it.
 
 ![image-20251021163947718](../../img/app/uptime-kuma_view.png)
-{: .original}
+{: .browser-mockup}
