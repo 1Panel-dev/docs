@@ -226,7 +226,7 @@
 !!! note ""
     Modify the OpenClaw configuration file and add the Discord channel configuration. The minimum configuration is as follows:
 
-'''
+    ```bash
     {
       "channels": {
         "discord": {
@@ -235,12 +235,12 @@
         }
       }
     }
-'''    
+    ```
 
 !!! note ""
     For more advanced configurations (e.g., allowlist, server/channel restrictions, private message settings), you can use the full configuration template as follows. Adjust the parameters according to your actual needs:
 
-'''
+    ```bash
     {
       "channels": {
         "discord": {
@@ -298,7 +298,7 @@
         }
       }
     }
-'''    
+    ```bash    
 
 !!! note ""
     After completing the configuration, enter the "Configuration" page of "Agent" in 1Panel, complete the Discord chat channel configuration, and click "Save", as shown in the figure below:
