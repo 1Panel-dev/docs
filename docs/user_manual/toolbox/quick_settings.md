@@ -11,4 +11,4 @@
     - Server time
 
 ![img.png](../../img/toolbox/quick_settings.png)
-{: .original}
+{: .browser-mockup}

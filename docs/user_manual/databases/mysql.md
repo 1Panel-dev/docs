@@ -11,10 +11,10 @@
     In addition to local databases installed from the App Store, you can also add existing database service addresses. Click the **Remote Server** button above the list to enter the remote server management page.
 
 ![img.png](../../img/databases/mysql_remote.png)
-{: .original}
+{: .browser-mockup}
 
 ![img.png](../../img/databases/mysql_remote_add.png)
-{: .original}
+{: .browser-mockup}
 
 ### 1.3 Switch Database Instance
 
@@ -22,7 +22,7 @@
     Click the drop-down menu above the database list to switch between different database instances and manage databases and settings under different instances.
 
 ![img.png](../../img/databases/mysql_select.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2 Create Database
 
@@ -30,7 +30,7 @@
     To create a new database, first enter the database name, select the encoding format, enter the password, and set access permissions.
 
 ![img.png](../../img/databases/create_mysql_db.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     - Database Name: Name of the new database, with default encoding UTF-8
@@ -44,7 +44,7 @@
     Click the **Connection Information** button above the list to view the database address, port, root password, and other connection details. You can also change the root password here.
 
 ![img.png](../../img/databases/mysql_connect.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note "Note"
     Databases deployed from the App Store run in containers. Select the corresponding connection information according to the scenario shown on the page.
@@ -69,7 +69,7 @@
     Click the backup button to back up the current database.
 
 ![img.png](../../img/databases/backup_mysql_db.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     - Default backup path: `/opt/1panel/backup/database/mysql`
@@ -81,7 +81,7 @@
     Click **Import Backup** to upload a local file or select an existing backup for restoration.
 
 ![img.png](../../img/databases/recover_mysql_db.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     - When restoring from an uploaded file, ensure the archive contains a `test.sql` file, otherwise import will fail
@@ -94,7 +94,7 @@
     Click the **Permissions** button in the action column to modify access permissions for a specific database. Supports access from all hosts or specified IPs.
 
 ![img.png](../../img/databases/update_mysql_db_access.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     - All Hosts: Anyone can connect remotely
@@ -114,7 +114,7 @@
     You can manually adjust database configuration in the configuration interface.
 
 ![img.png](../../img/databases/mysql_conf.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     - MySQL is installed via Docker; configuration file is mounted at `/opt/1panel/apps/mysql/[database-name]/conf/my.cnf`
@@ -127,7 +127,7 @@
     When database queries are slow, go to the database settings and click **Current Status** to view key metrics such as cache hit ratio and index hit ratio for performance optimization.
 
 ![img.png](../../img/databases/mysql_status.png)
-{: .original}
+{: .browser-mockup}
 
 ## 12 Performance Tuning
 
@@ -135,7 +135,7 @@
     The system supports form-based tuning of performance parameters such as index buffer and max connections. Common optimization presets are available for direct selection based on your environment.
 
 ![img.png](../../img/databases/mysql_variables.png)
-{: .original}
+{: .browser-mockup}
 
 ## 13 Port
 
@@ -149,4 +149,4 @@
     - Slow query logs are also available in the settings interface
 
 ![img.png](../../img/databases/mysql_log.png)
-{: .original}
+{: .browser-mockup}

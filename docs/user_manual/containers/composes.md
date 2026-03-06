@@ -10,7 +10,7 @@
     [Learn more about container orchestration](https://docs.docker.com/compose)
 
 ![img.png](../../img/containers/compose_create.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2 Edit Orchestration
 
@@ -29,4 +29,4 @@
     Click the name in the orchestration list to enter the orchestration details page. This page displays the container list corresponding to the Compose. Starting/stopping operations for the Compose are only supported when the Compose is created by 1Panel.
 
 ![img.png](../../img/containers/compose_detail.png)
-{: .original}
+{: .browser-mockup}

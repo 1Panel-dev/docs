@@ -30,4 +30,4 @@
         - Scheduled task execution log files
 
 ![img.png](../../img/toolbox/clean.png)
-{: .original}
+{: .browser-mockup}

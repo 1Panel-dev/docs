@@ -6,7 +6,7 @@
     - Currently supported versions: Python 3.10, 3.11, 3.12, and 3.13. Choose the appropriate version based on your needs.
 
 ![runtime_python_create.png](../../img/websites/runtime_python_create.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2 Manage Python Runtime Environment
 

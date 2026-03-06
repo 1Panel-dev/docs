@@ -4,7 +4,7 @@
     [Learn more about container networks](https://docs.docker.com/network)
 
 ![img.png](../../img/containers/network_create.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     **Mode: Network drivers in Docker are pluggable. 1Panel provides several network drivers to deliver core networking functionality, including:**

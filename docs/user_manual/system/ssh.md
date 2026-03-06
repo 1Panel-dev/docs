@@ -4,7 +4,7 @@
     On the SSH management page, you can start, stop, or restart the SSH service, set it to run on boot, and visually configure common settings such as listening port and listening address. You can also edit other configurations via the configuration file.
 
 ![img.png](../../img/hosts/ssh_config.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2 Manage SSH Sessions
 
@@ -15,7 +15,7 @@
     - Click **Disconnect** in the action column to terminate a specific SSH session
 
 ![img.png](../../img/hosts/ssh_session.png)
-{: .original}
+{: .browser-mockup}
 
 ## 3 View SSH Login Logs
 
@@ -23,4 +23,4 @@
     Click the **Login Logs** tab at the top to view the SSH login log list.
 
 ![img.png](../../img/hosts/ssh_log.png)
-{: .original}
+{: .browser-mockup}

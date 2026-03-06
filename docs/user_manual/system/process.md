@@ -10,7 +10,7 @@
     - Click **Kill** in the action column to terminate the specified process
 
 ![img.png](../../img/hosts/processes.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2 View Network Connections
 
@@ -22,4 +22,4 @@
     - The list can be sorted by PID and filtered by connection status
 
 ![img.png](../../img/hosts/netstat.png)
-{: .original}
+{: .browser-mockup}

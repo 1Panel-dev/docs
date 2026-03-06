@@ -6,6 +6,7 @@
     To use the model management feature, you need to first install the Ollama application from the App Store. After installation, you can view the status of the Ollama application on this page and perform operations such as starting, stopping, and restarting.
 
 ![img.png](../../img/ai/overview.png)
+{: .browser-mockup}
 
 ## 2 Adding Models
 
@@ -13,6 +14,7 @@
     Click "Add Model," enter the model name, and click the "Add" button to pull the corresponding model from the [Ollama Official Repository](https://ollama.com/search).
 
 ![img.png](../../img/ai/model_pull.png)
+{: .browser-mockup}
 
 ## 3 Running Models
 
@@ -20,6 +22,7 @@
     Click the "Run" button in the row of a specific model to open an online terminal on the current page and interact with the model.
 
 ![img.png](../../img/ai/model_run.png)
+{: .browser-mockup}
 
 ## 4 AI Proxy Enhancement
 
@@ -27,6 +30,7 @@
     This feature allows you to configure a reverse proxy for the Ollama application, supporting domain names, HTTPS, IP whitelists, and other configurations to enhance security when using large models.
 
 ![img.png](../../img/ai/api_proxy.png)
+{: .browser-mockup}
 
 ## 5 Viewing Connection Information
 
@@ -34,6 +38,7 @@
     Click the "Connection Information" button at the top of the list to view the connection information for the Ollama application.
 
 ![img.png](../../img/ai/connection_info.png)
+{: .browser-mockup}
 
 > The Ollama application deployed from the App Store runs in a containerized manner. Different scenarios require selecting the corresponding connection information based on the prompts on the page.
 
@@ -75,7 +80,7 @@
     - **Mounts**: Mount additional directories for the TensorRT LLM container. Local directories on the server can be mounted to the container for access within the container.
 
 ![img.png](../../img/ai/create_trtllm.png)
-{: .original}
+{: .browser-mockup}
 
 ### 2 View Model Logs
 

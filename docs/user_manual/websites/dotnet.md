@@ -7,6 +7,7 @@
     - The `mcr.microsoft.com/dotnet/aspnet` image is used. You need to compile your code into a `.dll` file first, then place it in the runtime directory.
 
 ![runtime_net_create.png](../../img/websites/runtime_net_create.png)
+{: .browser-mockup}
 
 ## 2 Manage .NET Runtime Environment
 

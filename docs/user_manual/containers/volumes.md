@@ -4,4 +4,4 @@
     [Learn more about container storage](https://docs.docker.com/storage/volumes)
 
 ![img.png](../../img/containers/volume_create.png)
-{: .original}
+{: .browser-mockup}

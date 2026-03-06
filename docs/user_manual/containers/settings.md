@@ -5,7 +5,7 @@
     - The default configuration file path is: `/etc/docker/daemon.json`
 
 ![img.png](../../img/containers/setting.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     - Image Acceleration: If application installation fails or image pulling times out, you can configure image accelerators to optimize the process
@@ -13,7 +13,9 @@
             ```properties
             https://docker.1panel.live
             ```
-        > After configuring the above acceleration address, if pulling application images still fails, [further discussion is available on the forum](https://bbs.fit2cloud.com/t/topic/5886)
+> After configuring the above acceleration address, if pulling application images still fails, [further discussion is available on the forum](https://bbs.fit2cloud.com/t/topic/5886)
+
+!!! note ""
     - Private Registry: Self-built private image registries such as Harbor, Nexus, docker-registry, etc.
     - iptables: This setting disables Docker's automatic configuration of iptables rules, which may cause containers to fail to communicate with external networks
     - live-restore: Whether to stop all containers when the Docker service is stopped
@@ -34,16 +36,23 @@
                 valid_lft forever preferred_lft forever
         ```
     
+!!! note ""
     - Enable IPv6 in the panel settings, where `fixed-cidr-v6` is the subnet of the IPv6 network segment obtained in the previous step (configures the default network, with a maximum prefix length of /80)
-        ![img.png](../../img/containers/ipv6-01.png)
-    {: .original}
+       
+![img.png](../../img/containers/ipv6-01.png)
+{: .browser-mockup}
 
+!!! note ""
     - Check if it takes effect through [Networks] - [Details]. If effective, the value of `EnableIPv6` is `true`, and `IPAM.Config[1].Subnet` is the `fixed-cidr-v6` configured in the previous step
-        ![img.png](../../img/containers/ipv6-02.png)
-    {: .original}
 
+![img.png](../../img/containers/ipv6-02.png)
+{: .browser-mockup}
+
+!!! note ""
     - Create an IPv6 network
-        ![img.png](../../img/containers/ipv6-03.png)
-    {: .original}
+       
+![img.png](../../img/containers/ipv6-03.png)
+{: .browser-mockup}
 
+!!! note ""
     - Create containers using the IPv6 network you created

@@ -23,6 +23,7 @@
     - DNSPod（About to be phased out）
 
 ![img.png](../../img/websites/certificate_dns.png)
+{: .browser-mockup}
 
 !!! note "Note"
     For how to obtain the required authentication information for different DNS account types, please refer to the API documentation of the corresponding provider.

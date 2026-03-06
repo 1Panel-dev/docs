@@ -12,7 +12,7 @@
     - Supports batch input across all active connections
 
 ![img.png](../img/hosts/terminal.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2 Host Management
 
@@ -20,4 +20,4 @@
     Manage host information and support host grouping.
 
 ![img.png](../img/hosts/host.png)
-{: .original}
+{: .browser-mockup}
