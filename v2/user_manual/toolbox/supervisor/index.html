@@ -3479,47 +3479,65 @@
   <h1>Supervisor</h1>
 
 <h2 id="1-installation">1 Installation<a class="headerlink" href="#1-installation" title="Permanent link">¶</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">RedHat / CentOS</label><label for="__tabbed_1_2">Ubuntu / Debian</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">RedHat / CentOS</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block">
-<div class="admonition note">
-<p><strong>1. Install EPEL repository</strong></p>
-<div class="highlight"><pre><span></span><code>yum<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>epel-release
-</code></pre></div>
+<div class="tabbed-block"></div>
+</div>
 </div>
 <div class="admonition note">
-<p><strong>2. Install supervisor</strong></p>
-<div class="highlight"><pre><span></span><code>yum<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>supervisor
-</code></pre></div>
+<pre><code>**1. Install EPEL repository**
+
+```bash
+yum install -y epel-release
+```
+</code></pre>
 </div>
 <div class="admonition note">
-<p><strong>3. Start supervisord</strong></p>
-<div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>start<span class="w"> </span>supervisord
-</code></pre></div>
+<pre><code>**2. Install supervisor**
+
+```bash
+yum install -y supervisor
+```
+</code></pre>
 </div>
 <div class="admonition note">
-<p><strong>4. Enable on boot</strong></p>
-<div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>supervisord
-</code></pre></div>
+<pre><code>**3. Start supervisord**
+
+```bash
+systemctl start supervisord
+```
+</code></pre>
 </div>
 <div class="admonition note">
-<p><strong>5. Check status</strong></p>
-<div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>status<span class="w"> </span>supervisord
-</code></pre></div>
+<pre><code>**4. Enable on boot**
+
+```bash
+systemctl enable supervisord
+```
+</code></pre>
 </div>
+<div class="admonition note">
+<pre><code>**5. Check status**
+
+```bash
+systemctl status supervisord
+```
+</code></pre>
 </div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">Ubuntu / Debian</label></div>
+<div class="tabbed-content">
 <div class="tabbed-block">
 <div class="admonition note">
 <p><strong>Install supervisor</strong></p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>supervisor
 </code></pre></div>
 </div>
+</div>
+</div>
+</div>
 <blockquote>
 <p>Supervisor starts automatically after installation.</p>
 </blockquote>
-</div>
-</div>
-</div>
 <h2 id="2-initialization">2 Initialization<a class="headerlink" href="#2-initialization" title="Permanent link">¶</a></h2>
 <div class="admonition note">
 <p>Initialization is required on first use to set the configuration path and service name.</p>
