@@ -312,9 +312,9 @@
 !!! note ""
     Start the OpenClaw Gateway. When the bot token is available (configuration file takes precedence, environment variable as fallback) and "channels.discord.enabled" is not false, the Discord channel will start automatically. Run the following command to start the Gateway (if not started automatically):
 
-'''
+    ```bash
     openclaw gateway
-'''
+    ```
 
 !!! note ""
     After starting the Gateway, verify whether the configuration is successful by following these steps:
@@ -334,10 +334,10 @@
 !!! note ""
     If the bot fails to work normally, first run the following commands to perform a quick audit and view warnings:
 
-'''
+    ```bash
     openclaw doctor
     openclaw channels status --probe
-'''
+    ```
 
 #### Common Issues and Solutions
 
