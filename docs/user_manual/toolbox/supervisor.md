@@ -48,7 +48,7 @@
     Initialization is required on first use to set the configuration path and service name.
 
 ![Initialization](../../img/hosts/supervisor_init.png){ width="900px" }
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     If the service name or configuration changes later, you can reinitialize on the settings page.
@@ -60,7 +60,7 @@
     Click **Create Daemon**, fill in the parameters, and confirm.
 
 ![Create](../../img/hosts/supervisor_create.png){ width="900px" }
-{: .original}
+{: .browser-mockup}
 
 ## 4 Daemon Management
 
@@ -74,4 +74,4 @@
     On the Supervisor status bar, you can restart/stop the Supervisor service, view logs, edit configuration, etc.
 
 ![Operations](../../img/hosts/supervisor_operate.png){ width="900px" }
-{: .original}
+{: .browser-mockup}
