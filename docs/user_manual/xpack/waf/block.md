@@ -3,4 +3,4 @@
     You can manually block or unblock IPs.
 
 ![img.png](../../../img/waf/block.png){ width="900px" }
-{: .original}
+{: .browser-mockup}
