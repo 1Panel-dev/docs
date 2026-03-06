@@ -1,19 +1,24 @@
 ## 1 Installation
 
 === "RedHat / CentOS"
+    
     !!! note ""
+        
         **1. Install EPEL repository**
 
         ```bash
         yum install -y epel-release
         ```
-
+    !!! note ""
+        
         **2. Install Pure-FTPd**
         
         ```bash
         yum -y install pure-ftpd
         ```
 
+    !!! note ""
+        
         **3. Modify default configuration**
         
         ```bash
@@ -30,11 +35,15 @@
         PassivePortRange 39000 40000
         ```
 
+    !!! note ""
+        
         **4. Start Pure-FTPd service**
         
         ```bash
         systemctl start pure-ftpd.service
         ```
+        
+    !!! note ""
         
         **5. Check service status**
 
@@ -43,13 +52,17 @@
         ```
 
 === "Ubuntu / Debian"
+    
     !!! note ""
+        
         **1. Install Pure-FTPd**
         
         ```bash
         sudo apt-get install pure-ftpd
         ```
 
+    !!! note ""
+        
         **2. Modify default configuration**
         
         ```bash
@@ -65,17 +78,23 @@
         echo '39000 40000' > /etc/pure-ftpd/conf/PassivePortRange
         ```
 
+    !!! note ""
+        
         **3. Create database symlink**
         
         ```bash
         ln -s /etc/pure-ftpd/conf/PureDB /etc/pure-ftpd/auth/50puredb
         ```
 
+    !!! note ""
+        
         **4. Start Pure-FTPd service**
         
         ```bash
         sudo systemctl start pure-ftpd.service
         ```
+        
+    !!! note ""
         
         **5. Check service status**
 
