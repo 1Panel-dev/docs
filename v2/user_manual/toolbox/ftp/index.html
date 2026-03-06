@@ -3432,9 +3432,13 @@
 <p><strong>1. Install EPEL repository</strong></p>
 <div class="highlight"><pre><span></span><code>yum<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>epel-release
 </code></pre></div>
+</div>
+<div class="admonition note">
 <p><strong>2. Install Pure-FTPd</strong></p>
 <div class="highlight"><pre><span></span><code>yum<span class="w"> </span>-y<span class="w"> </span>install<span class="w"> </span>pure-ftpd
 </code></pre></div>
+</div>
+<div class="admonition note">
 <p><strong>3. Modify default configuration</strong></p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Default config path: /etc/pure-ftpd/pure-ftpd.conf</span>
 <span class="c1"># Find and update these parameters:</span>
@@ -3448,9 +3452,13 @@ NoAnonymous<span class="w"> </span>yes
 <span class="c1"># Enable passive port range (adjust as needed)</span>
 PassivePortRange<span class="w"> </span><span class="m">39000</span><span class="w"> </span><span class="m">40000</span>
 </code></pre></div>
+</div>
+<div class="admonition note">
 <p><strong>4. Start Pure-FTPd service</strong></p>
 <div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>start<span class="w"> </span>pure-ftpd.service
 </code></pre></div>
+</div>
+<div class="admonition note">
 <p><strong>5. Check service status</strong></p>
 <div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>status<span class="w"> </span>pure-ftpd.service
 </code></pre></div>
@@ -3461,6 +3469,8 @@ PassivePortRange<span class="w"> </span><span class="m">39000</span><span class=
 <p><strong>1. Install Pure-FTPd</strong></p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>pure-ftpd
 </code></pre></div>
+</div>
+<div class="admonition note">
 <p><strong>2. Modify default configuration</strong></p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Debian/Ubuntu use individual files under /etc/pure-ftpd/conf</span>
 
@@ -3473,12 +3483,18 @@ PassivePortRange<span class="w"> </span><span class="m">39000</span><span class=
 <span class="c1"># Set passive port range</span>
 <span class="nb">echo</span><span class="w"> </span><span class="s1">'39000 40000'</span><span class="w"> </span>&gt;<span class="w"> </span>/etc/pure-ftpd/conf/PassivePortRange
 </code></pre></div>
+</div>
+<div class="admonition note">
 <p><strong>3. Create database symlink</strong></p>
 <div class="highlight"><pre><span></span><code>ln<span class="w"> </span>-s<span class="w"> </span>/etc/pure-ftpd/conf/PureDB<span class="w"> </span>/etc/pure-ftpd/auth/50puredb
 </code></pre></div>
+</div>
+<div class="admonition note">
 <p><strong>4. Start Pure-FTPd service</strong></p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>pure-ftpd.service
 </code></pre></div>
+</div>
+<div class="admonition note">
 <p><strong>5. Check service status</strong></p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>pure-ftpd.service
 </code></pre></div>
