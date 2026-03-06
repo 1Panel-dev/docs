@@ -115,161 +115,244 @@
 ![img.png](../../img/ai/OpenClaw_WebUI_Chat_Test_Page.png)
 {: .browser-mockup}
 
-## 4. Feishu Channel Configuration
+Discord Channel Configuration
+
+## 4. Discord Channel Configuration
 
 !!! note ""
-    Up to this point, OpenClaw has been fully deployed. Next, we will configure the Feishu channel. To configure the Feishu channel, we first need to create an available robot in Feishu. Follow the steps below to complete the configuration step by step.
-
-    Note: A personal Feishu account is used in this guide. For enterprise accounts, version release and permission authorization require administrator approval, while other operation steps remain the same.
-
-### 4.1. Step 1: Create a Custom Enterprise App
+Up to this point, OpenClaw has been fully deployed. Next, we will configure the Discord channel. To configure the Discord channel, we first need to create an available bot in the Discord Developer Portal. Follow the steps below to complete the configuration step by step.
 
 !!! note ""
-    First, log in to Feishu and enter the Feishu Open Platform (link: https://open.feishu.cn/app), then access the "Developer Console" and select "Custom Apps", click "Create Custom App", as shown in the figure below.
+Note: This guide uses a personal Discord account. For server-level configurations involving enterprise or team servers, some permission settings may require server administrator approval, while other operation steps remain the same.
 
-![img.png](../../img/ai/Feishu_Open_Platform_Custom_Apps_List.png)
+### 4.1. Step 1: Create a Discord Application and Bot User
+
+!!! note ""
+First, log in to the Discord Developer Portal (link: https://discord.com/developers/applications), then click "New Application" in the upper right corner to create a new application.
+
+!!! note ""
+Enter the application name (customizable, e.g., "OpenClaw Bot") and click "Create" to complete the application creation. Then, in the left navigation bar of the application page, select "Bot" and click "Add Bot" to create a bot user.
+
+!!! note ""
+After creating the bot, click "Copy" under "Bot Token" to save the token (this token will be used in the subsequent OpenClaw configuration). Note: Keep the token confidential, as it is equivalent to the bot's access credential. If the token is leaked, click "Regenerate" to get a new one.
+
+### 4.2. Step 2: Enable Required Privileged Gateway Intents
+
+!!! note ""
+Discord blocks "Privileged Gateway Intents" by default; you need to explicitly enable the intents required by OpenClaw to ensure the bot can normally read and send messages. Under the "Bot" page, find the "Privileged Gateway Intents" section and enable the following two intents:
+
+!!! note ""
+- Message Content Intent: Required to read message text in most servers; without it, the bot will connect but not respond to messages, and you may see the error "Used disallowed intents".
+
+!!! note ""
+- Server Members Intent (Recommended): Required for member/user search and allowlist matching in servers.
+
+!!! note ""
+You usually do not need to enable "Presence Intent".
+
+### 4.3. Step 3: Generate Invite URL and Add Bot to Server
+
+!!! note ""
+To make the bot work in your Discord server, you need to generate an invite URL and invite the bot to the target server. In the left navigation bar of the application page, select "OAuth2" → "URL Generator", then configure the scopes and bot permissions as follows:
+
+!!! note ""
+#### Scopes
+
+- ✅ bot
+
+- ✅ applications.commands (Required for native slash commands)
+
+!!! note ""
+#### Bot Permissions (Minimum Baseline)
+
+- ✅ View Channels
+
+- ✅ Send Messages
+
+- ✅ Read Message History
+
+- ✅ Embed Links
+
+- ✅ Attach Files
+
+- ✅ Add Reactions (Optional but recommended)
+
+- ✅ Use External Emojis / Stickers (Optional, only if needed)
+
+!!! note ""
+Note: Avoid enabling "Administrator" unless you are debugging and fully trust the bot..
+
+!!! note ""
+After completing the configuration, copy the generated URL, open it in a browser, select the target server where you want to add the bot, and click "Authorize" to complete the invitation. You may need to complete the human-machine verification during the process.
+
+### 4.4. Step 4: Enable Developer Mode and Obtain IDs (Optional)
+
+!!! note ""
+Discord uses numeric IDs for servers, users, and channels, which are preferred in OpenClaw configurations. To obtain these IDs, you need to enable Developer Mode in Discord (desktop/web version):
+
+!!! note ""
+1. Open Discord, click the gear icon in the lower left corner to enter "User Settings".
+
+!!! note ""
+2. Select "Advanced" in the left navigation bar, then enable "Developer Mode".
+
+After enabling, you can right-click to copy the corresponding IDs:
+
+- Server Name → Copy Server ID (Guild ID)
+
+- Channel (e.g., #help) → Copy Channel ID
+
+- Your User Avatar → Copy User ID
+
+The operation page is shown in the figure below.
+
+![img.png](../../img/ai/Discord_Developer_Mode_Page.png)
+
 {: .browser-mockup}
 
-!!! note ""
-    As shown in the figure below, enter the relevant app name and basic information as required and click "Create".
-
-![img.png](../../img/ai/Feishu_Create_Custom_App_Page.png)
-{: .browser-mockup}
-
-### 4.2. Step 2: Create a Bot
+### 4.5. Step 5: Configure OpenClaw for Discord Channel
 
 !!! note ""
-    As shown in the figure below, click to create a bot to complete the bot creation process.
+After completing the Discord bot configuration, you need to set the bot token and related parameters in OpenClaw. There are two ways to configure it: using environment variables or modifying the configuration file. The configuration file method is recommended for more flexible settings.
 
-![img.png](../../img/ai/Feishu_Add_Bot_Feature_Page.png)
-{: .browser-mockup}
-
-!!! note ""
-    After entering the bot page, click the edit button after bot configuration to define the bot name, as shown in the figure below：
-
-![img.png](../../img/ai/Feishu_Bot_Setting_Page.png)
-{: .browser-mockup}
-
-### 4.3. Step 3: Permission Configuration
+#### 4.5.1. Configuration via Environment Variable (Recommended for Servers)
 
 !!! note ""
-    After creating the bot, click to enter "Permissions & Scopes" and then click "Batch import/export scopes".
-
-![img.png](../../img/ai/Feishu_Permissions_Scopes_Page.png)
-{: .browser-mockup}
+Set the environment variable with the bot token obtained in Step 1. The variable name is fixed as follows:
 
 !!! note ""
-    Click "Batch import/export scopes", clear the default permission configuration information, copy and paste the permission authorization script as shown below, and click "Save".
+DISCORD_BOT_TOKEN=YOUR_BOT_TOKEN
 
-```json
+!!! note ""
+Note: If both environment variables and configuration file settings are used, the configuration file settings take precedence (environment variables are only used as a fallback for the default account).
+
+#### 4.5.2. Configuration via Configuration File
+
+!!! note ""
+Modify the OpenClaw configuration file and add the Discord channel configuration. The minimum configuration is as follows:
+
+'''
 {
-  "scopes": {
-    "tenant": [
-      "aily:file:read",
-      "aily:file:write",
-      "application:application.app_message_stats.overview:readonly",
-      "application:application.self_manage",
-      "application:bot.menu:write",
-      "cardkit:card:write",
-      "contact:contact.base:readonly",
-      "contact:user.employee_id:readonly",
-      "corehr:file:download",
-      "docs:document.content:read",
-      "event:ip_list",
-      "im:chat",
-      "im:chat.access_event.bot_p2p_chat:read",
-      "im:chat.members:bot_access",
-      "im:message",
-      "im:message.group_at_msg:readonly",
-      "im:message.group_msg",
-      "im:message.p2p_msg:readonly",
-      "im:message:readonly",
-      "im:message:send_as_bot",
-      "im:resource",
-      "sheets:spreadsheet",
-      "wiki:wiki:readonly"
-    ],
-    "user": [
-      "aily:file:read",
-      "aily:file:write",
-      "contact:contact.base:readonly",
-      "im:chat.access_event.bot_p2p_chat:read"
-    ]
+  "channels": {
+    "discord": {
+      "enabled": true,
+      "token": "YOUR_BOT_TOKEN"
+    }
   }
 }
-```
+'''    
 
 !!! note ""
-    The effect after pasting is shown in the figure below：
+For more advanced configurations (e.g., allowlist, server/channel restrictions, private message settings), you can use the full configuration template as follows. Adjust the parameters according to your actual needs:
 
-![img.png](../../img/ai/Feishu_Batch_Import_Scopes_Page.png)
-{: .browser-mockup}
-
-!!! note ""
-    Click "Next, Review New Scopes" and finally ensure that all permissions are enabled. For personal accounts, confirm the permissions by yourself; for enterprise accounts, administrator review is required. Ensure all permissions are enabled as shown in the figure below：
-
-![img.png](../../img/ai/Feishu_Permissions_Scopes_Review_Page.png)
-{: .browser-mockup}
-
-### 4.4. Step 4: Obtain Credentials and Configure in 1Panel
-
-!!! note ""
-    Enter the Feishu platform and obtain the app credentials in "Credentials & Basic Info", as shown in the figure below：
-
-![img.png](../../img/ai/Feishu_Credentials_Basic_Info_Page.png)
-{: .browser-mockup}
-
-!!! note ""
-    After obtaining the credentials, enter the "Configuration" page of "Agent" in 1Panel, complete the Feishu chat channel configuration, and click "Save", as shown in the figure below：
-
-![img.png](../../img/ai/1Panel_OpenClaw_Feishu_Channel_Config.png)
-{: .browser-mockup}
-
-### 4.5. Step 5: Create Events and Callbacks
-
-!!! note ""
-    As shown in the figure below, enter the "Events & Callbacks" menu and complete the subscription method setting and event addition respectively.
-
-![img.png](../../img/ai/Feishu_Events_Callbacks_Page.png)
-{: .browser-mockup}
-
-#### Subscription Method Setting
-
-!!! note ""
-    Select the persistent connection subscription method as shown in the figure below：
-
-![img.png](../../img/ai/Feishu_Event_Subscription_Mode_Setting.png)
-{: .browser-mockup}
-
-#### Add Events:
-
-!!! note ""
-    Enter "im.message.receive_v1" to search, check "Receive messages" based on "App-based Subscription", and finally confirm the addition.
-
-![img.png](../../img/ai/Feishu_Add_Event_Im_Message_Receive.png)
-{: .browser-mockup}
-
-### 4.6. Step 6: Create and Release a Version
-
-!!! note ""
-    After confirmation, click "Create Version", then enter the relevant version information as required and release it. No approval is required for personal accounts, while enterprise accounts need enterprise approval.
-
-![img.png](../../img/ai/Feishu_Create_App_Version_Page.png)
-{: .browser-mockup}
-
-### 4.7. Step 7: Verify the Feishu Channel Configuration
-
-!!! note ""
-    After completing all the above configurations, open the app in the Feishu client as shown in the figure below：
-
-![img.png](../../img/ai/Feishu_Client_OpenClaw_Bot_List.png)
-{: .browser-mockup}
+'''
+{
+  "channels": {
+    "discord": {
+      "enabled": true,
+      "token": "abc.123",
+      "groupPolicy": "allowlist",
+      "mediaMaxMb": 8,
+      "actions": {
+        "reactions": true,
+        "stickers": true,
+        "emojiUploads": true,
+        "stickerUploads": true,
+        "polls": true,
+        "permissions": true,
+        "messages": true,
+        "threads": true,
+        "pins": true,
+        "search": true,
+        "memberInfo": true,
+        "roleInfo": true,
+        "roles": false,
+        "channelInfo": true,
+        "channels": true,
+        "voiceStatus": true,
+        "events": true,
+        "moderation": false
+      },
+      "replyToMode": "off",
+      "dm": {
+        "enabled": true,
+        "policy": "pairing",
+        "allowFrom": ["123456789012345678", "steipete"],
+        "groupEnabled": false,
+        "groupChannels": ["openclaw-dm"]
+      },
+      "guilds": {
+        "*": { "requireMention": true },
+        "123456789012345678": {
+          "slug": "friends-of-openclaw",
+          "requireMention": false,
+          "reactionNotifications": "own",
+          "users": ["987654321098765432", "steipete"],
+          "channels": {
+            "general": { "allow": true },
+            "help": {
+              "allow": true,
+              "requireMention": true,
+              "users": ["987654321098765432"],
+              "skills": ["search", "docs"],
+              "systemPrompt": "Keep answers short."
+            }
+          }
+        }
+      }
+    }
+  }
+}
+'''    
 
 !!! note ""
-    Finally, perform a simple test. The prompt as shown in the figure below indicates that the configuration is successful.
+After completing the configuration, enter the "Configuration" page of "Agent" in 1Panel, complete the Discord chat channel configuration, and click "Save", as shown in the figure below:
 
-![img.png](../../img/ai/Feishu_OpenClaw_Bot_Chat_Test_Page.png)
+![img.png](../../img/ai/1Panel_OpenClaw_Discord_Channel_Config.png)
+
 {: .browser-mockup}
+
+### 4.6. Step 6: Start Gateway and Verify Configuration
+
+!!! note ""
+Start the OpenClaw Gateway. When the bot token is available (configuration file takes precedence, environment variable as fallback) and "channels.discord.enabled" is not false, the Discord channel will start automatically. Run the following command to start the Gateway (if not started automatically):
+
+'''
+openclaw gateway
+'''
+
+!!! note ""
+After starting the Gateway, verify whether the configuration is successful by following these steps:
+
+- 1. Open the Discord client and enter the server where the bot was added.
+
+- 2. In the target channel (e.g., #general), send a message mentioning the bot (e.g., @OpenClaw Bot hello).
+
+- 3. If the bot replies normally, it indicates that the configuration is successful. The test effect is shown in the figure below.
+
+![img.png](../../img/ai/Discord_OpenClaw_Bot_Test_Page.png)
+
+{: .browser-mockup}
+
+### 4.7. Step 7: Troubleshooting (Common Issues)
+
+!!! note ""
+If the bot fails to work normally, first run the following commands to perform a quick audit and view warnings:
+
+'''
+openclaw doctor
+openclaw channels status --probe
+'''
+
+#### Common Issues and Solutions
+
+- "Used disallowed intents": Enable "Message Content Intent" (and "Server Members Intent" if needed) in the Discord Developer Portal, then restart the Gateway.
+
+- Bot connects but does not reply in server channels: Check if the bot has "View Channels", "Send Messages", and "Read Message History" permissions; ensure "Message Content Intent" is enabled; verify if the configuration requires mentioning the bot (requireMention: true) but you did not mention it; check if the server/channel allowlist rejects the current channel/user.
+
+- Private messages not working: Check if "channels.discord.dm.enabled" is false or "dm.policy" is "disabled"; if "dm.policy" is "pairing", you need to approve the pairing code first (run "openclaw pairing approve discord <code>").
+
+- requireMention: false but no reply: The default "groupPolicy" is "allowlist"; set "channels.discord.groupPolicy" to "open" or add a server entry under "channels.discord.guilds".
 
 # 6. Model Configuration Modification
 
