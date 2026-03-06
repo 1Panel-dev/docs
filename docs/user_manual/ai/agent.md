@@ -354,7 +354,7 @@ openclaw channels status --probe
 
 - requireMention: false but no reply: The default "groupPolicy" is "allowlist"; set "channels.discord.groupPolicy" to "open" or add a server entry under "channels.discord.guilds".
 
-# 6. Model Configuration Modification
+# 5. Model Configuration Modification
 
 !!! note ""
     If you need to switch the model when using the OpenClaw personal AI assistant, also enter the "Agent" list, click "Configuration", enter the model switching menu, complete the model configuration modification and click "Save", as shown in the figure below：
