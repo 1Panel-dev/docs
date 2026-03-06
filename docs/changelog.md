@@ -3,22 +3,77 @@ hide:
   - navigation
 ---
 
-# 1Panel Changelog – Full English Translation
+# 1Panel Changelog
 
-## 1 Versioning
+## Release Notes
 
-!!! note ""
-    **Versioning**: Like other leading open‑source projects, 1Panel releases a new feature version **monthly**. Critical bugs receive prompt patch updates.
+### v2.1.2
 
-    **Format**: `v{major}.{feature}.{patch}`
-    - v2.0.1: Bugfix release after v2.0.0
-    - v2.1.0: Feature release after v2.0.0
+2026‑03‑04
 
----
+!!! note "New Features"
 
-## 2 Release Notes
+    -  **App Store**: Added installed app sorting support
+    -  **Agents**: Added support for creating CoPaw agents
+    -  **Agents**: Added Telegram channel support
+    -  **Agents**: Added Discord channel support
+    -  **Agents**: Added browser configuration support
+    -  **Agents**: Added timezone configuration support
+    -  **Agents**: Added API type selection for Ollama model accounts
+    -  **Agents**: Added Z.ai model account support
+    -  **Agents**: Added Ark Coding Plan model account support
+    -  **Agents**: Added Alibaba Bailian Coding Plan model account support
+    -  **Agents**: Added custom model account support for anthropic-messages API type
+    -  **Certificates**: Added Technitium support for DNS accounts
+    -  **Terminals**: Added custom font support
+    -  **Terminals**: Added custom foreground and background color support
+    -  **Settings**: Added panel runtime region switching support
+
+!!! note "Improvements"
+
+    -  **App Store**: Optimized remote app sync logic
+    -  **App Store**: Optimized installed app card display style
+    -  **Agents**: Added optional credential retention when creating model accounts
+    -  **Agents**: Preserved Feishu account mapping during configuration updates
+    -  **Agents**: Optimized Kimi Coding model account creation logic
+    -  **WebSites**: Optimized website proxy API and log handling
+    -  **WebSites**: Optimized domain handling logic during website creation
+    -  **WebSites**: Added wildcard certificate issuance support for primary domains
+    -  **GPU Monitoring**: Optimized selected-state style
+    -  **Databases**: Added one-click full URL copy for database connection info
+    -  **Containers**: Optimized container orchestration page layout
+    -  **Containers**: Added `extra_hosts` support
+    -  **Containers**: Optimized container log viewer and improved log download options
+    -  **File Browser**: Optimized name column width
+    -  **File Browser**: Added last-opened-file memory
+    -  **File Browser**: Optimized file extraction workflow
+    -  **Monitoring**: Optimized monitoring interval prompt text
+    -  **Settings**: Optimized refresh-time prompt for two-factor verification
+    -  **Settings**: Enhanced passkey login capability
+    -  **System**: Made sort parameters optional for some APIs to support third-party systems
+    -  **System**: Updated Prettier config to avoid unnecessary formatting
+    -  **System**: Optimized i18n copywriting
+    -  **System**: Completed partial system security updates
+    -  **System**: Optimized SQLite connection configuration
+    -  **System**: Optimized invocation patterns for some system commands
+    -  **System**: Added cache mechanism to some system settings for better performance
+
+!!! note "Bug Fixes"
+
+    -  **App Store**: Fixed app restore failures in some scenarios
+    -  **App Store**: Fixed abnormal README loading for some apps
+    -  **WebSites**: Fixed inability to restart sub-sites after stopping
+    -  **WebSites**: Fixed inability to operate website reverse proxy under special configurations
+    -  **WebSites**: Fixed errors when deleting some website types
+    -  **Databases**: Fixed startup failures after app restore in some scenarios
+    -  **Containers**: Fixed Compose creation failures in some scenarios
+    -  **File Browser**: Fixed abnormal preview drawer opening when clicking compressed files
+    -  **Terminals**: Fixed extra blank lines after modifying terminal settings
+    -  **Website Monitoring**: Fixed date-based search failures in some scenarios
+    -  **Logs**: Fixed abnormal login log recording in some scenarios
 
 ### v2.1.1
+
 2026‑02‑25
 
 !!! note "New Features"

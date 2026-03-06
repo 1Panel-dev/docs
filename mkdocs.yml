@@ -1,8 +1,8 @@
 ## basic info
-site_name: "1Panel Documentation"
+site_name: "1Panel Docs"
 site_url: "https://docs.1panel.pro"
-site_description: "1Panel Open-source Linux Server Operation & Management Panel"
-site_author: "1Panel"
+site_description: "1Panel online documentation"
+site_author: "1Panel Team"
 repo_name: "1Panel"
 repo_url: "https://github.com/1Panel-dev/1Panel"
 edit_uri: https://github.com/1Panel-dev/docs/edit/i18n/docs/
@@ -55,8 +55,8 @@ nav:
     - Online Install: installation/online_installation.md
     - Online Upgrade: installation/online_upgrade.md
     - Upgrade from V1:
-      - Upgrade Notes: installation/v1_migrate.md
-      - Steps: installation/v1_migrate_steps.md
+      - Before upgrade: installation/v1_migrate.md
+      - Upgrade steps: installation/v1_migrate_steps.md
     - Master-Slave Switch: installation/master_migrate.md
     - CLI Tool: installation/cli.md
   - User Manual:
@@ -134,47 +134,27 @@ nav:
       - Website Anti-Tamper: user_manual/xpack/tamper.md
     - Log Audit: user_manual/logs.md
     - Panel Settings: user_manual/settings.md
-  - Popular Apps:
+  - Popular Self-Hosted Apps:
     - OpenClaw: user_manual/appstore/openclaw.md
+    - Ollama: user_manual/appstore/ollama.md  
+    - WordPress: user_manual/appstore/wordpress.md
+    - Bitwarden: user_manual/appstore/bitwarden.md
+    - Nextcloud: user_manual/appstore/nextcloud.md
+    - RustDesk: user_manual/appstore/rustdesk.md
+    - frp: user_manual/appstore/frp.md
+    - Home Assistant: user_manual/appstore/home-assistant.md
     - OpenResty: user_manual/appstore/openresty.md
     - MySQL: user_manual/appstore/mysql.md
     - Redis: user_manual/appstore/redis.md
-    - Ollama: user_manual/appstore/ollama.md
-    - Halo: user_manual/appstore/halo.md
-    - OpenList: user_manual/appstore/openlist.md
-    - MaxKB: user_manual/appstore/maxkb.md
-    - phpMyAdmin: user_manual/appstore/phpmyadmin.md
-    - WordPress: user_manual/appstore/wordpress.md
-    - Zabbix: user_manual/appstore/zabbix.md
-    - AList: user_manual/appstore/alist.md
-    - frp: user_manual/appstore/frp.md
-    - Qinglong: user_manual/appstore/qinglong.md
-    - Nginx Proxy Manager: user_manual/appstore/nginx-proxy-manager.md
-    - ddns-go: user_manual/appstore/ddns-go.md
-    - Gitea: user_manual/appstore/gitea.md
-    - DataEase: user_manual/appstore/dataease.md
-    - Open WebUI: user_manual/appstore/openwebui.md
-    - MariaDB: user_manual/appstore/mariadb.md
-    - RustDesk: user_manual/appstore/rustdesk.md
-    - MinIO: user_manual/appstore/minio.md
-    - Bitwarden: user_manual/appstore/bitwarden.md
-    - Home Assistant: user_manual/appstore/home-assistant.md
     - MongoDB: user_manual/appstore/mongodb.md
-    - Nextcloud: user_manual/appstore/nextcloud.md
-    - LobeChat: user_manual/appstore/lobechat.md
+    - MinIO: user_manual/appstore/minio.md
+    - MariaDB: user_manual/appstore/mariadb.md
+    - phpMyAdmin: user_manual/appstore/phpmyadmin.md
     - Jumpserver: user_manual/appstore/jumpserver.md
-    - Moltbot: user_manual/appstore/moltbot.md
-    - Stirling-PDF: user_manual/appstore/stirling-pdf.md
-    - ChatGPT-Next-Web: user_manual/appstore/chatgpt-next-web.md
-    - Cloudreve: user_manual/appstore/cloudreve.md
+    - Zabbix: user_manual/appstore/zabbix.md
     - Uptime Kuma: user_manual/appstore/uptime-kuma.md
-    - VS Code: user_manual/appstore/vscode.md
-  - FAQ:
-    - Product FAQ: faq/faq.md
-    - OS Related: faq/operating_system.md
-    - System Related: faq/system_function.md
-    - Architecture Related: faq/server_architecture.md
-    - OpenClaw Related: faq/openclaw.md
+    - Gitea: user_manual/appstore/gitea.md
+    - Stirling-PDF: user_manual/appstore/stirling-pdf.md
   - API: dev_manual/api_manual.md
   - Changelog: changelog.md
 

@@ -18,7 +18,7 @@ hide:
 
 ## Quick Start
 
-Execute the script below and follow the prompts to install 1Panel:
+Prepare a VPS, execute the script below and follow the prompts to install 1Panel:
 
 ```bash
 bash -c "$(curl -sSL https://resource.1panel.pro/v2/quick_start.sh)"
@@ -26,7 +26,7 @@ bash -c "$(curl -sSL https://resource.1panel.pro/v2/quick_start.sh)"
 
 ## Screenshot
 
-![img.png](./img/overview.png)
+![img.png](https://resource.1panel.pro/img/overview_en_v2.png)
 
 ## Star History
 
