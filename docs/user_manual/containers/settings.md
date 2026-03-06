@@ -13,7 +13,9 @@
             ```properties
             https://docker.1panel.live
             ```
-        > After configuring the above acceleration address, if pulling application images still fails, [further discussion is available on the forum](https://bbs.fit2cloud.com/t/topic/5886)
+> After configuring the above acceleration address, if pulling application images still fails, [further discussion is available on the forum](https://bbs.fit2cloud.com/t/topic/5886)
+
+!!! note ""
     - Private Registry: Self-built private image registries such as Harbor, Nexus, docker-registry, etc.
     - iptables: This setting disables Docker's automatic configuration of iptables rules, which may cause containers to fail to communicate with external networks
     - live-restore: Whether to stop all containers when the Docker service is stopped
