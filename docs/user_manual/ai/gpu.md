@@ -3,7 +3,7 @@
 !!! note ""
     For NVIDIA graphics cards, users can visit https://www.nvidia.com/en-us/drivers/ to find and download the driver version compatible with their GPU model.
 
-    For example, if the downloaded file is `NVIDIA-Linux-x86_64-570.86.15.run`, upload it to your 1Panel server, then run the following commands in the command line to install:
+For example, if the downloaded file is `NVIDIA-Linux-x86_64-570.86.15.run`, upload it to your 1Panel server, then run the following commands in the command line to install:
 
  ```bash
  chmod +x NVIDIA-Linux-x86_64-570.86.15.run
