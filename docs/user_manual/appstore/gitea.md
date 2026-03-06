@@ -9,7 +9,7 @@
     After entering the 1Panel console, click **App Store** in the left menu.
 
 ![image-20251016110510084](../../img/app/appstores.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2. Search for Gitea and Install
 
@@ -17,7 +17,7 @@
     Enter **Gitea** in the search box in the upper right corner, click the application card to go to the details page, then select **Install**.
 
 ![image-20251017152422217](../../img/app/gitea.png)
-{: .original}
+{: .browser-mockup}
 
 ## 3. Configure Installation Parameters
 
@@ -37,7 +37,7 @@
     After confirming the settings are correct, click the **Confirm** button to start installation.
 
 ![image-20251017152504426](../../img/app/gitea_install.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Wait for the installation to complete.
@@ -48,22 +48,22 @@
     Configure the default access address. Skip this step if already configured.
 
 ![image-20251016172322315](../../img/app/setting_ip.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Return to the App Store and click **Jump** to access the Gitea service.
 
 ![image-20251017152732221](../../img/app/jump_gitea.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Complete the initial configuration and install the service.
 
 ![image-20251017152844763](../../img/app/gitea_info.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     You can use Gitea after installation is finished.
 
 ![image-20251017153119824](../../img/app/gitea_view.png)
-{: .original}
+{: .browser-mockup}
