@@ -6,7 +6,7 @@
     However, in practice, manually setting up an MCP Server requires configuring numerous dependencies, resulting in a high deployment barrier for many users. To solve this problem, 1Panel v1.10.29 LTS has introduced a native **MCP Server Management** feature. This feature supports one-click deployment of MCP Server via containerization, greatly simplifying the setup process.
 
 ![img.png](../../img/ai/mcp_list.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2 Create MCP Server
 
@@ -19,12 +19,12 @@
 ### 2.1 Start via npx Command
 
 ![img.png](../../img/ai/create_mcp_server.png)
-{: .original}
+{: .browser-mockup}
 
 ### 2.2 Run as Binary
 
 ![img.png](../../img/ai/mcp_binary.png)
-{: .original}
+{: .browser-mockup}
 
 ## 3 Obtain Configuration Information
 
@@ -34,7 +34,7 @@
     Users only need to copy and paste the configuration into their MCP client to use the AI assistant enhanced with MCP. This eliminates the need to manually look up or set environment variables, enabling a seamless experience from deployment to usage.
 
 ![img.png](../../img/ai/mcp_server_config.png)
-{: .original}
+{: .browser-mockup}
 
 ## 4 Unified Domain and SSE Path
 
@@ -44,7 +44,7 @@
     This approach simplifies public network configuration and centralizes operation and maintenance. Especially in large‑scale deployments and enterprise internal networks, using a unified domain avoids exposing too many ports, reduces security risks, and improves deployment flexibility, security, and maintainability.
 
 ![img.png](../../img/ai/mcp_website.png)
-{: .original}
+{: .browser-mockup}
 
 ## 5 Whitelist Access Restriction
 
