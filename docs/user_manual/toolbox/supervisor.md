@@ -2,35 +2,40 @@
 
 === "RedHat / CentOS"
     
-!!! note ""
+    !!! note ""
+        
         **1. Install EPEL repository**
 
         ```bash
         yum install -y epel-release
         ```
     
-!!! note ""
+    !!! note ""
+        
         **2. Install supervisor**
         
         ```bash
         yum install -y supervisor
         ```
     
-!!! note ""
+    !!! note ""
+        
         **3. Start supervisord**
         
         ```bash
         systemctl start supervisord
         ```
     
-!!! note ""
+    !!! note ""
+        
         **4. Enable on boot**
 
         ```bash
         systemctl enable supervisord
         ```
     
-!!! note ""      
+    !!! note ""      
+        
         **5. Check status**
 
         ```bash
