@@ -149,16 +149,20 @@
     - scope
 
 ### 4.3 OneDrive Authorization
-Follow the wizard to obtain and enter the authorization code.
+!!! note ""
+    Follow the wizard to obtain and enter the authorization code.
 
 ### 4.4 Google Drive Binding
-Create a project in Google Cloud, enable Drive API, obtain OAuth credentials.
+!!! note ""
+    Create a project in Google Cloud, enable Drive API, obtain OAuth credentials.
 
 ### 4.5 WebDAV to AList
-Install AList, set storage, then add WebDAV backup account in 1Panel.
+!!! note ""
+    Install AList, set storage, then add WebDAV backup account in 1Panel.
 
 ### 4.6 S3 Compatibility
-Many object storage providers are S3‑compatible. See table in original text.
+!!! note ""
+    Many object storage providers are S3‑compatible. See table in original text.
 
 ## 5 Snapshots
 !!! note ""
