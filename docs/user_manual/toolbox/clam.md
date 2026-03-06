@@ -115,7 +115,7 @@
     Click **Run** in the action column to manually execute the scan rule. Click **Report** to view execution history and scan results.
 
 ![img.png](../../img/toolbox/clam_create_rule.png)
-{: .original}
+{: .browser-mockup}
 
 ## 5 Virus Type Explanation
 
