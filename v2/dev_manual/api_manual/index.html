@@ -3514,6 +3514,8 @@
 <p>1Panel has designed the following custom Token format for identity authentication of API requests:</p>
 <div class="highlight"><pre><span></span><code>Token = md5('1panel' + API-Key + UnixTimestamp)
 </code></pre></div>
+</div>
+<div class="admonition note">
 <p>Components:</p>
 <ul>
 <li>Fixed prefix: '1panel'</li>
@@ -3542,6 +3544,8 @@
 </tr>
 </tbody>
 </table>
+</div>
+<div class="admonition note">
 <p>Example request header:</p>
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">"http://{host}:{port}/api/v2/toolbox/device/base"</span><span class="w"> </span><span class="se">\</span>
 -H<span class="w"> </span><span class="s2">"1Panel-Token: &lt;1panel_token&gt;"</span><span class="w"> </span><span class="se">\</span>
@@ -3584,12 +3588,20 @@
 <p>What if the 1Panel-Token or 1Panel-Timestamp is incorrect?</p>
 <p>The backend will return 401 Unauthorized with the prompt "API interface key error".</p>
 </li>
+</ul>
+</div>
+<div class="admonition note">
+<ul>
 <li>
 <p>How to generate 1Panel-Token</p>
 <p>Please refer to the following pseudocode:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">token</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">md5</span><span class="p">(</span><span class="s1">'1panel'</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">clientToken</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">unixTimestamp</span><span class="p">);</span>
 </code></pre></div>
 </li>
+</ul>
+</div>
+<div class="admonition note">
+<ul>
 <li>
 <p>Why two Headers are required</p>
 <p>To increase the complexity of verification and enhance security at the same time.</p>
