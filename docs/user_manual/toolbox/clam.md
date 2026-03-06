@@ -21,13 +21,13 @@
         ```bash
         yum install -y epel-release
         ```
-
+!!! note ""
         **2. Install ClamAV**
         
         ```bash
         yum install clamav clamd clamav-update -y
         ```
-
+!!! note ""
         **3. Modify ClamAV configuration**
         
         ```bash
@@ -38,7 +38,7 @@
         DatabaseDirectory /var/lib/clamav
         LocalSocket /run/clamd.scan/clamd.sock
         ```
-
+!!! note ""
         **4. Modify virus database update configuration**
         
         ```bash
@@ -49,7 +49,7 @@
         DatabaseMirror database.clamav.net
         Checks 12
         ```
-
+!!! note ""
         **5. Start ClamAV services**
         
         ```bash
@@ -57,14 +57,14 @@
         systemctl start clamd@scan.service
         systemctl start clamav-freshclam.service
         ```
-        
+!!! note ""        
         **6. Enable on boot**
 
         ```bash
         systemctl enable clamd@scan.service
         systemctl enable clamav-freshclam.service
         ```
-        
+!!! note ""        
         **7. Check service status**
 
         ```bash
@@ -79,7 +79,7 @@
         ```bash
         sudo apt install clamav clamav-daemon -y
         ```
-
+!!! note ""
         **2. Start ClamAV services**
         
         ```bash
@@ -87,14 +87,14 @@
         sudo systemctl start clamav-daemon
         sudo systemctl start clamav-freshclam.service
         ```
-        
+!!! note ""        
         **3. Enable on boot**
 
         ```bash
         sudo systemctl enable clamav-daemon
         sudo systemctl enable clamav-freshclam.service
         ```
-        
+!!! note ""        
         **4. Check service status**
 
         ```bash
