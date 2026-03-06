@@ -9,7 +9,7 @@
     After entering the 1Panel console, click **App Store** in the left menu.
 
 ![image-20251016110510084](../../img/app/appstores.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2. Search for MariaDB and Install
 
@@ -17,7 +17,7 @@
     Enter **MariaDB** in the search box in the upper right corner, click the application card to go to the details page, then select **Install**.
 
 ![image-20251016150309590](../../img/app/mariadb.png)
-{: .original}
+{: .browser-mockup}
 
 ## 3. Configure Installation Parameters
 
@@ -33,7 +33,7 @@
     After confirming the settings are correct, click the **Confirm** button to start installation.
 
 ![image-20251016150632846](../../img/app/mariadb_install.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Wait for the installation to complete.
@@ -44,7 +44,7 @@
     After installation, click **Databases** in the left menu.
 
 ![image-20251016151214894](../../img/app/mariadb_view.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Select **Create Database** and modify the information as needed:
@@ -57,7 +57,7 @@
     After confirming the configuration is correct, click the **Confirm** button to create.
 
 ![image-20251016151324505](../../img/app/mariadb_creat.png)
-{: .original}
+{: .browser-mockup}
 
 ## 5. Connect to the MariaDB Database
 
@@ -65,10 +65,10 @@
     Obtain the database configuration information.
 
 ![image-20251016151517183](../../img/app/mariadb_info.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Connect to the database using a local client tool.
 
 ![image-20251016151836387](../../img/app/mariadb_conn.png)
-{: .original}
+{: .browser-mockup}
