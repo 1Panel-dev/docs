@@ -9,7 +9,7 @@
     After entering the 1Panel console, click **App Store** in the left menu.
 
 ![image-20251016110510084](../../img/app/appstores.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2. Search for phpMyAdmin and Install
 
@@ -17,7 +17,7 @@
     Enter **phpMyAdmin** in the search box in the upper right corner, click the application card to go to the details page, then select **Install**.
 
 ![image-20251016175101288](../../img/app/phpMyAdmin.png)
-{: .original}
+{: .browser-mockup}
 
 ## 3. Configure Installation Parameters
 
@@ -32,7 +32,7 @@
     After confirming the settings are correct, click the **Confirm** button to start installation.
 
 ![image-20251016175326474](../../img/app/phpmyadmin_install.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Wait for the installation to complete.
@@ -43,16 +43,16 @@
     After installation, confirm the default access address in 1Panel.
 
 ![image-20251016172322315](../../img/app/setting_ip.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Return to the App Store and click **Jump** to access the phpMyAdmin service.
 
 ![image-20251016175944497](../../img/app/jump_phpmyadmin.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Enter the database information you need to manage.
 
 ![image-20251016180107079](../../img/app/phpmyadmin_view.png)
-{: .original}
+{: .browser-mockup}

@@ -9,7 +9,7 @@
     After entering the 1Panel console, click **App Store** in the left menu.
 
 ![image-20251016110510084](../../img/app/appstores.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2. Search for RustDesk and Install
 
@@ -17,7 +17,7 @@
     Enter **RustDesk** in the search box in the upper right corner, click the application card to go to the details page, then select **Install**.
 
 ![image-20251021135819982](../../img/app/rustdesk.png)
-{: .original}
+{: .browser-mockup}
 
 ## 3. Configure Installation Parameters
 
@@ -37,7 +37,7 @@
     After confirming the settings are correct, click the **Confirm** button to start installation.
 
 ![image-20251021140057677](../../img/app/rustdesk_install.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Wait for the installation to complete.
@@ -48,34 +48,34 @@
     Click **Parameters** to get the configuration information.
 
 ![image-20251021142500835](../../img/app/rustdesk_get_info.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Enter the installation directory.
 
 ![image-20251021142617880](../../img/app/rustdesk_install_view.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Locate the corresponding pub file and retrieve the key.
 
 ![image-20251021142841367](../../img/app/rustdesk_key.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Download the client from https://github.com/rustdesk/rustdesk/releases. After downloading, open the client, go to Settings, and select Relay Server.
 
 ![image-20251021141554097](../../img/app/rustdesk_info.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Fill in the corresponding information.
 
 ![image-20251021142939475](../../img/app/rustdesk_creat.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     On the client of another host, fill in the same information, then enter the connection details to establish a remote connection.
 
 ![image-20251021143340226](../../img/app/rustdesk_view.png)
-{: .original}
+{: .browser-mockup}

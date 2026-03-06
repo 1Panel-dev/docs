@@ -3,7 +3,7 @@
     This includes rate limits, default rules, custom rules, and more.
 
 ![img.png](../../../img/waf/site.png){ width="900px" }
-{: .original}
+{: .browser-mockup}
 
 ## 1 Rate Limit
 
@@ -19,6 +19,7 @@
     - **URL Mode**: Triggers if requests to a single URL exceed the threshold.
 
 ![img.png](../../../img/waf/cc.png){ width="900px" }
+{: .browser-mockup}
 
 ## 2 Default Rules
 
@@ -67,20 +68,21 @@
     Example: Require CAPTCHA for requests to `/login`.
 
 ![img.png](../../../img/waf/acl.png){ width="900px" }
+{: .browser-mockup}
 
 ### 3.2 File Upload Restriction
 !!! note ""
     Restrict allowed file types by extension.
 
 ![img.png](../../../img/waf/ext.png){ width="900px" }
-{: .original}
+{: .browser-mockup}
 
 ### 3.3 Region Access Control (✨ Pro Edition)
 !!! note ""
     Block or allow access from specific regions.
 
 ![img.png](../../../img/waf/location.png){ width="900px" }
-{: .original}
+{: .browser-mockup}
 
 ### 3.4 CDN
 !!! note ""
@@ -92,4 +94,4 @@
       Example: `X-Forwarded-For: client,proxy1,proxy2,proxy3` → use `proxy3`.
 
 ![img.png](../../../img/waf/cdn.png){ width="900px" }
-{: .original}
+{: .browser-mockup}

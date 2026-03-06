@@ -9,7 +9,7 @@
     After entering the 1Panel console, click **App Store** in the left menu.
 
 ![image-20251016110510084](../../img/app/appstores.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2. Search for MongoDB and Install
 
@@ -17,7 +17,7 @@
     Enter **MongoDB** in the search box in the upper right corner, click the application card to go to the details page, then select **Install**.
 
 ![image-20251016155319717](../../img/app/MongoDB.png)
-{: .original}
+{: .browser-mockup}
 
 ## 3. Configure Installation Parameters
 
@@ -33,7 +33,7 @@
     After confirming the settings are correct, click the **Confirm** button to start installation.
 
 ![image-20251016155828329](../../img/app/mongodb_install.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Wait for the installation to complete.
@@ -44,16 +44,16 @@
     After installation, obtain the MongoDB configuration information. Click **Installed** and select **Parameters**.
 
 ![image-20251016162420157](../../img/app/mongodb_info.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Obtain the configuration details.
 
 ![image-20251016162604193](../../img/app/mongodb_passwd.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Connect to MongoDB using a local client tool.
 
 ![image-20251016162737239](../../img/app/mongodb_conn.png)
-{: .original}
+{: .browser-mockup}

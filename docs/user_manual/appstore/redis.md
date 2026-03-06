@@ -9,7 +9,7 @@
     After entering the 1Panel console, click **App Store** in the left menu.
 
 ![image-20251016110510084](../../img/app/appstores.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2. Search for Redis and Install
 
@@ -17,7 +17,7 @@
     Enter **Redis** in the search box in the upper right corner, select the first result, click the application card to go to the details page, then select **Install**.
 
 ![image-20251016141645215](../../img/app/appstore_redis.png)
-{: .original}
+{: .browser-mockup}
 
 ## 3. Configure Installation Parameters
 
@@ -33,7 +33,7 @@
     After confirming the settings are correct, click the **Confirm** button to start installation.
 
 ![image-20251016141905753](../../img/app/redis_install.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Wait for the installation to complete.
@@ -44,16 +44,16 @@
     Click **Databases** in the left menu, select Redis, and you can enter commands directly.
 
 ![image-20251016142801288](../../img/app/redis_message.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Connect using a client tool. Click **Connection Information** to get the connection configuration.
 
 ![image-20251016143234658](../../img/app/redis_information.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Enter the connection information locally to establish a connection.
 
 ![image-20251016144637758](../../img/app/redis_conn.png)
-{: .original}
+{: .browser-mockup}

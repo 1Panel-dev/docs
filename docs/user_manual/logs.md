@@ -6,7 +6,7 @@
     Records user operations performed in 1Panel.
 
 ![Panel Logs - Operation Logs](../img/logs/面板日志-操作日志.png)
-{: .original}
+{: .browser-mockup}
 
 ### 1.2 Access Logs
 
@@ -14,7 +14,7 @@
     Records access logs to the 1Panel dashboard.
 
 ![Panel Logs - Access Logs](../img/logs/面板日志-访问日志.png)
-{: .original}
+{: .browser-mockup}
 
 ### 1.3 System Logs
 
@@ -22,7 +22,7 @@
     Records runtime logs of the 1Panel service, used by developers to quickly troubleshoot issues.
 
 ![Panel Logs - System Logs](../img/logs/面板日志-系统日志.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2 Login Logs
 
@@ -36,7 +36,7 @@
     To clear login logs, you can manually delete historical content in these files.
 
 ![Login Logs](../img/logs/登录日志.png)
-{: .original}
+{: .browser-mockup}
 
 ## 3 Website Logs
 
@@ -45,7 +45,7 @@
     which can be used to troubleshoot website access issues.
 
 ![img.png](../img/logs/网站日志-运行日志.png)
-{: .original}
+{: .browser-mockup}
 
 ![img.png](../img/logs/网站日志-错误日志.png)
-{: .original}
+{: .browser-mockup}

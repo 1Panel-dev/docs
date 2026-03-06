@@ -9,7 +9,7 @@
     After entering the 1Panel console, click **App Store** in the left menu.
 
 ![image-20251016110510084](../../img/app/appstores.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2. Search for JumpServer and Install
 
@@ -17,7 +17,7 @@
     Enter **JumpServer** in the search box in the upper right corner, click the application card to go to the details page, then select **Install**.
 
 ![image-20251021154330947](../../img/app/jumpserver.png)
-{: .original}
+{: .browser-mockup}
 
 ## 3. Configure Installation Parameters
 
@@ -44,7 +44,7 @@
     After confirming the settings are correct, click the **Confirm** button to start installation.
 
 ![image-20251021160652472](../../img/app/jumpserver_install.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Wait for the installation to complete.
@@ -55,16 +55,16 @@
     After installation, confirm the default access address in 1Panel. Skip this step if already configured.
 
 ![image-20251016172322315](../../img/app/setting_ip.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Return to the App Store and click **Jump** to access the JumpServer service.
 
 ![image-20251021162640135](../../img/app/jumpserver_jump.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Log in with the default credentials: Username `admin`, Password `ChangeMe`.
 
 ![image-20251021162912802](../../img/app/jumpserver_view.png)
-{: .original}
+{: .browser-mockup}

@@ -11,7 +11,7 @@
     After logging into the 1Panel console, click **App Store** in the left menu.
 
 ![image-20251016110510084](../../img/app/appstores.png)
-{: .original}
+{: .browser-mockup}
 
 ### 1.2 Search and Install
 
@@ -19,7 +19,7 @@
     Enter **Zabbix** in the search box in the upper right corner, click the **Zabbix Server** application card to go to the details page, then select **Install**.
 
 ![image-20251021163433091](../../img/app/zabbix.png)
-{: .original}
+{: .browser-mockup}
 
 ### 1.3 Configure Installation Parameters
 
@@ -41,7 +41,7 @@
     After configuration, click **Confirm** to start installation.
 
 ![image-20251021163633965](../../img/app/zabbix-server_install.png)
-{: .original}
+{: .browser-mockup}
 
 ### 1.4 Access Zabbix Server
 
@@ -52,7 +52,7 @@
         - Password: `zabbix`
 
 ![image-20251021163916064](../../img/app/zabbix-server_jump.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     On first login, you can switch to the Chinese interface by following these steps:
@@ -60,7 +60,7 @@
     Go to **Administration** > **General** > **GUI**, select **Chinese (zh_CN)** in **Default language**, then click **Update** to save.
 
 ![image-20251021163916064](../../img/app/zabbix-language.png)
-{: .original}
+{: .browser-mockup}
 
 ### 1.5 Add a Monitored Host
 
@@ -76,7 +76,7 @@
     Click **Add** to save the configuration.
 
 ![image-20251021163916064](../../img/app/zabbix-hosts-add.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2. Install Zabbix Agent
 
@@ -86,7 +86,7 @@
     Return to the App Store list, enter **Zabbix** in the upper right corner, click the **Zabbix Agent** application card to go to the details page, then select **Install**.
 
 ![image-20251021163433091](../../img/app/zabbix.png)
-{: .original}
+{: .browser-mockup}
 
 ### 2.2 Configure Installation Parameters
 
@@ -103,7 +103,7 @@
     After configuration, click **Confirm** to start installation.
 
 ![image-20251021163633965](../../img/app/zabbix-agent_install.png)
-{: .original}
+{: .browser-mockup}
 
 ### 2.3 Check Agent Host Status
 
@@ -111,4 +111,4 @@
     Go to **Data collection** > **Hosts**. If the **Availability** column shows green, the Agent has successfully connected to the Server.
 
 ![image-20251021163916064](../../img/app/zabbix-agent-status.png)
-{: .original}
+{: .browser-mockup}

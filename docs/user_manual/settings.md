@@ -16,7 +16,7 @@
     - **Hide Advanced Menu**: Toggle advanced features in the sidebar.
 
 ![img.png](../img/settings/panel.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2 Security
 !!! note "Configuration"
@@ -36,7 +36,7 @@
     - **Passkey**: Hardware‑based passwordless login (requires SSL + trusted domain).
 
 ![img.png](../img/settings/security.png)
-{: .original}
+{: .browser-mockup}
 
 !!! warning "Note"
     Incorrect changes may block panel access.
@@ -98,7 +98,7 @@
         - Modules (host, website, database, container, cron etc.)
 
 ![img.png](../img/settings/alert_setting_1.png)
-{: .original}
+{: .browser-mockup}
 
 ### 3.2 Email Alerts
 !!! note "1Panel Email Setup"
@@ -113,7 +113,7 @@
     5. Save and send test email
 
 ![img.png](../img/settings/alert_setting_2.png)
-{: .original}
+{: .browser-mockup}
 
 ### 3.3 Troubleshooting
 !!! note ""
@@ -171,7 +171,7 @@ Many object storage providers are S3‑compatible. See table in original text.
     - 1panel binary, 1pctl, systemd service
 
 ![img.png](../img/settings/snapshot.png)
-{: .original}
+{: .browser-mockup}
 
 ## 6 License
 !!! note ""
@@ -190,4 +190,4 @@ Many object storage providers are S3‑compatible. See table in original text.
     - View logs for update errors
 
 ![img.png](../img/settings/about.png)
-{: .original}
+{: .browser-mockup}

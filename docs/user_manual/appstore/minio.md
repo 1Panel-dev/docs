@@ -9,7 +9,7 @@
     After entering the 1Panel console, click **App Store** in the left menu.
 
 ![image-20251016110510084](../../img/app/appstores.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2. Search for MinIO and Install
 
@@ -17,7 +17,7 @@
     Enter **MinIO** in the search box in the upper right corner, click the application card to go to the details page, then select **Install**.
 
 ![image-20251016165333807](../../img/app/MinIO.png)
-{: .original}
+{: .browser-mockup}
 
 ## 3. Configure Installation Parameters
 
@@ -38,7 +38,7 @@
     After confirming the settings are correct, click the **Confirm** button to start installation.
 
 ![image-20251016170535427](../../img/app/minio_install.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Wait for the installation to complete.
@@ -49,28 +49,28 @@
     After installation, obtain the MinIO configuration information. Click **Installed** and select **Parameters**.
 
 ![image-20251016171810134](../../img/app/minio_info.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Obtain the configuration details.
 
 ![image-20251016172011132](../../img/app/minio_passwd.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Configure the default access address.
 
 ![image-20251016172322315](../../img/app/setting_ip.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Return to the App Store and click **Jump** to access the MinIO service.
 
 ![image-20251016172526853](../../img/app/minio_jump.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Enter the **username and password** obtained above to log in to the **MinIO Web Service**.
 
 ![image-20251016173115776](../../img/app/minio_view.png)
-{: .original}
+{: .browser-mockup}
