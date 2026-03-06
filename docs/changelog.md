@@ -7,6 +7,24 @@ hide:
 
 ## Release Notes
 
+### v2.1.3
+
+2026‑03‑06
+
+!!! note "Improvements"
+
+    - **Agents**: Adapted to the latest OpenClaw configuration format
+    - **Certificates**: Certificate selector now displays issuer and expiration time
+    - **Panel Settings**: Optimized prompt information on the panel SSL page
+
+!!! note "Bug Fixes"
+
+    - **App Store**: Fixed abnormal sorting behavior for newly installed apps
+    - **Websites**: Fixed errors when adding reverse proxy in some scenarios
+    - **Containers**: Fixed container orchestration creation failures in some scenarios
+    - **System**: Fixed several known issues in the international edition
+    - **System**: Fixed menu flickering in some pages when switching language
+
 ### v2.1.2
 
 2026‑03‑04
