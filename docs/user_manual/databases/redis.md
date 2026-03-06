@@ -15,7 +15,7 @@
     You can manually adjust Redis configuration in the configuration interface.
 
 ![img.png](../../img/databases/redis_conf.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     - Redis is installed via Docker; the configuration file is mounted at `/opt/1panel/apps/redis/[database-name]/conf/redis.conf`
@@ -28,7 +28,7 @@
     When Redis queries are slow, you can go to the settings interface and click **Current Status** to view key metrics such as memory allocation and query hit ratio for performance optimization.
 
 ![img.png](../../img/databases/redis_status.png)
-{: .original}
+{: .browser-mockup}
 
 ## 5 Performance Tuning
 
@@ -36,7 +36,7 @@
     The system supports form-based adjustment of Redis parameters, including: timeout, max connections, and max memory.
 
 ![img.png](../../img/databases/redis_variables.png)
-{: .original}
+{: .browser-mockup}
 
 ## 6 Port
 
@@ -58,7 +58,7 @@
         - Disadvantages: Larger file size for the same dataset; may be slower than RDB.
 
 ![img.png](../../img/databases/redis_backup_aof.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     - appendonly: Whether to enable AOF persistence
@@ -68,7 +68,7 @@
         - no: No explicit sync
 
 ![img.png](../../img/databases/redis_backup_rdb.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Set the persistence policy. RDB persistence is triggered when **any** of the conditions are met.
