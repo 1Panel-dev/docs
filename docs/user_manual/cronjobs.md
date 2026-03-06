@@ -26,7 +26,7 @@ Basic concepts:
     - **Script**: Direct input, script library, or server script file.
 
 ![img.png](../img/cronjobs/shell.png)
-{: .original}
+{: .browser-mockup}
 
 ### 1.2 App Backup | Website Backup | Database Backup
 
