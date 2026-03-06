@@ -1,6 +1,7 @@
 ## 1 Installation
 
 === "RedHat / CentOS"
+    
     !!! note ""
         **1. Install EPEL repository**
 
