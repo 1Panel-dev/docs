@@ -9,7 +9,7 @@
     After entering the 1Panel console, click **App Store** in the left menu.
 
 ![image-20251016110510084](../../img/app/appstores.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2. Search for Stirling-PDF and Install
 
@@ -17,7 +17,7 @@
     Enter **Stirling-PDF** in the search box in the upper right corner, click the application card to go to the details page, then select **Install**.
 
 ![image-20251020134308250](../../img/app/stirling-pdf.png)
-{: .original}
+{: .browser-mockup}
 
 ## 3. Configure Installation Parameters
 
@@ -32,7 +32,7 @@
     After confirming the settings are correct, click the **Confirm** button to start installation.
 
 ![image-20251020134534620](../../img/app/stirling-pdf_install.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Wait for the installation to complete.
@@ -43,16 +43,16 @@
     After installation, confirm the default access address in 1Panel. Skip this step if already configured.
 
 ![image-20251016172322315](../../img/app/setting_ip.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Return to the App Store and click **Jump** to access the Stirling-PDF service.
 
 ![image-20251020135800174](../../img/app/stirling-pdf_jump.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Select the corresponding function to use.
 
 ![image-20251020135855533](../../img/app/stirling-pdf_view.png)
-{: .original}
+{: .browser-mockup}
