@@ -3486,23 +3486,16 @@
 <p><strong>1. Install EPEL repository</strong></p>
 <div class="highlight"><pre><span></span><code>yum<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>epel-release
 </code></pre></div>
-</div>
-<div class="admonition note">
 <p><strong>2. Install supervisor</strong></p>
-<div class="highlight"><pre><span></span><code>yum<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>supervisor
-</code></pre></div>
-</div>
-<div class="admonition note">
-<p><strong>3. Start supervisord</strong></p>
-<div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>start<span class="w"> </span>supervisord
-</code></pre></div>
-</div>
-<div class="admonition note">
+<p>yum install -y supervisor
+</p><div class="highlight"><pre><span></span><code>**3. Start supervisord**
+
+```bash
+systemctl start supervisord
+</code></pre></div><p></p>
 <p><strong>4. Enable on boot</strong></p>
 <div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>supervisord
 </code></pre></div>
-</div>
-<div class="admonition note">
 <p><strong>5. Check status</strong></p>
 <div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>status<span class="w"> </span>supervisord
 </code></pre></div>
