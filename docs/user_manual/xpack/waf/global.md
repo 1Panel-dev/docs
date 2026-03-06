@@ -7,7 +7,7 @@
     - Individual items in Global Settings (such as the first rule in Default Rules → Parameter Rules) only affect **newly created websites** after being disabled; existing websites are not affected.
 
 ![img.png](../../../img/waf/global.png){ width="900px" }
-{: .original}
+{: .browser-mockup}
 
 ## 1 Allowlist & Blocklist
 
@@ -44,7 +44,7 @@
     - **URL Mode**: Triggers if requests to a single URL exceed the threshold.
 
 ![img.png](../../../img/waf/cc.png){ width="900px" }
-{: .original}
+{: .browser-mockup}
 
 ### 2.2 Attack Rate Limit
 !!! note ""
@@ -52,7 +52,7 @@
     - Use case: An IP attacking your site and violating multiple rules.
 
 ![img.png](../../../img/waf/attack_cc.png){ width="900px" }
-{: .original}
+{: .browser-mockup}
 
 ### 2.3 404 Rate Limit
 !!! note ""
@@ -60,7 +60,7 @@
     - Use case: Scanners or malicious crawlers probing your site.
 
 ![img.png](../../../img/waf/404.png){ width="900px" }
-{: .original}
+{: .browser-mockup}
 
 ## 3 Default Rules
 !!! note ""
@@ -106,21 +106,21 @@
     - Example: Require CAPTCHA for requests to `/login`.
 
 ![img.png](../../../img/waf/acl.png){ width="900px" }
-{: .original}
+{: .browser-mockup}
 
 ### 4.2 File Upload Restriction
 !!! note ""
     Restrict allowed file types by extension.
 
 ![img.png](../../../img/waf/ext.png){ width="900px" }
-{: .original}
+{: .browser-mockup}
 
 ### 4.3 Region Access Control (✨ Pro Edition)
 !!! note ""
     Block or allow access from specific regions.
 
 ![img.png](../../../img/waf/location.png){ width="900px" }
-{: .original}
+{: .browser-mockup}
 
 ### 4.4 CDN
 !!! note ""
@@ -130,7 +130,7 @@
     - **From X-Forwarded-For**: Use the last proxy IP (e.g., `X-Forwarded-For: client,proxy1,proxy2,proxy3` → use `proxy3`).
 
 ![img.png](../../../img/waf/cdn.png){ width="900px" }
-{: .original}
+{: .browser-mockup}
 
 ## 5 Configuration
 !!! note ""
@@ -141,7 +141,7 @@
     Customize the WAF block page.
 
 ![img.png](../../../img/waf/html.png){ width="900px" }
-{: .original}
+{: .browser-mockup}
 
 ### 5.2 Malicious IP Group
 !!! note ""
