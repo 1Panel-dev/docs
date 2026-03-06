@@ -3,6 +3,7 @@
 === "RedHat / CentOS"
     
     !!! note ""
+        
         **1. Install EPEL repository**
 
         ```bash
@@ -10,6 +11,7 @@
         ```
     
     !!! note ""
+        
         **2. Install supervisor**
         
         ```bash
@@ -17,6 +19,7 @@
         ```
     
     !!! note ""
+        
         **3. Start supervisord**
         
         ```bash
@@ -24,6 +27,7 @@
         ```
     
     !!! note ""
+        
         **4. Enable on boot**
 
         ```bash
@@ -31,6 +35,7 @@
         ```
     
     !!! note ""      
+        
         **5. Check status**
 
         ```bash
