@@ -298,7 +298,7 @@
         }
       }
     }
-    ```bash    
+    ```   
 
 !!! note ""
     After completing the configuration, enter the "Configuration" page of "Agent" in 1Panel, complete the Discord chat channel configuration, and click "Save", as shown in the figure below:
