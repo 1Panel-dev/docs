@@ -111,7 +111,6 @@
 !!! note ""
     Up to this point, OpenClaw has been fully deployed. Next, we will configure the Feishu channel. To configure the Feishu channel, we first need to create an available robot in Feishu. Follow the steps below to complete the configuration step by step.
 
-!!! note ""
     Note: A personal Feishu account is used in this guide. For enterprise accounts, version release and permission authorization require administrator approval, while other operation steps remain the same.
 
 ### 4.1. Step 1: Create a Custom Enterprise App
