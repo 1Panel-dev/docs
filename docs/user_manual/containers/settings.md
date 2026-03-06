@@ -5,7 +5,7 @@
     - The default configuration file path is: `/etc/docker/daemon.json`
 
 ![img.png](../../img/containers/setting.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     - Image Acceleration: If application installation fails or image pulling times out, you can configure image accelerators to optimize the process
@@ -40,19 +40,19 @@
     - Enable IPv6 in the panel settings, where `fixed-cidr-v6` is the subnet of the IPv6 network segment obtained in the previous step (configures the default network, with a maximum prefix length of /80)
        
 ![img.png](../../img/containers/ipv6-01.png)
-    {: .original}
+    {: .browser-mockup}
 
 !!! note ""
     - Check if it takes effect through [Networks] - [Details]. If effective, the value of `EnableIPv6` is `true`, and `IPAM.Config[1].Subnet` is the `fixed-cidr-v6` configured in the previous step
 
 ![img.png](../../img/containers/ipv6-02.png)
-    {: .original}
+    {: .browser-mockup}
 
 !!! note ""
     - Create an IPv6 network
        
 ![img.png](../../img/containers/ipv6-03.png)
-    {: .original}
+    {: .browser-mockup}
 
 !!! note ""
     - Create containers using the IPv6 network you created
