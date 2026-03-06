@@ -7,25 +7,25 @@
         ```bash
         yum install -y epel-release
         ```
-
+!!! note ""
         **2. Install supervisor**
         
 
         yum install -y supervisor
         ```
-
+!!! note ""
         **3. Start supervisord**
         
         ```bash
         systemctl start supervisord
         ```
-    
+!!! note ""    
         **4. Enable on boot**
 
         ```bash
         systemctl enable supervisord
         ```
-      
+!!! note ""      
         **5. Check status**
 
         ```bash
