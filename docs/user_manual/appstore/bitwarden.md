@@ -9,6 +9,7 @@
     After entering the 1Panel console, click **App Store** in the left menu.
 
 ![image-20251016110510084](../../img/app/appstores.png)
+{: .browser-mockup}
 
 ## 2. Search for Bitwarden and Install
 
@@ -16,6 +17,7 @@
     Enter **Bitwarden** in the search box in the upper right corner, click the application card to go to the details page, then select **Install**.
 
 ![image-20251020154143141](../../img/app/bitwarden.png)
+{: .browser-mockup}
 
 ## 3. Configure Installation Parameters
 
@@ -30,6 +32,7 @@
     After confirming the settings are correct, click the **Confirm** button to start installation.
 
 ![image-20251020154143141](../../img/app/bitwarden_install.png)
+{: .browser-mockup}
 
 !!! note ""
     Wait for the installation to complete.
@@ -40,6 +43,7 @@
     Note: Bitwarden requires an SSL certificate for access. Direct access will result in a loading loop.
 
 ![image-20251021103933402](../../img/app/bitwarden_error.png)
+{: .browser-mockup}
 
 !!! note ""
     Click **Websites** in the left menu, then select **Create Website**.
@@ -50,26 +54,31 @@
     Click **Reverse Proxy**.
 
 ![image-20251021104522152](../../img/app/bitwarden_proxy.png)
+{: .browser-mockup}
 
 !!! note ""
     Enter the domain and port for the reverse proxy, select **Bitwarden** as the application, then click **Confirm**.
 
 ![image-20251021111122113](../../img/app/bitwarden_proxy_info.png)
+{: .browser-mockup}
 
 !!! note ""
     After the website is created successfully, click **Settings**.
 
 ![image-20251021110218133](../../img/app/bitwarden_con.png)
+{: .browser-mockup}
 
 !!! note ""
     Select **HTTPS** on the left and enable HTTPS.
 
 ![image-20251021110452921](../../img/app/bitwarden_https.png)
+{: .browser-mockup}
 
 !!! note ""
     Import your certificate or select an existing one, then click **Save** after configuration.
 
 ![image-20251021110637134](../../img/app/bitwarden_https_save.png)
+{: .browser-mockup}
 
 ## 5. Access the Bitwarden Service
 
@@ -77,3 +86,4 @@
     Access the domain and port configured for the reverse proxy.
 
 ![image-20251021112440459](../../img/app/bitwarden_view.png)
+{: .browser-mockup}
