@@ -6,7 +6,7 @@
     - Images must be pulled manually from the Images menu
 
 ![img.png](../../img/containers/container_create.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2 Inspect Container
 
@@ -14,7 +14,7 @@
     Click the target container name, and all information about the container will be displayed in the right drawer.
 
 ![img.png](../../img/containers/container_inspect.png)
-{: .original}
+{: .browser-mockup}
 
 ## 3 View Container Logs
 
@@ -24,7 +24,7 @@
     - **Download**: Download container logs
 
 ![img.png](../../img/containers/container_log.png)
-{: .original}
+{: .browser-mockup}
 
 ## 4 Access Container Console
 
@@ -34,7 +34,7 @@
     **Note**: For Alpine Linux containers, select the `/bin/ash` command. If you need to define a command other than the provided ones, switch the **Custom** option to on.
 
 ![img.png](../../img/containers/container_terminal.png)
-{: .original}
+{: .browser-mockup}
 
 ## 5 View Container Statistics
 
@@ -48,4 +48,4 @@
     **Refresh interval can be changed**.
 
 ![img.png](../../img/containers/container_monitor.png)
-{: .original}
+{: .browser-mockup}
