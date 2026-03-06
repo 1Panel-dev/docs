@@ -319,11 +319,11 @@
 !!! note ""
     After starting the Gateway, verify whether the configuration is successful by following these steps:
 
-- 1. Open the Discord client and enter the server where the bot was added.
+    - 1. Open the Discord client and enter the server where the bot was added.
 
-- 2. In the target channel (e.g., #general), send a message mentioning the bot (e.g., @OpenClaw Bot hello).
+    - 2. In the target channel (e.g., #general), send a message mentioning the bot (e.g., @OpenClaw Bot hello).
 
-- 3. If the bot replies normally, it indicates that the configuration is successful. The test effect is shown in the figure below.
+    - 3. If the bot replies normally, it indicates that the configuration is successful. The test effect is shown in the figure below.
 
 ![img.png](../../img/ai/Discord_OpenClaw_Bot_Test_Page.png)
 
@@ -341,13 +341,14 @@
 
 #### Common Issues and Solutions
 
-- "Used disallowed intents": Enable "Message Content Intent" (and "Server Members Intent" if needed) in the Discord Developer Portal, then restart the Gateway.
+!!! note ""
+    - "Used disallowed intents": Enable "Message Content Intent" (and "Server Members Intent" if needed) in the Discord Developer Portal, then restart the Gateway.
 
-- Bot connects but does not reply in server channels: Check if the bot has "View Channels", "Send Messages", and "Read Message History" permissions; ensure "Message Content Intent" is enabled; verify if the configuration requires mentioning the bot (requireMention: true) but you did not mention it; check if the server/channel allowlist rejects the current channel/user.
+    - Bot connects but does not reply in server channels: Check if the bot has "View Channels", "Send Messages", and "Read Message History" permissions; ensure "Message Content Intent" is enabled; verify if the configuration requires mentioning the bot (requireMention: true) but you did not mention it; check if the server/channel allowlist rejects the current         channel/user.
 
-- Private messages not working: Check if "channels.discord.dm.enabled" is false or "dm.policy" is "disabled"; if "dm.policy" is "pairing", you need to approve the pairing code first (run "openclaw pairing approve discord <code>").
+    - Private messages not working: Check if "channels.discord.dm.enabled" is false or "dm.policy" is "disabled"; if "dm.policy" is "pairing", you need to approve the pairing code first (run "openclaw pairing approve discord <code>").
 
-- requireMention: false but no reply: The default "groupPolicy" is "allowlist"; set "channels.discord.groupPolicy" to "open" or add a server entry under "channels.discord.guilds".
+    - requireMention: false but no reply: The default "groupPolicy" is "allowlist"; set "channels.discord.groupPolicy" to "open" or add a server entry under "channels.discord.guilds".
 
 # 5. Model Configuration Modification
 
