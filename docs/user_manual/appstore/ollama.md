@@ -9,7 +9,7 @@
     After entering the 1Panel console, click **App Store** in the left menu.
 
 ![image-20251016110510084](../../img/app/appstores.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2. Search for Ollama and Install
 
@@ -17,7 +17,7 @@
     Enter **Ollama** in the search box in the upper right corner, click the application card to go to the details page, then select **Install**.
 
 ![image-20251017163039229](../../img/app/ollama.png)
-{: .original}
+{: .browser-mockup}
 
 ## 3. Configure Installation Parameters
 
@@ -32,7 +32,7 @@
     After confirming the settings are correct, click the **Confirm** button to start installation.
 
 ![image-2025-1017163107970](../../img/app/ollama_install.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Wait for the installation to complete.
@@ -43,22 +43,22 @@
     Configure the default access address. Skip this step if already configured.
 
 ![image-20251016172322315](../../img/app/setting_ip.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Return to the App Store and click **Jump** to access the Ollama service.
 
 ![image-20251017171351530](../../img/app/ollama_jump.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     If you see `Ollama is running` on the page, the deployment is successful.
 
 ![image-20251017171445095](../../img/app/ollama_view.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     Click **Terminal** to connect to Ollama and control it using commands.
 
 ![image-20251017171937567](../../img/app/ollama_use.png)
-{: .original}
+{: .browser-mockup}
