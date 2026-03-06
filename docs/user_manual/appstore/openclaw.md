@@ -11,7 +11,7 @@
     After entering the 1Panel console, click **App Store** in the left menu.
 
 ![image-appstores](../../img/app/appstores.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2. Install OpenClaw
 
