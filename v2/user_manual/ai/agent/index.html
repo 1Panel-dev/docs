@@ -112,7 +112,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#openclaw-installation-and-deployment-guide" class="md-skip">
+        <a href="#1-resource-and-environment-preparation" class="md-skip">
           Skip to content
         </a>
       
@@ -979,8 +979,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -1008,8 +1006,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
@@ -1273,6 +1269,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-model-configuration-modification" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Model Configuration Modification
+    </span>
+  </a>
   
 </li>
       
@@ -3618,8 +3623,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -3885,6 +3888,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#5-model-configuration-modification" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Model Configuration Modification
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3908,7 +3920,7 @@
   
 
 
-<h1 id="openclaw-installation-and-deployment-guide">OpenClaw Installation and Deployment Guide<a class="headerlink" href="#openclaw-installation-and-deployment-guide" title="Permanent link">¶</a></h1>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/845aec89-5a83-4670-adc2-1d1919ad61ee" data-desc-position="bottom"><img width="2559" height="1238" alt="image" src="https://github.com/user-attachments/assets/845aec89-5a83-4670-adc2-1d1919ad61ee"></a># OpenClaw Installation and Deployment Guide</p>
 <div class="admonition note">
 <p>This document mainly introduces the installation and deployment process of OpenClaw on Linux clients or servers. We recommend using 1Panel, an open-source Linux operation and maintenance management panel, for installation and deployment, which makes the entire process simple and fast. After OpenClaw is installed, the Feishu channel docking configuration can also be quickly completed through the 1Panel operation and maintenance management panel, facilitating the rapid implementation of a Feishu-based personal AI assistant.</p>
 </div>
@@ -4004,36 +4016,43 @@
 <p>After entering the OpenClaw page, send a message and check if the AI assistant responds. A normal response, as shown in the figure below, indicates that OpenClaw has been successfully deployed.</p>
 </div>
 <p class="browser-mockup"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/ai/OpenClaw_WebUI_Chat_Test_Page.png" data-desc-position="bottom"><img alt="img.png" src="../../../img/ai/OpenClaw_WebUI_Chat_Test_Page.png"></a></p>
-<p>Discord Channel Configuration</p>
 <h2 id="4-discord-channel-configuration">4. Discord Channel Configuration<a class="headerlink" href="#4-discord-channel-configuration" title="Permanent link">¶</a></h2>
-<div class="admonition note"></div>
+<div class="admonition note">
 <p>Up to this point, OpenClaw has been fully deployed. Next, we will configure the Discord channel. To configure the Discord channel, we first need to create an available bot in the Discord Developer Portal. Follow the steps below to complete the configuration step by step.</p>
-<div class="admonition note"></div>
+</div>
+<div class="admonition note">
 <p>Note: This guide uses a personal Discord account. For server-level configurations involving enterprise or team servers, some permission settings may require server administrator approval, while other operation steps remain the same.</p>
+</div>
 <h3 id="41-step-1-create-a-discord-application-and-bot-user">4.1. Step 1: Create a Discord Application and Bot User<a class="headerlink" href="#41-step-1-create-a-discord-application-and-bot-user" title="Permanent link">¶</a></h3>
-<div class="admonition note"></div>
+<div class="admonition note">
 <p>First, log in to the Discord Developer Portal (link: <a href="https://discord.com/developers/applications">https://discord.com/developers/applications</a>), then click "New Application" in the upper right corner to create a new application.</p>
-<div class="admonition note"></div>
+</div>
+<div class="admonition note">
 <p>Enter the application name (customizable, e.g., "OpenClaw Bot") and click "Create" to complete the application creation. Then, in the left navigation bar of the application page, select "Bot" and click "Add Bot" to create a bot user.</p>
-<div class="admonition note"></div>
+</div>
+<div class="admonition note">
 <p>After creating the bot, click "Copy" under "Bot Token" to save the token (this token will be used in the subsequent OpenClaw configuration). Note: Keep the token confidential, as it is equivalent to the bot's access credential. If the token is leaked, click "Regenerate" to get a new one.</p>
+</div>
 <h3 id="42-step-2-enable-required-privileged-gateway-intents">4.2. Step 2: Enable Required Privileged Gateway Intents<a class="headerlink" href="#42-step-2-enable-required-privileged-gateway-intents" title="Permanent link">¶</a></h3>
-<div class="admonition note"></div>
+<div class="admonition note">
 <p>Discord blocks "Privileged Gateway Intents" by default; you need to explicitly enable the intents required by OpenClaw to ensure the bot can normally read and send messages. Under the "Bot" page, find the "Privileged Gateway Intents" section and enable the following two intents:</p>
-<div class="admonition note"></div>
+</div>
 <ul>
-<li>Message Content Intent: Required to read message text in most servers; without it, the bot will connect but not respond to messages, and you may see the error "Used disallowed intents".</li>
+<li>
+<p>Message Content Intent: Required to read message text in most servers; without it, the bot will connect but not respond to messages, and you may see the error "Used disallowed intents".</p>
+</li>
+<li>
+<p>Server Members Intent (Recommended): Required for member/user search and allowlist matching in servers.</p>
+</li>
 </ul>
-<div class="admonition note"></div>
-<ul>
-<li>Server Members Intent (Recommended): Required for member/user search and allowlist matching in servers.</li>
-</ul>
-<div class="admonition note"></div>
+<div class="admonition note">
 <p>You usually do not need to enable "Presence Intent".</p>
+</div>
 <h3 id="43-step-3-generate-invite-url-and-add-bot-to-server">4.3. Step 3: Generate Invite URL and Add Bot to Server<a class="headerlink" href="#43-step-3-generate-invite-url-and-add-bot-to-server" title="Permanent link">¶</a></h3>
-<div class="admonition note"></div>
+<div class="admonition note">
 <p>To make the bot work in your Discord server, you need to generate an invite URL and invite the bot to the target server. In the left navigation bar of the application page, select "OAuth2" → "URL Generator", then configure the scopes and bot permissions as follows:</p>
-<div class="admonition note"></div>
+</div>
+<div class="admonition note">
 <h4 id="scopes">Scopes<a class="headerlink" href="#scopes" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -4043,7 +4062,6 @@
 <p>✅ applications.commands (Required for native slash commands)</p>
 </li>
 </ul>
-<div class="admonition note"></div>
 <h4 id="bot-permissions-minimum-baseline">Bot Permissions (Minimum Baseline)<a class="headerlink" href="#bot-permissions-minimum-baseline" title="Permanent link">¶</a></h4>
 <ul>
 <li>
@@ -4068,21 +4086,30 @@
 <p>✅ Use External Emojis / Stickers (Optional, only if needed)</p>
 </li>
 </ul>
-<div class="admonition note"></div>
+</div>
+<div class="admonition note">
 <p>Note: Avoid enabling "Administrator" unless you are debugging and fully trust the bot..</p>
-<div class="admonition note"></div>
+</div>
+<div class="admonition note">
 <p>After completing the configuration, copy the generated URL, open it in a browser, select the target server where you want to add the bot, and click "Authorize" to complete the invitation. You may need to complete the human-machine verification during the process.</p>
+</div>
 <h3 id="44-step-4-enable-developer-mode-and-obtain-ids-optional">4.4. Step 4: Enable Developer Mode and Obtain IDs (Optional)<a class="headerlink" href="#44-step-4-enable-developer-mode-and-obtain-ids-optional" title="Permanent link">¶</a></h3>
-<div class="admonition note"></div>
+<div class="admonition note">
 <p>Discord uses numeric IDs for servers, users, and channels, which are preferred in OpenClaw configurations. To obtain these IDs, you need to enable Developer Mode in Discord (desktop/web version):</p>
-<div class="admonition note"></div>
+<ul>
+<li>
 <ol>
 <li>Open Discord, click the gear icon in the lower left corner to enter "User Settings".</li>
 </ol>
-<div class="admonition note"></div>
+</li>
+<li>
 <ol>
 <li>Select "Advanced" in the left navigation bar, then enable "Developer Mode".</li>
 </ol>
+</li>
+</ul>
+</div>
+<div class="admonition note">
 <p>After enabling, you can right-click to copy the corresponding IDs:</p>
 <ul>
 <li>
@@ -4095,105 +4122,117 @@
 <p>Your User Avatar → Copy User ID</p>
 </li>
 </ul>
+</div>
+<div class="admonition note">
 <p>The operation page is shown in the figure below.</p>
+</div>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/ai/Discord_Developer_Mode_Page.png" data-desc-position="bottom"><img alt="img.png" src="../../../img/ai/Discord_Developer_Mode_Page.png"></a></p>
 <p>{: .browser-mockup}</p>
 <h3 id="45-step-5-configure-openclaw-for-discord-channel">4.5. Step 5: Configure OpenClaw for Discord Channel<a class="headerlink" href="#45-step-5-configure-openclaw-for-discord-channel" title="Permanent link">¶</a></h3>
-<div class="admonition note"></div>
+<div class="admonition note">
 <p>After completing the Discord bot configuration, you need to set the bot token and related parameters in OpenClaw. There are two ways to configure it: using environment variables or modifying the configuration file. The configuration file method is recommended for more flexible settings.</p>
+</div>
 <h4 id="451-configuration-via-environment-variable-recommended-for-servers">4.5.1. Configuration via Environment Variable (Recommended for Servers)<a class="headerlink" href="#451-configuration-via-environment-variable-recommended-for-servers" title="Permanent link">¶</a></h4>
-<div class="admonition note"></div>
+<div class="admonition note">
 <p>Set the environment variable with the bot token obtained in Step 1. The variable name is fixed as follows:</p>
-<div class="admonition note"></div>
+</div>
+<div class="admonition note">
 <p>DISCORD_BOT_TOKEN=YOUR_BOT_TOKEN</p>
-<div class="admonition note"></div>
+</div>
+<div class="admonition note">
 <p>Note: If both environment variables and configuration file settings are used, the configuration file settings take precedence (environment variables are only used as a fallback for the default account).</p>
+</div>
 <h4 id="452-configuration-via-configuration-file">4.5.2. Configuration via Configuration File<a class="headerlink" href="#452-configuration-via-configuration-file" title="Permanent link">¶</a></h4>
-<div class="admonition note"></div>
+<div class="admonition note">
 <p>Modify the OpenClaw configuration file and add the Discord channel configuration. The minimum configuration is as follows:</p>
+</div>
 <p>'''
-{
-  "channels": {
-    "discord": {
-      "enabled": true,
-      "token": "YOUR_BOT_TOKEN"
+    {
+      "channels": {
+        "discord": {
+          "enabled": true,
+          "token": "YOUR_BOT_TOKEN"
+        }
+      }
     }
-  }
-}
 '''    </p>
-<div class="admonition note"></div>
+<div class="admonition note">
 <p>For more advanced configurations (e.g., allowlist, server/channel restrictions, private message settings), you can use the full configuration template as follows. Adjust the parameters according to your actual needs:</p>
+</div>
 <p>'''
-{
-  "channels": {
-    "discord": {
-      "enabled": true,
-      "token": "abc.123",
-      "groupPolicy": "allowlist",
-      "mediaMaxMb": 8,
-      "actions": {
-        "reactions": true,
-        "stickers": true,
-        "emojiUploads": true,
-        "stickerUploads": true,
-        "polls": true,
-        "permissions": true,
-        "messages": true,
-        "threads": true,
-        "pins": true,
-        "search": true,
-        "memberInfo": true,
-        "roleInfo": true,
-        "roles": false,
-        "channelInfo": true,
-        "channels": true,
-        "voiceStatus": true,
-        "events": true,
-        "moderation": false
-      },
-      "replyToMode": "off",
-      "dm": {
-        "enabled": true,
-        "policy": "pairing",
-        "allowFrom": ["123456789012345678", "steipete"],
-        "groupEnabled": false,
-        "groupChannels": ["openclaw-dm"]
-      },
-      "guilds": {
-        "*": { "requireMention": true },
-        "123456789012345678": {
-          "slug": "friends-of-openclaw",
-          "requireMention": false,
-          "reactionNotifications": "own",
-          "users": ["987654321098765432", "steipete"],
-          "channels": {
-            "general": { "allow": true },
-            "help": {
-              "allow": true,
-              "requireMention": true,
-              "users": ["987654321098765432"],
-              "skills": ["search", "docs"],
-              "systemPrompt": "Keep answers short."
+    {
+      "channels": {
+        "discord": {
+          "enabled": true,
+          "token": "abc.123",
+          "groupPolicy": "allowlist",
+          "mediaMaxMb": 8,
+          "actions": {
+            "reactions": true,
+            "stickers": true,
+            "emojiUploads": true,
+            "stickerUploads": true,
+            "polls": true,
+            "permissions": true,
+            "messages": true,
+            "threads": true,
+            "pins": true,
+            "search": true,
+            "memberInfo": true,
+            "roleInfo": true,
+            "roles": false,
+            "channelInfo": true,
+            "channels": true,
+            "voiceStatus": true,
+            "events": true,
+            "moderation": false
+          },
+          "replyToMode": "off",
+          "dm": {
+            "enabled": true,
+            "policy": "pairing",
+            "allowFrom": ["123456789012345678", "steipete"],
+            "groupEnabled": false,
+            "groupChannels": ["openclaw-dm"]
+          },
+          "guilds": {
+            "*": { "requireMention": true },
+            "123456789012345678": {
+              "slug": "friends-of-openclaw",
+              "requireMention": false,
+              "reactionNotifications": "own",
+              "users": ["987654321098765432", "steipete"],
+              "channels": {
+                "general": { "allow": true },
+                "help": {
+                  "allow": true,
+                  "requireMention": true,
+                  "users": ["987654321098765432"],
+                  "skills": ["search", "docs"],
+                  "systemPrompt": "Keep answers short."
+                }
+              }
             }
           }
         }
       }
     }
-  }
-}
 '''    </p>
-<div class="admonition note"></div>
+<div class="admonition note">
 <p>After completing the configuration, enter the "Configuration" page of "Agent" in 1Panel, complete the Discord chat channel configuration, and click "Save", as shown in the figure below:</p>
+</div>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/ai/1Panel_OpenClaw_Discord_Channel_Config.png" data-desc-position="bottom"><img alt="img.png" src="../../../img/ai/1Panel_OpenClaw_Discord_Channel_Config.png"></a></p>
 <p>{: .browser-mockup}</p>
 <h3 id="46-step-6-start-gateway-and-verify-configuration">4.6. Step 6: Start Gateway and Verify Configuration<a class="headerlink" href="#46-step-6-start-gateway-and-verify-configuration" title="Permanent link">¶</a></h3>
-<div class="admonition note"></div>
+<div class="admonition note">
 <p>Start the OpenClaw Gateway. When the bot token is available (configuration file takes precedence, environment variable as fallback) and "channels.discord.enabled" is not false, the Discord channel will start automatically. Run the following command to start the Gateway (if not started automatically):</p>
+</div>
 <p>'''
-openclaw gateway
+    openclaw gateway
 '''</p>
-<div class="admonition note"></div>
+<div class="admonition note">
 <p>After starting the Gateway, verify whether the configuration is successful by following these steps:</p>
+</div>
 <ul>
 <li>
 <ol>
@@ -4214,11 +4253,12 @@ openclaw gateway
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/ai/Discord_OpenClaw_Bot_Test_Page.png" data-desc-position="bottom"><img alt="img.png" src="../../../img/ai/Discord_OpenClaw_Bot_Test_Page.png"></a></p>
 <p>{: .browser-mockup}</p>
 <h3 id="47-step-7-troubleshooting-common-issues">4.7. Step 7: Troubleshooting (Common Issues)<a class="headerlink" href="#47-step-7-troubleshooting-common-issues" title="Permanent link">¶</a></h3>
-<div class="admonition note"></div>
+<div class="admonition note">
 <p>If the bot fails to work normally, first run the following commands to perform a quick audit and view warnings:</p>
+</div>
 <p>'''
-openclaw doctor
-openclaw channels status --probe
+    openclaw doctor
+    openclaw channels status --probe
 '''</p>
 <h4 id="common-issues-and-solutions">Common Issues and Solutions<a class="headerlink" href="#common-issues-and-solutions" title="Permanent link">¶</a></h4>
 <ul>
