@@ -1,30 +1,40 @@
 ## 1 Installation
 
 === "RedHat / CentOS"
+    
     !!! note ""
+        
         **1. Install EPEL repository**
 
         ```bash
         yum install -y epel-release
         ```
 
+    !!! note ""
+        
         **2. Install Fail2ban**
         
         ```bash
         yum install -y fail2ban
         ```
 
+    !!! note ""
+        
         **3. Start Fail2ban service**
         
         ```bash
         systemctl start fail2ban
         ```
         
+    !!! note ""
+        
         **4. Enable on boot**
 
         ```bash
         systemctl enable fail2ban
         ```
+        
+    !!! note ""
         
         **5. Check Fail2ban status**
 
@@ -33,30 +43,40 @@
         ```
 
 === "Ubuntu / Debian"
+    
     !!! note ""
+        
         **1. Install Fail2ban**
         
         ```bash
         sudo apt-get install fail2ban
         ```
 
+    !!! note ""
+        
         **2. For Debian 12 and above, install rsyslog manually**
 
         ```bash
         sudo apt-get install rsyslog
         ```
 
+    !!! note ""
+        
         **3. Start Fail2ban service**
         
         ```bash
         sudo systemctl start fail2ban
         ```
         
+    !!! note ""
+        
         **4. Enable on boot**
 
         ```bash
         sudo systemctl enable fail2ban
         ```
+        
+    !!! note ""
         
         **5. Check Fail2ban status**
 
