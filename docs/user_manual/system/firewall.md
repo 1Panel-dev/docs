@@ -96,7 +96,7 @@
     **Click the firewall switch to turn it on or off.**
     
 ![img.png](../../img/hosts/firewall_switch.png)
-{: .original}
+{: .browser-mockup}
 
 !!! note ""
     **Click the Ping Disable button to enable or disable PING.**
@@ -104,7 +104,7 @@
     - Disabling PING prevents server performance degradation caused by frequent pings.
 
 ![img.png](../../img/hosts/firewall_ping.png)
-{: .original}
+{: .browser-mockup}
 
 ## 3 Port Rules
 
@@ -120,10 +120,10 @@
     **After allowing ports, you can view the current status in the firewall list.**
 
 ![img.png](../../img/hosts/firewall_port_list.png)
-{: .original}
+{: .browser-mockup}
 
 ![img.png](../../img/hosts/firewall_port_create.png)
-{: .original}
+{: .browser-mockup}
 
 ## 4 Port Forwarding
 
@@ -136,7 +136,7 @@
     - Target Port: Port that receives forwarded traffic
 
 ![img.png](../../img/hosts/firewall_port_forward.png)
-{: .original}
+{: .browser-mockup}
 
 ## 5 IP Rules
 
@@ -147,7 +147,7 @@
     - Policy: Default Allow; options: Allow, Block
 
 ![img.png](../../img/hosts/firewall_ip_list.png)
-{: .original}
+{: .browser-mockup}
 
 ![img.png](../../img/hosts/firewall_ip_create.png)
-{: .original}
+{: .browser-mockup}
