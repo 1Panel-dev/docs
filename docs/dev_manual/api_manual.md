@@ -21,6 +21,7 @@ This document details how to use custom Token verification to access panel APIs 
     ```text
     Token = md5('1panel' + API-Key + UnixTimestamp)
     ```
+!!! note ""
 
     Components:
 
@@ -38,6 +39,8 @@ This document details how to use custom Token verification to access panel APIs 
     |-------------------|--------------------------|
     | 1Panel-Token      | Custom Token value       |
     | 1Panel-Timestamp  | Current Unix timestamp   |
+
+!!! note ""
 
     Example request header:
     
@@ -87,6 +90,8 @@ This document details how to use custom Token verification to access panel APIs 
 
         The backend will return 401 Unauthorized with the prompt "API interface key error".
 
+!!! note ""
+    
     - How to generate 1Panel-Token
     
         Please refer to the following pseudocode:
@@ -95,6 +100,8 @@ This document details how to use custom Token verification to access panel APIs 
         const token = md5('1panel' + clientToken + unixTimestamp);
         ```
 
+!!! note ""
+    
     - Why two Headers are required
     
         To increase the complexity of verification and enhance security at the same time.
