@@ -11,7 +11,7 @@
     !!! note ""
         **2. Install supervisor**
         
-
+        ```bash
         yum install -y supervisor
         ```
     !!! note ""
