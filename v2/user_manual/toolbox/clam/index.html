@@ -3510,7 +3510,7 @@
 </ul>
 </div>
 <h2 id="3-installation">3 Installation<a class="headerlink" href="#3-installation" title="Permanent link">¶</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">RedHat / CentOS</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">RedHat / CentOS</label><label for="__tabbed_1_2">Ubuntu / Debian</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="admonition note">
@@ -3518,109 +3518,78 @@
 <div class="highlight"><pre><span></span><code>yum<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>epel-release
 </code></pre></div>
 </div>
-</div>
-</div>
+<div class="admonition note">
+<p><strong>2. Install ClamAV</strong></p>
+<div class="highlight"><pre><span></span><code>yum<span class="w"> </span>install<span class="w"> </span>clamav<span class="w"> </span>clamd<span class="w"> </span>clamav-update<span class="w"> </span>-y
+</code></pre></div>
 </div>
 <div class="admonition note">
-<pre><code>**2. Install ClamAV**
-
-```bash
-yum install clamav clamd clamav-update -y
-```
-</code></pre>
+<p><strong>3. Modify ClamAV configuration</strong></p>
+<div class="highlight"><pre><span></span><code>Uncomment<span class="w"> </span>these<span class="w"> </span>lines<span class="w"> </span><span class="k">in</span><span class="w"> </span>/etc/clamd.d/scan.conf:
+LogFile<span class="w"> </span>/var/log/clamd.scan
+LogFileMaxSize<span class="w"> </span>2M
+PidFile<span class="w"> </span>/run/clamd.scan/clamd.pid
+DatabaseDirectory<span class="w"> </span>/var/lib/clamav
+LocalSocket<span class="w"> </span>/run/clamd.scan/clamd.sock
+</code></pre></div>
 </div>
 <div class="admonition note">
-<pre><code>**3. Modify ClamAV configuration**
-
-```bash
-Uncomment these lines in /etc/clamd.d/scan.conf:
-LogFile /var/log/clamd.scan
-LogFileMaxSize 2M
-PidFile /run/clamd.scan/clamd.pid
-DatabaseDirectory /var/lib/clamav
-LocalSocket /run/clamd.scan/clamd.sock
-```
-</code></pre>
+<p><strong>4. Modify virus database update configuration</strong></p>
+<div class="highlight"><pre><span></span><code>Uncomment<span class="w"> </span>these<span class="w"> </span>lines<span class="w"> </span><span class="k">in</span><span class="w"> </span>/etc/freshclam.conf:
+DatabaseDirectory<span class="w"> </span>/var/lib/clamav
+UpdateLogFile<span class="w">  </span>/var/log/freshclam.log
+PidFile<span class="w">  </span>/var/run/freshclam.pid
+DatabaseMirror<span class="w"> </span>database.clamav.net
+Checks<span class="w"> </span><span class="m">12</span>
+</code></pre></div>
 </div>
 <div class="admonition note">
-<pre><code>**4. Modify virus database update configuration**
-
-```bash
-Uncomment these lines in /etc/freshclam.conf:
-DatabaseDirectory /var/lib/clamav
-UpdateLogFile  /var/log/freshclam.log
-PidFile  /var/run/freshclam.pid
-DatabaseMirror database.clamav.net
-Checks 12
-```
-</code></pre>
+<p><strong>5. Start ClamAV services</strong></p>
+<div class="highlight"><pre><span></span><code>freshclam
+systemctl<span class="w"> </span>start<span class="w"> </span>clamd@scan.service
+systemctl<span class="w"> </span>start<span class="w"> </span>clamav-freshclam.service
+</code></pre></div>
 </div>
 <div class="admonition note">
-<pre><code>**5. Start ClamAV services**
-
-```bash
-freshclam
-systemctl start clamd@scan.service
-systemctl start clamav-freshclam.service
-```
-</code></pre>
+<p><strong>6. Enable on boot</strong></p>
+<div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>clamd@scan.service
+systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>clamav-freshclam.service
+</code></pre></div>
 </div>
 <div class="admonition note">
-<pre><code>**6. Enable on boot**
-
-```bash
-systemctl enable clamd@scan.service
-systemctl enable clamav-freshclam.service
-```
-</code></pre>
+<p><strong>7. Check service status</strong></p>
+<div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>status<span class="w"> </span>clamd@scan.service
+systemctl<span class="w"> </span>status<span class="w"> </span>clamav-freshclam.service
+</code></pre></div>
 </div>
-<div class="admonition note">
-<pre><code>**7. Check service status**
-
-```bash
-systemctl status clamd@scan.service
-systemctl status clamav-freshclam.service
-```
-</code></pre>
 </div>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">Ubuntu / Debian</label></div>
-<div class="tabbed-content">
 <div class="tabbed-block">
 <div class="admonition note">
 <p><strong>1. Install ClamAV</strong></p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>clamav<span class="w"> </span>clamav-daemon<span class="w"> </span>-y
 </code></pre></div>
 </div>
-</div>
-</div>
+<div class="admonition note">
+<p><strong>2. Start ClamAV services</strong></p>
+<div class="highlight"><pre><span></span><code>freshclam
+sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>clamav-daemon
+sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>clamav-freshclam.service
+</code></pre></div>
 </div>
 <div class="admonition note">
-<pre><code>**2. Start ClamAV services**
-
-```bash
-freshclam
-sudo systemctl start clamav-daemon
-sudo systemctl start clamav-freshclam.service
-```
-</code></pre>
+<p><strong>3. Enable on boot</strong></p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>clamav-daemon
+sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>clamav-freshclam.service
+</code></pre></div>
 </div>
 <div class="admonition note">
-<pre><code>**3. Enable on boot**
-
-```bash
-sudo systemctl enable clamav-daemon
-sudo systemctl enable clamav-freshclam.service
-```
-</code></pre>
+<p><strong>4. Check service status</strong></p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>clamav-daemon
+sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>clamav-freshclam.service
+</code></pre></div>
 </div>
-<div class="admonition note">
-<pre><code>**4. Check service status**
-
-```bash
-sudo systemctl status clamav-daemon
-sudo systemctl status clamav-freshclam.service
-```
-</code></pre>
+</div>
+</div>
 </div>
 <h2 id="4-scan-rules">4 Scan Rules<a class="headerlink" href="#4-scan-rules" title="Permanent link">¶</a></h2>
 <div class="admonition note">
