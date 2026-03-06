@@ -43,12 +43,15 @@
     
     (3) Click **Execute Backup** and check the backup result.
 
-    ![img.png](../../img/installation/master_backup.png)
+![img.png](../../img/installation/master_backup.png)
+{: .browser-mockup}
 
+!!! note ""
     (4) Open the slave node to be promoted, and run the promotion command with the installed 1panel-migrator:  
     `1panel-migrator promote`.
 
-    ![img.png](../../img/installation/promote.png)
+![img.png](../../img/installation/promote.png)
+{: .browser-mockup}
 
 ## 3 Master Node → Slave Node
 
@@ -57,4 +60,5 @@
     Open the master node to be demoted, and run the demotion command with the installed 1panel-migrator:  
     `1panel-migrator demote`.
 
-    ![img.png](../../img/installation/demote.png)
+![img.png](../../img/installation/demote.png)
+{: .browser-mockup}
