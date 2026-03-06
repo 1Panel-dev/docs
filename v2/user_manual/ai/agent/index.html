@@ -4145,79 +4145,77 @@
 <h4 id="452-configuration-via-configuration-file">4.5.2. Configuration via Configuration File<a class="headerlink" href="#452-configuration-via-configuration-file" title="Permanent link">¶</a></h4>
 <div class="admonition note">
 <p>Modify the OpenClaw configuration file and add the Discord channel configuration. The minimum configuration is as follows:</p>
+<div class="highlight"><pre><span></span><code><span class="o">{</span>
+<span class="w">  </span><span class="s2">"channels"</span>:<span class="w"> </span><span class="o">{</span>
+<span class="w">    </span><span class="s2">"discord"</span>:<span class="w"> </span><span class="o">{</span>
+<span class="w">      </span><span class="s2">"enabled"</span>:<span class="w"> </span>true,
+<span class="w">      </span><span class="s2">"token"</span>:<span class="w"> </span><span class="s2">"YOUR_BOT_TOKEN"</span>
+<span class="w">    </span><span class="o">}</span>
+<span class="w">  </span><span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
 </div>
-<p>'''
-    {
-      "channels": {
-        "discord": {
-          "enabled": true,
-          "token": "YOUR_BOT_TOKEN"
-        }
-      }
-    }
-'''    </p>
 <div class="admonition note">
 <p>For more advanced configurations (e.g., allowlist, server/channel restrictions, private message settings), you can use the full configuration template as follows. Adjust the parameters according to your actual needs:</p>
+<div class="highlight"><pre><span></span><code><span class="o">{</span>
+<span class="w">  </span><span class="s2">"channels"</span>:<span class="w"> </span><span class="o">{</span>
+<span class="w">    </span><span class="s2">"discord"</span>:<span class="w"> </span><span class="o">{</span>
+<span class="w">      </span><span class="s2">"enabled"</span>:<span class="w"> </span>true,
+<span class="w">      </span><span class="s2">"token"</span>:<span class="w"> </span><span class="s2">"abc.123"</span>,
+<span class="w">      </span><span class="s2">"groupPolicy"</span>:<span class="w"> </span><span class="s2">"allowlist"</span>,
+<span class="w">      </span><span class="s2">"mediaMaxMb"</span>:<span class="w"> </span><span class="m">8</span>,
+<span class="w">      </span><span class="s2">"actions"</span>:<span class="w"> </span><span class="o">{</span>
+<span class="w">        </span><span class="s2">"reactions"</span>:<span class="w"> </span>true,
+<span class="w">        </span><span class="s2">"stickers"</span>:<span class="w"> </span>true,
+<span class="w">        </span><span class="s2">"emojiUploads"</span>:<span class="w"> </span>true,
+<span class="w">        </span><span class="s2">"stickerUploads"</span>:<span class="w"> </span>true,
+<span class="w">        </span><span class="s2">"polls"</span>:<span class="w"> </span>true,
+<span class="w">        </span><span class="s2">"permissions"</span>:<span class="w"> </span>true,
+<span class="w">        </span><span class="s2">"messages"</span>:<span class="w"> </span>true,
+<span class="w">        </span><span class="s2">"threads"</span>:<span class="w"> </span>true,
+<span class="w">        </span><span class="s2">"pins"</span>:<span class="w"> </span>true,
+<span class="w">        </span><span class="s2">"search"</span>:<span class="w"> </span>true,
+<span class="w">        </span><span class="s2">"memberInfo"</span>:<span class="w"> </span>true,
+<span class="w">        </span><span class="s2">"roleInfo"</span>:<span class="w"> </span>true,
+<span class="w">        </span><span class="s2">"roles"</span>:<span class="w"> </span>false,
+<span class="w">        </span><span class="s2">"channelInfo"</span>:<span class="w"> </span>true,
+<span class="w">        </span><span class="s2">"channels"</span>:<span class="w"> </span>true,
+<span class="w">        </span><span class="s2">"voiceStatus"</span>:<span class="w"> </span>true,
+<span class="w">        </span><span class="s2">"events"</span>:<span class="w"> </span>true,
+<span class="w">        </span><span class="s2">"moderation"</span>:<span class="w"> </span><span class="nb">false</span>
+<span class="w">      </span><span class="o">}</span>,
+<span class="w">      </span><span class="s2">"replyToMode"</span>:<span class="w"> </span><span class="s2">"off"</span>,
+<span class="w">      </span><span class="s2">"dm"</span>:<span class="w"> </span><span class="o">{</span>
+<span class="w">        </span><span class="s2">"enabled"</span>:<span class="w"> </span>true,
+<span class="w">        </span><span class="s2">"policy"</span>:<span class="w"> </span><span class="s2">"pairing"</span>,
+<span class="w">        </span><span class="s2">"allowFrom"</span>:<span class="w"> </span><span class="o">[</span><span class="s2">"123456789012345678"</span>,<span class="w"> </span><span class="s2">"steipete"</span><span class="o">]</span>,
+<span class="w">        </span><span class="s2">"groupEnabled"</span>:<span class="w"> </span>false,
+<span class="w">        </span><span class="s2">"groupChannels"</span>:<span class="w"> </span><span class="o">[</span><span class="s2">"openclaw-dm"</span><span class="o">]</span>
+<span class="w">      </span><span class="o">}</span>,
+<span class="w">      </span><span class="s2">"guilds"</span>:<span class="w"> </span><span class="o">{</span>
+<span class="w">        </span><span class="s2">"*"</span>:<span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="s2">"requireMention"</span>:<span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="o">}</span>,
+<span class="w">        </span><span class="s2">"123456789012345678"</span>:<span class="w"> </span><span class="o">{</span>
+<span class="w">          </span><span class="s2">"slug"</span>:<span class="w"> </span><span class="s2">"friends-of-openclaw"</span>,
+<span class="w">          </span><span class="s2">"requireMention"</span>:<span class="w"> </span>false,
+<span class="w">          </span><span class="s2">"reactionNotifications"</span>:<span class="w"> </span><span class="s2">"own"</span>,
+<span class="w">          </span><span class="s2">"users"</span>:<span class="w"> </span><span class="o">[</span><span class="s2">"987654321098765432"</span>,<span class="w"> </span><span class="s2">"steipete"</span><span class="o">]</span>,
+<span class="w">          </span><span class="s2">"channels"</span>:<span class="w"> </span><span class="o">{</span>
+<span class="w">            </span><span class="s2">"general"</span>:<span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="s2">"allow"</span>:<span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="o">}</span>,
+<span class="w">            </span><span class="s2">"help"</span>:<span class="w"> </span><span class="o">{</span>
+<span class="w">              </span><span class="s2">"allow"</span>:<span class="w"> </span>true,
+<span class="w">              </span><span class="s2">"requireMention"</span>:<span class="w"> </span>true,
+<span class="w">              </span><span class="s2">"users"</span>:<span class="w"> </span><span class="o">[</span><span class="s2">"987654321098765432"</span><span class="o">]</span>,
+<span class="w">              </span><span class="s2">"skills"</span>:<span class="w"> </span><span class="o">[</span><span class="s2">"search"</span>,<span class="w"> </span><span class="s2">"docs"</span><span class="o">]</span>,
+<span class="w">              </span><span class="s2">"systemPrompt"</span>:<span class="w"> </span><span class="s2">"Keep answers short."</span>
+<span class="w">            </span><span class="o">}</span>
+<span class="w">          </span><span class="o">}</span>
+<span class="w">        </span><span class="o">}</span>
+<span class="w">      </span><span class="o">}</span>
+<span class="w">    </span><span class="o">}</span>
+<span class="w">  </span><span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
 </div>
-<p>'''
-    {
-      "channels": {
-        "discord": {
-          "enabled": true,
-          "token": "abc.123",
-          "groupPolicy": "allowlist",
-          "mediaMaxMb": 8,
-          "actions": {
-            "reactions": true,
-            "stickers": true,
-            "emojiUploads": true,
-            "stickerUploads": true,
-            "polls": true,
-            "permissions": true,
-            "messages": true,
-            "threads": true,
-            "pins": true,
-            "search": true,
-            "memberInfo": true,
-            "roleInfo": true,
-            "roles": false,
-            "channelInfo": true,
-            "channels": true,
-            "voiceStatus": true,
-            "events": true,
-            "moderation": false
-          },
-          "replyToMode": "off",
-          "dm": {
-            "enabled": true,
-            "policy": "pairing",
-            "allowFrom": ["123456789012345678", "steipete"],
-            "groupEnabled": false,
-            "groupChannels": ["openclaw-dm"]
-          },
-          "guilds": {
-            "*": { "requireMention": true },
-            "123456789012345678": {
-              "slug": "friends-of-openclaw",
-              "requireMention": false,
-              "reactionNotifications": "own",
-              "users": ["987654321098765432", "steipete"],
-              "channels": {
-                "general": { "allow": true },
-                "help": {
-                  "allow": true,
-                  "requireMention": true,
-                  "users": ["987654321098765432"],
-                  "skills": ["search", "docs"],
-                  "systemPrompt": "Keep answers short."
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-'''    </p>
 <div class="admonition note">
 <p>After completing the configuration, enter the "Configuration" page of "Agent" in 1Panel, complete the Discord chat channel configuration, and click "Save", as shown in the figure below:</p>
 </div>
@@ -4226,10 +4224,9 @@
 <h3 id="46-step-6-start-gateway-and-verify-configuration">4.6. Step 6: Start Gateway and Verify Configuration<a class="headerlink" href="#46-step-6-start-gateway-and-verify-configuration" title="Permanent link">¶</a></h3>
 <div class="admonition note">
 <p>Start the OpenClaw Gateway. When the bot token is available (configuration file takes precedence, environment variable as fallback) and "channels.discord.enabled" is not false, the Discord channel will start automatically. Run the following command to start the Gateway (if not started automatically):</p>
+<div class="highlight"><pre><span></span><code>openclaw<span class="w"> </span>gateway
+</code></pre></div>
 </div>
-<p>'''
-    openclaw gateway
-'''</p>
 <div class="admonition note">
 <p>After starting the Gateway, verify whether the configuration is successful by following these steps:</p>
 </div>
@@ -4255,11 +4252,10 @@
 <h3 id="47-step-7-troubleshooting-common-issues">4.7. Step 7: Troubleshooting (Common Issues)<a class="headerlink" href="#47-step-7-troubleshooting-common-issues" title="Permanent link">¶</a></h3>
 <div class="admonition note">
 <p>If the bot fails to work normally, first run the following commands to perform a quick audit and view warnings:</p>
+<div class="highlight"><pre><span></span><code>openclaw<span class="w"> </span>doctor
+openclaw<span class="w"> </span>channels<span class="w"> </span>status<span class="w"> </span>--probe
+</code></pre></div>
 </div>
-<p>'''
-    openclaw doctor
-    openclaw channels status --probe
-'''</p>
 <h4 id="common-issues-and-solutions">Common Issues and Solutions<a class="headerlink" href="#common-issues-and-solutions" title="Permanent link">¶</a></h4>
 <ul>
 <li>
