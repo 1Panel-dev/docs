@@ -9,7 +9,7 @@
     After entering the 1Panel console, click **App Store** in the left menu.
 
 ![image-20251016110510084](../../img/app/appstores.png)
-{: .original}
+{: .browser-mockup}
 
 ## 2. Search for MySQL and Install
 
@@ -17,7 +17,7 @@
     In the App Store (on the homepage or under the Database category), find and click the **MySQL** application card to enter the details page, then select **Install**.
 
 ![image-20251016110903786](../../img/app/database_mysql.png)
-{: .original}
+{: .browser-mockup}
 
 ## 3. Configure Installation Parameters
 
@@ -33,7 +33,7 @@
     After confirming the settings are correct, click **Confirm** to start installation.
 
 ![](../../img/app/MySQL_install.png)
-{: .original}
+{: .browser-mockup}
 
 ## 4. Create a MySQL Database
 
@@ -50,7 +50,7 @@
     After configuration, click **Confirm** to create the database.
 
 ![image-20251016113634840](../../img/app/database_creat.png)
-{: .original}
+{: .browser-mockup}
 
 ## 5. Connect to the MySQL Database
 
@@ -58,7 +58,7 @@
     Click on the database to view connection information for client or program access.
 
 ![image-20251016114303123](../../img/app/database_message.png)
-{: .original}
+{: .browser-mockup}
 
 ## 6. View and Manage Backups
 
@@ -67,7 +67,7 @@
     - A **compression password** can be set during backup, and backup files support operations such as **Restore** and **Download**.
 
 ![image-20251016114303123](../../img/app/database_backup.png)
-{: .original}
+{: .browser-mockup}
 
 ## 7. Import Database Backups
 
@@ -75,7 +75,7 @@
     Supports **Import Backup**, allowing you to select **Upload Local File** or **Existing Backup File on Server** for import.
 
 ![image-20251016114303123](../../img/app/database_import_backup.png)
-{: .original}
+{: .browser-mockup}
 
 ## 8. Add Remote Databases
 
@@ -85,7 +85,7 @@
     - When installing applications, you can also select added remote databases for use
 
 ![image-20251016114303123](../../img/app/database_remote.png)
-{: .original}
+{: .browser-mockup}
 
 ## 9. Sync Databases from Remote Servers
 
@@ -93,7 +93,7 @@
     Supports **syncing databases from remote servers** to local, enabling cross-server data synchronization.
 
 ![image-20251016114303123](../../img/app/database_sync.png)
-{: .original}
+{: .browser-mockup}
 
 ## 10. Modify User Password and Privileges
 
@@ -101,7 +101,7 @@
     Maintenance operations such as **Change Password** and **Modify Privileges** can be performed on database users.
 
 ![image-20251016114303123](../../img/app/database_user.png)
-{: .original}
+{: .browser-mockup}
 
 ## 11. Visual Management with phpMyAdmin / Adminer
 
@@ -109,7 +109,7 @@
     You can perform more comprehensive visual management of the database through **phpMyAdmin** or **Adminer**.
 
 ![image-20251016114303123](../../img/app/database_management.png)
-{: .original}
+{: .browser-mockup}
 
 ## 12. Schedule Regular Database Backups
 
@@ -117,4 +117,4 @@
     In **Scheduled Tasks**, select the **Backup Database** type to configure automatic scheduled backups for target databases.
 
 ![image-20251016114303123](../../img/app/database_cronjob.png)
-{: .original}
+{: .browser-mockup}
