@@ -19,7 +19,7 @@ The `nvidia-smi` command is installed automatically with the NVIDIA driver. 1Pan
     On the GPU monitoring page, you can view the driver version, GPU model, utilization, temperature, power consumption, and other basic metrics, as well as processes currently using the GPU.
 
 ![img.png](../../img/ai/gpu_monitor.png)
-{: .original}
+{: .browser-mockup}
 
 ## 3 Use GPU
 
@@ -29,4 +29,4 @@ The `nvidia-smi` command is installed automatically with the NVIDIA driver. 1Pan
 > When installing an app from the App Store, enable `GPU Acceleration` in Advanced Settings to grant the app GPU support.
 
 ![img.png](../../img/ai/gpu_acceleration.png)
-{: .original}
+{: .browser-mockup}
