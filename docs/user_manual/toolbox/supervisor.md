@@ -11,7 +11,7 @@
     !!! note ""
         **2. Install supervisor**
         
-
+        ```bash
         yum install -y supervisor
         ```
     !!! note ""
@@ -20,7 +20,7 @@
         ```bash
         systemctl start supervisord
         ```
-     !!! note ""   
+    !!! note ""
         **4. Enable on boot**
 
         ```bash
@@ -41,7 +41,7 @@
         sudo apt-get install supervisor
         ```
 
-        > Supervisor starts automatically after installation.
+    > Supervisor starts automatically after installation.
 
 ## 2 Initialization
 
