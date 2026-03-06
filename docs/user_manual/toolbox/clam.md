@@ -15,19 +15,20 @@
 ## 3 Installation
 
 === "RedHat / CentOS"
+    
     !!! note ""
         **1. Install EPEL repository**
 
         ```bash
         yum install -y epel-release
         ```
-!!! note ""
+    !!! note ""
         **2. Install ClamAV**
         
         ```bash
         yum install clamav clamd clamav-update -y
         ```
-!!! note ""
+    !!! note ""
         **3. Modify ClamAV configuration**
         
         ```bash
@@ -38,7 +39,7 @@
         DatabaseDirectory /var/lib/clamav
         LocalSocket /run/clamd.scan/clamd.sock
         ```
-!!! note ""
+    !!! note ""
         **4. Modify virus database update configuration**
         
         ```bash
@@ -49,7 +50,7 @@
         DatabaseMirror database.clamav.net
         Checks 12
         ```
-!!! note ""
+    !!! note ""
         **5. Start ClamAV services**
         
         ```bash
@@ -57,14 +58,16 @@
         systemctl start clamd@scan.service
         systemctl start clamav-freshclam.service
         ```
-!!! note ""        
+    
+    !!! note ""        
         **6. Enable on boot**
 
         ```bash
         systemctl enable clamd@scan.service
         systemctl enable clamav-freshclam.service
         ```
-!!! note ""        
+    
+    !!! note ""        
         **7. Check service status**
 
         ```bash
@@ -73,13 +76,15 @@
         ```
 
 === "Ubuntu / Debian"
+    
     !!! note ""
         **1. Install ClamAV**
         
         ```bash
         sudo apt install clamav clamav-daemon -y
         ```
-!!! note ""
+    
+    !!! note ""
         **2. Start ClamAV services**
         
         ```bash
@@ -87,14 +92,16 @@
         sudo systemctl start clamav-daemon
         sudo systemctl start clamav-freshclam.service
         ```
-!!! note ""        
+    
+    !!! note ""        
         **3. Enable on boot**
 
         ```bash
         sudo systemctl enable clamav-daemon
         sudo systemctl enable clamav-freshclam.service
         ```
-!!! note ""        
+    
+    !!! note ""        
         **4. Check service status**
 
         ```bash
