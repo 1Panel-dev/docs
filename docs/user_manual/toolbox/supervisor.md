@@ -49,8 +49,7 @@
         ```bash
         sudo apt-get install supervisor
         ```
-
-> Supervisor starts automatically after installation.
+    > Supervisor starts automatically after installation.
 
 ## 2 Initialization
 
