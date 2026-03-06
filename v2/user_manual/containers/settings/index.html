@@ -3431,18 +3431,22 @@
 <li>The default configuration file path is: <code>/etc/docker/daemon.json</code></li>
 </ul>
 </div>
-<p class="original"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/containers/setting.png" data-desc-position="bottom"><img alt="img.png" src="../../../img/containers/setting.png"></a></p>
+<p class="browser-mockup"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/containers/setting.png" data-desc-position="bottom"><img alt="img.png" src="../../../img/containers/setting.png"></a></p>
 <div class="admonition note">
 <ul>
 <li>Image Acceleration: If application installation fails or image pulling times out, you can configure image accelerators to optimize the process<ul>
 <li>Acceleration address to configure:
     <div class="highlight"><pre><span></span><code><span class="na">https</span><span class="o">:</span><span class="s">//docker.1panel.live</span>
-</code></pre></div><blockquote>
-<p>After configuring the above acceleration address, if pulling application images still fails, <a href="https://bbs.fit2cloud.com/t/topic/5886">further discussion is available on the forum</a></p>
-</blockquote>
-</li>
+</code></pre></div></li>
 </ul>
 </li>
+</ul>
+</div>
+<blockquote>
+<p>After configuring the above acceleration address, if pulling application images still fails, <a href="https://bbs.fit2cloud.com/t/topic/5886">further discussion is available on the forum</a></p>
+</blockquote>
+<div class="admonition note">
+<ul>
 <li>Private Registry: Self-built private image registries such as Harbor, Nexus, docker-registry, etc.</li>
 <li>iptables: This setting disables Docker's automatic configuration of iptables rules, which may cause containers to fail to communicate with external networks</li>
 <li>live-restore: Whether to stop all containers when the Docker service is stopped</li>
@@ -3452,9 +3456,8 @@
 <h2 id="2-using-ipv6">2 Using IPv6<a class="headerlink" href="#2-using-ipv6" title="Permanent link">¶</a></h2>
 <div class="admonition note">
 <ul>
-<li>
-<p>Ensure your device is assigned an IPv6 address. Check the current device's IPv6 with the command <code>ip addr show</code>. If the output for the physical network card contains a line with <code>inet6</code> and <code>scope global</code>, the network card supports IPv6:
-    </p><div class="highlight"><pre><span></span><code><span class="na">eth0</span><span class="o">:</span><span class="w"> </span><span class="s">&lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc mq state UP group default qlen 1000</span>
+<li>Ensure your device is assigned an IPv6 address. Check the current device's IPv6 with the command <code>ip addr show</code>. If the output for the physical network card contains a line with <code>inet6</code> and <code>scope global</code>, the network card supports IPv6:
+    <div class="highlight"><pre><span></span><code><span class="na">eth0</span><span class="o">:</span><span class="w"> </span><span class="s">&lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc mq state UP group default qlen 1000</span>
 <span class="w">    </span><span class="na">link/ether</span><span class="w"> </span><span class="s">00:16:xx:xx:xx:xx brd ff:ff:ff:ff:ff:ff</span>
 <span class="w">    </span><span class="na">inet</span><span class="w"> </span><span class="s">172.31.168.107/20 brd 172.31.175.255 scope global dynamic eth0</span>
 <span class="w">        </span><span class="na">valid_lft</span><span class="w"> </span><span class="s">314955046sec preferred_lft 314955046sec</span>
@@ -3462,23 +3465,30 @@
 <span class="w">        </span><span class="na">valid_lft</span><span class="w"> </span><span class="s">113120sec preferred_lft 69920sec</span>
 <span class="w">    </span><span class="na">inet6</span><span class="w"> </span><span class="s">fe80::xxxx:xxxx:xxxx:xxxx/64 scope link </span>
 <span class="w">        </span><span class="na">valid_lft</span><span class="w"> </span><span class="s">forever preferred_lft forever</span>
-</code></pre></div><p></p>
-</li>
-<li>
-<p class="original">Enable IPv6 in the panel settings, where <code>fixed-cidr-v6</code> is the subnet of the IPv6 network segment obtained in the previous step (configures the default network, with a maximum prefix length of /80)
-    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/containers/ipv6-01.png" data-desc-position="bottom"><img alt="img.png" src="../../../img/containers/ipv6-01.png"></a></p>
-</li>
-<li>
-<p class="original">Check if it takes effect through [Networks] - [Details]. If effective, the value of <code>EnableIPv6</code> is <code>true</code>, and <code>IPAM.Config[1].Subnet</code> is the <code>fixed-cidr-v6</code> configured in the previous step
-    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/containers/ipv6-02.png" data-desc-position="bottom"><img alt="img.png" src="../../../img/containers/ipv6-02.png"></a></p>
-</li>
-<li>
-<p class="original">Create an IPv6 network
-    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/containers/ipv6-03.png" data-desc-position="bottom"><img alt="img.png" src="../../../img/containers/ipv6-03.png"></a></p>
-</li>
-<li>
-<p>Create containers using the IPv6 network you created</p>
-</li>
+</code></pre></div></li>
+</ul>
+</div>
+<div class="admonition note">
+<ul>
+<li>Enable IPv6 in the panel settings, where <code>fixed-cidr-v6</code> is the subnet of the IPv6 network segment obtained in the previous step (configures the default network, with a maximum prefix length of /80)</li>
+</ul>
+</div>
+<p class="browser-mockup"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/containers/ipv6-01.png" data-desc-position="bottom"><img alt="img.png" src="../../../img/containers/ipv6-01.png"></a></p>
+<div class="admonition note">
+<ul>
+<li>Check if it takes effect through [Networks] - [Details]. If effective, the value of <code>EnableIPv6</code> is <code>true</code>, and <code>IPAM.Config[1].Subnet</code> is the <code>fixed-cidr-v6</code> configured in the previous step</li>
+</ul>
+</div>
+<p class="browser-mockup"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/containers/ipv6-02.png" data-desc-position="bottom"><img alt="img.png" src="../../../img/containers/ipv6-02.png"></a></p>
+<div class="admonition note">
+<ul>
+<li>Create an IPv6 network</li>
+</ul>
+</div>
+<p class="browser-mockup"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/containers/ipv6-03.png" data-desc-position="bottom"><img alt="img.png" src="../../../img/containers/ipv6-03.png"></a></p>
+<div class="admonition note">
+<ul>
+<li>Create containers using the IPv6 network you created</li>
 </ul>
 </div>
 

@@ -3445,6 +3445,7 @@
 <h2 id="1-install-driver">1 Install Driver<a class="headerlink" href="#1-install-driver" title="Permanent link">¶</a></h2>
 <div class="admonition note">
 <p>For NVIDIA graphics cards, users can visit <a href="https://www.nvidia.com/en-us/drivers/">https://www.nvidia.com/en-us/drivers/</a> to find and download the driver version compatible with their GPU model.</p>
+</div>
 <p>For example, if the downloaded file is <code>NVIDIA-Linux-x86_64-570.86.15.run</code>, upload it to your 1Panel server, then run the following commands in the command line to install:</p>
 <div class="highlight"><pre><span></span><code>chmod<span class="w"> </span>+x<span class="w"> </span>NVIDIA-Linux-x86_64-570.86.15.run
 ./NVIDIA-Linux-x86_64-570.86.15.run
@@ -3453,18 +3454,19 @@
 <p>Follow the on‑screen prompts to complete the installation.
 The <code>nvidia-smi</code> command is installed automatically with the NVIDIA driver. 1Panel uses <code>nvidia-smi</code> to retrieve GPU information.</p>
 </blockquote>
-</div>
 <h2 id="2-view-gpu-information">2 View GPU Information<a class="headerlink" href="#2-view-gpu-information" title="Permanent link">¶</a></h2>
-<div class="admonition note"></div>
+<div class="admonition note">
 <p>On the GPU monitoring page, you can view the driver version, GPU model, utilization, temperature, power consumption, and other basic metrics, as well as processes currently using the GPU.</p>
-<p class="original"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/ai/gpu_monitor.png" data-desc-position="bottom"><img alt="img.png" src="../../../img/ai/gpu_monitor.png"></a></p>
+</div>
+<p class="browser-mockup"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/ai/gpu_monitor.png" data-desc-position="bottom"><img alt="img.png" src="../../../img/ai/gpu_monitor.png"></a></p>
 <h2 id="3-use-gpu">3 Use GPU<a class="headerlink" href="#3-use-gpu" title="Permanent link">¶</a></h2>
-<div class="admonition note"></div>
+<div class="admonition note">
 <p>After installing the GPU driver, you must also install the NVIDIA Container Toolkit by following the <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html">NVIDIA official guide</a> to enable GPU access in apps from the App Store or other containers.</p>
+</div>
 <blockquote>
 <p>When installing an app from the App Store, enable <code>GPU Acceleration</code> in Advanced Settings to grant the app GPU support.</p>
 </blockquote>
-<p class="original"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/ai/gpu_acceleration.png" data-desc-position="bottom"><img alt="img.png" src="../../../img/ai/gpu_acceleration.png"></a></p>
+<p class="browser-mockup"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/ai/gpu_acceleration.png" data-desc-position="bottom"><img alt="img.png" src="../../../img/ai/gpu_acceleration.png"></a></p>
 
 
 
