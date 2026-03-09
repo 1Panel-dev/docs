@@ -171,7 +171,7 @@ nav:
   - 商业版本:
     - 1Panel 专业版: https://www.lxware.cn/1panel
     - 1Panel 离线版: installation/package_installation.md
-    - OpenClaw 一体机: https://1panel.cn/openclaw.html
+  - OpenClaw 一体机: https://1panel.cn/openclaw.html
 
 markdown_extensions:
   - admonition
