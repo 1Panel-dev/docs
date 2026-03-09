@@ -1,14 +1,14 @@
 # OpenClaw Installation and Deployment Guide
 
 !!! note ""
-    This document mainly introduces the installation and deployment process of OpenClaw on Linux clients or servers. We recommend using 1Panel, an open-source Linux operation and maintenance management panel, for installation and deployment, which makes the entire process simple and fast. After OpenClaw is installed, the Discord channel docking configuration can also be quickly completed through the 1Panel operation and maintenance management panel, facilitating the rapid implementation of a Feishu-based personal AI assistant.
+    This document mainly introduces the installation and deployment process of OpenClaw on Linux clients or servers. We recommend using 1Panel, an open-source Linux operation and maintenance management panel, for installation and deployment, which makes the entire process simple and fast. After OpenClaw is installed, the Discord channel docking configuration can also be quickly completed through the 1Panel operation and maintenance management panel, facilitating the rapid implementation of a Discord-based personal AI assistant.
 
 ## 1. Resource and Environment Preparation
 
 !!! note ""
     The following resource and environment preparations are required for the installation and deployment of OpenClaw:
 
-### Client/Server Preparation
+### 1.1. Client/Server Preparation
 
 !!! note ""
     - Operating System: Supports mainstream Linux distributions (based on Debian/RedHat, including domestic operating systems)
@@ -17,19 +17,19 @@
     - Browser Requirement: Use modern browsers such as Chrome, FireFox, IE10+, Edge, etc.
     - Network Requirement: Internet access is available
 
-### Large Language Model API Key
+### 1.2. Large Language Model API Key
 
 !!! note ""
     - Public Models: API Keys of large language models such as DeepSeek, Kimi, OpenAI, etc.
     - Local Models
 
-### 1Panel v2.1.0 Installation and Deployment
+### 1.3. 1Panel v2.1.0 Installation and Deployment
 
 !!! note ""
     Refer to the official 1Panel documentation for installation and deployment details at the following link: https://1panel.cn/docs/v2/installation/online_installation/
 
 !!! note ""
-    Based on the above environment, the entire installation and deployment process can be completed in four parts: 1Panel installation and deployment, large language model API Key preparation, OpenClaw installation and deployment, and Feishu channel configuration. For detailed instructions, see the following documentation.
+    Based on the above environment, the entire installation and deployment process can be completed in four parts: 1Panel installation and deployment, large language model API Key preparation, OpenClaw installation and deployment, and Discord channel configuration. For detailed instructions, see the following documentation.
 
 ## 2. Large Language Model API Application
 
