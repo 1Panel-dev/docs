@@ -54,14 +54,6 @@
 ![image-20251021163916064](../../img/app/zabbix-server_jump.png)
 {: .browser-mockup}
 
-!!! note ""
-    On first login, you can switch to the Chinese interface by following these steps:
-
-    Go to **Administration** > **General** > **GUI**, select **Chinese (zh_CN)** in **Default language**, then click **Update** to save.
-
-![image-20251021163916064](../../img/app/zabbix-language.png)
-{: .browser-mockup}
-
 ### 1.5 Add a Monitored Host
 
 !!! note ""

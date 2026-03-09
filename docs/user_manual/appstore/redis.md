@@ -53,7 +53,7 @@
 {: .browser-mockup}
 
 !!! note ""
-    Enter the connection information locally to establish a connection.
-
+    Connect to Redis using a local client tool.
+   
 ![image-20251016144637758](../../img/app/redis_conn.png)
 {: .browser-mockup}
