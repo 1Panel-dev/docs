@@ -141,7 +141,6 @@ nav:
     - Bitwarden: user_manual/appstore/bitwarden.md
     - Nextcloud: user_manual/appstore/nextcloud.md
     - RustDesk: user_manual/appstore/rustdesk.md
-    - frp: user_manual/appstore/frp.md
     - Home Assistant: user_manual/appstore/home-assistant.md
     - OpenResty: user_manual/appstore/openresty.md
     - MySQL: user_manual/appstore/mysql.md
