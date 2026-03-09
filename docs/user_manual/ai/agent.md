@@ -8,7 +8,7 @@
 !!! note ""
     The following resource and environment preparations are required for the installation and deployment of OpenClaw:
 
-### Client/Server Preparation
+### 1.1. Client/Server Preparation
 
 !!! note ""
     - Operating System: Supports mainstream Linux distributions (based on Debian/RedHat, including domestic operating systems)
@@ -17,13 +17,13 @@
     - Browser Requirement: Use modern browsers such as Chrome, FireFox, IE10+, Edge, etc.
     - Network Requirement: Internet access is available
 
-### Large Language Model API Key
+### 1.2. Large Language Model API Key
 
 !!! note ""
     - Public Models: API Keys of large language models such as DeepSeek, Kimi, OpenAI, etc.
     - Local Models
 
-### 1Panel v2.1.0 Installation and Deployment
+### 1.3. 1Panel v2.1.0 Installation and Deployment
 
 !!! note ""
     Refer to the official 1Panel documentation for installation and deployment details at the following link: https://1panel.cn/docs/v2/installation/online_installation/
