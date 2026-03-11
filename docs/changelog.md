@@ -7,6 +7,30 @@ hide:
 
 ## Release Notes
 
+### v2.1.4
+
+2026‑03‑11
+
+!!! note "New Features"
+
+    - **Agents**: Added QQ Channel support
+    - **Agents**: Added OpenRouter model account support
+    - **Local Models**: Added vLLM management support
+    - **File Browser**: Added column show/hide support for the file list
+
+!!! note "Improvements"
+
+    - **Agents**: Optimized saving logic for custom model name configuration
+    - **Databases**: Optimized PostgreSQL database deletion logic
+    - **Containers**: Optimized Docker restart prompt message
+
+!!! note "Bug Fixes"
+
+    - **Containers**: Fixed an issue where the env file could be cleared when manually pasting the orchestration path
+    - **Logs**: Fixed abnormal log display for some child nodes
+    - **Panel Settings**: Fixed inability to receive emails when the sender name is Chinese
+    - **System**: Fixed missing translations in some languages
+
 ### v2.1.3
 
 2026‑03‑06
