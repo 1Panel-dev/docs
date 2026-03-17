@@ -7,6 +7,32 @@ hide:
 
 ## Release Notes
 
+### v2.1.5
+
+2026‑03‑17
+
+!!! note "New Features"
+
+    - **Agents**: Added WeCom Channel support
+    - **Agents**: Added secure access address configuration
+    - **Containers**: Added image update support
+    - **Containers**: Added container file management
+    - **Containers**: Added backup and restore for containers and Compose
+
+!!! note "Improvements"
+
+    - **Overview**: Added agents overview info with quick jump
+    - **Agents**: OpenClaw now enables HTTPS access by default
+    - **Agents**: Improved validation when adding Gemini model accounts
+    - **Agents**: Added icons for agent types
+    - **Panel Settings**: Improved Docker proxy setting prompt
+
+!!! note "Bug Fixes"
+
+    - **Local Models**: Fixed navigation failures when switching between some pages
+    - **Containers**: Fixed image pull failures when creating Compose with private registries
+    - **System**: Fixed failures when building from source
+
 ### v2.1.4
 
 2026‑03‑11
