@@ -166,6 +166,7 @@ nav:
     - 服务器架构相关: faq/server_architecture.md
     - OpenClaw 相关: faq/openclaw.md
   - API 接口: dev_manual/api_manual.md
+  - Skills 技能: dev_manual/skills.md
   - 版本迭代: changelog.md
   - 联系我们: contact.md
   - 商业版本:
