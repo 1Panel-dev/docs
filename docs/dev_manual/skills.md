@@ -175,9 +175,3 @@
     - 如果返回 `{"code":401,"message":"API 接口密钥错误"}`，请优先检查 API Key 是否正确，以及 1Panel API 设置是否已经保存
     - 如果返回 IP 相关鉴权错误，请检查白名单配置以及智能体运行环境的真实出口 IP
     - 某些节点相关接口可能要求 1Panel Pro 或 XPack
-
-## 11 参考信息
-
-!!! note ""
-    - GitHub 仓库：<https://github.com/1Panel-dev/1Panel-skills>
-    - 开源协议：MIT
