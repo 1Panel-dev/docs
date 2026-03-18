@@ -12,13 +12,13 @@
         <meta name="author" content="1Panel">
       
       
-        <link rel="canonical" href="https://1panel.cn/docs/v2/dev_manual/api_manual/">
+        <link rel="canonical" href="https://1panel.cn/docs/v2/dev_manual/skills/">
       
       
-        <link rel="prev" href="../../faq/openclaw/">
+        <link rel="prev" href="../api_manual/">
       
       
-        <link rel="next" href="../skills/">
+        <link rel="next" href="../../changelog/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>API 接口 - 1Panel 文档</title>
+        <title>Skills 技能 - 1Panel 文档</title>
       
     
     
@@ -204,7 +204,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              API 接口
+              Skills 技能
             
           </span>
         </div>
@@ -4583,6 +4583,33 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../api_manual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API 接口
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -4600,7 +4627,7 @@
   <span class="md-ellipsis">
     
   
-    API 接口
+    Skills 技能
   
 
     
@@ -4618,7 +4645,7 @@
   <span class="md-ellipsis">
     
   
-    API 接口
+    Skills 技能
   
 
     
@@ -4645,49 +4672,10 @@
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1 接口配置说明
+        1 功能概述
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="1 接口配置说明">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#11-token" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.1 自定义 Token 格式
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12-header" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.2 请求 Header 设计
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#13" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.3 示例实现代码
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -4695,7 +4683,7 @@
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2 注意事项
+        2 模块说明
       
     </span>
   </a>
@@ -4706,7 +4694,84 @@
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3 常见问题
+        3 环境要求
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-1panel-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 配置 1Panel API
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 接入智能体平台
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 配置运行环境变量
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 CLI 用法
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 平台集成说明
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9 开发说明
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 注意事项
       
     </span>
   </a>
@@ -4717,33 +4782,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../skills/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Skills 技能
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -4973,49 +5011,10 @@
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1 接口配置说明
+        1 功能概述
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="1 接口配置说明">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#11-token" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.1 自定义 Token 格式
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12-header" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.2 请求 Header 设计
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#13" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.3 示例实现代码
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -5023,7 +5022,7 @@
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2 注意事项
+        2 模块说明
       
     </span>
   </a>
@@ -5034,7 +5033,84 @@
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3 常见问题
+        3 环境要求
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-1panel-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 配置 1Panel API
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 接入智能体平台
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 配置运行环境变量
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 CLI 用法
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 平台集成说明
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9 开发说明
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 注意事项
       
     </span>
   </a>
@@ -5058,99 +5134,179 @@
 
 
 
-  <h1>API 接口</h1>
+  <h1>Skills 技能</h1>
 
-<div class="admonition note"></div>
-<p>本文档详细介绍了如何在三方服务中使用自定义 Token 的验证来访问面板接口。</p>
-<h2 id="1">1 接口配置说明<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>登录后，可通过访问 swagger 访问地址：<code>{host}:{port}/1panel/swagger/index.html</code> 查看所有 API。</p>
+<p>本文档介绍如何使用 <code>1Panel-skills</code> 技能包，将 1Panel 的运维能力接入 OpenClaw 等智能体平台。<br />
+项目仓库地址：<a class="magiclink magiclink-github magiclink-repository" href="https://github.com/1Panel-dev/1Panel-skills" title="GitHub Repository: 1Panel-dev/1Panel-skills">1Panel-dev/1Panel-skills</a></p>
 </div>
-<h3 id="11-token">1.1 自定义 Token 格式<a class="headerlink" href="#11-token" title="Permanent link">⚓︎</a></h3>
+<h2 id="1">1 功能概述<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>1Panel 设计了以下自定义 Token 格式，用于接口请求的身份验证：</p>
-<div class="highlight"><pre><span></span><code>Token = md5(&#39;1panel&#39; + API-Key + UnixTimestamp)
-</code></pre></div>
-<p>组成部分：</p>
+<p><code>1Panel-skills</code> 是一个面向 OpenClaw 等智能体平台的 1Panel 运维技能包，基于 TypeScript 实现。当前版本以查询、读取、状态检查类能力为主，同时已经为后续扩展创建、更新、删除、重启等写操作预留了接口定义。</p>
+<p>当前支持的能力包括：</p>
 <ul>
-<li>固定前缀: '1panel'</li>
-<li>API-Key: 面板 API 接口密钥</li>
-<li>UnixTimestamp: 当前的时间戳（秒级）</li>
+<li><strong>资源监控</strong>：当前节点状态、仪表盘指标、CPU / 内存 Top 进程、监控历史、GPU 历史</li>
+<li><strong>网站检查</strong>：网站列表与详情、Nginx 配置、域名、HTTPS 配置、SSL 证书、网站日志</li>
+<li><strong>应用检查</strong>：应用市场、已安装应用状态、服务信息、端口与连接信息</li>
+<li><strong>容器检查</strong>：容器列表、状态、Inspect、资源统计、日志</li>
+<li><strong>日志检查</strong>：操作日志、登录日志、系统日志文件列表、通用日志文件读取</li>
+<li><strong>定时任务检查</strong>：定时任务列表与详情、下次执行预览、执行记录、记录日志</li>
+<li><strong>任务中心检查</strong>：任务中心记录与执行中数量</li>
+<li><strong>节点检查</strong>：节点列表、简化节点列表、节点选项、节点状态</li>
 </ul>
 </div>
-<h3 id="12-header">1.2  请求 Header 设计<a class="headerlink" href="#12-header" title="Permanent link">⚓︎</a></h3>
+<h2 id="2">2 模块说明<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>每次请求必须携带以下两个 Header：</p>
+<p><code>1Panel-skills</code> 当前提供以下模块：</p>
 <table>
 <thead>
 <tr>
-<th>Header 名称</th>
+<th>模块</th>
 <th>说明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1Panel-Token</td>
-<td>自定义的 Token 值</td>
+<td><code>monitoring</code></td>
+<td>仪表盘指标、当前节点状态、Top 进程、监控历史、GPU 历史</td>
 </tr>
 <tr>
-<td>1Panel-Timestamp</td>
-<td>当前时间戳</td>
+<td><code>websites</code></td>
+<td>网站列表/详情、配置读取、HTTPS 读取、证书读取、网站日志读取</td>
+</tr>
+<tr>
+<td><code>apps</code></td>
+<td>应用市场读取、已安装应用状态检查、服务读取、端口与连接信息</td>
+</tr>
+<tr>
+<td><code>containers</code></td>
+<td>容器列表、状态、Inspect、资源统计、日志读取</td>
+</tr>
+<tr>
+<td><code>logs</code></td>
+<td>操作日志、登录日志、系统日志文件、通用日志读取</td>
+</tr>
+<tr>
+<td><code>cronjobs</code></td>
+<td>定时任务列表/详情、下次执行预览、记录、记录日志、脚本选项</td>
+</tr>
+<tr>
+<td><code>task-center</code></td>
+<td>任务中心记录与执行中数量</td>
+</tr>
+<tr>
+<td><code>nodes</code></td>
+<td>节点列表、节点选项、简化节点列表、节点状态</td>
 </tr>
 </tbody>
 </table>
-<p>示例请求头：</p>
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">&quot;http://{host}:{port}/api/v2/toolbox/device/base&quot;</span><span class="w"> </span><span class="se">\</span>
--H<span class="w"> </span><span class="s2">&quot;1Panel-Token: &lt;1panel_token&gt;&quot;</span><span class="w"> </span><span class="se">\</span>
--H<span class="w"> </span><span class="s2">&quot;1Panel-Timestamp: &lt;current_unix_timestamp&gt;&quot;</span>
-</code></pre></div>
 </div>
-<h3 id="13">1.3 示例实现代码<a class="headerlink" href="#13" title="Permanent link">⚓︎</a></h3>
+<h2 id="3">3 环境要求<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>以 go 语言为例，展示对应的实现代码：</p>
-<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">validateToken</span><span class="p">(</span><span class="nx">c</span><span class="w"> </span><span class="o">*</span><span class="nx">gin</span><span class="p">.</span><span class="nx">Context</span><span class="p">)</span><span class="w"> </span><span class="kt">error</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">panelToken</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">GetHeader</span><span class="p">(</span><span class="s">&quot;1Panel-Token&quot;</span><span class="p">)</span>
-<span class="w">    </span><span class="nx">panelTimestamp</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">GetHeader</span><span class="p">(</span><span class="s">&quot;1Panel-Timestamp&quot;</span><span class="p">)</span>
-<span class="w">    </span><span class="nx">systemToken</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">panelToken</span>
-<span class="w">    </span><span class="nx">systemKey</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="o">*******</span><span class="w"> </span><span class="c1">// 面板 API 密钥</span>
-<span class="w">    </span><span class="nx">expectedToken</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">md5Sum</span><span class="p">(</span><span class="s">&quot;1panel&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">systemKey</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">panelTimestamp</span><span class="p">)</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="nx">systemToken</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nx">expectedToken</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Errorf</span><span class="p">(</span><span class="s">&quot;invalid token&quot;</span><span class="p">)</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="kc">nil</span>
-<span class="p">}</span>
-
-<span class="kd">func</span><span class="w"> </span><span class="nx">md5Sum</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">h</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">md5</span><span class="p">.</span><span class="nx">New</span><span class="p">()</span>
-<span class="w">    </span><span class="nx">h</span><span class="p">.</span><span class="nx">Write</span><span class="p">([]</span><span class="nb">byte</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">hex</span><span class="p">.</span><span class="nx">EncodeToString</span><span class="p">(</span><span class="nx">h</span><span class="p">.</span><span class="nx">Sum</span><span class="p">(</span><span class="kc">nil</span><span class="p">))</span>
-<span class="p">}</span>
-</code></pre></div>
-</div>
-<h2 id="2">2 注意事项<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
+<p>使用 <code>1Panel-skills</code> 之前，请确保满足以下条件：</p>
 <ul>
-<li>时间戳的有效性:需要确保服务器与客户端时间同步，否则会导致验证失败。建议使用 NTP 同步时间</li>
-<li>白名单使用:将可信任的 IP 或 IP 段加入白名单，避免频繁 Token 验证的开销；如需放行所有 IP ，可以配置 ，<code>0.0.0.0/0</code>（所有 IPv4），<code>::/0</code>（所有 IPv6）</li>
+<li>建议使用 Node.js 18 或更高版本</li>
+<li>有一个可访问的 1Panel 实例</li>
+<li>已获取可用的 1Panel API Key</li>
 </ul>
 </div>
-<h2 id="3">3 常见问题<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
+<h2 id="4-1panel-api">4 配置 1Panel API<a class="headerlink" href="#4-1panel-api" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
+<p>在使用 <code>1Panel-skills</code> 前，需要先在 1Panel 中开启 API 接口：</p>
+<ol>
+<li>登录 1Panel。</li>
+<li>进入 <strong>设置</strong> -&gt; <strong>API 接口</strong>。</li>
+<li>开启 API 接口。</li>
+<li>复制 API Key。</li>
+<li>测试时可将客户端 IP 加入白名单：</li>
+<li>IPv4：<code>0.0.0.0/0</code></li>
+<li>IPv6：<code>::/0</code></li>
+</ol>
+<p>1Panel API 鉴权依赖以下两个请求头：</p>
+<ul>
+<li><code>1Panel-Timestamp</code></li>
+<li><code>1Panel-Token = md5("1panel" + API_KEY + TIMESTAMP)</code></li>
+</ul>
+<p>关于签名规则与接口鉴权方式，可参考本章节中的 <a href="../api_manual/">API 接口</a> 文档。</p>
+</div>
+<h2 id="5">5 接入智能体平台<a class="headerlink" href="#5" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
+<p><code>1Panel-skills</code> 可以作为技能包接入多种智能体平台。当前仓库中已经提供了 OpenClaw 相关的插件入口与目录约定，下面以 OpenClaw 为例说明安装方式。</p>
+<p>推荐使用本地符号链接方式安装：</p>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>~/.openclaw/skills
+ln<span class="w"> </span>-s<span class="w"> </span>/path/to/1Panel-skills<span class="w"> </span>~/.openclaw/skills/openclaw-1panel
+</code></pre></div>
+<p>仓库已经包含 <code>dist/</code> 下的预编译运行产物，正常使用时不需要先手动重新构建。</p>
+</div>
+<h2 id="6">6 配置运行环境变量<a class="headerlink" href="#6" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
+<p>安装完成后，需要为运行环境设置以下变量：</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">ONEPANEL_BASE_URL</span><span class="o">=</span><span class="s2">&quot;http://192.168.1.2:9999&quot;</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">ONEPANEL_API_KEY</span><span class="o">=</span><span class="s2">&quot;你的 1Panel API Key&quot;</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">ONEPANEL_TIMEOUT_MS</span><span class="o">=</span><span class="s2">&quot;30000&quot;</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">ONEPANEL_SKIP_TLS_VERIFY</span><span class="o">=</span><span class="s2">&quot;false&quot;</span>
+</code></pre></div>
+<p>参数说明：</p>
+<ul>
+<li><code>ONEPANEL_BASE_URL</code>：1Panel 面板访问地址</li>
+<li><code>ONEPANEL_API_KEY</code>：在 1Panel 中生成的 API Key</li>
+<li><code>ONEPANEL_TIMEOUT_MS</code>：请求超时时间，单位为毫秒</li>
+<li><code>ONEPANEL_SKIP_TLS_VERIFY</code>：是否跳过 TLS 证书校验</li>
+</ul>
+</div>
+<h2 id="7-cli">7 CLI 用法<a class="headerlink" href="#7-cli" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
+<p><code>1Panel-skills</code> 同时提供本地 CLI，可直接发起签名请求或执行模块动作。</p>
+<p>查看支持的模块：</p>
+<div class="highlight"><pre><span></span><code>node<span class="w"> </span>dist/scripts/cli.js<span class="w"> </span>modules
+</code></pre></div>
+<p>查看某个模块的动作：</p>
+<div class="highlight"><pre><span></span><code>node<span class="w"> </span>dist/scripts/cli.js<span class="w"> </span>actions<span class="w"> </span>monitoring
+</code></pre></div>
+<p>发起原始签名请求：</p>
+<div class="highlight"><pre><span></span><code>node<span class="w"> </span>dist/scripts/cli.js<span class="w"> </span>request<span class="w"> </span>GET<span class="w"> </span>/api/v2/dashboard/base/os
+</code></pre></div>
+<p>执行模块化动作：</p>
+<div class="highlight"><pre><span></span><code>node<span class="w"> </span>dist/scripts/cli.js<span class="w"> </span>run<span class="w"> </span>monitoring<span class="w"> </span>getCurrentNode
+node<span class="w"> </span>dist/scripts/cli.js<span class="w"> </span>run<span class="w"> </span>websites<span class="w"> </span>searchWebsites<span class="w"> </span>--input-json<span class="w"> </span><span class="s1">&#39;{&quot;page&quot;:1,&quot;pageSize&quot;:20}&#39;</span>
+</code></pre></div>
+<p>打印当前签名 Header：</p>
+<div class="highlight"><pre><span></span><code>node<span class="w"> </span>dist/scripts/cli.js<span class="w"> </span>sign
+</code></pre></div>
+</div>
+<h2 id="8">8 平台集成说明<a class="headerlink" href="#8" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
+<p><code>1Panel-skills</code> 提供两个运行时入口，可用于接入不同的运行环境或智能体平台。</p>
+<ul>
+<li><code>dist/plugin.js</code>：OpenClaw 插件入口</li>
+<li><code>dist/scripts/cli.js</code>：可直接执行的本地签名 CLI</li>
+</ul>
+<p>其中：</p>
+<ul>
+<li>插件元数据定义在 <code>openclaw.plugin.json</code></li>
+<li>编译后的插件入口通过 <code>package.json</code> 导出</li>
+</ul>
+</div>
+<h2 id="9">9 开发说明<a class="headerlink" href="#9" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
+<p>如果需要对技能进行二次开发，可使用以下命令：</p>
+<p>安装依赖：</p>
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install
+</code></pre></div>
+<p>类型检查：</p>
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>run<span class="w"> </span>typecheck
+</code></pre></div>
+<p>仅在修改 TypeScript 源码后，才需要重新构建：</p>
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>run<span class="w"> </span>build
+</code></pre></div>
+</div>
+<h2 id="10">10 注意事项<a class="headerlink" href="#10" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <ul>
-<li>
-<p>如果 1Panel-Token 或 1Panel-Timestamp 错误怎么办</p>
-<p>后台将返回 401 Unauthorized，并提示 "API 接口密钥错误"。</p>
-</li>
-<li>
-<p>如何生成 1Panel-Token</p>
-<p>请参考以下伪代码：</p>
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">token</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">md5</span><span class="p">(</span><span class="s1">&#39;1panel&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">clientToken</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">unixTimestamp</span><span class="p">);</span>
-</code></pre></div>
-</li>
-<li>
-<p>为什么需要两个 Header</p>
-<p>提高验证的复杂度，同时增强安全性。</p>
-</li>
+<li>不要将真实 API Key 提交到版本控制中</li>
+<li>如果返回 <code>{"code":401,"message":"API 接口密钥错误"}</code>，请优先检查 API Key 是否正确，以及 1Panel API 设置是否已经保存</li>
+<li>如果返回 IP 相关鉴权错误，请检查白名单配置以及智能体运行环境的真实出口 IP</li>
+<li>某些节点相关接口可能要求 1Panel Pro 或 XPack</li>
 </ul>
 </div>
 
