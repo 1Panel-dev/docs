@@ -7,10 +7,10 @@
     - 支持重新连接 
     - 支持打开多个本地服务器 
     - 支持全屏操作 
-    - 支持快速快速命令（需要在【终端 - 快速命令】菜单中维护），用户可预定于常用快速命令 
+    - 支持快速命令（需要在【终端 - 快速命令】菜单中维护），用户可预定义常用快速命令 
     - 支持当前所有连接批量输入
 
-![img.png](../../img/hosts/terminal.png)
+![img.png](../img/hosts/terminal.png)
 {: .original}
 
 ## 2 主机管理
@@ -18,5 +18,5 @@
 !!! note ""
     维护主机信息，支持主机分组。
 
-![img.png](../../img/hosts/host.png)
+![img.png](../img/hosts/host.png)
 {: .original}
