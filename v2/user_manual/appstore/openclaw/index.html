@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1panel-openclaw" class="md-skip">
+        <a href="#openclaw" class="md-skip">
           跳转至
         </a>
       
@@ -3511,10 +3511,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前提准备
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. 打开应用商店
+        1. 添加模型账号
       
     </span>
   </a>
@@ -3525,7 +3536,7 @@
   <a href="#2-openclaw" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. 安装 OpenClaw
+        2. 创建 OpenClaw 智能体
       
     </span>
   </a>
@@ -3533,10 +3544,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-openclaw-token" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. 获取 OpenClaw Token
+        3. 开始安装并确认完成
       
     </span>
   </a>
@@ -3558,7 +3569,18 @@
   <a href="#5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. 配置聊天工具对接（可选）
+        5. 验证部署结果
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 后续配置说明
       
     </span>
   </a>
@@ -4961,10 +4983,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前提准备
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. 打开应用商店
+        1. 添加模型账号
       
     </span>
   </a>
@@ -4975,7 +5008,7 @@
   <a href="#2-openclaw" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. 安装 OpenClaw
+        2. 创建 OpenClaw 智能体
       
     </span>
   </a>
@@ -4983,10 +5016,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-openclaw-token" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. 获取 OpenClaw Token
+        3. 开始安装并确认完成
       
     </span>
   </a>
@@ -5008,7 +5041,18 @@
   <a href="#5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. 配置聊天工具对接（可选）
+        5. 验证部署结果
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 后续配置说明
       
     </span>
   </a>
@@ -5032,86 +5076,71 @@
 
 
 
-<h1 id="1panel-openclaw">使用 1Panel 可视化安装 OpenClaw<a class="headerlink" href="#1panel-openclaw" title="Permanent link">⚓︎</a></h1>
+<h1 id="openclaw">OpenClaw 安装部署<a class="headerlink" href="#openclaw" title="Permanent link">⚓︎</a></h1>
 <div class="admonition note">
-<p><strong>OpenClaw</strong> 是一个运行在你自己设备上的 <em>个人 AI 助手</em>。它可以在你已经使用的各种沟通渠道中与你对话，包括：WhatsApp、Telegram、Slack、Discord、Google Chat、Signal、iMessage、Microsoft Teams、WebChat，同时还支持扩展渠道，如 BlueBubbles、Matrix、Zalo、Zalo Personal。</p>
-<p>如果你想要一个感觉像本地助手、速度快、始终在线的单人个人助理，那就是它了。</p>
+<p><strong>OpenClaw</strong> 是一个运行在你自己设备上的个人 AI 助理，可以通过飞书、钉钉、企业微信、Telegram、WhatsApp、Discord 等渠道与你对话。</p>
+<p>本文档基于 1Panel 的 <strong>AI -&gt; 智能体</strong> 功能，介绍如何完成 OpenClaw 的安装部署与基础验证。</p>
 <p><strong>扫码加入交流群</strong></p>
 <p><img alt="扫码加入交流群" src="https://resource.fit2cloud.com/1panel/openclaw/img/wechat.png" width="150" height="150"></p>
 </div>
-<h2 id="1">1. 打开应用商店<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
+<h2 id="_1">前提准备<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>进入 1Panel 控制台后，点击左侧菜单的 <strong>「应用商店」</strong>。</p>
-</div>
-<p><img alt="image-appstores" src="../../../img/app/appstores.png" /></p>
-<h2 id="2-openclaw">2. 安装 OpenClaw<a class="headerlink" href="#2-openclaw" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p>在右上角搜索框输入 <strong>OpenClaw</strong>，点击应用卡片进入详情页，选择 <strong>安装</strong>。</p>
-</div>
-<div class="admonition note">
-<p>您可以根据需要配置：</p>
+<p>部署前请先确认以下条件：</p>
 <ul>
-<li><strong>名称</strong> (输入框内可自定义应用名称，默认为 openclaw)</li>
-<li><strong>版本</strong> (下拉选择所需的 OpenClaw 版本)</li>
-<li><strong>WebUI 端口</strong> (默认为 18789)</li>
-<li><strong>Bridge 端口</strong> (默认为 18790)</li>
-<li><strong>模型提供商</strong> (下拉选择所需的 AI 模型提供商)</li>
-<li><strong>模型</strong> (模型提供商代号/模型ID)</li>
-<li><strong>API Key</strong> (调用模型提供商接口使用的 API Key，在模型提供商处获取)</li>
-<li><strong>Token / 令牌</strong> (默认先不填写 Token。应用安装成功后，通过配置文件获取 Token，然后回到已安装应用页面在参数中填写，方便后续使用。)</li>
-<li><strong>端口外部访问</strong> (开启后，将允许从外部网络访问此应用端口)</li>
-</ul>
-<p>确认设置无误后，点击 <strong>确认</strong> 按钮开始安装。</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">常见模型提供商与示例模型</p>
-<ul>
-<li>MiniMax: <code>minimax/MiniMax-M2.1</code></li>
-<li>DeepSeek: <code>deepseek/deepseek-chat</code></li>
-<li>Qwen: <code>qwen/qwen2.5-coder-32b-instruct</code></li>
-<li>Moonshot (Kimi): <code>moonshot/kimi-k2.5</code></li>
-<li>ZAI (GLM): <code>zai/glm-4.7</code></li>
-<li>OpenAI: <code>openai/gpt-4o-mini</code></li>
-<li>Anthropic: <code>anthropic/claude-3-7-sonnet</code></li>
-<li>Gemini: <code>gemini/gemini-1.5-pro</code></li>
-<li>Groq: <code>groq/llama-3.1-70b-versatile</code></li>
-<li>Mistral: <code>mistral/large-latest</code></li>
-<li>Cohere: <code>cohere/command-r-plus</code></li>
+<li>已安装并可正常访问 1Panel</li>
+<li>已准备可用的大语言模型 API Key，或已在 1Panel 中接入本地模型</li>
+<li>服务器可正常访问互联网</li>
 </ul>
 </div>
-<p><img alt="image-openclaw_install" src="../../../img/app/openclaw_install.png" /></p>
-<h2 id="3-openclaw-token">3. 获取 OpenClaw Token<a class="headerlink" href="#3-openclaw-token" title="Permanent link">⚓︎</a></h2>
+<h2 id="1">1. 添加模型账号<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>在 <strong>已安装应用页面</strong>，找到 <strong>OpenClaw</strong> 应用点击 <strong>文件夹图标</strong> 进入应用数据目录，在目录下的 <code>data/conf</code> 文件夹，点击 <strong>openclaw.json</strong> 文件，复制其中 "gateway.auth.token" 的值，用作访问 OpenClaw 应用时的 Token。</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;gateway&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="nt">&quot;mode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;local&quot;</span><span class="p">,</span>
-<span class="w">     </span><span class="nt">&quot;token&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;c9917c5a066beeb26266d09baed99495e7563b33c771e89a&quot;</span>
-<span class="p">},</span>
-<span class="err">***</span>
-</code></pre></div>
+<p>进入 1Panel 面板后，打开 <strong>AI</strong> 菜单，进入 <strong>智能体</strong> 页面，切换到 <strong>模型账号</strong> 标签页。</p>
+<p>点击 <strong>添加模型账号</strong>，根据实际使用的模型供应商填写对应信息并保存。</p>
 </div>
-<p><img alt="image-openclaw_folder" src="../../../img/app/openclaw_folder.png" /></p>
+<p><img alt="OpenClaw 模型账号" src="../../../img/ai/openclaw_model_account.png" /></p>
+<h2 id="2-openclaw">2. 创建 OpenClaw 智能体<a class="headerlink" href="#2-openclaw" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p class="admonition-title">Token / 令牌</p>
-<p>回到 <strong>已安装应用页面</strong>，点击 <code>参数</code> 按钮编辑应用，将该 Token 填入输入框，方便后续使用。</p>
+<p>完成模型账号创建后，切换到 <strong>智能体</strong> 标签页，点击 <strong>创建智能体</strong>。</p>
+<p>按页面要求填写 OpenClaw 的部署参数。</p>
 </div>
-<p><img alt="image-openclaw_params_token" src="../../../img/app/openclaw_params_token.png" /></p>
+<p><img alt="创建 OpenClaw 智能体" src="../../../img/ai/openclaw_create_agent.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">参数说明</p>
+<ul>
+<li><strong>名称</strong>：默认可填写为 <code>openclaw</code>，也可按需自定义</li>
+<li><strong>应用版本</strong>：选择需要安装的 OpenClaw 版本</li>
+<li><strong>WebUI 端口</strong>：默认 <code>18789</code></li>
+<li><strong>Bridge 端口</strong>：默认 <code>18790</code></li>
+<li><strong>模型供应商</strong>：选择前面已创建的模型账号对应供应商</li>
+<li><strong>Token</strong>：用于访问 OpenClaw WebUI，系统会自动生成</li>
+<li><strong>其他参数</strong>：一般保持默认即可</li>
+</ul>
+</div>
+<p><img alt="选择模型供应商" src="../../../img/ai/openclaw_agent_provider.png" /></p>
+<div class="admonition note">
+<p>选择模型供应商后，系统会自动加载已维护的模型账号。若已配置多个模型，也可以在这里选择具体模型；如有需要，也可勾选手动输入模型。</p>
+</div>
+<p><img alt="选择模型账号或模型" src="../../../img/ai/openclaw_agent_model.png" /></p>
+<h2 id="3">3. 开始安装并确认完成<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
+<p>参数确认无误后，点击 <strong>确认</strong> 开始安装。</p>
+<p>当页面显示安装完成后，即表示 OpenClaw 已成功部署。</p>
+</div>
+<p><img alt="OpenClaw 安装完成" src="../../../img/ai/openclaw_install_done.png" /></p>
 <h2 id="4-openclaw-webui">4. 访问 OpenClaw WebUI<a class="headerlink" href="#4-openclaw-webui" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<ul>
-<li>在 <strong>已安装应用页面</strong>，点击 <code>参数</code> 按钮进入编辑页面，选择自定义 <strong>Web 访问地址</strong>，将带有 <code>?token=你的 OpenClaw Token</code> 的地址填入输入框并保存，方便后续访问应用。</li>
-<li>示例：<a href="http://172.16.10.181:18789?token=95917ab5e95cb55cad4821d309158d844fbc47ec1cf0494f">http://172.16.10.181:18789?token=95917ab5e95cb55cad4821d309158d844fbc47ec1cf0494f</a></li>
-</ul>
+<p>安装完成后，返回 <strong>智能体</strong> 列表页面，找到 OpenClaw，点击 <strong>WebUI</strong> 即可直接跳转访问。</p>
 </div>
-<p><img alt="image-openclaw_url" src="../../../img/app/openclaw_url.png" /></p>
+<p><img alt="OpenClaw WebUI 入口" src="../../../img/ai/openclaw_webui_entry.png" /></p>
+<h2 id="5">5. 验证部署结果<a class="headerlink" href="#5" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>在 <strong>已安装应用页面</strong> 找到 OpenClaw 应用，点击 <strong>跳转</strong> 按钮，选择带有 Token 的自定义访问地址，即可正常访问 OpenClaw 应用。</p>
+<p>进入 OpenClaw 页面后，可直接发送一条测试消息。</p>
+<p>如果助手能够正常回复，则说明 OpenClaw 已部署成功。</p>
 </div>
-<h2 id="5">5. 配置聊天工具对接（可选）<a class="headerlink" href="#5" title="Permanent link">⚓︎</a></h2>
+<p><img alt="OpenClaw 对话验证" src="../../../img/ai/openclaw_verify_chat.png" /></p>
+<h2 id="6">6. 后续配置说明<a class="headerlink" href="#6" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>如果你希望通过 Telegram、WhatsApp、Discord、iMessage 等聊天工具与机器人进行对话，可以在 <strong>已安装应用页面</strong> 找到 <strong>OpenClaw 应用</strong>，点击顶部的 <strong>进入安装目录</strong> 按钮。点击文件列表顶部的 <strong>终端</strong> 按钮，在终端中执行以下命令配置对应的聊天工具对接。</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>-f<span class="w"> </span>docker-compose-cli.yml<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>openclaw-cli<span class="w"> </span>channels<span class="w"> </span>add
-</code></pre></div>
+<p>完成基础部署后，你还可以继续在 1Panel 中为 OpenClaw 配置飞书等聊天渠道，或根据需要切换模型账号与模型参数。</p>
 </div>
 
 

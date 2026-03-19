@@ -5225,7 +5225,7 @@
 </div>
 <h2 id="2">2 节点概览<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>在节点概览页面可以查看到当前集群中所有节点的整体状态，包括节点数量、在线状态、资源使用情况、应用分布等统计信息。</p>
+<p>在节点概览页面，可以查看当前集群所有节点的整体状态，包括节点数量、在线状态、资源使用情况、应用分布等统计信息。</p>
 </div>
 <p class="browser-mockup"><img alt="img.png" src="../../../img/xpack/node_overview.png" /></p>
 <h2 id="3">3 添加节点<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
@@ -5239,14 +5239,14 @@
 <li><strong>用户名</strong>：节点的 SSH 连接用户名，需要使用 root 或具有免密 sudo 权限的用户 </li>
 <li><strong>认证方式</strong>：支持密码认证和私钥认证两种方式 <ul>
 <li><strong>密码认证</strong>：输入节点的 SSH 连接密码 </li>
-<li><strong>私钥认证</strong>：上传节点的私钥文件，支持 PEM 和 PPK 格式 如果有私钥密码，请输入密码 </li>
+<li><strong>私钥认证</strong>：上传节点的私钥文件，支持 PEM 和 PPK 格式；如果私钥设置了密码，请一并输入 </li>
 </ul>
 </li>
 <li><strong>端口</strong>：节点的 SSH 连接端口，默认为 22 </li>
 <li><strong>安装目录</strong>：1Panel 相关内容的安装目录，默认为 /opt </li>
 <li><strong>安装端口</strong>：1Panel Agent 服务的监听端口，默认为 9999，请确保该端口未被占用且主节点服务器可以访问到该端口 </li>
 <li><strong>节点类型</strong>：选择该节点为社区版节点还是专业版节点，专业版节点包含专业版功能 </li>
-<li><strong>许可证</strong>：当节点为社区版节点时，选择某个专业版许可证将消耗该许可证的社区版节点额度 当节点为专业版节点时，需要选择某个未绑定的专业版许可证绑定到该节点 许可证可在<a href="/user_manual/settings/#5">【许可证管理】</a>页面中导入和管理 </li>
+<li><strong>许可证</strong>：当节点为社区版节点时，选择某个专业版许可证会消耗该许可证的社区版节点额度；当节点为专业版节点时，需要选择一个未绑定的专业版许可证绑定到该节点。许可证可在<a href="../../settings/#5">【许可证管理】</a>页面中导入和管理 </li>
 <li><strong>节点分组</strong>：选择节点所属的分组，便于分类管理 </li>
 <li><strong>名称</strong>：为节点设置一个便于识别的名称，建议使用有意义的命名规则 </li>
 <li><strong>描述</strong>：为节点添加描述信息，说明节点的用途和特点 </li>
@@ -5262,7 +5262,7 @@
 <p class="browser-mockup"><img alt="img.png" src="../../../img/xpack/node_add.png" /></p>
 <h3 id="32">3.2 可用性检查<a class="headerlink" href="#32" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
-<p>添加节点前，需要先进性可用性检查，验证网络连通性和认证信息的正确性。只有通过可用性检查的节点才能成功添加。</p>
+<p>添加节点前，需要先进行可用性检查，以验证网络连通性和认证信息的正确性。只有通过可用性检查的节点才能成功添加。</p>
 </div>
 <p class="browser-mockup"><img alt="img.png" src="../../../img/xpack/node_add_check.png" /></p>
 <h3 id="33">3.3 添加节点<a class="headerlink" href="#33" title="Permanent link">⚓︎</a></h3>
