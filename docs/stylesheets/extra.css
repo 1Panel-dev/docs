@@ -3,3 +3,25 @@
   border-width: 0;
   border-left-width: 4px;
 }
+
+/* Align content images with the text column after resizing source files. */
+.md-content .original img,
+.md-content img:not(.browser-mockup img) {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Shrink browser-mockup wrappers to the actual image width and align them left. */
+.md-content .browser-mockup {
+  width: fit-content;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.md-content .browser-mockup > img,
+.md-content .browser-mockup > a > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

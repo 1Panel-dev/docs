@@ -8,7 +8,7 @@
 ## 2 1Panel 如何安装 OpenClaw？
 
 !!! note ""
-    OpenClaw 已上架 1Panel 应用商店，进入应用商店页面即可通过 [一键安装](../user_manual/appstore/openclaw.md) 快速部署。
+    OpenClaw 支持通过 1Panel 的智能体功能快速部署，具体可参考 [安装部署文档](../user_manual/appstore/openclaw.md)。
 
 ## 如何通过 Ollama 运行本地模型？
 

@@ -6,9 +6,9 @@
     - 操作系统：支持主流 Linux 发行版本（基于 Debian / RedHat，包括国产操作系统）
     - 服务器架构：x86_64、aarch64、armv7l、ppc64le、s390x、riscv64
     - 内存要求：建议可用内存在 1GB 以上
-    - 浏览器要求：请使用 Chrome、FireFox、IE10+、Edge 等现代浏览器
+    - 浏览器要求：请使用 Chrome、Firefox、IE 10+、Edge 等现代浏览器
     - **可访问互联网**
-    - 如果是内网环境，推荐实现 [离线安装包](https://1panel.cn/docs/v2/installation/package_installation/) 方式进行部署
+    - 如果是内网环境，推荐使用 [离线安装包](https://1panel.cn/docs/v2/installation/package_installation/) 方式进行部署
 
 !!! note "服务器优惠"
     如果你还没有服务器，欢迎通过以下优惠链接选购。
@@ -19,7 +19,7 @@
 ## 2 安装部署
 
 !!! note ""
-    GitHub release 链接: https://github.com/1Panel-dev/1Panel/releases
+    GitHub Release 链接：https://github.com/1Panel-dev/1Panel/releases
 
     
 !!! note ""
