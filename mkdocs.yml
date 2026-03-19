@@ -106,7 +106,7 @@ nav:
       - Volumes: user_manual/containers/volumes.md
       - Registry: user_manual/containers/repo.md
       - Compose Template: user_manual/containers/compose_template.md
-      - Settings: user_manual/containers/settings.md
+      - Setting: user_manual/containers/setting.md
     - System:
       - File: user_manual/system/file.md
       - Monitor: user_manual/system/monitor.md
