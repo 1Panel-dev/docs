@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../img/facio.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -5068,6 +5068,11 @@ mv<span class="w"> </span>1panel-migrator-linux-amd64<span class="w"> </span>/us
 </code></pre></div>
 </div>
 <h2 id="2-">2 从节点 -&gt; 主节点<a class="headerlink" href="#2-" title="Permanent link">⚓︎</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+<p>该操作仅适用于主节点迁移场景。迁移成功后，新的主节点将接管并统一管理原有的所有从节点。</p>
+<p>如果仅需将某一节点升级为主节点（且不需要管理其他从节点），请在节点列表中删除该节点（不要勾选“删除节点数据”），随后重新执行安装脚本进行安装。</p>
+</div>
 <div class="admonition note">
 <p>从节点升级为主节点需要先在原来主节点上设置好主节点备份，仅存在备份文件的主节点支持升级到主节点：</p>
 <p>（1）打开节点列表，点击上方主节点备份。</p>
@@ -5078,6 +5083,10 @@ mv<span class="w"> </span>1panel-migrator-linux-amd64<span class="w"> </span>/us
 <p><img alt="img.png" src="../../img/installation/promote.png" /></p>
 </div>
 <h2 id="3-">3 主节点 -&gt; 从节点<a class="headerlink" href="#3-" title="Permanent link">⚓︎</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+<p>节点降级为从节点后，需由其他主节点添加后方可使用，不支持独立访问。</p>
+</div>
 <div class="admonition note">
 <p>打开需要降级的主节点，通过安装好的 1panel-migrator 执行降级命令 <code>1panel-migrator demote</code>。</p>
 <p><img alt="img.png" src="../../img/installation/demote.png" /></p>
