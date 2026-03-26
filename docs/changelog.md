@@ -7,6 +7,61 @@ hide:
 
 ## Release Notes
 
+### v2.1.6
+
+2026‑03‑26
+
+!!! note "New Features"
+
+    - **Agents**: Added skill management support
+    - **Agents**: Added WeChat channel support
+    - **Agents**: Added DingTalk channel support
+    - **Agents**: Added Xiaomi support for model accounts
+    - **Agents**: Added custom npm registry support
+    - **Agents**: Added model pool configuration for model accounts
+    - **Agents**: Added overview information support
+    - **Agents**: Added main config file editing support
+    - **Terminal**: Added AI terminal support
+
+!!! note "Improvements"
+
+    - **Agents**: Optimized plugin installation logic
+    - **Agents**: Optimized the OpenClaw terminal page
+    - **Agents**: Optimized validation logic for MiniMax model accounts
+    - **Websites**: Added an option to skip SSL certificate verification in reverse proxy settings
+    - **Containers**: Changed the default container directory entry path to the working directory
+    - **Containers**: Added path bar navigation support in file management
+    - **Containers**: Added a prompt when the Compose file is missing
+    - **File Browser**: Optimized editor tab management and file handling logic
+    - **File Browser**: Added validation and error messages for remote download URLs
+    - **File Browser**: Added favorites to the file selection list page
+    - **File Browser**: Added cancel support for remote downloads
+    - **File Browser**: Moved tooltips to the left for better visibility
+    - **File Browser**: Added total progress display for file uploads
+    - **File Browser**: Preserved the original modification time after file extraction
+    - **Terminal**: Optimized the quick command selection page style for the host terminal
+    - **Multi-Node**: Optimized node dropdown page styles
+    - **Multi-Node**: Added a multi-node overview entry on the node selection page
+    - **System**: Unified sidebar menu item heights
+
+!!! note "Bug Fixes"
+
+    - **App Store**: Fixed missing form fields when installing apps in some languages
+    - **Agents**: Fixed an issue where the access address could not be set to a domain when creating OpenClaw agents
+    - **Websites**: Fixed a failure when creating OpenClaw one-click deployment websites
+    - **Websites**: Fixed extra whitespace in the default Composer command list
+    - **Websites**: Fixed an issue where websites could not be started after being stopped
+    - **Certificates**: Fixed missing options on the column selection page
+    - **Containers**: Fixed abnormal Compose status display in some scenarios
+    - **File Browser**: Fixed an issue where gz files could not be previewed after extraction
+    - **Terminal**: Fixed an issue where the scroll speed setting did not take effect in the container terminal
+    - **Toolbox**: Fixed an issue where unchecked items were still cleaned up during system upgrade backup cleanup
+    - **Logs**: Fixed abnormal display for some operation logs
+    - **Panel Settings**: Fixed an issue where entering an incorrect 2FA code redirected users to the login page
+    - **Panel Settings**: Fixed an issue where file uploads failed for Qiniu backup accounts
+    - **System**: Fixed abnormal overview status display when the panel theme followed system color mode changes
+    - **System**: Fixed the abnormal display of the More button in table action columns on first entry
+
 ### v2.1.5
 
 2026‑03‑17
