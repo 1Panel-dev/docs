@@ -7,6 +7,15 @@ hide:
 
 ## Release Notes
 
+### v2.1.7
+
+2026‑03‑26
+
+!!! note "Bug Fixes"
+
+    - **Agents**: Fixed search issues on the Installed Skills page
+    - **System**: Fixed abnormal menu display in some languages
+
 ### v2.1.6
 
 2026‑03‑26
