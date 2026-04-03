@@ -16,13 +16,13 @@ theme:
   language: "en"
   palette:
     - scheme: default
-      primary: blue
+      primary: #4051b5
       accent: blue
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
     - scheme: slate
-      primary: blue
+      primary: #4051b5
       accent: blue
       toggle:
         icon: material/weather-night
@@ -44,7 +44,7 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  custom_dir: "theme"
+  custom_dir: "overrides"
   icon:
     repo: fontawesome/brands/github
 
@@ -225,14 +225,7 @@ extra:
       link: https://discord.gg/bUpUqWqdRr
 
 extra_css:
-  - stylesheets/extra.css    
   - css/extra.css
-  - css/termynal.css
-  - css/custom.css
-
-extra_javascript:
-  - js/termynal.js
-  - js/custom.js
 
 plugins:
   - glightbox

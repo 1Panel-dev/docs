@@ -1,42 +1,6 @@
-/* 导航栏 */
-.md-header {
-  background-color: #4051b5 !important; /* !important 确保覆盖主题默认样式 */
-}
-
-/*导航标签栏 */
-.md-tabs {
-  background-color: #4051b5 !important;
-}
-
-/* 侧边栏仓库链接区域 */
-.md-nav__source {
-  background-color: #4051b5 !important;
-}
-
-.progress-label {
-  position: absolute;
-  text-align: center;
-  font-weight: 700;
-  width: 100%;
-  margin: 0;
-  line-height: 1.2rem;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.md-header{
-  top: 47px;
-}
-
-.md-main__inner {
-  margin-top: 3rem;
-}
-
-.progress-bar {
-  height: 1.2rem;
-  float: left;
-  background-color: #2979ff;
-}
+/* ===============================
+   自定义进度条
+   =============================== */
 
 .progress {
   display: block;
@@ -47,8 +11,29 @@
   position: relative;
 }
 
+.progress-bar {
+  float: left;
+  height: 1.2rem;
+  background-color: #2979ff;
+}
+
+.progress-label {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .progress.thin {
   margin-top: 0.9rem;
+  height: 0.4rem;
+}
+
+.progress.thin .progress-bar {
   height: 0.4rem;
 }
 
@@ -56,130 +41,40 @@
   margin-top: -0.4rem;
 }
 
-.progress.thin .progress-bar {
-  height: 0.4rem;
-}
+.progress-100plus .progress-bar  { background-color: #00e676; }
+.progress-80plus  .progress-bar  { background-color: #fbc02d; }
+.progress-60plus  .progress-bar  { background-color: #ff9100; }
+.progress-40plus  .progress-bar  { background-color: #ff5252; }
+.progress-20plus  .progress-bar  { background-color: #ff1744; }
+.progress-0plus   .progress-bar  { background-color: #f50057; }
 
-.progress-100plus .progress-bar {
-  background-color: #00e676;
-}
+/* ===============================
+   图片展示样式
+   =============================== */
 
-.progress-80plus .progress-bar {
-  background-color: #fbc02d;
-}
-
-.progress-60plus .progress-bar {
-  background-color: #ff9100;
-}
-
-.progress-40plus .progress-bar {
-  background-color: #ff5252;
-}
-
-.progress-20plus .progress-bar {
-  background-color: #ff1744;
-}
-
-.progress-0plus .progress-bar {
-  background-color: #f50057;
-}
-
-/* 动态图标 */
-@keyframes heart {
-  0%, 40%, 80%, 100% {
-    transform: scale(1);
-  }
-  20%, 60% {
-    transform: scale(1.15);
-  }
-}
-
-.heart {
-  animation: heart 1000ms infinite;
-}
-
-
-/* 自定义 Admonitions */
-:root {
-  --md-admonition-icon--tx-heart: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 20.408c-.492.308-.903.546-1.192.709-.153.086-.308.17-.463.252h-.002a.75.75 0 01-.686 0 16.709 16.709 0 01-.465-.252 31.147 31.147 0 01-4.803-3.34C3.8 15.572 1 12.331 1 8.513 1 5.052 3.829 2.5 6.736 2.5 9.03 2.5 10.881 3.726 12 5.605 13.12 3.726 14.97 2.5 17.264 2.5 20.17 2.5 23 5.052 23 8.514c0 3.818-2.801 7.06-5.389 9.262A31.146 31.146 0 0114 20.408z"/></svg>')
-}
-
-/* 标题颜色 */
-.md-typeset .admonition.tx-heart,
-.md-typeset details.tx-heart {
-  border-color: rgb(255, 192, 203);
-}
-
-/* 侧边颜色 */
-.md-typeset .tx-heart > .admonition-title,
-.md-typeset .tx-heart > summary {
-  background-color: rgba(255, 182, 193, 0.1);
-}
-
-/* 图标颜色 */
-.md-typeset .tx-heart > .admonition-title::before,
-.md-typeset .tx-heart > summary::before {
-  background-color: rgb(255, 20, 147);
-  -webkit-mask-image: var(--md-admonition-icon--tx-heart);
-          mask-image: var(--md-admonition-icon--tx-heart);
-}
-
-.md-typeset hr {
-  margin: 1em;
-  display: inline-block;
-  border-bottom: .05rem var(--md-default-fg-color--lightest);
-}
-
-.md-grid {
-  margin-left: 1rem;
-  margin-right: auto;
-  max-width: initial;
-}
-
-.md-top {
-  margin-top: 2rem;
-}
-
-.md-nav--primary .md-nav__title .md-logo {
-  display: none;
-}
-
-/* 不添加额外样式的图片样式 */
+/* 不添加额外样式的图片 */
 .md-content .original img:not(.browser-mockup img) {
   display: block;
   border: none;
   box-shadow: none;
 }
 
-/* 不添加浏览器导航栏的图片样式 */
+/* 未加浏览器样式的图片 */
 .md-content img:not(.browser-mockup img) {
   display: block;
-  box-shadow: 0 0.1em .5em 0 rgba(0, 0, 0, 0.4);
   border: none;
   border-radius: 4px;
-}
-
-.browser-mockup.none {
-  border-top: 0;
-  border-radius: 4px;
-}
-
-.browser-mockup.none img {
-  border-radius: 4px;
-}
-
-.browser-mockup.none:before {
-  display: none;
-}
-
-/* 添加浏览器导航栏的图片样式 */
-.browser-mockup {
-  border-top: 2em solid rgba(230, 230, 230, 0.8);
   box-shadow: 0 0.1em .5em 0 rgba(0, 0, 0, 0.4);
+}
+
+/* 浏览器 mockup 布局样式 */
+.browser-mockup {
   position: relative;
-  border-radius: 4px 4px 4px 4px;
   max-width: 1200px;
   margin: 0 auto;
+  border-top: 2em solid rgba(230, 230, 230, 0.8);
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 0.1em .5em 0 rgba(0, 0, 0, 0.4);
 }
 
 .browser-mockup:before {
@@ -230,4 +125,35 @@
 
 .browser-mockup>a {
   line-height: 0;
+}
+
+/* 无浏览器顶栏的 mockup */
+.browser-mockup.none {
+  border-top: 0;
+  border-radius: 4px;
+}
+.browser-mockup.none img {
+  border-radius: 4px;
+}
+.browser-mockup.none:before {
+  display: none;
+}
+
+/* ===============================
+   Termynal 终端组件
+   =============================== */
+
+.termynal-comment {
+  color: #4a968f;
+  font-style: italic;
+  display: block;
+}
+
+.termy {
+  /* For right to left languages */
+  direction: ltr;
+}
+
+.termy [data-termynal] {
+  white-space: pre-wrap;
 }

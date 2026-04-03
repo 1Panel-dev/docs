@@ -1,6 +1,7 @@
 ---
 hide:
   - navigation
+  - cta
 ---
 
 ## What is 1Panel? 
@@ -23,6 +24,7 @@ Prepare a VPS, execute the script below and follow the prompts to install 1Panel
 ```bash
 bash -c "$(curl -sSL https://resource.1panel.pro/v2/quick_start.sh)"
 ```
+{.user-termynal}
 
 ## Screenshot
 
