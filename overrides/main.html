@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+    {{ super() }}
+        {% if "cta" not in page.meta.hide %}
+        <hr class="md-typeset" style="margin:4em auto 1.5em auto; height:2px; max-width:480px; border:0; background:linear-gradient(90deg,#8fa3e6 10%,#4051b5 50%,#8fa3e6 90%); opacity:0.45;">
+        <div class="md-admonition md-admonition--info">
+          <h3>Take 1Panel Further</h3>
+          <p>
+            Running 1Panel OSS? <strong>Pro Edition</strong> adds WAF protection, unlimited AI agents,
+            multi-node management, and priority support — starting at <strong>$80/year</strong>.
+          </p>
+          <p>
+            <a href="https://1panel.pro/pricing" class="md-button md-button- md-button--primary" target="_blank" rel="noopener">Compare OSS vs Pro →</a>
+            <a href="mailto:hi@lxware.hk?subject=1Panel Pro: 30-Day Free Trial Request" class="md-button">Start 30-day free trial →</a>
+          </p>
+        </div>
+        {% endif %}
+{% endblock %}
