@@ -1,3 +1,7 @@
+---
+title: Install OpenClaw AI Agent on Your VPS with 1Panel
+description: Deploy OpenClaw — your self-hosted personal AI assistant — on any VPS using 1Panel's App Store. Connects to WhatsApp, Telegram, Slack, Discord and more.
+---
 # Install OpenClaw Visually Using 1Panel
 
 !!! note ""

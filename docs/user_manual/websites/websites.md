@@ -1,3 +1,7 @@
+---
+title: Website Management with 1Panel - Deploy & Host Sites on VPS
+description: Create and manage websites on your VPS with 1Panel. Add domains, configure Nginx, enable SSL, set up redirects and PHP versions — all via web UI.
+---
 !!! note ""
     - The website management feature in 1Panel is designed to provide users with a convenient and efficient experience for creating and managing websites.
     - With 1Panel, users can easily build various types of websites, including static websites, reverse proxy sites, and websites supporting runtime environments such as PHP, Java, Node.js, Go, and Python.

@@ -1,3 +1,7 @@
+---
+title: 1Panel Settings Guide - Configure Panel, Users & Security
+description: "Learn how to configure 1Panel settings: change admin password, set panel port, manage users, enable 2FA, configure SSL, and customize system preferences."
+---
 # 1Panel Settings – Full English Translation
 ## 1 Panel
 !!! note ""

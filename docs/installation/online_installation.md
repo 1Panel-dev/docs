@@ -1,3 +1,7 @@
+---
+title: Install 1Panel on Linux - One-Command Online Installation
+description: "Install 1Panel with a single bash command. Supports x86_64, ARM, RISC-V. Requirements: Linux + 1GB RAM. Free & open source — no license key needed."
+---
 ## 1 Environment Requirements
 
 !!! note ""

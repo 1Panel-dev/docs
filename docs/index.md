@@ -1,4 +1,6 @@
 ---
+title: 1Panel Documentation - Open-Source VPS Control Panel
+description: Official docs for 1Panel — the modern open-source VPS control panel. Install on any Linux server in 60 seconds. One-click apps, AI agents, SSL, Docker & more.
 hide:
   - navigation
   - cta
