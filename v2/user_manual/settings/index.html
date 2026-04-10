@@ -3535,10 +3535,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#36" class="md-nav__link">
+  <a href="#36-bark" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.6 短信告警
+        3.6 Bark 告警
       
     </span>
   </a>
@@ -3549,7 +3549,18 @@
   <a href="#37" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.7 告警调试与常见问题
+        3.7 短信告警
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.8 告警调试与常见问题
       
     </span>
   </a>
@@ -5321,10 +5332,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#36" class="md-nav__link">
+  <a href="#36-bark" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.6 短信告警
+        3.6 Bark 告警
       
     </span>
   </a>
@@ -5335,7 +5346,18 @@
   <a href="#37" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.7 告警调试与常见问题
+        3.7 短信告警
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.8 告警调试与常见问题
       
     </span>
   </a>
@@ -5572,9 +5594,9 @@ Use &quot;1panel update [command] --help&quot; for more information about a comm
 <h2 id="3">3 面板告警<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p class="admonition-title">功能概述</p>
-<p>面板告警用于在 1Panel 检测到异常或重要事件时，通过 <strong>邮箱</strong>、<strong>企业微信</strong>、<strong>钉钉</strong>、<strong>飞书</strong>、<strong>短信</strong> 等渠道及时通知管理员。</p>
+<p>面板告警用于在 1Panel 检测到异常或重要事件时，通过 <strong>邮箱</strong>、<strong>企业微信</strong>、<strong>钉钉</strong>、<strong>飞书</strong>、<strong>短信</strong>、<strong>Bark</strong> 等渠道及时通知管理员。</p>
 <ul>
-<li>邮箱告警：<strong>社区版 / 专业版通用</strong>，所有节点均可使用  </li>
+<li>邮箱 / Bark 告警：<strong>社区版 / 专业版通用</strong>，所有节点均可使用  </li>
 <li>企业微信 / 钉钉 / 飞书 / 短信告警：<strong>仅专业版节点可用</strong>，需要在【面板设置 - 许可证】中导入专业版许可证并将节点激活为专业版后才能配置  </li>
 </ul>
 <p>常见的告警场景包括：主机资源（CPU、内存、磁盘）异常、网站 / 应用运行异常、备份失败、登录异常等。</p>
@@ -5727,7 +5749,18 @@ Use &quot;1panel update [command] --help&quot; for more information about a comm
 <li>保存配置后，当 1Panel 中相关告警触发时，将通过自定义机器人向对应飞书群推送消息  </li>
 </ol>
 </div>
-<h3 id="36">3.6 短信告警<a class="headerlink" href="#36" title="Permanent link">⚓︎</a></h3>
+<h3 id="36-bark">3.6 Bark 告警<a class="headerlink" href="#36-bark" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p class="admonition-title">1Panel 中 Bark 设置</p>
+<ol>
+<li>在 iOS 设备上通过 App Store 安装 <strong>Bark</strong> 应用，并按向导完成首次配置（<strong>当前仅支持 iOS 设备</strong>）  </li>
+<li>打开 Bark 应用，复制个人推送地址（通常为 <code>https://&lt;你的 Bark 服务器&gt;/&lt;设备 Key&gt;</code>，可参考 Bark 官方文档 <a href="https://bark.day.app/#/tutorial"><code>Bark 使用教程</code></a>）  </li>
+<li>登录 1Panel，进入 【面板设置 - 面板告警】 并选择 <strong>Bark</strong> 渠道，将上一步复制的推送地址粘贴到配置中并开启  </li>
+<li>保存配置后，可发送测试告警验证是否能在手机上成功收到通知  </li>
+</ol>
+</div>
+<p class="original"><img alt="img.png" src="../../img/settings/alert_setting_bark.png" /></p>
+<h3 id="37">3.7 短信告警<a class="headerlink" href="#37" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
 <p class="admonition-title">1Panel 中短信设置</p>
 <ol>
@@ -5738,7 +5771,7 @@ Use &quot;1panel update [command] --help&quot; for more information about a comm
 </ol>
 </div>
 <p class="original"><img alt="img.png" src="../../img/settings/alert_setting_6.png" /></p>
-<h3 id="37">3.7 告警调试与常见问题<a class="headerlink" href="#37" title="Permanent link">⚓︎</a></h3>
+<h3 id="38">3.8 告警调试与常见问题<a class="headerlink" href="#38" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
 <ul>
 <li>如果某个渠道无法收到告警，请确认配置是否正确 </li>
