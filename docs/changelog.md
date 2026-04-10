@@ -7,6 +7,60 @@ hide:
 
 ## Release Notes
 
+### v2.1.8
+
+2026‑04‑10
+
+!!! note "New Features"
+
+    - **App Store**: Added a unified switch for external port access
+    - **Agents**: Added role management support
+    - **Agents**: Added support for multiple accounts per channel
+    - **Agents**: Added website binding support
+    - **Agents**: Added remark support
+    - **Agents**: Added ClawHub China mirror support in the skill marketplace
+    - **File Browser**: Added AI search support
+    - **File Browser**: Added file link sharing support
+    - **Panel Settings**: Added Bark alert channel support
+
+!!! note "Improvements"
+
+    - **Overview**: Optimized the app card layout
+    - **Agents**: Added more channel configuration options
+    - **Agents**: Switched QQ and Feishu channels to official plugins
+    - **Agents**: Updated the default model configuration
+    - **Agents**: Improved the model-related menu structure
+    - **Agents**: Optimized OpenClaw plugin setup options
+    - **Agents**: Added support for OpenClaw plugin uninstallation and upgrades
+    - **Agents**: Added backup model configuration support for OpenClaw
+    - **Agents**: Optimized OpenClaw DingTalk channel settings
+    - **Agents**: Improved API call stability
+    - **Models**: Improved model pull log display effects
+    - **Models**: Added vLLM status sync logic
+    - **Websites**: Optimized the layout of the OpenResty Other Settings page
+    - **Websites**: Improved validation mechanisms when deleting OpenClaw websites
+    - **Websites**: Simplified website binding options
+    - **Runtime**: Improved script selection for the Node.js runtime
+    - **File Browser**: Improved file operation stability
+    - **SSH Management**: Improved the SSH config editing experience
+    - **Terminal**: Improved the AI terminal update experience
+    - **Panel Settings**: Added suspicious IP protection for two-factor authentication login
+    - **System**: Optimized internationalized copy
+    - **System**: Improved request handling and session management experience
+    - **System**: Optimized auth lock handling and login feedback experience
+    - **System**: Improved login security checks and entrance access experience
+    - **System**: Improved code filtering mechanisms in development
+    - **System**: Improved dialog display and interactions
+    - **System**: Improved code editor loading speed
+
+!!! note "Bug Fixes"
+
+    - **Overview**: Fixed abnormal monitoring delta data display
+    - **Agents**: Fixed incorrect OpenClaw Discord channel configuration
+    - **Certificates**: Fixed abnormal certificate auto-renewal logic
+    - **Panel Settings**: Fixed an issue where proxy checks were still performed after the proxy was disabled
+    - **Panel Settings**: Fixed an issue where users could not return to the login page when two-factor authentication required a captcha
+
 ### v2.1.7
 
 2026‑03‑26
