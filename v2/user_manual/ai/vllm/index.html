@@ -12,13 +12,13 @@
         <meta name="author" content="1Panel">
       
       
-        <link rel="canonical" href="https://1panel.cn/docs/v2/user_manual/databases/mysql/">
+        <link rel="canonical" href="https://1panel.cn/docs/v2/user_manual/ai/vllm/">
       
       
-        <link rel="prev" href="../../websites/dotnet/">
+        <link rel="prev" href="../model/">
       
       
-        <link rel="next" href="../postgresql/">
+        <link rel="next" href="../mcp/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>MySQL - 1Panel 文档</title>
+        <title>vLLM - 1Panel 文档</title>
       
     
     
@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1" class="md-skip">
+        <a href="#vllm" class="md-skip">
           跳转至
         </a>
       
@@ -204,7 +204,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MySQL
+              vLLM
             
           </span>
         </div>
@@ -992,8 +992,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -1009,11 +1011,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -1034,7 +1036,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1077,8 +1079,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -1090,11 +1094,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
@@ -1115,7 +1119,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1133,7 +1137,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ai/model/" class="md-nav__link">
+      <a href="../model/" class="md-nav__link">
         
   
   
@@ -1158,10 +1162,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../ai/vllm/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    vLLM
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1177,6 +1206,74 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vllm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        vLLM
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="vLLM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 前置条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-vllm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 创建 vLLM 服务
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 高级设置
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1197,7 +1294,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ai/mcp/" class="md-nav__link">
+      <a href="../mcp/" class="md-nav__link">
         
   
   
@@ -1225,7 +1322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ai/gpu/" class="md-nav__link">
+      <a href="../gpu/" class="md-nav__link">
         
   
   
@@ -2029,10 +2126,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -2046,11 +2141,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
         
           
           <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
@@ -2071,7 +2166,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2086,35 +2181,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    MySQL
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../databases/mysql/" class="md-nav__link">
         
   
   
@@ -2130,217 +2200,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1 管理数据库实例
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1 管理数据库实例">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#11" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.1 应用商店安装数据库
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.2 远程服务器
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#13" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.3 切换数据库实例
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2 创建数据库
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3 查看连接信息
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4 从服务器同步
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-web" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5 WEB 管理工具
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6 备份
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7 恢复
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        8 权限设置
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#9" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        9 修改密码
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        10 数据库配置
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#11_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        11 当前状态
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#12_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        12 性能调整
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#13_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        13 端口
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#14" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        14 日志
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2353,7 +2212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../postgresql/" class="md-nav__link">
+      <a href="../../databases/postgresql/" class="md-nav__link">
         
   
   
@@ -2381,7 +2240,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redis/" class="md-nav__link">
+      <a href="../../databases/redis/" class="md-nav__link">
         
   
   
@@ -5184,22 +5043,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#vllm" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1 管理数据库实例
+        vLLM
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1 管理数据库实例">
+    <nav class="md-nav" aria-label="vLLM">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#11" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.1 应用商店安装数据库
+        1 前置条件
       
     </span>
   </a>
@@ -5207,10 +5066,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#12" class="md-nav__link">
+  <a href="#2-vllm" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.2 远程服务器
+        2 创建 vLLM 服务
       
     </span>
   </a>
@@ -5218,10 +5077,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#13" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.3 切换数据库实例
+        3 高级设置
       
     </span>
   </a>
@@ -5230,149 +5089,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2 创建数据库
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3 查看连接信息
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4 从服务器同步
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-web" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5 WEB 管理工具
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6 备份
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7 恢复
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        8 权限设置
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#9" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        9 修改密码
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        10 数据库配置
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#11_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        11 当前状态
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#12_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        12 性能调整
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#13_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        13 端口
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#14" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        14 日志
-      
-    </span>
-  </a>
   
 </li>
       
@@ -5393,136 +5109,59 @@
 
 
 
-  <h1>MySQL</h1>
+  <h1>vLLM</h1>
 
-<h2 id="1">1 管理数据库实例<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
-<h3 id="11">1.1 应用商店安装数据库<a class="headerlink" href="#11" title="Permanent link">⚓︎</a></h3>
+<h2 id="vllm">vLLM<a class="headerlink" href="#vllm" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>通过应用商店安装的 MySQL、MariaDB 数据库应用，会自动出现在数据库实例列表中。</p>
+<p>vLLM 是面向大语言模型的高吞吐、内存高效推理与服务引擎。1Panel 在 <strong>AI -&gt; 模型 -&gt; vLLM</strong> 页面提供可视化管理能力，可用于统一创建、编辑、启停和维护本地 vLLM 服务。</p>
+<p>该功能属于 <strong>1Panel 专业版</strong>。</p>
 </div>
-<h3 id="12">1.2 远程服务器<a class="headerlink" href="#12" title="Permanent link">⚓︎</a></h3>
+<h3 id="1">1 前置条件<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
-<p>除应用商店安装的本地数据库以外，还可以添加已存在的数据库服务地址。点击列表上方的【远程服务器】按钮，即可进入远程服务器管理页面。</p>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/databases/mysql_remote.png" /></p>
-<p class="original"><img alt="img.png" src="../../../img/databases/mysql_remote_add.png" /></p>
-<h3 id="13">1.3 切换数据库实例<a class="headerlink" href="#13" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>点击数据库列表上方的下拉菜单，即可在不同的数据库实例间进行切换，管理不同数据库实例下的数据库及设置等。</p>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/databases/mysql_select.png" /></p>
-<h2 id="2">2 创建数据库<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p>创建一个新的数据库，首先输入数据库名称，选择编码格式，输入密码，设置访问权限，即可成功创建一个数据库。</p>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/databases/create_mysql_db.png" /></p>
-<div class="admonition note">
+<p>在创建 vLLM 服务前，请先确认以下条件已满足：</p>
 <ul>
-<li>数据库名：新建数据库的名称，选择编码格式，默认为 UTF-8 格式</li>
-<li>用户名：访问该数据库的用户名</li>
-<li>密码：默认为随机密码，需要可以自行修改</li>
-<li>访问权限：默认权限本地服务器权限，选项有:本地服务器，所有人，指定 IP</li>
+<li>服务器已安装 NVIDIA 显卡驱动，且执行 <code>nvidia-smi</code> 可以正常查看显卡信息</li>
+<li>已按照 NVIDIA 官方文档安装并配置 <code>NVIDIA Container Toolkit</code></li>
+<li>Docker 已具备 GPU 运行能力</li>
+<li>已提前将需要加载的模型文件放置到服务器本地目录中</li>
+</ul>
+<p>如需先检查 GPU 是否可用，可参考 <a href="../gpu/">GPU 监控</a> 文档。</p>
+</div>
+<h3 id="2-vllm">2 创建 vLLM 服务<a class="headerlink" href="#2-vllm" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>打开 1Panel 面板后，进入 <strong>AI</strong> 菜单，在 <strong>模型</strong> 页面切换到 <strong>vLLM</strong> 标签页，点击 <strong>创建</strong>。</p>
+<p>按页面要求填写 vLLM 的部署参数后，点击 <strong>确认</strong> 即可开始创建。创建过程会以任务的方式在后台执行，完成后可在列表中查看服务状态。</p>
+</div>
+<p class="original"><img alt="img.png" src="../../../img/ai/vllm_create.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">参数说明</p>
+<ul>
+<li><strong>名称</strong>：vLLM 服务名称，用于列表展示与后续管理</li>
+<li><strong>版本</strong>：选择需要部署的 vLLM 应用版本。<code>FusionXpark GB 10</code> 服务器请优先选择 <code>-cu130</code> 版本</li>
+<li><strong>端口</strong>：vLLM 服务对外提供 API 的端口，默认可使用 <code>8000</code></li>
+<li><strong>模型目录</strong>：服务器上的本地模型目录。选择后，1Panel 会将该目录挂载到容器中</li>
+<li><strong>启动命令</strong>：用于启动 vLLM 服务的命令参数。选择模型目录后，系统会根据目录名称自动生成默认命令；如有特殊推理参数需求，也可自行调整</li>
 </ul>
 </div>
-<h2 id="3">3 查看连接信息<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
+<blockquote>
+<p>vLLM 服务创建完成后，会以 OpenAI 兼容接口的形式对外提供推理能力，便于后续接入智能体或其他 AI 应用。</p>
+</blockquote>
+<h3 id="3">3 高级设置<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
-<p>点击列表上方的【连接信息】按钮，即可查看数据库的地址、端口及 root 密码等连接信息，同时可以在这里修改数据库 root 密码。</p>
+<p>如需对容器运行方式做进一步控制，可展开 <strong>高级设置</strong>。</p>
 </div>
-<p class="original"><img alt="img.png" src="../../../img/databases/mysql_connect.png" /></p>
-<div class="admonition note">
-<p class="admonition-title">注意</p>
-<p>应用商店部署的数据库采用容器化方式运行，不同的场景需要根据页面提示选择对应的连接信息。</p>
-</div>
-<h2 id="4">4 从服务器同步<a class="headerlink" href="#4" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p>当使用了其他数据库工具或应用程序操作了数据库，数据库列表信息与实际不一致时，可以点击列表上方的【从服务器同步】按钮，主动从数据库查询当前数据库列表。</p>
-</div>
-<h2 id="5-web">5 WEB 管理工具<a class="headerlink" href="#5-web" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p>如果需要使用 WEB 图形化界面管理 MySQL 数据库，可以列表上方的【管理】按钮，跳转到对应工具页面。</p>
-<p>目前支持的管理工具有：</p>
+<div class="admonition info">
+<p class="admonition-title">高级设置说明</p>
 <ul>
-<li><a href="https://www.wpdaxue.com/series/phpmyadmin">phpMyAdmin</a></li>
-<li>Adminer</li>
+<li><strong>容器名称</strong>：自定义 vLLM 容器名称，默认会跟随服务名称自动填写</li>
+<li><strong>端口外部访问</strong>：开启后会放开防火墙端口，允许通过外部网络访问该服务</li>
+<li><strong>绑定主机 IP</strong>：用于限制端口只绑定到指定主机地址或网卡；如果不清楚用途，建议保持默认</li>
+<li><strong>重启策略</strong>：配置容器异常退出后的重启方式</li>
+<li><strong>CPU / 内存限制</strong>：限制 vLLM 容器可使用的主机资源</li>
+<li><strong>拉取镜像</strong>：在启动前主动执行镜像拉取，确保使用目标版本镜像</li>
+<li><strong>编辑 compose 文件</strong>：允许手动调整部署使用的 Compose 配置；该选项适合有经验的用户，修改不当可能导致创建失败</li>
 </ul>
 </div>
-<h2 id="6">6 备份<a class="headerlink" href="#6" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p>点击备份列表按钮，选择备份，即可备份当前数据库文件。</p>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/databases/backup_mysql_db.png" /></p>
-<div class="admonition note">
-<ul>
-<li>默认数据库路径为 /opt/1panel/backup/database/mysql</li>
-<li>备份使用 mysqldump 方式</li>
-</ul>
-</div>
-<h2 id="7">7 恢复<a class="headerlink" href="#7" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p>点击导入备份按钮，可以选择本地上传，或选择已备份的文件还原。</p>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/databases/recover_mysql_db.png" /></p>
-<div class="admonition note">
-<ul>
-<li>如从上传文件恢复，则需要保证上传文件压缩包内存在 test.sql 文件，否则无法正确导入</li>
-<li>导入的 sql 文件格式必须符合标准，若你使用 phpmyadmin 导出的 sql 文件，可能会缺少版本 编码等信息，导致无法通过 mysqldump 正确导入</li>
-<li>若无法正常导入，可以尝试使用 phpmyadmin 导入</li>
-</ul>
-</div>
-<h2 id="8">8 权限设置<a class="headerlink" href="#8" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p>点击操作列的【权限】按钮，可以修改指定数据库的访问权限，目前支持配置为所有人可访问或指定 IP 可访问。</p>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/databases/update_mysql_db_access.png" /></p>
-<div class="admonition note">
-<ul>
-<li>所有人：任何人都可以远程连接至数据库</li>
-<li>IP 地址：仅限指定的 IP 访问，多个 IP 使用英文逗号分隔</li>
-<li>若需要开启外网访问，仍需要在防火墙中放行 MySQL 端口（默认3306）</li>
-</ul>
-</div>
-<h2 id="9">9 修改密码<a class="headerlink" href="#9" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<ul>
-<li>修改当前的数据库账号的密码</li>
-<li><strong>注意事项：</strong> 当前修改的密码为非 root 密码</li>
-</ul>
-</div>
-<h2 id="10">10 数据库配置<a class="headerlink" href="#10" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p>点击状态栏设置按钮，即可进入数据库具体设置界面，具体包括配置修改、当前状态、性能调整、端口、日志、慢日志。
-其中配置界面可对数据库配置进行手动调整。</p>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/databases/mysql_conf.png" /></p>
-<div class="admonition note">
-<ul>
-<li>系统 MySQL 使用 Docker 安装，配置文件默认挂载在 /opt/1panel/apps/mysql/[数据库名称]/conf/my.cnf</li>
-<li><strong>注意事项：</strong> 错误的数据库配置将导致 MySQL 服务不可用，请谨慎修改</li>
-<li>如数据库配置不正确导致服务无法正常启动，可尝试恢复默认配置后保存</li>
-</ul>
-</div>
-<h2 id="11_1">11 当前状态<a class="headerlink" href="#11_1" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p>当数据库查询缓慢时，可在数据库设置界面，点击当前状态按钮，查看当前数据库包括缓存命中数、索引命中数等各个常用指标的状态，通过这些状态对数据库进行性能优化。</p>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/databases/mysql_status.png" /></p>
-<h2 id="12_1">12 性能调整<a class="headerlink" href="#12_1" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p>系统支持表单方式直接调整数据库性能相关参数名，如索引缓冲区、连接数等，并且预设常用的优化方案，用户可根据系统环境，直接选择优化方案。</p>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/databases/mysql_variables.png" /></p>
-<h2 id="13_1">13 端口<a class="headerlink" href="#13_1" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p>除了在用户安装 MySQL 应用时可自由选择端口外，设置界面也可以直接进行端口的修改操作。</p>
-</div>
-<h2 id="14">14 日志<a class="headerlink" href="#14" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<ul>
-<li>系统 MySQL 使用 Docker 安装，本处产生日志为对应 MySQL 容器产生的日志。支持时间段筛选、追踪及下载操作</li>
-<li>设置界面还支持查看 MySQL 产生的慢日志</li>
-</ul>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/databases/mysql_log.png" /></p>
 
 
 
