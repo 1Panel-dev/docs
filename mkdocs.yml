@@ -58,7 +58,9 @@ nav:
       - 应用商店设置: user_manual/appstore/setting.md
     - AI:
       - 智能体: https://openclaw.club/guides/quick-start
-      - 模型: user_manual/ai/model.md
+      - 模型: 
+        - Ollama: user_manual/ai/model.md
+        - vLLM: user_manual/ai/vllm.md
       - MCP: user_manual/ai/mcp.md
       - GPU 监控: user_manual/ai/gpu.md
     - 网站:
