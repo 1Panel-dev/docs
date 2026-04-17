@@ -19,7 +19,7 @@ description: "Install 1Panel with a single bash command. Supports x86_64, ARM, R
 
     Run the following installation script and follow the command-line prompts to complete installation:
     ```bash
-    bash -c "$(curl -sSL https://resource.1panel.pro/quick_start.sh)"
+    bash -c "$(curl -sSL https://resource.1panel.pro/v2/quick_start.sh)"
     ```
 
 !!! note ""
