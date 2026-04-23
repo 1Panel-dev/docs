@@ -7,6 +7,38 @@ hide:
 
 ## Release Notes
 
+### v2.1.9
+
+2026‑04‑23
+
+!!! note "New Features"
+
+    - **Agents**: Added Hermes Agent support
+    - **Databases**: Added MongoDB management support
+    - **File Browser**: Added file history management
+
+!!! note "Improvements"
+
+    - **App Store**: Optimized change detection logic for app Compose files
+    - **Agents**: Added website unbinding support
+    - **Agents**: Optimized the OpenClaw channel bot addition workflow
+    - **Websites**: Optimized website name badge styles
+    - **Containers**: Optimized container data handling and status synchronization logic
+    - **File Browser**: Added support for stopping compression tasks and enhanced compression capabilities
+    - **File Browser**: Added Dockerfile language support for file editing
+    - **File Browser**: Added optional header configuration for file sharing to improve localization support
+    - **File Browser**: Enhanced metadata validation capabilities for file and recycle bin services
+    - **Panel Settings**: Improved AWS S3 object storage compatibility and connection stability
+    - **System**: Optimized system table styles
+
+!!! note "Bug Fixes"
+
+    - **Runtime**: Fixed an issue where directories could still be modified while editing the runtime environment
+    - **File Browser**: Fixed an issue where files shared via QR codes could not be downloaded
+    - **Firewall**: Fixed an issue where firewall rule descriptions could not be modified
+    - **Firewall**: Fixed abnormal listening status display on the firewall page
+    - **Tamper**: Fixed translation errors in some languages
+
 ### v2.1.8
 
 2026‑04‑10
