@@ -7,6 +7,14 @@ hide:
 
 ## Release Notes
 
+### v2.1.10
+
+2026‑04‑23
+
+!!! note "Bug Fixes"
+
+    - **Agents**: Fixed an issue where some model accounts in Hermes Agent were invalid
+
 ### v2.1.9
 
 2026‑04‑23
