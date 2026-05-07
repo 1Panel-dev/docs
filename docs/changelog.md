@@ -7,6 +7,34 @@ hide:
 
 ## Release Notes
 
+### v2.1.11
+
+2026‑05‑07
+
+!!! note "Improvements"
+
+    - **Agents**: DeepSeek model account model pools now support the latest V4 models by default
+    - **Containers**: Optimized the timeout waiting period for container log downloads
+    - **File Browser**: Added support for stopping decompression tasks and optimized the task management UI
+    - **File Browser**: Optimized VS Code connection instructions and supplemented SSH setup script content
+    - **Terminal**: Optimized the internal element height of terminal connections to avoid external scrollbars
+    - **Panel Settings**: Added support for enabling panel SSL self-signed certificates for IPv6 servers
+
+!!! note "Bug Fixes"
+
+    - **Overview**: Fixed abnormal loading of homepage monitoring charts
+    - **Overview**: Fixed abnormal memo component display in some language environments
+    - **App Store**: Fixed missing arrows on the app upgrade file comparison page
+    - **Websites**: Fixed an issue where redirect settings did not support wildcard domains
+    - **Containers**: Fixed an issue where Docker processes were not cleaned up after container log download timeouts
+    - **Containers**: Fixed abnormal dialog buttons after saving container orchestration changes
+    - **Containers**: Fixed abnormal Docker service detection on Arch Linux
+    - **File Browser**: Fixed abnormal editor context menu and filtering functions in some cases
+    - **File Browser**: Fixed incorrect return types for file service interfaces
+    - **Multi-Node**: Fixed an issue where child nodes could not use host connections from the main node
+    - **Website Monitoring**: Fixed inaccurate prompts on the website monitoring page when OpenResty was not running
+    - **System**: Fixed abnormal table column sorting
+
 ### v2.1.10
 
 2026‑04‑23
