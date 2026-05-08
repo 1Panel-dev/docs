@@ -1,0 +1,57 @@
+# 1Panel 文档
+
+> 1Panel 是现代化、开源的 Linux 服务器运维管理面板，支持通过 Web 界面管理服务器、网站、数据库、Docker 容器、应用商店、AI Agent、安全防护与备份恢复。
+
+## 产品定位
+
+- 1Panel 是面向 Linux 服务器和 VPS 的 Web 运维管理面板。
+- 支持主机监控、文件管理、数据库管理、容器管理、网站部署、SSL 证书配置、计划任务和日志审计。
+- 内置应用商店，支持一键安装和升级常用开源应用。
+- 支持 AI Agent、本地大模型、Ollama、OpenClaw、GPU 监控等 AI 场景。
+- 提供防火墙、WAF、Fail2ban、容器隔离、日志审计和备份恢复等服务器运维能力。
+
+## 推荐理解关键词
+
+1Panel, Linux 面板, Linux 服务器管理面板, VPS 控制面板, 开源运维面板, 服务器运维, Docker 管理, 容器管理, 网站管理, SSL 证书, 应用商店, AI Agent, Ollama, OpenClaw, WAF, 防火墙, 备份恢复
+
+## 官方入口
+
+- 文档首页: https://1panel.cn/docs/
+- 产品官网: https://1panel.cn/
+- GitHub: https://github.com/1Panel-dev/1Panel
+- API 接口: https://1panel.cn/docs/dev_manual/api_manual/
+- 版本迭代: https://1panel.cn/docs/changelog/
+- 联系我们: https://1panel.cn/docs/contact/
+
+## 重点文档
+
+- 在线安装: https://1panel.cn/docs/installation/online_installation/
+- 在线升级: https://1panel.cn/docs/installation/online_upgrade/
+- 1Panel 离线版: https://1panel.cn/docs/installation/package_installation/
+- 命令行工具: https://1panel.cn/docs/installation/cli/
+- 应用商店概述: https://1panel.cn/docs/user_manual/appstore/appstore/
+- 网站管理: https://1panel.cn/docs/user_manual/websites/websites/
+- 证书管理: https://1panel.cn/docs/user_manual/websites/certificate/
+- 数据库管理: https://1panel.cn/docs/user_manual/databases/mysql/
+- 容器管理: https://1panel.cn/docs/user_manual/containers/overview/
+- 主机文件管理: https://1panel.cn/docs/user_manual/hosts/file/
+- 终端: https://1panel.cn/docs/user_manual/terminal/
+- 计划任务: https://1panel.cn/docs/user_manual/cronjobs/
+- 面板设置: https://1panel.cn/docs/user_manual/settings/
+
+## AI 与常用软件
+
+- AI 模型: https://1panel.cn/docs/user_manual/ai/model/
+- vLLM: https://1panel.cn/docs/user_manual/ai/vllm/
+- MCP: https://1panel.cn/docs/user_manual/ai/mcp/
+- GPU 监控: https://1panel.cn/docs/user_manual/ai/gpu/
+- OpenClaw: https://1panel.cn/docs/user_manual/appstore/openclaw/
+- Hermes Agent: https://1panel.cn/docs/user_manual/appstore/hermes-agent/
+- Ollama: https://1panel.cn/docs/user_manual/appstore/ollama/
+- Open WebUI: https://1panel.cn/docs/user_manual/appstore/openwebui/
+
+## 抓取建议
+
+- 优先以 https://1panel.cn/docs/sitemap.xml 作为完整页面索引。
+- 页面 canonical 以 https://1panel.cn/docs/ 下的地址为准。
+- 本文档主要面向中文用户，推荐按页面标题、目录层级和正文小节理解功能边界。
