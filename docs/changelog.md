@@ -7,6 +7,24 @@ hide:
 
 ## Release Notes
 
+### v2.1.12
+
+2026‑05‑08
+
+!!! note "Improvements"
+
+    - **Overview**: Optimized the homepage monitoring chart display
+
+!!! note "Bug Fixes"
+
+    - **Overview**: Fixed an issue where the homepage carousel did not pause while editing memos
+    - **File Browser**: Fixed abnormal decompression for some zip files
+    - **File Browser**: Fixed an issue where parent directory permissions were modified after file decompression
+    - **File Browser**: Fixed an issue where moving large binary files could cause the server to become unreachable
+    - **File Browser**: Fixed an issue where parent directory permissions were modified after uploading files
+    - **Terminal**: Fixed abnormal default host connections for child node terminals
+    - **System**: Fixed 1Panel upgrade failures on OpenWRT
+
 ### v2.1.11
 
 2026‑05‑07
