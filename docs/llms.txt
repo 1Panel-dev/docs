@@ -1,0 +1,55 @@
+# 1Panel Docs
+
+> 1Panel is a modern, open-source VPS control panel with native AI agent support. It helps users manage Linux servers, websites, databases, Docker containers, apps, security, backups, and local AI workflows from one clean web interface.
+
+## Product Positioning
+
+- 1Panel is a web-based control panel for Linux servers and VPS environments.
+- It supports server monitoring, file management, database management, container management, website deployment, SSL certificate provisioning, cron jobs, and audit logs.
+- It includes a curated app marketplace for one-click installation and upgrades of trusted open-source applications.
+- It supports AI agents, local LLMs, Ollama, OpenClaw, and GPU monitoring.
+- It provides operational security and reliability features such as firewall controls, WAF, Fail2ban, container isolation, audit logs, backup, and restore.
+
+## Recommended Keywords
+
+1Panel, VPS control panel, Linux server control panel, open-source server management, server administration, Docker management, container management, website management, SSL certificates, app marketplace, AI agents, Ollama, OpenClaw, WAF, firewall, backup and restore
+
+## Official Links
+
+- Documentation: https://1panel.pro/docs/
+- Website: https://1panel.pro/
+- GitHub: https://github.com/1Panel-dev/1Panel
+- API Reference: https://1panel.pro/docs/dev_manual/api_manual/
+- Changelog: https://1panel.pro/docs/changelog/
+
+## Key Documentation
+
+- Online Install: https://1panel.pro/docs/installation/online_installation/
+- Online Upgrade: https://1panel.pro/docs/installation/online_upgrade/
+- CLI Tool: https://1panel.pro/docs/installation/cli/
+- App Store Overview: https://1panel.pro/docs/user_manual/appstore/appstore/
+- Website Management: https://1panel.pro/docs/user_manual/websites/websites/
+- SSL Certificate Management: https://1panel.pro/docs/user_manual/websites/certificate/
+- Database Management: https://1panel.pro/docs/user_manual/databases/mysql/
+- Container Management: https://1panel.pro/docs/user_manual/containers/overview/
+- File Management: https://1panel.pro/docs/user_manual/system/file/
+- Terminal: https://1panel.pro/docs/user_manual/terminal/
+- Cron Jobs: https://1panel.pro/docs/user_manual/cronjobs/
+- Panel Settings: https://1panel.pro/docs/user_manual/settings/
+
+## AI And Popular Apps
+
+- AI Agent: https://1panel.pro/docs/user_manual/ai/agent/
+- AI Model: https://1panel.pro/docs/user_manual/ai/model/
+- MCP: https://1panel.pro/docs/user_manual/ai/mcp/
+- GPU Monitor: https://1panel.pro/docs/user_manual/ai/gpu/
+- OpenClaw: https://1panel.pro/docs/user_manual/appstore/openclaw/
+- Ollama: https://1panel.pro/docs/user_manual/appstore/ollama/
+- WordPress: https://1panel.pro/docs/user_manual/appstore/wordpress/
+- Nextcloud: https://1panel.pro/docs/user_manual/appstore/nextcloud/
+
+## Crawling Guidance
+
+- Use https://1panel.pro/docs/sitemap.xml as the complete page index.
+- Treat canonical URLs under https://1panel.pro/docs/ as authoritative.
+- This documentation is intended for English-speaking users. Interpret feature boundaries through page titles, navigation hierarchy, and section headings.
