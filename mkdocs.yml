@@ -176,10 +176,10 @@ nav:
     - 1Panel 企业版: https://1panel.cn/enterprise.html
     - 1Panel 专业版: https://www.lxware.cn/1panel
     - 1Panel 离线版: installation/package_installation.md
-  - 1Panel AI 一体机: 
-    - AI 助理一体机（GB10版）：https://1panel.cn/openclaw.html
-    - AI 编程一体机（GB10版）：https://1panel.cn/aicoding_gb10.html
-    - AI 编程一体机（B70版）：https://1panel.cn/aicoding_b70.html
+  - 1Panel AI 一体机:
+    - AI 助理一体机（GB10版）: https://1panel.cn/openclaw.html
+    - AI 编程一体机（GB10版）: https://1panel.cn/aicoding_gb10.html
+    - AI 编程一体机（B70版）: https://1panel.cn/aicoding_b70.html
 
 markdown_extensions:
   - admonition
