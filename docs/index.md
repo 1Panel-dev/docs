@@ -1,16 +1,10 @@
 !!! note ""
-
-	🎉 **1Panel 企业版正式发布！**  1Panel 企业版是轻量级 AI 管理平台，助力企业在 AI 快速部署与企业级安全管控之间实现平衡。
-	👉 了解和试用：https://1panel.cn/enterprise.html
-
-	🎉 **1Panel 荣获 Gitee 年度开源项目评选「基础软件赛道」第一名**  
-	👉 活动结果：https://gitee.com/activity/2025opensource/top
+	🎉 **1Panel 企业版发布！**  1Panel 企业版是轻量级 AI 管理平台，助力企业在 AI 快速部署与企业级安全管控之间实现平衡。 👉 [进一步了解和试用 1Panel 企业版](https://1panel.cn/enterprise.html)
 
 !!! note ""
     1Panel 是一个现代化、开源的 Linux 服务器运维管理面板，提供直观易用的 Web 管理界面，让用户轻松掌控 Linux 服务器——无论是智能体、本地大模型、网站、数据库、容器、文件，还是计划任务，一切尽在指尖。
 
 <img alt="UI展示" class="original" src="https://resource.fit2cloud.com/1panel/img/overview.png" width="1100" style="max-width: 100%; height: auto;">
-<!-- TODO: 更新截图 -->
 
 ## 1 产品优势
 
