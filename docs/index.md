@@ -1,4 +1,8 @@
 !!! note ""
+
+	🎉 **1Panel 企业版正式发布！**  1Panel 企业版是轻量级 AI 管理平台，助力企业在 AI 快速部署与企业级安全管控之间实现平衡。
+	👉 了解和试用：https://1panel.cn/enterprise.html
+
 	🎉 **1Panel 荣获 Gitee 年度开源项目评选「基础软件赛道」第一名**  
 	👉 活动结果：https://gitee.com/activity/2025opensource/top
 
