@@ -7,6 +7,29 @@ hide:
 
 ## Release Notes
 
+### v2.1.13
+
+2026‑05‑20
+
+!!! note "New Features"
+
+    - **Models**: Added model downloader
+
+!!! note "Improvements"
+
+    - **File Browser**: Optimized error handling logic when retrieving file history content
+    - **File Browser**: Optimized directory size calculation logic and added concurrency control
+    - **File Browser**: Optimized the file management UI and improved selection operations
+    - **Panel Settings**: Optimized license rebinding logic in some scenarios
+    - **System**: Added remaining disk space checks to the upgrade process
+
+!!! note "Bug Fixes"
+
+    - **Runtime**: Fixed an issue where project directories could be mistakenly deleted when runtime environment creation failed in some scenarios
+    - **Runtime**: Fixed an issue where runtime environment host mappings could not be deleted in some scenarios
+    - **File Browser**: Fixed an issue where an error occurred when loading non-existent directories in some scenarios
+    - **Panel Settings**: Fixed abnormal snapshot recovery in some scenarios
+
 ### v2.1.12
 
 2026‑05‑08
