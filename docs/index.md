@@ -1,5 +1,5 @@
 !!! note ""
-	🎉 **1Panel 企业版发布！**  1Panel 企业版是轻量级 AI 管理平台，助力企业在 AI 快速部署与企业级安全管控之间实现平衡。 👉 [进一步了解和试用 1Panel 企业版](https://1panel.cn/enterprise.html)
+	🎉 **1Panel 企业版发布！**  1Panel 企业版是轻量级 AI 管理平台，能够帮助企业用户实现从底层硬件到智能体（Metal-to-Agent）的统一管理。 👉 [进一步了解和试用 1Panel 企业版](https://1panel.cn/enterprise.html)
 
 !!! note ""
     1Panel 是一个现代化、开源的 Linux 服务器运维管理面板，提供直观易用的 Web 管理界面，让用户轻松掌控 Linux 服务器——无论是智能体、本地大模型、网站、数据库、容器、文件，还是计划任务，一切尽在指尖。
@@ -9,7 +9,7 @@
 ## 1 产品优势
 
 !!! note ""
-	- **AI 集成**：快速缝部署 OpenClaw 智能体，通过 Ollama 托管本地大语言模型（LLMs），实时监控 GPU 使用情况
+	- **AI 集成**：快速缝部署各类智能体，通过 Ollama/vLLM 托管本地大语言模型（LLMs），内置 AI 网关和 Skills 商店，并且能够实时监控 GPU 使用情况
 	- **高效管理**：用户可以通过 Web 图形界面轻松管理 Linux 服务器，实现主机监控、文件管理、数据库管理、容器管理等功能  
 	- **快速建站**：深度集成开源建站软件 WordPress 和 [Halo](https://github.com/halo-dev/halo/)，域名绑定、SSL 证书配置等操作一键搞定  
 	- **应用商店**：精选上架各类高质量的开源工具和应用软件，协助用户轻松安装并升级  
