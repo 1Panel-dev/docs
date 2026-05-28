@@ -61,6 +61,8 @@ nav:
       - 模型: 
         - Ollama: user_manual/ai/model.md
         - vLLM: user_manual/ai/vllm.md
+      - AI 网关: user_manual/ai/gateway.md
+      - 基准测试: user_manual/ai/benchmark.md
       - MCP: user_manual/ai/mcp.md
       - GPU 监控: user_manual/ai/gpu.md
     - 网站:
