@@ -5,7 +5,7 @@
 
     进入 1Panel 面板后，打开 **AI -> 基准测试** 页面即可进行管理。
 
-    该功能属于 **1Panel 企业版**。
+    该功能属于 [1Panel 企业版](https://1panel.cn/enterprise.html)。
 
 ![基准测试](../../img/ai/ai_benchmark_list.jpg)
 {: .original}
