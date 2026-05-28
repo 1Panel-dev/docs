@@ -1,14 +1,14 @@
 !!! note ""
 	🎉 **1Panel 企业版发布！**  1Panel 企业版是轻量级 AI 管理平台，能够帮助企业用户实现从底层硬件到智能体（Metal-to-Agent）的统一管理。 👉 [进一步了解和试用 1Panel 企业版](https://1panel.cn/enterprise.html)
 
-## 1 产品介绍
+## 1 产品概览
 
 !!! note ""
     1Panel 是一个现代化、开源的 Linux 服务器运维管理面板，提供直观易用的 Web 管理界面，让用户轻松掌控 Linux 服务器——无论是智能体、本地大模型、网站、数据库、容器、文件，还是计划任务，一切尽在指尖。
 
 <img alt="UI展示" class="original" src="https://resource.fit2cloud.com/1panel/img/overview.png" width="1100" style="max-width: 100%; height: auto;">
 
-## 1 产品优势
+## 2 产品优势
 
 !!! note ""
 	- **AI 集成**：快速缝部署各类智能体，通过 Ollama/vLLM 托管本地大语言模型（LLMs），内置 AI 网关和 Skills 商店，并且能够实时监控 GPU 使用情况
@@ -18,7 +18,7 @@
 	- **安全可靠**：基于容器管理并部署应用，实现最小的漏洞暴露面，同时提供防火墙和日志审计等功能  
 	- **一键备份**：支持一键备份和恢复，用户可以将数据备份到各类云端存储介质，永不丢失
 
-## 2 版本功能对比
+## 3 版本功能对比
 
 | 功能/版本 | 社区版 | 专业版 | 企业版 |
 | :--- | :--- | :--- | :--- |
@@ -57,13 +57,13 @@
 
 详细对比请查看：https://1panel.cn/versions.html
 
-## 3 教学视频
+## 4 教学视频
 
 !!! note ""
 
 	您可以在哔哩哔哩（B 站）上搜索相关教学视频。[点击这里](https://space.bilibili.com/510493147/channel/collectiondetail?sid=1199760)
 
-## 4 致谢贡献者
+## 5 致谢贡献者
 
 !!! note ""
 
