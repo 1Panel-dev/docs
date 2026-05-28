@@ -5,7 +5,7 @@
 
     进入 1Panel 面板后，打开 **AI -> AI 网关** 页面即可进行管理。
 
-    该功能属于 **1Panel 企业版**。
+    该功能属于 [1Panel 企业版](https://1panel.cn/enterprise.html)。
 
 ![AI 网关](../../img/ai/ai_gateway_overview.jpg)
 {: .original}
