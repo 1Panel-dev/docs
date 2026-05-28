@@ -1,6 +1,9 @@
 ## 1 环境要求
 
 !!! note ""
+	🎉 **1Panel 企业版发布！**  1Panel 企业版是轻量级 AI 管理平台，能够帮助企业用户实现从底层硬件到智能体（Metal-to-Agent）的统一管理。 👉 [进一步了解和试用 1Panel 企业版](https://1panel.cn/enterprise.html)
+   
+!!! note ""
     **安装前请确保您的系统符合安装条件：**
 
     - 操作系统：支持主流 Linux 发行版本（基于 Debian / RedHat，包括国产操作系统）
