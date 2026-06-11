@@ -7,6 +7,62 @@ hide:
 
 ## Release Notes
 
+### v2.2.1
+
+2026‑06‑11
+
+!!! note "New Features"
+
+    - **Certificates**: Added Dynadot DNS provider
+    - **File Browser**: Added proxy configuration for remote file downloads
+    - **Firewall**: Added firewall port whitelist management
+    - **Multi-Node**: Overview page now displays agents and certificates
+    - **Multi-Node**: Added support for 1Panel system installation package management
+    - **Panel Settings**: Added support for multiple alert methods of the same type
+
+!!! note "Improvements"
+
+    - **Overview**: Optimized memo styles
+    - **Containers**: Improved container log display
+    - **Containers**: Automatically displays task logs after image deletion
+    - **File Browser**: Added Shift-key multi-row table selection
+    - **File Browser**: Optimized file editor save logic
+    - **Firewall**: Added port occupancy checks for firewall port range rules
+    - **SSH Management**: Optimized SSH log parsing logic
+    - **Terminal**: Added security validation for generated terminal commands
+    - **Multi-Node**: Optimized node count limit handling logic
+    - **Multi-Node**: Optimized node switching logic for large node sets
+    - **MCP**: Optimized MCP menu title display
+    - **Panel Settings**: SMS alerts now support display names and enhanced configuration validation
+    - **Panel Settings**: Added warning prompts when importing licenses
+    - **System**: Improved command execution result display
+    - **System**: Optimized task list and sidebar interactions
+    - **System**: Optimized captcha verification method
+    - **System**: Improved API documentation annotations
+    - **System**: Optimized API documentation and logs
+    - **System**: Optimized disabled button styles in tables
+    - **System**: Optimized dark theme styles
+
+!!! note "Bug Fixes"
+
+    - **App Store**: Fixed an issue where runtime environments could not be created when using custom app repositories
+    - **Websites**: Fixed an issue where custom rewrite template name casing was not preserved
+    - **Certificates**: Fixed an issue where panel certificates were not synchronized after auto-renewal
+    - **Containers**: Fixed an issue where container IPs were not preserved after Compose upgrades in some scenarios
+    - **File Browser**: Fixed abnormal wildcard file copy in some scenarios
+    - **Firewall**: Fixed abnormal firewall port occupancy information display
+    - **Toolbox**: Fixed virus scan failures in some scenarios
+    - **Toolbox**: Fixed abnormal parsing when process guard uptime exceeds one day
+    - **SSH Management**: Fixed abnormal SSH service auto-enable behavior in some scenarios
+    - **Cron**: Fixed failure when executing script libraries on child nodes
+    - **Cron**: Fixed an issue where backup retention count did not take effect when updating scripts in some scenarios
+    - **Multi-Node**: Fixed node auto-upgrade failures in some scenarios
+    - **Multi-Node**: Fixed node terminal connection failures on the overview page
+    - **Log Audit**: Fixed abnormal operation log display in some scenarios
+    - **System**: Fixed system exceptions caused by file open failures in some scenarios
+    - **System**: Fixed delayed theme updates after importing licenses
+    - **System**: Fixed abnormal custom login background image display in some scenarios
+
 ### v2.1.13
 
 2026‑05‑20
