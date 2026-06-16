@@ -7,6 +7,24 @@ hide:
 
 ## Release Notes
 
+### v2.2.2
+
+2026‑06‑16
+
+!!! note "Improvements"
+
+    - **App Store**: Optimized app upgrade logic
+    - **Panel Settings**: Added prompt information to the snapshot recovery rollback process
+
+!!! note "Bug Fixes"
+
+    - **Certificates**: Fixed abnormal certificate request status display in some scenarios
+    - **Containers**: Fixed incorrect task log prompt display when deleting images
+    - **Monitoring**: Fixed abnormal monitoring chart tooltip style display
+    - **SSH Management**: Fixed abnormal SSH key generation in some scenarios
+    - **System**: Fixed login page compatibility issues in some browsers
+    - **System**: Fixed occasional "current session has expired" prompts when adding servers by scanning QR codes in the app
+
 ### v2.2.1
 
 2026‑06‑11
