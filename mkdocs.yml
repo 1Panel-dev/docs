@@ -174,14 +174,16 @@ nav:
   - Skills 技能: dev_manual/skills.md
   - 版本迭代: changelog.md
   - 联系我们: contact.md
-  - 商业版本:
-    - 1Panel 企业版: https://1panel.cn/enterprise.html
-    - 1Panel 专业版: https://www.lxware.cn/1panel
+  - 1Panel 商业版本:
     - 版本功能对比: https://1panel.cn/versions.html
-  - 1Panel AI 一体机:
-    - AI 助理一体机（GB10版）: https://1panel.cn/openclaw.html
-    - AI 编程一体机（GB10版）: https://1panel.cn/aicoding_gb10.html
-    - AI 编程一体机（B70版）: https://1panel.cn/aicoding_b70.html
+    - 1Panel 专业版: https://www.lxware.cn/1panel
+    - 1Panel 企业版: https://1panel.cn/enterprise.html
+  - 1Panel 一体机（内置 1Panel 企业版）:
+    - 1Panel AI 助理一体机: https://1panel.cn/openclaw.html
+    - 1Panel AI 编程一体机: https://1panel.cn/aicoding_gb10.html
+    - MaxKB AI 一体机: https://maxkb.cn/appliance
+    - JumpServer 一体机: https://1panel.cn/aicoding_b70.html
+    - Zabbix 信创一体机: https://fit2cloud.com/zabbix/index.html
 
 markdown_extensions:
   - admonition
