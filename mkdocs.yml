@@ -170,6 +170,7 @@ nav:
     - 系统功能相关: faq/system_function.md
     - 服务器架构相关: faq/server_architecture.md
     - OpenClaw 相关: faq/openclaw.md
+    - AI 编程接入指南: faq/ai_coding.md
   - API 接口: dev_manual/api_manual.md
   - Skills 技能: dev_manual/skills.md
   - 版本迭代: changelog.md

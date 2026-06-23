@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620" role="img" aria-labelledby="title desc">
+  <title id="title">AI 编程工具接入 1Panel AI 网关示意图</title>
+  <desc id="desc">OpenCode、Qwen Code、Codex 等 AI 编程工具通过 OpenAI 兼容接口接入 1Panel AI 网关，再由 AI 网关转发到 vLLM、DeepSeek 等模型服务。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-muted" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-20%" width="120%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; }
+      .muted { fill: #64748b; }
+      .small { font-size: 20px; }
+      .body { font-size: 24px; font-weight: 600; }
+      .title { font-size: 34px; font-weight: 700; }
+      .chip { font-size: 22px; font-weight: 600; }
+      .stroke { stroke: #cbd5e1; stroke-width: 2; }
+      .arrow { fill: none; stroke: #2563eb; stroke-width: 3; marker-end: url(#arrow); }
+      .arrow-return { fill: none; stroke: #64748b; stroke-width: 2.5; stroke-dasharray: 9 8; marker-end: url(#arrow-muted); }
+    </style>
+  </defs>
+
+  <rect width="1120" height="620" rx="28" fill="#f8fafc"/>
+  <rect x="36" y="36" width="1048" height="548" rx="24" fill="#ffffff" class="stroke"/>
+
+  <text x="560" y="82" text-anchor="middle" class="label title">AI 编程工具统一接入 1Panel AI 网关</text>
+  <text x="560" y="118" text-anchor="middle" class="label small muted">统一 Base URL、API Key 与模型映射，按策略转发到不同模型服务</text>
+
+  <g filter="url(#shadow)">
+    <rect x="112" y="155" width="896" height="110" rx="18" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2"/>
+  </g>
+  <text x="560" y="190" text-anchor="middle" class="label body">AI 编程工具</text>
+  <g>
+    <rect x="196" y="210" width="150" height="40" rx="20" fill="#dbeafe"/>
+    <text x="271" y="237" text-anchor="middle" class="label chip">OpenCode</text>
+    <rect x="388" y="210" width="150" height="40" rx="20" fill="#dbeafe"/>
+    <text x="463" y="237" text-anchor="middle" class="label chip">Qwen Code</text>
+    <rect x="580" y="210" width="150" height="40" rx="20" fill="#dbeafe"/>
+    <text x="655" y="237" text-anchor="middle" class="label chip">Codex</text>
+    <rect x="772" y="210" width="150" height="40" rx="20" fill="#dbeafe"/>
+    <text x="847" y="237" text-anchor="middle" class="label chip">其他工具</text>
+  </g>
+
+  <path d="M 520 278 L 520 332" class="arrow"/>
+  <path d="M 600 332 L 600 278" class="arrow-return"/>
+  <text x="685" y="311" class="label small muted">OpenAI 兼容接口</text>
+
+  <g filter="url(#shadow)">
+    <rect x="150" y="345" width="820" height="112" rx="18" fill="#ecfdf5" stroke="#bbf7d0" stroke-width="2"/>
+  </g>
+  <text x="560" y="384" text-anchor="middle" class="label title">1Panel AI 网关</text>
+  <g>
+    <rect x="196" y="405" width="150" height="40" rx="20" fill="#dcfce7"/>
+    <text x="271" y="432" text-anchor="middle" class="label chip">AI 代理</text>
+    <rect x="388" y="405" width="150" height="40" rx="20" fill="#dcfce7"/>
+    <text x="463" y="432" text-anchor="middle" class="label chip">席位管理</text>
+    <rect x="580" y="405" width="150" height="40" rx="20" fill="#dcfce7"/>
+    <text x="655" y="432" text-anchor="middle" class="label chip">用量统计</text>
+    <rect x="772" y="405" width="150" height="40" rx="20" fill="#dcfce7"/>
+    <text x="847" y="432" text-anchor="middle" class="label chip">内容合规</text>
+  </g>
+
+  <path d="M 360 460 L 270 499" class="arrow"/>
+  <path d="M 560 460 L 560 499" class="arrow"/>
+  <path d="M 760 460 L 850 499" class="arrow"/>
+
+  <g filter="url(#shadow)">
+    <rect x="105" y="505" width="260" height="64" rx="14" fill="#fff7ed" stroke="#fed7aa" stroke-width="2"/>
+    <rect x="430" y="505" width="260" height="64" rx="14" fill="#fff7ed" stroke="#fed7aa" stroke-width="2"/>
+    <rect x="755" y="505" width="260" height="64" rx="14" fill="#fff7ed" stroke="#fed7aa" stroke-width="2"/>
+  </g>
+  <text x="235" y="545" text-anchor="middle" class="label body">vLLM</text>
+  <text x="560" y="545" text-anchor="middle" class="label body">DeepSeek</text>
+  <text x="885" y="545" text-anchor="middle" class="label body">更多模型服务</text>
+</svg>
