@@ -1,97 +1,98 @@
-
 !!! note ""
-本文档详细介绍了如何在三方服务中使用自定义 Token 的验证来访问面板接口。
+
+    本文档介绍如何在第三方服务中使用 API Key 访问 1Panel 接口。
 
 ## 1 接口配置说明
 
 !!! note ""
-    
-    登录后，可通过访问 swagger 访问地址：`{host}:{port}/1panel/swagger/index.html` 查看所有 API。
 
-### 1.1 自定义 Token 格式
+    登录后，可通过访问 Swagger 地址：`{host}:{port}/1panel/swagger/index.html` 查看所有 API。
+
+    API Key 需要在面板中创建并启用，同时配置 IP 白名单和有效时间。
+
+### 1.1 API 接口入口
 
 !!! note ""
 
-    1Panel 设计了以下自定义 Token 格式，用于接口请求的身份验证：
+    v2.2.1 版本之前，API 接口设置入口位于「面板设置」中。
+    v2.2.1 版本之后，点击左下角用户菜单，进入用户信息抽屉，可在「API 接口」区域启用或关闭 API 接口访问，并点击「详情」维护 API Key、IP 白名单和有效时间。
+
+![API 接口入口](../img/dev_manual/api_interface_entry.png)
+
+## 2 请求鉴权
+
+### 2.1 请求 Header
+
+!!! note ""
+
+    每次 API 请求需要携带以下 Header：
+
+    | Header 名称        | 说明               |
+    |------------------|--------------------|
+    | 1Panel-Token     | 根据 API Key 计算出的签名 |
+    | 1Panel-Timestamp | 当前 Unix 时间戳，单位为秒 |
+
+    示例：
+
+    ```bash
+    curl -X GET "http://{host}:{port}/api/v2/core/enterprise/users/info" \
+      -H "1Panel-Token: <1panel_token>" \
+      -H "1Panel-Timestamp: <current_unix_timestamp>"
+    ```
+
+### 2.2 Token 生成方式
+
+!!! note ""
+
+    1Panel 当前兼容以下两种 Token 生成方式。为了兼容历史版本，服务端不要求客户端额外传递版本号或加密方式。
+
+    **方式一：MD5（兼容旧版本，后续版本会去除）**
 
     ```text
     Token = md5('1panel' + API-Key + UnixTimestamp)
     ```
 
-    组成部分：
+    **方式二：HMAC-SHA256（推荐新接入使用）**
 
-    - 固定前缀: '1panel'
-    - API-Key: 面板 API 接口密钥
-    - UnixTimestamp: 当前的时间戳（秒级）
-
-### 1.2  请求 Header 设计
-
-!!! note ""
-
-    每次请求必须携带以下两个 Header：
-    
-    | Header 名称        | 说明              |
-    |------------------|--------------------|
-    | 1Panel-Token     | 自定义的 Token 值    |
-    | 1Panel-Timestamp | 当前时间戳           |
-
-    示例请求头：
-    
-    ```bash
-    curl -X POST "http://{host}:{port}/api/v2/toolbox/device/base" \
-    -H "1Panel-Token: <1panel_token>" \
-    -H "1Panel-Timestamp: <current_unix_timestamp>"
+    ```text
+    Token = hmac_sha256(API-Key, '1panel:' + UnixTimestamp)
     ```
 
-### 1.3 示例实现代码
+    组成部分：
+
+    - `API-Key`：面板 API 接口密钥。
+    - `UnixTimestamp`：当前时间戳，秒级。
+    - `1panel` / `1panel:`：固定签名内容前缀。
+
+### 2.3 Go 示例
 
 !!! note ""
-    以 go 语言为例，展示对应的实现代码：
+
+    MD5 示例：
 
     ```go
-    func validateToken(c *gin.Context) error {
-        panelToken := c.GetHeader("1Panel-Token")
-        panelTimestamp := c.GetHeader("1Panel-Timestamp")
-        systemToken := panelToken
-        systemKey = ******* // 面板 API 密钥
-        expectedToken := md5Sum("1panel" + systemKey + panelTimestamp)
-        if systemToken != expectedToken {
-            return fmt.Errorf("invalid token")
-        }
-        return nil
-    }
-    
-    func md5Sum(data string) string {
+    func generateMD5Token(apiKey, timestamp string) string {
         h := md5.New()
-        h.Write([]byte(data))
+        h.Write([]byte("1panel" + apiKey + timestamp))
         return hex.EncodeToString(h.Sum(nil))
     }
     ```
 
-## 2 注意事项
+    HMAC-SHA256 示例：
+
+    ```go
+    func generateHMACToken(apiKey, timestamp string) string {
+        mac := hmac.New(sha256.New, []byte(apiKey))
+        mac.Write([]byte("1panel:" + timestamp))
+        return hex.EncodeToString(mac.Sum(nil))
+    }
+    ```
+
+## 3 注意事项
 
 !!! note ""
 
-    - 时间戳的有效性:需要确保服务器与客户端时间同步，否则会导致验证失败。建议使用 NTP 同步时间
-    - 白名单使用:将可信任的 IP 或 IP 段加入白名单，避免频繁 Token 验证的开销；如需放行所有 IP ，可以配置 ，`0.0.0.0/0`（所有 IPv4），`::/0`（所有 IPv6）
-
-## 3 常见问题
-
-!!! note ""
-    
-    - 如果 1Panel-Token 或 1Panel-Timestamp 错误怎么办
-
-        后台将返回 401 Unauthorized，并提示 "API 接口密钥错误"。
-
-    - 如何生成 1Panel-Token
-    
-        请参考以下伪代码：
-    
-        ```javascript
-        const token = md5('1panel' + clientToken + unixTimestamp);
-        ```
-
-    - 为什么需要两个 Header
-    
-        提高验证的复杂度，同时增强安全性。
-
+    - 请确保客户端和服务器时间同步，建议使用 NTP。
+    - IP 白名单支持单个 IP 和 CIDR；如需放行所有 IPv4，可配置 `0.0.0.0/0`；如需放行所有 IPv6，可配置 `::/0`。
+    - 旧版本客户端可继续使用 MD5 方式生成 Token。
+    - 新接入系统建议使用 HMAC-SHA256 方式生成 Token。
