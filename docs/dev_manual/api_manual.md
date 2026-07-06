@@ -35,7 +35,7 @@
     示例：
 
     ```bash
-    curl -X GET "http://{host}:{port}/api/v2/core/enterprise/users/info" \
+    curl -k -X POST "http://{host}:{port}/api/v2/toolbox/device/base" \
       -H "1Panel-Token: <1panel_token>" \
       -H "1Panel-Timestamp: <current_unix_timestamp>"
     ```
