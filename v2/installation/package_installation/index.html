@@ -5989,6 +5989,23 @@ tar<span class="w"> </span>zxvf<span class="w"> </span>1panel-v2.0.11-offline-li
 /bin/bash<span class="w"> </span>install.sh
 </code></pre></div>
 </div>
+<div class="admonition note">
+<p>如需在离线环境中批量部署，也可以通过环境变量启用非交互安装。参数说明请参考 <a href="../online_installation/#22">在线安装 - 非交互安装</a>。</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 如目标服务器未安装 Docker，请显式开启</span>
+<span class="nv">PANEL_NON_INTERACTIVE</span><span class="o">=</span><span class="nb">true</span><span class="w"> </span><span class="se">\</span>
+<span class="nv">PANEL_LANG</span><span class="o">=</span>zh<span class="w"> </span><span class="se">\</span>
+<span class="nv">PANEL_INSTALL_DIR</span><span class="o">=</span>/opt<span class="w"> </span><span class="se">\</span>
+<span class="nv">PANEL_PORT</span><span class="o">=</span><span class="m">18080</span><span class="w"> </span><span class="se">\</span>
+<span class="nv">PANEL_ENTRANCE</span><span class="o">=</span>panelEntrance<span class="w"> </span><span class="se">\</span>
+<span class="nv">PANEL_USERNAME</span><span class="o">=</span>panelAdmin<span class="w"> </span><span class="se">\</span>
+<span class="nv">PANEL_PASSWORD</span><span class="o">=</span><span class="s1">&#39;ChangeMe_123456&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="nv">PANEL_INSTALL_DOCKER</span><span class="o">=</span>y<span class="w"> </span><span class="se">\</span>
+<span class="nv">PANEL_DOCKER_MODE</span><span class="o">=</span>auto<span class="w"> </span><span class="se">\</span>
+<span class="nv">PANEL_CONFIGURE_ACCELERATOR</span><span class="o">=</span>n<span class="w"> </span><span class="se">\</span>
+<span class="nv">PANEL_REPLACE_DAEMON_JSON</span><span class="o">=</span>n<span class="w"> </span><span class="se">\</span>
+/bin/bash<span class="w"> </span>install.sh
+</code></pre></div>
+</div>
 <h2 id="5">5. 升级版本<a class="headerlink" href="#5" title="Permanent link">⚓︎</a></h2>
 <h3 id="51">5.1 解压离线包<a class="headerlink" href="#51" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">

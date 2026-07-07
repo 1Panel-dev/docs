@@ -596,6 +596,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="2 安装部署">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 交互式安装
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 非交互安装
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -5431,6 +5459,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="2 安装部署">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 交互式安装
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 非交互安装
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -5479,10 +5535,125 @@
 <div class="admonition note">
 <p>GitHub Release 链接：<a href="https://github.com/1Panel-dev/1Panel/releases">https://github.com/1Panel-dev/1Panel/releases</a></p>
 </div>
+<h3 id="21">2.1 交互式安装<a class="headerlink" href="#21" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
-<p>执行以下安装脚本，根据命令行提示完成安装。
+<p>执行以下安装脚本，根据命令行提示完成安装。</p>
 <div class="highlight"><pre><span></span><code>bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-sSL<span class="w"> </span>https://resource.fit2cloud.com/1panel/package/v2/quick_start.sh<span class="k">)</span><span class="s2">&quot;</span>
-</code></pre></div></p>
+</code></pre></div>
+</div>
+<h3 id="22">2.2 非交互安装<a class="headerlink" href="#22" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>如需在批量部署、云服务器初始化脚本、CI/CD 等自动化场景中安装 1Panel，可以通过环境变量提前配置安装参数，并启用非交互模式。</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 如需由安装脚本自动安装 Docker，请显式开启</span>
+<span class="nv">PANEL_NON_INTERACTIVE</span><span class="o">=</span><span class="nb">true</span><span class="w"> </span><span class="se">\</span>
+<span class="nv">PANEL_LANG</span><span class="o">=</span>zh<span class="w"> </span><span class="se">\</span>
+<span class="nv">PANEL_INSTALL_DIR</span><span class="o">=</span>/opt<span class="w"> </span><span class="se">\</span>
+<span class="nv">PANEL_PORT</span><span class="o">=</span><span class="m">18080</span><span class="w"> </span><span class="se">\</span>
+<span class="nv">PANEL_ENTRANCE</span><span class="o">=</span>panelEntrance<span class="w"> </span><span class="se">\</span>
+<span class="nv">PANEL_USERNAME</span><span class="o">=</span>panelAdmin<span class="w"> </span><span class="se">\</span>
+<span class="nv">PANEL_PASSWORD</span><span class="o">=</span><span class="s1">&#39;ChangeMe_123456&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="nv">PANEL_INSTALL_DOCKER</span><span class="o">=</span>y<span class="w"> </span><span class="se">\</span>
+<span class="nv">PANEL_DOCKER_MODE</span><span class="o">=</span>auto<span class="w"> </span><span class="se">\</span>
+<span class="nv">PANEL_CONFIGURE_ACCELERATOR</span><span class="o">=</span>n<span class="w"> </span><span class="se">\</span>
+<span class="nv">PANEL_REPLACE_DAEMON_JSON</span><span class="o">=</span>n<span class="w"> </span><span class="se">\</span>
+bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-sSL<span class="w"> </span>https://resource.fit2cloud.com/1panel/package/v2/quick_start.sh<span class="k">)</span><span class="s2">&quot;</span>
+</code></pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+<ul>
+<li>请在生产环境中替换示例中的端口、安全入口、用户名和密码。</li>
+<li>非交互模式下，未配置的参数将使用默认值。</li>
+<li>为避免安装脚本在自动化场景中修改主机环境，Docker 安装和镜像加速默认不启用。如需自动安装 Docker，请显式设置 <code>PANEL_INSTALL_DOCKER=y</code>。</li>
+<li>如果服务器已安装 Docker，通常无需设置 <code>PANEL_INSTALL_DOCKER</code>；如需配置 Docker 镜像加速，请显式设置 <code>PANEL_CONFIGURE_ACCELERATOR=y</code>。</li>
+<li>示例中的环境变量仅对当前安装命令生效，不会写入系统环境。</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">非交互安装参数</p>
+<table>
+<thead>
+<tr>
+<th>环境变量</th>
+<th>命令行参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PANEL_NON_INTERACTIVE</code></td>
+<td><code>--non-interactive</code>、<code>-y</code></td>
+<td>启用非交互模式，可设置为 <code>true</code>、<code>1</code>、<code>y</code>、<code>yes</code></td>
+</tr>
+<tr>
+<td><code>PANEL_LANG</code></td>
+<td><code>--lang</code></td>
+<td>设置安装语言，支持 <code>en</code>、<code>zh</code>、<code>fa</code>、<code>pt-BR</code>、<code>ru</code></td>
+</tr>
+<tr>
+<td><code>PANEL_INSTALL_DIR</code></td>
+<td><code>--install-dir</code></td>
+<td>设置安装目录，需使用绝对路径，默认 <code>/opt</code></td>
+</tr>
+<tr>
+<td><code>PANEL_PORT</code></td>
+<td><code>--port</code></td>
+<td>设置面板端口，未设置时随机生成可用端口</td>
+</tr>
+<tr>
+<td><code>PANEL_ENTRANCE</code></td>
+<td><code>--entrance</code></td>
+<td>设置安全入口，支持 3-30 位字母、数字、下划线</td>
+</tr>
+<tr>
+<td><code>PANEL_USERNAME</code></td>
+<td><code>--username</code></td>
+<td>设置面板用户名，支持 3-30 位字母、数字、下划线</td>
+</tr>
+<tr>
+<td><code>PANEL_PASSWORD</code></td>
+<td><code>--password</code></td>
+<td>设置面板密码，支持 8-30 位字母、数字及 <code>_!@#$%*,.?</code> 特殊字符</td>
+</tr>
+<tr>
+<td><code>PANEL_INSTALL_DOCKER</code></td>
+<td><code>--install-docker</code></td>
+<td>是否安装 Docker，可设置为 <code>y</code> 或 <code>n</code>，非交互模式默认 <code>n</code></td>
+</tr>
+<tr>
+<td><code>PANEL_DOCKER_MODE</code></td>
+<td><code>--docker-mode</code></td>
+<td>Docker 安装方式，支持 <code>auto</code>、<code>builtin</code>、<code>online</code></td>
+</tr>
+<tr>
+<td><code>PANEL_CONFIGURE_ACCELERATOR</code></td>
+<td><code>--configure-accelerator</code></td>
+<td>是否配置 Docker 镜像加速，可设置为 <code>y</code> 或 <code>n</code>，非交互模式默认 <code>n</code></td>
+</tr>
+<tr>
+<td><code>PANEL_REPLACE_DAEMON_JSON</code></td>
+<td><code>--replace-daemon-json</code></td>
+<td>当 <code>/etc/docker/daemon.json</code> 已存在时，是否替换该文件，可设置为 <code>y</code> 或 <code>n</code>，非交互模式默认 <code>n</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<p>也可以通过命令行参数传入配置：</p>
+<div class="highlight"><pre><span></span><code>bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-sSL<span class="w"> </span>https://resource.fit2cloud.com/1panel/package/v2/quick_start.sh<span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span>--<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--non-interactive<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--lang<span class="w"> </span>zh<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--install-dir<span class="w"> </span>/opt<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--port<span class="w"> </span><span class="m">18080</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--entrance<span class="w"> </span>panelEntrance<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--username<span class="w"> </span>panelAdmin<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--password<span class="w"> </span><span class="s1">&#39;ChangeMe_123456&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--install-docker<span class="w"> </span>y<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--docker-mode<span class="w"> </span>auto<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--configure-accelerator<span class="w"> </span>n<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--replace-daemon-json<span class="w"> </span>n
+</code></pre></div>
+<p>出于安全考虑，建议优先使用 <code>PANEL_PASSWORD</code> 环境变量传入密码，避免密码直接出现在命令参数中。</p>
 </div>
 <div class="admonition note">
 <p>如果遇到 Docker 安装失败等问题，可以尝试运行以下脚本：</p>
