@@ -25,12 +25,77 @@
     GitHub Release 链接：https://github.com/1Panel-dev/1Panel/releases
 
     
-!!! note ""
+### 2.1 交互式安装
 
+!!! note ""
     执行以下安装脚本，根据命令行提示完成安装。
+
     ```bash
     bash -c "$(curl -sSL https://resource.fit2cloud.com/1panel/package/v2/quick_start.sh)"
     ```
+
+### 2.2 非交互安装
+
+!!! note ""
+    如需在批量部署、云服务器初始化脚本、CI/CD 等自动化场景中安装 1Panel，可以通过环境变量提前配置安装参数，并启用非交互模式。
+
+    ```bash
+    # 如需由安装脚本自动安装 Docker，请显式开启
+    PANEL_NON_INTERACTIVE=true \
+    PANEL_LANG=zh \
+    PANEL_INSTALL_DIR=/opt \
+    PANEL_PORT=18080 \
+    PANEL_ENTRANCE=panelEntrance \
+    PANEL_USERNAME=panelAdmin \
+    PANEL_PASSWORD='ChangeMe_123456' \
+    PANEL_INSTALL_DOCKER=y \
+    PANEL_DOCKER_MODE=auto \
+    PANEL_CONFIGURE_ACCELERATOR=n \
+    PANEL_REPLACE_DAEMON_JSON=n \
+    bash -c "$(curl -sSL https://resource.fit2cloud.com/1panel/package/v2/quick_start.sh)"
+    ```
+
+!!! warning "注意"
+    - 请在生产环境中替换示例中的端口、安全入口、用户名和密码。
+    - 非交互模式下，未配置的参数将使用默认值。
+    - 为避免安装脚本在自动化场景中修改主机环境，Docker 安装和镜像加速默认不启用。如需自动安装 Docker，请显式设置 `PANEL_INSTALL_DOCKER=y`。
+    - 如果服务器已安装 Docker，通常无需设置 `PANEL_INSTALL_DOCKER`；如需配置 Docker 镜像加速，请显式设置 `PANEL_CONFIGURE_ACCELERATOR=y`。
+    - 示例中的环境变量仅对当前安装命令生效，不会写入系统环境。
+
+!!! note "非交互安装参数"
+    | 环境变量 | 命令行参数 | 说明 |
+    | --- | --- | --- |
+    | `PANEL_NON_INTERACTIVE` | `--non-interactive`、`-y` | 启用非交互模式，可设置为 `true`、`1`、`y`、`yes` |
+    | `PANEL_LANG` | `--lang` | 设置安装语言，支持 `en`、`zh`、`fa`、`pt-BR`、`ru` |
+    | `PANEL_INSTALL_DIR` | `--install-dir` | 设置安装目录，需使用绝对路径，默认 `/opt` |
+    | `PANEL_PORT` | `--port` | 设置面板端口，未设置时随机生成可用端口 |
+    | `PANEL_ENTRANCE` | `--entrance` | 设置安全入口，支持 3-30 位字母、数字、下划线 |
+    | `PANEL_USERNAME` | `--username` | 设置面板用户名，支持 3-30 位字母、数字、下划线 |
+    | `PANEL_PASSWORD` | `--password` | 设置面板密码，支持 8-30 位字母、数字及 `_!@#$%*,.?` 特殊字符 |
+    | `PANEL_INSTALL_DOCKER` | `--install-docker` | 是否安装 Docker，可设置为 `y` 或 `n`，非交互模式默认 `n` |
+    | `PANEL_DOCKER_MODE` | `--docker-mode` | Docker 安装方式，支持 `auto`、`builtin`、`online` |
+    | `PANEL_CONFIGURE_ACCELERATOR` | `--configure-accelerator` | 是否配置 Docker 镜像加速，可设置为 `y` 或 `n`，非交互模式默认 `n` |
+    | `PANEL_REPLACE_DAEMON_JSON` | `--replace-daemon-json` | 当 `/etc/docker/daemon.json` 已存在时，是否替换该文件，可设置为 `y` 或 `n`，非交互模式默认 `n` |
+
+!!! note ""
+    也可以通过命令行参数传入配置：
+
+    ```bash
+    bash -c "$(curl -sSL https://resource.fit2cloud.com/1panel/package/v2/quick_start.sh)" -- \
+      --non-interactive \
+      --lang zh \
+      --install-dir /opt \
+      --port 18080 \
+      --entrance panelEntrance \
+      --username panelAdmin \
+      --password 'ChangeMe_123456' \
+      --install-docker y \
+      --docker-mode auto \
+      --configure-accelerator n \
+      --replace-daemon-json n
+    ```
+
+    出于安全考虑，建议优先使用 `PANEL_PASSWORD` 环境变量传入密码，避免密码直接出现在命令参数中。
 
 !!! note ""
     如果遇到 Docker 安装失败等问题，可以尝试运行以下脚本：

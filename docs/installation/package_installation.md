@@ -68,6 +68,25 @@
     /bin/bash install.sh
     ```
 
+!!! note ""
+    如需在离线环境中批量部署，也可以通过环境变量启用非交互安装。参数说明请参考 [在线安装 - 非交互安装](online_installation.md#22)。
+
+    ```bash
+    # 如目标服务器未安装 Docker，请显式开启
+    PANEL_NON_INTERACTIVE=true \
+    PANEL_LANG=zh \
+    PANEL_INSTALL_DIR=/opt \
+    PANEL_PORT=18080 \
+    PANEL_ENTRANCE=panelEntrance \
+    PANEL_USERNAME=panelAdmin \
+    PANEL_PASSWORD='ChangeMe_123456' \
+    PANEL_INSTALL_DOCKER=y \
+    PANEL_DOCKER_MODE=auto \
+    PANEL_CONFIGURE_ACCELERATOR=n \
+    PANEL_REPLACE_DAEMON_JSON=n \
+    /bin/bash install.sh
+    ```
+
 ## 5. 升级版本
 
 ### 5.1 解压离线包
