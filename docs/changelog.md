@@ -7,6 +7,66 @@ hide:
 
 ## Release Notes
 
+### v2.2.3
+
+2026‑07‑07
+
+!!! note "New Features"
+
+    - **App Store**: Added support for deleting old version images during app upgrades
+    - **Agents**: Added username and password configuration for Hermes Agent
+    - **Models**: Added Huawei vLLM support
+    - **Models**: Added MiniMax M3 model
+    - **MCP**: Added support for customizing container images for MCP Server
+    - **MCP**: Added task logs for MCP Server
+    - **Websites**: Added multi-dimensional website search
+    - **Certificates**: Added Ionos DNS provider
+    - **Certificates**: Added support for synchronizing self-signed and manually uploaded certificates to other nodes
+    - **Containers**: Added rebuild support for container orchestration
+    - **Runtime**: Integrated runtime creation and deletion workflows with task management
+    - **Runtime**: Node runtime now supports configuring whether to install node_modules
+    - **File Browser**: Added code editor theme management and synchronization
+    - **File Browser**: Added right-click operations in the file editor
+    - **File Browser**: Added Ctrl + / shortcut comments in the file editor
+    - **Firewall**: Added support for importing all firewall rules
+    - **WAF**: Added support for applying global settings to websites
+    - **WAF**: Added support for blocking IP ranges
+    - **Resource Sync**: Added cross-node transfer support for applications, images, and certificates
+    - **Panel Settings**: Added support for menu accordion expansion settings
+    - **System**: Added Persian (fa) language support
+    - **System**: Added support for non-interactive installation
+
+!!! note "Improvements"
+
+    - **Websites**: Unified the operation entry for default website and default site
+    - **Certificates**: Optimized error messages for HTTP certificate request failures
+    - **Runtime**: Optimized container configuration options when installing runtime environments
+    - **File Browser**: Enhanced Python language support in Monaco editor
+    - **File Browser**: Optimized the code editor split layout
+    - **SSH Management**: Optimized SSH session performance on Ubuntu 26
+    - **Cron**: Added operation instructions for WAF IP group synchronization tasks
+    - **WAF**: Optimized WAF page prompts
+    - **Log Audit**: Completed and improved operation log content
+    - **Panel Settings**: Optimized log handling when alert configuration is missing
+
+!!! note "Bug Fixes"
+
+    - **Overview**: Fixed dashboard runtime calculation anomalies
+    - **App Store**: Fixed abnormal app host binding IP updates
+    - **Agents**: Fixed OpenClaw Telegram configuration failures
+    - **Models**: Fixed errors after editing vLLM in some scenarios
+    - **Certificates**: Fixed website certificates failing to be pushed to specified nodes in some scenarios
+    - **Containers**: Fixed incomplete log downloads in some scenarios
+    - **Containers**: Fixed abnormal network IP handling during container upgrades
+    - **Containers**: Fixed container monitoring chart rendering abnormalities
+    - **File Browser**: Fixed abnormal file tree expansion state
+    - **Firewall**: Fixed firewall import dialogs not resetting when opened
+    - **Firewall**: Fixed abnormal firewall import address formatting
+    - **Resource Sync**: Fixed errors when starting resource transfers with one side unselected
+    - **Cron**: Fixed abnormal MariaDB cron backup parameters
+    - **Panel Settings**: Fixed missing snapshot decompression directories in some scenarios
+    - **System**: Fixed SSL configuration reload failures in some scenarios
+
 ### v2.2.2
 
 2026‑06‑16
