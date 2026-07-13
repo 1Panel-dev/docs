@@ -27,7 +27,8 @@
 
 - 在线安装: https://1panel.cn/docs/installation/online_installation/
 - 在线升级: https://1panel.cn/docs/installation/online_upgrade/
-- 1Panel 离线版: https://1panel.cn/docs/installation/package_installation/
+- 社区版离线安装: https://1panel.cn/docs/installation/package_installation/
+- 企业版安装部署: https://1panel.cn/docs/installation/enterprise_installation/
 - 命令行工具: https://1panel.cn/docs/installation/cli/
 - 应用商店概述: https://1panel.cn/docs/user_manual/appstore/appstore/
 - 网站管理: https://1panel.cn/docs/user_manual/websites/websites/
@@ -38,6 +39,14 @@
 - 终端: https://1panel.cn/docs/user_manual/terminal/
 - 计划任务: https://1panel.cn/docs/user_manual/cronjobs/
 - 面板设置: https://1panel.cn/docs/user_manual/settings/
+
+## 企业版安装与迁移
+
+- 企业版概览: https://1panel.cn/enterprise.html
+- 企业版安装部署: https://1panel.cn/docs/installation/enterprise_installation/
+- 1Panel 企业版是轻量级 AI 管理平台，支持从底层硬件到智能体（Metal-to-Agent）的统一管理。
+- 获取企业版安装包后，解压并进入安装包目录；首次安装使用 `install.sh`，企业版之间升级使用 `upgrade.sh`。
+- 社区版和专业版迁移至企业版必须使用 `1panel-migrator` 工具，迁移说明见企业版安装部署页面。
 
 ## AI 与常用软件
 
