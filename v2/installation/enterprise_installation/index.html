@@ -6,40 +6,40 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="1Panel 在线使用文档">
+        <meta name="description" content="介绍 1Panel 企业版安装部署、企业版之间升级，以及社区版和专业版迁移至企业版时使用 1panel-migrator 的方法。">
       
       
         <meta name="author" content="飞致云">
       
       
-        <link rel="canonical" href="https://1panel.cn/docs/v2/user_manual/appstore/ollama/">
+        <link rel="canonical" href="https://1panel.cn/docs/v2/installation/enterprise_installation/">
       
       
-        <link rel="prev" href="../redis/">
+        <link rel="prev" href="../package_installation/">
       
       
-        <link rel="next" href="../halo/">
+        <link rel="next" href="../ali_cloud/">
       
       
         
       
       
-      <link rel="icon" href="../../../img/facio.ico">
+      <link rel="icon" href="../../img/facio.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Ollama - 1Panel 文档</title>
+        <title>1Panel 企业版安装部署 - 1Panel 文档</title>
       
     
     
-    <link rel="stylesheet" href="../../../css/lightgallery.min.css">
-    <link href="../../../css/f2c-header.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/lightgallery.min.css">
+    <link href="../../css/f2c-header.css" rel="stylesheet" type="text/css" />
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -50,23 +50,23 @@
     
       
     
-    <script src="../../../js/lightgallery.min.js"></script>
-    <script src="../../../js/jquery-3.5.1.min.js"></script>
-    <script src="../../../js/mega.js"></script>
+    <script src="../../js/lightgallery.min.js"></script>
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/mega.js"></script>
 
     
       
     
     
-      <link rel="stylesheet" href="../../../css/extra.css">
+      <link rel="stylesheet" href="../../css/extra.css">
     
-      <link rel="stylesheet" href="../../../css/termynal.css">
+      <link rel="stylesheet" href="../../css/termynal.css">
     
-      <link rel="stylesheet" href="../../../css/custom.css">
+      <link rel="stylesheet" href="../../css/custom.css">
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -88,20 +88,25 @@
     
     
     
+      
+      
+      
+      
+    
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="keywords" content="1Panel,Linux 面板,Linux 服务器管理面板,VPS 控制面板,开源运维面板,服务器运维,Docker 管理,容器管理,网站管理,SSL 证书,应用商店,AI Agent,Ollama,OpenClaw,防火墙,WAF,备份恢复">
+    <meta name="keywords" content="1Panel 企业版,1Panel 企业版安装,1Panel 企业版部署,1Panel 离线安装,1panel-migrator,1Panel 社区版迁移,1Panel 专业版迁移">
     <meta name="application-name" content="1Panel">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="1Panel 文档">
-    <meta property="og:title" content="1Panel 文档">
-    <meta property="og:description" content="1Panel 在线使用文档">
-    <meta property="og:url" content="https://1panel.cn/docs/v2">
+    <meta property="og:title" content="1Panel 企业版安装部署">
+    <meta property="og:description" content="介绍 1Panel 企业版安装部署、企业版之间升级，以及社区版和专业版迁移至企业版时使用 1panel-migrator 的方法。">
+    <meta property="og:url" content="https://1panel.cn/docs/v2/installation/enterprise_installation/">
     <meta property="og:locale" content="zh_CN">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="1Panel 文档">
-    <meta name="twitter:description" content="1Panel 在线使用文档">
+    <meta name="twitter:title" content="1Panel 企业版安装部署">
+    <meta name="twitter:description" content="介绍 1Panel 企业版安装部署、企业版之间升级，以及社区版和专业版迁移至企业版时使用 1panel-migrator 的方法。">
     <link rel="sitemap" type="application/xml" href="https://1panel.cn/docs/sitemap.xml">
     <link rel="alternate" type="text/plain" title="llms.txt" href="https://1panel.cn/docs/llms.txt">
     <script type="application/ld+json">
@@ -159,6 +164,27 @@
     }
     </script>
     
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "1Panel 企业版安装部署",
+      "description": "介绍 1Panel 企业版安装部署、企业版之间升级，以及社区版和专业版迁移至企业版时使用 1panel-migrator 的方法。",
+      "url": "https://1panel.cn/docs/v2/installation/enterprise_installation/",
+      "inLanguage": "zh-CN",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "1Panel 文档",
+        "url": "https://1panel.cn/docs/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "1Panel",
+        "url": "https://1panel.cn/"
+      }
+    }
+    </script>
+    
 
   </head>
   
@@ -179,7 +205,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1panel-ollama" class="md-skip">
+        <a href="#1" class="md-skip">
           跳转至
         </a>
       
@@ -218,7 +244,7 @@
         <div class="mega-nav-banner">
             <div class="container">
                 <div class="mega-nav-banner-item">
-                    <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../../../img/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD Logo" /></a>
+                    <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../../img/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD Logo" /></a>
                 </div>
                 <div class="mega-nav-banner-item">
                     <p class="mega-nav-tagline">
@@ -263,9 +289,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../.." title="1Panel 文档" class="md-header__button md-logo" aria-label="1Panel 文档" data-md-component="logo">
+    <a href="../.." title="1Panel 文档" class="md-header__button md-logo" aria-label="1Panel 文档" data-md-component="logo">
       
-  <img src="../../../img/logo-white.png" alt="logo">
+  <img src="../../img/logo-white.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -282,7 +308,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Ollama
+              1Panel 企业版安装部署
             
           </span>
         </div>
@@ -406,9 +432,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="1Panel 文档" class="md-nav__button md-logo" aria-label="1Panel 文档" data-md-component="logo">
+    <a href="../.." title="1Panel 文档" class="md-nav__button md-logo" aria-label="1Panel 文档" data-md-component="logo">
       
-  <img src="../../../img/logo-white.png" alt="logo">
+  <img src="../../img/logo-white.png" alt="logo">
 
     </a>
     1Panel 文档
@@ -435,7 +461,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -459,8 +485,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -484,11 +512,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -509,7 +537,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -527,7 +555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/online_installation/" class="md-nav__link">
+      <a href="../online_installation/" class="md-nav__link">
         
   
   
@@ -555,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/online_upgrade/" class="md-nav__link">
+      <a href="../online_upgrade/" class="md-nav__link">
         
   
   
@@ -583,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/package_installation/" class="md-nav__link">
+      <a href="../package_installation/" class="md-nav__link">
         
   
   
@@ -608,10 +636,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../installation/enterprise_installation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    企业版安装部署
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -627,6 +680,118 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 企业版概览
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 获取企业版安装包
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 安装与升级
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 社区版 / 专业版迁移至企业版
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 社区版 / 专业版迁移至企业版">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 获取迁移工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 迁移前准备
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 执行迁移
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 注意事项
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -639,7 +804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/ali_cloud/" class="md-nav__link">
+      <a href="../ali_cloud/" class="md-nav__link">
         
   
   
@@ -720,7 +885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/v1_migrate/" class="md-nav__link">
+      <a href="../v1_migrate/" class="md-nav__link">
         
   
   
@@ -748,7 +913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/v1_migrate_steps/" class="md-nav__link">
+      <a href="../v1_migrate_steps/" class="md-nav__link">
         
   
   
@@ -784,7 +949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/master_migrate/" class="md-nav__link">
+      <a href="../master_migrate/" class="md-nav__link">
         
   
   
@@ -812,7 +977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/cli/" class="md-nav__link">
+      <a href="../cli/" class="md-nav__link">
         
   
   
@@ -981,7 +1146,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../appstore/" class="md-nav__link">
+      <a href="../../user_manual/appstore/appstore/" class="md-nav__link">
         
   
   
@@ -1009,7 +1174,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../install/" class="md-nav__link">
+      <a href="../../user_manual/appstore/install/" class="md-nav__link">
         
   
   
@@ -1037,7 +1202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../installed/" class="md-nav__link">
+      <a href="../../user_manual/appstore/installed/" class="md-nav__link">
         
   
   
@@ -1065,7 +1230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../setting/" class="md-nav__link">
+      <a href="../../user_manual/appstore/setting/" class="md-nav__link">
         
   
   
@@ -1243,7 +1408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ai/model/" class="md-nav__link">
+      <a href="../../user_manual/ai/model/" class="md-nav__link">
         
   
   
@@ -1271,7 +1436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ai/vllm/" class="md-nav__link">
+      <a href="../../user_manual/ai/vllm/" class="md-nav__link">
         
   
   
@@ -1307,7 +1472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ai/gateway/" class="md-nav__link">
+      <a href="../../user_manual/ai/gateway/" class="md-nav__link">
         
   
   
@@ -1335,7 +1500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ai/benchmark/" class="md-nav__link">
+      <a href="../../user_manual/ai/benchmark/" class="md-nav__link">
         
   
   
@@ -1363,7 +1528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ai/mcp/" class="md-nav__link">
+      <a href="../../user_manual/ai/mcp/" class="md-nav__link">
         
   
   
@@ -1391,7 +1556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ai/gpu/" class="md-nav__link">
+      <a href="../../user_manual/ai/gpu/" class="md-nav__link">
         
   
   
@@ -1490,7 +1655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/websites/" class="md-nav__link">
+      <a href="../../user_manual/websites/websites/" class="md-nav__link">
         
   
   
@@ -1518,7 +1683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/website_create/" class="md-nav__link">
+      <a href="../../user_manual/websites/website_create/" class="md-nav__link">
         
   
   
@@ -1546,7 +1711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/website_config_basic/" class="md-nav__link">
+      <a href="../../user_manual/websites/website_config_basic/" class="md-nav__link">
         
   
   
@@ -1574,7 +1739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/website_config_other/" class="md-nav__link">
+      <a href="../../user_manual/websites/website_config_other/" class="md-nav__link">
         
   
   
@@ -1602,7 +1767,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/website_group/" class="md-nav__link">
+      <a href="../../user_manual/websites/website_group/" class="md-nav__link">
         
   
   
@@ -1630,7 +1795,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/website_backup/" class="md-nav__link">
+      <a href="../../user_manual/websites/website_backup/" class="md-nav__link">
         
   
   
@@ -1658,7 +1823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/openresty/" class="md-nav__link">
+      <a href="../../user_manual/websites/openresty/" class="md-nav__link">
         
   
   
@@ -1757,7 +1922,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/certificate/" class="md-nav__link">
+      <a href="../../user_manual/websites/certificate/" class="md-nav__link">
         
   
   
@@ -1785,7 +1950,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/certificate_create/" class="md-nav__link">
+      <a href="../../user_manual/websites/certificate_create/" class="md-nav__link">
         
   
   
@@ -1813,7 +1978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/certificate_upload/" class="md-nav__link">
+      <a href="../../user_manual/websites/certificate_upload/" class="md-nav__link">
         
   
   
@@ -1841,7 +2006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/certificate_self_sign/" class="md-nav__link">
+      <a href="../../user_manual/websites/certificate_self_sign/" class="md-nav__link">
         
   
   
@@ -1869,7 +2034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/certificate_renew/" class="md-nav__link">
+      <a href="../../user_manual/websites/certificate_renew/" class="md-nav__link">
         
   
   
@@ -1897,7 +2062,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/certificate_acme/" class="md-nav__link">
+      <a href="../../user_manual/websites/certificate_acme/" class="md-nav__link">
         
   
   
@@ -1925,7 +2090,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/certificate_dns/" class="md-nav__link">
+      <a href="../../user_manual/websites/certificate_dns/" class="md-nav__link">
         
   
   
@@ -2022,7 +2187,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/php/" class="md-nav__link">
+      <a href="../../user_manual/websites/php/" class="md-nav__link">
         
   
   
@@ -2050,7 +2215,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/node/" class="md-nav__link">
+      <a href="../../user_manual/websites/node/" class="md-nav__link">
         
   
   
@@ -2078,7 +2243,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/java/" class="md-nav__link">
+      <a href="../../user_manual/websites/java/" class="md-nav__link">
         
   
   
@@ -2106,7 +2271,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/golang/" class="md-nav__link">
+      <a href="../../user_manual/websites/golang/" class="md-nav__link">
         
   
   
@@ -2134,7 +2299,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/python/" class="md-nav__link">
+      <a href="../../user_manual/websites/python/" class="md-nav__link">
         
   
   
@@ -2162,7 +2327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../websites/dotnet/" class="md-nav__link">
+      <a href="../../user_manual/websites/dotnet/" class="md-nav__link">
         
   
   
@@ -2253,7 +2418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../databases/mysql/" class="md-nav__link">
+      <a href="../../user_manual/databases/mysql/" class="md-nav__link">
         
   
   
@@ -2281,7 +2446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../databases/postgresql/" class="md-nav__link">
+      <a href="../../user_manual/databases/postgresql/" class="md-nav__link">
         
   
   
@@ -2309,7 +2474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../databases/redis/" class="md-nav__link">
+      <a href="../../user_manual/databases/redis/" class="md-nav__link">
         
   
   
@@ -2412,7 +2577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../containers/overview/" class="md-nav__link">
+      <a href="../../user_manual/containers/overview/" class="md-nav__link">
         
   
   
@@ -2440,7 +2605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../containers/container/" class="md-nav__link">
+      <a href="../../user_manual/containers/container/" class="md-nav__link">
         
   
   
@@ -2468,7 +2633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../containers/compose/" class="md-nav__link">
+      <a href="../../user_manual/containers/compose/" class="md-nav__link">
         
   
   
@@ -2496,7 +2661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../containers/image/" class="md-nav__link">
+      <a href="../../user_manual/containers/image/" class="md-nav__link">
         
   
   
@@ -2524,7 +2689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../containers/network/" class="md-nav__link">
+      <a href="../../user_manual/containers/network/" class="md-nav__link">
         
   
   
@@ -2552,7 +2717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../containers/volume/" class="md-nav__link">
+      <a href="../../user_manual/containers/volume/" class="md-nav__link">
         
   
   
@@ -2580,7 +2745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../containers/repo/" class="md-nav__link">
+      <a href="../../user_manual/containers/repo/" class="md-nav__link">
         
   
   
@@ -2608,7 +2773,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../containers/compose_template/" class="md-nav__link">
+      <a href="../../user_manual/containers/compose_template/" class="md-nav__link">
         
   
   
@@ -2636,7 +2801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../containers/setting/" class="md-nav__link">
+      <a href="../../user_manual/containers/setting/" class="md-nav__link">
         
   
   
@@ -2731,7 +2896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hosts/file/" class="md-nav__link">
+      <a href="../../user_manual/hosts/file/" class="md-nav__link">
         
   
   
@@ -2759,7 +2924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hosts/monitor/" class="md-nav__link">
+      <a href="../../user_manual/hosts/monitor/" class="md-nav__link">
         
   
   
@@ -2787,7 +2952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hosts/firewall/" class="md-nav__link">
+      <a href="../../user_manual/hosts/firewall/" class="md-nav__link">
         
   
   
@@ -2815,7 +2980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hosts/process/" class="md-nav__link">
+      <a href="../../user_manual/hosts/process/" class="md-nav__link">
         
   
   
@@ -2843,7 +3008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hosts/ssh/" class="md-nav__link">
+      <a href="../../user_manual/hosts/ssh/" class="md-nav__link">
         
   
   
@@ -2879,7 +3044,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../terminal/" class="md-nav__link">
+      <a href="../../user_manual/terminal/" class="md-nav__link">
         
   
   
@@ -2907,7 +3072,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cronjobs/" class="md-nav__link">
+      <a href="../../user_manual/cronjobs/" class="md-nav__link">
         
   
   
@@ -2996,7 +3161,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../toolbox/quick_settings/" class="md-nav__link">
+      <a href="../../user_manual/toolbox/quick_settings/" class="md-nav__link">
         
   
   
@@ -3024,7 +3189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../toolbox/clean/" class="md-nav__link">
+      <a href="../../user_manual/toolbox/clean/" class="md-nav__link">
         
   
   
@@ -3052,7 +3217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../toolbox/supervisor/" class="md-nav__link">
+      <a href="../../user_manual/toolbox/supervisor/" class="md-nav__link">
         
   
   
@@ -3080,7 +3245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../toolbox/clam/" class="md-nav__link">
+      <a href="../../user_manual/toolbox/clam/" class="md-nav__link">
         
   
   
@@ -3108,7 +3273,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../toolbox/ftp/" class="md-nav__link">
+      <a href="../../user_manual/toolbox/ftp/" class="md-nav__link">
         
   
   
@@ -3136,7 +3301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../toolbox/fail2ban/" class="md-nav__link">
+      <a href="../../user_manual/toolbox/fail2ban/" class="md-nav__link">
         
   
   
@@ -3288,7 +3453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/waf/waf/" class="md-nav__link">
+      <a href="../../user_manual/xpack/waf/waf/" class="md-nav__link">
         
   
   
@@ -3316,7 +3481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/waf/dashboard/" class="md-nav__link">
+      <a href="../../user_manual/xpack/waf/dashboard/" class="md-nav__link">
         
   
   
@@ -3344,7 +3509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/waf/global/" class="md-nav__link">
+      <a href="../../user_manual/xpack/waf/global/" class="md-nav__link">
         
   
   
@@ -3372,7 +3537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/waf/site/" class="md-nav__link">
+      <a href="../../user_manual/xpack/waf/site/" class="md-nav__link">
         
   
   
@@ -3400,7 +3565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/waf/log/" class="md-nav__link">
+      <a href="../../user_manual/xpack/waf/log/" class="md-nav__link">
         
   
   
@@ -3428,7 +3593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/waf/block/" class="md-nav__link">
+      <a href="../../user_manual/xpack/waf/block/" class="md-nav__link">
         
   
   
@@ -3464,7 +3629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/node/" class="md-nav__link">
+      <a href="../../user_manual/xpack/node/" class="md-nav__link">
         
   
   
@@ -3492,7 +3657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/tamper/" class="md-nav__link">
+      <a href="../../user_manual/xpack/tamper/" class="md-nav__link">
         
   
   
@@ -3528,7 +3693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../logs/" class="md-nav__link">
+      <a href="../../user_manual/logs/" class="md-nav__link">
         
   
   
@@ -3556,7 +3721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../settings/" class="md-nav__link">
+      <a href="../../user_manual/settings/" class="md-nav__link">
         
   
   
@@ -3588,10 +3753,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -3667,11 +3830,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -3692,7 +3855,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -3710,7 +3873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../openclaw/" class="md-nav__link">
+      <a href="../../user_manual/appstore/openclaw/" class="md-nav__link">
         
   
   
@@ -3738,7 +3901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hermes-agent/" class="md-nav__link">
+      <a href="../../user_manual/appstore/hermes-agent/" class="md-nav__link">
         
   
   
@@ -3766,7 +3929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../openresty/" class="md-nav__link">
+      <a href="../../user_manual/appstore/openresty/" class="md-nav__link">
         
   
   
@@ -3794,7 +3957,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mysql/" class="md-nav__link">
+      <a href="../../user_manual/appstore/mysql/" class="md-nav__link">
         
   
   
@@ -3822,7 +3985,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redis/" class="md-nav__link">
+      <a href="../../user_manual/appstore/redis/" class="md-nav__link">
         
   
   
@@ -3847,37 +4010,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Ollama
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../user_manual/appstore/ollama/" class="md-nav__link">
         
   
   
@@ -3893,70 +4029,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. 打开应用商店
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-ollama" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. 搜索 Ollama 并安装
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. 配置安装参数
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-ollama" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. 访问 Ollama 服务
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3969,7 +4041,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../halo/" class="md-nav__link">
+      <a href="../../user_manual/appstore/halo/" class="md-nav__link">
         
   
   
@@ -3997,7 +4069,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../openlist/" class="md-nav__link">
+      <a href="../../user_manual/appstore/openlist/" class="md-nav__link">
         
   
   
@@ -4025,7 +4097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../maxkb/" class="md-nav__link">
+      <a href="../../user_manual/appstore/maxkb/" class="md-nav__link">
         
   
   
@@ -4053,7 +4125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../phpmyadmin/" class="md-nav__link">
+      <a href="../../user_manual/appstore/phpmyadmin/" class="md-nav__link">
         
   
   
@@ -4081,7 +4153,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../wordpress/" class="md-nav__link">
+      <a href="../../user_manual/appstore/wordpress/" class="md-nav__link">
         
   
   
@@ -4109,7 +4181,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../zabbix/" class="md-nav__link">
+      <a href="../../user_manual/appstore/zabbix/" class="md-nav__link">
         
   
   
@@ -4137,7 +4209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../alist/" class="md-nav__link">
+      <a href="../../user_manual/appstore/alist/" class="md-nav__link">
         
   
   
@@ -4165,7 +4237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../frp/" class="md-nav__link">
+      <a href="../../user_manual/appstore/frp/" class="md-nav__link">
         
   
   
@@ -4193,7 +4265,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../qinglong/" class="md-nav__link">
+      <a href="../../user_manual/appstore/qinglong/" class="md-nav__link">
         
   
   
@@ -4221,7 +4293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nginx-proxy-manager/" class="md-nav__link">
+      <a href="../../user_manual/appstore/nginx-proxy-manager/" class="md-nav__link">
         
   
   
@@ -4249,7 +4321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ddns-go/" class="md-nav__link">
+      <a href="../../user_manual/appstore/ddns-go/" class="md-nav__link">
         
   
   
@@ -4277,7 +4349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gitea/" class="md-nav__link">
+      <a href="../../user_manual/appstore/gitea/" class="md-nav__link">
         
   
   
@@ -4305,7 +4377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dataease/" class="md-nav__link">
+      <a href="../../user_manual/appstore/dataease/" class="md-nav__link">
         
   
   
@@ -4333,7 +4405,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../openwebui/" class="md-nav__link">
+      <a href="../../user_manual/appstore/openwebui/" class="md-nav__link">
         
   
   
@@ -4361,7 +4433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mariadb/" class="md-nav__link">
+      <a href="../../user_manual/appstore/mariadb/" class="md-nav__link">
         
   
   
@@ -4389,7 +4461,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rustdesk/" class="md-nav__link">
+      <a href="../../user_manual/appstore/rustdesk/" class="md-nav__link">
         
   
   
@@ -4417,7 +4489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../minio/" class="md-nav__link">
+      <a href="../../user_manual/appstore/minio/" class="md-nav__link">
         
   
   
@@ -4445,7 +4517,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bitwarden/" class="md-nav__link">
+      <a href="../../user_manual/appstore/bitwarden/" class="md-nav__link">
         
   
   
@@ -4473,7 +4545,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../home-assistant/" class="md-nav__link">
+      <a href="../../user_manual/appstore/home-assistant/" class="md-nav__link">
         
   
   
@@ -4501,7 +4573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mongodb/" class="md-nav__link">
+      <a href="../../user_manual/appstore/mongodb/" class="md-nav__link">
         
   
   
@@ -4529,7 +4601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nextcloud/" class="md-nav__link">
+      <a href="../../user_manual/appstore/nextcloud/" class="md-nav__link">
         
   
   
@@ -4557,7 +4629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lobechat/" class="md-nav__link">
+      <a href="../../user_manual/appstore/lobechat/" class="md-nav__link">
         
   
   
@@ -4585,7 +4657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../jumpserver/" class="md-nav__link">
+      <a href="../../user_manual/appstore/jumpserver/" class="md-nav__link">
         
   
   
@@ -4613,7 +4685,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../stirling-pdf/" class="md-nav__link">
+      <a href="../../user_manual/appstore/stirling-pdf/" class="md-nav__link">
         
   
   
@@ -4641,7 +4713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../chatgpt-next-web/" class="md-nav__link">
+      <a href="../../user_manual/appstore/chatgpt-next-web/" class="md-nav__link">
         
   
   
@@ -4669,7 +4741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cloudreve/" class="md-nav__link">
+      <a href="../../user_manual/appstore/cloudreve/" class="md-nav__link">
         
   
   
@@ -4697,7 +4769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../uptime-kuma/" class="md-nav__link">
+      <a href="../../user_manual/appstore/uptime-kuma/" class="md-nav__link">
         
   
   
@@ -4725,7 +4797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vscode/" class="md-nav__link">
+      <a href="../../user_manual/appstore/vscode/" class="md-nav__link">
         
   
   
@@ -4821,7 +4893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../faq/faq/" class="md-nav__link">
+      <a href="../../faq/faq/" class="md-nav__link">
         
   
   
@@ -4849,7 +4921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../faq/operating_system/" class="md-nav__link">
+      <a href="../../faq/operating_system/" class="md-nav__link">
         
   
   
@@ -4877,7 +4949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../faq/system_function/" class="md-nav__link">
+      <a href="../../faq/system_function/" class="md-nav__link">
         
   
   
@@ -4905,7 +4977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../faq/server_architecture/" class="md-nav__link">
+      <a href="../../faq/server_architecture/" class="md-nav__link">
         
   
   
@@ -4933,7 +5005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../faq/openclaw/" class="md-nav__link">
+      <a href="../../faq/openclaw/" class="md-nav__link">
         
   
   
@@ -4961,7 +5033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../faq/ai_coding/" class="md-nav__link">
+      <a href="../../faq/ai_coding/" class="md-nav__link">
         
   
   
@@ -4996,7 +5068,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev_manual/api_manual/" class="md-nav__link">
+      <a href="../../dev_manual/api_manual/" class="md-nav__link">
         
   
   
@@ -5023,7 +5095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dev_manual/skills/" class="md-nav__link">
+      <a href="../../dev_manual/skills/" class="md-nav__link">
         
   
   
@@ -5050,7 +5122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../changelog/" class="md-nav__link">
+      <a href="../../changelog/" class="md-nav__link">
         
   
   
@@ -5077,7 +5149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../contact/" class="md-nav__link">
+      <a href="../../contact/" class="md-nav__link">
         
   
   
@@ -5466,8 +5538,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -5479,7 +5549,7 @@
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. 打开应用商店
+        1 企业版概览
       
     </span>
   </a>
@@ -5487,10 +5557,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-ollama" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. 搜索 Ollama 并安装
+        2 获取企业版安装包
       
     </span>
   </a>
@@ -5501,7 +5571,7 @@
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. 配置安装参数
+        3 安装与升级
       
     </span>
   </a>
@@ -5509,13 +5579,63 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-ollama" class="md-nav__link">
+  <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. 访问 Ollama 服务
+        4 社区版 / 专业版迁移至企业版
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="4 社区版 / 专业版迁移至企业版">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 获取迁移工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 迁移前准备
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 执行迁移
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 注意事项
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -5536,58 +5656,72 @@
 
 
 
-<h1 id="1panel-ollama">使用 1Panel 可视化安装 Ollama<a class="headerlink" href="#1panel-ollama" title="Permanent link">⚓︎</a></h1>
+  <h1>企业版安装部署</h1>
+
 <div class="admonition note">
-<p><strong>Ollama</strong> 是一个开源的大型语言模型服务，提供了类似 OpenAI 的 API 接口和聊天界面，可以非常方便地部署最新版本的 GPT 模型并通过接口使用。支持热加载模型文件，无需重新启动即可切换不同的模型。</p>
+<p>1Panel 企业版是轻量级 AI 管理平台，可帮助企业实现从底层硬件到智能体（Metal-to-Agent）的统一管理。更多信息请参考 <a href="https://1panel.cn/enterprise.html">1Panel 企业版</a>。</p>
 </div>
-<h2 id="1">1. 打开应用商店<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
+<h2 id="1">1 企业版概览<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
+<p class="original"><img alt="1Panel 企业版功能架构" src="../../img/installation/enterprise_architecture.svg" /></p>
+<h2 id="2">2 获取企业版安装包<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>进入 1Panel 控制台后，点击左侧菜单的 <strong>「应用商店」</strong>。</p>
+<p>如需获取 1Panel 企业版安装包，请先<a href="https://jsj.top/f/umuYtv">申请试用</a>。</p>
 </div>
-<p><img alt="image-20251016110510084" src="../../../img/app/appstores.png" /></p>
-<h2 id="2-ollama">2. 搜索 Ollama 并安装<a class="headerlink" href="#2-ollama" title="Permanent link">⚓︎</a></h2>
+<h2 id="3">3 安装与升级<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>在右上角搜索框输入 <strong>Ollama</strong>，点击应用卡片进入详情页，选择 <strong>安装</strong>。</p>
-</div>
-<p><img alt="image-20251017163039229" src="../../../img/app/ollama.png" /></p>
-<h2 id="3">3. 配置安装参数<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p>你可以根据需要配置</p>
+<p>获取企业版安装包后，将安装包上传至目标服务器并完成解压。安装包中包含 <code>install.sh</code> 和 <code>upgrade.sh</code> 两个脚本，进入解压后的安装包目录后，可根据实际场景执行相应脚本：</p>
 <ul>
-<li><strong>名称</strong> (输入框内可自定义应用名称，默认为 ollama)</li>
-<li><strong>版本</strong> (下拉选择所需的 Ollama 版本)</li>
-<li><strong>端口</strong> (应用的访问端口，默认为 11434)</li>
-<li><strong>端口外部访问</strong> (开启后，将允许从外部网络访问此应用端口)</li>
+<li>首次安装 1Panel 企业版时，执行 <code>install.sh</code> 脚本。</li>
+<li>企业版之间升级时，执行 <code>upgrade.sh</code> 脚本。</li>
 </ul>
-<p>确认设置无误后，点击 <strong>确认</strong> 按钮开始安装。</p>
+<blockquote>
+<p><code>upgrade.sh</code> 仅适用于企业版之间的升级。</p>
+<p>社区版或专业版迁移至企业版时，请使用下文的 <strong>1panel-migrator</strong> 工具完成迁移。</p>
+</blockquote>
 </div>
-<p><img alt="image-20251017163107970" src="../../../img/app/ollama_install.png" /></p>
+<h2 id="4">4 社区版 / 专业版迁移至企业版<a class="headerlink" href="#4" title="Permanent link">⚓︎</a></h2>
+<h3 id="41">4.1 获取迁移工具<a class="headerlink" href="#41" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
-<p>等待安装完成即可</p>
+<p>请下载与服务器架构对应的迁移工具：</p>
+<ul>
+<li><a href="https://gitee.com/fit2cloud-feizhiyun/1panel-migrator/releases">Gitee Releases</a></li>
+<li><a href="https://github.com/1Panel-dev/1panel-migrator/releases">GitHub Releases</a></li>
+</ul>
 </div>
-<h2 id="4-ollama">4. 访问 Ollama 服务<a class="headerlink" href="#4-ollama" title="Permanent link">⚓︎</a></h2>
+<h3 id="42">4.2 迁移前准备<a class="headerlink" href="#42" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
-<p>配置默认访问地址，已配置则忽略此步骤</p>
+<p>执行迁移前，需先将 1Panel 企业版安装包下载到当前 1Panel 所在服务器。企业版安装包需要放置在与当前 1Panel 安装目录同级的位置。</p>
+<p>示例：</p>
+<div class="highlight"><pre><span></span><code>/opt/
+├── 1panel/
+└── 1panel-v2.2.3-linux-amd64.tar.gz
+</code></pre></div>
 </div>
-<p><img alt="image-20251016172322315" src="../../../img/app/setting_ip.png" /></p>
+<h3 id="43">4.3 执行迁移<a class="headerlink" href="#43" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
-<p>返回应用商店，点击 <strong>跳转</strong> 即可访问 Ollama 服务</p>
+<p>执行以下命令，将当前 1Panel 迁移至企业版：</p>
+<div class="highlight"><pre><span></span><code>1panel-migrator<span class="w"> </span>upgrade<span class="w"> </span>enterprise
+</code></pre></div>
+<p>执行后，根据终端提示信息操作即可完成迁移。</p>
 </div>
-<p><img alt="image-20251017171351530" src="../../../img/app/ollama_jump.png" /></p>
+<h3 id="44">4.4 注意事项<a class="headerlink" href="#44" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
-<p>访问页面，可以看到 <code>Ollama is running</code> 表示搭建成功</p>
+<ul>
+<li>请根据服务器架构下载对应的迁移工具。</li>
+<li>迁移前需要提前下载 1Panel 企业版安装包。</li>
+<li>企业版安装包需要放置在与当前 1Panel 安装目录同级的位置。</li>
+<li>迁移前建议先确认当前版本是否在支持范围内。</li>
+</ul>
 </div>
-<p><img alt="image-20251017171445095" src="../../../img/app/ollama_view.png" /></p>
-<div class="admonition note">
-<p>点击 <strong>终端</strong> 连接ollama，使用命令控制</p>
-</div>
-<p><img alt="image-20251017171937567" src="../../../img/app/ollama_use.png" /></p>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -5755,15 +5889,15 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
     
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../../../js/termynal.js"></script>
+        <script src="../../js/termynal.js"></script>
       
-        <script src="../../../js/custom.js"></script>
+        <script src="../../js/custom.js"></script>
       
     
     <script>

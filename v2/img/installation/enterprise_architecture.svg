@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1193" height="551" viewBox="0 0 1193 551" role="img" aria-labelledby="title desc">
+  <title id="title">1Panel 企业版功能架构</title>
+  <desc id="desc">1Panel 企业版由应用层、治理层、模型层和基础设施层组成。</desc>
+  <style>
+    .layer { fill: #ffffff; stroke: #edf0f4; stroke-width: 1.5; }
+    .side { fill: #f2f7ff; }
+    .main-title { fill: #07365e; font-family: 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 19px; font-weight: 700; }
+    .label { fill: #0b0f19; font-family: 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 14px; font-weight: 600; }
+    .box { fill: #ffffff; stroke: #dfe5ec; stroke-width: 1.2; }
+    .blue-box { fill: #eff6ff; stroke: #bfdbfe; stroke-width: 1.2; }
+    .blue-label { fill: #0066ff; font-family: 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 14px; font-weight: 600; }
+    .brand { fill: #536dfe; font-family: 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 24px; font-weight: 700; }
+    .brand-dark { fill: #111827; font-family: 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 22px; font-weight: 700; }
+    .enterprise { fill: #0b0f19; font-family: 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 29px; font-weight: 700; }
+    .subtitle { fill: #526072; font-family: 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; font-weight: 600; }
+    .section-label { font-size: 17px; }
+  </style>
+
+  <rect width="1193" height="551" fill="#ffffff"/>
+
+  <g>
+    <rect class="layer" x="16" y="11" width="807" height="99" rx="9"/>
+    <path class="side" d="M25 11h140v99H25a9 9 0 0 1-9-9V20a9 9 0 0 1 9-9z"/>
+    <g fill="none" stroke="#0066ff" stroke-width="1.5"><rect x="36" y="53" width="7" height="7" rx="1"/><rect x="44" y="59" width="7" height="7" rx="1"/><path d="M47 55h4M39 63h3"/></g>
+    <text class="main-title" x="61" y="65">应用层</text>
+    <g>
+      <rect class="box" x="196" y="28" width="98" height="32" rx="6"/><text class="label" x="210" y="49">OpenCode</text>
+      <rect class="box" x="306" y="28" width="96" height="32" rx="6"/><text class="label" x="320" y="49">OpenClaw</text>
+      <rect class="box" x="414" y="28" width="96" height="32" rx="6"/><text class="label" x="438" y="49">Hermes</text>
+      <rect class="box" x="522" y="28" width="96" height="32" rx="6"/><text class="label" x="546" y="49">MaxKB</text>
+      <rect class="box" x="630" y="28" width="96" height="32" rx="6"/><text class="label" x="664" y="49">n8n</text>
+      <rect class="box" x="738" y="28" width="53" height="32" rx="6"/><text class="label" x="756" y="49">...</text>
+      <text class="blue-label" x="259" y="88">AI 编程</text>
+      <text class="blue-label" x="470" y="88">AI 助理</text>
+      <text class="blue-label" x="655" y="88">智能体开发平台</text>
+    </g>
+  </g>
+
+  <g>
+    <rect class="layer" x="16" y="121" width="807" height="123" rx="9"/>
+    <path class="side" d="M25 121h140v123H25a9 9 0 0 1-9-9v-105a9 9 0 0 1 9-9z"/>
+    <g fill="none" stroke="#0066ff" stroke-width="1.5"><path d="M43 176l7 3v6c0 5-3 8-7 10-4-2-7-5-7-10v-6l7-3z"/><path d="m40 184 2 2 4-5"/></g>
+    <text class="main-title" x="61" y="188">治理层</text>
+    <rect class="blue-box" x="181" y="140" width="624" height="41" rx="6"/><text class="label section-label" x="468" y="166">AI 门户</text>
+    <rect class="box" x="181" y="189" width="203" height="37" rx="6"/><text class="label" x="260" y="212">AI 网关</text>
+    <rect class="box" x="392" y="189" width="201" height="37" rx="6"/><text class="label" x="458" y="212">Skills Hub</text>
+    <rect class="box" x="601" y="189" width="204" height="37" rx="6"/><text class="label" x="671" y="212">MCP 市场</text>
+  </g>
+
+  <g>
+    <rect class="layer" x="16" y="256" width="807" height="144" rx="9"/>
+    <path class="side" d="M25 256h140v144H25a9 9 0 0 1-9-9v-126a9 9 0 0 1 9-9z"/>
+    <g fill="none" stroke="#0066ff" stroke-width="1.5"><circle cx="42" cy="326" r="7"/><path d="M34 320l16 12M34 332l16-12M42 316v20"/></g>
+    <text class="main-title" x="61" y="333">模型层</text>
+    <text class="brand" x="253" y="303">✦ Qwen</text>
+    <text class="brand" x="394" y="303">◒ deepseek</text>
+    <rect x="595" y="273" width="35" height="35" rx="8" fill="#090b10"/><text x="606" y="299" fill="#ffffff" font-family="Arial, sans-serif" font-size="22px" font-weight="700">K</text>
+    <text class="brand-dark" x="640" y="299">KIMI</text>
+    <text class="brand-dark" x="725" y="299">...</text>
+    <rect x="181" y="326" width="624" height="56" rx="6" fill="#e5f0ff"/>
+    <rect class="box" x="193" y="337" width="192" height="35" rx="6"/><text class="label" x="265" y="359">NVIDIA</text>
+    <rect class="box" x="397" y="337" width="192" height="35" rx="6"/><text class="label" x="467" y="359">华为昇腾</text>
+    <rect class="box" x="601" y="337" width="192" height="35" rx="6"/><text class="label" x="682" y="359">Intel</text>
+  </g>
+
+  <g>
+    <rect class="layer" x="16" y="412" width="807" height="123" rx="9"/>
+    <path class="side" d="M25 412h140v123H25a9 9 0 0 1-9-9v-105a9 9 0 0 1 9-9z"/>
+    <g fill="none" stroke="#0066ff" stroke-width="1.5"><path d="M37 469h12l4 5v8H33v-8l4-5z"/><path d="M40 469v-3a3 3 0 0 1 6 0v3"/></g>
+    <text class="main-title" x="61" y="479">基础设施层</text>
+    <rect class="blue-box" x="181" y="430" width="624" height="41" rx="6"/><text class="label section-label" x="452" y="456">虚拟机管理</text>
+    <rect class="box" x="181" y="479" width="149" height="37" rx="6"/><text class="label" x="235" y="502">虚拟机</text>
+    <rect class="box" x="339" y="479" width="151" height="37" rx="6"/><text class="label" x="377" y="502">镜像与模板</text>
+    <rect class="box" x="498" y="479" width="149" height="37" rx="6"/><text class="label" x="558" y="502">网络</text>
+    <rect class="box" x="656" y="479" width="149" height="37" rx="6"/><text class="label" x="704" y="502">存储池</text>
+  </g>
+
+  <text x="844" y="390" fill="#93c5fd" font-family="Georgia, serif" font-size="220px" font-weight="300" style="transform:scaleX(.45); transform-origin:844px 390px">}</text>
+  <text class="enterprise" x="938" y="247">1Panel 企业版</text>
+  <text class="subtitle" x="938" y="292">从底层硬件到智能体（Metal-</text>
+  <text class="subtitle" x="938" y="319">to-Agent）的统一管理平台</text>
+</svg>
