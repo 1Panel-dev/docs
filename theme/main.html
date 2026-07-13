@@ -11,20 +11,30 @@
 
 {% block extrahead %}
     {{ super() }}
+    {% set seo_title = config.site_name %}
+    {% set seo_description = config.site_description %}
+    {% set seo_keywords = "1Panel,Linux 面板,Linux 服务器管理面板,VPS 控制面板,开源运维面板,服务器运维,Docker 管理,容器管理,网站管理,SSL 证书,应用商店,AI Agent,Ollama,OpenClaw,防火墙,WAF,备份恢复" %}
+    {% set seo_url = config.site_url %}
+    {% if page and page.meta %}
+      {% if page.meta.title %}{% set seo_title = page.meta.title %}{% endif %}
+      {% if page.meta.description %}{% set seo_description = page.meta.description %}{% endif %}
+      {% if page.meta.keywords %}{% set seo_keywords = page.meta.keywords %}{% endif %}
+      {% if page.canonical_url %}{% set seo_url = page.canonical_url %}{% endif %}
+    {% endif %}
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="keywords" content="1Panel,Linux 面板,Linux 服务器管理面板,VPS 控制面板,开源运维面板,服务器运维,Docker 管理,容器管理,网站管理,SSL 证书,应用商店,AI Agent,Ollama,OpenClaw,防火墙,WAF,备份恢复">
+    <meta name="keywords" content="{{ seo_keywords }}">
     <meta name="application-name" content="1Panel">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="1Panel 文档">
-    <meta property="og:title" content="1Panel 文档">
-    <meta property="og:description" content="1Panel 是现代化、开源的 Linux 服务器运维管理面板，支持通过 Web 界面管理服务器、网站、数据库、容器、应用商店、AI Agent、安全防护与备份恢复。">
-    <meta property="og:url" content="https://1panel.cn/docs/">
+    <meta property="og:title" content="{{ seo_title }}">
+    <meta property="og:description" content="{{ seo_description }}">
+    <meta property="og:url" content="{{ seo_url }}">
     <meta property="og:locale" content="zh_CN">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="1Panel 文档">
-    <meta name="twitter:description" content="1Panel 是现代化、开源的 Linux 服务器运维管理面板，支持网站、数据库、Docker 容器、应用商店、AI Agent、安全防护与备份恢复。">
+    <meta name="twitter:title" content="{{ seo_title }}">
+    <meta name="twitter:description" content="{{ seo_description }}">
     <link rel="sitemap" type="application/xml" href="https://1panel.cn/docs/sitemap.xml">
     <link rel="alternate" type="text/plain" title="llms.txt" href="https://1panel.cn/docs/llms.txt">
     <script type="application/ld+json">
@@ -81,6 +91,28 @@
       }
     }
     </script>
+    {% if page and page.meta and page.meta.schema_type %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "{{ page.meta.schema_type }}",
+      "headline": "{{ seo_title }}",
+      "description": "{{ seo_description }}",
+      "url": "{{ seo_url }}",
+      "inLanguage": "zh-CN",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "1Panel 文档",
+        "url": "https://1panel.cn/docs/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "1Panel",
+        "url": "https://1panel.cn/"
+      }
+    }
+    </script>
+    {% endif %}
 {% endblock %}
 
 {% block styles %}
