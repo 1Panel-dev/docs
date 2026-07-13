@@ -137,10 +137,11 @@
 === "Java 运行环境"
     !!! note ""
         - bitnamilegacy/java:1.8
-        - bitnamilegacy/java:11
-        - bitnamilegacy/java:17
-        - bitnamilegacy/java:21
-        - bitnamilegacy/java:22
+        - 1panel/java:11
+        - 1panel/java:17
+        - 1panel/java:21
+        - 1panel/java:22
+        - 1panel/java:25
 
 === "Node.js 运行环境"
     !!! note ""
