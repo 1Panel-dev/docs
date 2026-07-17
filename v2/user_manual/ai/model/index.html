@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="1Panel 在线使用文档">
+        <meta name="description" content="介绍在 1Panel 中管理模型账号、Ollama 和 vLLM 服务，以及下载和同步模型的方法。">
       
       
         <meta name="author" content="飞致云">
@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://1panel.cn/docs/v2/user_manual/ai/model/">
       
       
-        <link rel="prev" href="../../appstore/setting/">
+        <link rel="prev" href="../agent/">
       
       
         <link rel="next" href="../vllm/">
@@ -29,7 +29,7 @@
     
     
       
-        <title>Ollama - 1Panel 文档</title>
+        <title>1Panel 模型管理使用说明 - 1Panel 文档</title>
       
     
     
@@ -88,28 +88,36 @@
     
     
     
+    
+    
+      
+      
+      
+      
+      
+    
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="keywords" content="1Panel,Linux 面板,Linux 服务器管理面板,VPS 控制面板,开源运维面板,服务器运维,Docker 管理,容器管理,网站管理,SSL 证书,应用商店,AI Agent,Ollama,OpenClaw,防火墙,WAF,备份恢复">
+    <meta name="keywords" content="1Panel 模型管理,Ollama,vLLM,模型账号,模型下载器,本地大模型">
     <meta name="application-name" content="1Panel">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="article">
     <meta property="og:site_name" content="1Panel 文档">
-    <meta property="og:title" content="1Panel 文档">
-    <meta property="og:description" content="1Panel 在线使用文档">
-    <meta property="og:url" content="https://1panel.cn/docs/v2">
+    <meta property="og:title" content="1Panel 模型管理使用说明">
+    <meta property="og:description" content="介绍在 1Panel 中管理模型账号、Ollama 和 vLLM 服务，以及下载和同步模型的方法。">
+    <meta property="og:url" content="https://1panel.cn/docs/v2/user_manual/ai/model/">
     <meta property="og:locale" content="zh_CN">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="1Panel 文档">
-    <meta name="twitter:description" content="1Panel 在线使用文档">
-    <link rel="sitemap" type="application/xml" href="https://1panel.cn/docs/sitemap.xml">
-    <link rel="alternate" type="text/plain" title="llms.txt" href="https://1panel.cn/docs/llms.txt">
+    <meta name="twitter:title" content="1Panel 模型管理使用说明">
+    <meta name="twitter:description" content="介绍在 1Panel 中管理模型账号、Ollama 和 vLLM 服务，以及下载和同步模型的方法。">
+    <link rel="sitemap" type="application/xml" href="https://1panel.cn/docs/v2/sitemap.xml">
+    <link rel="alternate" type="text/plain" title="llms.txt" href="https://1panel.cn/docs/v2/llms.txt">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "1Panel 文档",
-      "url": "https://1panel.cn/docs/",
+      "url": "https://1panel.cn/docs/v2/",
       "inLanguage": "zh-CN",
       "publisher": {
         "@type": "Organization",
@@ -121,7 +129,7 @@
       },
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://1panel.cn/docs/?q={search_term_string}",
+        "target": "https://1panel.cn/docs/v2/?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     }
@@ -135,7 +143,7 @@
       "operatingSystem": "Linux",
       "url": "https://1panel.cn/",
       "downloadUrl": "https://github.com/1Panel-dev/1Panel/releases",
-      "softwareHelp": "https://1panel.cn/docs/",
+      "softwareHelp": "https://1panel.cn/docs/v2/",
       "license": "https://www.gnu.org/licenses/gpl-3.0.html",
       "description": "1Panel 是现代化、开源的 Linux 服务器运维管理面板，提供 Web 服务器管理、网站部署、数据库管理、Docker 容器管理、应用商店、AI Agent、安全防护、备份恢复等能力。",
       "featureList": [
@@ -155,6 +163,28 @@
         "sameAs": [
           "https://github.com/1Panel-dev/1Panel"
         ]
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "1Panel 模型管理使用说明",
+      "description": "介绍在 1Panel 中管理模型账号、Ollama 和 vLLM 服务，以及下载和同步模型的方法。",
+      "url": "https://1panel.cn/docs/v2/user_manual/ai/model/",
+      "mainEntityOfPage": "https://1panel.cn/docs/v2/user_manual/ai/model/",
+      "inLanguage": "zh-CN",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "1Panel 文档",
+        "url": "https://1panel.cn/docs/v2/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "1Panel",
+        "url": "https://1panel.cn/"
       }
     }
     </script>
@@ -179,7 +209,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ollama" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -282,7 +312,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Ollama
+              1Panel 模型管理使用说明
             
           </span>
         </div>
@@ -879,6 +909,8 @@
       
         
       
+        
+      
     
     
     
@@ -925,6 +957,34 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
       
@@ -944,10 +1004,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
-          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
             
   
   
@@ -965,8 +1025,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_1">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1119,6 +1179,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1127,10 +1191,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
             
   
   
@@ -1148,8 +1212,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1166,7 +1230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://openclaw.club/archives/9u1xZTMF" class="md-nav__link">
+      <a href="../agent/" class="md-nav__link">
         
   
   
@@ -1195,65 +1259,12 @@
   
   
   
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    模型
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_2_2">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    模型
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
+      
+        
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
@@ -1263,7 +1274,7 @@
   <span class="md-ellipsis">
     
   
-    Ollama
+    模型管理
   
 
     
@@ -1281,7 +1292,7 @@
   <span class="md-ellipsis">
     
   
-    Ollama
+    模型管理
   
 
     
@@ -1297,6 +1308,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1305,22 +1318,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ollama" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ollama
+        1 模型账号
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Ollama">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-ollama" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 Ollama
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 Ollama">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-ollama" class="md-nav__link">
+  <a href="#21" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1 管理 Ollama 应用
+        2.1 使用前提
       
     </span>
   </a>
@@ -1328,10 +1352,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#22" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2 添加模型
+        2.2 添加和运行模型
       
     </span>
   </a>
@@ -1339,54 +1363,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#23" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3 运行模型
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-ai" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4 AI 代理增强
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5 查看连接信息
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6 从服务器同步
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-web" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7 WEB 管理工具
+        2.3 连接和同步
       
     </span>
   </a>
@@ -1399,63 +1379,24 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tensorrt-llm" class="md-nav__link">
+  <a href="#3-vllm" class="md-nav__link">
     <span class="md-ellipsis">
       
-        TensorRT LLM
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="TensorRT LLM">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#0" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        0 前置条件
+        3 vLLM
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1 创建模型
+        4 模型下载器
       
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2 查看模型日志
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3 其他模型操作
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1491,14 +1432,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -1547,6 +1480,34 @@
     
   
     基准测试
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../skills_hub/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Skills Hub
   
 
     
@@ -1655,10 +1616,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
         
           
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
             
   
   
@@ -1676,8 +1637,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1757,7 +1718,7 @@
   <span class="md-ellipsis">
     
   
-    基本设置
+    网站配置
   
 
     
@@ -1785,7 +1746,7 @@
   <span class="md-ellipsis">
     
   
-    其他设置
+    网站操作
   
 
     
@@ -1922,10 +1883,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
         
           
-          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
             
   
   
@@ -1943,8 +1904,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_4">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2108,7 +2069,7 @@
   <span class="md-ellipsis">
     
   
-    Acme 账户
+    ACME 账户
   
 
     
@@ -2187,10 +2148,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
         
           
-          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
             
   
   
@@ -2208,8 +2169,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2317,7 +2278,7 @@
   <span class="md-ellipsis">
     
   
-    Golang
+    Go
   
 
     
@@ -2410,6 +2371,8 @@
       
         
       
+        
+      
     
     
     
@@ -2418,10 +2381,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
         
           
-          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
             
   
   
@@ -2439,8 +2402,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_6">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2534,6 +2497,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../databases/mongodb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MongoDB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2577,10 +2568,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
         
           
-          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
             
   
   
@@ -2598,8 +2589,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2819,7 +2810,7 @@
   <span class="md-ellipsis">
     
   
-    编排模版
+    编排模板
   
 
     
@@ -2888,6 +2879,8 @@
       
         
       
+        
+      
     
     
     
@@ -2896,10 +2889,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" >
         
           
-          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
             
   
   
@@ -2917,8 +2910,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_8">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2999,6 +2992,34 @@
     
   
     防火墙
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosts/disk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    磁盘管理
   
 
     
@@ -3161,10 +3182,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" >
         
           
-          <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="0">
             
   
   
@@ -3182,8 +3203,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_11">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_12">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3384,6 +3405,22 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -3392,10 +3429,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_13" >
         
           
-          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_13" id="__nav_3_13_label" tabindex="0">
             
   
   
@@ -3413,8 +3450,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_12">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_13">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3423,6 +3460,34 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xpack/mobile_app/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    移动端
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -3445,6 +3510,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -3453,10 +3522,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_13_2" >
         
           
-          <label class="md-nav__link" for="__nav_3_12_1" id="__nav_3_12_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_13_2" id="__nav_3_13_2_label" tabindex="0">
             
   
   
@@ -3474,8 +3543,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_12_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_12_1">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_13_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_13_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3527,7 +3596,7 @@
   <span class="md-ellipsis">
     
   
-    概览
+    首页
   
 
     
@@ -3548,42 +3617,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/waf/global/" class="md-nav__link">
+      <a href="../../xpack/waf/stat/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    全局设置
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../xpack/waf/site/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    网站设置
+    攻击报表
   
 
     
@@ -3653,6 +3694,90 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xpack/waf/blackwhite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    黑白名单
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xpack/waf/site/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    网站设置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xpack/waf/global/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    全局设置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3696,6 +3821,62 @@
   
   
     <li class="md-nav__item">
+      <a href="../../xpack/website_monitor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    网站监控
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xpack/database_cluster/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据库集群
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../xpack/tamper/" class="md-nav__link">
         
   
@@ -3704,6 +3885,146 @@
     
   
     网站防篡改
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xpack/resource_sync/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    资源同步
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xpack/appearance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    界面设置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enterprise/user_management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    用户管理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enterprise/vm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    虚拟机
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enterprise/ops_report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    安全运维报表
   
 
     
@@ -5133,9 +5454,26 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../dev_manual/skills/" class="md-nav__link">
+    
+    
+      
         
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -5149,7 +5487,79 @@
   
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Skills 技能
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dev_manual/skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1Panel-skills
+  
+
+    
+  </span>
+  
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dev_manual/appstore_skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1Panel-appstore-skills
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -5577,6 +5987,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -5585,22 +5997,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ollama" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ollama
+        1 模型账号
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Ollama">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-ollama" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 Ollama
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 Ollama">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-ollama" class="md-nav__link">
+  <a href="#21" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1 管理 Ollama 应用
+        2.1 使用前提
       
     </span>
   </a>
@@ -5608,10 +6031,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#22" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2 添加模型
+        2.2 添加和运行模型
       
     </span>
   </a>
@@ -5619,54 +6042,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#23" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3 运行模型
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-ai" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4 AI 代理增强
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5 查看连接信息
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6 从服务器同步
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-web" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7 WEB 管理工具
+        2.3 连接和同步
       
     </span>
   </a>
@@ -5679,63 +6058,24 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tensorrt-llm" class="md-nav__link">
+  <a href="#3-vllm" class="md-nav__link">
     <span class="md-ellipsis">
       
-        TensorRT LLM
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="TensorRT LLM">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#0" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        0 前置条件
+        3 vLLM
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1 创建模型
+        4 模型下载器
       
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2 查看模型日志
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3 其他模型操作
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -5756,90 +6096,67 @@
 
 
 
-  <h1>Ollama</h1>
-
-<h2 id="ollama">Ollama<a class="headerlink" href="#ollama" title="Permanent link">⚓︎</a></h2>
-<h3 id="1-ollama">1 管理 Ollama 应用<a class="headerlink" href="#1-ollama" title="Permanent link">⚓︎</a></h3>
+<h1 id="_1">模型管理<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
 <div class="admonition note">
-<p>要使用模型管理功能，需要先在应用商店中安装 Ollama 应用。Ollama 安装完成后可以在该页面查看 Ollama 应用状态，并进行启动、停止及重启等操作。</p>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/ai/overview.png" /></p>
-<h3 id="2">2 添加模型<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>点击添加模型，输入模型名称点击添加按钮即可从 <a href="https://ollama.com/search">Ollama 官方仓库</a>拉取对应模型。</p>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/ai/model_pull.png" /></p>
-<h3 id="3">3 运行模型<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>点击某个模型所在行的【运行】操作，即可在当前页面打开在线终端与该模型进行对话。</p>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/ai/model_run.png" /></p>
-<h3 id="4-ai">4 AI 代理增强<a class="headerlink" href="#4-ai" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>通过该功能可以为 Ollama 应用配置反向代理，从而支持域名、HTTPS、IP 白名单等配置，增强使用大模型时的安全性。</p>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/ai/api_proxy.png" /></p>
-<h3 id="5">5 查看连接信息<a class="headerlink" href="#5" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>点击列表上方的【连接信息】按钮，即可查看 Ollama 应用的连接信息。</p>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/ai/connection_info.png" /></p>
-<blockquote>
-<p>应用商店部署的 Ollama 采用容器化方式运行，不同的场景需要根据页面提示选择对应的连接信息。</p>
-</blockquote>
-<h3 id="6">6 从服务器同步<a class="headerlink" href="#6" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>当使用了其他工具或应用程序添加了模型，模型列表信息与实际不一致时，可以点击列表上方的【从服务器同步】按钮，主动从 Ollama 查询当前模型列表。</p>
-</div>
-<h3 id="7-web">7 WEB 管理工具<a class="headerlink" href="#7-web" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>如果需要使用 WEB 图形化界面管理并使用 Ollama 时，可以列表上方的【OpenWebUI】按钮，跳转到对应工具页面。</p>
-<p>目前支持的管理工具有：</p>
-<ul>
-<li><a href="https://github.com/open-webui/open-webui">OpenWebUI</a></li>
-</ul>
-</div>
-<h2 id="tensorrt-llm">TensorRT LLM<a class="headerlink" href="#tensorrt-llm" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p>TensorRT LLM 是 NVIDIA 推出的全面开源库，用于在 NVIDIA GPU 上加速和优化最新大语言模型（LLM）的推理性能。</p>
-</div>
-<h3 id="0">0 前置条件<a class="headerlink" href="#0" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>在使用 TensorRT LLM 创建模型之前，需要先安装 NVIDIA 显卡驱动并安装配置 NVIDIA Container Toolkit。参考文档【<a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html">Installing the NVIDIA Container Toolkit</a>】。</p>
-</div>
-<h3 id="1">1 创建模型<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>在 TensorRT LLM 模型管理页面，点击【创建】按钮，输入模型名称等参数后，点击【确认】按钮即可创建模型。</p>
+<p>模型管理用于统一维护 AI 功能使用的模型账号和本地模型。入口为左侧菜单 <strong>AI -&gt; 模型</strong>，页面包含 <strong>模型账号</strong> 和 <strong>本地模型</strong> 两个标签页。</p>
 </div>
 <div class="admonition info">
-<p class="admonition-title">参数说明</p>
+<p class="admonition-title">版本说明</p>
+<p>模型账号和 Ollama 管理在社区版、专业版、企业版中均可使用。vLLM 和模型下载器需要专业版或企业版许可证。</p>
+</div>
+<h2 id="1">1 模型账号<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
+<p>模型账号保存模型服务的连接信息，可供智能体、AI 搜索等功能选择。点击 <strong>创建</strong> 后，按页面提示配置以下信息：</p>
+</div>
 <ul>
-<li><strong>名称</strong>：模型名称。</li>
-<li><strong>容器名称</strong>：TensorRT LLM 模型管理功能，会使用 TensorRT LLM 镜像启动一个容器来运行模型，容器名称需要唯一，默认使用模型名称。</li>
-<li><strong>镜像</strong>：TensorRT LLM 镜像，默认使用 NVIDIA 官方镜像。</li>
-<li><strong>版本</strong>：TensorRT LLM 镜像的镜像标签，对应不同的 TensorRT LLM 版本，可以查看 <a href="https://catalog.ngc.nvidia.com/orgs/nvidia/teams/tensorrt-llm/containers/release/tags">NVIDIA TensorRT LLM 官方仓库</a> 获取可用版本。</li>
-<li><strong>模型目录</strong>：选择服务器上的本地模型目录挂载到容器中，需要将模型文件夹提前放置在该目录中。</li>
-<li><strong>启动命令</strong>：启动容器时执行运行模型的命令，默认使用 NVIDIA 官方启动命令，可以自定义启动命令。需要注意启动命令中的模型路径，1Panel 会将上一个参数的本地模型目录映射到容器的 /models 目录。如果选择的模型目录为最终的模型路径，例如 /home/DeepSeek-V3，那么启动命令中 <code>trtllm-server</code> 后直接跟 <code>/models</code> 即可；如果选择的模型目录为模型文件夹的父目录，例如最终模型路径为 /home/DeepSeek-V3，选择的模型目录参数为 /home，则启动命令中 <code>trtllm-server</code> 后需要跟 <code>/models/DeepSeek-V3</code> 路径。</li>
-<li><strong>端口</strong>：配置 TensorRT LLM 容器的端口映射，可以将容器启动命令中的 8000 端口映射到服务器的 8000 端口，从而可以通过服务器 IP:8000 访问 TensorRT LLM 服务（需要勾选端口外部访问）。</li>
-<li><strong>环境变量</strong>：为 TensorRT LLM 容器配置环境变量。</li>
-<li><strong>挂载</strong>：为 TensorRT LLM 容器挂载额外的目录，可以挂载服务器上的本地目录到容器中，从而可以在容器中访问服务器上的本地目录。</li>
+<li><strong>名称</strong>：模型账号在 1Panel 中的显示名称。</li>
+<li><strong>模型提供商</strong>：选择预置提供商，或选择自定义、Ollama、vLLM 等类型。</li>
+<li><strong>API Key</strong>：模型服务的访问凭证。是否需要填写取决于提供商。</li>
+<li><strong>Base URL</strong>：模型服务 API 地址。部分预置提供商使用默认地址，自定义、Ollama 和 vLLM 可按实际服务填写。</li>
+<li><strong>API 类型</strong>：按提供商支持情况选择兼容协议。</li>
+<li><strong>模型池</strong>：维护模型 ID、显示名称、Context Window、Max Tokens、输入类型和推理能力。</li>
 </ul>
+<p>创建完成后，可以在列表中验证连接、编辑账号、维护模型池或删除账号。编辑已经被智能体使用的账号时，可按页面选项同步更新相关智能体配置。</p>
+<div class="admonition warning">
+<p class="admonition-title">凭证安全</p>
+<p>API Key 属于敏感信息，仅向受信任的管理员开放模型账号管理权限。</p>
 </div>
-<p class="original"><img alt="img.png" src="../../../img/ai/create_trtllm.png" /></p>
-<h3 id="2_1">2 查看模型日志<a class="headerlink" href="#2_1" title="Permanent link">⚓︎</a></h3>
+<h2 id="2-ollama">2 Ollama<a class="headerlink" href="#2-ollama" title="Permanent link">⚓︎</a></h2>
+<h3 id="21">2.1 使用前提<a class="headerlink" href="#21" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
-<p>在 TensorRT LLM 模型管理页面，点击模型所在行的【查看日志】按钮，即可查看模型启动及运行日志。</p>
+<p>使用 Ollama 管理前，需要先从 <strong>应用商店</strong> 安装 Ollama。安装完成后，页面会显示应用运行状态，并提供启动、停止、重启和连接信息等操作。</p>
 </div>
-<h3 id="3_1">3 其他模型操作<a class="headerlink" href="#3_1" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>在 TensorRT LLM 模型管理页面，可以对模型进行停止、启动、重启、删除、编辑等操作。</p>
+<p class="original"><img alt="Ollama 管理" src="../../../img/ai/overview.png" /></p>
+<h3 id="22">2.2 添加和运行模型<a class="headerlink" href="#22" title="Permanent link">⚓︎</a></h3>
+<p>点击 <strong>添加模型</strong>，输入 <a href="https://ollama.com/search">Ollama 模型库</a>中的模型名称后确认，1Panel 将创建后台拉取任务。模型可用后，可以执行运行、重建或删除等操作。</p>
+<p class="original"><img alt="添加 Ollama 模型" src="../../../img/ai/model_pull.png" /></p>
+<p>点击模型所在行的 <strong>运行</strong>，可在页面内打开终端与模型对话。</p>
+<p class="original"><img alt="运行 Ollama 模型" src="../../../img/ai/model_run.png" /></p>
+<h3 id="23">2.3 连接和同步<a class="headerlink" href="#23" title="Permanent link">⚓︎</a></h3>
+<ul>
+<li><strong>连接信息</strong>：查看不同访问场景下的 Ollama 地址。容器内访问、主机访问和外部访问的地址可能不同，应以页面显示为准。</li>
+<li><strong>从服务器同步</strong>：当模型由其他工具添加或删除后，从 Ollama 服务重新读取模型列表。</li>
+<li><strong>AI 代理增强</strong>：为 Ollama 配置反向代理，可结合域名、HTTPS 和 IP 白名单限制外部访问。</li>
+<li><strong>Open WebUI</strong>：按页面入口跳转至已支持的 Web 管理工具。</li>
+</ul>
+<h2 id="3-vllm">3 vLLM<a class="headerlink" href="#3-vllm" title="Permanent link">⚓︎</a></h2>
+<p>vLLM 页面用于创建和维护本地推理服务，支持查看状态、编辑、启动、停止、重启、删除和任务进度。具体配置参见 <a href="../vllm/">vLLM</a>。</p>
+<h2 id="4">4 模型下载器<a class="headerlink" href="#4" title="Permanent link">⚓︎</a></h2>
+<div class="admonition info">
+<p class="admonition-title">版本说明</p>
+<p>模型下载器需要专业版或企业版许可证。</p>
 </div>
+<p>模型下载器用于搜索和下载 Hugging Face、ModelScope 或兼容镜像站中的模型，并统一查看下载任务和本地模型目录。可按页面配置下载目录、镜像地址和访问令牌；私有或受限模型必须使用具有相应权限的令牌。</p>
+<p>下载任务支持查看进度和错误信息，并可取消或重试。删除本地模型前，应确认该目录未被 vLLM 或其他服务使用。</p>
 
 
 
 
 
 
+
+  
+  
 
 
 

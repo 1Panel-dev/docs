@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="1Panel 在线使用文档">
+        <meta name="description" content="介绍将已有 PEM 格式 SSL 证书和私钥上传到 1Panel，并用于网站 HTTPS 配置的方法。">
       
       
         <meta name="author" content="飞致云">
@@ -29,7 +29,7 @@
     
     
       
-        <title>上传证书 - 1Panel 文档</title>
+        <title>1Panel 上传 SSL 证书 - 1Panel 文档</title>
       
     
     
@@ -88,28 +88,36 @@
     
     
     
+    
+    
+      
+      
+      
+      
+      
+    
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="keywords" content="1Panel,Linux 面板,Linux 服务器管理面板,VPS 控制面板,开源运维面板,服务器运维,Docker 管理,容器管理,网站管理,SSL 证书,应用商店,AI Agent,Ollama,OpenClaw,防火墙,WAF,备份恢复">
+    <meta name="keywords" content="1Panel 上传证书,SSL 证书,PEM 证书,HTTPS 配置,SSL 私钥">
     <meta name="application-name" content="1Panel">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="article">
     <meta property="og:site_name" content="1Panel 文档">
-    <meta property="og:title" content="1Panel 文档">
-    <meta property="og:description" content="1Panel 在线使用文档">
-    <meta property="og:url" content="https://1panel.cn/docs/v2">
+    <meta property="og:title" content="1Panel 上传 SSL 证书">
+    <meta property="og:description" content="介绍将已有 PEM 格式 SSL 证书和私钥上传到 1Panel，并用于网站 HTTPS 配置的方法。">
+    <meta property="og:url" content="https://1panel.cn/docs/v2/user_manual/websites/certificate_upload/">
     <meta property="og:locale" content="zh_CN">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="1Panel 文档">
-    <meta name="twitter:description" content="1Panel 在线使用文档">
-    <link rel="sitemap" type="application/xml" href="https://1panel.cn/docs/sitemap.xml">
-    <link rel="alternate" type="text/plain" title="llms.txt" href="https://1panel.cn/docs/llms.txt">
+    <meta name="twitter:title" content="1Panel 上传 SSL 证书">
+    <meta name="twitter:description" content="介绍将已有 PEM 格式 SSL 证书和私钥上传到 1Panel，并用于网站 HTTPS 配置的方法。">
+    <link rel="sitemap" type="application/xml" href="https://1panel.cn/docs/v2/sitemap.xml">
+    <link rel="alternate" type="text/plain" title="llms.txt" href="https://1panel.cn/docs/v2/llms.txt">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "1Panel 文档",
-      "url": "https://1panel.cn/docs/",
+      "url": "https://1panel.cn/docs/v2/",
       "inLanguage": "zh-CN",
       "publisher": {
         "@type": "Organization",
@@ -121,7 +129,7 @@
       },
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://1panel.cn/docs/?q={search_term_string}",
+        "target": "https://1panel.cn/docs/v2/?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     }
@@ -135,7 +143,7 @@
       "operatingSystem": "Linux",
       "url": "https://1panel.cn/",
       "downloadUrl": "https://github.com/1Panel-dev/1Panel/releases",
-      "softwareHelp": "https://1panel.cn/docs/",
+      "softwareHelp": "https://1panel.cn/docs/v2/",
       "license": "https://www.gnu.org/licenses/gpl-3.0.html",
       "description": "1Panel 是现代化、开源的 Linux 服务器运维管理面板，提供 Web 服务器管理、网站部署、数据库管理、Docker 容器管理、应用商店、AI Agent、安全防护、备份恢复等能力。",
       "featureList": [
@@ -155,6 +163,28 @@
         "sameAs": [
           "https://github.com/1Panel-dev/1Panel"
         ]
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "1Panel 上传 SSL 证书",
+      "description": "介绍将已有 PEM 格式 SSL 证书和私钥上传到 1Panel，并用于网站 HTTPS 配置的方法。",
+      "url": "https://1panel.cn/docs/v2/user_manual/websites/certificate_upload/",
+      "mainEntityOfPage": "https://1panel.cn/docs/v2/user_manual/websites/certificate_upload/",
+      "inLanguage": "zh-CN",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "1Panel 文档",
+        "url": "https://1panel.cn/docs/v2/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "1Panel",
+        "url": "https://1panel.cn/"
       }
     }
     </script>
@@ -179,7 +209,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-acme" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -282,7 +312,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              上传证书
+              1Panel 上传 SSL 证书
             
           </span>
         </div>
@@ -879,6 +909,8 @@
       
         
       
+        
+      
     
     
     
@@ -925,6 +957,34 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
       
@@ -944,10 +1004,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
-          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
             
   
   
@@ -965,8 +1025,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_1">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1117,6 +1177,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1125,10 +1189,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
         
           
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
             
   
   
@@ -1146,8 +1210,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1164,7 +1228,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://openclaw.club/archives/9u1xZTMF" class="md-nav__link">
+      <a href="../../ai/agent/" class="md-nav__link">
         
   
   
@@ -1191,59 +1255,6 @@
   
   
   
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    模型
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2_2">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    模型
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../ai/model/" class="md-nav__link">
         
@@ -1252,7 +1263,7 @@
   <span class="md-ellipsis">
     
   
-    Ollama
+    模型管理
   
 
     
@@ -1289,14 +1300,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -1345,6 +1348,34 @@
     
   
     基准测试
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/skills_hub/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Skills Hub
   
 
     
@@ -1453,10 +1484,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
         
           
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
             
   
   
@@ -1474,8 +1505,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1555,7 +1586,7 @@
   <span class="md-ellipsis">
     
   
-    基本设置
+    网站配置
   
 
     
@@ -1583,7 +1614,7 @@
   <span class="md-ellipsis">
     
   
-    其他设置
+    网站操作
   
 
     
@@ -1722,10 +1753,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
             
   
   
@@ -1743,8 +1774,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_4">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1823,24 +1854,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    上传证书
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1858,34 +1873,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-acme" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1 Acme 账户管理
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -1962,7 +1949,7 @@
   <span class="md-ellipsis">
     
   
-    Acme 账户
+    ACME 账户
   
 
     
@@ -2041,10 +2028,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
         
           
-          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
             
   
   
@@ -2062,8 +2049,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2171,7 +2158,7 @@
   <span class="md-ellipsis">
     
   
-    Golang
+    Go
   
 
     
@@ -2264,6 +2251,8 @@
       
         
       
+        
+      
     
     
     
@@ -2272,10 +2261,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
         
           
-          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
             
   
   
@@ -2293,8 +2282,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_6">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2388,6 +2377,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../databases/mongodb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MongoDB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2431,10 +2448,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
         
           
-          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
             
   
   
@@ -2452,8 +2469,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2673,7 +2690,7 @@
   <span class="md-ellipsis">
     
   
-    编排模版
+    编排模板
   
 
     
@@ -2742,6 +2759,8 @@
       
         
       
+        
+      
     
     
     
@@ -2750,10 +2769,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" >
         
           
-          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
             
   
   
@@ -2771,8 +2790,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_8">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2853,6 +2872,34 @@
     
   
     防火墙
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosts/disk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    磁盘管理
   
 
     
@@ -3015,10 +3062,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" >
         
           
-          <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="0">
             
   
   
@@ -3036,8 +3083,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_11">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_12">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3238,6 +3285,22 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -3246,10 +3309,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_13" >
         
           
-          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_13" id="__nav_3_13_label" tabindex="0">
             
   
   
@@ -3267,8 +3330,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_12">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_13">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3277,6 +3340,34 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xpack/mobile_app/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    移动端
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -3299,6 +3390,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -3307,10 +3402,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_13_2" >
         
           
-          <label class="md-nav__link" for="__nav_3_12_1" id="__nav_3_12_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_13_2" id="__nav_3_13_2_label" tabindex="0">
             
   
   
@@ -3328,8 +3423,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_12_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_12_1">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_13_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_13_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3381,7 +3476,7 @@
   <span class="md-ellipsis">
     
   
-    概览
+    首页
   
 
     
@@ -3402,42 +3497,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../xpack/waf/global/" class="md-nav__link">
+      <a href="../../xpack/waf/stat/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    全局设置
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../xpack/waf/site/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    网站设置
+    攻击报表
   
 
     
@@ -3507,6 +3574,90 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xpack/waf/blackwhite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    黑白名单
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xpack/waf/site/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    网站设置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xpack/waf/global/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    全局设置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3550,6 +3701,62 @@
   
   
     <li class="md-nav__item">
+      <a href="../../xpack/website_monitor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    网站监控
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xpack/database_cluster/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据库集群
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../xpack/tamper/" class="md-nav__link">
         
   
@@ -3558,6 +3765,146 @@
     
   
     网站防篡改
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xpack/resource_sync/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    资源同步
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../xpack/appearance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    界面设置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enterprise/user_management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    用户管理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enterprise/vm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    虚拟机
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enterprise/ops_report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    安全运维报表
   
 
     
@@ -4987,9 +5334,26 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../dev_manual/skills/" class="md-nav__link">
+    
+    
+      
         
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -5003,7 +5367,79 @@
   
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Skills 技能
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dev_manual/skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1Panel-skills
+  
+
+    
+  </span>
+  
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dev_manual/appstore_skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1Panel-appstore-skills
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -5431,25 +5867,8 @@
   
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-acme" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1 Acme 账户管理
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -5466,16 +5885,17 @@
 
 
 
-  <h1>上传证书</h1>
-
-<h2 id="1-acme">1 Acme 账户管理<a class="headerlink" href="#1-acme" title="Permanent link">⚓︎</a></h2>
+<h1 id="_1">上传证书<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
 <div class="admonition note">
 <p>点击证书列表上方的【上传证书】按钮，用户可以将已有的 SSL 证书上传至 1Panel 中，用于网站的 HTTPS 访问。</p>
 </div>
 <p class="browser-mockup"><img alt="img.png" src="../../../img/websites/certificate_upload.png" /></p>
 <div class="admonition note">
-<p>上传证书时，用户需要提供证书文件和私钥文件。证书文件和私钥文件需要使用 PEM 格式。</p>
-<p>证书文件和私钥文件需要使用 PEM 格式。</p>
+<p>上传证书时，用户需要提供 PEM 格式的证书和私钥，两者必须互相匹配。上传后应检查证书域名、签发机构和有效期，再用于网站 HTTPS 配置。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">私钥安全</p>
+<p>私钥属于敏感凭证，应仅通过安全渠道保存和传输。</p>
 </div>
 
 
@@ -5483,6 +5903,9 @@
 
 
 
+
+  
+  
 
 
 

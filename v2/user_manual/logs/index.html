@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="1Panel 在线使用文档">
+        <meta name="description" content="介绍 1Panel 操作日志、访问日志、网站日志、系统日志、登录日志和任务日志的查询方法。">
       
       
         <meta name="author" content="飞致云">
@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://1panel.cn/docs/v2/user_manual/logs/">
       
       
-        <link rel="prev" href="../xpack/tamper/">
+        <link rel="prev" href="../enterprise/ops_report/">
       
       
         <link rel="next" href="../settings/">
@@ -29,7 +29,7 @@
     
     
       
-        <title>日志审计 - 1Panel 文档</title>
+        <title>1Panel 日志审计使用说明 - 1Panel 文档</title>
       
     
     
@@ -88,28 +88,36 @@
     
     
     
+    
+    
+      
+      
+      
+      
+      
+    
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="keywords" content="1Panel,Linux 面板,Linux 服务器管理面板,VPS 控制面板,开源运维面板,服务器运维,Docker 管理,容器管理,网站管理,SSL 证书,应用商店,AI Agent,Ollama,OpenClaw,防火墙,WAF,备份恢复">
+    <meta name="keywords" content="1Panel 日志审计,操作日志,访问日志,网站日志,登录日志,任务日志">
     <meta name="application-name" content="1Panel">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="article">
     <meta property="og:site_name" content="1Panel 文档">
-    <meta property="og:title" content="1Panel 文档">
-    <meta property="og:description" content="1Panel 在线使用文档">
-    <meta property="og:url" content="https://1panel.cn/docs/v2">
+    <meta property="og:title" content="1Panel 日志审计使用说明">
+    <meta property="og:description" content="介绍 1Panel 操作日志、访问日志、网站日志、系统日志、登录日志和任务日志的查询方法。">
+    <meta property="og:url" content="https://1panel.cn/docs/v2/user_manual/logs/">
     <meta property="og:locale" content="zh_CN">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="1Panel 文档">
-    <meta name="twitter:description" content="1Panel 在线使用文档">
-    <link rel="sitemap" type="application/xml" href="https://1panel.cn/docs/sitemap.xml">
-    <link rel="alternate" type="text/plain" title="llms.txt" href="https://1panel.cn/docs/llms.txt">
+    <meta name="twitter:title" content="1Panel 日志审计使用说明">
+    <meta name="twitter:description" content="介绍 1Panel 操作日志、访问日志、网站日志、系统日志、登录日志和任务日志的查询方法。">
+    <link rel="sitemap" type="application/xml" href="https://1panel.cn/docs/v2/sitemap.xml">
+    <link rel="alternate" type="text/plain" title="llms.txt" href="https://1panel.cn/docs/v2/llms.txt">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "1Panel 文档",
-      "url": "https://1panel.cn/docs/",
+      "url": "https://1panel.cn/docs/v2/",
       "inLanguage": "zh-CN",
       "publisher": {
         "@type": "Organization",
@@ -121,7 +129,7 @@
       },
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://1panel.cn/docs/?q={search_term_string}",
+        "target": "https://1panel.cn/docs/v2/?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     }
@@ -135,7 +143,7 @@
       "operatingSystem": "Linux",
       "url": "https://1panel.cn/",
       "downloadUrl": "https://github.com/1Panel-dev/1Panel/releases",
-      "softwareHelp": "https://1panel.cn/docs/",
+      "softwareHelp": "https://1panel.cn/docs/v2/",
       "license": "https://www.gnu.org/licenses/gpl-3.0.html",
       "description": "1Panel 是现代化、开源的 Linux 服务器运维管理面板，提供 Web 服务器管理、网站部署、数据库管理、Docker 容器管理、应用商店、AI Agent、安全防护、备份恢复等能力。",
       "featureList": [
@@ -155,6 +163,28 @@
         "sameAs": [
           "https://github.com/1Panel-dev/1Panel"
         ]
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "1Panel 日志审计使用说明",
+      "description": "介绍 1Panel 操作日志、访问日志、网站日志、系统日志、登录日志和任务日志的查询方法。",
+      "url": "https://1panel.cn/docs/v2/user_manual/logs/",
+      "mainEntityOfPage": "https://1panel.cn/docs/v2/user_manual/logs/",
+      "inLanguage": "zh-CN",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "1Panel 文档",
+        "url": "https://1panel.cn/docs/v2/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "1Panel",
+        "url": "https://1panel.cn/"
       }
     }
     </script>
@@ -179,7 +209,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -282,7 +312,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              日志审计
+              1Panel 日志审计使用说明
             
           </span>
         </div>
@@ -879,6 +909,8 @@
       
         
       
+        
+      
     
     
     
@@ -925,6 +957,34 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
       
@@ -944,10 +1004,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
-          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
             
   
   
@@ -965,8 +1025,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_1">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1117,6 +1177,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1125,10 +1189,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
         
           
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
             
   
   
@@ -1146,8 +1210,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1164,7 +1228,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://openclaw.club/archives/9u1xZTMF" class="md-nav__link">
+      <a href="../ai/agent/" class="md-nav__link">
         
   
   
@@ -1191,59 +1255,6 @@
   
   
   
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    模型
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2_2">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    模型
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../ai/model/" class="md-nav__link">
         
@@ -1252,7 +1263,7 @@
   <span class="md-ellipsis">
     
   
-    Ollama
+    模型管理
   
 
     
@@ -1289,14 +1300,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -1345,6 +1348,34 @@
     
   
     基准测试
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai/skills_hub/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Skills Hub
   
 
     
@@ -1453,10 +1484,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
         
           
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
             
   
   
@@ -1474,8 +1505,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1555,7 +1586,7 @@
   <span class="md-ellipsis">
     
   
-    基本设置
+    网站配置
   
 
     
@@ -1583,7 +1614,7 @@
   <span class="md-ellipsis">
     
   
-    其他设置
+    网站操作
   
 
     
@@ -1720,10 +1751,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
         
           
-          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
             
   
   
@@ -1741,8 +1772,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_4">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1906,7 +1937,7 @@
   <span class="md-ellipsis">
     
   
-    Acme 账户
+    ACME 账户
   
 
     
@@ -1985,10 +2016,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
         
           
-          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
             
   
   
@@ -2006,8 +2037,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2115,7 +2146,7 @@
   <span class="md-ellipsis">
     
   
-    Golang
+    Go
   
 
     
@@ -2208,6 +2239,8 @@
       
         
       
+        
+      
     
     
     
@@ -2216,10 +2249,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
         
           
-          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
             
   
   
@@ -2237,8 +2270,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_6">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2332,6 +2365,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../databases/mongodb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MongoDB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2375,10 +2436,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
         
           
-          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
             
   
   
@@ -2396,8 +2457,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2617,7 +2678,7 @@
   <span class="md-ellipsis">
     
   
-    编排模版
+    编排模板
   
 
     
@@ -2686,6 +2747,8 @@
       
         
       
+        
+      
     
     
     
@@ -2694,10 +2757,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" >
         
           
-          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
             
   
   
@@ -2715,8 +2778,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_8">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2797,6 +2860,34 @@
     
   
     防火墙
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hosts/disk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    磁盘管理
   
 
     
@@ -2959,10 +3050,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" >
         
           
-          <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="0">
             
   
   
@@ -2980,8 +3071,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_11">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_12">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3182,6 +3273,22 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -3190,10 +3297,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_13" >
         
           
-          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_13" id="__nav_3_13_label" tabindex="0">
             
   
   
@@ -3211,8 +3318,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_12">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_13">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3221,6 +3328,34 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xpack/mobile_app/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    移动端
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -3243,6 +3378,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -3251,10 +3390,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_13_2" >
         
           
-          <label class="md-nav__link" for="__nav_3_12_1" id="__nav_3_12_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_13_2" id="__nav_3_13_2_label" tabindex="0">
             
   
   
@@ -3272,8 +3411,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_12_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_12_1">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_13_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_13_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3325,7 +3464,7 @@
   <span class="md-ellipsis">
     
   
-    概览
+    首页
   
 
     
@@ -3346,42 +3485,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../xpack/waf/global/" class="md-nav__link">
+      <a href="../xpack/waf/stat/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    全局设置
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../xpack/waf/site/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    网站设置
+    攻击报表
   
 
     
@@ -3451,6 +3562,90 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xpack/waf/blackwhite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    黑白名单
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xpack/waf/site/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    网站设置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xpack/waf/global/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    全局设置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3494,6 +3689,62 @@
   
   
     <li class="md-nav__item">
+      <a href="../xpack/website_monitor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    网站监控
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xpack/database_cluster/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据库集群
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../xpack/tamper/" class="md-nav__link">
         
   
@@ -3502,6 +3753,146 @@
     
   
     网站防篡改
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xpack/resource_sync/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    资源同步
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xpack/appearance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    界面设置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enterprise/user_management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    用户管理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enterprise/vm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    虚拟机
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enterprise/ops_report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    安全运维报表
   
 
     
@@ -3535,6 +3926,8 @@
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
+      
+        
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
@@ -3578,6 +3971,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -3589,49 +3984,10 @@
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1 面板日志
+        1 操作日志
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="1 面板日志">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#11" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.1 操作日志
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.2 访问日志
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#13" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.3 系统日志
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -3639,7 +3995,7 @@
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2 登录日志
+        2 访问日志
       
     </span>
   </a>
@@ -3651,6 +4007,39 @@
     <span class="md-ellipsis">
       
         3 网站日志
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 系统日志
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 登录日志
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 任务日志
       
     </span>
   </a>
@@ -5046,9 +5435,26 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../dev_manual/skills/" class="md-nav__link">
+    
+    
+      
         
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -5062,7 +5468,79 @@
   
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Skills 技能
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev_manual/skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1Panel-skills
+  
+
+    
+  </span>
+  
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev_manual/appstore_skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1Panel-appstore-skills
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -5490,6 +5968,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -5501,49 +5981,10 @@
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1 面板日志
+        1 操作日志
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="1 面板日志">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#11" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.1 操作日志
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.2 访问日志
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#13" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.3 系统日志
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -5551,7 +5992,7 @@
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2 登录日志
+        2 访问日志
       
     </span>
   </a>
@@ -5563,6 +6004,39 @@
     <span class="md-ellipsis">
       
         3 网站日志
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 系统日志
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 登录日志
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 任务日志
       
     </span>
   </a>
@@ -5586,46 +6060,57 @@
 
 
 
-  <h1>日志审计</h1>
-
-<h2 id="1">1 面板日志<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
-<h3 id="11">1.1 操作日志<a class="headerlink" href="#11" title="Permanent link">⚓︎</a></h3>
+<h1 id="_1">日志审计<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
 <div class="admonition note">
-<p>用于记录用户在 1Panel 上进行的操作。</p>
+<p>日志审计用于查询 1Panel 操作、面板访问、网站、系统、SSH 登录和后台任务日志。入口为左侧菜单 <strong>日志审计</strong>。社区版、专业版和企业版均可使用，用户需要具有日志查看权限。</p>
 </div>
-<p class="original"><img alt="面板日志-操作日志" src="../../img/logs/%E9%9D%A2%E6%9D%BF%E6%97%A5%E5%BF%97-%E6%93%8D%E4%BD%9C%E6%97%A5%E5%BF%97.png" /></p>
-<h3 id="12">1.2 访问日志<a class="headerlink" href="#12" title="Permanent link">⚓︎</a></h3>
+<h2 id="1">1 操作日志<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>用于记录 1Panel 控制台的访问日志。</p>
+<p>记录用户在 1Panel 中执行的操作，可按时间、用户、来源 IP、状态或操作内容筛选。排查配置被修改、资源被删除或权限操作时，应结合操作时间和操作详情确认执行人及结果。</p>
 </div>
-<p class="original"><img alt="面板日志-访问日志" src="../../img/logs/%E9%9D%A2%E6%9D%BF%E6%97%A5%E5%BF%97-%E8%AE%BF%E9%97%AE%E6%97%A5%E5%BF%97.png" /></p>
-<h3 id="13">1.3 系统日志<a class="headerlink" href="#13" title="Permanent link">⚓︎</a></h3>
+<p class="original"><img alt="操作日志" src="../../img/logs/%E9%9D%A2%E6%9D%BF%E6%97%A5%E5%BF%97-%E6%93%8D%E4%BD%9C%E6%97%A5%E5%BF%97.png" /></p>
+<h2 id="2">2 访问日志<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>用于记录 1Panel 服务的运行日志，可用于开发人员等快速定位问题。</p>
+<p>记录对 1Panel 控制台的访问请求，用于排查异常请求、接口错误或来源 IP。访问日志不是 SSH 登录日志，两者的数据来源和用途不同。</p>
 </div>
-<p class="original"><img alt="面板日志-系统日志" src="../../img/logs/%E9%9D%A2%E6%9D%BF%E6%97%A5%E5%BF%97-%E7%B3%BB%E7%BB%9F%E6%97%A5%E5%BF%97.png" /></p>
-<h2 id="2">2 登录日志<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p>主要记录服务器的 ssh 登录记录，可用于查询是否有人恶意登录和操作。</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">提示</p>
-<p>日志内容从操作系统 SSH 登录日志文件中读取而来，文件位置一般为 <code>/var/log/secure</code> 或者 <code>/var/log/auth.log</code>。</p>
-<p>当需要清理登录日志时，可以手动删除上述文件中的历史内容。</p>
-</div>
-<p class="original"><img alt="登录日志" src="../../img/logs/%E7%99%BB%E5%BD%95%E6%97%A5%E5%BF%97.png" /></p>
+<p class="original"><img alt="访问日志" src="../../img/logs/%E9%9D%A2%E6%9D%BF%E6%97%A5%E5%BF%97-%E8%AE%BF%E9%97%AE%E6%97%A5%E5%BF%97.png" /></p>
 <h2 id="3">3 网站日志<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>用于查看在 1Panel 上创建的各个网站的日志，分为运行日志和错误日志，可以用于排查网站的访问问题。</p>
+<p>选择网站后查看 OpenResty 访问日志和错误日志，可按关键字或时间排查网站访问问题。页面能否读取日志取决于网站类型、OpenResty 状态和日志配置。</p>
 </div>
-<p class="original"><img alt="img.png" src="../../img/logs/%E7%BD%91%E7%AB%99%E6%97%A5%E5%BF%97-%E8%BF%90%E8%A1%8C%E6%97%A5%E5%BF%97.png" /></p>
-<p class="original"><img alt="img.png" src="../../img/logs/%E7%BD%91%E7%AB%99%E6%97%A5%E5%BF%97-%E9%94%99%E8%AF%AF%E6%97%A5%E5%BF%97.png" /></p>
+<p class="original"><img alt="网站访问日志" src="../../img/logs/%E7%BD%91%E7%AB%99%E6%97%A5%E5%BF%97-%E8%BF%90%E8%A1%8C%E6%97%A5%E5%BF%97.png" /></p>
+<p class="original"><img alt="网站错误日志" src="../../img/logs/%E7%BD%91%E7%AB%99%E6%97%A5%E5%BF%97-%E9%94%99%E8%AF%AF%E6%97%A5%E5%BF%97.png" /></p>
+<h2 id="4">4 系统日志<a class="headerlink" href="#4" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
+<p>查看 1Panel 服务运行日志，可按日志级别筛选并下载。升级、任务下发、接口调用或服务异常时，可先在此定位错误时间和上下文。</p>
+</div>
+<p class="original"><img alt="系统日志" src="../../img/logs/%E9%9D%A2%E6%9D%BF%E6%97%A5%E5%BF%97-%E7%B3%BB%E7%BB%9F%E6%97%A5%E5%BF%97.png" /></p>
+<h2 id="5">5 登录日志<a class="headerlink" href="#5" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
+<p>展示操作系统的 SSH 登录记录和登录状态，用于检查异常来源和暴力尝试。数据通常来自 <code>/var/log/secure</code> 或 <code>/var/log/auth.log</code>，实际路径由发行版和 SSH 日志配置决定。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">日志来源</p>
+<p>清理或轮转系统 SSH 日志会同步影响页面可查询的历史记录。1Panel 不会为被操作系统删除的 SSH 日志单独保留完整副本。</p>
+</div>
+<p class="original"><img alt="SSH 登录日志" src="../../img/logs/%E7%99%BB%E5%BD%95%E6%97%A5%E5%BF%97.png" /></p>
+<h2 id="6">6 任务日志<a class="headerlink" href="#6" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
+<p>后台任务会记录任务名称、状态、开始时间等信息。可按任务状态筛选，并打开详情查看实时或已完成日志。应用安装、升级、备份、模型下载等异步操作失败时，应根据页面提示进入对应任务详情。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">敏感信息</p>
+<p>日志可能包含主机地址、路径、用户名或接口参数。下载或提交日志前应移除密码、令牌、Cookie、私钥和其他敏感信息。</p>
+</div>
 
 
 
 
 
 
+
+  
+  
 
 
 

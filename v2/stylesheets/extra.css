@@ -2,6 +2,23 @@
 .md-typeset details {
   border-width: 0;
   border-left-width: 4px;
+  border-color: #005eeb !important;
+}
+
+.md-typeset .admonition > .admonition-title,
+.md-typeset details > summary {
+  background-color: rgba(0, 94, 235, 0.1) !important;
+}
+
+.md-typeset .admonition > .admonition-title::before,
+.md-typeset details > summary::before {
+  background-color: #005eeb !important;
+}
+
+/* Match the product introduction image width without enlarging smaller images. */
+.md-content img {
+  height: auto;
+  max-width: min(100%, 1100px);
 }
 
 /* Align content images with the text column after resizing source files. */
@@ -14,7 +31,7 @@
 /* Shrink browser-mockup wrappers to the actual image width and align them left. */
 .md-content .browser-mockup {
   width: fit-content;
-  max-width: 100%;
+  max-width: min(100%, 1100px);
   margin-left: 0;
   margin-right: 0;
 }

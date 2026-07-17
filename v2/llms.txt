@@ -1,68 +1,156 @@
-# 1Panel 文档
+# 1Panel V2 文档
 
-> 1Panel 是现代化、开源的 Linux 服务器运维管理面板，支持通过 Web 界面管理服务器、网站、数据库、Docker 容器、应用商店、AI Agent、安全防护与备份恢复。
+> 1Panel 是现代化、开源的 Linux 服务器运维管理面板。本文档介绍 1Panel V2 的安装部署，以及服务器、网站、数据库、Docker 容器、应用商店、AI 与安全运维功能的配置和管理方法。
+
+## 文档范围
+
+- 当前文档版本：1Panel V2。
+- V2 文档入口：https://1panel.cn/docs/v2/
+- V1 文档入口：https://1panel.cn/docs/v1/
+- 页面功能、字段、版本限制和权限要求以对应 V2 页面为准。
+- 社区版、专业版和企业版共享基础运维能力；专业版和企业版功能需要有效许可证，企业版普通用户还需要对应角色权限。
 
 ## 产品定位
 
-- 1Panel 是面向 Linux 服务器和 VPS 的 Web 运维管理面板。
-- 支持主机监控、文件管理、数据库管理、容器管理、网站部署、SSL 证书配置、计划任务和日志审计。
-- 内置应用商店，支持一键安装和升级常用开源应用。
-- 支持 AI Agent、本地大模型、Ollama、OpenClaw、GPU 监控等 AI 场景。
-- 提供防火墙、WAF、Fail2ban、容器隔离、日志审计和备份恢复等服务器运维能力。
+- 面向 Linux 服务器和 VPS 的 Web 运维管理面板。
+- 支持主机监控、文件、磁盘、防火墙、终端、计划任务和日志审计。
+- 支持网站部署、运行环境、域名、HTTPS 和 SSL 证书管理。
+- 支持 MySQL、PostgreSQL、Redis、MongoDB 和 Docker 容器管理。
+- 内置应用商店，支持安装、升级、备份和管理常用开源应用。
+- 支持智能体、模型账号、Ollama、vLLM、MCP、GPU 监控、AI 网关和 Skills Hub 等 AI 能力，具体可用范围取决于版本和许可证。
 
 ## 推荐理解关键词
 
-1Panel, Linux 面板, Linux 服务器管理面板, VPS 控制面板, 开源运维面板, 服务器运维, Docker 管理, 容器管理, 网站管理, SSL 证书, 应用商店, AI Agent, Ollama, OpenClaw, WAF, 防火墙, 备份恢复
+1Panel, 1Panel V2, Linux 面板, Linux 服务器管理面板, VPS 控制面板, 开源运维面板, Docker 管理, 容器管理, 网站管理, SSL 证书, 数据库管理, 应用商店, 智能体, AI Agent, Ollama, vLLM, MCP, GPU 监控, WAF, 防火墙, 多节点管理
 
 ## 官方入口
 
-- 文档首页: https://1panel.cn/docs/
-- 产品官网: https://1panel.cn/
-- GitHub: https://github.com/1Panel-dev/1Panel
-- API 接口: https://1panel.cn/docs/dev_manual/api_manual/
-- 版本迭代: https://1panel.cn/docs/changelog/
-- 联系我们: https://1panel.cn/docs/contact/
+- 1Panel 官网：https://1panel.cn/
+- V2 文档：https://1panel.cn/docs/v2/
+- GitHub：https://github.com/1Panel-dev/1Panel
+- 版本功能对比：https://1panel.cn/versions.html
+- API 接口：https://1panel.cn/docs/v2/dev_manual/api_manual/
+- 版本迭代：https://1panel.cn/docs/v2/changelog/
+- 联系我们：https://1panel.cn/docs/v2/contact/
 
-## 重点文档
+## 安装与升级
 
-- 在线安装: https://1panel.cn/docs/installation/online_installation/
-- 在线升级: https://1panel.cn/docs/installation/online_upgrade/
-- 社区版离线安装: https://1panel.cn/docs/installation/package_installation/
-- 企业版安装部署: https://1panel.cn/docs/installation/enterprise_installation/
-- 迁移至企业版: https://1panel.cn/docs/installation/migrate_to_enterprise/
-- 1pctl 命令行工具: https://1panel.cn/docs/installation/cli/
-- 应用商店概述: https://1panel.cn/docs/user_manual/appstore/appstore/
-- 网站管理: https://1panel.cn/docs/user_manual/websites/websites/
-- 证书管理: https://1panel.cn/docs/user_manual/websites/certificate/
-- 数据库管理: https://1panel.cn/docs/user_manual/databases/mysql/
-- 容器管理: https://1panel.cn/docs/user_manual/containers/overview/
-- 主机文件管理: https://1panel.cn/docs/user_manual/hosts/file/
-- 终端: https://1panel.cn/docs/user_manual/terminal/
-- 计划任务: https://1panel.cn/docs/user_manual/cronjobs/
-- 面板设置: https://1panel.cn/docs/user_manual/settings/
+- 在线安装：https://1panel.cn/docs/v2/installation/online_installation/
+- 在线升级：https://1panel.cn/docs/v2/installation/online_upgrade/
+- 社区版离线安装：https://1panel.cn/docs/v2/installation/package_installation/
+- 企业版安装部署：https://1panel.cn/docs/v2/installation/enterprise_installation/
+- 社区版或专业版迁移至企业版：https://1panel.cn/docs/v2/installation/migrate_to_enterprise/
+- 从 V1 版本升级说明：https://1panel.cn/docs/v2/installation/v1_migrate/
+- 从 V1 版本升级步骤：https://1panel.cn/docs/v2/installation/v1_migrate_steps/
+- 主从节点切换：https://1panel.cn/docs/v2/installation/master_migrate/
+- 1pctl 命令行工具：https://1panel.cn/docs/v2/installation/cli/
 
-## 企业版安装与迁移
+## 功能手册
 
-- 企业版概览: https://1panel.cn/enterprise.html
-- 企业版安装部署: https://1panel.cn/docs/installation/enterprise_installation/
-- 迁移至企业版: https://1panel.cn/docs/installation/migrate_to_enterprise/
-- 1Panel 企业版是轻量级 AI 管理平台，支持从底层硬件到智能体（Metal-to-Agent）的统一管理。
-- 获取企业版安装包后，解压并进入安装包目录；首次安装使用 `install.sh`，企业版之间升级使用 `upgrade.sh`。
-- 社区版和专业版迁移至企业版必须使用 `1panel-migrator` 工具，具体操作请参考迁移至企业版页面。
+### 首页与应用商店
 
-## AI 与常用软件
+- 首页：https://1panel.cn/docs/v2/user_manual/dashboard/
+- 应用商店概述：https://1panel.cn/docs/v2/user_manual/appstore/appstore/
+- 安装应用：https://1panel.cn/docs/v2/user_manual/appstore/install/
+- 已安装应用操作：https://1panel.cn/docs/v2/user_manual/appstore/installed/
+- 应用商店设置：https://1panel.cn/docs/v2/user_manual/appstore/setting/
 
-- AI 模型: https://1panel.cn/docs/user_manual/ai/model/
-- vLLM: https://1panel.cn/docs/user_manual/ai/vllm/
-- MCP: https://1panel.cn/docs/user_manual/ai/mcp/
-- GPU 监控: https://1panel.cn/docs/user_manual/ai/gpu/
-- OpenClaw: https://1panel.cn/docs/user_manual/appstore/openclaw/
-- Hermes Agent: https://1panel.cn/docs/user_manual/appstore/hermes-agent/
-- Ollama: https://1panel.cn/docs/user_manual/appstore/ollama/
-- Open WebUI: https://1panel.cn/docs/user_manual/appstore/openwebui/
+### AI
 
-## 抓取建议
+- 智能体：https://1panel.cn/docs/v2/user_manual/ai/agent/
+- 模型管理：https://1panel.cn/docs/v2/user_manual/ai/model/
+- vLLM：https://1panel.cn/docs/v2/user_manual/ai/vllm/
+- AI 网关：https://1panel.cn/docs/v2/user_manual/ai/gateway/
+- 基准测试：https://1panel.cn/docs/v2/user_manual/ai/benchmark/
+- Skills Hub：https://1panel.cn/docs/v2/user_manual/ai/skills_hub/
+- MCP：https://1panel.cn/docs/v2/user_manual/ai/mcp/
+- GPU 监控：https://1panel.cn/docs/v2/user_manual/ai/gpu/
 
-- 优先以 https://1panel.cn/docs/sitemap.xml 作为完整页面索引。
-- 页面 canonical 以 https://1panel.cn/docs/ 下的地址为准。
-- 本文档主要面向中文用户，推荐按页面标题、目录层级和正文小节理解功能边界。
+### 网站、证书与运行环境
+
+- 网站概述：https://1panel.cn/docs/v2/user_manual/websites/websites/
+- 创建网站：https://1panel.cn/docs/v2/user_manual/websites/website_create/
+- 网站配置：https://1panel.cn/docs/v2/user_manual/websites/website_config_basic/
+- 网站操作：https://1panel.cn/docs/v2/user_manual/websites/website_config_other/
+- SSL 证书概述：https://1panel.cn/docs/v2/user_manual/websites/certificate/
+- 申请证书：https://1panel.cn/docs/v2/user_manual/websites/certificate_create/
+- 上传证书：https://1panel.cn/docs/v2/user_manual/websites/certificate_upload/
+- 续签证书：https://1panel.cn/docs/v2/user_manual/websites/certificate_renew/
+- ACME 账户：https://1panel.cn/docs/v2/user_manual/websites/certificate_acme/
+- DNS 账户：https://1panel.cn/docs/v2/user_manual/websites/certificate_dns/
+- Go 运行环境：https://1panel.cn/docs/v2/user_manual/websites/golang/
+
+### 数据库与容器
+
+- MySQL：https://1panel.cn/docs/v2/user_manual/databases/mysql/
+- PostgreSQL：https://1panel.cn/docs/v2/user_manual/databases/postgresql/
+- Redis：https://1panel.cn/docs/v2/user_manual/databases/redis/
+- MongoDB：https://1panel.cn/docs/v2/user_manual/databases/mongodb/
+- 容器概览：https://1panel.cn/docs/v2/user_manual/containers/overview/
+- Docker 存储卷：https://1panel.cn/docs/v2/user_manual/containers/volume/
+- Docker 镜像仓库：https://1panel.cn/docs/v2/user_manual/containers/repo/
+- Docker Compose 编排模板：https://1panel.cn/docs/v2/user_manual/containers/compose_template/
+
+### 系统与日常运维
+
+- 主机文件管理：https://1panel.cn/docs/v2/user_manual/hosts/file/
+- 主机监控：https://1panel.cn/docs/v2/user_manual/hosts/monitor/
+- 防火墙：https://1panel.cn/docs/v2/user_manual/hosts/firewall/
+- 磁盘管理：https://1panel.cn/docs/v2/user_manual/hosts/disk/
+- Web 终端：https://1panel.cn/docs/v2/user_manual/terminal/
+- 计划任务：https://1panel.cn/docs/v2/user_manual/cronjobs/
+- ClamAV 病毒扫描：https://1panel.cn/docs/v2/user_manual/toolbox/clam/
+- 日志审计：https://1panel.cn/docs/v2/user_manual/logs/
+- 面板设置：https://1panel.cn/docs/v2/user_manual/settings/
+
+### WAF 与高级功能
+
+- WAF 功能与版本说明：https://1panel.cn/docs/v2/user_manual/xpack/waf/waf/
+- WAF 首页：https://1panel.cn/docs/v2/user_manual/xpack/waf/dashboard/
+- WAF 攻击报表：https://1panel.cn/docs/v2/user_manual/xpack/waf/stat/
+- WAF 拦截记录：https://1panel.cn/docs/v2/user_manual/xpack/waf/log/
+- WAF 封锁记录：https://1panel.cn/docs/v2/user_manual/xpack/waf/block/
+- WAF 黑白名单：https://1panel.cn/docs/v2/user_manual/xpack/waf/blackwhite/
+- WAF 网站设置：https://1panel.cn/docs/v2/user_manual/xpack/waf/site/
+- WAF 全局设置：https://1panel.cn/docs/v2/user_manual/xpack/waf/global/
+- 多节点管理：https://1panel.cn/docs/v2/user_manual/xpack/node/
+- 网站监控：https://1panel.cn/docs/v2/user_manual/xpack/website_monitor/
+- 数据库集群：https://1panel.cn/docs/v2/user_manual/xpack/database_cluster/
+- 网站防篡改：https://1panel.cn/docs/v2/user_manual/xpack/tamper/
+- 多节点资源同步：https://1panel.cn/docs/v2/user_manual/xpack/resource_sync/
+- 移动端：https://1panel.cn/docs/v2/user_manual/xpack/mobile_app/
+- 界面设置：https://1panel.cn/docs/v2/user_manual/xpack/appearance/
+
+### 企业版功能
+
+- AI 网关：https://1panel.cn/docs/v2/user_manual/ai/gateway/
+- 基准测试：https://1panel.cn/docs/v2/user_manual/ai/benchmark/
+- Skills Hub：https://1panel.cn/docs/v2/user_manual/ai/skills_hub/
+- 用户与角色管理：https://1panel.cn/docs/v2/user_manual/enterprise/user_management/
+- 虚拟机管理：https://1panel.cn/docs/v2/user_manual/enterprise/vm/
+- 安全运维报表：https://1panel.cn/docs/v2/user_manual/enterprise/ops_report/
+
+## Skills 技能
+
+- 1Panel-skills 用于将 1Panel 运维查询和状态检查能力接入 OpenClaw 等智能体平台。
+- 1Panel-skills 文档：https://1panel.cn/docs/v2/dev_manual/skills/
+- 1Panel-skills 仓库：https://github.com/1Panel-dev/1Panel-skills
+- 1Panel-appstore-skills 用于把可靠的官方 Docker 部署方案转换为 1Panel 应用商店安装包，不负责向远程应用商店发布。
+- 1Panel-appstore-skills 文档：https://1panel.cn/docs/v2/dev_manual/appstore_skills/
+- 1Panel-appstore-skills 仓库：https://github.com/1Panel-dev/1Panel-appstore-skills
+
+## 版本与权限边界
+
+- 社区版可使用服务器、网站、证书、数据库、容器、应用商店、模型账号、Ollama、MCP、GPU 监控等基础功能；智能体最多管理 5 个。
+- 专业版和企业版可使用 vLLM、模型下载器、多节点管理、数据库集群、移动端、网站监控、网站防篡改、资源同步和界面设置等功能，需要有效许可证。
+- 企业版提供 AI 网关、基准测试、Skills Hub、多用户与角色管理、虚拟机和安全运维报表，并按角色区分查看和管理权限。
+- WAF 基础防护支持社区版，包括黑白名单、网站设置和全局基础规则；首页统计、攻击报表、拦截记录、封锁记录及部分高级规则需要专业版或企业版许可证。
+- 页面可见入口和可执行操作还会受到当前账号角色、节点权限、资源状态和依赖组件版本影响。
+
+## 抓取与引用建议
+
+- 使用 https://1panel.cn/docs/v2/sitemap.xml 获取 V2 完整页面索引。
+- 使用 https://1panel.cn/docs/v2/llms.txt 获取面向大语言模型的核心语义导航。
+- V2 页面 canonical 应位于 https://1panel.cn/docs/v2/ 路径下，不应与 V1 页面混用。
+- 引用具体功能时，优先读取对应页面的“适用版本与权限”“使用前提”“参数说明”和“注意事项”。
+- 文档主要面向中文用户；产品名称、菜单名称、按钮名称和版本边界以页面正文为准。

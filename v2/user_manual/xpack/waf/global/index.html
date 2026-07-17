@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="1Panel 在线使用文档">
+        <meta name="description" content="介绍 1Panel WAF 全局频率限制、默认规则、自定义规则、黑名单数据和日志配置，并说明版本差异。">
       
       
         <meta name="author" content="飞致云">
@@ -15,10 +15,10 @@
         <link rel="canonical" href="https://1panel.cn/docs/v2/user_manual/xpack/waf/global/">
       
       
-        <link rel="prev" href="../dashboard/">
+        <link rel="prev" href="../site/">
       
       
-        <link rel="next" href="../site/">
+        <link rel="next" href="../../node/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>全局设置 - 1Panel 文档</title>
+        <title>1Panel WAF 全局设置 - 1Panel 文档</title>
       
     
     
@@ -88,28 +88,36 @@
     
     
     
+    
+    
+      
+      
+      
+      
+      
+    
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="keywords" content="1Panel,Linux 面板,Linux 服务器管理面板,VPS 控制面板,开源运维面板,服务器运维,Docker 管理,容器管理,网站管理,SSL 证书,应用商店,AI Agent,Ollama,OpenClaw,防火墙,WAF,备份恢复">
+    <meta name="keywords" content="1Panel WAF,WAF 全局设置,频率限制,SQL 注入,XSS,自定义规则,Web 应用防火墙">
     <meta name="application-name" content="1Panel">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="article">
     <meta property="og:site_name" content="1Panel 文档">
-    <meta property="og:title" content="1Panel 文档">
-    <meta property="og:description" content="1Panel 在线使用文档">
-    <meta property="og:url" content="https://1panel.cn/docs/v2">
+    <meta property="og:title" content="1Panel WAF 全局设置">
+    <meta property="og:description" content="介绍 1Panel WAF 全局频率限制、默认规则、自定义规则、黑名单数据和日志配置，并说明版本差异。">
+    <meta property="og:url" content="https://1panel.cn/docs/v2/user_manual/xpack/waf/global/">
     <meta property="og:locale" content="zh_CN">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="1Panel 文档">
-    <meta name="twitter:description" content="1Panel 在线使用文档">
-    <link rel="sitemap" type="application/xml" href="https://1panel.cn/docs/sitemap.xml">
-    <link rel="alternate" type="text/plain" title="llms.txt" href="https://1panel.cn/docs/llms.txt">
+    <meta name="twitter:title" content="1Panel WAF 全局设置">
+    <meta name="twitter:description" content="介绍 1Panel WAF 全局频率限制、默认规则、自定义规则、黑名单数据和日志配置，并说明版本差异。">
+    <link rel="sitemap" type="application/xml" href="https://1panel.cn/docs/v2/sitemap.xml">
+    <link rel="alternate" type="text/plain" title="llms.txt" href="https://1panel.cn/docs/v2/llms.txt">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "1Panel 文档",
-      "url": "https://1panel.cn/docs/",
+      "url": "https://1panel.cn/docs/v2/",
       "inLanguage": "zh-CN",
       "publisher": {
         "@type": "Organization",
@@ -121,7 +129,7 @@
       },
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://1panel.cn/docs/?q={search_term_string}",
+        "target": "https://1panel.cn/docs/v2/?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     }
@@ -135,7 +143,7 @@
       "operatingSystem": "Linux",
       "url": "https://1panel.cn/",
       "downloadUrl": "https://github.com/1Panel-dev/1Panel/releases",
-      "softwareHelp": "https://1panel.cn/docs/",
+      "softwareHelp": "https://1panel.cn/docs/v2/",
       "license": "https://www.gnu.org/licenses/gpl-3.0.html",
       "description": "1Panel 是现代化、开源的 Linux 服务器运维管理面板，提供 Web 服务器管理、网站部署、数据库管理、Docker 容器管理、应用商店、AI Agent、安全防护、备份恢复等能力。",
       "featureList": [
@@ -155,6 +163,28 @@
         "sameAs": [
           "https://github.com/1Panel-dev/1Panel"
         ]
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "1Panel WAF 全局设置",
+      "description": "介绍 1Panel WAF 全局频率限制、默认规则、自定义规则、黑名单数据和日志配置，并说明版本差异。",
+      "url": "https://1panel.cn/docs/v2/user_manual/xpack/waf/global/",
+      "mainEntityOfPage": "https://1panel.cn/docs/v2/user_manual/xpack/waf/global/",
+      "inLanguage": "zh-CN",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "1Panel 文档",
+        "url": "https://1panel.cn/docs/v2/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "1Panel",
+        "url": "https://1panel.cn/"
       }
     }
     </script>
@@ -179,7 +209,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1" class="md-skip">
+        <a href="#waf" class="md-skip">
           跳转至
         </a>
       
@@ -282,7 +312,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              全局设置
+              1Panel WAF 全局设置
             
           </span>
         </div>
@@ -879,6 +909,8 @@
       
         
       
+        
+      
     
     
     
@@ -925,6 +957,34 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../../dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
       
@@ -944,10 +1004,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
-          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
             
   
   
@@ -965,8 +1025,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_1">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1117,6 +1177,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1125,10 +1189,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
         
           
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
             
   
   
@@ -1146,8 +1210,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1164,7 +1228,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://openclaw.club/archives/9u1xZTMF" class="md-nav__link">
+      <a href="../../../ai/agent/" class="md-nav__link">
         
   
   
@@ -1191,59 +1255,6 @@
   
   
   
-    
-    
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    模型
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2_2">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    模型
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../../ai/model/" class="md-nav__link">
         
@@ -1252,7 +1263,7 @@
   <span class="md-ellipsis">
     
   
-    Ollama
+    模型管理
   
 
     
@@ -1289,14 +1300,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -1345,6 +1348,34 @@
     
   
     基准测试
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ai/skills_hub/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Skills Hub
   
 
     
@@ -1453,10 +1484,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
         
           
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
             
   
   
@@ -1474,8 +1505,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1555,7 +1586,7 @@
   <span class="md-ellipsis">
     
   
-    基本设置
+    网站配置
   
 
     
@@ -1583,7 +1614,7 @@
   <span class="md-ellipsis">
     
   
-    其他设置
+    网站操作
   
 
     
@@ -1720,10 +1751,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
         
           
-          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
             
   
   
@@ -1741,8 +1772,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_4">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1906,7 +1937,7 @@
   <span class="md-ellipsis">
     
   
-    Acme 账户
+    ACME 账户
   
 
     
@@ -1985,10 +2016,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
         
           
-          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
             
   
   
@@ -2006,8 +2037,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2115,7 +2146,7 @@
   <span class="md-ellipsis">
     
   
-    Golang
+    Go
   
 
     
@@ -2208,6 +2239,8 @@
       
         
       
+        
+      
     
     
     
@@ -2216,10 +2249,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
         
           
-          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
             
   
   
@@ -2237,8 +2270,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_6">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2332,6 +2365,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../databases/mongodb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MongoDB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2375,10 +2436,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
         
           
-          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
             
   
   
@@ -2396,8 +2457,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2617,7 +2678,7 @@
   <span class="md-ellipsis">
     
   
-    编排模版
+    编排模板
   
 
     
@@ -2686,6 +2747,8 @@
       
         
       
+        
+      
     
     
     
@@ -2694,10 +2757,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" >
         
           
-          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
             
   
   
@@ -2715,8 +2778,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_8">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2797,6 +2860,34 @@
     
   
     防火墙
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../hosts/disk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    磁盘管理
   
 
     
@@ -2959,10 +3050,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" >
         
           
-          <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="0">
             
   
   
@@ -2980,8 +3071,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_11">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_12">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3184,6 +3275,22 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -3192,10 +3299,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_13" checked>
         
           
-          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_13" id="__nav_3_13_label" tabindex="0">
             
   
   
@@ -3213,8 +3320,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_12">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_13_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_13">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3223,6 +3330,34 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mobile_app/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    移动端
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -3247,6 +3382,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -3255,10 +3394,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_13_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_3_12_1" id="__nav_3_12_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_13_2" id="__nav_3_13_2_label" tabindex="0">
             
   
   
@@ -3276,8 +3415,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_12_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_12_1">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_13_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_13_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -3329,7 +3468,7 @@
   <span class="md-ellipsis">
     
   
-    概览
+    首页
   
 
     
@@ -3338,382 +3477,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    全局设置
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    全局设置
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1 黑白名单
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1 黑白名单">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#11-ip" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.1 IP 黑白名单
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12-url" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.2 URL 黑白名单
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#13-user-agent" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.3 User-Agent 黑白名单
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#14-ip" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.4 IP 组
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2 频率限制
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2 频率限制">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2.1 访问频率限制
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#22" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2.2 攻击频率限制
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#23-404" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2.3 404频率限制
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3 默认规则
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3 默认规则">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#31" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.1 参数规则
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#32-url" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.2 URL 规则
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#33-http" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.3 HTTP 规则
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#34-cookie" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.4 Cookie 规则
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#35-header" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.5 Header 规则
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#36-user-agent" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.6 User-Agent 规则
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#37" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.7 其他
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4 自定义规则
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4 自定义规则">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#41" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.1 自定义规则（✨专业版）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#42" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.2 文件上传限制
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#43" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.3 地区访问限制（✨专业版）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#44-cdn" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.4 CDN
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5 配置
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5 配置">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#51" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.1 拦截页面（✨专业版）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#52-ip" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.2 恶意 IP 组
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3726,14 +3489,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../site/" class="md-nav__link">
+      <a href="../stat/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    网站设置
+    攻击报表
   
 
     
@@ -3803,6 +3566,181 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blackwhite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    黑白名单
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../site/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    网站设置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    全局设置
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    全局设置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 频率限制
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 默认规则
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 自定义规则
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 配置
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3846,6 +3784,62 @@
   
   
     <li class="md-nav__item">
+      <a href="../../website_monitor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    网站监控
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../database_cluster/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据库集群
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../tamper/" class="md-nav__link">
         
   
@@ -3854,6 +3848,146 @@
     
   
     网站防篡改
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resource_sync/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    资源同步
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appearance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    界面设置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../enterprise/user_management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    用户管理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../enterprise/vm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    虚拟机
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../enterprise/ops_report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    安全运维报表
   
 
     
@@ -5283,9 +5417,26 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../../dev_manual/skills/" class="md-nav__link">
+    
+    
+      
         
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -5299,7 +5450,79 @@
   
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Skills 技能
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../dev_manual/skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1Panel-skills
+  
+
+    
+  </span>
+  
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../dev_manual/appstore_skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1Panel-appstore-skills
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -5727,6 +5950,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -5738,60 +5963,10 @@
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1 黑白名单
+        1 频率限制
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="1 黑白名单">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#11-ip" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.1 IP 黑白名单
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12-url" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.2 URL 黑白名单
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#13-user-agent" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.3 User-Agent 黑白名单
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#14-ip" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1.4 IP 组
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -5799,49 +5974,10 @@
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2 频率限制
+        2 默认规则
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="2 频率限制">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2.1 访问频率限制
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#22" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2.2 攻击频率限制
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#23-404" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2.3 404频率限制
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -5849,93 +5985,10 @@
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3 默认规则
+        3 自定义规则
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="3 默认规则">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#31" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.1 参数规则
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#32-url" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.2 URL 规则
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#33-http" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.3 HTTP 规则
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#34-cookie" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.4 Cookie 规则
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#35-header" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.5 Header 规则
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#36-user-agent" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.6 User-Agent 规则
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#37" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.7 其他
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -5943,99 +5996,10 @@
   <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4 自定义规则
+        4 配置
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="4 自定义规则">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#41" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.1 自定义规则（✨专业版）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#42" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.2 文件上传限制
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#43" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.3 地区访问限制（✨专业版）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#44-cdn" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.4 CDN
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5 配置
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5 配置">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#51" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.1 拦截页面（✨专业版）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#52-ip" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.2 恶意 IP 组
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -6056,161 +6020,193 @@
 
 
 
-  <h1>全局设置</h1>
+<h1 id="waf">WAF 全局设置<a class="headerlink" href="#waf" title="Permanent link">⚓︎</a></h1>
+<div class="admonition info">
+<p class="admonition-title">版本与权限</p>
+<p>全局设置中的基础防护支持社区版、专业版和企业版。URL 频率限制、漏洞防御、应用规则、自定义规则、地区访问限制、自定义拦截页面和日志配置仅在专业版和企业版中可用，需要有效许可证。</p>
+<p>企业版普通用户需要 WAF 查看权限；修改开关、参数和规则需要 WAF 管理权限。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">生效范围</p>
+<p><strong>WAF 总开关</strong> 控制所有网站的 WAF 防护。带有 <strong>网站</strong> 标识的全局设置是新建网站的默认值，已有网站需要在 <strong>网站设置</strong> 中单独配置；对应规则生效时，WAF 总开关和网站 WAF 开关必须同时开启。</p>
+</div>
+<h2 id="1">1 频率限制<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
+<table>
+<thead>
+<tr>
+<th>功能</th>
+<th>作用</th>
+<th>可用版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>访问频率限制</td>
+<td>在指定周期内，请求次数超过阈值后临时封锁来源 IP；支持全局模式和 URL 模式</td>
+<td>社区版、专业版、企业版</td>
+</tr>
+<tr>
+<td>攻击频率限制</td>
+<td>同一 IP 多次命中 WAF 规则后临时封锁该 IP</td>
+<td>社区版、专业版、企业版</td>
+</tr>
+<tr>
+<td>404 频率限制</td>
+<td>同一 IP 多次访问不存在的资源并返回 404 后临时封锁该 IP</td>
+<td>社区版、专业版、企业版</td>
+</tr>
+<tr>
+<td>URL 频率限制</td>
+<td>为指定 URL 单独设置周期、阈值和封锁时间</td>
+<td>专业版、企业版</td>
+</tr>
+</tbody>
+</table>
+<p>访问频率限制中的 <strong>全局模式</strong> 统计单位时间内对任意 URL 的请求总数，<strong>URL 模式</strong> 分别统计单个 URL 的请求数。封锁时间到期后会自动解除；重启 OpenResty 也会清除临时封锁。</p>
+<h2 id="2">2 默认规则<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
+<table>
+<thead>
+<tr>
+<th>功能</th>
+<th>作用</th>
+<th>可用版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>参数规则</td>
+<td>检查请求参数中的常见恶意内容</td>
+<td>社区版、专业版、企业版</td>
+</tr>
+<tr>
+<td>URL 规则</td>
+<td>检查请求 URL 中的常见恶意内容</td>
+<td>社区版、专业版、企业版</td>
+</tr>
+<tr>
+<td>HTTP 规则</td>
+<td>配置允许访问的 HTTP 方法</td>
+<td>社区版、专业版、企业版</td>
+</tr>
+<tr>
+<td>Cookie 规则</td>
+<td>检查 Cookie 中的常见恶意内容</td>
+<td>社区版、专业版、企业版</td>
+</tr>
+<tr>
+<td>Header 规则</td>
+<td>检查请求头中的常见恶意内容</td>
+<td>社区版、专业版、企业版</td>
+</tr>
+<tr>
+<td>User-Agent 规则</td>
+<td>检查 User-Agent 中的常见恶意内容</td>
+<td>社区版、专业版、企业版</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>启用 SQL 注入、XSS 和全局严格模式</td>
+<td>社区版、专业版、企业版</td>
+</tr>
+<tr>
+<td>漏洞防御</td>
+<td>按漏洞规则启用或停用防护</td>
+<td>专业版、企业版</td>
+</tr>
+<tr>
+<td>应用规则</td>
+<td>按应用类型启用或停用防护规则</td>
+<td>专业版、企业版</td>
+</tr>
+</tbody>
+</table>
+<p>HTTP 规则采用允许列表逻辑。例如仅允许 GET 请求时，应关闭其他不需要的 HTTP 方法。收紧方法或启用严格模式前，应确认业务是否使用 POST、PUT、DELETE、OPTIONS 等请求。</p>
+<h2 id="3">3 自定义规则<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
+<table>
+<thead>
+<tr>
+<th>功能</th>
+<th>作用</th>
+<th>可用版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>自定义规则（ACL）</td>
+<td>按 URL、IP、Header、Host 等条件匹配请求，并设置允许、拒绝、人机验证等动作</td>
+<td>专业版、企业版</td>
+</tr>
+<tr>
+<td>文件上传限制</td>
+<td>按文件扩展名限制上传类型</td>
+<td>社区版、专业版、企业版</td>
+</tr>
+<tr>
+<td>地区访问限制</td>
+<td>按国家、地区或省份允许或拒绝访问</td>
+<td>专业版、企业版</td>
+</tr>
+<tr>
+<td>CDN</td>
+<td>从指定请求头、常用请求头列表或 X-Forwarded-For 中获取真实来源 IP</td>
+<td>社区版、专业版、企业版</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">真实 IP</p>
+<p>只有在请求确实经过可信 CDN 或反向代理时才启用 CDN 配置，并确认代理会覆盖客户端传入的同名请求头。错误信任来源 IP 请求头可能导致黑白名单和频率限制被绕过。</p>
+</div>
+<h2 id="4">4 配置<a class="headerlink" href="#4" title="Permanent link">⚓︎</a></h2>
+<table>
+<thead>
+<tr>
+<th>功能</th>
+<th>作用</th>
+<th>可用版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>拦截页面</td>
+<td>编辑或恢复 WAF 拦截请求时返回的页面</td>
+<td>专业版、企业版</td>
+</tr>
+<tr>
+<td>日志</td>
+<td>配置 WAF 日志记录和保留方式</td>
+<td>专业版、企业版</td>
+</tr>
+<tr>
+<td>恶意 IP 组</td>
+<td>启用并更新 1Panel 提供的恶意 IP 数据</td>
+<td>社区版、专业版、企业版</td>
+</tr>
+<tr>
+<td>蜘蛛 IP 池</td>
+<td>选择允许访问的搜索引擎蜘蛛并更新地址数据</td>
+<td>社区版、专业版、企业版</td>
+</tr>
+<tr>
+<td>IP 地址库</td>
+<td>更新用于识别 IP 地理位置的地址库</td>
+<td>社区版、专业版、企业版</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">应用规则</p>
+<p>修改全局默认值不会自动覆盖所有已有网站。需要立即应用到现有网站时，应使用页面提供的应用操作或进入 <strong>网站设置</strong> 逐个确认，并在生产环境变更前保留 OpenResty 配置备份。</p>
+</div>
 
-<div class="admonition note">
-<p>全局设置可以查看并配置 WAF。<br />
-包括黑白名单、频率设置、默认规则、自定义规则、配置等功能。<br />
-注意：</p>
-<ul>
-<li>全局设置的开关可以控制所有网站的规则，比如关闭访问频率之后所有网站的访问频率限制都会失效  </li>
-<li>全局设置中的小项，比如默认规则-参数规则的第一项，关闭了之后，只影响新建网站，不影响现存网站</li>
-</ul>
-</div>
-<p class="original"><img alt="img.png" src="../../../../img/waf/global.png" width="900px" /></p>
-<h2 id="1">1 黑白名单<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<ul>
-<li>包括 IP 黑白名单、 URL 黑白名单、User-Agent 黑白名单、IP 组</li>
-<li>黑名单：阻止携带黑名单特征的请求</li>
-<li>白名单：对携带白名单特征的请求，不做 WAF 校验</li>
-</ul>
-</div>
-<h3 id="11-ip">1.1 IP 黑白名单<a class="headerlink" href="#11-ip" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>可以根据 IP 地址阻止/放行请求。</p>
-</div>
-<h3 id="12-url">1.2 URL 黑白名单<a class="headerlink" href="#12-url" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<ul>
-<li>黑名单：可以阻止用户访问某些 URL  </li>
-<li>白名单：用户访问白名单中的 URL 不会触发 WAF 校验，适合某些请求中包含 SQL 注入和 XSS 特征的请求，比如 WordPress Halo 文章保存接口</li>
-</ul>
-</div>
-<h3 id="13-user-agent">1.3 User-Agent 黑白名单<a class="headerlink" href="#13-user-agent" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>可以根据 User-Agent 阻止/放行请求。</p>
-</div>
-<h3 id="14-ip">1.4 IP 组<a class="headerlink" href="#14-ip" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>可以把多个 IP 包含在一个组中，用于 IP 黑白名单。</p>
-</div>
-<h2 id="2">2 频率限制<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p>可以用来抵御 CC 攻击，包含访问频率限制、攻击频率限制、404 频率限制。</p>
-</div>
-<h3 id="21">2.1 访问频率限制<a class="headerlink" href="#21" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<ul>
-<li>如果单位时间内请求超过阈值，就拉黑 IP 一段时间  </li>
-<li>全局模式：单位时间请求任意 URL 次数之和超过阈值即触发</li>
-<li>URL 模式：单位时间请求单个 URL 次数超过阈值即触发</li>
-</ul>
-</div>
-<p class="original"><img alt="img.png" src="../../../../img/waf/cc.png" width="900px" /></p>
-<h3 id="22">2.2 攻击频率限制<a class="headerlink" href="#22" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<ul>
-<li>如果某个 IP 一直触发 WAF 规则，则拉黑此 IP</li>
-<li>场景：某个 IP 一直攻击你的网站，触发了多次规则</li>
-</ul>
-</div>
-<p class="original"><img alt="img.png" src="../../../../img/waf/attack_cc.png" width="900px" /></p>
-<h3 id="23-404">2.3 404频率限制<a class="headerlink" href="#23-404" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<ul>
-<li>如果某个 IP 的访问一直返回 404 ，则拉黑此 IP </li>
-<li>场景：扫描器或者恶意爬虫一直爬你的网站</li>
-</ul>
-</div>
-<p class="original"><img alt="img.png" src="../../../../img/waf/404.png" width="900px" /></p>
-<h2 id="3">3 默认规则<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p>WAF 的默认规则，按照一定的规则来阻止恶意请求。</p>
-</div>
-<h3 id="31">3.1 参数规则<a class="headerlink" href="#31" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>过滤常见的恶意参数。</p>
-</div>
-<h3 id="32-url">3.2 URL 规则<a class="headerlink" href="#32-url" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>过滤常见的恶意 URL。</p>
-</div>
-<h3 id="33-http">3.3 HTTP 规则<a class="headerlink" href="#33-http" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>设置允许访问的方法类型，如果想限制某些类型访问，请关闭这个类型的按钮，例如：仅允许 GET 类型访问，那么需要关闭除了 GET 之外的其他类型按钮。</p>
-</div>
-<h3 id="34-cookie">3.4 Cookie 规则<a class="headerlink" href="#34-cookie" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>过滤携带恶意 Cookie 的请求。</p>
-</div>
-<h3 id="35-header">3.5 Header 规则<a class="headerlink" href="#35-header" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>过滤携带恶意 Header 的请求。</p>
-</div>
-<h3 id="36-user-agent">3.6 User-Agent 规则<a class="headerlink" href="#36-user-agent" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>过滤携带恶意 User-Agent 的请求。</p>
-</div>
-<h3 id="37">3.7 其他<a class="headerlink" href="#37" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>SQL 注入防御 和 XSS 防御。</p>
-</div>
-<h2 id="4">4 自定义规则<a class="headerlink" href="#4" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<ul>
-<li>根据自己的需求制定 WAF 规则</li>
-<li>包含自定义规则、文件上传限制、地区访问限制、CDN 配置</li>
-</ul>
-</div>
-<h3 id="41">4.1 自定义规则（✨专业版）<a class="headerlink" href="#41" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<ul>
-<li>根据自己的需求制定 WAF 规则</li>
-<li>可以匹配 URL IP Header Host 的参数，并选择相应的动作</li>
-<li>比如可以选择 URL 为 /login 的比如经过人机验证</li>
-</ul>
-</div>
-<p class="original"><img alt="img.png" src="../../../../img/waf/acl.png" width="900px" /></p>
-<h3 id="42">4.2 文件上传限制<a class="headerlink" href="#42" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>可以根据文件后缀限制上传文件的类型。</p>
-</div>
-<p class="original"><img alt="img.png" src="../../../../img/waf/ext.png" width="900px" /></p>
-<h3 id="43">4.3 地区访问限制（✨专业版）<a class="headerlink" href="#43" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>可以限制或者仅允许某些地区的访问。</p>
-</div>
-<p class="original"><img alt="img.png" src="../../../../img/waf/location.png" width="900px" /></p>
-<h3 id="44-cdn">4.4 CDN<a class="headerlink" href="#44-cdn" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>如果网站开启了 CDN 并且影响日志获取用户的 IP，可以开启此项：</p>
-<ul>
-<li>从 HTTP Header 中获取：从指定的请求 Header 中获取，需要确认 CDN 把真实 IP 放在哪个 Header，比如 CloudFlare 默认是放在 cf-connecting-ip 中  </li>
-<li>从 Header 列表中获取： 从常用的 CDN 携带真实 IP 的 HTTP Header 中获取，取第一个能获取到的值      </li>
-<li>获取 X-Forwarded-For 的上一级代理地址：例如：X-Forwarded-For: client,proxy1,proxy2,proxy3 上一级代理会取最后一个 IP proxy3</li>
-</ul>
-</div>
-<p class="original"><img alt="img.png" src="../../../../img/waf/cdn.png" width="900px" /></p>
-<h2 id="5">5 配置<a class="headerlink" href="#5" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p>包含拦截页面和恶意 IP 组。</p>
-</div>
-<h3 id="51">5.1 拦截页面（✨专业版）<a class="headerlink" href="#51" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>可以自定义拦截页面。</p>
-</div>
-<p class="original"><img alt="img.png" src="../../../../img/waf/html.png" width="900px" /></p>
-<h3 id="52-ip">5.2 恶意 IP 组<a class="headerlink" href="#52-ip" title="Permanent link">⚓︎</a></h3>
-<div class="admonition note">
-<p>拦截由 1Panel 提供的恶意 IP 组。</p>
-</div>
 
 
 
 
 
 
+  
+  
 
 
 
