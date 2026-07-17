@@ -1,7 +1,7 @@
 site_name: '1Panel 文档'
 site_url: 'https://1panel.cn/docs'
 site_author: '飞致云'
-site_description: "1Panel 在线使用文档"
+site_description: "1Panel V2 使用文档，涵盖 Linux 服务器、网站、数据库、Docker 容器、应用商店、AI 与安全运维功能的配置和管理。"
 
 repo_name: '1Panel-dev/1Panel'
 repo_url: 'https://github.com/1Panel-dev/1Panel'
@@ -52,25 +52,26 @@ nav:
     - 主从节点切换: installation/master_migrate.md
     - 1pctl 命令行工具: installation/cli.md
   - 功能手册:
+    - 首页: user_manual/dashboard.md
     - 应用商店:
       - 概述: user_manual/appstore/appstore.md
       - 安装部署: user_manual/appstore/install.md
       - 应用操作: user_manual/appstore/installed.md
       - 应用商店设置: user_manual/appstore/setting.md
     - AI:
-      - 智能体: https://openclaw.club/archives/9u1xZTMF
-      - 模型: 
-        - Ollama: user_manual/ai/model.md
-        - vLLM: user_manual/ai/vllm.md
+      - 智能体: user_manual/ai/agent.md
+      - 模型管理: user_manual/ai/model.md
+      - vLLM: user_manual/ai/vllm.md
       - AI 网关: user_manual/ai/gateway.md
       - 基准测试: user_manual/ai/benchmark.md
+      - Skills Hub: user_manual/ai/skills_hub.md
       - MCP: user_manual/ai/mcp.md
       - GPU 监控: user_manual/ai/gpu.md
     - 网站:
       - 概述: user_manual/websites/websites.md
       - 创建网站: user_manual/websites/website_create.md
-      - 基本设置: user_manual/websites/website_config_basic.md
-      - 其他设置: user_manual/websites/website_config_other.md
+      - 网站配置: user_manual/websites/website_config_basic.md
+      - 网站操作: user_manual/websites/website_config_other.md
       - 网站分组: user_manual/websites/website_group.md
       - 网站备份: user_manual/websites/website_backup.md
       - OpenResty 设置: user_manual/websites/openresty.md
@@ -80,19 +81,20 @@ nav:
       - 上传证书: user_manual/websites/certificate_upload.md
       - 自签证书: user_manual/websites/certificate_self_sign.md
       - 续签证书: user_manual/websites/certificate_renew.md
-      - Acme 账户: user_manual/websites/certificate_acme.md
+      - ACME 账户: user_manual/websites/certificate_acme.md
       - DNS 账户: user_manual/websites/certificate_dns.md
     - 运行环境:
       - PHP: user_manual/websites/php.md
       - Node.js: user_manual/websites/node.md
       - Java: user_manual/websites/java.md
-      - Golang: user_manual/websites/golang.md
+      - Go: user_manual/websites/golang.md
       - Python: user_manual/websites/python.md
       - .NET: user_manual/websites/dotnet.md
     - 数据库:
       - MySQL: user_manual/databases/mysql.md
       - PostgreSQL: user_manual/databases/postgresql.md
       - Redis: user_manual/databases/redis.md
+      - MongoDB: user_manual/databases/mongodb.md
     - 容器:
       - 概览: user_manual/containers/overview.md
       - 容器: user_manual/containers/container.md
@@ -101,12 +103,13 @@ nav:
       - 网络: user_manual/containers/network.md
       - 存储卷: user_manual/containers/volume.md
       - 仓库: user_manual/containers/repo.md
-      - 编排模版: user_manual/containers/compose_template.md
+      - 编排模板: user_manual/containers/compose_template.md
       - 配置: user_manual/containers/setting.md
     - 系统:
       - 文件: user_manual/hosts/file.md
       - 监控: user_manual/hosts/monitor.md
       - 防火墙: user_manual/hosts/firewall.md
+      - 磁盘管理: user_manual/hosts/disk.md
       - 进程管理: user_manual/hosts/process.md
       - SSH 管理: user_manual/hosts/ssh.md
     - 终端: user_manual/terminal.md
@@ -119,15 +122,25 @@ nav:
       - FTP: user_manual/toolbox/ftp.md
       - Fail2ban: user_manual/toolbox/fail2ban.md
     - 高级功能:
+      - 移动端: user_manual/xpack/mobile_app.md
       - WAF:
         - 概述: user_manual/xpack/waf/waf.md
-        - 概览: user_manual/xpack/waf/dashboard.md
-        - 全局设置: user_manual/xpack/waf/global.md
-        - 网站设置: user_manual/xpack/waf/site.md
+        - 首页: user_manual/xpack/waf/dashboard.md
+        - 攻击报表: user_manual/xpack/waf/stat.md
         - 拦截记录: user_manual/xpack/waf/log.md
         - 封锁记录: user_manual/xpack/waf/block.md
+        - 黑白名单: user_manual/xpack/waf/blackwhite.md
+        - 网站设置: user_manual/xpack/waf/site.md
+        - 全局设置: user_manual/xpack/waf/global.md
       - 节点管理: user_manual/xpack/node.md
+      - 网站监控: user_manual/xpack/website_monitor.md
+      - 数据库集群: user_manual/xpack/database_cluster.md
       - 网站防篡改: user_manual/xpack/tamper.md
+      - 资源同步: user_manual/xpack/resource_sync.md
+      - 界面设置: user_manual/xpack/appearance.md
+      - 用户管理: user_manual/enterprise/user_management.md
+      - 虚拟机: user_manual/enterprise/vm.md
+      - 安全运维报表: user_manual/enterprise/ops_report.md
     - 日志审计: user_manual/logs.md
     - 面板设置: user_manual/settings.md
   - 常用软件:
@@ -173,7 +186,9 @@ nav:
     - OpenClaw 相关: faq/openclaw.md
     - AI 编程接入指南: faq/ai_coding.md
   - API 接口: dev_manual/api_manual.md
-  - Skills 技能: dev_manual/skills.md
+  - Skills 技能:
+    - 1Panel-skills: dev_manual/skills.md
+    - 1Panel-appstore-skills: dev_manual/appstore_skills.md
   - 版本迭代: changelog.md
   - 联系我们: contact.md
   - 1Panel 商业版本:

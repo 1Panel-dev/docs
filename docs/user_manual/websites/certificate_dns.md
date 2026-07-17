@@ -1,3 +1,9 @@
+---
+title: 1Panel DNS 账户配置
+description: 介绍在 1Panel 中创建和管理 DNS 服务商账户，以自动添加域名验证解析记录的方法。
+keywords: 1Panel DNS 账户,DNS API,域名验证,SSL 证书,Cloudflare,阿里云 DNS,腾讯云 DNS
+schema_type: TechArticle
+---
 
 !!! note ""
 
@@ -25,6 +31,6 @@
 
 ![img.png](../../img/websites/certificate_dns.png)
 
-!!! note "说明"
+!!! note ""
 
     关于不同类型 DNS 账户需要的认证信息如何获取，请查阅对应服务商的 API 文档获取支持。

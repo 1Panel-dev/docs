@@ -11,22 +11,25 @@
 
 {% block extrahead %}
     {{ super() }}
-    {% set seo_title = config.site_name %}
+    {% set docs_url = config.site_url.rstrip('/') %}
+    {% set seo_title = page.title if page and page.title else config.site_name %}
     {% set seo_description = config.site_description %}
     {% set seo_keywords = "1Panel,Linux 面板,Linux 服务器管理面板,VPS 控制面板,开源运维面板,服务器运维,Docker 管理,容器管理,网站管理,SSL 证书,应用商店,AI Agent,Ollama,OpenClaw,防火墙,WAF,备份恢复" %}
     {% set seo_url = config.site_url %}
+    {% set seo_type = "website" %}
     {% if page and page.meta %}
       {% if page.meta.title %}{% set seo_title = page.meta.title %}{% endif %}
       {% if page.meta.description %}{% set seo_description = page.meta.description %}{% endif %}
       {% if page.meta.keywords %}{% set seo_keywords = page.meta.keywords %}{% endif %}
       {% if page.canonical_url %}{% set seo_url = page.canonical_url %}{% endif %}
+      {% if page.meta.schema_type == "TechArticle" %}{% set seo_type = "article" %}{% endif %}
     {% endif %}
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="keywords" content="{{ seo_keywords }}">
     <meta name="application-name" content="1Panel">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="{{ seo_type }}">
     <meta property="og:site_name" content="1Panel 文档">
     <meta property="og:title" content="{{ seo_title }}">
     <meta property="og:description" content="{{ seo_description }}">
@@ -35,14 +38,14 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="{{ seo_title }}">
     <meta name="twitter:description" content="{{ seo_description }}">
-    <link rel="sitemap" type="application/xml" href="https://1panel.cn/docs/sitemap.xml">
-    <link rel="alternate" type="text/plain" title="llms.txt" href="https://1panel.cn/docs/llms.txt">
+    <link rel="sitemap" type="application/xml" href="{{ docs_url }}/sitemap.xml">
+    <link rel="alternate" type="text/plain" title="llms.txt" href="{{ docs_url }}/llms.txt">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "1Panel 文档",
-      "url": "https://1panel.cn/docs/",
+      "url": "{{ docs_url }}/",
       "inLanguage": "zh-CN",
       "publisher": {
         "@type": "Organization",
@@ -54,7 +57,7 @@
       },
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://1panel.cn/docs/?q={search_term_string}",
+        "target": "{{ docs_url }}/?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     }
@@ -68,7 +71,7 @@
       "operatingSystem": "Linux",
       "url": "https://1panel.cn/",
       "downloadUrl": "https://github.com/1Panel-dev/1Panel/releases",
-      "softwareHelp": "https://1panel.cn/docs/",
+      "softwareHelp": "{{ docs_url }}/",
       "license": "https://www.gnu.org/licenses/gpl-3.0.html",
       "description": "1Panel 是现代化、开源的 Linux 服务器运维管理面板，提供 Web 服务器管理、网站部署、数据库管理、Docker 容器管理、应用商店、AI Agent、安全防护、备份恢复等能力。",
       "featureList": [
@@ -99,11 +102,12 @@
       "headline": "{{ seo_title }}",
       "description": "{{ seo_description }}",
       "url": "{{ seo_url }}",
+      "mainEntityOfPage": "{{ seo_url }}",
       "inLanguage": "zh-CN",
       "isPartOf": {
         "@type": "WebSite",
         "name": "1Panel 文档",
-        "url": "https://1panel.cn/docs/"
+        "url": "{{ docs_url }}/"
       },
       "publisher": {
         "@type": "Organization",

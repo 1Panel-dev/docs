@@ -1,58 +1,60 @@
-## 1 MCP Server 管理
+---
+title: 1Panel MCP 管理使用说明
+description: 介绍在 1Panel 中创建和管理 MCP Server、查看连接信息并将 MCP 服务绑定到网站的方法。
+keywords: 1Panel MCP,MCP Server,MCP 管理,MCP 网站绑定,Model Context Protocol
+schema_type: TechArticle
+---
 
-!!! note ""
-    MCP（Model Context Protocol，模型上下文协议） 是由人工智能企业 Anthropic 推出的开放标准，旨在为大语言模型和 AI 助手提供统一、标准化的接口，让AI可以轻松操作外部工具，完成更加复杂的任务，从而发挥真正的“工具调用”能力。
+# MCP
 
-    然而在实际操作过程中，搭建 MCP Server 需要手动配置大量依赖，部署门槛较高，许多用户难以上手。为了解决这个问题，1Panel v1.10.29 LTS 版本推出了原生的 MCP Server 管理功能，该功能通过容器化方式实现一键部署 MCP Server，能够极大简化搭建流程。
+!!! note "功能说明"
+    MCP（Model Context Protocol，模型上下文协议）用于让 AI 客户端以标准方式调用外部工具。1Panel 将通过 `npx` 或 `uvx` 启动的 stdio MCP Server 封装在容器中，并转换为 SSE 或 Streamable HTTP 服务。
 
-![img.png](../../img/ai/mcp_list.png)
+    入口为左侧菜单 **AI -> MCP**。社区版、专业版和企业版均可使用；创建、编辑、删除和绑定网站需要具有对应资源操作权限。
+
+## 1 创建 MCP Server
+
+点击 **创建**，也可以先点击 **导入 MCP Server 配置**，从包含 `mcpServers` 的 JSON 配置中导入命令和环境变量。
+
+!!! info "参数说明"
+    - **名称**：MCP Server 名称，创建后不可修改，同时用于生成默认容器名称和访问路径。
+    - **类型**：`npx` 适用于 npx 命令或二进制启动命令；`uvx` 适用于 uvx 命令。
+    - **运行命令**：实际启动 stdio MCP Server 的命令，例如 `npx -y @modelcontextprotocol/server-github` 或 `uvx mcp-server-fetch`。
+    - **外部访问路径**：客户端访问时使用的协议、主机名或 IP。
+    - **输出类型**：支持 `sse` 和 `streamableHttp`。
+    - **SSE 路径 / 流式传输路径**：当前实例的访问路径，同一地址下不能重复。
+    - **协议版本**：仅在 Streamable HTTP 模式中使用，用于无状态初始化下游 stdio MCP Server。
+    - **参数**：追加到 Supergateway 启动命令的自定义参数，不能覆盖由 1Panel 管理的传输、端口、路径和协议参数。
+    - **镜像**：运行网关的容器镜像。修改默认镜像前，应确认其与所选启动类型兼容。
+    - **容器名称**：创建的容器名称，在当前 Docker 环境中必须唯一。
+    - **端口 / 端口外部访问**：配置映射端口，并决定绑定到 `0.0.0.0` 或仅绑定到 `127.0.0.1`。
+    - **环境变量 / 挂载**：向 MCP Server 传入凭证、配置或主机目录。
+
+![创建 MCP Server](../../img/ai/create_mcp_server.png)
 {: .original}
 
-## 2 创建 MCP Server
+!!! warning "命令与挂载安全"
+    1Panel 会在服务器上运行所填写的命令。导入第三方配置前，应检查命令、镜像、环境变量和挂载目录，不要运行来源不明或权限范围过大的 MCP Server。
+
+## 2 管理和连接
 
 !!! note ""
-    当前已支持两种方式运行的 MCP Server 的 stdio 模式发布为 SSE 模式，供 MCP 客户端调用：
-    
-    - 支持通过 npx 命令启动 MCP Server
-	- 支持以二进制方式运行 MCP Server（需将二进制文件挂载至容器中）
+    创建任务完成后，可在列表中查看运行状态和连接信息，并执行编辑、启动、停止、重启、删除、查看日志和测试连接等操作。客户端连接地址由外部访问路径、端口和当前输出类型的路径共同组成，应直接使用页面提供的配置。
 
-### 2.1 npx 命令启动
-
-![img.png](../../img/ai/create_mcp_server.png)
+![MCP Server 连接配置](../../img/ai/mcp_server_config.png)
 {: .original}
 
-### 2.2 二进制方式运行
+如果实例无法连接，依次检查容器状态及日志、运行命令、访问路径、端口监听、防火墙和反向代理配置。
 
-![img.png](../../img/ai/mcp_binary.png)
+## 3 绑定网站
+
+!!! note ""
+    点击 **绑定网站**，可以把所有已安装的 MCP Server 统一接入一个已有网站。绑定后，1Panel 会更新各实例的外部访问地址，并关闭端口外部访问；不同实例通过各自的 SSE 或 Streamable HTTP 路径区分。
+
+![绑定 MCP 网站](../../img/ai/mcp_website.png)
 {: .original}
 
-## 3 获取配置信息
+网站侧可以继续配置 HTTPS 和访问限制。修改域名、证书或反向代理规则后，应重新测试每个 MCP Server 的连接。
 
-!!! note ""
-    MCP Server部署成功后，1Panel会为每个MCP Server实例自动生成客户端配置信息，包括端口、地址、SSE路径等。点击“配置”按钮，即可快速获取该MCP Server的客户端配置信息。
-    用户只需要复制客户端配置信息并粘贴至MCP客户端，即可开始使用拥有MCP加成的AI助手。这种方式无需手动查找或配置环境变量，实现了从部署到使用的无缝衔接。
-
-![img.png](../../img/ai/mcp_server_config.png)
-{: .original}
-
-## 4 统一域名与SSE路径
-
-!!! note ""
-    1Panel 支持将多个 MCP Server 实例统一绑定至同一个网站域名，每个实例仅需设置不同的SSE路径进行区分。这意味着用户无需为每个 MCP Server 单独开放端口，所有服务都可以通过同一个端口对外提供服务。
-
-    这种方式不仅简化了公网访问的配置逻辑，也让运维操作更加集中统一。尤其是在大规模部署和企业内部网络的场景下，统一绑定网站域名能够避免暴露过多端口，减少安全风险，进一步提升部署的灵活性、安全性和可维护性。
-
-![img.png](../../img/ai/mcp_website.png)
-{: .original}
-
-## 5 白名单访问限制
-
-!!! note ""
-    1Panel 支持为每个 MCP Server 网站配置IP访问白名单，以此有效保障 MCP Server 的数据安全。用户可以根据实际需求将 IP 地址或 IP 段添加至白名单，从而保证只有白名单中的 IP 能够访问 MCP Server 网站。与此同时，系统将自动拒绝所有不在白名单中的 IP 的访问请求。
-
-    通过为 MCP Server 网站配置 IP 访问白名单，可以有效隔离外部非授权访问，在网络入口层面建立起第一道安全防线。同时配合 1Panel 的防火墙策略和容器隔离机制，可以显著提升整体系统的安全性与稳定性。
-
-## 6 HTTPS 数据加密
-
-!!! note ""
-    1Panel 还支持为 MCP Server 网站启用HTTPS协议，用户只需要上传证书即可开启加密访问，全面保障上下文交互数据的安全性。
+!!! note "取消直接暴露端口"
+    已通过网站提供服务时，建议保持实例端口仅监听本机，避免网站入口和直接端口同时暴露。
