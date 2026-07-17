@@ -4,7 +4,10 @@
 
 !!! note ""
 
-     请访问 [1PanelGitee 发布页面](https://gitee.com/fit2cloud-feizhiyun/1panel-migrator/releases/)，手动下载适用于您服务器架构的安装包，并将其放置到 `/tmp` 目录：
+    请访问以下任一发布页面，手动下载适用于您服务器架构的安装包，并将其放置到 `/tmp` 目录：
+
+    - [Gitee Releases](https://gitee.com/fit2cloud-feizhiyun/1panel-migrator/releases/)
+    - [GitHub Releases](https://github.com/1Panel-dev/1panel-migrator/releases/)
 
     **提示**：请确保安装包版本 **大于等于 v2.0.8**，该版本及以上才支持主从节点切换功能。
     

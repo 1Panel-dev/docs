@@ -1,7 +1,7 @@
 ---
 title: 1Panel 企业版安装部署
-description: 介绍 1Panel 企业版安装部署、企业版之间升级，以及社区版和专业版迁移至企业版时使用 1panel-migrator 的方法。
-keywords: 1Panel 企业版,1Panel 企业版安装,1Panel 企业版部署,1Panel 离线安装,1panel-migrator,1Panel 社区版迁移,1Panel 专业版迁移
+description: 介绍 1Panel 企业版安装部署、企业版之间升级，以及社区版和专业版迁移至企业版的入口。
+keywords: 1Panel 企业版,1Panel 企业版安装,1Panel 企业版部署,1panel-migrator,1Panel 社区版迁移,1Panel 专业版迁移
 schema_type: TechArticle
 ---
 
@@ -28,46 +28,9 @@ schema_type: TechArticle
 
     > `upgrade.sh` 仅适用于企业版之间的升级。
 
-    > 社区版或专业版迁移至企业版时，请使用下文的 **1panel-migrator** 工具完成迁移。
+    > 社区版或专业版迁移至企业版时，请使用 **1panel-migrator** 工具，具体操作请参考[迁移至企业版](migrate_to_enterprise.md)。
 
 ## 4 社区版 / 专业版迁移至企业版
 
-### 4.1 获取迁移工具
-
 !!! note ""
-    请下载与服务器架构对应的迁移工具：
-
-    - [Gitee Releases](https://gitee.com/fit2cloud-feizhiyun/1panel-migrator/releases)
-    - [GitHub Releases](https://github.com/1Panel-dev/1panel-migrator/releases)
-
-### 4.2 迁移前准备
-
-!!! note ""
-    执行迁移前，需先将 1Panel 企业版安装包下载到当前 1Panel 所在服务器。企业版安装包需要放置在与当前 1Panel 安装目录同级的位置。
-
-    示例：
-
-    ```
-    /opt/
-    ├── 1panel/
-    └── 1panel-v2.2.3-linux-amd64.tar.gz
-    ```
-
-### 4.3 执行迁移
-
-!!! note ""
-    执行以下命令，将当前 1Panel 迁移至企业版：
-
-    ```bash
-    1panel-migrator upgrade enterprise
-    ```
-
-    执行后，根据终端提示信息操作即可完成迁移。
-
-### 4.4 注意事项
-
-!!! note ""
-    - 请根据服务器架构下载对应的迁移工具。
-    - 迁移前需要提前下载 1Panel 企业版安装包。
-    - 企业版安装包需要放置在与当前 1Panel 安装目录同级的位置。
-    - 迁移前建议先确认当前版本是否在支持范围内。
+    社区版或专业版迁移至企业版不适用 `upgrade.sh` 脚本，请参考[迁移至企业版](migrate_to_enterprise.md)完成迁移。

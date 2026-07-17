@@ -3,7 +3,7 @@
 
     由于 V2 版本较 V1 版本有比较大的架构变动，目前不支持从 V1 版本直接在线升级至 V2 版本。
 
-    1Panel V1 版本的用户，可以使用官方提供的迁移工具[ **1panel-migrator**](https://gitee.com/fit2cloud-feizhiyun/1panel-migrator)，将 1Panel V1 平滑升级至 1Panel V2。
+    1Panel V1 版本的用户，可以使用官方提供的 **1panel-migrator** 迁移工具（可通过 [Gitee](https://gitee.com/fit2cloud-feizhiyun/1panel-migrator) 或 [GitHub](https://github.com/1Panel-dev/1panel-migrator) 获取），将 1Panel V1 平滑升级至 1Panel V2。
 
 !!! warning "注意"
     为确保迁移顺利、安全，请务必在执行前仔细阅读以下内容。
