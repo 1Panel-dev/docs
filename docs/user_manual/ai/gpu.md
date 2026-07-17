@@ -1,32 +1,44 @@
-## 1 安装驱动
+---
+title: 1Panel GPU 监控使用说明
+description: 介绍在 1Panel 中查看 GPU 当前状态和历史记录，以及为容器配置 GPU 资源的方法。
+keywords: 1Panel GPU 监控,GPU 状态,GPU 历史记录,Docker GPU,NVIDIA GPU
+schema_type: TechArticle
+---
+
+# GPU 监控
+
+!!! note "功能说明"
+    GPU 监控用于查看当前节点的显卡信息、实时指标、占用进程和历史趋势。入口为左侧菜单 **AI -> GPU 监控**，页面包含 **当前状态** 和 **历史记录**。
+
+    社区版、专业版和企业版均可使用。多节点环境中，页面展示的是当前所选节点的数据。
+
+## 1 使用前提
+
+1Panel 通过主机上已安装的显卡管理工具读取数据。以 NVIDIA GPU 为例，需要先安装与显卡和操作系统匹配的驱动，并确保在服务器终端执行 `nvidia-smi` 能正常返回信息。
+
+需要在容器中使用 NVIDIA GPU 时，还应按照 [NVIDIA Container Toolkit 安装文档](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)完成容器运行时配置。
+
+!!! warning "驱动安装"
+    显卡驱动与内核、操作系统和硬件型号相关。升级内核或驱动可能影响现有 GPU 工作负载，生产环境应先确认兼容性并安排维护窗口。
+
+## 2 当前状态
 
 !!! note ""
-    针对 NVIDIA 显卡，用户可以在 https://www.nvidia.com/en-us/drivers/ 网站查找对应显卡型号支持的驱动版本，并进行下载安装。
+    当前状态展示驱动版本、显卡型号、利用率、显存、温度、功耗等指标，并列出正在使用 GPU 的进程。实际可见字段取决于显卡类型、驱动和管理工具返回的数据。
 
-    例如下载到的文件为 `NVIDIA-Linux-x86_64-570.86.15.run`，将文件上传到 1Panel 服务器后，可以在命令行执行以下命令进行安装：
-
-    ```bash
-    chmod +x NVIDIA-Linux-x86_64-570.86.15.run
-    ./NVIDIA-Linux-x86_64-570.86.15.run
-    ```
-
-    > 执行命令后根据弹出的提示框信息进行安装即可。
-    `nvidia-smi` 命令会随 NVIDIA 驱动一同安装，1Panel 将使用 `nvidia-smi` 命令获取显卡相关信息。
-
-## 2 查看显卡信息
-
-!!! note ""
-    在 GPU 监控页面，可以查看驱动版本、显卡型号，以及显卡的使用率、温度、功耗等基础指标，还可以查看当前正在使用显卡的进程信息。
-
-![img.png](../../img/ai/gpu_monitor.png)
+![GPU 当前状态](../../img/ai/gpu_monitor.png)
 {: .original}
 
-## 3 使用 GPU
+如果页面无数据，请先在终端验证显卡管理命令，再检查驱动状态和 1Panel 服务日志。
+
+## 3 历史记录
 
 !!! note ""
-    显卡驱动安装完成后，还需要根据 [NVIDIA 官网指引](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)安装容器支持工具，才可以在应用商店应用或其他容器中使用 GPU 能力。
+    历史记录用于按时间范围查看 GPU 指标趋势。只有已被采集并保存的数据才能形成历史曲线；更换节点时，应重新确认当前节点和查询时间范围。
 
-> 在应用商店安装应用时，勾选高级设置中的 `GPU 加速` 即可让该应用获得 GPU 支持。
+## 4 在容器中使用 GPU
 
-![img.png](../../img/ai/gpu_acceleration.png)
+驱动和容器工具配置完成后，可在支持 GPU 的应用或容器配置中启用 **GPU 加速**，并选择需要分配的设备。容器启动后，可通过容器日志、主机 GPU 进程和利用率确认设备是否生效。
+
+![应用 GPU 加速](../../img/ai/gpu_acceleration.png)
 {: .original}

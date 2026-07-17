@@ -1,96 +1,73 @@
-## Ollama
+---
+title: 1Panel 模型管理使用说明
+description: 介绍在 1Panel 中管理模型账号、Ollama 和 vLLM 服务，以及下载和同步模型的方法。
+keywords: 1Panel 模型管理,Ollama,vLLM,模型账号,模型下载器,本地大模型
+schema_type: TechArticle
+---
 
-### 1 管理 Ollama 应用
+# 模型管理
 
 !!! note ""
-    要使用模型管理功能，需要先在应用商店中安装 Ollama 应用。Ollama 安装完成后可以在该页面查看 Ollama 应用状态，并进行启动、停止及重启等操作。
+    模型管理用于统一维护 AI 功能使用的模型账号和本地模型。入口为左侧菜单 **AI -> 模型**，页面包含 **模型账号** 和 **本地模型** 两个标签页。
 
-![img.png](../../img/ai/overview.png)
+!!! info "版本说明"
+    模型账号和 Ollama 管理在社区版、专业版、企业版中均可使用。vLLM 和模型下载器需要专业版或企业版许可证。
+
+## 1 模型账号
+
+!!! note ""
+    模型账号保存模型服务的连接信息，可供智能体、AI 搜索等功能选择。点击 **创建** 后，按页面提示配置以下信息：
+
+- **名称**：模型账号在 1Panel 中的显示名称。
+- **模型提供商**：选择预置提供商，或选择自定义、Ollama、vLLM 等类型。
+- **API Key**：模型服务的访问凭证。是否需要填写取决于提供商。
+- **Base URL**：模型服务 API 地址。部分预置提供商使用默认地址，自定义、Ollama 和 vLLM 可按实际服务填写。
+- **API 类型**：按提供商支持情况选择兼容协议。
+- **模型池**：维护模型 ID、显示名称、Context Window、Max Tokens、输入类型和推理能力。
+
+创建完成后，可以在列表中验证连接、编辑账号、维护模型池或删除账号。编辑已经被智能体使用的账号时，可按页面选项同步更新相关智能体配置。
+
+!!! warning "凭证安全"
+    API Key 属于敏感信息，仅向受信任的管理员开放模型账号管理权限。
+
+## 2 Ollama
+
+### 2.1 使用前提
+
+!!! note ""
+    使用 Ollama 管理前，需要先从 **应用商店** 安装 Ollama。安装完成后，页面会显示应用运行状态，并提供启动、停止、重启和连接信息等操作。
+
+![Ollama 管理](../../img/ai/overview.png)
 {: .original}
 
-### 2 添加模型
+### 2.2 添加和运行模型
 
-!!! note ""
-    点击添加模型，输入模型名称点击添加按钮即可从 [Ollama 官方仓库](https://ollama.com/search)拉取对应模型。
+点击 **添加模型**，输入 [Ollama 模型库](https://ollama.com/search)中的模型名称后确认，1Panel 将创建后台拉取任务。模型可用后，可以执行运行、重建或删除等操作。
 
-![img.png](../../img/ai/model_pull.png)
+![添加 Ollama 模型](../../img/ai/model_pull.png)
 {: .original}
 
-### 3 运行模型
+点击模型所在行的 **运行**，可在页面内打开终端与模型对话。
 
-!!! note ""
-    点击某个模型所在行的【运行】操作，即可在当前页面打开在线终端与该模型进行对话。
-
-![img.png](../../img/ai/model_run.png)
+![运行 Ollama 模型](../../img/ai/model_run.png)
 {: .original}
 
-### 4 AI 代理增强
+### 2.3 连接和同步
 
-!!! note ""
-    通过该功能可以为 Ollama 应用配置反向代理，从而支持域名、HTTPS、IP 白名单等配置，增强使用大模型时的安全性。
+- **连接信息**：查看不同访问场景下的 Ollama 地址。容器内访问、主机访问和外部访问的地址可能不同，应以页面显示为准。
+- **从服务器同步**：当模型由其他工具添加或删除后，从 Ollama 服务重新读取模型列表。
+- **AI 代理增强**：为 Ollama 配置反向代理，可结合域名、HTTPS 和 IP 白名单限制外部访问。
+- **Open WebUI**：按页面入口跳转至已支持的 Web 管理工具。
 
-![img.png](../../img/ai/api_proxy.png)
-{: .original}
+## 3 vLLM
 
-### 5 查看连接信息
+vLLM 页面用于创建和维护本地推理服务，支持查看状态、编辑、启动、停止、重启、删除和任务进度。具体配置参见 [vLLM](./vllm.md)。
 
-!!! note ""
-    点击列表上方的【连接信息】按钮，即可查看 Ollama 应用的连接信息。
+## 4 模型下载器
 
-![img.png](../../img/ai/connection_info.png)
-{: .original}
+!!! info "版本说明"
+    模型下载器需要专业版或企业版许可证。
 
-> 应用商店部署的 Ollama 采用容器化方式运行，不同的场景需要根据页面提示选择对应的连接信息。
+模型下载器用于搜索和下载 Hugging Face、ModelScope 或兼容镜像站中的模型，并统一查看下载任务和本地模型目录。可按页面配置下载目录、镜像地址和访问令牌；私有或受限模型必须使用具有相应权限的令牌。
 
-### 6 从服务器同步
-
-!!! note ""
-    当使用了其他工具或应用程序添加了模型，模型列表信息与实际不一致时，可以点击列表上方的【从服务器同步】按钮，主动从 Ollama 查询当前模型列表。
-
-### 7 WEB 管理工具
-
-!!! note ""
-    如果需要使用 WEB 图形化界面管理并使用 Ollama 时，可以列表上方的【OpenWebUI】按钮，跳转到对应工具页面。
-
-    目前支持的管理工具有：
-    
-    - [OpenWebUI](https://github.com/open-webui/open-webui)
-
-## TensorRT LLM
-
-!!! note ""
-    TensorRT LLM 是 NVIDIA 推出的全面开源库，用于在 NVIDIA GPU 上加速和优化最新大语言模型（LLM）的推理性能。
-
-### 0 前置条件
-
-!!! note ""
-    在使用 TensorRT LLM 创建模型之前，需要先安装 NVIDIA 显卡驱动并安装配置 NVIDIA Container Toolkit。参考文档【[Installing the NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)】。
-
-### 1 创建模型
-
-!!! note ""
-    在 TensorRT LLM 模型管理页面，点击【创建】按钮，输入模型名称等参数后，点击【确认】按钮即可创建模型。
-
-!!! info "参数说明"
-    - **名称**：模型名称。
-    - **容器名称**：TensorRT LLM 模型管理功能，会使用 TensorRT LLM 镜像启动一个容器来运行模型，容器名称需要唯一，默认使用模型名称。
-    - **镜像**：TensorRT LLM 镜像，默认使用 NVIDIA 官方镜像。
-    - **版本**：TensorRT LLM 镜像的镜像标签，对应不同的 TensorRT LLM 版本，可以查看 [NVIDIA TensorRT LLM 官方仓库](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/tensorrt-llm/containers/release/tags) 获取可用版本。
-    - **模型目录**：选择服务器上的本地模型目录挂载到容器中，需要将模型文件夹提前放置在该目录中。
-    - **启动命令**：启动容器时执行运行模型的命令，默认使用 NVIDIA 官方启动命令，可以自定义启动命令。需要注意启动命令中的模型路径，1Panel 会将上一个参数的本地模型目录映射到容器的 /models 目录。如果选择的模型目录为最终的模型路径，例如 /home/DeepSeek-V3，那么启动命令中 `trtllm-server` 后直接跟 `/models` 即可；如果选择的模型目录为模型文件夹的父目录，例如最终模型路径为 /home/DeepSeek-V3，选择的模型目录参数为 /home，则启动命令中 `trtllm-server` 后需要跟 `/models/DeepSeek-V3` 路径。
-    - **端口**：配置 TensorRT LLM 容器的端口映射，可以将容器启动命令中的 8000 端口映射到服务器的 8000 端口，从而可以通过服务器 IP:8000 访问 TensorRT LLM 服务（需要勾选端口外部访问）。
-    - **环境变量**：为 TensorRT LLM 容器配置环境变量。
-    - **挂载**：为 TensorRT LLM 容器挂载额外的目录，可以挂载服务器上的本地目录到容器中，从而可以在容器中访问服务器上的本地目录。
-
-![img.png](../../img/ai/create_trtllm.png)
-{: .original}
-
-### 2 查看模型日志
-
-!!! note ""
-    在 TensorRT LLM 模型管理页面，点击模型所在行的【查看日志】按钮，即可查看模型启动及运行日志。
-
-### 3 其他模型操作
-
-!!! note ""
-    在 TensorRT LLM 模型管理页面，可以对模型进行停止、启动、重启、删除、编辑等操作。
+下载任务支持查看进度和错误信息，并可取消或重试。删除本地模型前，应确认该目录未被 vLLM 或其他服务使用。

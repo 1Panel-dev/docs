@@ -1,8 +1,18 @@
+---
+title: 1Panel 防火墙配置说明
+description: 介绍在 1Panel 中安装和管理防火墙，以及配置端口规则、端口转发、IP 规则和 iptables 高级控制的方法。
+keywords: 1Panel 防火墙,端口规则,端口转发,IP 规则,iptables,firewalld,ufw
+schema_type: TechArticle
+---
+
+# 防火墙
+
 !!! note ""
-    **1Panel 集成了两种广泛使用的 Linux 防火墙软件：Firewalld 和 UFW。**
+    1Panel 可管理 Firewalld、UFW 和 iptables。页面包含 **端口规则**、**端口转发**、**IP 规则** 和 **iptables 高级控制**；实际可用能力取决于当前节点检测到的防火墙类型。
 
     - RedHat/CentOS 使用的是 Firewall 防火墙
-    - Debian/Ubuntu使用的是 UFW 防火墙
+    - Debian/Ubuntu 常用 UFW 防火墙
+    - 使用 iptables 时，可使用 1Panel 的高级控制页面
 
 ## 1 安装
 
@@ -152,3 +162,10 @@
 
 ![img.png](../../img/hosts/firewall_ip_create.png)
 {: .original}
+
+## 6 iptables 高级控制
+
+高级控制仅在当前防火墙为 iptables 时可用，用于查看和维护更细粒度的链与规则。Firewalld 或 UFW 环境会显示不支持提示。
+
+!!! warning "远程连接保护"
+    修改防火墙开关、默认策略、SSH 端口或 iptables 链可能立即中断远程连接。操作前应确认云安全组、带外登录方式和回滚命令可用，不要删除 1Panel 或 Docker 仍在使用的规则。

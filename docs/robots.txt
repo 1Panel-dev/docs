@@ -19,5 +19,5 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: https://1panel.cn/docs/sitemap.xml
+Sitemap: https://1panel.cn/docs/v2/sitemap.xml
 Host: 1panel.cn

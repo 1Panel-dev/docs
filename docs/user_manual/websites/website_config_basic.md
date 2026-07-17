@@ -1,6 +1,15 @@
+---
+title: 1Panel 网站配置使用说明
+description: 介绍 1Panel 网站的域名、目录、HTTPS、反向代理、负载均衡、访问限制、伪静态和 TCP UDP 等配置。
+keywords: 1Panel 网站配置,网站域名,HTTPS,反向代理,负载均衡,伪静态,TCP UDP 代理
+schema_type: TechArticle
+---
+
+# 网站配置
+
 !!! note ""
 
-    网站设置页面包含多种功能，包括域名设置、网站目录、默认文档、流量限制、反向代理、负载均衡、密码访问、HTTPS 配置、真实 IP、伪静态、防盗链、重定向、关联数据库及其他设置。
+    在网站列表点击 **配置** 后，页面包含 **基本**、**日志** 和 **资源** 三个标签。基本配置按网站类型显示域名、目录、默认文档、流量限制、反向代理、负载均衡、密码访问、CORS、HTTPS、真实 IP、伪静态、防盗链、重定向、PHP、关联资源和其他设置；TCP/UDP 代理只显示其他和 TCP/UDP 配置。
 
 ## 1 域名设置
 
@@ -72,7 +81,12 @@
 ![img.png](../../img/websites/basic_config_password.png)
 {: .browser-mockup}
 
-## 8 HTTPS
+## 8 CORS
+
+!!! note ""
+    配置允许访问网站资源的来源、方法、请求头、凭证和预检请求缓存时间。允许携带凭证时不能把允许来源配置为不受限制的通配范围。
+
+## 9 HTTPS
 
 !!! note ""
 
@@ -85,7 +99,7 @@
     - **HSTS**：开启 HSTS，以提升网站安全性
     - **HTTP3**：开启 HTTP3，HTTP/3 是 HTTP/2 的升级版本，提供更快的连接速度和更好的性能，但是不是所有浏览器都支持 HTTP/3，开启后可能会导致部分浏览器无法访问
     - **SSL 选项**：选择现有证书或手动导入证书，选择已有证书需通过 1Panel 证书模块申请
-        - **Acme 账户（选择已有证书）**：选择已存在的 Acme 账户
+        - **ACME 账户（选择已有证书）**：选择已存在的 ACME 账户
         - **证书（选择已有证书）**：选择已存在的证书
         - **导入方式（手动导入证书）**：手动粘贴证书文件内容或者从服务器选择证书文件
         - **私钥（手动导入证书）**：私钥文件内容或文件位置
@@ -98,7 +112,7 @@
 ![img.png](../../img/websites/basic_config_https.png)
 {: .browser-mockup}
 
-## 9 真实 IP
+## 10 真实 IP
 
 !!! note ""
     配置客户端 IP 获取方式及可信的 IP 来源，OpenResty 会分析 HTTP Header 中的 IP 信息，准确识别并记录访客的真实 IP 地址，包括在访问日志中。
@@ -106,7 +120,7 @@
 ![img.png](../../img/websites/basic_config_real_ip.png)
 {: .browser-mockup}
 
-## 10 伪静态
+## 11 伪静态
 
 !!! note ""
 
@@ -115,7 +129,7 @@
 ![img.png](../../img/websites/basic_config_static.png)
 {: .browser-mockup}
 
-## 11 防盗链
+## 12 防盗链
 
 !!! note ""
 
@@ -124,7 +138,7 @@
 ![img.png](../../img/websites/basic_config_protection.png)
 {: .browser-mockup}
 
-## 12 重定向
+## 13 重定向
 
 !!! note ""
 
@@ -133,7 +147,7 @@
 ![img.png](../../img/websites/basic_config_redirect.png)
 {: .browser-mockup}
 
-## 13 PHP
+## 14 PHP
 
 !!! note ""
 
@@ -142,7 +156,7 @@
 ![img.png](../../img/websites/basic_config_php.png)
 {: .browser-mockup}
 
-## 14 资源
+## 15 资源
 
 !!! note ""
 
@@ -151,7 +165,7 @@
 ![img.png](../../img/websites/basic_config_resource.png)
 {: .browser-mockup}
 
-## 15 其他
+## 16 其他
 
 !!! note ""
 
@@ -159,3 +173,7 @@
 
 ![img.png](../../img/websites/basic_config_other.png)
 {: .browser-mockup}
+
+## 17 TCP/UDP 配置
+
+TCP/UDP 代理网站可在此调整协议、监听端口和上游负载均衡配置。修改监听端口后，应同步检查端口占用、防火墙和云安全组。
