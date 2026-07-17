@@ -178,6 +178,10 @@ nav:
     - Cloudreve: user_manual/appstore/cloudreve.md
     - Uptime Kuma: user_manual/appstore/uptime-kuma.md
     - VS Code: user_manual/appstore/vscode.md
+  - Skills 技能:
+    - 1Panel 运维技能: dev_manual/skills.md
+    - 1Panel 应用商店技能: dev_manual/appstore_skills.md
+  - API 接口: dev_manual/api_manual.md
   - 常见问题:
     - 产品 FAQ: faq/faq.md
     - 操作系统相关: faq/operating_system.md
@@ -185,12 +189,7 @@ nav:
     - 服务器架构相关: faq/server_architecture.md
     - OpenClaw 相关: faq/openclaw.md
     - AI 编程接入指南: faq/ai_coding.md
-  - API 接口: dev_manual/api_manual.md
-  - Skills 技能:
-    - 1Panel-skills: dev_manual/skills.md
-    - 1Panel-appstore-skills: dev_manual/appstore_skills.md
   - 版本迭代: changelog.md
-  - 联系我们: contact.md
   - 1Panel 商业版本:
     - 版本功能对比: https://1panel.cn/versions.html
     - 1Panel 专业版: https://www.lxware.cn/1panel
@@ -201,6 +200,7 @@ nav:
     - MaxKB AI 一体机: https://maxkb.cn/appliance
     - JumpServer 一体机: https://1panel.cn/aicoding_b70.html
     - Zabbix 信创一体机: https://fit2cloud.com/zabbix/index.html
+  - 联系我们: contact.md
 
 markdown_extensions:
   - admonition
