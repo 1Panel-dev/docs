@@ -16,4 +16,3 @@
 !!! note ""
 
     - 官网：http://www.1panel.cn
-    - 微信交流群：https://bbs.fit2cloud.com/t/topic/2147
