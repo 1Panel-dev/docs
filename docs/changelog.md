@@ -7,6 +7,71 @@ hide:
 
 ## Release Notes
 
+### v2.2.4
+
+2026‑07‑27
+
+!!! note "New Features"
+
+    - **Models**: Added support for retrieving model lists from model accounts
+    - **MCP**: Added support for custom command-line arguments for MCP Server
+    - **Websites**: Added dynamic compilation support for OpenResty modules
+    - **Databases**: Added MySQL user management
+    - **File Browser**: Added support for canceling chunked file uploads
+    - **File Browser**: Added directory size caching and sorting by size
+    - **Toolbox**: Added runtime diagnostics to process management
+    - **WAF**: Added province-based access restriction configuration
+    - **WAF**: Added observation mode
+    - **WAF**: Added support for configuring allowed search engine crawlers
+    - **WAF**: Added Host filtering for interception logs
+    - **WAF**: Added origin server protection
+    - **WAF**: Added IP geolocation lookup to interception and website monitoring logs
+    - **WAF**: Added website-level statistics to attack reports
+    - **Multi-Node**: Added node health check configuration
+    - **Website Monitoring**: Added support for blocking IP addresses and IP ranges from logs
+    - **Log Audit**: Added Linux host system log viewer
+    - **System**: Added Lao (lo_LA) language support
+
+!!! note "Improvements"
+
+    - **Models**: Model downloader now supports navigating to the download directory
+    - **Models**: Optimized synchronization of associated models after editing model accounts
+    - **Websites**: Optimized website list page styles
+    - **Websites**: Optimized OpenResty module compilation and upgrade workflows
+    - **Certificates**: Optimized SSL certificate request logic
+    - **Containers**: Optimized the location of batch operation entries
+    - **File Browser**: Improved multilingual copy for canceling chunked file uploads
+    - **File Browser**: Added prompts when creating files in protected directories
+    - **Terminal**: Optimized page performance when outputting large amounts of content
+    - **WAF**: Optimized overview page information display
+    - **WAF**: Optimized export functionality for interception logs and website monitoring logs
+    - **WAF**: WAF and website monitoring reports now retain filter criteria
+    - **WAF**: Optimized file upload content inspection settings
+    - **Website Monitoring**: Added support for sorting the website list by access data
+    - **Website Tamper Protection**: Optimized website information display in the tamper protection list
+    - **Log Audit**: Optimized host log management and added support for clearing SSH login logs
+    - **Panel Settings**: Optimized API adaptation logic for OneDrive backup accounts
+    - **System**: Automatically synchronizes the script library at 1Panel startup
+    - **System**: Optimized table interactions on some list pages
+    - **System**: List pages now retain filter criteria
+
+!!! note "Bug Fixes"
+
+    - **Overview**: Fixed inconsistent heights of cards on the right side of the overview page
+    - **App Store**: Fixed an issue where app versions removed from remote servers could still be selected for installation
+    - **MCP**: Fixed an issue where HTTPS could not be enabled when binding MCP Server to a website
+    - **Databases**: Fixed an incorrect image tag for MariaDB remote backups
+    - **Containers**: Fixed an issue where local image imports could be submitted with an empty path
+    - **Containers**: Fixed an issue where containers could not roll back properly after an upgrade failure
+    - **File Browser**: Fixed file permission changes after overwriting files during extraction
+    - **File Browser**: Fixed an issue with batch-selecting items using the Shift key
+    - **Monitoring**: Fixed duplicate disk I/O statistics
+    - **Firewall**: Fixed an issue where Fail2Ban blocking rules were lost after restarting the firewall
+    - **Cron**: Fixed an issue where temporary files were not cleaned up after backup failures
+    - **Multi-Node**: Fixed abnormal database authorization information display in the node overview
+    - **Resource Sync**: Fixed insufficient permission validation for the application installation synchronization API
+    - **Panel Settings**: Fixed an issue where the system snapshot upload timeout did not take effect
+
 ### v2.2.3
 
 2026‑07‑07
