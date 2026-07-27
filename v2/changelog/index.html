@@ -5488,6 +5488,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v224" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.2.4
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v223" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -6252,6 +6263,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v224" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.2.4
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v223" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -6669,6 +6691,75 @@
 </ul>
 </div>
 <h2 id="2">2 更新内容<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
+<h3 id="v224">v2.2.4<a class="headerlink" href="#v224" title="Permanent link">⚓︎</a></h3>
+<p>2026年7月27日</p>
+<div class="admonition note">
+<p class="admonition-title">新增功能</p>
+<ul>
+<li>【模型】模型账号支持获取模型列表</li>
+<li>【MCP】MCP Server 支持自定义命令行参数</li>
+<li>【网站】OpenResty 模块支持动态编译</li>
+<li>【数据库】新增 MySQL 用户管理功能</li>
+<li>【文件】文件分片上传支持取消</li>
+<li>【文件】文件管理支持缓存目录大小并按大小排序</li>
+<li>【工具箱】进程管理新增运行诊断功能</li>
+<li>【WAF】访问限制支持按省份配置</li>
+<li>【WAF】新增观察模式</li>
+<li>【WAF】支持设置允许访问的搜索引擎蜘蛛</li>
+<li>【WAF】拦截日志支持按 Host 筛选</li>
+<li>【WAF】新增源站保护功能</li>
+<li>【WAF】拦截日志与网站监控日志支持按 IP 归属地查询</li>
+<li>【WAF】攻击报表新增网站维度统计</li>
+<li>【多机管理】支持配置节点健康检查</li>
+<li>【网站监控】日志支持拉黑 IP 和 IP 段</li>
+<li>【日志审计】新增 Linux 主机系统日志查看功能</li>
+<li>【系统】新增老挝语（lo_LA）语言支持</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">功能优化</p>
+<ul>
+<li>【模型】模型下载器支持跳转至下载目录</li>
+<li>【模型】优化模型账号修改后的关联模型同步逻辑</li>
+<li>【网站】优化网站列表页面样式</li>
+<li>【网站】优化 OpenResty 模块编译与升级流程</li>
+<li>【证书】优化 SSL 证书申请逻辑</li>
+<li>【容器】优化容器批量操作入口位置</li>
+<li>【文件】完善文件分片上传取消功能的多语言文案</li>
+<li>【文件】在受保护目录创建文件时新增提示信息</li>
+<li>【终端】优化大量内容输出时的页面性能</li>
+<li>【WAF】优化概览页面信息展示</li>
+<li>【WAF】优化拦截日志与网站监控日志的导出功能</li>
+<li>【WAF】WAF 与网站监控报表支持保留筛选条件</li>
+<li>【WAF】优化文件上传内容检测配置</li>
+<li>【网站监控】网站列表支持按访问数据排序</li>
+<li>【网站防篡改】优化防篡改列表的网站信息展示</li>
+<li>【日志审计】优化主机日志管理并支持清空 SSH 登录日志</li>
+<li>【面板设置】优化 OneDrive 备份账号的接口适配逻辑</li>
+<li>【系统】1Panel 系统启动时自动同步脚本库</li>
+<li>【系统】优化部分列表页的表格交互体验</li>
+<li>【系统】列表页支持保留筛选条件</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">问题修复</p>
+<ul>
+<li>【概览】修复了概览页右侧卡片高度不一致的问题</li>
+<li>【应用商店】修复了远程服务器下架应用版本后仍可选择安装的问题</li>
+<li>【MCP】修复了 MCP Server 绑定网站时无法启用 HTTPS 的问题</li>
+<li>【数据库】修复了 MariaDB 远程备份镜像标签异常的问题</li>
+<li>【容器】修复了本地镜像导入路径为空时仍可提交的问题</li>
+<li>【容器】修复了容器升级失败后无法正常回滚的问题</li>
+<li>【文件】修复了覆盖解压文件后权限发生变化的问题</li>
+<li>【文件】修复了使用 Shift 键批量选择数据时出现异常的问题</li>
+<li>【监控】修复了磁盘 I/O 数据重复统计的问题</li>
+<li>【防火墙】修复了重启防火墙后 Fail2Ban 封禁规则丢失的问题</li>
+<li>【计划任务】修复了备份失败后临时文件未清理的问题</li>
+<li>【多机管理】修复了节点概览中数据库授权信息显示异常的问题</li>
+<li>【资源同步】修复了应用安装同步接口权限校验不完善的问题</li>
+<li>【面板设置】修复了系统快照上传超时时间未生效的问题</li>
+</ul>
+</div>
 <h3 id="v223">v2.2.3<a class="headerlink" href="#v223" title="Permanent link">⚓︎</a></h3>
 <p>2026年7月7日</p>
 <div class="admonition note">
