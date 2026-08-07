@@ -3353,6 +3353,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v225" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.2.5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v224" class="md-nav__link">
     <span class="md-ellipsis">
       v2.2.4
@@ -3728,6 +3737,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v225" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.2.5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v224" class="md-nav__link">
     <span class="md-ellipsis">
       v2.2.4
@@ -4082,6 +4100,104 @@
 
 <h1 id="1panel-changelog">1Panel Changelog<a class="headerlink" href="#1panel-changelog" title="Permanent link">¶</a></h1>
 <h2 id="release-notes">Release Notes<a class="headerlink" href="#release-notes" title="Permanent link">¶</a></h2>
+<h3 id="v225">v2.2.5<a class="headerlink" href="#v225" title="Permanent link">¶</a></h3>
+<p>2026‑08‑07</p>
+<div class="admonition note">
+<p class="admonition-title">New Features</p>
+<ul>
+<li><strong>Agents</strong>: Added plugin management support for OpenClaw</li>
+<li><strong>Agents</strong>: Added username and password configuration for QwenPaw</li>
+<li><strong>Models</strong>: Added text-to-image API support for model accounts</li>
+<li><strong>Models</strong>: Added a DeepSeek model startup template</li>
+<li><strong>Websites</strong>: Added website template management</li>
+<li><strong>Containers</strong>: Added pinning support for Compose and unified pinning interactions across resource lists</li>
+<li><strong>Containers</strong>: Added support for hiding Compose projects created by the App Store</li>
+<li><strong>Cron</strong>: Added an option to exclude GTID information from MySQL backups</li>
+<li><strong>Multi-Node</strong>: Added automatic detection of failed or abnormal nodes to node health checks</li>
+<li><strong>Panel Settings</strong>: Added trusted proxy configuration for API access restrictions</li>
+<li><strong>Panel Settings</strong>: Added time range filtering for alert logs</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Improvements</p>
+<ul>
+<li><strong>App Store</strong>: Optimized the app upgrade workflow</li>
+<li><strong>Models</strong>: Updated Xiaomi MiMo models and added support for the OpenAI Responses API</li>
+<li><strong>Models</strong>: Updated the default API address for DeepSeek model accounts</li>
+<li><strong>File Browser</strong>: Optimized file share password handling and remote download filename parsing</li>
+<li><strong>Firewall</strong>: Optimized port forwarding logic</li>
+<li><strong>Toolbox</strong>: Optimized FTP user identity initialization</li>
+<li><strong>Toolbox</strong>: Website-created and standalone FTP accounts now use separate user identities</li>
+<li><strong>Cron</strong>: Optimized duration display for task execution records</li>
+<li><strong>WAF</strong>: Optimized configuration file saving</li>
+<li><strong>WAF</strong>: Optimized cleanup of WAF and website monitoring logs and statistics</li>
+<li><strong>Multi-Node</strong>: Optimized connection reuse for node requests</li>
+<li><strong>Log Audit</strong>: Optimized host system log pagination</li>
+<li><strong>Panel Settings</strong>: Optimized file handling when restoring system snapshots from local backup accounts</li>
+<li><strong>System</strong>: Optimized table pagination settings on list pages</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Bug Fixes</p>
+<ul>
+<li><strong>Overview</strong>: Fixed an issue where uptime did not match the system boot time</li>
+<li><strong>Overview</strong>: Fixed abnormal column heights of overview page cards</li>
+<li><strong>App Store</strong>: Fixed OpenResty upgrade failures in some scenarios</li>
+<li><strong>Websites</strong>: Fixed an issue where the website list order changed after editing a website</li>
+<li><strong>Websites</strong>: Fixed an issue where website configuration files could not be restored from backups</li>
+<li><strong>Websites</strong>: Fixed an issue where multi-file website templates could still be saved without uploading a ZIP file</li>
+<li><strong>Websites</strong>: Fixed incomplete cleanup of website monitoring directories when deleting websites</li>
+<li><strong>Containers</strong>: Fixed inconsistent project name parsing when creating Compose projects from a path</li>
+<li><strong>File Browser</strong>: Fixed loss of user and group information when extracting files</li>
+<li><strong>Terminal</strong>: Fixed abnormal display of the group column in the host list</li>
+<li><strong>Toolbox</strong>: Fixed an issue where device cleanup scan results included empty directories</li>
+<li><strong>Toolbox</strong>: Fixed abnormal process start time display in LXC environments</li>
+<li><strong>Cron</strong>: Fixed an issue where clearing execution records incorrectly deleted records for running tasks</li>
+<li><strong>Multi-Node</strong>: Fixed an issue where resource information was still loaded for some unhealthy nodes</li>
+<li><strong>Multi-Node</strong>: Fixed an issue with requests to IPv6 nodes</li>
+<li><strong>Panel Settings</strong>: Fixed incorrect page navigation from the passkey setup guide in some scenarios</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Enterprise New Features</p>
+<ul>
+<li><strong>AI Gateway</strong>: Added vision enhancement</li>
+<li><strong>AI Gateway</strong>: Added support for setting validity periods for API keys</li>
+<li><strong>AI Gateway</strong>: Added upstream duration display to call logs</li>
+<li><strong>AI Gateway</strong>: Added API protocol conversion</li>
+<li><strong>AI Gateway</strong>: Added text-to-image API support</li>
+<li><strong>User Management</strong>: Added support for OIDC and SAML 2.0 authentication</li>
+<li><strong>User Management</strong>: Added LDAP authentication and related configuration</li>
+<li><strong>Ops Report</strong>: Added report snapshot and run record management</li>
+<li><strong>Virtual Machines</strong>: Added support for synchronizing existing VMs</li>
+<li><strong>Virtual Machines</strong>: Added quick creation of images, networks, and storage resources when creating VMs</li>
+<li><strong>Panel Settings</strong>: Added offline trial support for Enterprise Edition</li>
+<li><strong>Panel Settings</strong>: Added support for reverting from Enterprise Edition to Community Edition</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Enterprise Improvements</p>
+<ul>
+<li><strong>AI Gateway</strong>: Optimized the response format when sensitive words are detected</li>
+<li><strong>AI Gateway</strong>: Optimized smart routing decision logic</li>
+<li><strong>AI Gateway</strong>: Optimized the service status bar display</li>
+<li><strong>AI Gateway</strong>: Optimized handling after model account changes</li>
+<li><strong>AI Gateway</strong>: Optimized logic for determining when model accounts are unavailable</li>
+<li><strong>Skills Hub</strong>: Optimized action buttons for skill versions</li>
+<li><strong>Ops Report</strong>: Optimized website monitoring and WAF status detection logic</li>
+<li><strong>Panel Settings</strong>: Improved migration from Community Edition to Enterprise Edition by preserving administrator account information</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Enterprise Bug Fixes</p>
+<ul>
+<li><strong>AI Gateway</strong>: Fixed settings save failures in some scenarios</li>
+<li><strong>User Management</strong>: Fixed an issue where read-only roles could not access some features</li>
+<li><strong>User Management</strong>: Fixed missing permission rules for some APIs</li>
+<li><strong>Ops Report</strong>: Fixed a mismatch between disk status display and risk level</li>
+<li><strong>Virtual Machines</strong>: Fixed abnormal VM health checks in ARM64 environments</li>
+</ul>
+</div>
 <h3 id="v224">v2.2.4<a class="headerlink" href="#v224" title="Permanent link">¶</a></h3>
 <p>2026‑07‑27</p>
 <div class="admonition note">
