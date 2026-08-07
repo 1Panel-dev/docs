@@ -7,6 +7,94 @@ hide:
 
 ## Release Notes
 
+### v2.2.5
+
+2026‑08‑07
+
+!!! note "New Features"
+
+    - **Agents**: Added plugin management support for OpenClaw
+    - **Agents**: Added username and password configuration for QwenPaw
+    - **Models**: Added text-to-image API support for model accounts
+    - **Models**: Added a DeepSeek model startup template
+    - **Websites**: Added website template management
+    - **Containers**: Added pinning support for Compose and unified pinning interactions across resource lists
+    - **Containers**: Added support for hiding Compose projects created by the App Store
+    - **Cron**: Added an option to exclude GTID information from MySQL backups
+    - **Multi-Node**: Added automatic detection of failed or abnormal nodes to node health checks
+    - **Panel Settings**: Added trusted proxy configuration for API access restrictions
+    - **Panel Settings**: Added time range filtering for alert logs
+
+!!! note "Improvements"
+
+    - **App Store**: Optimized the app upgrade workflow
+    - **Models**: Updated Xiaomi MiMo models and added support for the OpenAI Responses API
+    - **Models**: Updated the default API address for DeepSeek model accounts
+    - **File Browser**: Optimized file share password handling and remote download filename parsing
+    - **Firewall**: Optimized port forwarding logic
+    - **Toolbox**: Optimized FTP user identity initialization
+    - **Toolbox**: Website-created and standalone FTP accounts now use separate user identities
+    - **Cron**: Optimized duration display for task execution records
+    - **WAF**: Optimized configuration file saving
+    - **WAF**: Optimized cleanup of WAF and website monitoring logs and statistics
+    - **Multi-Node**: Optimized connection reuse for node requests
+    - **Log Audit**: Optimized host system log pagination
+    - **Panel Settings**: Optimized file handling when restoring system snapshots from local backup accounts
+    - **System**: Optimized table pagination settings on list pages
+
+!!! note "Bug Fixes"
+
+    - **Overview**: Fixed an issue where uptime did not match the system boot time
+    - **Overview**: Fixed abnormal column heights of overview page cards
+    - **App Store**: Fixed OpenResty upgrade failures in some scenarios
+    - **Websites**: Fixed an issue where the website list order changed after editing a website
+    - **Websites**: Fixed an issue where website configuration files could not be restored from backups
+    - **Websites**: Fixed an issue where multi-file website templates could still be saved without uploading a ZIP file
+    - **Websites**: Fixed incomplete cleanup of website monitoring directories when deleting websites
+    - **Containers**: Fixed inconsistent project name parsing when creating Compose projects from a path
+    - **File Browser**: Fixed loss of user and group information when extracting files
+    - **Terminal**: Fixed abnormal display of the group column in the host list
+    - **Toolbox**: Fixed an issue where device cleanup scan results included empty directories
+    - **Toolbox**: Fixed abnormal process start time display in LXC environments
+    - **Cron**: Fixed an issue where clearing execution records incorrectly deleted records for running tasks
+    - **Multi-Node**: Fixed an issue where resource information was still loaded for some unhealthy nodes
+    - **Multi-Node**: Fixed an issue with requests to IPv6 nodes
+    - **Panel Settings**: Fixed incorrect page navigation from the passkey setup guide in some scenarios
+
+!!! note "Enterprise New Features"
+
+    - **AI Gateway**: Added vision enhancement
+    - **AI Gateway**: Added support for setting validity periods for API keys
+    - **AI Gateway**: Added upstream duration display to call logs
+    - **AI Gateway**: Added API protocol conversion
+    - **AI Gateway**: Added text-to-image API support
+    - **User Management**: Added support for OIDC and SAML 2.0 authentication
+    - **User Management**: Added LDAP authentication and related configuration
+    - **Ops Report**: Added report snapshot and run record management
+    - **Virtual Machines**: Added support for synchronizing existing VMs
+    - **Virtual Machines**: Added quick creation of images, networks, and storage resources when creating VMs
+    - **Panel Settings**: Added offline trial support for Enterprise Edition
+    - **Panel Settings**: Added support for reverting from Enterprise Edition to Community Edition
+
+!!! note "Enterprise Improvements"
+
+    - **AI Gateway**: Optimized the response format when sensitive words are detected
+    - **AI Gateway**: Optimized smart routing decision logic
+    - **AI Gateway**: Optimized the service status bar display
+    - **AI Gateway**: Optimized handling after model account changes
+    - **AI Gateway**: Optimized logic for determining when model accounts are unavailable
+    - **Skills Hub**: Optimized action buttons for skill versions
+    - **Ops Report**: Optimized website monitoring and WAF status detection logic
+    - **Panel Settings**: Improved migration from Community Edition to Enterprise Edition by preserving administrator account information
+
+!!! note "Enterprise Bug Fixes"
+
+    - **AI Gateway**: Fixed settings save failures in some scenarios
+    - **User Management**: Fixed an issue where read-only roles could not access some features
+    - **User Management**: Fixed missing permission rules for some APIs
+    - **Ops Report**: Fixed a mismatch between disk status display and risk level
+    - **Virtual Machines**: Fixed abnormal VM health checks in ARM64 environments
+
 ### v2.2.4
 
 2026‑07‑27
