@@ -187,7 +187,9 @@ nav:
     - 服务器架构相关: faq/server_architecture.md
     - OpenClaw 相关: faq/openclaw.md
     - AI 编程接入指南: faq/ai_coding.md
-  - 版本迭代: changelog.md
+  - 版本迭代:
+    - 社区版/专业版: changelog.md
+    - 企业版: enterprise_changelog.md
   - 1Panel 商业版本:
     - 版本功能对比: https://1panel.cn/versions.html
     - 1Panel 专业版: https://www.lxware.cn/1panel
