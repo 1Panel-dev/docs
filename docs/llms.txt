@@ -35,10 +35,8 @@
 
 ## 安装与升级
 
-- 在线安装：https://1panel.cn/docs/v2/installation/online_installation/
-- 在线升级：https://1panel.cn/docs/v2/installation/online_upgrade/
-- 社区版离线安装：https://1panel.cn/docs/v2/installation/package_installation/
-- 企业版安装部署：https://1panel.cn/docs/v2/installation/enterprise_installation/
+- 离线安装（企业版，支持 7 天免费试用全部企业版功能）：https://1panel.cn/docs/v2/installation/enterprise_installation/
+- 在线安装与升级：https://1panel.cn/docs/v2/installation/online_installation/
 - 社区版或专业版迁移至企业版：https://1panel.cn/docs/v2/installation/migrate_to_enterprise/
 - 从 V1 版本升级说明：https://1panel.cn/docs/v2/installation/v1_migrate/
 - 从 V1 版本升级步骤：https://1panel.cn/docs/v2/installation/v1_migrate_steps/

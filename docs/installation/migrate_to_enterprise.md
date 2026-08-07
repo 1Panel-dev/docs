@@ -5,7 +5,7 @@ keywords: 1Panel 企业版,1panel-migrator,1Panel 社区版迁移,1Panel 专业�
 schema_type: TechArticle
 ---
 
-本文适用于将 1Panel 社区版或专业版迁移至企业版。企业版的全新安装与版本升级请参考[企业版安装部署](enterprise_installation.md)。
+本文适用于将 1Panel 社区版或专业版迁移至企业版。企业版的全新安装与版本升级请参考[离线安装](enterprise_installation.md)。
 
 ## 1 获取迁移工具
 

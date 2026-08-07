@@ -11,7 +11,7 @@
     - 内存要求：建议可用内存在 1GB 以上
     - 浏览器要求：请使用 Chrome、Firefox、IE 10+、Edge 等现代浏览器
     - **可访问互联网**
-    - 如果是内网环境，推荐使用 [离线安装包](https://1panel.cn/docs/v2/installation/package_installation/) 方式进行部署
+    - 如果是内网环境，推荐使用 [离线安装](enterprise_installation.md) 方式进行部署
 
 !!! note "服务器优惠"
     如果你还没有服务器，欢迎通过以下优惠链接选购。
@@ -118,3 +118,11 @@
 
 !!! note ""
     安装成功后，可使用 [1pctl](cli.md) 命令行工具来维护 1Panel
+
+## 3 在线升级
+
+!!! note ""
+    登录 1Panel Web 控制台，在页面右下角点击 **【检查更新】** 进行在线升级。
+
+![在线升级检查更新](../img/installation/检查更新.png)
+{: .browser-mockup}

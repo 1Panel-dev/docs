@@ -41,10 +41,8 @@ theme:
 nav:
   - 产品介绍: index.md
   - 安装部署:
+    - 离线安装: installation/enterprise_installation.md
     - 在线安装: installation/online_installation.md
-    - 在线升级: installation/online_upgrade.md
-    - 社区版离线安装: installation/package_installation.md
-    - 企业版安装部署: installation/enterprise_installation.md
     - 迁移至企业版: installation/migrate_to_enterprise.md
     - 从 V1 版本升级:
       - 升级说明: installation/v1_migrate.md
