@@ -30,7 +30,8 @@
 - GitHub：https://github.com/1Panel-dev/1Panel
 - 版本功能对比：https://1panel.cn/versions.html
 - API 接口：https://1panel.cn/docs/v2/dev_manual/api_manual/
-- 版本迭代：https://1panel.cn/docs/v2/changelog/
+- 社区版/专业版更新内容：https://1panel.cn/docs/v2/changelog/
+- 企业版更新内容：https://1panel.cn/docs/v2/enterprise_changelog/
 - 联系我们：https://1panel.cn/docs/v2/contact/
 
 ## 安装与升级
