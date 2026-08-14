@@ -12,13 +12,13 @@
         <meta name="author" content="飞致云">
       
       
-        <link rel="canonical" href="https://1panel.cn/docs/v2/user_manual/appstore/phpmyadmin/">
+        <link rel="canonical" href="https://1panel.cn/docs/v2/user_manual/appstore/deepseek-harness/">
       
       
-        <link rel="prev" href="../maxkb/">
+        <link rel="prev" href="../hermes-agent/">
       
       
-        <link rel="next" href="../wordpress/">
+        <link rel="next" href="../openresty/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>phpMyAdmin - 1Panel 文档</title>
+        <title>DeepSeek Harness - 1Panel 文档</title>
       
     
     
@@ -97,12 +97,12 @@
     <meta name="application-name" content="1Panel">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="1Panel 文档">
-    <meta property="og:title" content="phpMyAdmin">
+    <meta property="og:title" content="DeepSeek Harness">
     <meta property="og:description" content="1Panel V2 使用文档，涵盖 Linux 服务器、网站、数据库、Docker 容器、应用商店、AI 与安全运维功能的配置和管理。">
     <meta property="og:url" content="https://1panel.cn/docs/v2">
     <meta property="og:locale" content="zh_CN">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="phpMyAdmin">
+    <meta name="twitter:title" content="DeepSeek Harness">
     <meta name="twitter:description" content="1Panel V2 使用文档，涵盖 Linux 服务器、网站、数据库、Docker 容器、应用商店、AI 与安全运维功能的配置和管理。">
     <link rel="sitemap" type="application/xml" href="https://1panel.cn/docs/v2/sitemap.xml">
     <link rel="alternate" type="text/plain" title="llms.txt" href="https://1panel.cn/docs/v2/llms.txt">
@@ -181,7 +181,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1panel-phpmyadmin" class="md-skip">
+        <a href="#deepseek-harness" class="md-skip">
           跳转至
         </a>
       
@@ -284,7 +284,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              phpMyAdmin
+              DeepSeek Harness
             
           </span>
         </div>
@@ -4068,10 +4068,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../deepseek-harness/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DeepSeek Harness
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -4087,6 +4114,114 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        产品介绍
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前提准备
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-deepseek-harness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 安装 DeepSeek Harness
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-deepseek-harness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 访问 DeepSeek Harness
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-deepseek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 配置 DeepSeek 官方模型
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 配置第三方模型提供方
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 开始第一个任务
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 安全与升级建议
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -4292,37 +4427,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    phpMyAdmin
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../phpmyadmin/" class="md-nav__link">
         
   
   
@@ -4338,70 +4446,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. 打开应用商店
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-phpmyadmin" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. 搜索 phpMyAdmin 并安装
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. 配置安装参数
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-phpmyadmin" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. 访问 phpMyAdmin 服务
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -5927,10 +5971,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. 打开应用商店
+        产品介绍
       
     </span>
   </a>
@@ -5938,10 +5982,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-phpmyadmin" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. 搜索 phpMyAdmin 并安装
+        前提准备
       
     </span>
   </a>
@@ -5949,10 +5993,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#1-deepseek-harness" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. 配置安装参数
+        1. 安装 DeepSeek Harness
       
     </span>
   </a>
@@ -5960,10 +6004,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-phpmyadmin" class="md-nav__link">
+  <a href="#2-deepseek-harness" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. 访问 phpMyAdmin 服务
+        2. 访问 DeepSeek Harness
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-deepseek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 配置 DeepSeek 官方模型
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 配置第三方模型提供方
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 开始第一个任务
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 安全与升级建议
       
     </span>
   </a>
@@ -5987,48 +6075,90 @@
 
 
 
-<h1 id="1panel-phpmyadmin">使用 1Panel 可视化安装 phpMyAdmin<a class="headerlink" href="#1panel-phpmyadmin" title="Permanent link">⚓︎</a></h1>
+<h1 id="deepseek-harness">DeepSeek Harness 安装部署<a class="headerlink" href="#deepseek-harness" title="Permanent link">⚓︎</a></h1>
+<h2 id="_1">产品介绍<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p><strong>phpMyAdmin</strong> 是一个开源的基于Web的MySQL数据库管理工具，它允许用户通过Web浏览器管理MySQL数据库。</p>
-</div>
-<h2 id="1">1. 打开应用商店<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p>进入 1Panel 控制台后，点击左侧菜单的 <strong>「应用商店」</strong>。</p>
-</div>
-<p><img alt="image-20251016110510084" src="../../../img/app/appstores.png" /></p>
-<h2 id="2-phpmyadmin">2. 搜索 phpMyAdmin 并安装<a class="headerlink" href="#2-phpmyadmin" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p>在右上角搜索框输入 <strong>phpMyAdmin</strong>，点击应用卡片进入详情页，选择 <strong>安装</strong>。</p>
-</div>
-<p><img alt="image-20251016175101288" src="../../../img/app/phpMyAdmin.png" /></p>
-<h2 id="3">3. 配置安装参数<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p>你可以根据需要配置</p>
+<p><strong>DeepSeek Harness（简称 DSH）</strong> 是 DeepSeek 面向开发者推出的开源智能体运行环境。它负责向大模型提供项目文件、工具和运行环境，让模型可以完成开发任务。</p>
+<p>DeepSeek Harness 采用插件化架构，可按任务组合网页检索、Skills、计划、子 Agent 和工作流等能力，并提供以下四种运行模式：</p>
 <ul>
-<li><strong>名称</strong> (输入框内可自定义应用名称，默认为 phpmyadmin)</li>
-<li><strong>版本</strong> (下拉选择所需的 phpMyAdmin 版本)</li>
-<li><strong>端口</strong> (应用的访问端口，默认为 8089)</li>
-<li><strong>端口外部访问</strong> (开启后，将允许从外部网络访问此应用端口)</li>
+<li><strong>标准模式</strong>：适合日常开发任务，建议初次使用时选择</li>
+<li><strong>PTC 模式</strong>：适合多步骤、复杂的工具调用编排</li>
+<li><strong>极简模式</strong>：仅保留基础命令和编辑工具</li>
+<li><strong>创造模式</strong>：用于创建和调试自定义 Agent 预设</li>
 </ul>
-<p>确认设置无误后，点击 <strong>确认</strong> 按钮开始安装。</p>
+<p>更多产品信息，请参阅 <a href="https://github.com/deepseek-ai/deepseek-harness/blob/master/README.zh.md">DeepSeek Harness 官方说明</a>。</p>
 </div>
-<p><img alt="image-20251016175326474" src="../../../img/app/phpmyadmin_install.png" /></p>
+<h2 id="_2">前提准备<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>等待安装完成即可</p>
+<p>部署前请先确认以下条件：</p>
+<ul>
+<li>已安装并可正常访问 1Panel</li>
+<li>已准备 DeepSeek 或其他模型提供方的 API Key</li>
+<li>已在云安全组和系统防火墙中放行计划使用的 HTTPS 端口</li>
+<li>已准备浏览器实际访问服务器时使用的 IPv4 地址或主机名</li>
+</ul>
 </div>
-<h2 id="4-phpmyadmin">4. 访问 phpMyAdmin 服务<a class="headerlink" href="#4-phpmyadmin" title="Permanent link">⚓︎</a></h2>
+<h2 id="1-deepseek-harness">1. 安装 DeepSeek Harness<a class="headerlink" href="#1-deepseek-harness" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>安装完成后，确认 1Panel 配置默认访问地址</p>
+<p>登录 1Panel 后台，进入 <strong>应用商店</strong>，搜索 <strong>DeepSeek Harness</strong>，进入应用详情页并点击 <strong>安装</strong>。</p>
+<p>按页面要求填写安装参数：</p>
+<ul>
+<li><strong>名称</strong>：应用名称，默认可填写为 <code>deepseek-harness</code></li>
+<li><strong>版本</strong>：选择需要安装的 DeepSeek Harness 版本</li>
+<li><strong>HTTPS 端口</strong>：用于访问 Web UI，例如 <code>10443</code></li>
+<li><strong>访问地址</strong>：填写浏览器实际使用的 IPv4 地址或主机名，不包含 <code>https://</code> 和端口</li>
+<li><strong>Web 用户名</strong>：访问 Web UI 时使用的认证用户名</li>
+<li><strong>Web 访问密码</strong>：设置至少 12 位的强密码</li>
+<li><strong>高级设置</strong>：一般保持默认即可</li>
+</ul>
 </div>
-<p><img alt="image-20251016172322315" src="../../../img/app/setting_ip.png" /></p>
+<p><img alt="安装 DeepSeek Harness" src="../../../img/app/deepseek-harness-install.png" /></p>
 <div class="admonition note">
-<p>返回应用商店，点击 <strong>跳转</strong> 即可访问 phpMyAdmin 服务</p>
+<p>1Panel 应用商店中的 DeepSeek Harness 集成了 Caddy HTTPS 和用户名密码认证。Harness 仅监听容器回环地址，外部请求需要先经过 Caddy 鉴权和解密，再转发到 Harness 服务。</p>
 </div>
-<p><img alt="image-20251016175944497" src="../../../img/app/jump_phpmyadmin.png" /></p>
+<h2 id="2-deepseek-harness">2. 访问 DeepSeek Harness<a class="headerlink" href="#2-deepseek-harness" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
-<p>输入需要管理的数据库信息即可</p>
+<p>安装完成后，在浏览器中访问：</p>
+<div class="highlight"><pre><span></span><code>https://&lt;访问地址&gt;:&lt;HTTPS 端口&gt;
+</code></pre></div>
+<p>浏览器会先要求输入安装时设置的 Web 用户名和密码，认证通过后即可进入 DeepSeek Harness。</p>
 </div>
-<p><img alt="image-20251016180107079" src="../../../img/app/phpmyadmin_view.png" /></p>
+<div class="admonition warning">
+<p>Caddy 使用内部 CA 自动签发证书，首次访问时浏览器可能提示证书不受信任。测试体验时可以确认地址无误后继续访问；正式环境建议配置受浏览器信任的证书。</p>
+</div>
+<h2 id="3-deepseek">3. 配置 DeepSeek 官方模型<a class="headerlink" href="#3-deepseek" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
+<p>首次进入 DeepSeek Harness 时，页面会提示添加 API Key。填写 DeepSeek 官方 API Key 后，点击 <strong>保存并继续</strong>。</p>
+<p>也可以点击 <strong>稍后配置</strong>，进入页面后再打开左下角的 <strong>设置</strong>，在 <strong>模型</strong> 页面中完成配置。</p>
+</div>
+<p><img alt="配置 DeepSeek API Key" src="../../../img/app/deepseek-harness-api-key.png" /></p>
+<h2 id="4">4. 配置第三方模型提供方<a class="headerlink" href="#4" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
+<p>DeepSeek Harness 也支持配置第三方模型提供方。以 OpenCode Go 为例：</p>
+<ol>
+<li>打开左下角的 <strong>设置</strong>。</li>
+<li>进入 <strong>模型</strong> 页面，选择 <strong>添加提供方</strong>。</li>
+<li>选择 <code>opencode-go</code>，填写 API Key。</li>
+<li>按需配置 API 地址和模型，确认无误后点击 <strong>保存</strong>。</li>
+</ol>
+</div>
+<p><img alt="配置第三方模型提供方" src="../../../img/app/deepseek-harness-provider.png" /></p>
+<h2 id="5">5. 开始第一个任务<a class="headerlink" href="#5" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
+<p>返回首页，在输入框左下角选择工作区，在右下角确认模型和运行模式，然后输入任务内容即可开始对话。</p>
+<p>首次体验建议选择 <strong>标准模式</strong>，并使用不包含敏感数据的测试项目。</p>
+</div>
+<p><img alt="开始 DeepSeek Harness 任务" src="../../../img/app/deepseek-harness-task.png" /></p>
+<h2 id="6">6. 安全与升级建议<a class="headerlink" href="#6" title="Permanent link">⚓︎</a></h2>
+<div class="admonition warning">
+<p>DeepSeek Harness 目前仍处于开发者预览阶段，建议仅用于测试体验，并注意以下事项：</p>
+<ul>
+<li>妥善保管 API Key 和 Web 访问密码</li>
+<li>不要将宿主机根目录、Docker Socket 或 SSH 密钥目录挂载到工作区</li>
+<li>不要在工作区中放置敏感数据</li>
+<li>升级前备份重要数据</li>
+</ul>
+</div>
 
 
 
