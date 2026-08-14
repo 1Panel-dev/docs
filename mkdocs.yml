@@ -144,6 +144,7 @@ nav:
   - 常用软件:
     - OpenClaw: user_manual/appstore/openclaw.md
     - Hermes Agent: user_manual/appstore/hermes-agent.md
+    - DeepSeek Harness: user_manual/appstore/deepseek-harness.md
     - OpenResty: user_manual/appstore/openresty.md
     - MySQL: user_manual/appstore/mysql.md
     - Redis: user_manual/appstore/redis.md
