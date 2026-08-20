@@ -9,8 +9,11 @@
 
     [了解更多容器编排相关的知识](https://docs.docker.com/compose)
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/containers/compose_create.png)
-{: .original}
+
+</div>
 
 ## 2 编辑编排
 
@@ -28,5 +31,8 @@
 !!! note ""
     点击编排列表名称，进入编排详情界面，详情界面实现该 Compose 对应的容器列表，仅当该 Compose 为 1Panel 创建时，支持对 Compose 进行启停操作。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/containers/compose_detail.png)
-{: .original}
+
+</div>

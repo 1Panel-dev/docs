@@ -8,14 +8,22 @@
 !!! note ""
     进入 1Panel 控制台后，点击左侧菜单的 **「应用商店」**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016110510084](../../img/app/appstores.png)
+
+</div>
 
 ## 2. 搜索 ddns-go 并安装
 
 !!! note ""
     在右上角搜索框输入 **ddns-go**，点击应用卡片进入详情页，选择 **安装**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251020154143141](../../img/app/ddns-go.png)
+
+</div>
 
 ## 3. 配置安装参数
 
@@ -28,7 +36,11 @@
     
     确认设置无误后，点击 **确认** 按钮开始安装。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251020155257247](../../img/app/ddns-go_install.png)
+
+</div>
 
 !!! note ""
      等待安装完成即可
@@ -38,14 +50,26 @@
 !!! note ""
      安装完成后，确认 1Panel 配置默认访问地址，已配置过可忽略
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016172322315](../../img/app/setting_ip.png)
+
+</div>
 
 !!! note ""
      返回应用商店，点击 **跳转** 即可访问 ddns-go 服务
 
+<div class="browser-mockup" markdown>
+
 ![image-20251020154839215](../../img/app/ddns-go_jump.png)
+
+</div>
 
 !!! note ""
      首次登录需配置管理员账号
 
+<div class="browser-mockup" markdown>
+
 ![image-20251020154950622](../../img/app/ddns-go_view.png)
+
+</div>

@@ -8,14 +8,22 @@
 !!! note ""
     进入 1Panel 控制台后，点击左侧菜单的 **「应用商店」**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016110510084](../../img/app/appstores.png)
+
+</div>
 
 ## 2. 搜索 Stirling-PDF 并安装
 
 !!! note ""
     在右上角搜索框输入 **Stirling-PDF**，点击应用卡片进入详情页，选择 **安装**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251020134308250](../../img/app/stirling-pdf.png)
+
+</div>
 
 ## 3. 配置安装参数
 
@@ -29,7 +37,11 @@
     
     确认设置无误后，点击 **确认** 按钮开始安装。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251020134534620](../../img/app/stirling-pdf_install.png)
+
+</div>
 
 !!! note ""
      等待安装完成即可
@@ -39,14 +51,26 @@
 !!! note ""
      安装完成后，确认 1Panel 配置默认访问地址，已配置过可忽略
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016172322315](../../img/app/setting_ip.png)
+
+</div>
 
 !!! note ""
      返回应用商店，点击 **跳转** 即可访问 Stirling-PDF 服务
 
+<div class="browser-mockup" markdown>
+
 ![image-20251020135800174](../../img/app/stirling-pdf_jump.png)
+
+</div>
 
 !!! note ""
      选择对应的功能即可
 
+<div class="browser-mockup" markdown>
+
 ![image-20251020135855533](../../img/app/stirling-pdf_view.png)
+
+</div>

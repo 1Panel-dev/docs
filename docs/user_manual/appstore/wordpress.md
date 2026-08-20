@@ -8,14 +8,22 @@
 !!! note ""
     进入 1Panel 控制台后，点击左侧菜单的 **「应用商店」**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016110510084](../../img/app/appstores.png)
+
+</div>
 
 ## 2. 搜索 WordPress 并安装
 
 !!! note ""
     在右上角搜索框输入 **WordPress**，点击应用卡片进入详情页，选择 **安装**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251017154851362](../../img/app/wordpress.png)
+
+</div>
 
 ## 3. 配置安装参数
 
@@ -34,7 +42,11 @@
     确认设置无误后，点击 **确认** 按钮开始安装。
 
 
+<div class="browser-mockup" markdown>
+
 ![image-20251017155548615](../../img/app/wordpress_install.png)
+
+</div>
 
 !!! note ""
      等待安装完成即可
@@ -44,19 +56,35 @@
 !!! note ""
      配置默认访问地址，已配置则忽略此步骤
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016172322315](../../img/app/setting_ip.png)
+
+</div>
 
 !!! note ""
      返回应用商店，点击 **跳转** 即可访问 WordPress 服务
 
+<div class="browser-mockup" markdown>
+
 ![image-20251017155825666](../../img/app/wordpress_jump.png)
+
+</div>
 
 !!! note ""
      设置配置信息，完成初始化
 
+<div class="browser-mockup" markdown>
+
 ![image-20251017155933483](../../img/app/wordpress_view.png)
+
+</div>
 
 !!! note ""
      输入用户名密码登录，即可使用
 
+<div class="browser-mockup" markdown>
+
 ![image-20251017160433777](../../img/app/wordpress_login.png)
+
+</div>

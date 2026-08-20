@@ -10,27 +10,39 @@
 !!! note ""
     除应用商店安装的本地数据库以外，还可以添加已存在的数据库服务地址。点击列表上方的【远程服务器】按钮，即可进入远程服务器管理页面。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/databases/postgresql_remote.png)
-{: .original}
+
+</div>
+
+<div class="browser-mockup" markdown>
 
 ![img.png](../../img/databases/postgresql_remote_add.png)
-{: .original}
+
+</div>
 
 ### 1.3 切换数据库实例
 
 !!! note ""
     点击数据库列表上方的下拉菜单，即可在不同的数据库实例间进行切换，管理不同数据库实例下的数据库及设置等。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/databases/postgresql_select.png)
-{: .original}
+
+</div>
 
 ## 2 创建数据库
 
 !!! note ""
     创建一个新的数据库，输入数据库名称、用户名、密码，设置访问权限，即可成功创建一个数据库。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/databases/create_postgresql_db.png)
-{: .original}
+
+</div>
 
 !!! note ""
     - 数据库名：新建数据库的名称
@@ -43,8 +55,11 @@
 !!! note ""
     点击列表上方的【连接信息】按钮，即可查看数据库的地址、端口及管理员用户名和密码等连接信息，同时可以在这里修改管理员用户密码。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/databases/postgresql_connect.png)
-{: .original}
+
+</div>
 
 !!! note "注意"
     应用商店部署的数据库采用容器化方式运行，不同的场景需要根据页面提示选择对应的连接信息。
@@ -64,8 +79,11 @@
 !!! note ""
     点击备份列表按钮，选择备份，即可备份当前数据库文件。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/databases/backup_postgresql_db.png)
-{: .original}
+
+</div>
 
 !!! note ""
     - 默认数据库路径为 /opt/1panel/backup/database/postgresql
@@ -76,8 +94,11 @@
 !!! note ""
     点击导入备份按钮，可以选择本地上传，或选择已备份的文件还原。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/databases/recover_postgresql_db.png)
-{: .original}
+
+</div>
 
 !!! note ""
 
@@ -100,8 +121,11 @@
     点击状态栏设置按钮，即可进入数据库具体设置界面，具体包括配置修改、端口、日志查看。
     其中配置界面可对数据库配置进行手动调整。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/databases/postgresql_conf.png)
-{: .original}
+
+</div>
 
 !!! note ""
     - 系统 PostgreSQL 使用 Docker 安装，配置文件默认挂载在 /opt/1panel/apps/postgresql/[数据库名称]/data/postgresql.cnf
@@ -117,5 +141,8 @@
 !!! note ""
     - 系统 PostgreSQL 使用 Docker 安装，本处产生日志为对应 PostgreSQL 容器产生的日志。支持时间段筛选、追踪及下载操作
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/databases/postgresql_log.png)
-{: .original}
+
+</div>

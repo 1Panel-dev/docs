@@ -38,9 +38,11 @@
     - **Web 用户名**：访问 Web UI 时使用的认证用户名
     - **Web 访问密码**：设置至少 12 位的强密码
     - **高级设置**：一般保持默认即可
+<div class="browser-mockup" markdown>
 
 ![安装 DeepSeek Harness](../../img/app/deepseek-harness-install.png)
 
+</div>
 !!! note ""
     1Panel 应用商店中的 DeepSeek Harness 集成了 Caddy HTTPS 和用户名密码认证。Harness 仅监听容器回环地址，外部请求需要先经过 Caddy 鉴权和解密，再转发到 Harness 服务。
 
@@ -65,7 +67,11 @@
 
     也可以点击 **稍后配置**，进入页面后再打开左下角的 **设置**，在 **模型** 页面中完成配置。
 
+<div class="browser-mockup" markdown>
+
 ![配置 DeepSeek API Key](../../img/app/deepseek-harness-api-key.png)
+
+</div>
 
 ## 4. 配置第三方模型提供方
 
@@ -77,7 +83,11 @@
     3. 选择 `opencode-go`，填写 API Key。
     4. 按需配置 API 地址和模型，确认无误后点击 **保存**。
 
+<div class="browser-mockup" markdown>
+
 ![配置第三方模型提供方](../../img/app/deepseek-harness-provider.png)
+
+</div>
 
 ## 5. 开始第一个任务
 
@@ -85,8 +95,11 @@
     返回首页，在输入框左下角选择工作区，在右下角确认模型和运行模式，然后输入任务内容即可开始对话。
 
     首次体验建议选择 **标准模式**，并使用不包含敏感数据的测试项目。
+<div class="browser-mockup" markdown>
 
 ![开始 DeepSeek Harness 任务](../../img/app/deepseek-harness-task.png)
+
+</div>
 
 ## 6. 安全与升级建议
 

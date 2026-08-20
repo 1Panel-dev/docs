@@ -18,8 +18,11 @@ schema_type: TechArticle
 - **升级后删除旧镜像**：启用后，升级完成后清理旧版本镜像。
 - **安装时放行端口**：启用后，应用安装时默认在主机防火墙中放行配置的外部端口。
 
+<div class="browser-mockup" markdown>
+
 ![应用商店设置](../../img/app/appstore_setting.png)
-{: .browser-mockup}
+
+</div>
 
 !!! warning "默认值会影响后续任务"
     这些选项会作为后续安装、升级或卸载操作的默认值。执行具体任务前仍应检查确认框，尤其是备份、镜像清理和端口放行选项。

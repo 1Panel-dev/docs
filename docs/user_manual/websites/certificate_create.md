@@ -12,8 +12,11 @@ schema_type: TechArticle
     - 已经创建 ACME 账户
     - 如果是 DNS 验证模式，需要提前准备 DNS 账号
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/certificate_create.png)
-{: .browser-mockup}
+
+</div>
 
 ## 2 DNS 账号模式申请证书
 

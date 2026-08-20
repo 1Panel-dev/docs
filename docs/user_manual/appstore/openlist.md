@@ -8,14 +8,22 @@
 !!! note ""
     进入 1Panel 控制台后，点击左侧菜单的 **「应用商店」**。
 
+<div class="browser-mockup" markdown>
+
 ![image-appstores](../../img/app/appstores.png)
+
+</div>
 
 ## 2. 搜索 OpenList 并安装
 
 !!! note ""
     在右上角搜索框输入 **OpenList**，点击应用卡片进入详情页，选择 **安装**。
 
+<div class="browser-mockup" markdown>
+
 ![image-openlist](../../img/app/openlist.png)
+
+</div>
 
 ## 3. 配置安装参数
 
@@ -32,7 +40,11 @@
 
     确认设置无误后，点击 **确认** 按钮开始安装。
 
+<div class="browser-mockup" markdown>
+
 ![image-openlist_install](../../img/app/openlist_install.png)
+
+</div>
 
 !!! note ""
      等待安装完成即可
@@ -42,7 +54,11 @@
 !!! note ""
      点击左侧菜单的 **容器**，找到 OpenList 容器，点击 **终端**
 
+<div class="browser-mockup" markdown>
+
 ![image-openlist_set_pwd](../../img/app/openlist_set_pwd.png)
+
+</div>
 
 !!! note ""
      连接终端，生成密码，可选两种方式
@@ -50,21 +66,37 @@
     - **生成随机密码**: `./openlist admin random`
     - **手动设置密码**: `./openlist admin set NEW_PASSWORD`
 
+<div class="browser-mockup" markdown>
+
 ![image-openlist_passwd](../../img/app/openlist_passwd.png)
+
+</div>
 
 ## 5. 访问 OpenList 服务
 
 !!! note ""
      安装完成后，确认 1Panel 配置默认访问地址，已配置过可忽略
 
+<div class="browser-mockup" markdown>
+
 ![image-setting-ip](../../img/app/setting_ip.png)
+
+</div>
 
 !!! note ""
      返回应用商店，点击 **跳转** 即可访问 OpenList 服务
 
+<div class="browser-mockup" markdown>
+
 ![image-openlist_jump](../../img/app/openlist_jump.png)
+
+</div>
 
 !!! note ""
      输入生成的密码即可
 
+<div class="browser-mockup" markdown>
+
 ![image-openlist_view](../../img/app/openlist_view.png)
+
+</div>

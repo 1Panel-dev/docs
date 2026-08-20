@@ -14,8 +14,11 @@
     点击状态栏设置按钮，即可进入 Redis 具体设置界面，具体包括配置修改、当前状态、性能调整、端口、持久化。
     其中配置界面可对 Redis 配置进行手动调整。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/databases/redis_conf.png)
-{: .original}
+
+</div>
 
 !!! note ""
     - 系统 Redis 使用 Docker 安装，配置文件默认挂载在 /opt/1panel/apps/redis/[数据库名称]/conf/redis.conf
@@ -27,16 +30,22 @@
 !!! note ""
     当 Redis 查询缓慢时，可在设置界面，点击当前状态按钮，查看当前数据库包括内存分配、查询命中率等各个常用指标的状态，通过这些状态对 Redis 进行性能优化。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/databases/redis_status.png)
-{: .original}
+
+</div>
 
 ## 5 性能调整
 
 !!! note ""
     系统支持表单方式直接调整 Redis 相关参数，具体包括：超时时间、最大连接数、最大内存数。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/databases/redis_variables.png)
-{: .original}
+
+</div>
 
 ## 6 端口
 
@@ -57,8 +66,11 @@
         - 优点： 有序保存了对数据库执行的所有写入操作，数据不容易丢失，即使发生故障停机，也只会丢失上一次写入日志文件操作之后的数据，更可靠且更容易对文件进行分析
         - 缺点： 一般相同的数据集来说，AOF 体积要更大，而且速度可能会慢于 RDB
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/databases/redis_backup_aof.png)
-{: .original}
+
+</div>
 
 !!! note ""
 
@@ -68,8 +80,11 @@
         - everysec: 每秒
         - no: 不同步
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/databases/redis_backup_rdb.png)
-{: .original}
+
+</div>
 
 !!! note ""
 

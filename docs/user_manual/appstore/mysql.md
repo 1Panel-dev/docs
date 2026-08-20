@@ -8,14 +8,22 @@
 !!! note ""
     进入 1Panel 控制台后，点击左侧菜单的 **「应用商店」**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016110510084](../../img/app/appstores.png)
+
+</div>
 
 ## 2. 搜索 MySQL 并安装
 
 !!! note ""
     在应用商店中（首页或数据库分类下），找到并点击 **MySQL** 应用卡片进入详情页，然后选择 **安装**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016110903786](../../img/app/database_mysql.png)
+
+</div>
 
 ## 3. 配置安装参数
 
@@ -30,7 +38,11 @@
 
     确认设置无误后，点击 **确认** 开始安装。
 
+<div class="browser-mockup" markdown>
+
 ![](../../img/app/MySQL_install.png)
+
+</div>
 
 ## 4. 创建 MySQL 数据库
 
@@ -46,14 +58,22 @@
 
     设置完成后点击 **确认** 创建数据库。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016113634840](../../img/app/database_creat.png)
+
+</div>
 
 ## 5. 连接 MySQL 数据库
 
 !!! note ""
     点击数据库后可查看连接信息，用于客户端或程序进行访问。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016114303123](../../img/app/database_message.png)
+
+</div>
 
 ## 6. 查看与管理备份
 
@@ -61,14 +81,22 @@
     - 支持查看备份列表，点击备份后可对数据库执行备份。  
     - 备份时可设置 **压缩密码**，备份文件支持 **恢复**、**下载** 等操作。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016114303123](../../img/app/database_backup.png)
+
+</div>
 
 ## 7. 导入数据库备份
 
 !!! note ""
     支持 **导入备份**，可选择 **本地上传文件** 或 **服务器已有的备份文件** 进行导入。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016114303123](../../img/app/database_import_backup.png)
+
+</div>
 
 ## 8. 添加远程数据库
 
@@ -77,32 +105,52 @@
     - 添加的远程数据库同样支持 **备份与恢复** 操作
     - 在安装应用时，也可以选择已添加的远程数据库进行使用
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016114303123](../../img/app/database_remote.png)
+
+</div>
 
 ## 9. 从服务器同步数据库
 
 !!! note ""
     支持 **从远程服务器同步数据库** 到本地，实现跨服务器的数据同步。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016114303123](../../img/app/database_sync.png)
+
+</div>
 
 ## 10. 修改用户密码与权限
 
 !!! note ""
     可对数据库用户执行 **修改密码**、**修改权限** 等维护操作。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016114303123](../../img/app/database_user.png)
+
+</div>
 
 ## 11. 使用 phpMyAdmin / Adminer 可视化管理
 
 !!! note ""
     可通过 **phpMyAdmin** 或 **Adminer** 对数据库进行更完整的可视化管理。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016114303123](../../img/app/database_management.png)
+
+</div>
 
 ## 12. 使用计划任务定时备份数据库
 
 !!! note ""
     在 **计划任务** 中选择 **备份数据库** 类型，可配置定时自动备份目标数据库。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016114303123](../../img/app/database_cronjob.png)
+
+</div>

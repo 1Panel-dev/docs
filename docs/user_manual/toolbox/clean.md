@@ -30,5 +30,8 @@
         - 容器操作日志文件
         - 计划任务执行日志文件
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/toolbox/clean.png)
-{: .original}
+
+</div>

@@ -17,8 +17,11 @@ schema_type: TechArticle
 
     域名设置页面允许用户管理网站的域名和端口配置。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/config_basic_domain.png)
-{: .browser-mockup}
+
+</div>
 
 ## 2 网站目录
 
@@ -26,8 +29,11 @@ schema_type: TechArticle
 
     网站目录页面支持查看网站的根目录，设置运行目录，以及配置运行用户和用户组等选项。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/config_basic_folder.png)
-{: .browser-mockup}
+
+</div>
 
 ## 3 默认文档
 
@@ -35,8 +41,11 @@ schema_type: TechArticle
 
     配置默认文档，以便在用户访问网站根目录时自动加载指定的文件。
 
+<div class="browser-mockup" markdown>
+
 ![img_1.png](../../img/websites/basic_config_default.png)
-{: .browser-mockup}
+
+</div>
 
 ## 4 流量限制
 
@@ -44,8 +53,11 @@ schema_type: TechArticle
 
     允许用户配置流量限制，通过选择不同的限制方案，控制网站的带宽和访问流量。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/basic_config_limit.png)
-{: .browser-mockup}
+
+</div>
 
 ## 5 反向代理
 
@@ -53,15 +65,21 @@ schema_type: TechArticle
 
     反向代理功能允许将网站请求转发到后端服务器，以实现负载均衡、安全控制和内容分发。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/basic_config_proxy.png)
-{: .browser-mockup}
+
+</div>
 
 !!! note ""
 
     用户也可以在当前页面开启并配置反向代理缓存规则，或者清除当前缓存。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/basic_config_proxy_cache.png)
-{: .browser-mockup}
+
+</div>
 
 ## 6 负载均衡
 
@@ -69,8 +87,11 @@ schema_type: TechArticle
 
     创建负载均衡规则，用于将当前网站请求转发到多个后端服务。当前页面仅创建负载均衡规则，使用负载均衡规则需要在创建反向代理时使用 `http://<负载均衡名称>`。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/basic_config_upstream.png)
-{: .browser-mockup}
+
+</div>
 
 ## 7 密码访问
 
@@ -78,8 +99,11 @@ schema_type: TechArticle
 
     密码访问功能允许用户为网站设置访问密码，以增强网站的安全性，限制未经授权的访问。支持创建全局配置或按路径配置。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/basic_config_password.png)
-{: .browser-mockup}
+
+</div>
 
 ## 8 CORS
 
@@ -109,16 +133,22 @@ schema_type: TechArticle
 
     通过以上配置，用户可以有效提升网站的安全性和访问性能。
     
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/basic_config_https.png)
-{: .browser-mockup}
+
+</div>
 
 ## 10 真实 IP
 
 !!! note ""
     配置客户端 IP 获取方式及可信的 IP 来源，OpenResty 会分析 HTTP Header 中的 IP 信息，准确识别并记录访客的真实 IP 地址，包括在访问日志中。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/basic_config_real_ip.png)
-{: .browser-mockup}
+
+</div>
 
 ## 11 伪静态
 
@@ -126,8 +156,11 @@ schema_type: TechArticle
 
     伪静态功能通过将动态 URL 转换为更友好的静态 URL，提高网站的可读性和搜索引擎优化效果。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/basic_config_static.png)
-{: .browser-mockup}
+
+</div>
 
 ## 12 防盗链
 
@@ -135,8 +168,11 @@ schema_type: TechArticle
 
     防盗链功能通过验证请求来源，阻止非授权用户直接链接和下载网站资源，以保护网站内容安全。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/basic_config_protection.png)
-{: .browser-mockup}
+
+</div>
 
 ## 13 重定向
 
@@ -144,8 +180,11 @@ schema_type: TechArticle
 
     重定向功能允许将访问特定URL的请求自动转发到另一个URL，以实现链接管理和流量引导。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/basic_config_redirect.png)
-{: .browser-mockup}
+
+</div>
 
 ## 14 PHP
 
@@ -153,8 +192,11 @@ schema_type: TechArticle
 
     静态页面类型的网站可以在此选择 PHP 运行环境切换为 PHP 类型网站，PHP 类型的网站可以切换不同的 PHP 运行环境。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/basic_config_php.png)
-{: .browser-mockup}
+
+</div>
 
 ## 15 资源
 
@@ -162,8 +204,11 @@ schema_type: TechArticle
 
     将当前网站与某一个数据库进行关联，备份网站时将同时备份关联的数据库。切换其他数据库会导致以前的备份无法恢复。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/basic_config_resource.png)
-{: .browser-mockup}
+
+</div>
 
 ## 16 其他
 
@@ -171,9 +216,13 @@ schema_type: TechArticle
 
     支持更改主域名、切换分组以及更新备注信息等操作。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/basic_config_other.png)
-{: .browser-mockup}
+
+</div>
 
 ## 17 TCP/UDP 配置
 
-TCP/UDP 代理网站可在此调整协议、监听端口和上游负载均衡配置。修改监听端口后，应同步检查端口占用、防火墙和云安全组。
+!!! note ""
+    TCP/UDP 代理网站可在此调整协议、监听端口和上游负载均衡配置。修改监听端口后，应同步检查端口占用、防火墙和云安全组。

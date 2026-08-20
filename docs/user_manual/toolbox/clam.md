@@ -122,8 +122,11 @@ schema_type: TechArticle
 
     点击操作列的 `执行` 可以手动执行该条扫描规则，点击 `报告` 即可查看该条扫描规则的执行记录和扫描结果。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/toolbox/clam_create_rule.png)
-{: .original}
+
+</div>
 
 ## 5 病毒类型说明
 

@@ -1,7 +1,10 @@
 ## 1 在线安装 docker 时，提示 "ERROR: Unsupported distribution 'xxx'"
 
-![docker错误](../img/faq/docker_error.png){ width="550px" }
+<div class="browser-mockup" markdown>
 
+![docker错误](../img/faq/docker_error.png)
+
+</div>
 !!! note ""
     **上图的错误是由于 docker 的在线安装脚本不支持该操作系统导致的，目前最好的解决方案就是先手动在服务器上安装并启动 Docker，然后再安装 1Panel。**
 
@@ -16,7 +19,11 @@
 !!! note ""
     **System has not been booted with systemd as init system (PID 1). Can't operate. Failed to connect to bus: Host is down**
 
-![wsl 错误](../img/faq/wsl_error.jpg){ width="550px" }
+<div class="browser-mockup" markdown>
+
+![wsl 错误](../img/faq/wsl_error.jpg)
+
+</div>
 
 !!! note ""
     **上图的错误是由于 wsl 子系统不能使用 systemd 导致的启动 docker 服务失败**

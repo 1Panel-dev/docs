@@ -27,8 +27,11 @@ schema_type: TechArticle
     - **菜单设置**：控制左侧菜单项是否显示。
     - **运行环境**：选择当前产品支持的运行环境区域配置。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/panel.png)
-{: .original}
+
+</div>
 
 ## 2 安全
 
@@ -45,8 +48,11 @@ schema_type: TechArticle
     - **密码过期时间**：到期后要求用户修改密码。
     - **密码复杂度校验**：强制新密码满足页面规定的长度和字符类型。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/security.png)
-{: .original}
+
+</div>
 
 !!! warning "注意"
     以上设置修改后会影响访问 1Panel 服务的方式，可能导致不能正常打开、登录 1Panel 面板的情况。
@@ -113,8 +119,11 @@ schema_type: TechArticle
         - 配置告警级别（如：仅严重告警、包含警告级别等）  
         - 配置不同模块的告警项（如：主机、网站、数据库、容器、计划任务等）  
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/alert_setting_1.png)
-{: .original}
+
+</div>
 
 ### 3.2 邮箱告警
 
@@ -130,8 +139,11 @@ schema_type: TechArticle
     4. 设置默认收件人邮箱地址（可填写多个，以逗号分隔）  
     5. 保存配置后，点击【发送测试邮件】确认配置是否生效  
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/alert_setting_2.png)
-{: .original}
+
+</div>
 
 !!! note "第三方邮箱服务商常见说明"
 
@@ -152,8 +164,11 @@ schema_type: TechArticle
     4. 填写自定义机器人 Webhook 地址
     5. 保存配置后，将在实际告警触发时向企业微信推送消息  
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/alert_setting_3.png)
-{: .original}
+
+</div>
 
 !!! note "企业微信端配置（采用 IP 白名单）"
 
@@ -166,20 +181,35 @@ schema_type: TechArticle
 
     配置 IP 白名单后，仅允许来自白名单 IP 的服务器调用相关接口；如果更换服务器或出口 IP，需要同步更新白名单配置。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/alert_wecom_1.png)
-{: .original}
+
+</div>
+
+<div class="browser-mockup" markdown>
 
 ![img.png](../img/settings/alert_wecom_2.png)
-{: .original}
+
+</div>
+
+<div class="browser-mockup" markdown>
 
 ![img.png](../img/settings/alert_wecom_3.png)
-{: .original}
+
+</div>
+
+<div class="browser-mockup" markdown>
 
 ![img.png](../img/settings/alert_wecom_4.png)
-{: .original}
+
+</div>
+
+<div class="browser-mockup" markdown>
 
 ![img.png](../img/settings/alert_wecom_5.png)
-{: .original}
+
+</div>
 
 ### 3.4 钉钉告警
 
@@ -190,8 +220,11 @@ schema_type: TechArticle
     3. 填写自定义机器人 Webhook 地址 
     4. 保存配置后，在对应告警触发时将向钉钉推送消息  
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/alert_setting_4.png)
-{: .original}
+
+</div>
 
 !!! note "钉钉自定义机器人配置参考"
     钉钉侧需要先创建自定义机器人，并获取 Webhook 地址和安全设置，再回填到 1Panel 中，参考钉钉开放平台文档：
@@ -216,8 +249,11 @@ schema_type: TechArticle
     3. 填写自定义机器人 Webhook 地址
     4. 保存配置后，当相关告警触发时将向飞书推送消息  
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/alert_setting_5.png)
-{: .original}
+
+</div>
 
 !!! note "飞书端配置（采用 IP 白名单）"
 
@@ -247,8 +283,11 @@ schema_type: TechArticle
     3. 登录 1Panel，进入 【面板设置 - 面板告警】 并选择 **Bark** 渠道，将上一步复制的推送地址粘贴到配置中并开启  
     4. 保存配置后，可发送测试告警验证是否能在手机上成功收到通知  
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/alert_setting_bark.png)
-{: .original}
+
+</div>
 
 ### 3.7 短信告警
 
@@ -258,8 +297,11 @@ schema_type: TechArticle
     3. 填写接收手机号码  
     4. 保存配置后，当相关告警触发时将向对应的手机发送告警短信  
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/alert_setting_6.png)
-{: .original}
+
+</div>
 
 ### 3.8 告警调试与常见问题
 
@@ -307,55 +349,79 @@ schema_type: TechArticle
 
     （2）点击新注册，并填写注册信息，其中的重定向 URI 作为 重定向 Url 参数。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/onedrive_custom1.png)
-{: .original}
+
+</div>
 
 !!! note ""
 
     （3）主页上的 应用程序(客户端) ID 作为客户端 ID。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/onedrive_custom2.png)
-{: .original}
+
+</div>
 
 !!! note ""
 
     （4）在【证书和密码】页面新建客户端密码，填写相关信息，生成的值作为客户端密钥。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/onedrive_custom3.png)
-{: .original}
+
+</div>
 
 !!! note ""
     
     （5）在【API 权限】页面选择需要的权限，添加权限，Microsoft Graph，委托的权限，勾选 Files.ReadWrite All、offline_access、User.Read，这将作为 scope 传递。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/onedrive_custom4.png)
-{: .original}
+
+</div>
 
 ### 4.3 OneDrive 账号绑定
 
 !!! note ""
     （1）点击 OneDrive 授权码获取按钮。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/onedrive_step1.png)
-{: .original}
+
+</div>
 
 !!! note ""
     （2）输入 Onedrive 账号信息。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/onedrive_step2.png)
-{: .original}
+
+</div>
 
 !!! note ""
     （3）信任 1panel 服务。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/onedrive_step3.png)
-{: .original}
+
+</div>
 
 !!! note ""
     （4）复制授权码到 1Panel 授权码输入框 (注意不要包含 &session_state=xxx 部分)。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/onedrive_step4.png)
-{: .original}
+
+</div>
 
 ### 4.4 阿里云盘账号绑定
 
@@ -364,14 +430,20 @@ schema_type: TechArticle
 
     （2）右键检查或者 F12 打开浏览器调试模式，找到 token 信息，复制值。 
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/ali_pan_1.png)
-{: .original}
+
+</div>
 
 !!! note ""
     （3）将复制的值粘贴到 1 处，点击解析，自动解析出 3 和 4 输入框的值，修改备份目录后点击确认即可。 
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/ali_pan_2.png)
-{: .original}
+
+</div>
 
 ### 4.5 谷歌云盘账号绑定
 
@@ -387,50 +459,74 @@ schema_type: TechArticle
 
     （2）点击创建项目，并填写项目名称。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/google_step_1.png)
-{: .original}
+
+</div>
 
 !!! note ""
     （3）配置 Google Auth Platform，受众群体选择外部。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/google_step_2.png)
-{: .original}
+
+</div>
 
 !!! note ""
     （4）创建 OAuth 客户端，应用类型选择 Web应用，添加重定向地址 https://localhost:8080，创建。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/google_step_3.png)
-{: .original}
+
+</div>
 
 !!! note ""
     （5）复制对应的客户端 ID 以及客户端密钥。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/google_step_4.png)
-{: .original}
+
+</div>
 
 !!! note ""
     （6）发布应用
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/google_step_5.png)
-{: .original}
+
+</div>
 
 !!! note ""
     （7）启用 google drive API 
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/google_step_6.png)
-{: .original}
+
+</div>
 
 !!! note ""
     （8）点击授权码的获取按钮，登陆谷歌账号，跳转至 1Panel 应用，完成登陆。 
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/google_drive_1.png)
-{: .original}
+
+</div>
 
 !!! note ""
     （9）完成授权后继续跳转，在浏览器地址中复制授权码（注意！这里只需要复制 code 的值），粘贴复制的授权码到授权码输入框中，修改备份目录后点击确认即可
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/google_drive_2.png)
-{: .original}
+
+</div>
 
 
 ### 4.6 WebDAV 连接 AList
@@ -441,14 +537,20 @@ schema_type: TechArticle
 
     （2）存储 菜单中添加对应的存储，记住该路径。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/webdav-01.png)
-{: .original}
+
+</div>
 
 !!! note ""
     （3）1Panel 备份账号中，添加 WebDAV 类型的备份账号。地址参数填写 `${2步骤中的地址}/dav`，备份目录参数填写 `/${2步骤中的存储路径}/xxx`，如此处可以使用 `/tmp/sftp/1panel`，完成绑定。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/webdav-02.png)
-{: .original}
+
+</div>
 
 ### 4.7 部分对象存储服务商与亚马逊 S3 云存储的兼容性
 
@@ -483,8 +585,11 @@ schema_type: TechArticle
     - 1pctl 命令行工具，路径为 /usr/local/bin/1pctl
     - 1panel.service 路径为 /etc/systemd/system/1panel.service
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/snapshot.png)
-{: .original}
+
+</div>
 
 !!! note ""
 
@@ -503,8 +608,11 @@ schema_type: TechArticle
 
     版本能力以 [1Panel 官网](https://1panel.cn/)及当前许可证页面显示为准。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/licenses.png)
-{: .browser-mockup}
+
+</div>
 
 ## 7 关于
 
@@ -513,5 +621,8 @@ schema_type: TechArticle
     - 支持检查 1Panel 服务是否存在新版本，更新将替换 1panel 二进制文件、1pctl 命令行工具以及 1panel.service 文件 
     - 更新失败时，将回滚所有更新内容到更新前的状态。如更新后版本信息没有变化，可在 **日志审计 -> 系统日志** 中查看失败原因，解决后重新执行更新
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../img/settings/about.png)
-{: .original}
+
+</div>

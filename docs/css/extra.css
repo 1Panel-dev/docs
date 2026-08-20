@@ -150,18 +150,18 @@
 /* 不添加浏览器导航栏的图片样式 */
 .md-content img:not(.browser-mockup img) {
   display: block;
-  box-shadow: 0 0.1em .5em 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.2em 0.8em 0 rgba(0, 0, 0, 0.15);
   border: none;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 .browser-mockup.none {
   border-top: 0;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 .browser-mockup.none img {
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 .browser-mockup.none:before {
@@ -170,12 +170,28 @@
 
 /* 添加浏览器导航栏的图片样式 */
 .browser-mockup {
+  display: block;
   border-top: 2em solid rgba(230, 230, 230, 0.8);
-  box-shadow: 0 0.1em .5em 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.2em 0.8em 0 rgba(0, 0, 0, 0.15);
   position: relative;
-  border-radius: 4px 4px 4px 4px;
-  max-width: 1200px;
-  margin: 0 auto;
+  border-radius: 8px 8px 8px 8px;
+  max-width: min(100%, 800px);
+  margin: 0 auto 1.5em;   /* 水平居中 + 底部 1.5em 间隔（多图之间留白） */
+}
+
+/* mac 边框容器内的图片：顶部直角（被灰条覆盖）、底部圆角贴合容器 */
+.md-content .browser-mockup img {
+  display: block;
+  border: none;
+  box-shadow: none;
+  border-radius: 0 0 8px 8px;
+}
+
+/* 去掉 div 内 <p> 的默认 margin（md_in_html 解析图片会包 <p>，否则图片与顶部灰条之间出现空白） */
+.md-content .browser-mockup p {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
 }
 
 .browser-mockup:before {
@@ -221,7 +237,7 @@
 }
 
 .browser-mockup>img {
-  border-radius: 4px 4px 4px 4px;
+  border-radius: 0 0 8px 8px;
 }
 
 .browser-mockup>a {

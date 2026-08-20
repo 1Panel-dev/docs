@@ -6,8 +6,11 @@
 
     - 目前支持 Python 3.10、3.11、3.12、3.13 版本，用户可以根据自己的需求选择合适的版本
 
+<div class="browser-mockup" markdown>
+
 ![runtime_python_create.png](../../img/websites/runtime_python_create.png)
-{: .original}
+
+</div>
 
 ## 2 操作 Python 运行环境
 
@@ -15,5 +18,8 @@
 
     - 在列表页面，可以对 Python 运行环境进行停止、启动、重启、编辑、删除和查看日志等操作
 
+<div class="browser-mockup" markdown>
+
 ![runtime_python_list.png](../../img/websites/runtime_python_list.png)
-{: .original}
+
+</div>

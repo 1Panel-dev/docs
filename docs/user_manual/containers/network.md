@@ -4,8 +4,11 @@
 
     [了解更多容器网络相关的知识](https://docs.docker.com/network)
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/containers/network_create.png)
-{: .original}
+
+</div>
 
 !!! note ""
 

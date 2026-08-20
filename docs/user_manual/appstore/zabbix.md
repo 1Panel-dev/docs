@@ -10,14 +10,22 @@
 !!! note ""
     登录 1Panel 控制台后，点击左侧菜单的 **「应用商店」**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016110510084](../../img/app/appstores.png)
+
+</div>
 
 ### 1.2 搜索并安装
 
 !!! note ""
     在右上角搜索框输入 **Zabbix**，点击 **Zabbix Server** 应用卡片进入详情页，选择 **安装**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021163433091](../../img/app/zabbix.png)
+
+</div>
 
 ### 1.3 配置安装参数
 
@@ -38,7 +46,11 @@
 
     配置完成后，点击 **确认** 开始安装。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021163633965](../../img/app/zabbix-server_install.png)
+
+</div>
 
 ### 1.4 访问 Zabbix Server 服务
 
@@ -48,14 +60,22 @@
         - 用户名：`Admin`
         - 密码：`zabbix`
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021163916064](../../img/app/zabbix-server_jump.png)
+
+</div>
 
 !!! note ""
     首次进入系统，可以根据以下步骤切换为中文界面：
 
     进入 **Administration** > **General** > **GUI**，在 **Default language** 中选择 **Chinese (zh_CN)**，然后点击 **Update** 保存。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021163916064](../../img/app/zabbix-language.png)
+
+</div>
 
 ### 1.5 添加监控主机
 
@@ -70,7 +90,11 @@
 
     配置完成后点击 **添加** 保存。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021163916064](../../img/app/zabbix-hosts-add.png)
+
+</div>
 
 ## 2. 安装 Zabbix Agent
 
@@ -79,7 +103,11 @@
 !!! note ""
     回到应用商店列表，在右上角输入 **Zabbix**，点击 **Zabbix Agent** 应用卡片进入详情页，选择 **安装**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021163433091](../../img/app/zabbix.png)
+
+</div>
 
 ### 2.2 配置安装参数
 
@@ -95,11 +123,19 @@
 
     配置完成后，点击 **确认** 开始安装。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021163633965](../../img/app/zabbix-agent_install.png)
+
+</div>
 
 ### 2.3 查看 Agent 主机状态
 
 !!! note ""
     进入 **数据采集** > **主机** 页面，查看 Agent 主机状态，若 **可用性** 列为绿色，表示 Agent 已成功连接到 Server。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021163916064](../../img/app/zabbix-agent-status.png)
+
+</div>

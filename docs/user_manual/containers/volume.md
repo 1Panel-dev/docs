@@ -14,8 +14,11 @@ schema_type: TechArticle
 
 点击 **创建**，填写名称、驱动和驱动参数。默认驱动为 `local`；使用其他驱动前，应先在当前节点安装并配置对应 Docker 插件。
 
+<div class="browser-mockup" markdown>
+
 ![创建存储卷](../../img/containers/volume_create.png)
-{: .original}
+
+</div>
 
 ## 2 查看和删除
 

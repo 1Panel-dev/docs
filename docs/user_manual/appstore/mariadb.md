@@ -8,14 +8,22 @@
 !!! note ""
     进入 1Panel 控制台后，点击左侧菜单的 **「应用商店」**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016110510084](../../img/app/appstores.png)
+
+</div>
 
 ## 2. 搜索 MariaDB 并安装
 
 !!! note ""
     在右上角搜索框输入 **MariaDB**，点击应用卡片进入详情页，选择 **安装**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016150309590](../../img/app/mariadb.png)
+
+</div>
 
 ## 3. 配置安装参数
 
@@ -30,7 +38,11 @@
     确认设置无误后，点击 **确认** 按钮开始安装。
 
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016150632846](../../img/app/mariadb_install.png)
+
+</div>
 !!! note ""
      等待安装完成即可
 ## 4. 创建 MariaDB 数据库
@@ -38,7 +50,11 @@
 !!! note ""
     安装完成后，点击左侧菜单的 **「数据库」**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016151214894](../../img/app/mariadb_view.png)
+
+</div>
 
 !!! note ""
     选择 **创建数据库**
@@ -52,16 +68,28 @@
     确认配置无误后，点击 **确认** 按钮开始创建。
 
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016151324505](../../img/app/mariadb_creat.png)
+
+</div>
 
 ## 5. 连接 MariaDB 数据库
 
 !!! note ""
     获取数据库配置信息
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016151517183](../../img/app/mariadb_info.png)
+
+</div>
 
 !!! note ""
     使用本地工具连接数据库
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016151836387](../../img/app/mariadb_conn.png)
+
+</div>

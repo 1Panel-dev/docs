@@ -8,14 +8,22 @@
 !!! note ""
     进入 1Panel 控制台后，点击左侧菜单的 **「应用商店」**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016110510084](../../img/app/appstores.png)
+
+</div>
 
 ## 2. 搜索 frp 并安装
 
 !!! note ""
     在右上角搜索框输入 **frp**，点击应用卡片进入详情页，选择 **安装**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251022210133411](../../img/app/frp.png)
+
+</div>
 
 ## 3. 配置安装参数
 
@@ -32,7 +40,11 @@
 
     确认设置无误后，点击 **确认** 按钮开始安装。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251022210239559](../../img/app/frp_install.png)
+
+</div>
 
 !!! note ""
      等待安装完成即可
@@ -42,24 +54,44 @@
 !!! note ""
      配置默认访问地址，已配置则忽略此步骤
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016172322315](../../img/app/setting_ip.png)
+
+</div>
 
 !!! note ""
      返回应用商店，点击 **跳转** 即可访问 frp web 服务
 
+<div class="browser-mockup" markdown>
+
 ![image-20251022210650881](../../img/app/frp_jump.png)
+
+</div>
 
 !!! note ""
      输入账户密码即可
 
+<div class="browser-mockup" markdown>
+
 ![image-20251022210723926](../../img/app/frp_view.png)
+
+</div>
 
 !!! note ""
      如需修改配置，首先进入安装目录
 
+<div class="browser-mockup" markdown>
+
 ![image-20251022210836670](../../img/app/frp_change.png)
+
+</div>
 
 !!! note ""
      修改frp配置文件即可
 
+<div class="browser-mockup" markdown>
+
 ![image-20251022210951332](../../img/app/frp_info.png)
+
+</div>

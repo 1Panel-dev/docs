@@ -9,14 +9,22 @@
 !!! note ""
     进入 1Panel 控制台后，点击左侧菜单的 **「应用商店」**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016110510084](../../img/app/appstores.png)
+
+</div>
 
 ## 2. 搜索 OpenResty 并安装
 
 !!! note ""
     在右上角搜索框输入 **OpenResty**，点击应用卡片进入详情页，选择 **安装**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251022205345484](../../img/app/openresty.png)
+
+</div>
 
 ## 3. 配置安装参数
 
@@ -31,7 +39,11 @@
     
     确认设置无误后，点击 **确定** 按钮开始安装。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251022205428034](../../img/app/openresty_install.png)
+
+</div>
 
 ## 4. 查看运行状态
 
@@ -47,11 +59,19 @@
     - **进入容器终端**：在容器内执行命令
     - **备份 / 恢复**：对应用数据进行备份和恢复
 
+<div class="browser-mockup" markdown>
+
 ![image-20251022205720006](../../img/app/openresty_installed.png)
+
+</div>
 
 ## 5. 使用 OpenResty
 
 !!! note ""
     进入 1Panel 左侧的 **网站** 菜单，即可创建新网站并使用 OpenResty 服务。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251022205757786](../../img/app/openresty_view.png)
+
+</div>

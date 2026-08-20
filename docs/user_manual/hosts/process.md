@@ -9,8 +9,11 @@
     - 点击操作列的 `详情`，可以查看进程的更多信息，包括基本信息、内存信息、打开的文件、环境变量及网络连接信息等
     - 点击操作列的 `结束`，可以结束掉指定进程
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/hosts/processes.png)
-{: .original}
+
+</div>
 
 ## 2 查看网络连接信息
 
@@ -21,5 +24,8 @@
     - 列表上方筛选组件可以更具进程 ID、进程名称、端口号进行筛选
     - 列表中可以根据 PID 进行排序，根据连接状态进行筛选
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/hosts/netstat.png)
-{: .original}
+
+</div>

@@ -105,16 +105,22 @@ schema_type: TechArticle
 !!! note ""
     **点击防火墙开关按钮，即可开启或关闭防火墙。**
     
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/hosts/firewall_switch.png)
-{: .original}
+
+</div>
 
 !!! note ""
     **点击禁 ping 按钮，即可开启或关闭 PING 命令。**
 
     - 禁用 PING 命令的主要功能是：为了防止用户频繁 PING 服务器而导致服务器性能下降
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/hosts/firewall_ping.png)
-{: .original}
+
+</div>
 
 ## 3 端口规则
 
@@ -130,11 +136,17 @@ schema_type: TechArticle
 !!! note ""
     **端口放行成功后，可以查看防火墙列表查看当前端口的运行情况。**
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/hosts/firewall_port_list.png)
-{: .original}
+
+</div>
+
+<div class="browser-mockup" markdown>
 
 ![img.png](../../img/hosts/firewall_port_create.png)
-{: .original}
+
+</div>
 
 ## 4 端口转发
 
@@ -146,8 +158,11 @@ schema_type: TechArticle
     - 目标 IP：如果是本机端口转发，目标IP为：127.0.0.1；如果目标IP不填写，则默认为本机端口转发
     - 目标端口：接收转发报文的目标端口
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/hosts/firewall_port_forward.png)
-{: .original}
+
+</div>
 
 ## 5 IP 规则
 
@@ -157,11 +172,17 @@ schema_type: TechArticle
     - 指定 IP
     - 策略：默认为放行，有放行、屏蔽
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/hosts/firewall_ip_list.png)
-{: .original}
+
+</div>
+
+<div class="browser-mockup" markdown>
 
 ![img.png](../../img/hosts/firewall_ip_create.png)
-{: .original}
+
+</div>
 
 ## 6 iptables 高级控制
 

@@ -17,7 +17,11 @@
     v2.2.1 版本之前，API 接口设置入口位于「面板设置」中。
     v2.2.1 版本之后，点击左下角用户菜单，进入用户信息抽屉，可在「API 接口」区域启用或关闭 API 接口访问，并点击「详情」维护 API Key、IP 白名单和有效时间。
 
+<div class="browser-mockup" markdown>
+
 ![API 接口入口](../img/dev_manual/api_interface_entry.png)
+
+</div>
 
 ## 2 请求鉴权
 

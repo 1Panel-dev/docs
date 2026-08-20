@@ -25,7 +25,11 @@
 
     点击 **添加模型账号**，根据实际使用的模型供应商填写对应信息并保存。
 
+<div class="browser-mockup" markdown>
+
 ![OpenClaw 模型账号](../../img/ai/openclaw_model_account.png)
+
+</div>
 
 ## 2. 创建 OpenClaw 智能体
 
@@ -34,7 +38,11 @@
 
     按页面要求填写 OpenClaw 的部署参数。
 
+<div class="browser-mockup" markdown>
+
 ![创建 OpenClaw 智能体](../../img/ai/openclaw_create_agent.png)
+
+</div>
 
 !!! note "参数说明"
     - **名称**：默认可填写为 `openclaw`，也可按需自定义
@@ -45,12 +53,20 @@
     - **Token**：用于访问 OpenClaw WebUI，系统会自动生成
     - **其他参数**：一般保持默认即可
 
+<div class="browser-mockup" markdown>
+
 ![选择模型供应商](../../img/ai/openclaw_agent_provider.png)
+
+</div>
 
 !!! note ""
     选择模型供应商后，系统会自动加载已维护的模型账号。若已配置多个模型，也可以在这里选择具体模型；如有需要，也可勾选手动输入模型。
 
+<div class="browser-mockup" markdown>
+
 ![选择模型账号或模型](../../img/ai/openclaw_agent_model.png)
+
+</div>
 
 ## 3. 开始安装并确认完成
 
@@ -59,14 +75,22 @@
 
     当页面显示安装完成后，即表示 OpenClaw 已成功部署。
 
+<div class="browser-mockup" markdown>
+
 ![OpenClaw 安装完成](../../img/ai/openclaw_install_done.png)
+
+</div>
 
 ## 4. 访问 OpenClaw WebUI
 
 !!! note ""
     安装完成后，返回 **智能体** 列表页面，找到 OpenClaw，点击 **WebUI** 即可直接跳转访问。
 
+<div class="browser-mockup" markdown>
+
 ![OpenClaw WebUI 入口](../../img/ai/openclaw_webui_entry.png)
+
+</div>
 
 ## 5. 验证部署结果
 
@@ -75,7 +99,11 @@
 
     如果助手能够正常回复，则说明 OpenClaw 已部署成功。
 
+<div class="browser-mockup" markdown>
+
 ![OpenClaw 对话验证](../../img/ai/openclaw_verify_chat.png)
+
+</div>
 
 ## 6. 后续配置说明
 

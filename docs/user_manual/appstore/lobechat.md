@@ -8,14 +8,22 @@
 !!! note ""
     进入 1Panel 控制台后，点击左侧菜单的 **「应用商店」**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016110510084](../../img/app/appstores.png)
+
+</div>
 
 ## 2. 搜索 LobeChat 并安装
 
 !!! note ""
     在右上角搜索框输入 **LobeChat**，点击应用卡片进入详情页，选择 **安装**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251022201953880](../../img/app/lobechat.png)
+
+</div>
 
 ## 3. 配置安装参数
 
@@ -33,7 +41,11 @@
 
     确认设置无误后，点击 **确认** 按钮开始安装。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251022202302786](../../img/app/lobechat_install.png)
+
+</div>
 
 !!! note ""
     等待安装完成即可
@@ -43,14 +55,26 @@
 !!! note ""
      安装完成后，确认 1Panel 配置默认访问地址，已配置过可忽略
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016172322315](../../img/app/setting_ip.png)
+
+</div>
 
 !!! note ""
      返回应用商店，点击 **跳转** 即可访问 LobeChat 服务
 
+<div class="browser-mockup" markdown>
+
 ![image-20251022202628790](../../img/app/lobechat_jump.png)
+
+</div>
 
 !!! note ""
      访问即可使用
 
+<div class="browser-mockup" markdown>
+
 ![image-20251022202721850](../../img/app/lobechat_view.png)
+
+</div>

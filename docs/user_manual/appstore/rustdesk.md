@@ -8,14 +8,22 @@
 !!! note ""
     进入 1Panel 控制台后，点击左侧菜单的 **「应用商店」**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016110510084](../../img/app/appstores.png)
+
+</div>
 
 ## 2. 搜索 RustDesk 并安装
 
 !!! note ""
     在右上角搜索框输入 **RustDesk**，点击应用卡片进入详情页，选择 **安装**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021135819982](../../img/app/rustdesk.png)
+
+</div>
 
 ## 3. 配置安装参数
 
@@ -34,7 +42,11 @@
     
     确认设置无误后，点击 **确认** 按钮开始安装。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021140057677](../../img/app/rustdesk_install.png)
+
+</div>
 
 !!! note ""
      等待安装完成即可
@@ -44,29 +56,53 @@
 !!! note ""
      点击参数获取配置信息
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021142500835](../../img/app/rustdesk_get_info.png)
+
+</div>
 
 !!! note ""
      进入安装目录
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021142617880](../../img/app/rustdesk_install_view.png)
+
+</div>
 
 !!! note ""
      根据找到对应的 pub 文件，获取key
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021142841367](../../img/app/rustdesk_key.png)
+
+</div>
 
 !!! note ""
      下载客户端https://github.com/rustdesk/rustdesk/releases，下载后，打开客户端，进入设置选择中继服务器
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021141554097](../../img/app/rustdesk_info.png)
+
+</div>
 
 !!! note ""
      填入对应的信息
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021142939475](../../img/app/rustdesk_creat.png)
+
+</div>
 
 !!! note ""
      在另外一台主机的客户端，也填入相同的信息，输入连接信息远程连接即可
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021143340226](../../img/app/rustdesk_view.png)
+
+</div>

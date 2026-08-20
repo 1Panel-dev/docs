@@ -28,8 +28,11 @@ schema_type: TechArticle
 !!! note ""
     在节点概览页面，可以查看当前集群所有节点的整体状态，包括节点数量、在线状态、资源使用情况、应用分布等统计信息。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/xpack/node_overview.png)
-{: .browser-mockup}
+
+</div>
 
 ## 3 添加节点
 
@@ -58,23 +61,33 @@ schema_type: TechArticle
         - **自定义应用仓库**
         - **备份账号设置**
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/xpack/node_add.png)
-{: .browser-mockup}
+
+</div>
 
 ### 3.2 可用性检查
 
 !!! note ""
     添加节点前，需要先进行可用性检查，以验证网络连通性和认证信息的正确性。只有通过可用性检查的节点才能成功添加。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/xpack/node_add_check.png)
-{: .browser-mockup}
+
+</div>
 
 ### 3.3 添加节点
 
 !!! note ""
     可用性检查通过后，点击【确定】按钮，完成节点添加。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/xpack/node_add_success.png)
+
+</div>
 
 ## 4 节点管理
 
@@ -89,8 +102,11 @@ schema_type: TechArticle
     - **资源使用率**：显示 CPU、内存、磁盘、网络的使用情况 
     - **数据同步状态**：显示节点的数据同步状态 
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/xpack/node_list.png)
-{: .browser-mockup}
+
+</div>
 
 ### 4.2 节点操作
 
@@ -109,26 +125,38 @@ schema_type: TechArticle
 !!! note ""
     节点分组功能允许用户按照业务需求、环境类型或地理位置对节点进行分类管理。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/xpack/node_group.png)
-{: .browser-mockup}
+
+</div>
 
 ## 6 节点切换
 
 !!! note ""
     在面板管理页面左下角，显示当前节点信息，点击节点名称，可以切换到其他节点。后续进行的所有操作，例如应用部署、网站管理等，都会在当前节点上进行。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/xpack/node_switch.png)
-{: .browser-mockup}
+
+</div>
 
 ## 7 故障处理
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/xpack/node_fault.png)
-{: .browser-mockup}
+
+</div>
 
 !!! note ""
     当节点状态异常时，可以点击节点列表状态列上的异常图标，查看异常原因。
 
     节点添加和日常通信依赖管理端到节点的网络连通性。排查时应依次确认 SSH、Agent 端口、节点服务状态、证书与版本兼容性，不要在未确认数据备份的情况下直接删除节点。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/xpack/node_fault_detail.png)
-{: .browser-mockup}
+
+</div>

@@ -8,14 +8,22 @@
 !!! note ""
     进入 1Panel 控制台后，点击左侧菜单的 **「应用商店」**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016110510084](../../img/app/appstores.png)
+
+</div>
 
 ## 2. 搜索 Bitwarden 并安装
 
 !!! note ""
     在右上角搜索框输入 **Bitwarden**，点击应用卡片进入详情页，选择 **安装**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251020154143141](../../img/app/bitwarden.png)
+
+</div>
 
 ## 3. 配置安装参数
 
@@ -29,7 +37,11 @@
     
     确认设置无误后，点击 **确认** 按钮开始安装。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251020154143141](../../img/app/bitwarden_install.png)
+
+</div>
 
 !!! note ""
      等待安装完成即可
@@ -39,41 +51,73 @@
 !!! note ""
      注意 Bitwarden 需要配置 SSL证书访问，直接访问会一直转圈
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021103933402](../../img/app/bitwarden_error.png)
+
+</div>
 
 !!! note ""
      点击左侧菜单的网站，选择创建网站
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021104405151](../../img/app/bitwarden_creat_proxy.png)
+
+</div>
 
 !!! note ""
      点击反向代理
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021104522152](../../img/app/bitwarden_proxy.png)
+
+</div>
 
 !!! note ""
      输入反向代理后的域名和端口，应用选择 Bitwarden，点击确认
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021111122113](../../img/app/bitwarden_proxy_info.png)
+
+</div>
 
 !!! note ""
      网站创建成功后，点击配置
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021110218133](../../img/app/bitwarden_con.png)
+
+</div>
 
 !!! note ""
      左侧选择 HTTPS ，启用 HTTPS
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021110452921](../../img/app/bitwarden_https.png)
+
+</div>
 
 !!! note ""
      导入你的证书，或者选择已有证书，配置好后点击保存即可
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021110637134](../../img/app/bitwarden_https_save.png)
+
+</div>
 
 ## 5. 访问 Bitwarden 服务
 
 !!! note ""
      访问反向代理的域名和端口地址即可
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021112440459](../../img/app/bitwarden_view.png)
+
+</div>

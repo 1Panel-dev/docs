@@ -29,7 +29,11 @@ schema_type: TechArticle
     - 火山引擎
     - DNSPod（即将废弃）
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/certificate_dns.png)
+
+</div>
 
 !!! note ""
 

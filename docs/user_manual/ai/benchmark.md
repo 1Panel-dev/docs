@@ -1,14 +1,19 @@
 ## 基准测试
 
 !!! note ""
-    基准测试用于对 OpenAI 兼容的大模型服务进行性能压测，帮助评估模型在指定上下文长度、并发数和请求速率下的吞吐与延迟表现。
+    **基准测试** 相当于给 AI 模型服务"跑分体检"：模拟大量用户同时提问，评估模型在指定上下文长度、并发数和请求速率下的**吞吐**（单位时间能处理多少请求）和**延迟**（每个请求要等多久）表现，帮你在上线前摸清服务的能力和瓶颈。
 
     进入 1Panel 面板后，打开 **AI -> 基准测试** 页面即可进行管理。
 
     该功能属于 [1Panel 企业版](https://1panel.cn/enterprise.html)。
 
+<div class="browser-mockup" markdown>
+
+
 ![基准测试](../../img/ai/ai_benchmark_list.jpg)
-{: .original}
+
+
+</div>
 
 ## 1 前置条件
 
@@ -30,8 +35,13 @@
 
     创建成功后，系统会启动后台任务执行基准测试，并可通过任务日志查看执行过程。
 
+<div class="browser-mockup" markdown>
+
+
 ![创建基准测试](../../img/ai/ai_benchmark_create.jpg)
-{: .original}
+
+
+</div>
 
 !!! info "基础参数"
     - **服务地址**：目标模型服务地址，例如 `http://127.0.0.1:4000`
@@ -58,8 +68,13 @@
 
     点击任务名称可打开详情抽屉，查看基础信息、运行配置、结果指标、启动命令和原始结果。
 
+<div class="browser-mockup" markdown>
+
+
 ![基准测试详情](../../img/ai/ai_benchmark_detail.jpg)
-{: .original}
+
+
+</div>
 
 !!! info "核心指标"
     - **上下文长度**：输入 Token 与输出 Token 上限之和

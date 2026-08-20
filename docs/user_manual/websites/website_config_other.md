@@ -21,8 +21,11 @@ schema_type: TechArticle
     - 下载日志文件
     - 清空日志内容
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/log.png)
-{: .browser-mockup}
+
+</div>
 
 ## 2 资源与配置文件
 
@@ -32,8 +35,11 @@ schema_type: TechArticle
     - PHP 运行环境网站的 PHP 和 FPM 配置入口以当前运行环境页面为准。
     - 保存配置前应检查语法；错误配置可能导致当前网站或 OpenResty 重载失败。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/web_openresty.png)
-{: .browser-mockup}
+
+</div>
 
 ## 3 默认站点
 
@@ -41,8 +47,11 @@ schema_type: TechArticle
 
     在网站列表点击 **高级设置**，可设置未匹配到其他域名时使用的默认网站。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/website_default.png)
-{: .browser-mockup}
+
+</div>
 
 ## 4 默认页面
 
@@ -56,8 +65,11 @@ schema_type: TechArticle
     - **PHP 网站默认页**
     - **网站停用页**
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/website_default_page.png)
-{: .browser-mockup}
+
+</div>
 
 ## 5 开启 / 停止网站
 
@@ -65,8 +77,11 @@ schema_type: TechArticle
 
     点击列表中的 **已启动** 或 **已停止** 可以切换 HTTP 网站状态。TCP/UDP 代理不通过该状态按钮切换。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/website_start.png)
-{: .browser-mockup}
+
+</div>
 
 ## 6 设置过期时间
 
@@ -74,8 +89,11 @@ schema_type: TechArticle
 
     设置网站过期时间后，系统将在到期时自动停止该站点，以确保资源的有效管理和使用。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/web_expire.png)
-{: .browser-mockup}
+
+</div>
 
 ## 7 删除网站
 
@@ -90,5 +108,8 @@ schema_type: TechArticle
 !!! danger "删除网站"
     强制删除、删除关联应用或删除备份都可能造成不可逆的数据丢失。操作前应确认网站目录、关联数据库、应用数据和备份保留策略。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/website_del.png)
-{: .browser-mockup}
+
+</div>

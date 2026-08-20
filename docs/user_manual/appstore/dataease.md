@@ -8,14 +8,22 @@
 !!! note ""
     进入 1Panel 控制台后，点击左侧菜单的 **「应用商店」**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016110510084](../../img/app/appstores.png)
+
+</div>
 
 ## 2. 搜索 DataEase 并安装
 
 !!! note ""
     在右上角搜索框输入 **DataEase**，点击应用卡片进入详情页，选择 **安装**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021164523104](../../img/app/dataease.png)
+
+</div>
 
 ## 3. 配置安装参数
 
@@ -35,7 +43,11 @@
 
     确认设置无误后，点击 **确认** 按钮开始安装。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021164616512](../../img/app/dataease_install.png)
+
+</div>
 
 !!! note ""
      等待安装完成即可
@@ -45,14 +57,26 @@
 !!! note ""
      安装完成后，确认 1Panel 配置默认访问地址，已配置过可忽略
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016172322315](../../img/app/setting_ip.png)
+
+</div>
 
 !!! note ""
      返回应用商店，点击 **跳转** 即可访问 DataEase 服务
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021164804606](../../img/app/dataease_jump.png)
+
+</div>
 
 !!! note ""
      使用默认用户名: `admin`  密码: `DataEase@123456`登录即可
 
+<div class="browser-mockup" markdown>
+
 ![image-20251021165236307](../../img/app/dataease_view.png)
+
+</div>

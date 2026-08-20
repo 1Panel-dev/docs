@@ -12,8 +12,11 @@ schema_type: TechArticle
 
     页面展示容器及其运行状态、编排、编排模板、镜像、镜像仓库、网络和存储卷数量，点击数量可进入对应列表。
 
+<div class="browser-mockup" markdown>
+
 ![容器概览](../../img/containers/container_overview.png)
-{: .browser-mockup}
+
+</div>
 
 ## 磁盘占用
 

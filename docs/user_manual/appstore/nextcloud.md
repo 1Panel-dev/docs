@@ -8,14 +8,22 @@
 !!! note ""
     进入 1Panel 控制台后，点击左侧菜单的 **「应用商店」**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016110510084](../../img/app/appstores.png)
+
+</div>
 
 ## 2. 搜索 Nextcloud 并安装
 
 !!! note ""
     在右上角搜索框输入 **Nextcloud**，点击应用卡片进入详情页，选择 **安装**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251017113630514](../../img/app/nextcloud.png)
+
+</div>
 
 ## 3. 配置安装参数
 
@@ -31,7 +39,11 @@
     确认设置无误后，点击 **确认** 按钮开始安装。
 
 
+<div class="browser-mockup" markdown>
+
 ![image-20251017133618550](../../img/app/nextcloud_install.png)
+
+</div>
 
 !!! note ""
      等待安装完成即可
@@ -41,14 +53,26 @@
 !!! note ""
      默认端口为 443，因此初次访问时，需要在浏览器地址栏使用 `https://IP:端口` 的格式
 
+<div class="browser-mockup" markdown>
+
 ![image-20251017134623486](../../img/app/nextcloud_view.png)
+
+</div>
 
 !!! note ""
      可以在 **容器** 页面点击 **编辑** 修改端口配置
 
+<div class="browser-mockup" markdown>
+
 ![image-20251017134941753](../../img/app/nextcloud_port.png)
+
+</div>
 
 !!! note ""
      修改为 80 端口即可
 
+<div class="browser-mockup" markdown>
+
 ![image-20251017135035543](../../img/app/nextcloud_portchange.png)
+
+</div>

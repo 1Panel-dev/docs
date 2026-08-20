@@ -15,8 +15,11 @@ schema_type: TechArticle
 !!! note ""
     点击 **创建**，填写模板名称、描述和 Compose 内容后保存。模板只保存配置文本，不会自动创建容器、网络或存储卷。
 
+<div class="browser-mockup" markdown>
+
 ![创建编排模板](../../img/containers/compose_template_create.png)
-{: .original}
+
+</div>
 
 !!! warning "模板中的敏感信息"
     不建议把数据库密码、访问令牌或私钥直接写入模板。优先使用环境变量文件、Docker Secret 或其他受控凭证方式，并确认导出文件不包含敏感数据。

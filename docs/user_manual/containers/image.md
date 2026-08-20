@@ -18,8 +18,11 @@
     - 直接构建镜像，等价于 docker build 操作
     - 构建镜像将耗费一段时间，如果关闭抽屉后还想查看构建日志，则可以去【主机 - 文件】中，下载或查看 [安装目录]/1panel/tmp/docker_logs/image_build_[时间戳].log
     
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/containers/image_build.png)
-{: .original}
+
+</div>
 
 !!! note ""
 

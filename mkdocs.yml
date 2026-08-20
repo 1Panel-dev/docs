@@ -143,8 +143,8 @@ nav:
     - 面板设置: user_manual/settings.md
   - 常用软件:
     - OpenClaw: user_manual/appstore/openclaw.md
-    - Hermes Agent: user_manual/appstore/hermes-agent.md
     - DeepSeek Harness: user_manual/appstore/deepseek-harness.md
+    - Hermes Agent: user_manual/appstore/hermes-agent.md
     - OpenResty: user_manual/appstore/openresty.md
     - MySQL: user_manual/appstore/mysql.md
     - Redis: user_manual/appstore/redis.md
@@ -197,7 +197,7 @@ nav:
     - 1Panel 企业版: https://1panel.cn/enterprise.html
   - 1Panel AI 一体机:
     - 1Panel AI 通用一体机: https://1panel.cn/deepseek-appliance.html
-    - 1Panel AI 编程一体机: https://1panel.cn/aicoding_gb10.html    
+    - 1Panel AI 编程一体机: https://1panel.cn/aicoding_gb10.html
     - 1Panel AI 助理一体机: https://1panel.cn/openclaw.html
   - 联系我们: contact.md
 
@@ -208,6 +208,7 @@ markdown_extensions:
   - def_list
   - footnotes
   - meta
+  - md_in_html
   - toc:
       permalink: ⚓︎
   - pymdownx.arithmatex:

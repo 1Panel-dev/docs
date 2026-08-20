@@ -15,5 +15,8 @@ schema_type: TechArticle
     
     创建 ACME 账户时填写的邮箱可以用于接收证书相关通知。自定义 ACME 服务还需要按页面填写目录地址等信息。
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/websites/certificate_acme.png)
-{: .browser-mockup}
+
+</div>

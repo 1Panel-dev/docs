@@ -8,14 +8,22 @@
 !!! note ""
     进入 1Panel 控制台后，点击左侧菜单的 **「应用商店」**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016110510084](../../img/app/appstores.png)
+
+</div>
 
 ## 2. 搜索 Gitea 并安装
 
 !!! note ""
     在右上角搜索框输入 **Gitea**，点击应用卡片进入详情页，选择 **安装**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251017152422217](../../img/app/gitea.png)
+
+</div>
 
 ## 3. 配置安装参数
 
@@ -35,7 +43,11 @@
     确认设置无误后，点击 **确认** 按钮开始安装。
 
 
+<div class="browser-mockup" markdown>
+
 ![image-20251017152504426](../../img/app/gitea_install.png)
+
+</div>
 
 !!! note ""
      等待安装完成即可
@@ -45,19 +57,35 @@
 !!! note ""
      配置默认访问地址，已配置则忽略此步骤
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016172322315](../../img/app/setting_ip.png)
+
+</div>
 
 !!! note ""
      返回应用商店，点击 **跳转** 即可访问 Gitea 服务
 
+<div class="browser-mockup" markdown>
+
 ![image-20251017152732221](../../img/app/jump_gitea.png)
+
+</div>
 
 !!! note ""
      填写初始配置，安装服务
 
+<div class="browser-mockup" markdown>
+
 ![image-20251017152844763](../../img/app/gitea_info.png)
+
+</div>
 
 !!! note ""
      安装完成后，即可使用
 
+<div class="browser-mockup" markdown>
+
 ![image-20251017153119824](../../img/app/gitea_view.png)
+
+</div>

@@ -8,14 +8,22 @@
 !!! note ""
     进入 1Panel 控制台后，点击左侧菜单的 **「应用商店」**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016110510084](../../img/app/appstores.png)
+
+</div>
 
 ## 2. 搜索 AList 并安装
 
 !!! note ""
     在右上角搜索框输入 **AList**，点击应用卡片进入详情页，选择 **安装**。
 
+<div class="browser-mockup" markdown>
+
 ![image-20251017093725067](../../img/app/alist.png)
+
+</div>
 
 ## 3. 配置安装参数
 
@@ -31,7 +39,11 @@
     确认设置无误后，点击 **确认** 按钮开始安装。
 
 
+<div class="browser-mockup" markdown>
+
 ![image-20251017095132628](../../img/app/alist_install.png)
+
+</div>
 
 !!! note ""
      等待安装完成即可
@@ -41,12 +53,20 @@
 !!! note ""
      安装完成后，确认 1Panel 配置默认访问地址，已配置过可忽略
 
+<div class="browser-mockup" markdown>
+
 ![image-20251016172322315](../../img/app/setting_ip.png)
+
+</div>
 
 !!! note ""
      点击左侧菜单的 **容器** ，找到 AList 容器，点击终端
 
+<div class="browser-mockup" markdown>
+
 ![image-20251017101043569](../../img/app/alist_set_pwd.png)
+
+</div>
 
 !!! note ""
     连接终端，生成密码，可选两种方式
@@ -55,14 +75,26 @@
     - **手动设置密码**：./alist admin set NEW_PASSWORD
 
 
+<div class="browser-mockup" markdown>
+
 ![image-20251017101434307](../../img/app/alist_passwd.png)
+
+</div>
 
 !!! note ""
      返回应用商店，点击 **跳转** 即可访问 AList 服务
 
+<div class="browser-mockup" markdown>
+
 ![image-20251017101728523](../../img/app/alist_jump.png)
+
+</div>
 
 !!! note ""
      输入生成的密码即可
 
+<div class="browser-mockup" markdown>
+
 ![image-20251017101943414](../../img/app/alist_view.png)
+
+</div>

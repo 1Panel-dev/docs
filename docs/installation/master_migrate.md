@@ -52,11 +52,19 @@
 
     （3）点击执行备份，查看备份结果。
 
+    <div class="browser-mockup" markdown>
+
     ![img.png](../img/installation/master_backup.png)
+
+    </div>
 
     （4）打开需要升级的从节点，通过安装好的 1panel-migrator 执行升级命令 `1panel-migrator promote` 。
 
+    <div class="browser-mockup" markdown>
+
     ![img.png](../img/installation/promote.png)
+
+    </div>
 
 ## 3 主节点 -> 从节点
 !!! warning "注意"
@@ -66,4 +74,8 @@
 
     打开需要降级的主节点，通过安装好的 1panel-migrator 执行降级命令 `1panel-migrator demote`。
 
+    <div class="browser-mockup" markdown>
+
     ![img.png](../img/installation/demote.png)
+
+    </div>

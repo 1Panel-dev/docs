@@ -18,7 +18,7 @@
 /* Match the product introduction image width without enlarging smaller images. */
 .md-content img {
   height: auto;
-  max-width: min(100%, 1100px);
+  max-width: min(100%, 800px);
 }
 
 /* Align content images with the text column after resizing source files. */
@@ -31,7 +31,7 @@
 /* Shrink browser-mockup wrappers to the actual image width and align them left. */
 .md-content .browser-mockup {
   width: fit-content;
-  max-width: min(100%, 1100px);
+  max-width: min(100%, 800px);
   margin-left: 0;
   margin-right: 0;
 }

@@ -11,7 +11,19 @@ schema_type: TechArticle
 
 ## 1 创建任务
 
-点击 **创建计划任务**，选择任务类型并填写任务名称、执行周期及对应参数。创建后可在列表中启用、停用、立即执行、编辑、复制、查看报告或删除任务。
+在计划任务页面点击 **创建**，选择任务类型并填写任务名称、执行周期及对应参数。创建后可在列表中启用、停用、立即执行、编辑、复制、查看报告或删除任务。
+
+<div class="browser-mockup" markdown>
+
+![创建计划任务](../img/cronjobs/cronjob_create.png)
+
+</div>
+
+<div class="browser-mockup" markdown>
+
+![计划任务列表](../img/cronjobs/cronjob_list.png)
+
+</div>
 
 !!! info "通用参数"
     - **执行周期**：可以选择预设周期，也可以使用 Cron 表达式。自定义表达式为“分 时 日 月 周”，例如 `0 0 * * *`。保存前可预览最近执行时间。
@@ -27,15 +39,21 @@ schema_type: TechArticle
 
 填写脚本内容并选择解释器，也可以从脚本库或服务器文件中选择脚本。启用 **在容器中执行** 后，需要选择容器、用户和命令执行器。
 
+<div class="browser-mockup" markdown>
+
 ![Shell 计划任务](../img/cronjobs/shell.png)
-{: .original}
+
+</div>
 
 ### 2.2 备份应用、网站和数据库
 
 选择一个、多个或全部对象，并配置备份账号、保留份数及备份选项。数据库任务还会根据数据库类型显示相应的备份参数。
 
+<div class="browser-mockup" markdown>
+
 ![应用备份任务](../img/cronjobs/app.png)
-{: .original}
+
+</div>
 
 !!! warning "备份可恢复性"
     任务执行成功只表示备份流程完成。生产环境应定期执行恢复验证，并确认应用版本、数据库版本、压缩密码和远端文件均可用。
@@ -44,8 +62,11 @@ schema_type: TechArticle
 
 选择主机上的文件或目录，并配置压缩、排除规则和备份目标。避免把备份输出目录再次包含进源目录，否则可能造成递归归档或空间快速增长。
 
+<div class="browser-mockup" markdown>
+
 ![目录备份任务](../img/cronjobs/dir.png)
-{: .original}
+
+</div>
 
 ### 2.4 备份日志
 
@@ -87,11 +108,17 @@ schema_type: TechArticle
 
 点击计划任务的 **报告** 查看每次执行时间、状态和日志。执行中的任务可查看实时输出；备份类任务还可以查看备份文件并按权限下载。
 
+<div class="browser-mockup" markdown>
+
 ![备份文件](../img/cronjobs/backup_list.png)
-{: .original}
+
+</div>
+
+<div class="browser-mockup" markdown>
 
 ![执行记录](../img/cronjobs/record.png)
-{: .original}
+
+</div>
 
 ## 5 导入和导出
 

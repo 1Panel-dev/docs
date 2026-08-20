@@ -11,5 +11,8 @@
     - 系统时区
     - 服务器时间
 
+<div class="browser-mockup" markdown>
+
 ![img.png](../../img/toolbox/quick_settings.png)
-{: .original}
+
+</div>
