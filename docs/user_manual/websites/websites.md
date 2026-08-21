@@ -11,12 +11,12 @@ schema_type: TechArticle
     网站功能基于应用商店安装的 OpenResty，统一管理 HTTP/HTTPS 网站和 TCP/UDP 代理。社区版、专业版和企业版均可使用；企业版用户还需要相应的网站查看或管理权限。
 
 ## 1 支持的网站类型
-
-- 一键部署应用网站；
-- PHP、Java、Node.js、Go、Python 和 .NET 运行环境网站；
-- 反向代理和静态网站；
-- PHP 或静态网站的子网站；
-- TCP/UDP 代理。
+!!! note ""
+    - 一键部署应用网站；
+    - PHP、Java、Node.js、Go、Python 和 .NET 运行环境网站；
+    - 反向代理和静态网站；
+    - PHP 或静态网站的子网站；
+    - TCP/UDP 代理。
 
 具体参数参见 [创建网站](./website_create.md)。
 
@@ -27,8 +27,8 @@ schema_type: TechArticle
 
 ![网站列表](../../img/websites/website.png)
 {: .browser-mockup}
-
-页面还提供分组、网站默认设置和批量操作。多节点环境下，网站及其 OpenResty、目录和证书都属于当前节点，操作前应确认节点选择器。
+!!! note ""
+    页面还提供分组、网站默认设置和批量操作。多节点环境下，网站及其 OpenResty、目录和证书都属于当前节点，操作前应确认节点选择器。
 
 !!! warning "依赖 OpenResty"
     停止、卸载或升级 OpenResty 会影响当前节点上的网站。执行 OpenResty 维护前，应确认网站备份、配置备份和回滚方案。

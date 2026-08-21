@@ -16,13 +16,13 @@ schema_type: TechArticle
 {: .browser-mockup}
 
 ## 相关操作
-
-- [申请证书](./certificate_create.md)
-- [上传证书](./certificate_upload.md)
-- [自签证书](./certificate_self_sign.md)
-- [续签证书](./certificate_renew.md)
-- [ACME 账户](./certificate_acme.md)
-- [DNS 账户](./certificate_dns.md)
+!!! note ""
+    - [申请证书](./certificate_create.md)
+    - [上传证书](./certificate_upload.md)
+    - [自签证书](./certificate_self_sign.md)
+    - [续签证书](./certificate_renew.md)
+    - [ACME 账户](./certificate_acme.md)
+    - [DNS 账户](./certificate_dns.md)
 
 !!! warning "删除和下载"
     删除证书前应确认没有网站仍在使用。下载包中可能包含私钥，应通过安全渠道保存和传输。
