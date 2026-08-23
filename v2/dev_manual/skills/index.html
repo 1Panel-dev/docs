@@ -5795,28 +5795,9 @@
   
   
   
-    
-    
-      
+    <li class="md-nav__item">
+      <a href="https://1panel.cn/ai-appliance.html" class="md-nav__link">
         
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
-        
-          
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
-            
   
   
   <span class="md-ellipsis">
@@ -5830,107 +5811,7 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    1Panel AI 一体机
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://1panel.cn/deepseek-appliance.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    1Panel AI 通用一体机
-  
-
-    
-  </span>
-  
-  
-
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://1panel.cn/aicoding_gb10.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    1Panel AI 编程一体机
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://1panel.cn/openclaw.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    1Panel AI 助理一体机
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -6220,10 +6101,10 @@ ln<span class="w"> </span>-s<span class="w"> </span>/path/to/1Panel-skills<span 
 <h2 id="6">6 配置运行环境变量<a class="headerlink" href="#6" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>安装完成后，需要为运行环境设置以下变量：</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">ONEPANEL_BASE_URL</span><span class="o">=</span><span class="s2">&quot;http://192.168.1.2:9999&quot;</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">ONEPANEL_API_KEY</span><span class="o">=</span><span class="s2">&quot;你的 1Panel API Key&quot;</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">ONEPANEL_TIMEOUT_MS</span><span class="o">=</span><span class="s2">&quot;30000&quot;</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">ONEPANEL_SKIP_TLS_VERIFY</span><span class="o">=</span><span class="s2">&quot;false&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">ONEPANEL_BASE_URL</span><span class="o">=</span><span class="s2">"http://192.168.1.2:9999"</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">ONEPANEL_API_KEY</span><span class="o">=</span><span class="s2">"你的 1Panel API Key"</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">ONEPANEL_TIMEOUT_MS</span><span class="o">=</span><span class="s2">"30000"</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">ONEPANEL_SKIP_TLS_VERIFY</span><span class="o">=</span><span class="s2">"false"</span>
 </code></pre></div>
 <p>参数说明：</p>
 <ul>
@@ -6247,7 +6128,7 @@ ln<span class="w"> </span>-s<span class="w"> </span>/path/to/1Panel-skills<span 
 </code></pre></div>
 <p>执行模块化动作：</p>
 <div class="highlight"><pre><span></span><code>node<span class="w"> </span>dist/scripts/cli.js<span class="w"> </span>run<span class="w"> </span>monitoring<span class="w"> </span>getCurrentNode
-node<span class="w"> </span>dist/scripts/cli.js<span class="w"> </span>run<span class="w"> </span>websites<span class="w"> </span>searchWebsites<span class="w"> </span>--input-json<span class="w"> </span><span class="s1">&#39;{&quot;page&quot;:1,&quot;pageSize&quot;:20}&#39;</span>
+node<span class="w"> </span>dist/scripts/cli.js<span class="w"> </span>run<span class="w"> </span>websites<span class="w"> </span>searchWebsites<span class="w"> </span>--input-json<span class="w"> </span><span class="s1">'{"page":1,"pageSize":20}'</span>
 </code></pre></div>
 <p>打印当前签名 Header：</p>
 <div class="highlight"><pre><span></span><code>node<span class="w"> </span>dist/scripts/cli.js<span class="w"> </span>sign

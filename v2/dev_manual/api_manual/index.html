@@ -5772,28 +5772,9 @@
   
   
   
-    
-    
-      
+    <li class="md-nav__item">
+      <a href="https://1panel.cn/ai-appliance.html" class="md-nav__link">
         
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
-        
-          
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
-            
   
   
   <span class="md-ellipsis">
@@ -5807,107 +5788,7 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    1Panel AI 一体机
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://1panel.cn/deepseek-appliance.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    1Panel AI 通用一体机
-  
-
-    
-  </span>
-  
-  
-
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://1panel.cn/aicoding_gb10.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    1Panel AI 编程一体机
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://1panel.cn/openclaw.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    1Panel AI 助理一体机
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -6108,19 +5989,19 @@ v2.2.1 版本之后，点击左下角用户菜单，进入用户信息抽屉，�
 </tbody>
 </table>
 <p>示例：</p>
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-k<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">&quot;http://{host}:{port}/api/v2/toolbox/device/base&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;1Panel-Token: &lt;1panel_token&gt;&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;1Panel-Timestamp: &lt;current_unix_timestamp&gt;&quot;</span>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-k<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">"http://{host}:{port}/api/v2/toolbox/device/base"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">"1Panel-Token: &lt;1panel_token&gt;"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">"1Panel-Timestamp: &lt;current_unix_timestamp&gt;"</span>
 </code></pre></div>
 </div>
 <h3 id="22-token">2.2 Token 生成方式<a class="headerlink" href="#22-token" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
 <p>1Panel 当前兼容以下两种 Token 生成方式。为了兼容历史版本，服务端不要求客户端额外传递版本号或加密方式。</p>
 <p><strong>方式一：MD5（兼容旧版本，后续版本会去除）</strong></p>
-<div class="highlight"><pre><span></span><code>Token = md5(&#39;1panel&#39; + API-Key + UnixTimestamp)
+<div class="highlight"><pre><span></span><code>Token = md5('1panel' + API-Key + UnixTimestamp)
 </code></pre></div>
 <p><strong>方式二：HMAC-SHA256（推荐新接入使用）</strong></p>
-<div class="highlight"><pre><span></span><code>Token = hmac_sha256(API-Key, &#39;1panel:&#39; + UnixTimestamp)
+<div class="highlight"><pre><span></span><code>Token = hmac_sha256(API-Key, '1panel:' + UnixTimestamp)
 </code></pre></div>
 <p>组成部分：</p>
 <ul>
@@ -6134,14 +6015,14 @@ v2.2.1 版本之后，点击左下角用户菜单，进入用户信息抽屉，�
 <p>MD5 示例：</p>
 <div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">generateMD5Token</span><span class="p">(</span><span class="nx">apiKey</span><span class="p">,</span><span class="w"> </span><span class="nx">timestamp</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nx">h</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">md5</span><span class="p">.</span><span class="nx">New</span><span class="p">()</span>
-<span class="w">    </span><span class="nx">h</span><span class="p">.</span><span class="nx">Write</span><span class="p">([]</span><span class="nb">byte</span><span class="p">(</span><span class="s">&quot;1panel&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">apiKey</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">timestamp</span><span class="p">))</span>
+<span class="w">    </span><span class="nx">h</span><span class="p">.</span><span class="nx">Write</span><span class="p">([]</span><span class="kt">byte</span><span class="p">(</span><span class="s">"1panel"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">apiKey</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">timestamp</span><span class="p">))</span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">hex</span><span class="p">.</span><span class="nx">EncodeToString</span><span class="p">(</span><span class="nx">h</span><span class="p">.</span><span class="nx">Sum</span><span class="p">(</span><span class="kc">nil</span><span class="p">))</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>HMAC-SHA256 示例：</p>
 <div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">generateHMACToken</span><span class="p">(</span><span class="nx">apiKey</span><span class="p">,</span><span class="w"> </span><span class="nx">timestamp</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">mac</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">hmac</span><span class="p">.</span><span class="nx">New</span><span class="p">(</span><span class="nx">sha256</span><span class="p">.</span><span class="nx">New</span><span class="p">,</span><span class="w"> </span><span class="p">[]</span><span class="nb">byte</span><span class="p">(</span><span class="nx">apiKey</span><span class="p">))</span>
-<span class="w">    </span><span class="nx">mac</span><span class="p">.</span><span class="nx">Write</span><span class="p">([]</span><span class="nb">byte</span><span class="p">(</span><span class="s">&quot;1panel:&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">timestamp</span><span class="p">))</span>
+<span class="w">    </span><span class="nx">mac</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">hmac</span><span class="p">.</span><span class="nx">New</span><span class="p">(</span><span class="nx">sha256</span><span class="p">.</span><span class="nx">New</span><span class="p">,</span><span class="w"> </span><span class="p">[]</span><span class="kt">byte</span><span class="p">(</span><span class="nx">apiKey</span><span class="p">))</span>
+<span class="w">    </span><span class="nx">mac</span><span class="p">.</span><span class="nx">Write</span><span class="p">([]</span><span class="kt">byte</span><span class="p">(</span><span class="s">"1panel:"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">timestamp</span><span class="p">))</span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">hex</span><span class="p">.</span><span class="nx">EncodeToString</span><span class="p">(</span><span class="nx">mac</span><span class="p">.</span><span class="nx">Sum</span><span class="p">(</span><span class="kc">nil</span><span class="p">))</span>
 <span class="p">}</span>
 </code></pre></div>

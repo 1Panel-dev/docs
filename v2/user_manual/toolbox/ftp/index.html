@@ -5709,28 +5709,9 @@
   
   
   
-    
-    
-      
+    <li class="md-nav__item">
+      <a href="https://1panel.cn/ai-appliance.html" class="md-nav__link">
         
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
-        
-          
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
-            
   
   
   <span class="md-ellipsis">
@@ -5744,107 +5725,7 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    1Panel AI 一体机
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://1panel.cn/deepseek-appliance.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    1Panel AI 通用一体机
-  
-
-    
-  </span>
-  
-  
-
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://1panel.cn/aicoding_gb10.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    1Panel AI 编程一体机
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://1panel.cn/openclaw.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    1Panel AI 助理一体机
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -5981,13 +5862,13 @@ PassivePortRange<span class="w"> </span><span class="m">39000</span><span class=
 <div class="highlight"><pre><span></span><code><span class="c1"># 与 centos 不同，这里需要在 /etc/pure-ftpd/conf 文件夹下执行下列命令，增加对应配置文件：</span>
 
 <span class="c1"># 创建 /etc/pure-ftpd/conf/PureDB 文件，内容指定路径 /etc/pure-ftpd/pureftpd.pdb</span>
-<span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;/etc/pure-ftpd/pureftpd.pdb&#39;</span><span class="w"> </span>&gt;<span class="w"> </span>/etc/pure-ftpd/conf/PureDB
+<span class="nb">echo</span><span class="w"> </span><span class="s1">'/etc/pure-ftpd/pureftpd.pdb'</span><span class="w"> </span>&gt;<span class="w"> </span>/etc/pure-ftpd/conf/PureDB
 <span class="c1"># 创建 /etc/pure-ftpd/conf/VerboseLog 文件，开启日志</span>
 <span class="nb">echo</span><span class="w"> </span>yes<span class="w"> </span>&gt;<span class="w"> </span>/etc/pure-ftpd/conf/VerboseLog<span class="w"> </span>
 <span class="c1"># 创建 /etc/pure-ftpd/conf/NoAnonymous 文件，拒绝匿名登录</span>
 <span class="nb">echo</span><span class="w"> </span>yes<span class="w"> </span>&gt;<span class="w"> </span>/etc/pure-ftpd/conf/NoAnonymous
 <span class="c1"># 创建 /etc/pure-ftpd/conf/PassivePortRange 文件，开启被动端口范围 (这里需要根据实际需求调整端口范围)</span>
-<span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;39000 40000&#39;</span><span class="w"> </span>&gt;<span class="w"> </span>/etc/pure-ftpd/conf/PassivePortRange
+<span class="nb">echo</span><span class="w"> </span><span class="s1">'39000 40000'</span><span class="w"> </span>&gt;<span class="w"> </span>/etc/pure-ftpd/conf/PassivePortRange
 </code></pre></div>
 <p><strong>3、建立数据库软链</strong></p>
 <div class="highlight"><pre><span></span><code>ln<span class="w"> </span>-s<span class="w"> </span>/etc/pure-ftpd/conf/PureDB<span class="w"> </span>/etc/pure-ftpd/auth/50puredb

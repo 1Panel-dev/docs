@@ -5925,28 +5925,9 @@
   
   
   
-    
-    
-      
+    <li class="md-nav__item">
+      <a href="https://1panel.cn/ai-appliance.html" class="md-nav__link">
         
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
-        
-          
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
-            
   
   
   <span class="md-ellipsis">
@@ -5960,107 +5941,7 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    1Panel AI 一体机
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://1panel.cn/deepseek-appliance.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    1Panel AI 通用一体机
-  
-
-    
-  </span>
-  
-  
-
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://1panel.cn/aicoding_gb10.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    1Panel AI 编程一体机
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://1panel.cn/openclaw.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    1Panel AI 助理一体机
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -6449,18 +6330,18 @@
 <div class="admonition info">
 <p class="admonition-title">客户端调用示例</p>
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>http://&lt;服务器<span class="w"> </span>IP&gt;:4000/v1/chat/completions<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer &lt;API Key&gt;&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
-<span class="s1">    &quot;model&quot;: &quot;deepseek-v4-flash&quot;,</span>
-<span class="s1">    &quot;messages&quot;: [</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">"Authorization: Bearer &lt;API Key&gt;"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">"Content-Type: application/json"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="s1">'{</span>
+<span class="s1">    "model": "deepseek-v4-flash",</span>
+<span class="s1">    "messages": [</span>
 <span class="s1">      {</span>
-<span class="s1">        &quot;role&quot;: &quot;user&quot;,</span>
-<span class="s1">        &quot;content&quot;: &quot;Hello&quot;</span>
+<span class="s1">        "role": "user",</span>
+<span class="s1">        "content": "Hello"</span>
 <span class="s1">      }</span>
 <span class="s1">    ],</span>
-<span class="s1">    &quot;stream&quot;: true</span>
-<span class="s1">  }&#39;</span>
+<span class="s1">    "stream": true</span>
+<span class="s1">  }'</span>
 </code></pre></div>
 </div>
 <p>客户端应将页面顶部的 <strong>外部连接地址</strong> 作为 Base URL。<code>model</code> 可以填写账号池中的请求模型名；启用智能路由后，也可以填写 <code>auto</code>。</p>

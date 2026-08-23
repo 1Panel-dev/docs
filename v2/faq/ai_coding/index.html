@@ -5762,28 +5762,9 @@
   
   
   
-    
-    
-      
+    <li class="md-nav__item">
+      <a href="https://1panel.cn/ai-appliance.html" class="md-nav__link">
         
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
-        
-          
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
-            
   
   
   <span class="md-ellipsis">
@@ -5797,107 +5778,7 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    1Panel AI 一体机
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://1panel.cn/deepseek-appliance.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    1Panel AI 通用一体机
-  
-
-    
-  </span>
-  
-  
-
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://1panel.cn/aicoding_gb10.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    1Panel AI 编程一体机
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://1panel.cn/openclaw.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    1Panel AI 助理一体机
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -6061,18 +5942,18 @@
 <p><code>Model</code> 不一定是上游模型的真实名称。客户端请求的模型名称需要先在 <strong>AI -&gt; AI 网关 -&gt; 模型池</strong> 中完成映射，再由网关转发到实际模型。</p>
 <p>推荐先使用以下命令确认 AI 网关可以正常访问：</p>
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>http://&lt;服务器<span class="w"> </span>IP&gt;:4000/v1/chat/completions<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer &lt;API Key&gt;&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
-<span class="s1">    &quot;model&quot;: &quot;qwen3-coder&quot;,</span>
-<span class="s1">    &quot;messages&quot;: [</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">"Authorization: Bearer &lt;API Key&gt;"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">"Content-Type: application/json"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="s1">'{</span>
+<span class="s1">    "model": "qwen3-coder",</span>
+<span class="s1">    "messages": [</span>
 <span class="s1">      {</span>
-<span class="s1">        &quot;role&quot;: &quot;user&quot;,</span>
-<span class="s1">        &quot;content&quot;: &quot;Hello&quot;</span>
+<span class="s1">        "role": "user",</span>
+<span class="s1">        "content": "Hello"</span>
 <span class="s1">      }</span>
 <span class="s1">    ],</span>
-<span class="s1">    &quot;stream&quot;: true</span>
-<span class="s1">  }&#39;</span>
+<span class="s1">    "stream": true</span>
+<span class="s1">  }'</span>
 </code></pre></div>
 </div>
 <h2 id="2-opencode-ai">2 OpenCode 如何接入 AI 网关？<a class="headerlink" href="#2-opencode-ai" title="Permanent link">⚓︎</a></h2>
@@ -6080,22 +5961,22 @@
 <p>OpenCode 支持在配置文件中自定义 Provider，并可以通过 <code>baseURL</code> 指向自定义 OpenAI 兼容接口。</p>
 <p>在用户级配置 <code>~/.config/opencode/opencode.json</code> 或项目根目录的 <code>opencode.json</code> 中添加如下配置：</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://opencode.ai/config.json&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;provider&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;onepanel-ai-gateway&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;npm&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@ai-sdk/openai-compatible&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1Panel AI Gateway&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;options&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;baseURL&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://&lt;服务器 IP&gt;:4000/v1&quot;</span>
+<span class="w">  </span><span class="nt">"$schema"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://opencode.ai/config.json"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"provider"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"onepanel-ai-gateway"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"npm"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@ai-sdk/openai-compatible"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1Panel AI Gateway"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"options"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"baseURL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://&lt;服务器 IP&gt;:4000/v1"</span>
 <span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;models&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;qwen3-coder&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;qwen3-coder&quot;</span>
+<span class="w">      </span><span class="nt">"models"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"qwen3-coder"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"qwen3-coder"</span>
 <span class="w">        </span><span class="p">}</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="nt">&quot;model&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;onepanel-ai-gateway/qwen3-coder&quot;</span>
+<span class="w">  </span><span class="nt">"model"</span><span class="p">:</span><span class="w"> </span><span class="s2">"onepanel-ai-gateway/qwen3-coder"</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>启动 <code>opencode</code> 后，通过 <code>/connect</code> 配置该 Provider 的 API Key，然后通过 <code>/models</code> 选择模型。</p>
@@ -6106,23 +5987,23 @@
 <p>Qwen Code 支持 OpenAI 兼容协议，可以在 <code>~/.qwen/settings.json</code> 中通过 <code>modelProviders.openai</code> 配置自定义服务地址。</p>
 <p>示例配置如下：</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;modelProviders&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;openai&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="nt">"modelProviders"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"openai"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">      </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;qwen3-coder&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1Panel AI Gateway - qwen3-coder&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;baseUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://&lt;服务器 IP&gt;:4000/v1&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;envKey&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ONEPANEL_AI_GATEWAY_API_KEY&quot;</span>
+<span class="w">        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"qwen3-coder"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1Panel AI Gateway - qwen3-coder"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"baseUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://&lt;服务器 IP&gt;:4000/v1"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"envKey"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ONEPANEL_AI_GATEWAY_API_KEY"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">]</span>
 <span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="nt">&quot;security&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;auth&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;selectedType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;openai&quot;</span>
+<span class="w">  </span><span class="nt">"security"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"auth"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"selectedType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"openai"</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="nt">&quot;model&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;qwen3-coder&quot;</span>
+<span class="w">  </span><span class="nt">"model"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"qwen3-coder"</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -6135,21 +6016,21 @@
 <div class="admonition note">
 <p>Codex 支持通过 <code>config.toml</code> 配置模型供应商。接入 AI 网关时，建议将配置写入用户级配置文件 <code>~/.codex/config.toml</code>，不要写入项目级 <code>.codex/config.toml</code>。</p>
 <p>如果希望通过独立 Provider 接入 AI 网关，可以使用如下配置：</p>
-<div class="highlight"><pre><span></span><code><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;qwen3-coder&quot;</span>
-<span class="n">model_provider</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;onepanel-ai-gateway&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"qwen3-coder"</span>
+<span class="n">model_provider</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"onepanel-ai-gateway"</span>
 
 <span class="k">[model_providers.onepanel-ai-gateway]</span>
-<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;1Panel AI Gateway&quot;</span>
-<span class="n">base_url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;http://&lt;服务器 IP&gt;:4000/v1&quot;</span>
-<span class="n">env_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;ONEPANEL_AI_GATEWAY_API_KEY&quot;</span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"1Panel AI Gateway"</span>
+<span class="n">base_url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"http://&lt;服务器 IP&gt;:4000/v1"</span>
+<span class="n">env_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"ONEPANEL_AI_GATEWAY_API_KEY"</span>
 </code></pre></div>
 <p>然后在终端中设置 AI 网关 API Key：</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">ONEPANEL_AI_GATEWAY_API_KEY</span><span class="o">=</span><span class="s2">&quot;sk-xxxx&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">ONEPANEL_AI_GATEWAY_API_KEY</span><span class="o">=</span><span class="s2">"sk-xxxx"</span>
 </code></pre></div>
 <p>启动 Codex CLI 后，Codex 会将请求发送到 AI 网关。<code>model</code> 需要填写 AI 网关模型映射中的请求模型名称，例如 <code>qwen3-coder</code>。</p>
 <p>如果只是想让 Codex 内置 OpenAI Provider 走代理或网关，也可以在 <code>~/.codex/config.toml</code> 中设置：</p>
-<div class="highlight"><pre><span></span><code><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;qwen3-coder&quot;</span>
-<span class="n">openai_base_url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;http://&lt;服务器 IP&gt;:4000/v1&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"qwen3-coder"</span>
+<span class="n">openai_base_url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"http://&lt;服务器 IP&gt;:4000/v1"</span>
 </code></pre></div>
 <p>这种方式仍使用 OpenAI Provider 的认证方式；如果 AI 网关使用独立 API Key，优先使用上面的自定义 Provider 配置。</p>
 </div>
@@ -6162,9 +6043,9 @@
 <li>将 <strong>Model</strong> 设置为 AI 网关模型映射中的请求模型名称</li>
 </ul>
 <p>如果工具支持环境变量，也可以按工具要求设置：</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">OPENAI_API_KEY</span><span class="o">=</span><span class="s2">&quot;sk-xxxx&quot;</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">OPENAI_BASE_URL</span><span class="o">=</span><span class="s2">&quot;http://&lt;服务器 IP&gt;:4000/v1&quot;</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">OPENAI_MODEL</span><span class="o">=</span><span class="s2">&quot;qwen3-coder&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">OPENAI_API_KEY</span><span class="o">=</span><span class="s2">"sk-xxxx"</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">OPENAI_BASE_URL</span><span class="o">=</span><span class="s2">"http://&lt;服务器 IP&gt;:4000/v1"</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">OPENAI_MODEL</span><span class="o">=</span><span class="s2">"qwen3-coder"</span>
 </code></pre></div>
 <p>不同工具读取的环境变量名称可能不同。如果环境变量不生效，请以该工具设置页面中的 Base URL、API Key、Model 字段为准。</p>
 </div>
