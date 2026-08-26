@@ -27,7 +27,7 @@ schema_type: TechArticle
     当前状态展示驱动版本、显卡型号、利用率、显存、温度、功耗等指标，并列出正在使用 GPU 的进程。实际可见字段取决于显卡类型、驱动和管理工具返回的数据。
 
 ![GPU 当前状态](../../img/ai/gpu_monitor.png)
-{: .original}
+{: .browser-mockup}
 
 如果页面无数据，请先在终端验证显卡管理命令，再检查驱动状态和 1Panel 服务日志。
 
@@ -41,4 +41,4 @@ schema_type: TechArticle
 驱动和容器工具配置完成后，可在支持 GPU 的应用或容器配置中启用 **GPU 加速**，并选择需要分配的设备。容器启动后，可通过容器日志、主机 GPU 进程和利用率确认设备是否生效。
 
 ![应用 GPU 加速](../../img/ai/gpu_acceleration.png)
-{: .original}
+{: .browser-mockup}

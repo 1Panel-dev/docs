@@ -4,7 +4,7 @@
 
     点击创建运行环境按钮，选择 Node 版本和源码目录。
 
-    目前支持 12.x、14.x 16.x 和 18.x 四个大版本，用户可以根据自己的需求选择合适的版本。
+    目前支持 12.x、14.x、16.x和 18.x 四个大版本，用户可以根据自己的需求选择合适的版本。
 
 ![runtime_node_create.png](../../img/websites/runtime_node_create.png)
 {: .browser-mockup}

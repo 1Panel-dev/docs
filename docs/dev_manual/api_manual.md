@@ -62,7 +62,7 @@
 
     - `API-Key`：面板 API 接口密钥。
     - `UnixTimestamp`：当前时间戳，秒级。
-    - `1panel` / `1panel:`：固定签名内容前缀。
+    - `1panel` / `1panel`：固定签名内容前缀。
 
 ### 2.3 Go 示例
 

@@ -38,19 +38,19 @@ schema_type: TechArticle
     使用 Ollama 管理前，需要先从 **应用商店** 安装 Ollama。安装完成后，页面会显示应用运行状态，并提供启动、停止、重启和连接信息等操作。
 
 ![Ollama 管理](../../img/ai/overview.png)
-{: .original}
+{: .browser-mockup}
 
 ### 2.2 添加和运行模型
 
 点击 **添加模型**，输入 [Ollama 模型库](https://ollama.com/search)中的模型名称后确认，1Panel 将创建后台拉取任务。模型可用后，可以执行运行、重建或删除等操作。
 
 ![添加 Ollama 模型](../../img/ai/model_pull.png)
-{: .original}
+{: .browser-mockup}
 
 点击模型所在行的 **运行**，可在页面内打开终端与模型对话。
 
 ![运行 Ollama 模型](../../img/ai/model_run.png)
-{: .original}
+{: .browser-mockup}
 
 ### 2.3 连接和同步
 
@@ -61,7 +61,7 @@ schema_type: TechArticle
 
 ## 3 vLLM
 
-vLLM 页面用于创建和维护本地推理服务，支持查看状态、编辑、启动、停止、重启、删除和任务进度。具体配置参见 [vLLM](./vllm.md)。
+vLLM 页面用于创建和维护本地推理服务，支持查看状态、编辑、启动、停止、重启、删除和查看任务进度。具体配置参见 [vLLM](./vllm.md)。
 
 ## 4 模型下载器
 

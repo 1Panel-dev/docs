@@ -38,6 +38,10 @@
 
     在智能体类型中选择 **Hermes Agent**，然后按页面要求填写部署参数。
 
+![Hermes_Agent_install.png](../../img/app/Hermes_Agent_install.png)
+{: .browser-mockup}
+
+
 !!! note "参数说明"
     - **智能体类型**：选择 `Hermes Agent`
     - **名称**：默认可填写为 `hermes-agent`，也可按需自定义
@@ -69,6 +73,9 @@
     安装完成后，返回 **智能体** 列表页面，找到 Hermes Agent，点击 **WebUI** 即可直接跳转访问。
 
     首次打开时，如页面仍在初始化，可稍等片刻后再刷新访问。
+
+![Hermes_Agent_index.png](../../img/app/Hermes_Agent_index.png)
+{: .browser-mockup}
 
 ## 5. 后续配置说明
 
