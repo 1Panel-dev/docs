@@ -71,7 +71,7 @@
 .browser-mockup {
   position: relative;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 5 auto;
   border-top: 2em solid rgba(230, 230, 230, 0.8);
   border-radius: 4px 4px 4px 4px;
   box-shadow: 0 0.1em .5em 0 rgba(0, 0, 0, 0.4);

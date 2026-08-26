@@ -1,20 +1,21 @@
 !!! note ""
     This module is mainly used to manage scheduled tasks, such as periodically running a shell script, periodic backups, periodic URL visits, etc. Manual execution is also supported.
 
-Basic concepts:
+!!! note ""
+    Basic concepts:
 
-- **Task Type**: Supports Shell Script, App Backup, Website Backup, Database Backup, Directory/File Backup, Log Backup, URL Visit, Website Log Rotation, Cache Cleanup, System Snapshot, Server Time Sync.
-- **Group**: Classify tasks into different groups for quick filtering.
-- **Schedule**: Custom schedule uses the **minute hour day month weekday** format (e.g., `0 0 * * *`). See https://crontab.guru/ for reference. You can preview the latest 5 execution times after setting.
-- **Retention**: Keep only the latest *n* successful backups/logs to avoid unlimited growth.
-- **Backup Account**: Target storage for backup files, managed in **Panel Settings → Backup Accounts**. Multiple accounts are supported.
-- **Default Download Account**: One designated backup account used for download and file‑size checks. The task fails if this account upload fails; failures of other accounts are ignored.
-- **Compression Password**: Encrypt tar backups using openssl (disabled by default).
-- **Exclude Rules**: Skip specific files/directories during backup.
-- **Alert (✨ Pro Edition)**: Send notifications (SMS/email) if a task fails.
-- **Ignore Errors**: Continue backing up other items when one fails (e.g., backing up all databases).
-- **Timeout**: Maximum allowed execution time.
-- **Retry**: Number of retries after failure.
+    - **Task Type**: Supports Shell Script, App Backup, Website Backup, Database Backup, Directory/File Backup, Log Backup, URL Visit, Website Log Rotation, Cache Cleanup, System Snapshot, Server Time Sync.
+    - **Group**: Classify tasks into different groups for quick filtering.
+    - **Schedule**: Custom schedule uses the **minute hour day month weekday** format (e.g., `0 0 * * *`). See https://crontab.guru/ for reference. You can preview the latest 5 execution times after setting.
+    - **Retention**: Keep only the latest *n* successful backups/logs to avoid unlimited growth.
+    - **Backup Account**: Target storage for backup files, managed in **Panel Settings → Backup Accounts**. Multiple accounts are supported.
+    - **Default Download Account**: One designated backup account used for download and file‑size checks. The task fails if this account upload fails; failures of other accounts are ignored.
+    - **Compression Password**: Encrypt tar backups using openssl (disabled by default).
+    - **Exclude Rules**: Skip specific files/directories during backup.
+    - **Alert (✨ Pro Edition)**: Send notifications (SMS/email) if a task fails.
+    - **Ignore Errors**: Continue backing up other items when one fails (e.g., backing up all databases).
+    - **Timeout**: Maximum allowed execution time.
+    - **Retry**: Number of retries after failure.
 
 ## 1 Task Types
 

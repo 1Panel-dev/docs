@@ -6,7 +6,7 @@ site_author: "1Panel Team"
 repo_name: "1Panel"
 repo_url: "https://github.com/1Panel-dev/1Panel"
 edit_uri: https://github.com/1Panel-dev/docs/edit/en/v2/docs/
-copyright: Copyright &copy; 2025 Lingxia (Hong Kong) Software Co., Limited, All Rights Reserved.
+copyright: Copyright &copy; 2026 Lingxia (Hong Kong) Software Co., Limited, All Rights Reserved.
 
 ## customization
 theme:
@@ -70,6 +70,10 @@ nav:
       - Model: user_manual/ai/model.md
       - MCP: user_manual/ai/mcp.md
       - GPU Monitor: user_manual/ai/gpu.md
+      - Benchmark: user_manual/ai/benchmark.md
+      - Vllm: user_manual/ai/vllm.md
+      - Gateway: user_manual/ai/gateway.md
+      - Skills: user_manual/ai/skills_hub.md
     - Website:
       - Overview: user_manual/websites/websites.md
       - Create Website: user_manual/websites/website_create.md
@@ -136,6 +140,8 @@ nav:
     - Panel Settings: user_manual/settings.md
   - Popular Self-Hosted Apps:
     - OpenClaw: user_manual/appstore/openclaw.md
+    - Deepseek Harness: user_manual/appstore/deepseek-harness.md
+    - Hermes Agent: user_manual/appstore/hermes-agent.md
     - Ollama: user_manual/appstore/ollama.md  
     - WordPress: user_manual/appstore/wordpress.md
     - Bitwarden: user_manual/appstore/bitwarden.md
