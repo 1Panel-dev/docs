@@ -504,7 +504,6 @@ schema_type: TechArticle
     版本能力以 [1Panel 官网](https://1panel.cn/)及当前许可证页面显示为准。
 
 ![img.png](../img/settings/licenses.png)
-{: .browser-mockup}
 
 ## 7 关于
 

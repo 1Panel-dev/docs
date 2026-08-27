@@ -14,7 +14,6 @@ schema_type: TechArticle
     1Panel 在 **AI -> 智能体** 中集中安装和管理受支持的智能体应用。当前页面包含智能体列表、模型账号，以及按智能体类型和版本动态显示的配置能力。
 
 ![智能体列表](../../img/ai/agent_list.png)
-{: .browser-mockup}
 
 ## 1 使用前提
 
@@ -27,7 +26,6 @@ schema_type: TechArticle
 ## 2 安装智能体
 
 ![创建智能体](../../img/ai/agent_create.png)
-{: .browser-mockup}
 
 !!! note ""
     1. 进入 **AI -> 智能体**。
@@ -45,7 +43,6 @@ schema_type: TechArticle
     智能体列表支持查看状态和版本，并根据当前状态执行概览、配置、终端、对话、启动、停止、重启、升级和删除等操作。不同智能体类型支持的按钮可能不同。
 
 ![AI Agent日常管理](../../img/ai/ai_agent_normal.png)
-{: .browser-mockup}
 
 ### 3.1 概览
 
@@ -53,7 +50,6 @@ schema_type: TechArticle
     概览展示运行状态、主模型、频道数量、技能数量、定时任务数量和会话数量等摘要。页面数据取决于智能体类型及其版本是否支持对应接口。
 
 ![概览](../../img/ai/agent_overview.png)
-{: .browser-mockup}
 
 ### 3.2 模型
 
@@ -61,7 +57,6 @@ schema_type: TechArticle
     模型页用于选择主模型、维护可用模型和备用模型。修改模型账号时，可以选择是否同步更新关联智能体的配置文件。
 
 ![模型配置](../../img/ai/agent_config_model.png)
-{: .browser-mockup}
 
 ### 3.3 频道
 
@@ -69,22 +64,22 @@ schema_type: TechArticle
     频道配置按智能体类型提供微信、企业微信、钉钉、飞书、QQ、Telegram、Discord 等接入项。实际可用频道、插件要求和字段由当前智能体版本决定；保存频道配置后，系统可能自动重启容器使配置生效。
 
 ![QQ 频道配置](../../img/ai/agent_channel_qq.png)
-{: .browser-mockup}
 
 ### 3.4 技能与角色
 !!! note ""
     - **技能**：查看内置、外部和工作区技能，并从页面支持的技能来源搜索和安装。
     - **角色**：维护智能体工作区中的角色 Markdown 文件。保存后按页面提示重启容器。
 
+![技能市场](../../img/ai/agent_skills_js.png)
+
+
 ![技能市场](../../img/ai/agent_skills_market.png)
-{: .browser-mockup}
 
 ### 3.5 设置
 !!! note ""
     设置页包含安全、其他和配置文件等标签，可配置认证方式、时区、浏览器开关、NPM 源等。直接编辑配置文件前建议先备份；保存后需要重启的配置以页面提示为准。
 
 ![设置-其他](../../img/ai/agent_settings_other.png)
-{: .browser-mockup}
 
 ## 4 多节点与批量操作
 

@@ -13,8 +13,8 @@ schema_type: TechArticle
     入口为左侧菜单 **AI -> MCP**。社区版、专业版和企业版均可使用；创建、编辑、删除和绑定网站需要具有对应资源操作权限。
 
 ## 1 创建 MCP Server
-
-点击 **创建**，也可以先点击 **导入 MCP Server 配置**，从包含 `mcpServers` 的 JSON 配置中导入命令和环境变量。
+!!! note ""
+    点击 **创建**，也可以先点击 **导入 MCP Server 配置**，从包含 `mcpServers` 的 JSON 配置中导入命令和环境变量。
 
 !!! info "参数说明"
     - **名称**：MCP Server 名称，创建后不可修改，同时用于生成默认容器名称和访问路径。
@@ -31,7 +31,6 @@ schema_type: TechArticle
     - **环境变量 / 挂载**：向 MCP Server 传入凭证、配置或主机目录。
 
 ![创建 MCP Server](../../img/ai/create_mcp_server.png)
-{: .browser-mockup}
 
 !!! warning "命令与挂载安全"
     1Panel 会在服务器上运行所填写的命令。导入第三方配置前，应检查命令、镜像、环境变量和挂载目录，不要运行来源不明或权限范围过大的 MCP Server。
@@ -42,9 +41,8 @@ schema_type: TechArticle
     创建任务完成后，可在列表中查看运行状态和连接信息，并执行编辑、启动、停止、重启、删除、查看日志和测试连接等操作。客户端连接地址由外部访问路径、端口和当前输出类型的路径共同组成，应直接使用页面提供的配置。
 
 ![MCP Server 连接配置](../../img/ai/mcp_server_config.png)
-{: .browser-mockup}
 
-如果实例无法连接，依次检查容器状态及日志、运行命令、访问路径、端口监听、防火墙和反向代理配置。
+>如果实例无法连接，依次检查容器状态及日志、运行命令、访问路径、端口监听、防火墙和反向代理配置。
 
 ## 3 绑定网站
 
@@ -52,9 +50,8 @@ schema_type: TechArticle
     点击 **绑定网站**，可以把所有已安装的 MCP Server 统一接入一个已有网站。绑定后，1Panel 会更新各实例的外部访问地址，并关闭端口外部访问；不同实例通过各自的 SSE 或 Streamable HTTP 路径区分。
 
 ![绑定 MCP 网站](../../img/ai/mcp_website.png)
-{: .browser-mockup}
 
-网站侧可以继续配置 HTTPS 和访问限制。修改域名、证书或反向代理规则后，应重新测试每个 MCP Server 的连接。
+>网站侧可以继续配置 HTTPS 和访问限制。修改域名、证书或反向代理规则后，应重新测试每个 MCP Server 的连接。
 
 !!! note "取消直接暴露端口"
     已通过网站提供服务时，建议保持实例端口仅监听本机，避免网站入口和直接端口同时暴露。

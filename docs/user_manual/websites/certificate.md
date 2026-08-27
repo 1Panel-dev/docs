@@ -13,7 +13,6 @@ schema_type: TechArticle
     列表展示主域名、其他域名、申请方式、ACME 账户、到期时间、状态和自动续签状态，并提供详情、申请/续签、更新、编辑、同步、下载和删除等操作。实际按钮取决于证书来源和当前状态。
 
 ![证书列表](../../img/websites/certificate_list.png)
-{: .browser-mockup}
 
 ## 相关操作
 !!! note ""

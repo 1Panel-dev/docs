@@ -39,7 +39,6 @@
     在智能体类型中选择 **Hermes Agent**，然后按页面要求填写部署参数。
 
 ![Hermes_Agent_install.png](../../img/app/Hermes_Agent_install.png)
-{: .browser-mockup}
 
 
 !!! note "参数说明"
@@ -75,7 +74,6 @@
     首次打开时，如页面仍在初始化，可稍等片刻后再刷新访问。
 
 ![Hermes_Agent_index.png](../../img/app/Hermes_Agent_index.png)
-{: .browser-mockup}
 
 ## 5. 后续配置说明
 

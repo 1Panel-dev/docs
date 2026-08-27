@@ -5,7 +5,6 @@
 ## 1 创建分组
 
 ![img.png](../../img/websites/website_group.png)
-{: .browser-mockup}
 
 ## 2 默认分组
 
@@ -14,9 +13,7 @@
     设置网站默认分组后，创建新网站时会自动将其归入该分组。
 
 ![img.png](../../img/websites/default_group.png)
-{: .browser-mockup}
 
 ## 3 修改/删除分组
     
 ![img.png](../../img/websites/edit_group.png)
-{: .browser-mockup}

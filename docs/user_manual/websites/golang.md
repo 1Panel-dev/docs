@@ -14,7 +14,6 @@ schema_type: TechArticle
     点击 **创建运行环境**，选择 Go 版本、运行目录和启动配置。可选版本以当前页面显示为准；创建前应确保项目已经包含可构建或可执行的 Go 程序。
 
 ![runtime_golang_create.png](../../img/websites/runtime_golang_create.png)
-{: .browser-mockup}
 
 ## 2 操作 Go 运行环境
 
@@ -24,4 +23,3 @@ schema_type: TechArticle
     - 编辑启动命令、运行目录或环境变量后，需通过日志确认程序重新启动成功。
 
 ![runtime_golang_list.png](../../img/websites/runtime_golang_list.png)
-{: .browser-mockup}

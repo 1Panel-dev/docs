@@ -24,8 +24,8 @@
     - **日志**：查看 AI 网关运行日志
     - **外部连接地址**：客户端配置的 Base URL，可直接复制
 
-![AI 网关账号池](../../img/ai/ai_gateway_account_pool.jpg)
-{: .browser-mockup}
+![AI 网关账号池](../../img/ai/ai_gateway_account_pool.png)
+
 
 ## 2 账号池
 
@@ -43,7 +43,6 @@
     - **启用**：控制该账号是否参与网关转发
 
 ![导入模型账号](../../img/ai/ai_gateway_import_account.png)
-{: .browser-mockup}
 
 > 模型映射左侧填写客户端请求中的 `model`，右侧填写真实上游模型。客户端只需要感知映射后的请求模型名。
 
@@ -54,16 +53,14 @@
 
     `auto` 是客户端触发智能路由时使用的虚拟模型名，不需要添加到模型组中。
 
-![AI 网关模型组](../../img/ai/ai_gateway_model_groups.jpg)
-{: .browser-mockup}
+![AI 网关模型组](../../img/ai/ai_gateway_model_groups.png)
 
 ## 4 用户组
 
 !!! note ""
     **用户组** 用于统一管理一组 API Key 的调用配额和模型范围。创建用户组后，再将 API Key 绑定到该用户组。
 
-![AI 网关用户组](../../img/ai/ai_gateway_user_groups.jpg)
-{: .browser-mockup}
+![AI 网关用户组](../../img/ai/ai_gateway_user_groups.png)
 
 !!! info "用户组参数"
     - **用户组**：用户组名称
@@ -73,7 +70,7 @@
     - **状态**：禁用后，该组下的 API Key 无法继续调用
     - **备注**：记录部门、项目或使用场景
 
-默认用户组不可删除。API Key 绑定用户组后，会继承用户组的 QPS、Token 配额和模型范围。
+>默认用户组不可删除。API Key 绑定用户组后，会继承用户组的 QPS、Token 配额和模型范围。
 
 ## 5 API Key
 
@@ -83,7 +80,6 @@
     API Key 只会在创建时完整展示，请妥善保存。重置 Token 后，原 Token 将无法继续使用，需要同步更新客户端配置。
 
 ![创建 API Key](../../img/ai/ai_gateway_api_key_create.png)
-{: .browser-mockup}
 !!! info "客户端调用示例"
     ```bash
     curl http://<服务器 IP>:4000/v1/chat/completions \
@@ -101,16 +97,12 @@
       }'
     ```
 
-客户端应将页面顶部的 **外部连接地址** 作为 Base URL。`model` 可以填写账号池中的请求模型名；启用智能路由后，也可以填写 `auto`。
+>客户端应将页面顶部的 **外部连接地址** 作为 Base URL。`model` 可以填写账号池中的请求模型名；启用智能路由后，也可以填写 `auto`。
 
 ## 6 智能路由
 
 !!! note ""
     智能路由根据请求复杂度，在简单模型组和复杂模型组之间选择模型。只有客户端请求使用 `model=auto` 时才会触发智能路由；请求其他模型名时，仍按普通 AI 网关流程转发。
-
-![AI 网关智能路由](../../img/ai/ai_gateway_smart_routing.jpg)
-{: .browser-mockup}
-
 ### 6.1 配置流程
 !!! note ""
     1. 在 **模型组** 中分别创建简单模型组和复杂模型组，并配置真实上游模型。
@@ -124,19 +116,15 @@
 !!! info "样本"
     样本用于描述简单或复杂问题。列表展示标签、样本文本、向量模型和向量维度，新增或调整 Embedding 配置后可以点击 **重建向量**。
 ![智能路由样本](../../img/ai/ai_gateway_smart_routing_sample.png)
-{: .browser-mockup}
 !!! info "预览"
     输入一段请求文本，查看它会被判定为简单还是复杂，并显示判定来源。预览只执行路由判断，不会真实调用上游模型。
 ![智能路由预览](../../img/ai/ai_gateway_smart_routing_sample_yulan.png)
-{: .browser-mockup}
 !!! info "决策日志"
     记录请求 ID、判定标签、最终模型、判定来源、置信度、耗时和创建时间。判定来源包括样本匹配和规则判断，并可跳转到对应调用日志。
 ![智能路由决策](../../img/ai/ai_gateway_smart_routing_sample_juece.png)
-{: .browser-mockup}
 !!! info "统计信息"
     展示简单/复杂请求占比、样本匹配占比、总 Token、平均 Token、失败请求，以及按标签、来源、模型和 Token 的分布。
 ![智能路由统计](../../img/ai/ai_gateway_smart_routing_sample_tongji.png)
-{: .browser-mockup}
 ## 7 内容合规
 
 !!! note ""
@@ -145,45 +133,37 @@
 !!! info "敏感词"
     支持创建和批量导入敏感词，并设置敏感词分组、归一化词、状态和备注。归一化词用于将不同写法统一为同一个匹配词。
 
-![AI 网关内容合规](../../img/ai/ai_gateway_compliance.jpg)
-{: .browser-mockup}
+![AI 网关内容合规](../../img/ai/ai_gateway_compliance.png)
 
 !!! info "敏感词分组"
     为一组敏感词设置处理动作、风险等级、状态和描述。处理动作包括 **阻断** 和 **仅记录**。
 ![AI 网关内容合规](../../img/ai/ai_gateway_compliance_fenzu.png)
-{: .browser-mockup}
 !!! info "审核样本"
     维护用于语义匹配的审核文本，并设置标签。列表展示向量模型和维度，样本变更或 Embedding 配置调整后可以重建向量。
 ![AI 网关内容合规](../../img/ai/ai_gateway_compliance_shenheyangben.png)
-{: .browser-mockup}
 !!! info "审计日志"
     记录 Request ID、请求模型、命中词、命中分组、处理动作、状态码和创建时间，用于追踪被记录或阻断的请求。
+
+![ai_gateway_compliance_log.png](../../img/ai/ai_gateway_compliance_log.png)    
 
 ## 8 用量统计
 
 !!! note ""
-    **用量统计** 提供概览、分布、排行榜和调用日志 4 个视图，并支持按用户、模型供应商、模型和关键字筛选。
-!!! info "概览"
-    展示请求数、总 Token、输入 Token、输出 Token、缓存 Token、缓存命中率、活跃用户、活跃模型、失败请求、平均 Token/请求和使用趋势。
-![AI 网关用量统计](../../img/ai/ai_gateway_usage_new.jpg)
-{: .browser-mockup}
+    **用量统计** 提供分布、排行榜和调用日志 3 个视图，并支持按用户、模型供应商、模型和关键字筛选。
 
 !!! info "分布"
     按模型供应商、模型、模型账号、用户组和用户统计请求数、Token 用量、缓存 Token 和占比。
 
 ![AI 网关用量分布](../../img/ai/ai_gateway_usage_new_fenbu.png)
-{: .browser-mockup}
 
 !!! info "排行榜"
     按用户展示请求数、输入 Token、输出 Token、Token 总量和缓存 Token，并支持按指标排序。
 
 ![AI 网关用量排行榜](../../img/ai/ai_gateway_usage_new_paihangbang.png)
-{: .browser-mockup}
 
 !!! info "调用日志"
     展示 Request ID、模型供应商、请求模型、上游模型、用户、用户组、输入/输出/总 Token、缓存 Token、状态码、响应时间和请求时间。点击 **详情** 可以查看单次调用信息。
 ![AI 网关用量调用日志](../../img/ai/ai_gateway_usage_new_diaoyongrizhi.png)
-{: .browser-mockup}
 ## 9 网关设置
 
 ### 9.1 基础设置
@@ -191,8 +171,7 @@
 !!! note ""
     **基础设置** 用于控制网关开关、监听端口、外部连接地址和负载策略。外部连接地址应填写客户端实际可访问的地址，并包含 `/v1` 路径。
 
-![AI 网关基础设置](../../img/ai/ai_gateway_settings_basic.jpg)
-{: .browser-mockup}
+![AI 网关基础设置](../../img/ai/ai_gateway_settings_basic.png)
 
 ### 9.2 性能设置
 
@@ -205,8 +184,7 @@
     - **最大请求体**：单次请求体大小限制
     - **Runtime 刷新间隔**：运行时配置刷新间隔
 
-![AI 网关性能设置](../../img/ai/ai_gateway_settings_performance.jpg)
-{: .browser-mockup}
+![AI 网关性能设置](../../img/ai/ai_gateway_settings_performance.png)
 
 ### 9.3 Embedding 设置
 
@@ -218,7 +196,6 @@
 1. 进入 **AI -> 模型 -> 下载器**，下载 `Qwen3-Embedding-0.6B-GGUF` 模型，并确认模型文件中包含 `qwen3-embedding-0.6b-q8_0.gguf`。
 
 ![下载 Qwen3 Embedding 模型](../../img/ai/ai_gateway_embedding_model_download.jpg)
-{: .browser-mockup}
 
 2. 进入 **应用商店**，搜索并安装 `llama.cpp`。
 3. 在安装参数中，将 **模型目录** 设置为：
@@ -234,7 +211,6 @@
     ```
 
 ![llama.cpp Embedding 参数配置](../../img/ai/ai_gateway_embedding_llama_cpp.jpg)
-{: .browser-mockup}
 
 5. 完成安装，并确认 `llama.cpp` 应用处于运行状态。
 
@@ -250,9 +226,8 @@
     - **API Key**：本地 `llama.cpp` 未配置认证时留空
 
 ![AI 网关 Embedding 设置](../../img/ai/ai_gateway_embedding_settings.jpg)
-{: .browser-mockup}
 
-点击 **连接测试**。测试成功后保存配置，再到智能路由样本或内容审核样本页面生成或重建向量。
+>点击 **连接测试**。测试成功后保存配置，再到智能路由样本或内容审核样本页面生成或重建向量。
 
 !!! info "判定参数"
     - **路由阈值**：请求与智能路由样本的相似度达到该值后，才采用样本匹配结果
@@ -267,7 +242,6 @@
     在 **智能路由** 标签页中打开开关，并选择简单模型组和复杂模型组。简单模型组适合低成本任务，复杂模型组适合代码分析、架构设计和故障排查等任务。
 
 ![AI 网关智能路由设置](../../img/ai/ai_gateway_settings_smart_routing.jpg)
-{: .browser-mockup}
 
 在 **内容合规** 标签页中可以统一启用或停用内容合规检查。
 
@@ -284,7 +258,6 @@
     Elasticsearch 用于保存 AI 网关请求和响应内容，便于检索、审计和问题排查。页面支持连接测试，确认连接可用后再保存配置。
 
 ![AI 网关 Elasticsearch 设置](../../img/ai/ai_gateway_settings_elasticsearch.jpg)
-{: .browser-mockup}
 
 !!! info "参数说明"
     - **启用**：控制是否向 Elasticsearch 写入请求和响应内容

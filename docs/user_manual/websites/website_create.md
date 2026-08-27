@@ -28,7 +28,6 @@ schema_type: TechArticle
     - **备注**：填写对该站点作用的描述 
 
 ![img.png](../../img/websites/auto_create.png)
-{: .browser-mockup}
 
 ## 2 运行环境
 
@@ -49,7 +48,6 @@ schema_type: TechArticle
     - **备注**：提供该站点的功能描述
 
 ![img.png](../../img/websites/website_runtime_create.png)
-{: .browser-mockup}
 
 ## 3 反向代理
 
@@ -67,7 +65,6 @@ schema_type: TechArticle
     - **备注**：描述该站点的功能或用途
 
 ![img.png](../../img/websites/proxy_create.png)
-{: .browser-mockup}
 
 ## 4 静态网站
 
@@ -85,7 +82,6 @@ schema_type: TechArticle
     - **备注**：简要描述该站点的功能或用途
 
 ![img.png](../../img/websites/static_create.png)
-{: .browser-mockup}
 
 ## 5 子网站
 
@@ -104,7 +100,6 @@ schema_type: TechArticle
     - **备注**：简要描述该站点的功能或用途
 
 ![img.png](../../img/websites/subsite_create.png)
-{: .browser-mockup}
 
 ## 6 TCP/UDP 代理
 

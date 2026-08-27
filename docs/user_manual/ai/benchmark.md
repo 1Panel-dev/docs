@@ -8,7 +8,6 @@
     该功能属于 [1Panel 企业版](https://1panel.cn/enterprise.html)。
 
 ![基准测试](../../img/ai/ai_benchmark_list.jpg)
-{: .browser-mockup}
 
 ## 1 前置条件
 
@@ -31,7 +30,6 @@
     创建成功后，系统会启动后台任务执行基准测试，并可通过任务日志查看执行过程。
 
 ![创建基准测试](../../img/ai/ai_benchmark_create.jpg)
-{: .browser-mockup}
 
 !!! info "基础参数"
     - **服务地址**：目标模型服务地址，例如 `http://127.0.0.1:4000`
@@ -59,7 +57,6 @@
     点击任务名称可打开详情抽屉，查看基础信息、运行配置、结果指标、启动命令和原始结果。
 
 ![基准测试详情](../../img/ai/ai_benchmark_detail.jpg)
-{: .browser-mockup}
 
 !!! info "核心指标"
     - **上下文长度**：输入 Token 与输出 Token 上限之和

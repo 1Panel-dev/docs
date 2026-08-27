@@ -13,7 +13,6 @@ schema_type: TechArticle
     - 如果是 DNS 验证模式，需要提前准备 DNS 账号
 
 ![img.png](../../img/websites/certificate_create.png)
-{: .browser-mockup}
 
 ## 2 DNS 账号模式申请证书
 
