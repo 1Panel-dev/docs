@@ -84,6 +84,10 @@
     - **Re-test**: Creates a new test task using the parameters of an existing task
     - **Cancel**: When a task is running or waiting, you can cancel its execution
     - **Delete**: Deletes test records that are no longer needed
+![alt text](../../img/ai/ai_benchmark_task_detail_button.png)
+{: .browser-mockup}
+
+
 ![Benchmark Test Details](../../img/ai/ai_benchmark_task_detail.png)
 {: .browser-mockup}
 

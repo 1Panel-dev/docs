@@ -10,6 +10,8 @@
 !!! note ""
     The new version of the AI Gateway includes 8 functional entry points: **Account Pool, Model Group, API Key, User Group, Smart Routing, Content Compliance, Usage Statistics, and Settings**. It is recommended to complete the initial configuration in the following order:
 
+
+!!! note ""
     1. Import model accounts in the **Account Pool** and configure model mappings.
     2. Create **Model Groups** as needed to restrict the models available to user groups or configure smart routing.
     3. Create **User Groups**, and set the QPS, token quota, and model scope.
@@ -27,8 +29,10 @@
     - **Log**: Views the AI Gateway runtime logs
     - **External Connection Address**: The Base URL configured on the client side, which can be copied directly
 
-![AI Gateway Account Pool](../../img/ai/ai_gateway_account_pool.png)
+![alt text](../../img/ai/ai_gateway_settings_info.png)
 {: .browser-mockup}
+
+
 
 ## 2 Account Pool
 
@@ -36,6 +40,9 @@
     The **Account Pool** is used to maintain the upstream model accounts of the AI Gateway. Click **Import Model Account**, select an account created under **AI -> Model**, and configure the weight, priority, and model mapping.
 
     The list displays the model provider, API type, upstream API address, health status, failure count, and latest error, making it easy to verify whether an account can participate normally in forwarding. The current page can simultaneously manage model accounts of different API types such as `openai-completions`, `openai-responses`, and `anthropic-messages`.
+
+![AI Gateway Account Pool](../../img/ai/ai_gateway_account_pool.png)
+{: .browser-mockup}
 
 !!! info "Import Parameters"
     - **Model Account**: Select an existing model account
@@ -174,19 +181,17 @@
 
 !!! info "Audit Log"
     Records the Request ID, requested model, matched word, matched group, action, status code, and creation time, for tracking requests that were logged or blocked.
-![AI Gateway Review API](../../img/ai/ai_gateway_compliance_apifox.png)   
-![AI Gateway Review LOG](../../img/ai/ai_gateway_compliance_Log.png)   
+
+![AI Gateway Review Sample](../../img/ai/ai_gateway_compliance_apifox.png)
+{: .browser-mockup}
+
+![AI Gateway Review Sample](../../img/ai/ai_gateway_compliance_Log.png)
+{: .browser-mockup}
 
 ## 8 Usage Statistics
 
 !!! note ""
-    **Usage Statistics** provides 4 views: Overview, Distribution, Leaderboard, and Call Log, and supports filtering by user, model provider, model, and keyword.
-
-!!! info "Overview"
-    Displays the request count, total tokens, input tokens, output tokens, cached tokens, cache hit rate, active users, active models, failed requests, average tokens per request, and usage trends.
-<!-- 
-![AI Gateway Usage Statistics](../../img/ai/ai_gateway_usage_new.jpg)
-{: .browser-mockup} -->
+    **Usage Statistics** provides 3 views: Distribution, Leaderboard, and Call Log, and supports filtering by user, model provider, model, and keyword.
 
 !!! info "Distribution"
     Provides statistics on the request count, token usage, cached tokens, and proportion by model provider, model, model account, user group, and user.
@@ -264,8 +269,9 @@
     - **Model**: `Qwen3-Embedding-0.6B`
     - **API Key**: Leave blank when the local `llama.cpp` does not have authentication configured
 
-<!-- ![AI Gateway Embedding Settings](../../img/ai/ai_gateway_embedding_settings.jpg)
-{: .browser-mockup} -->
+![AI Gateway Embedding Settings](../../img/ai/ai_gateway_embedding_settings.png)
+{: .browser-mockup}
+
 !!! note ""
     Click **Connection Test**. After the test succeeds, save the configuration, and then generate or rebuild vectors on the smart routing sample or content review sample page.
 
@@ -286,12 +292,18 @@
 
 > In the **Content Compliance** tab, content compliance checks can be enabled or disabled uniformly.
 
+![alt text](../../img/ai/ai_gateway_settings_smart_routing_setCompliance.png)
+{: .browser-mockup}
 ### 9.5 Log Settings
 
 !!! info "Parameter Description"
     - **AI Gateway Log Retention Days**: Controls the retention period of the local gateway logs
     - **Log Cleanup Interval**: Controls the execution interval of the background log cleanup task
     - **Clear Logs**: Immediately clears the existing AI Gateway logs; use with caution
+
+
+![alt text](../../img/ai/ai_gateway_settings_logsetting.png)
+{: .browser-mockup}
 
 ### 9.6 Elasticsearch Settings
 

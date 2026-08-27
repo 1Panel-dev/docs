@@ -68,8 +68,6 @@
 
     You can also click **Configure Later**, and after entering the page, open the **Settings** in the lower left corner and complete the configuration on the **Model** page.
 
-![Configure DeepSeek API Key](../../img/app/deepseek-harness-api-key.png)
-{: .browser-mockup}
 
 ## 4. Configuring a Third-Party Model Provider
 
@@ -81,7 +79,7 @@
     3. Select `opencode-go` and fill in the API Key.
     4. Configure the API address and model as needed, and click **Save** after confirming they are correct.
 
-![Configure Third-Party Model Provider](../../img/app/deepseek-harness-provider.png)
+![Configure DeepSeek API Key](../../img/app/deepseek-harness-api-key.png)
 {: .browser-mockup}
 
 ## 5. Starting the First Task

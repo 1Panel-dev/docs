@@ -29,13 +29,12 @@ The page supports the following sources:
 ![Import from GitHub Repository](../../img/ai/skills_hub_import_github.png)
 {: .browser-mockup}
 
-![Import from GitHub Repository](../../img/ai/skills_hub_import_detail.png)
-{: .browser-mockup}
 
 !!! note ""
     - Import from a downloadable `.zip` package URL.
 
-![Import from Archive URL](../../img/ai/skills_hub_import_url.png)
+
+![Import from GitHub Repository](../../img/ai/skills_hub_import_detail.png)
 {: .browser-mockup}
 
 !!! note ""
@@ -68,6 +67,8 @@ The page supports the following sources:
     - **Skill Directory**: The target directory where the package is extracted on the host;
     - **Post-install Command**: The optional command executed after extraction is completed;
     - **Description and Status**: Explain the purpose and control whether the target is selectable.
+![alt text](../../img/ai/skills_hub_targets_button.png)
+{: .browser-mockup}
 
 ![Custom Agent List](../../img/ai/skills_hub_targets.png)
 {: .browser-mockup}

@@ -56,12 +56,12 @@
     
     - [OpenWebUI](https://github.com/open-webui/open-webui)
 
-### 0 Prerequisites
+### 1 Prerequisites
 
 !!! note ""
     Before creating a model with TensorRT LLM, you must first install the NVIDIA GPU driver and configure the NVIDIA Container Toolkit. Refer to the documentation: [Installing the NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html).
 
-### 1 Create Model
+### 2 Create Model
 
 !!! note ""
     On the TensorRT LLM Model Management page, click the **Create** button, enter parameters such as the model name, then click **Confirm** to create the model.
@@ -82,12 +82,12 @@
 ![img.png](../../img/ai/create_trtllm.png)
 {: .browser-mockup}
 
-### 2 View Model Logs
+### 3 View Model Logs
 
 !!! note ""
     On the TensorRT LLM Model Management page, click the **View Logs** button in the row of the target model to check the model startup and runtime logs.
 
-### 3 Other Model Operations
+### 4 Other Model Operations
 
 !!! note ""
     On the TensorRT LLM Model Management page, you can perform operations such as stop, start, restart, delete, and edit on the model.
