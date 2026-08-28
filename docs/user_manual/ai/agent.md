@@ -202,7 +202,6 @@
     The operation page is shown in the figure below.
 
 ![img.png](../../img/ai/Discord_Developer_Mode_Page.png)
-
 {: .browser-mockup}
 
 ### 4.5. Step 5: Configure OpenClaw for Discord Channel
@@ -304,7 +303,6 @@
     After completing the configuration, enter the "Configuration" page of "Agent" in 1Panel, complete the Discord chat channel configuration, and click "Save", as shown in the figure below:
 
 ![img.png](../../img/ai/1Panel_OpenClaw_Discord_Channel_Config.png)
-
 {: .browser-mockup}
 
 ### 4.6. Step 6: Start Gateway and Verify Configuration
@@ -326,7 +324,6 @@
     - 3. If the bot replies normally, it indicates that the configuration is successful. The test effect is shown in the figure below.
 
 ![img.png](../../img/ai/Discord_OpenClaw_Bot_Test_Page.png)
-
 {: .browser-mockup}
 
 ### 4.7. Step 7: Troubleshooting (Common Issues)
