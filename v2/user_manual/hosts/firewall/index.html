@@ -2857,7 +2857,7 @@
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1 安装
+        1 功能概览
       
     </span>
   </a>
@@ -2868,7 +2868,7 @@
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2 防火墙状态
+        2 使用前准备
       
     </span>
   </a>
@@ -2879,10 +2879,71 @@
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3 端口规则
+        3 防火墙设置
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="3 防火墙设置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 后端支持范围
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 如何选择后端
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 状态说明
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-ping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 禁 Ping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 防火墙端口白名单
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2890,7 +2951,854 @@
   <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4 端口转发
+        4 系统防火墙
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 系统防火墙">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 首次启用
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1 首次启用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#firewalld-ufw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        firewalld 或 UFW
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iptables-nftables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        iptables 或 nftables
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 规则列表状态
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 添加规则
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.3 添加规则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        地址族
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        协议
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IP 地址
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        端口
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        网卡和连接状态
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        优先级或顺序
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 常用规则示例
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.4 常用规则示例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tcp-8080" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        对所有来源开放 TCP 端口 8080
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        只允许办公网访问 SSH
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ip_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        丢弃单个 IP 的流量
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 重复、覆盖和冲突提示
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6 接管外部规则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#47" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.7 编辑、排序和删除
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#48" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.8 导入和导出
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.8 导入和导出">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        导出
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        导入
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#49" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.9 重置防火墙
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 Docker 端口防护
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5 Docker 端口防护">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 为什么需要 Docker 端口防护
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 首次启用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 发布端口说明
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 防护模式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 生效状态
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6 孤立策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#57" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7 导入、导出和同步
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#58-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.8 清理 Docker 防护后端
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 端口转发
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6 端口转发">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 功能说明
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 首次启用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 添加转发规则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 常用示例
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.4 常用示例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        转发到内网服务器
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        只允许从指定网卡进入
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 同步状态
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#66" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6 导入和导出
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#67" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.7 清理端口转发后端
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 后端切换与规则同步
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7 后端切换与规则同步">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 同步预览状态
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 切换系统防火墙后端
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 切换 Docker 防护或端口转发后端
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 常见使用场景
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8 常见使用场景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 只开放网站端口
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 数据库只允许固定 IP 访问
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 临时关闭 Docker 发布端口
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 将本机端口转发到内网服务
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9 故障排查
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9 故障排查">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 页面提示未检测到防火墙
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 规则已添加但端口仍无法访问
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 添加规则时提示可能导致失联
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 规则显示已漂移
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#95-firewalld" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5 firewalld 提示运行时与持久化不一致
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#96-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.6 Docker 防护未生效
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#97" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.7 端口转发规则显示运行时缺失
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#98" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.8 后端无法切换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#99-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.9 修改防火墙后面板或 SSH 无法访问
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#910" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.10 本机可以访问端口，外部无法访问
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#911-ipv4-ipv6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.11 只有 IPv4 或 IPv6 可以访问
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#912" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.12 规则同步出现“已阻止”
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#913" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.13 同步预览显示“将删除”
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#914" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.14 导入规则失败或部分成功
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#915-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.15 Docker 防护显示生效，但访问结果不符合预期
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#916" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.16 端口转发可建立连接，但业务没有返回数据
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#917-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.17 重启服务器或 Docker 后规则丢失
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#918-firewalld-ufw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.18 firewalld 和 UFW 同时安装导致冲突
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 高级只读检查
       
     </span>
   </a>
@@ -2898,21 +3806,225 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-ip" class="md-nav__link">
+  <a href="#11" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5 IP 规则
+        11 常见问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11 常见问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 系统防火墙已经开放端口，为什么 Docker 服务仍不通？
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#6-iptables" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#112-docker" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6 iptables 高级控制
+        11.2 删除 Docker 防护策略会关闭容器端口吗？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 解绑和清理有什么区别？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#114" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.4 切换后端会自动带上原来的规则吗？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#115" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.5 为什么有些系统规则只能查看，不能编辑？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#116" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.6 为什么删除放行规则时提示端口正在使用？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#117-ping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.7 禁 Ping 后监控报警是否正常？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#118" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.8 端口白名单和普通允许规则有什么区别？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#119" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.9 “丢弃”和“拒绝”有什么区别？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1110-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.10 启停系统防火墙为什么会询问是否重启 Docker？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.11 修改规则后，已有连接为什么没有立即断开？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1112-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.12 系统防火墙能否完全代替 Docker 端口防护？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.13 清理后端会删除导入或保存的配置吗？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1114" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.14 不同后端之间可以直接导入同一份规则吗？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1115" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.15 同步和导入有什么区别？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1116-1panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.16 云安全组和 1Panel 防火墙谁优先？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1117-ipv4-ipv6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.17 是否需要为 IPv4 和 IPv6 分别添加规则？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1118" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.18 为什么规则显示端口未使用，但服务实际可以访问？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12 安全建议
       
     </span>
   </a>
@@ -5863,7 +6975,7 @@
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1 安装
+        1 功能概览
       
     </span>
   </a>
@@ -5874,7 +6986,7 @@
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2 防火墙状态
+        2 使用前准备
       
     </span>
   </a>
@@ -5885,10 +6997,71 @@
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3 端口规则
+        3 防火墙设置
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="3 防火墙设置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 后端支持范围
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 如何选择后端
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 状态说明
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-ping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 禁 Ping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 防火墙端口白名单
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -5896,7 +7069,854 @@
   <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4 端口转发
+        4 系统防火墙
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 系统防火墙">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 首次启用
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1 首次启用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#firewalld-ufw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        firewalld 或 UFW
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iptables-nftables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        iptables 或 nftables
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 规则列表状态
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 添加规则
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.3 添加规则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        地址族
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        协议
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IP 地址
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        端口
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        网卡和连接状态
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        优先级或顺序
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 常用规则示例
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.4 常用规则示例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tcp-8080" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        对所有来源开放 TCP 端口 8080
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        只允许办公网访问 SSH
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ip_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        丢弃单个 IP 的流量
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 重复、覆盖和冲突提示
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6 接管外部规则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#47" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.7 编辑、排序和删除
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#48" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.8 导入和导出
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.8 导入和导出">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        导出
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        导入
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#49" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.9 重置防火墙
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 Docker 端口防护
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5 Docker 端口防护">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 为什么需要 Docker 端口防护
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 首次启用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 发布端口说明
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 防护模式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 生效状态
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6 孤立策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#57" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7 导入、导出和同步
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#58-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.8 清理 Docker 防护后端
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 端口转发
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6 端口转发">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 功能说明
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 首次启用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 添加转发规则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 常用示例
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.4 常用示例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        转发到内网服务器
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        只允许从指定网卡进入
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 同步状态
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#66" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6 导入和导出
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#67" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.7 清理端口转发后端
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 后端切换与规则同步
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7 后端切换与规则同步">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 同步预览状态
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 切换系统防火墙后端
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 切换 Docker 防护或端口转发后端
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 常见使用场景
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8 常见使用场景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 只开放网站端口
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 数据库只允许固定 IP 访问
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 临时关闭 Docker 发布端口
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 将本机端口转发到内网服务
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9 故障排查
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9 故障排查">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 页面提示未检测到防火墙
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 规则已添加但端口仍无法访问
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 添加规则时提示可能导致失联
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 规则显示已漂移
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#95-firewalld" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5 firewalld 提示运行时与持久化不一致
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#96-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.6 Docker 防护未生效
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#97" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.7 端口转发规则显示运行时缺失
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#98" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.8 后端无法切换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#99-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.9 修改防火墙后面板或 SSH 无法访问
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#910" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.10 本机可以访问端口，外部无法访问
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#911-ipv4-ipv6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.11 只有 IPv4 或 IPv6 可以访问
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#912" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.12 规则同步出现“已阻止”
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#913" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.13 同步预览显示“将删除”
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#914" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.14 导入规则失败或部分成功
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#915-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.15 Docker 防护显示生效，但访问结果不符合预期
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#916" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.16 端口转发可建立连接，但业务没有返回数据
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#917-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.17 重启服务器或 Docker 后规则丢失
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#918-firewalld-ufw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.18 firewalld 和 UFW 同时安装导致冲突
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 高级只读检查
       
     </span>
   </a>
@@ -5904,21 +7924,225 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-ip" class="md-nav__link">
+  <a href="#11" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5 IP 规则
+        11 常见问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11 常见问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 系统防火墙已经开放端口，为什么 Docker 服务仍不通？
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#6-iptables" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#112-docker" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6 iptables 高级控制
+        11.2 删除 Docker 防护策略会关闭容器端口吗？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 解绑和清理有什么区别？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#114" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.4 切换后端会自动带上原来的规则吗？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#115" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.5 为什么有些系统规则只能查看，不能编辑？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#116" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.6 为什么删除放行规则时提示端口正在使用？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#117-ping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.7 禁 Ping 后监控报警是否正常？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#118" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.8 端口白名单和普通允许规则有什么区别？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#119" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.9 “丢弃”和“拒绝”有什么区别？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1110-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.10 启停系统防火墙为什么会询问是否重启 Docker？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.11 修改规则后，已有连接为什么没有立即断开？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1112-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.12 系统防火墙能否完全代替 Docker 端口防护？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.13 清理后端会删除导入或保存的配置吗？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1114" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.14 不同后端之间可以直接导入同一份规则吗？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1115" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.15 同步和导入有什么区别？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1116-1panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.16 云安全组和 1Panel 防火墙谁优先？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1117-ipv4-ipv6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.17 是否需要为 IPv4 和 IPv6 分别添加规则？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1118" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.18 为什么规则显示端口未使用，但服务实际可以访问？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12 安全建议
       
     </span>
   </a>
@@ -5944,127 +8168,1307 @@
 
 <h1 id="_1">防火墙<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
 <div class="admonition note">
-<p>1Panel 可管理 Firewalld、UFW 和 iptables。页面包含 <strong>端口规则</strong>、<strong>端口转发</strong>、<strong>IP 规则</strong> 和 <strong>iptables 高级控制</strong>；实际可用能力取决于当前节点检测到的防火墙类型。</p>
-<ul>
-<li>RedHat/CentOS 使用的是 Firewall 防火墙</li>
-<li>Debian/Ubuntu 常用 UFW 防火墙</li>
-<li>使用 iptables 时，可使用 1Panel 的高级控制页面</li>
-</ul>
+<p>1Panel 防火墙提供系统防火墙、Docker 端口防护和端口转发等功能，本文介绍相关功能及防火墙设置的使用方法。</p>
 </div>
-<h2 id="1">1 安装<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">RedHat / CentOS</label><label for="__tabbed_1_2">Ubuntu / Debian</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="admonition note">
-<p><strong>1、更新软件包</strong></p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>yum<span class="w"> </span>update
-</code></pre></div>
-<p><strong>2、安装 firewalld</strong></p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>yum<span class="w"> </span>install<span class="w"> </span>firewalld
-</code></pre></div>
-<p><strong>3、启动 firewalld</strong></p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>firewalld
-</code></pre></div>
-<p><strong>4、如果你在远程位置连接你的服务器，在启用 firewalld 防火墙之前，你必须显式允许进来的 SSH 连接。否则，你将永远都无法连接到机器上。</strong></p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>firewall-cmd<span class="w"> </span>--zone<span class="o">=</span>public<span class="w"> </span>--add-port<span class="o">=</span><span class="m">22</span>/tcp<span class="w"> </span>--permanent
-</code></pre></div>
-<blockquote>
-<p>如果 SSH 运行在非标准端口，你需要将上述命令中的 22 端口替换为对应的 SSH 端口。</p>
-</blockquote>
-<p><strong>5、放开 1Panel 系统端口。</strong></p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>firewall-cmd<span class="w"> </span>--zone<span class="o">=</span>public<span class="w"> </span>--add-port<span class="o">=</span><span class="m">8090</span>/tcp<span class="w"> </span>--permanent
-</code></pre></div>
-<blockquote>
-<p>上述命令中的 8090 端口需要替换为安装 1Panel 系统时自定义的端口。</p>
-</blockquote>
-<p><strong>6、重新加载防火墙规则，使更改生效</strong></p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>firewall-cmd<span class="w"> </span>--reload
-</code></pre></div>
-<p><strong>7、设置开机启动 firewalld</strong></p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>firewalld
-</code></pre></div>
-</div>
-</div>
-<div class="tabbed-block">
-<div class="admonition note">
-<p><strong>1、更新软件包</strong></p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
-</code></pre></div>
-<p><strong>2、安装 UFW</strong></p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ufw
-</code></pre></div>
-<p><strong>3、如果你在远程位置连接你的服务器，在启用 UFW 防火墙之前，你必须显式允许进来的 SSH 连接。否则，你将永远都无法连接到机器上。</strong></p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="m">22</span>/tcp
-</code></pre></div>
-<blockquote>
-<p>如果 SSH 运行在非标准端口，你需要将上述命令中的 22 端口替换为对应的 SSH 端口。</p>
-</blockquote>
-<p><strong>4、放开 1Panel 系统端口。</strong></p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="m">8090</span>/tcp
-</code></pre></div>
-<blockquote>
-<p>上述命令中的 8090 端口需要替换为安装 1Panel 系统时自定义的端口。</p>
-</blockquote>
-<p><strong>5、启动 UFW</strong></p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ufw<span class="w"> </span><span class="nb">enable</span>
-</code></pre></div>
-</div>
-</div>
-</div>
-</div>
-<h2 id="2">2 防火墙状态<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p><strong>点击防火墙开关按钮，即可开启或关闭防火墙。</strong></p>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/hosts/firewall_switch.png" /></p>
-<div class="admonition note">
-<p><strong>点击禁 ping 按钮，即可开启或关闭 PING 命令。</strong></p>
-<ul>
-<li>禁用 PING 命令的主要功能是：为了防止用户频繁 PING 服务器而导致服务器性能下降</li>
-</ul>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/hosts/firewall_ping.png" /></p>
-<h2 id="3">3 端口规则<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p><strong>点击创建端口规则按钮，即可设置端口规则。</strong></p>
-<ul>
-<li>协议：默认为 TCP 协议，有 TCP、UDP、TCP/UDP 协议，根据你的实际情况选择</li>
-<li>端口：输入你要设置规则的端口，自定义，端口范围是：0-65535</li>
-<li>来源：默认为所有 IP，选择有：所有 IP、指定 IP</li>
-<li>策略：默认为允许，有允许、拒绝</li>
-</ul>
-</div>
-<div class="admonition note">
-<p><strong>端口放行成功后，可以查看防火墙列表查看当前端口的运行情况。</strong></p>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/hosts/firewall_port_list.png" /></p>
-<p class="original"><img alt="img.png" src="../../../img/hosts/firewall_port_create.png" /></p>
-<h2 id="4">4 端口转发<a class="headerlink" href="#4" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p><strong>点击创建端口转发按钮，即可设置端口转发规则。</strong></p>
-<ul>
-<li>协议：默认为 TCP 协议，有 TCP、UDP、TCP/UDP 协议，根据你的实际情况选择</li>
-<li>源端口：发送至源端口的报文，将被转发至 <code>目标 IP:目标端口</code>，端口范围是：0-65535</li>
-<li>目标 IP：如果是本机端口转发，目标IP为：127.0.0.1；如果目标IP不填写，则默认为本机端口转发</li>
-<li>目标端口：接收转发报文的目标端口</li>
-</ul>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/hosts/firewall_port_forward.png" /></p>
-<h2 id="5-ip">5 IP 规则<a class="headerlink" href="#5-ip" title="Permanent link">⚓︎</a></h2>
-<div class="admonition note">
-<p><strong>点击创建 IP 规则按钮，即可设置IP规则</strong></p>
-<ul>
-<li>指定 IP</li>
-<li>策略：默认为放行，有放行、屏蔽</li>
-</ul>
-</div>
-<p class="original"><img alt="img.png" src="../../../img/hosts/firewall_ip_list.png" /></p>
-<p class="original"><img alt="img.png" src="../../../img/hosts/firewall_ip_create.png" /></p>
-<h2 id="6-iptables">6 iptables 高级控制<a class="headerlink" href="#6-iptables" title="Permanent link">⚓︎</a></h2>
-<p>高级控制仅在当前防火墙为 iptables 时可用，用于查看和维护更细粒度的链与规则。Firewalld 或 UFW 环境会显示不支持提示。</p>
 <div class="admonition warning">
-<p class="admonition-title">远程连接保护</p>
-<p>修改防火墙开关、默认策略、SSH 端口或 iptables 链可能立即中断远程连接。操作前应确认云安全组、带外登录方式和回滚命令可用，不要删除 1Panel 或 Docker 仍在使用的规则。</p>
+<p class="admonition-title">重要提示</p>
+<p>防火墙配置错误可能导致面板或 SSH 无法访问。首次启用、切换后端、添加丢弃规则、调整规则顺序或重置防火墙前，请保留一个可用的 SSH 会话，并确保可以通过云厂商控制台、VNC、物理终端等方式登录服务器。</p>
+</div>
+<h2 id="1">1 功能概览<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
+<p>1Panel 防火墙包含四个页面：</p>
+<table>
+<thead>
+<tr>
+<th>页面</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>系统防火墙</td>
+<td>管理进入服务器的访问规则，例如开放端口、限制来源 IP、丢弃指定流量</td>
+</tr>
+<tr>
+<td>Docker 端口防护</td>
+<td>限制外部访问 Docker 已发布端口的来源</td>
+</tr>
+<tr>
+<td>端口转发</td>
+<td>将服务器上的端口转发到本机或其他服务器的目标端口</td>
+</tr>
+<tr>
+<td>设置</td>
+<td>选择防火墙后端，设置禁 Ping 和防火墙端口白名单</td>
+</tr>
+</tbody>
+</table>
+<p>这三类防火墙功能相互独立，可以使用不同后端。例如：</p>
+<ul>
+<li>系统防火墙使用 firewalld。</li>
+<li>Docker 端口防护使用 nftables。</li>
+<li>端口转发使用 iptables。</li>
+</ul>
+</div>
+<h2 id="2">2 使用前准备<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
+<p>建议在开始配置前完成以下检查：</p>
+<ol>
+<li>记录当前 1Panel 面板端口。</li>
+<li>记录当前 SSH 端口；如果 SSH 未使用默认的 22 端口，尤其需要确认。</li>
+<li>确认防火墙端口白名单中包含必须保持访问的业务端口。</li>
+<li>保留当前 SSH 会话，新规则验证成功前不要关闭。</li>
+<li>准备云厂商控制台、VNC 或物理终端等带外登录方式。</li>
+<li>如果服务器同时启用了安全组，请确认安全组也允许相应端口和来源。</li>
+</ol>
+<p>防火墙规则只控制服务器本机流量。云服务器安全组、上级路由器、运营商网络和应用自身的监听地址，也可能影响最终访问结果。</p>
+</div>
+<h2 id="3">3 防火墙设置<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
+<p>进入【主机 - 防火墙 - 设置】，可以配置系统防火墙、Docker 端口防护和端口转发所使用的后端。</p>
+</div>
+<p class="original"><img alt="防火墙设置" src="../../../img/hosts/firewall_setting.png" /></p>
+<h3 id="31">3.1 后端支持范围<a class="headerlink" href="#31" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<table>
+<thead>
+<tr>
+<th>后端</th>
+<th>系统防火墙</th>
+<th>Docker 端口防护</th>
+<th>端口转发</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>firewalld</td>
+<td>支持</td>
+<td>不支持</td>
+<td>不支持</td>
+</tr>
+<tr>
+<td>UFW</td>
+<td>支持</td>
+<td>不支持</td>
+<td>不支持</td>
+</tr>
+<tr>
+<td>iptables</td>
+<td>支持</td>
+<td>支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>nftables</td>
+<td>支持</td>
+<td>支持</td>
+<td>支持</td>
+</tr>
+</tbody>
+</table>
+<p><code>iptables-nft</code> 在 1Panel 中按 iptables 使用，设置页可能显示实际检测到的 iptables 实现。</p>
+</div>
+<h3 id="32">3.2 如何选择后端<a class="headerlink" href="#32" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<ul>
+<li>系统已经稳定使用 firewalld 或 UFW 时，通常可以继续使用原有后端。</li>
+<li>新系统优先使用发行版默认且维护良好的防火墙后端。</li>
+<li>Docker 端口防护和端口转发应根据 Docker 和系统当前实际使用的 iptables/nftables 环境选择。</li>
+<li>不建议在不清楚现有规则来源时频繁切换后端。</li>
+<li>选择新后端不会自动迁移旧后端中的规则，切换前请阅读“后端切换与规则同步”。</li>
+</ul>
+</div>
+<h3 id="33">3.3 状态说明<a class="headerlink" href="#33" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>设置页和状态栏可能显示以下状态：</p>
+<table>
+<thead>
+<tr>
+<th>状态</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>未安装</td>
+<td>服务器中未检测到该后端所需命令</td>
+</tr>
+<tr>
+<td>运行中</td>
+<td>firewalld 或 UFW 服务正在运行</td>
+</tr>
+<tr>
+<td>已停止</td>
+<td>firewalld 或 UFW 已安装，但服务未运行</td>
+</tr>
+<tr>
+<td>未初始化</td>
+<td>1Panel 所需的规则结构尚未创建</td>
+</tr>
+<tr>
+<td>已解绑</td>
+<td>规则结构存在，但尚未接入实际流量路径</td>
+</tr>
+<tr>
+<td>已绑定</td>
+<td>规则结构已接入实际流量路径</td>
+</tr>
+<tr>
+<td>异常</td>
+<td>IPv4、IPv6、规则结构或运行状态不完整，需要查看提示详情</td>
+</tr>
+</tbody>
+</table>
+<p>对于 iptables 和 nftables：</p>
+<ul>
+<li><strong>初始化</strong>：创建 1Panel 使用的规则结构并使其生效。</li>
+<li><strong>绑定</strong>：将已存在的规则重新接入实际流量路径。</li>
+<li><strong>解绑</strong>：暂时停止规则生效，但保留规则。</li>
+<li><strong>清理</strong>：删除 1Panel 在该后端创建的规则结构。</li>
+</ul>
+</div>
+<h3 id="34-ping">3.4 禁 Ping<a class="headerlink" href="#34-ping" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>启用“禁 Ping”后，服务器会忽略 IPv4 Ping；系统支持 IPv6 时也会同步处理 IPv6 Ping。</p>
+<p>注意：</p>
+<ul>
+<li>禁 Ping 不等于关闭网络访问，只是忽略 ICMP Echo 请求。</li>
+<li>某些监控、健康检查或网络诊断依赖 Ping，启用前请确认不会影响业务。</li>
+<li>云平台安全组也可能单独控制 ICMP。</li>
+</ul>
+</div>
+<h3 id="35">3.5 防火墙端口白名单<a class="headerlink" href="#35" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>端口白名单用于保护必须保持可访问的端口，并在防火墙启用或重启时同步放行规则。</p>
+<p>默认白名单为：</p>
+<ul>
+<li>IPv4 TCP 80</li>
+<li>IPv4 TCP 443</li>
+<li>IPv4 UDP 443</li>
+</ul>
+<p>1Panel 还会自动保护：</p>
+<ul>
+<li>当前面板端口。</li>
+<li>当前 SSH 端口；无法读取 SSH 配置时按 22 端口处理。</li>
+</ul>
+<p>白名单规则支持：</p>
+<ul>
+<li>地址族：IPv4、IPv6。</li>
+<li>协议：TCP、UDP。</li>
+<li>单端口：例如 <code>80</code>。</li>
+<li>端口范围：例如 <code>8000-8100</code>。</li>
+</ul>
+<p>同一地址族、同一协议下，不允许添加重复或相互重叠的端口范围。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+<p>白名单是安全保护的一部分，不建议删除面板、SSH 或其他必要管理端口。修改白名单后，请立即使用新会话验证访问。</p>
+</div>
+<h2 id="4">4 系统防火墙<a class="headerlink" href="#4" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
+<p>系统防火墙用于管理进入服务器本机的流量，常见用途包括：</p>
+<ul>
+<li>开放网站、数据库、运维工具等端口。</li>
+<li>只允许指定 IP 或网段访问某个端口。</li>
+<li>丢弃指定 IP 或网段的流量。</li>
+<li>分别管理 IPv4 和 IPv6 规则。</li>
+<li>查看并接管系统中已有的外部规则。</li>
+</ul>
+</div>
+<h3 id="41">4.1 首次启用<a class="headerlink" href="#41" title="Permanent link">⚓︎</a></h3>
+<h4 id="firewalld-ufw">firewalld 或 UFW<a class="headerlink" href="#firewalld-ufw" title="Permanent link">⚓︎</a></h4>
+<div class="admonition note">
+<ol>
+<li>进入 <strong>系统防火墙</strong>。</li>
+<li>在顶部状态栏确认后端名称。</li>
+<li>点击“启动”。</li>
+<li>根据提示确认是否需要重启 Docker。</li>
+<li>启动成功后，新开浏览器或 SSH 会话验证面板和服务器连接。</li>
+</ol>
+<p>停止或重启 firewalld/UFW 时，系统会提示 Docker 相关影响。停止 firewalld 时，1Panel 会尽量保留并恢复与其联动的 Fail2Ban 状态。</p>
+</div>
+<h4 id="iptables-nftables">iptables 或 nftables<a class="headerlink" href="#iptables-nftables" title="Permanent link">⚓︎</a></h4>
+<div class="admonition note">
+<ol>
+<li>进入 <strong>设置</strong>，确认系统防火墙后端。</li>
+<li>确认面板、SSH 和必要业务端口已加入白名单。</li>
+<li>返回 <strong>系统防火墙</strong>，点击“初始化”。</li>
+<li>确认 IPv4、IPv6 状态均正常。</li>
+<li>使用新会话验证面板和 SSH。</li>
+</ol>
+<p>如果规则已经初始化但处于解绑状态，点击“绑定”即可重新启用；点击“解绑”可暂时停止 1Panel 规则生效而不删除规则。</p>
+</div>
+<h3 id="42">4.2 规则列表状态<a class="headerlink" href="#42" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>系统防火墙会同时读取 1Panel 记录和服务器实际规则，因此列表中可能出现以下状态：</p>
+<table>
+<thead>
+<tr>
+<th>状态</th>
+<th>含义</th>
+<th>可执行操作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1Panel 管理</td>
+<td>由 1Panel 创建，记录与服务器实际规则一致</td>
+<td>编辑、排序、删除</td>
+</tr>
+<tr>
+<td>已接管</td>
+<td>原本是系统外部规则，后来由 1Panel 接管</td>
+<td>编辑、排序、删除</td>
+</tr>
+<tr>
+<td>外部规则</td>
+<td>由系统命令、其他软件或人工创建，尚未由 1Panel 管理</td>
+<td>查看、符合条件时接管</td>
+</tr>
+<tr>
+<td>已保护</td>
+<td>面板、SSH、白名单或系统预置规则</td>
+<td>不允许直接修改</td>
+</tr>
+<tr>
+<td>已漂移</td>
+<td>1Panel 记录与服务器实际规则不一致或规则已丢失</td>
+<td>先排查或重新同步</td>
+</tr>
+</tbody>
+</table>
+<p>列表中显示的“正在使用”用于帮助判断放行规则是否对应当前监听进程或 Docker 发布端口。它是辅助提示，不代表该端口一定可以从公网访问。</p>
+</div>
+<p class="original"><img alt="系统防火墙规则列表" src="../../../img/hosts/firewall_filter.png" /></p>
+<h3 id="43">4.3 添加规则<a class="headerlink" href="#43" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>点击“添加”后，根据实际需求填写以下内容。</p>
+</div>
+<p class="original"><img alt="创建系统防火墙规则" src="../../../img/hosts/firewall_filter_create.png" /></p>
+<h4 id="_2">地址族<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h4>
+<div class="admonition note">
+<ul>
+<li>IPv4：用于 IPv4 地址和流量。</li>
+<li>IPv6：用于 IPv6 地址和流量。</li>
+<li>某些后端会提供同时适用于 IPv4/IPv6 的显示或配置方式。</li>
+</ul>
+<p>地址和地址族必须匹配。例如，IPv4 规则不能填写 IPv6 来源地址。</p>
+</div>
+<h4 id="_3">策略<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h4>
+<div class="admonition note">
+<table>
+<thead>
+<tr>
+<th>策略</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>允许</td>
+<td>允许匹配的流量</td>
+</tr>
+<tr>
+<td>丢弃</td>
+<td>静默丢弃匹配的流量，客户端通常表现为超时</td>
+</tr>
+</tbody>
+</table>
+<p>当前暂不支持主动返回失败结果的“拒绝（REJECT）”规则。</p>
+</div>
+<h4 id="_4">协议<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h4>
+<div class="admonition note">
+<p>常见协议包括 TCP、UDP、ICMP、ICMPv6 和全部协议。不同后端可用选项可能不同。</p>
+<ul>
+<li>网站、SSH、数据库通常使用 TCP。</li>
+<li>DNS、QUIC 等业务可能使用 UDP。</li>
+<li>IPv4 Ping 使用 ICMP。</li>
+<li>IPv6 Ping 使用 ICMPv6。</li>
+</ul>
+</div>
+<h4 id="ip">IP 地址<a class="headerlink" href="#ip" title="Permanent link">⚓︎</a></h4>
+<div class="admonition note">
+<p>可以填写：</p>
+<ul>
+<li>单个 IPv4：<code>203.0.113.10</code></li>
+<li>IPv4 网段：<code>203.0.113.0/24</code></li>
+<li>单个 IPv6：<code>2001:db8::10</code></li>
+<li>IPv6 网段：<code>2001:db8::/64</code></li>
+<li>留空：任意地址</li>
+</ul>
+</div>
+<h4 id="_5">端口<a class="headerlink" href="#_5" title="Permanent link">⚓︎</a></h4>
+<div class="admonition note">
+<p>可以填写：</p>
+<ul>
+<li>单端口：<code>22</code></li>
+<li>端口范围：<code>8000-8100</code></li>
+<li>留空：任意端口</li>
+</ul>
+<p>使用端口时应选择 TCP 或 UDP。一次填写多个地址、协议或端口时，系统可能拆分为多条规则；单次最多生成 256 条。</p>
+</div>
+<h4 id="_6">网卡和连接状态<a class="headerlink" href="#_6" title="Permanent link">⚓︎</a></h4>
+<div class="admonition note">
+<p>iptables、nftables 等后端可提供入口网卡、连接状态等高级选项。不了解其作用时建议留空。</p>
+</div>
+<h4 id="_7">优先级或顺序<a class="headerlink" href="#_7" title="Permanent link">⚓︎</a></h4>
+<div class="admonition note">
+<p>防火墙通常按顺序匹配规则，前面的规则可能先于后面的规则生效。</p>
+<ul>
+<li>iptables、nftables、UFW 使用规则位置。</li>
+<li>firewalld 的高级规则可使用优先级；较老版本可能不支持非零优先级。</li>
+</ul>
+<p>添加丢弃规则时应特别注意顺序，避免它先于面板、SSH 或业务放行规则命中。</p>
+</div>
+<h3 id="44">4.4 常用规则示例<a class="headerlink" href="#44" title="Permanent link">⚓︎</a></h3>
+<h4 id="tcp-8080">对所有来源开放 TCP 端口 8080<a class="headerlink" href="#tcp-8080" title="Permanent link">⚓︎</a></h4>
+<div class="admonition note">
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>策略</td>
+<td>允许</td>
+</tr>
+<tr>
+<td>协议</td>
+<td>TCP</td>
+</tr>
+<tr>
+<td>来源 IP</td>
+<td>留空</td>
+</tr>
+<tr>
+<td>目标端口</td>
+<td>8080</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="ssh">只允许办公网访问 SSH<a class="headerlink" href="#ssh" title="Permanent link">⚓︎</a></h4>
+<div class="admonition note">
+<p>假设办公网为 <code>203.0.113.0/24</code>，SSH 端口为 22：</p>
+<ol>
+<li>添加允许规则：来源 <code>203.0.113.0/24</code>、TCP、目标端口 22。</li>
+<li>确认允许规则已经生效，并从办公网新建 SSH 会话测试。</li>
+<li>再根据需要添加丢弃其他来源访问 22 的规则。</li>
+<li>确认丢弃规则排在正确位置，不会覆盖管理白名单。</li>
+</ol>
+</div>
+<h4 id="ip_1">丢弃单个 IP 的流量<a class="headerlink" href="#ip_1" title="Permanent link">⚓︎</a></h4>
+<div class="admonition note">
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>策略</td>
+<td>丢弃</td>
+</tr>
+<tr>
+<td>协议</td>
+<td>全部</td>
+</tr>
+<tr>
+<td>来源 IP</td>
+<td><code>203.0.113.10</code></td>
+</tr>
+<tr>
+<td>目标端口</td>
+<td>留空</td>
+</tr>
+</tbody>
+</table>
+<p>如果该 IP 是当前访问面板的客户端 IP，系统会阻止可能导致当前管理连接中断的操作。</p>
+</div>
+<h3 id="45">4.5 重复、覆盖和冲突提示<a class="headerlink" href="#45" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>提交规则前，1Panel 会检查当前服务器规则，并给出处理建议：</p>
+<table>
+<thead>
+<tr>
+<th>提示</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>可创建</td>
+<td>未发现明显冲突</td>
+</tr>
+<tr>
+<td>已存在等价管理规则</td>
+<td>1Panel 已管理相同规则，无需重复创建</td>
+</tr>
+<tr>
+<td>存在等价外部规则</td>
+<td>系统已有相同规则，可选择接管</td>
+</tr>
+<tr>
+<td>当前规则已被其他规则覆盖</td>
+<td>更宽泛的同策略规则已经包含当前规则</td>
+</tr>
+<tr>
+<td>与现有规则部分重叠</td>
+<td>匹配范围有交集，需要确认是否仍要创建</td>
+</tr>
+<tr>
+<td>与现有规则冲突</td>
+<td>匹配范围重叠且策略相反，可能无法按预期生效</td>
+</tr>
+<tr>
+<td>存在不支持解析的规则</td>
+<td>目标区域中有 1Panel 无法安全判断的规则</td>
+</tr>
+<tr>
+<td>可能导致管理连接中断</td>
+<td>规则可能影响面板、SSH、白名单或当前客户端</td>
+</tr>
+</tbody>
+</table>
+<p>如果检查后服务器规则又发生变化，提交时可能提示需要重新检查。刷新页面并重新提交即可。</p>
+</div>
+<h3 id="46">4.6 接管外部规则<a class="headerlink" href="#46" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>对于 1Panel 能准确识别的外部规则，可以点击“接管”。接管不会重复创建同一条规则，而是将现有规则纳入 1Panel 管理。</p>
+<p>不建议接管以下规则：</p>
+<ul>
+<li>不清楚由哪个软件创建的规则。</li>
+<li>Fail2Ban、容器平台、VPN 或安全软件自动维护的规则。</li>
+<li>显示为不透明、部分解析或受保护的规则。</li>
+<li>运行时和持久化状态不一致的规则。</li>
+</ul>
+<p>被接管后，规则可以由 1Panel 编辑或删除；这可能影响原先创建它的软件。</p>
+</div>
+<h3 id="47">4.7 编辑、排序和删除<a class="headerlink" href="#47" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<ul>
+<li>只有“1Panel 管理”和“已接管”且状态正常的规则可以编辑。</li>
+<li>不能在编辑时直接更换规则所属后端或地址族范围；需要删除后重新创建。</li>
+<li>排序时不能跨越外部规则、受保护规则或无法解析的规则。</li>
+<li>删除正在被进程或 Docker 使用的放行规则时，页面会显示额外提醒。</li>
+<li>如果规则已被其他工具修改，1Panel 会拒绝使用过期状态继续操作；刷新后再处理。</li>
+</ul>
+</div>
+<h3 id="48">4.8 导入和导出<a class="headerlink" href="#48" title="Permanent link">⚓︎</a></h3>
+<h4 id="_8">导出<a class="headerlink" href="#_8" title="Permanent link">⚓︎</a></h4>
+<div class="admonition note">
+<ul>
+<li>勾选规则后导出所选规则。</li>
+<li>未勾选时，导出当前全部可编辑的 1Panel 管理规则。</li>
+<li>外部、受保护、无法解析和漂移规则不会作为普通可编辑规则导出。</li>
+</ul>
+</div>
+<h4 id="_9">导入<a class="headerlink" href="#_9" title="Permanent link">⚓︎</a></h4>
+<div class="admonition note">
+<ul>
+<li>导入文件为 1Panel 导出的 JSON 格式。</li>
+<li>规则会转换到当前系统防火墙后端。</li>
+<li>IPv4/IPv6 规则可能根据目标后端自动拆分。</li>
+<li>导入仍会执行重复、冲突和锁死风险检查。</li>
+<li>单批最多处理 256 条规则；更大的文件会分批提交。</li>
+</ul>
+<p>建议先在测试服务器验证导入文件，不要直接导入来源不明的规则文件。</p>
+</div>
+<h3 id="49">4.9 重置防火墙<a class="headerlink" href="#49" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>“重置”是高风险操作，不等同于删除勾选规则。</p>
+<ul>
+<li>对 iptables/nftables：删除 1Panel 在当前后端创建的系统防火墙结构和相关管理记录。</li>
+<li>对 firewalld：恢复 firewalld 默认配置并禁用服务。</li>
+<li>对 UFW：执行 UFW 重置。</li>
+</ul>
+<p>重置前请：</p>
+<ol>
+<li>导出需要保留的规则。</li>
+<li>确认有带外登录方式。</li>
+<li>确认其他软件是否依赖当前防火墙配置。</li>
+<li>仔细核对确认框要求输入的后端名称。</li>
+</ol>
+</div>
+<h2 id="5-docker">5 Docker 端口防护<a class="headerlink" href="#5-docker" title="Permanent link">⚓︎</a></h2>
+<h3 id="51-docker">5.1 为什么需要 Docker 端口防护<a class="headerlink" href="#51-docker" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>Docker 发布端口后，流量可能走 Docker 自己的转发路径，普通系统防火墙的入站规则不一定能完整限制它。Docker 端口防护专门用于控制这些已发布端口的来源。</p>
+<p>例如，容器将内部 3306 发布为服务器的 <code>0.0.0.0:3306</code>，可以使用 Docker 端口防护只允许办公网访问。</p>
+</div>
+<h3 id="52">5.2 首次启用<a class="headerlink" href="#52" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<ol>
+<li>确认 Docker 正常运行。</li>
+<li>进入 <strong>Docker 端口防护</strong>。</li>
+<li>检查页面显示的后端是否与当前 Docker 环境一致。</li>
+<li>点击“初始化”。</li>
+<li>确认 IPv4、IPv6 状态为“生效”。</li>
+<li>为需要保护的发布端口添加策略。</li>
+<li>从允许和不允许的来源分别测试访问。</li>
+</ol>
+<p>如果防护已初始化但处于解绑状态，可以点击“绑定”恢复；“解绑”会停止防护生效，但保留策略。</p>
+</div>
+<h3 id="53">5.3 发布端口说明<a class="headerlink" href="#53" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>页面按容器、Compose 项目、1Panel 应用和端口分组展示 Docker 发布端口。</p>
+<p>一个策略的目标由以下信息共同确定：</p>
+<ul>
+<li>IPv4 或 IPv6。</li>
+<li>宿主机发布 IP。</li>
+<li>宿主机发布端口。</li>
+<li>TCP 或 UDP。</li>
+</ul>
+<p>策略针对的是“宿主机发布端口”，不是容器内部端口。</p>
+<p>以下地址表示对所有对应地址开放：</p>
+<ul>
+<li>IPv4：<code>0.0.0.0</code></li>
+<li>IPv6：<code>::</code></li>
+</ul>
+</div>
+<p class="original"><img alt="Docker 端口防护" src="../../../img/hosts/firewall_docker_create.png" /></p>
+<h3 id="54">5.4 防护模式<a class="headerlink" href="#54" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<table>
+<thead>
+<tr>
+<th>模式</th>
+<th>作用</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>拒绝指定来源</td>
+<td>仅拒绝填写的 IP 或网段，其他来源允许</td>
+<td>屏蔽恶意 IP、临时封禁网段</td>
+</tr>
+<tr>
+<td>仅允许指定来源</td>
+<td>只允许填写的 IP 或网段，其他来源拒绝</td>
+<td>数据库、管理后台、内网服务</td>
+</tr>
+<tr>
+<td>拒绝所有来源</td>
+<td>拒绝所有新的外部访问</td>
+<td>临时关闭已发布端口但不修改容器配置</td>
+</tr>
+</tbody>
+</table>
+<p>来源可以填写单个 IP 或 CIDR 网段，多个来源可使用逗号、空格或换行分隔。来源地址必须与端点地址族一致。</p>
+<p>“仅允许指定来源”不填写来源时，相当于拒绝全部来源。保存前请仔细确认。</p>
+</div>
+<h3 id="55">5.5 生效状态<a class="headerlink" href="#55" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<table>
+<thead>
+<tr>
+<th>状态</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>生效</td>
+<td>防护规则已正确接入 Docker 流量路径</td>
+</tr>
+<tr>
+<td>未启用</td>
+<td>防护结构或 Docker 对应规则不存在</td>
+</tr>
+<tr>
+<td>未生效</td>
+<td>防护已初始化，但入口跳转缺失、重复、顺序错误或检查失败</td>
+</tr>
+</tbody>
+</table>
+<p>常见异常原因：</p>
+<ul>
+<li>iptables、ip6tables 或 nft 命令缺失。</li>
+<li>Docker 自身的防火墙规则尚未创建。</li>
+<li>1Panel 防护规则被其他工具删除。</li>
+<li>防护入口不在第一位。</li>
+<li>出现多个重复的 1Panel 防护入口。</li>
+<li>Docker 或防火墙状态读取失败。</li>
+</ul>
+<p>遇到异常时可先点击“重试”或“绑定”。如果仍无法恢复，再检查 Docker 服务和当前后端。</p>
+</div>
+<h3 id="56">5.6 孤立策略<a class="headerlink" href="#56" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>数据库中存在策略，但当前没有找到对应 Docker 发布端口时，该策略会显示为“孤立策略”。常见原因：</p>
+<ul>
+<li>容器已停止或删除。</li>
+<li>容器重新创建后发布 IP 或端口变化。</li>
+<li>Compose 配置发生变化。</li>
+<li>IPv4/IPv6 发布方式变化。</li>
+</ul>
+<p>孤立策略不会自动删除，因为容器可能只是暂时不可用。确认端口不会恢复后，再手动删除该策略。</p>
+</div>
+<h3 id="57">5.7 导入、导出和同步<a class="headerlink" href="#57" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<ul>
+<li>导出会保存当前全部 Docker 防护策略，不包含容器运行状态。</li>
+<li>导入按发布端点去重，并批量写入策略。</li>
+<li>同步以 1Panel 中保存的策略为准，使当前后端与保存状态一致。</li>
+<li>同步预览中的“将删除”表示目标后端存在但 1Panel 当前保存策略中没有的规则。</li>
+</ul>
+</div>
+<h3 id="58-docker">5.8 清理 Docker 防护后端<a class="headerlink" href="#58-docker" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>清理会删除 1Panel 创建的 Docker 防护规则结构，并将防护状态设为禁用。保存的策略记录可继续用于后续同步或重新初始化。</p>
+<p>执行前请确认当前业务是否依赖这些限制；清理后，Docker 发布端口可能重新对所有来源开放。</p>
+</div>
+<h2 id="6">6 端口转发<a class="headerlink" href="#6" title="Permanent link">⚓︎</a></h2>
+<h3 id="61">6.1 功能说明<a class="headerlink" href="#61" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>端口转发用于将访问本机某个端口的流量转发到另一个目标地址和端口。</p>
+<p>示例：</p>
+<div class="highlight"><pre><span></span><code>访问本机 8080/TCP → 转发到 10.0.0.20:80
+</code></pre></div>
+<p>端口转发不等同于应用层反向代理：</p>
+<ul>
+<li>端口转发工作在网络层，不识别域名、URL 或 HTTP 头。</li>
+<li>网站按域名转发通常应使用网站反向代理。</li>
+<li>转发目标可以是本机，也可以是其他可路由地址。</li>
+</ul>
+</div>
+<h3 id="62">6.2 首次启用<a class="headerlink" href="#62" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<ol>
+<li>进入 <strong>端口转发</strong>。</li>
+<li>确认后端为 iptables 或 nftables。</li>
+<li>点击“初始化”。</li>
+<li>系统会启用 IPv4/IPv6 内核转发并创建所需规则。</li>
+<li>确认 IPv4、IPv6 状态正常。</li>
+<li>添加转发规则并进行连通性测试。</li>
+</ol>
+<p>初始化会修改系统的 IP forwarding 设置。即使删除全部转发规则，内核转发开关也可能仍保持启用。</p>
+</div>
+<h3 id="63">6.3 添加转发规则<a class="headerlink" href="#63" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>地址族</td>
+<td>IPv4 或 IPv6</td>
+</tr>
+<tr>
+<td>协议</td>
+<td>TCP、UDP 或同时创建 TCP/UDP</td>
+</tr>
+<tr>
+<td>源端口</td>
+<td>客户端访问当前服务器的端口，可填写单端口或范围</td>
+</tr>
+<tr>
+<td>目标 IP</td>
+<td>实际接收流量的地址；留空或 localhost 表示本机</td>
+</tr>
+<tr>
+<td>目标端口</td>
+<td>目标服务端口，可填写单端口或范围</td>
+</tr>
+<tr>
+<td>入站网卡</td>
+<td>可选；留空表示所有网卡</td>
+</tr>
+</tbody>
+</table>
+<p>目标 IP 必须与地址族一致：</p>
+<ul>
+<li>IPv4 规则使用 IPv4 目标地址。</li>
+<li>IPv6 规则使用 IPv6 目标地址。</li>
+</ul>
+<p>端口范围必须从小到大，并位于 <code>1-65535</code>。</p>
+</div>
+<p class="original"><img alt="创建端口转发规则" src="../../../img/hosts/firewall_forward_create.png" /></p>
+<h3 id="64">6.4 常用示例<a class="headerlink" href="#64" title="Permanent link">⚓︎</a></h3>
+<h4 id="_10">转发到内网服务器<a class="headerlink" href="#_10" title="Permanent link">⚓︎</a></h4>
+<div class="admonition note">
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>地址族</td>
+<td>IPv4</td>
+</tr>
+<tr>
+<td>协议</td>
+<td>TCP</td>
+</tr>
+<tr>
+<td>源端口</td>
+<td>8080</td>
+</tr>
+<tr>
+<td>目标 IP</td>
+<td><code>10.0.0.20</code></td>
+</tr>
+<tr>
+<td>目标端口</td>
+<td>80</td>
+</tr>
+<tr>
+<td>入站网卡</td>
+<td>留空</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="_11">只允许从指定网卡进入<a class="headerlink" href="#_11" title="Permanent link">⚓︎</a></h4>
+<div class="admonition note">
+<p>在“入站网卡”中填写服务器实际网卡名，例如 <code>eth0</code>。网卡名填写错误会导致规则无法匹配。</p>
+</div>
+<h3 id="65">6.5 同步状态<a class="headerlink" href="#65" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<table>
+<thead>
+<tr>
+<th>状态</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>已同步</td>
+<td>1Panel 保存规则与服务器实际规则一致</td>
+</tr>
+<tr>
+<td>运行时缺失</td>
+<td>1Panel 保存了规则，但服务器实际规则不存在</td>
+</tr>
+<tr>
+<td>仅运行时存在</td>
+<td>服务器中有规则，但 1Panel 保存列表中没有</td>
+</tr>
+</tbody>
+</table>
+<p>如果添加或删除时服务器规则应用失败，1Panel 会保留期望配置并在页面显示同步异常。修复后端后，可通过同步重新收敛。</p>
+<p>强制删除仅适用于删除操作：它允许在运行时删除失败时先移除 1Panel 保存的规则，残留规则会显示为“仅运行时存在”，需要后续继续清理。</p>
+</div>
+<h3 id="66">6.6 导入和导出<a class="headerlink" href="#66" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<ul>
+<li>导出内容包括地址族、协议、源端口、目标 IP、目标端口和入站网卡。</li>
+<li>导入会检查格式并跳过与现有规则完全相同的项目。</li>
+<li>导入前应确认目标地址可达，避免创建无效转发。</li>
+</ul>
+</div>
+<h3 id="67">6.7 清理端口转发后端<a class="headerlink" href="#67" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>清理会删除 1Panel 在当前后端创建的转发规则结构，但保存的转发规则仍可用于切换后端后的同步。</p>
+<p>清理前请确认：</p>
+<ul>
+<li>当前业务不再依赖这些转发规则。</li>
+<li>新后端已经准备好接管，或已经安排维护窗口。</li>
+<li>IPv4 和 IPv6 都已测试。</li>
+</ul>
+</div>
+<h2 id="7">7 后端切换与规则同步<a class="headerlink" href="#7" title="Permanent link">⚓︎</a></h2>
+<h3 id="71">7.1 同步预览状态<a class="headerlink" href="#71" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<table>
+<thead>
+<tr>
+<th>状态</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>待同步</td>
+<td>目标后端缺少该规则，同步时会创建</td>
+</tr>
+<tr>
+<td>已存在</td>
+<td>目标后端已有等价规则，同步时跳过</td>
+</tr>
+<tr>
+<td>将删除</td>
+<td>目标后端存在额外规则，同步时会删除</td>
+</tr>
+<tr>
+<td>已阻止</td>
+<td>规则无法转换、存在冲突或有安全风险</td>
+</tr>
+</tbody>
+</table>
+<p>执行同步前，必须仔细查看“将删除”和“已阻止”项目。</p>
+</div>
+<p class="original"><img alt="规则同步预览" src="../../../img/hosts/firewall_sync.png" /></p>
+<h3 id="72">7.2 切换系统防火墙后端<a class="headerlink" href="#72" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>推荐流程：</p>
+<ol>
+<li>导出当前系统防火墙规则。</li>
+<li>确认面板端口、SSH 端口和必要业务端口处于保护状态。</li>
+<li>在设置页选择新系统防火墙后端。</li>
+<li>启动新后端，或完成初始化和绑定。</li>
+<li>打开“规则同步”，选择旧后端作为来源、新后端作为目标。</li>
+<li>查看同步预览，处理所有已阻止规则。</li>
+<li>第一次同步时不要勾选“重置来源”。</li>
+<li>同步后使用新连接验证面板、SSH 和业务端口。</li>
+<li>确认无误后，再按需同步并重置旧来源。</li>
+</ol>
+<p>系统防火墙同步会在后台任务中执行，并在结束前验证目标规则。存在无法同步的规则时，不允许安排“同步后重置来源”。</p>
+<p>不同后端的规则能力不完全相同，切换时可能发生：</p>
+<ul>
+<li>一条双栈规则拆分为 IPv4 和 IPv6 两条。</li>
+<li>规则位置或优先级无法完全保留。</li>
+<li>某些源端口、连接状态或高级选项不受目标后端支持。</li>
+<li>外部规则无法自动迁移，需先接管或手工重建。</li>
+</ul>
+</div>
+<h3 id="73-docker">7.3 切换 Docker 防护或端口转发后端<a class="headerlink" href="#73-docker" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>Docker 防护和端口转发只支持 iptables、nftables，并以 1Panel 当前保存的规则为同步来源。</p>
+<p>推荐流程：</p>
+<ol>
+<li>导出当前配置作为备份。</li>
+<li>确认页面中没有未处理的“运行时缺失”或异常状态。</li>
+<li>清理旧后端；旧后端仍初始化时，设置页会阻止直接切换。</li>
+<li>在设置页选择新后端。</li>
+<li>初始化新后端。</li>
+<li>打开同步预览，确认待创建和将删除项目。</li>
+<li>执行同步。</li>
+<li>分别验证 IPv4、IPv6 和实际业务访问。</li>
+</ol>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+<p>清理旧后端到新后端初始化完成之间可能存在短暂空窗期，建议在维护窗口执行。</p>
+</div>
+<h2 id="8">8 常见使用场景<a class="headerlink" href="#8" title="Permanent link">⚓︎</a></h2>
+<h3 id="81">8.1 只开放网站端口<a class="headerlink" href="#81" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<ol>
+<li>确认面板和 SSH 端口已受保护。</li>
+<li>添加 TCP 80 允许规则。</li>
+<li>添加 TCP 443 允许规则。</li>
+<li>使用 HTTP/3 时，再添加 UDP 443 允许规则。</li>
+<li>验证网站后，再根据需要添加更宽泛的丢弃规则。</li>
+</ol>
+</div>
+<h3 id="82-ip">8.2 数据库只允许固定 IP 访问<a class="headerlink" href="#82-ip" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>以 MySQL 3306 为例：</p>
+<ol>
+<li>添加允许规则：来源为办公公网 IP 或网段、TCP、目标端口 3306。</li>
+<li>从允许来源测试连接。</li>
+<li>再添加丢弃其他来源访问 3306 的规则。</li>
+<li>确认允许规则优先于丢弃规则。</li>
+<li>同时确认 MySQL 的监听地址和用户授权范围。</li>
+</ol>
+<p>如果 MySQL 运行在 Docker 且通过 Docker 发布端口，应优先在“Docker 端口防护”中限制来源。</p>
+</div>
+<h3 id="83-docker">8.3 临时关闭 Docker 发布端口<a class="headerlink" href="#83-docker" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<ol>
+<li>找到对应容器和发布端口。</li>
+<li>选择“拒绝所有来源”。</li>
+<li>保存后确认状态为生效。</li>
+<li>业务恢复时删除策略或改为“仅允许指定来源”。</li>
+</ol>
+<p>这种方式不修改容器的端口发布配置，适合临时隔离。</p>
+</div>
+<h3 id="84">8.4 将本机端口转发到内网服务<a class="headerlink" href="#84" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<ol>
+<li>确认服务器能够访问目标内网 IP 和端口。</li>
+<li>初始化端口转发。</li>
+<li>添加源端口、目标 IP 和目标端口。</li>
+<li>必要时在系统防火墙和云安全组中开放源端口。</li>
+<li>从外部客户端测试连接。</li>
+</ol>
+</div>
+<h2 id="9">9 故障排查<a class="headerlink" href="#9" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
+<p>建议先根据现象判断问题位于哪一层：</p>
+<div class="highlight"><pre><span></span><code>无法访问
+ ├─ 服务未监听                 → 检查应用或容器
+ ├─ 本机可以访问，外部不能访问   → 检查系统防火墙和云安全组
+ ├─ 普通服务正常，Docker 端口异常 → 检查 Docker 发布端口和 Docker 端口防护
+ ├─ 转发入口可连接，目标无响应    → 检查目标服务、路由和 IP forwarding
+ └─ 只有 IPv4 或 IPv6 异常       → 分别检查对应地址族的规则和监听状态
+</code></pre></div>
+<p>排障时建议遵循以下顺序：</p>
+<ol>
+<li>确认应用或容器是否正在运行。</li>
+<li>确认服务是否监听预期地址、端口和协议。</li>
+<li>确认 1Panel 页面中的规则状态。</li>
+<li>确认系统防火墙或 Docker 防护是否已经绑定并生效。</li>
+<li>确认云安全组、上级网络和目标服务器防火墙。</li>
+<li>最后再考虑删除、重置或切换后端等高影响操作。</li>
+</ol>
+</div>
+<h3 id="91">9.1 页面提示未检测到防火墙<a class="headerlink" href="#91" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<ul>
+<li>检查系统是否安装 firewalld、UFW、iptables 或 nftables。</li>
+<li>同时安装 firewalld 和 UFW 时可能被判定为冲突。</li>
+<li>检查设置页保存的后端是否已经被卸载。</li>
+<li>iptables 需要相应的 restore 命令可用。</li>
+<li>在容器或受限系统中，内核防火墙能力可能不可用。</li>
+</ul>
+</div>
+<h3 id="92">9.2 规则已添加但端口仍无法访问<a class="headerlink" href="#92" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>依次检查：</p>
+<ol>
+<li>防火墙是否运行，或规则是否已初始化并绑定。</li>
+<li>规则地址族是否与客户端一致。</li>
+<li>协议是否正确，例如 TCP 与 UDP 是否选错。</li>
+<li>来源 IP 或网段是否填写正确。</li>
+<li>规则顺序是否被前面的丢弃规则覆盖。</li>
+<li>应用是否监听正确端口和地址。</li>
+<li>云安全组或上级网络是否允许访问。</li>
+<li>Docker 端口是否需要在 Docker 端口防护中单独配置。</li>
+</ol>
+</div>
+<h3 id="93">9.3 添加规则时提示可能导致失联<a class="headerlink" href="#93" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>说明规则可能影响：</p>
+<ul>
+<li>当前面板连接来源。</li>
+<li>面板端口。</li>
+<li>SSH 端口。</li>
+<li>防火墙端口白名单。</li>
+<li>已受保护的系统规则。</li>
+</ul>
+<p>请缩小来源或端口范围、调整规则顺序，或先补充明确的允许规则。不要绕过提示直接在命令行创建同类高风险规则。</p>
+</div>
+<h3 id="94">9.4 规则显示已漂移<a class="headerlink" href="#94" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>常见原因：</p>
+<ul>
+<li>人工在命令行修改或删除了规则。</li>
+<li>其他安全软件重写了规则。</li>
+<li>防火墙服务重载后运行时与持久化状态不同。</li>
+<li>后端切换不完整。</li>
+</ul>
+<p>处理建议：</p>
+<ol>
+<li>刷新页面确认状态。</li>
+<li>查看规则原始内容和作用范围。</li>
+<li>确认是否由其他软件维护。</li>
+<li>通过同步恢复，或在确认安全后清理旧记录并重新创建。</li>
+</ol>
+</div>
+<h3 id="95-firewalld">9.5 firewalld 提示运行时与持久化不一致<a class="headerlink" href="#95-firewalld" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>这表示当前运行规则和重启后加载的 permanent 规则不同。为避免重启后规则变化，1Panel 会阻止部分修改。</p>
+<p>先确认哪一侧是正确配置，再使用 firewalld 自身的 reload 或规则修复方式使两者一致，然后刷新 1Panel 页面。</p>
+</div>
+<h3 id="96-docker">9.6 Docker 防护未生效<a class="headerlink" href="#96-docker" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<ul>
+<li>确认 Docker 正在运行且已经创建防火墙规则。</li>
+<li>确认页面所选后端与 Docker 当前后端一致。</li>
+<li>点击“绑定”或“重试”。</li>
+<li>检查是否有其他软件调整 Docker 防火墙入口顺序。</li>
+<li>Docker 重启后刷新页面；1Panel 会尝试自动恢复，但 Docker 启动较慢时可能需要手动重试。</li>
+</ul>
+</div>
+<h3 id="97">9.7 端口转发规则显示运行时缺失<a class="headerlink" href="#97" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<ul>
+<li>检查转发后端是否已初始化。</li>
+<li>检查 IPv4/IPv6 forwarding 是否启用。</li>
+<li>检查目标 IP 与地址族是否一致。</li>
+<li>修复后端后执行规则同步。</li>
+<li>查看页面顶部是否显示最近一次同步错误。</li>
+</ul>
+</div>
+<h3 id="98">9.8 后端无法切换<a class="headerlink" href="#98" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<ul>
+<li>Docker 防护或端口转发的旧后端仍处于初始化状态时，必须先清理旧后端。</li>
+<li>iptables 和 nftables 同时存在已绑定的系统规则时，应先确认实际生效路径，再清理不再使用的一侧。</li>
+<li>先使用规则同步预览确认目标后端能够接受当前配置。</li>
+</ul>
+</div>
+<h3 id="99-ssh">9.9 修改防火墙后面板或 SSH 无法访问<a class="headerlink" href="#99-ssh" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>优先使用云厂商控制台、VNC 或物理终端登录服务器，不要反复重启服务器或盲目重置防火墙。</p>
+<p>登录后依次确认：</p>
+<ol>
+<li>面板和 SSH 服务是否仍在运行。</li>
+<li>实际面板端口、SSH 端口是否与白名单一致。</li>
+<li>最近添加的丢弃规则是否覆盖了管理端口或当前来源 IP。</li>
+<li>规则顺序是否发生变化。</li>
+<li>IPv4 和 IPv6 是否使用了不同规则。</li>
+<li>firewalld、UFW、iptables、nftables 是否出现多个后端同时生效。</li>
+</ol>
+<p>如果能够进入 1Panel，优先使用“解绑”临时停止 1Panel 直连规则，再修正规则；不要直接执行“重置”，因为重置的影响范围更大。</p>
+<p>恢复访问后，应重新检查端口白名单，并从新的浏览器或 SSH 会话验证连接。</p>
+</div>
+<h3 id="910">9.10 本机可以访问端口，外部无法访问<a class="headerlink" href="#910" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>常见原因：</p>
+<ul>
+<li>应用只监听 <code>127.0.0.1</code> 或 <code>::1</code>。</li>
+<li>系统防火墙未放行该端口。</li>
+<li>云安全组未放行。</li>
+<li>来源 IP 限制填写错误。</li>
+<li>客户端使用 IPv6，但只创建了 IPv4 规则，或反之。</li>
+<li>服务运行在 Docker 中，但容器没有发布端口。</li>
+</ul>
+<p>先确认服务监听地址。如果只监听本机回环地址，即使防火墙放行也无法从外部访问。</p>
+</div>
+<h3 id="911-ipv4-ipv6">9.11 只有 IPv4 或 IPv6 可以访问<a class="headerlink" href="#911-ipv4-ipv6" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<ol>
+<li>检查域名是否同时解析出 A 和 AAAA 记录。</li>
+<li>检查应用是否同时监听 IPv4 和 IPv6。</li>
+<li>在规则列表中分别筛选 IPv4、IPv6。</li>
+<li>查看状态栏是否提示某个地址族未安装、未初始化或未绑定。</li>
+<li>检查云安全组是否分别允许 IPv4、IPv6。</li>
+<li>Docker 发布端口也要分别检查 <code>0.0.0.0</code> 和 <code>::</code> 端点。</li>
+</ol>
+<p>不要因为 IPv4 测试成功就认为 IPv6 规则同样生效。</p>
+</div>
+<h3 id="912">9.12 规则同步出现“已阻止”<a class="headerlink" href="#912" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>常见原因包括：</p>
+<ul>
+<li>目标后端不支持当前规则的高级选项。</li>
+<li>规则会影响面板、SSH 或当前管理连接。</li>
+<li>目标后端已有冲突规则。</li>
+<li>来源规则无法被完整识别。</li>
+<li>双栈规则包含无法安全拆分的 IPv4/IPv6 地址。</li>
+</ul>
+<p>处理建议：</p>
+<ol>
+<li>展开“已阻止”列表查看具体原因。</li>
+<li>在来源后端中简化该规则，或在目标后端手动创建等价规则。</li>
+<li>再次刷新同步预览。</li>
+<li>所有关键规则验证通过前，不要选择“重置来源”。</li>
+</ol>
+</div>
+<h3 id="913">9.13 同步预览显示“将删除”<a class="headerlink" href="#913" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>“将删除”表示目标后端存在额外规则，但 1Panel 当前保存配置中没有对应项目。同步是以 1Panel 保存配置为准的收敛操作，因此这些目标端规则会被移除。</p>
+<p>执行前应确认：</p>
+<ul>
+<li>该规则是否由其他软件创建。</li>
+<li>该规则是否仍被业务使用。</li>
+<li>是否应先在 1Panel 中补充或接管该规则。</li>
+<li>是否选错了目标后端。</li>
+</ul>
+<p>不确定时应取消同步，先导出配置并确认规则来源。</p>
+</div>
+<h3 id="914">9.14 导入规则失败或部分成功<a class="headerlink" href="#914" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<ul>
+<li>检查文件是否为 1Panel 导出的 JSON 格式。</li>
+<li>检查端口是否位于 <code>1-65535</code>，范围是否从小到大。</li>
+<li>检查 IP、CIDR 和地址族是否一致。</li>
+<li>检查目标后端是否支持文件中的协议和高级选项。</li>
+<li>检查是否存在重复、覆盖或冲突规则。</li>
+<li>大批量导入会分批处理，前一批成功并不保证后一批也能成功。</li>
+</ul>
+<p>出现部分成功时，先刷新规则列表确认已写入项目，再修正失败项目后单独导入，避免重复提交整个文件。</p>
+</div>
+<h3 id="915-docker">9.15 Docker 防护显示生效，但访问结果不符合预期<a class="headerlink" href="#915-docker" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>依次检查：</p>
+<ol>
+<li>测试连接是否在策略创建前就已经建立；已有连接可能暂时保持。</li>
+<li>实际访问的是 IPv4 还是 IPv6。</li>
+<li>策略对应的宿主机发布 IP、发布端口和协议是否正确。</li>
+<li>容器是否重新创建并改变了发布端点。</li>
+<li>客户端来源是否经过 NAT，服务器看到的来源 IP可能与客户端公网 IP 不同。</li>
+<li>是否存在多个容器或端点发布相同业务端口。</li>
+</ol>
+<p>请断开已有连接后重新测试，并同时从允许来源和不允许来源验证。</p>
+</div>
+<h3 id="916">9.16 端口转发可建立连接，但业务没有返回数据<a class="headerlink" href="#916" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>可能原因：</p>
+<ul>
+<li>目标服务未运行或只监听回环地址。</li>
+<li>当前服务器无法访问目标 IP 或目标端口。</li>
+<li>目标服务器的防火墙拒绝来自转发服务器的流量。</li>
+<li>返回路由不正确，响应没有回到转发服务器。</li>
+<li>源端口范围和目标端口范围不对应。</li>
+<li>目标服务使用了额外的动态端口或应用层重定向。</li>
+</ul>
+<p>先从转发服务器本机直接访问目标 IP 和目标端口。如果本机到目标都不通，应先修复目标服务或网络路由，而不是继续调整转发规则。</p>
+</div>
+<h3 id="917-docker">9.17 重启服务器或 Docker 后规则丢失<a class="headerlink" href="#917-docker" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<ul>
+<li>检查设置页选择的后端是否仍然正确。</li>
+<li>检查系统防火墙是否已绑定，转发和 Docker 防护是否已初始化。</li>
+<li>Docker 启动较慢时，1Panel 自动恢复可能暂时失败，可在 Docker 完全启动后手动重试。</li>
+<li>查看规则是否显示“运行时缺失”或“已漂移”。</li>
+<li>确认没有其他启动脚本、安全软件或网络管理工具在开机时覆盖规则。</li>
+</ul>
+<p>不要通过重复初始化掩盖问题。应先确认是哪一个组件在重启后修改了规则。</p>
+</div>
+<h3 id="918-firewalld-ufw">9.18 firewalld 和 UFW 同时安装导致冲突<a class="headerlink" href="#918-firewalld-ufw" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>1Panel 为避免两个服务同时控制系统防火墙，检测到 firewalld 和 UFW 同时存在时可能拒绝自动选择。</p>
+<p>处理前先确认当前实际使用哪个服务及其现有规则，然后停用并卸载不再使用的一方。不要在未备份规则时同时重置两个服务。</p>
+</div>
+<h2 id="10">10 高级只读检查<a class="headerlink" href="#10" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
+<p>以下命令仅用于查看状态。请根据实际后端选择，不需要全部执行。</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># firewalld / UFW</span>
+firewall-cmd<span class="w"> </span>--state
+firewall-cmd<span class="w"> </span>--zone<span class="o">=</span>public<span class="w"> </span>--list-all
+ufw<span class="w"> </span>status<span class="w"> </span>numbered
+
+<span class="c1"># iptables 系统规则</span>
+iptables<span class="w"> </span>-S<span class="w"> </span>INPUT
+iptables<span class="w"> </span>-S<span class="w"> </span>1PANEL_BASIC_BEFORE
+iptables<span class="w"> </span>-S<span class="w"> </span>1PANEL_BASIC
+iptables<span class="w"> </span>-S<span class="w"> </span>1PANEL_BASIC_AFTER
+ip6tables<span class="w"> </span>-S<span class="w"> </span>1PANEL_BASIC
+
+<span class="c1"># nftables</span>
+nft<span class="w"> </span>-a<span class="w"> </span>list<span class="w"> </span>table<span class="w"> </span>ip<span class="w"> </span>nft_1panel_filter
+nft<span class="w"> </span>-a<span class="w"> </span>list<span class="w"> </span>table<span class="w"> </span>ip6<span class="w"> </span>nft_1panel_filter
+nft<span class="w"> </span>-a<span class="w"> </span>list<span class="w"> </span>table<span class="w"> </span>ip<span class="w"> </span>nft_1panel_forward
+nft<span class="w"> </span>-a<span class="w"> </span>list<span class="w"> </span>table<span class="w"> </span>ip<span class="w"> </span>nft_1panel_docker
+
+<span class="c1"># IP forwarding</span>
+sysctl<span class="w"> </span>net.ipv4.ip_forward
+sysctl<span class="w"> </span>net.ipv6.conf.all.forwarding
+
+<span class="c1"># 监听端口和本机地址</span>
+ss<span class="w"> </span>-lntup
+ip<span class="w"> </span>-br<span class="w"> </span>address
+
+<span class="c1"># 路由和目标可达性</span>
+ip<span class="w"> </span>route
+ip<span class="w"> </span>route<span class="w"> </span>get<span class="w"> </span><span class="m">10</span>.0.0.20
+
+<span class="c1"># Docker 防护</span>
+
+docker<span class="w"> </span>ps<span class="w"> </span>--format<span class="w"> </span><span class="s1">'table {{.Names}}\t{{.Ports}}'</span>
+
+docker<span class="w"> </span>port<span class="w"> </span>&lt;容器名称或<span class="w"> </span>ID&gt;
+iptables<span class="w"> </span>-S<span class="w"> </span>DOCKER-USER
+iptables<span class="w"> </span>-S<span class="w"> </span>1PANEL_DOCKER
+</code></pre></div>
+<p>如果系统实际使用 <code>iptables-nft</code>，请使用设置页显示的实现命令或系统对应命令。</p>
+<p>不要在不理解后果时执行 flush、reset、delete table、删除链或覆盖规则文件等命令。</p>
+</div>
+<h2 id="11">11 常见问题<a class="headerlink" href="#11" title="Permanent link">⚓︎</a></h2>
+<h3 id="111-docker">11.1 系统防火墙已经开放端口，为什么 Docker 服务仍不通？<a class="headerlink" href="#111-docker" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>Docker 发布端口使用独立转发路径，系统防火墙入站规则不一定覆盖。请同时检查 Docker 端口发布、Docker 端口防护和云安全组。</p>
+</div>
+<h3 id="112-docker">11.2 删除 Docker 防护策略会关闭容器端口吗？<a class="headerlink" href="#112-docker" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>不会。删除策略只移除 1Panel 的访问限制，Docker 发布端口仍然存在，反而可能变得对更多来源开放。</p>
+</div>
+<h3 id="113">11.3 解绑和清理有什么区别？<a class="headerlink" href="#113" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<ul>
+<li>解绑：规则暂时不生效，但规则结构和配置仍保留，可重新绑定。</li>
+<li>清理：删除当前后端中由 1Panel 创建的规则结构，通常用于停用或切换后端。</li>
+</ul>
+</div>
+<h3 id="114">11.4 切换后端会自动带上原来的规则吗？<a class="headerlink" href="#114" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>不会。必须通过规则同步迁移或从导出文件重新导入。</p>
+</div>
+<h3 id="115">11.5 为什么有些系统规则只能查看，不能编辑？<a class="headerlink" href="#115" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>这些规则可能是外部规则、受保护规则、系统预置规则，或 1Panel 无法安全解析的规则。为了避免破坏系统和其他软件的配置，默认只读。</p>
+</div>
+<h3 id="116">11.6 为什么删除放行规则时提示端口正在使用？<a class="headerlink" href="#116" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>1Panel 检测到本机进程或 Docker 发布端口正在使用该端口。删除后服务可能仍在监听，但外部连接可能被阻断，请确认业务影响。</p>
+</div>
+<h3 id="117-ping">11.7 禁 Ping 后监控报警是否正常？<a class="headerlink" href="#117-ping" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>如果监控使用 ICMP Ping 检测服务器存活，禁 Ping 后会报警。可以改用 TCP/HTTP 健康检查，或关闭禁 Ping。</p>
+</div>
+<h3 id="118">11.8 端口白名单和普通允许规则有什么区别？<a class="headerlink" href="#118" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>普通允许规则用于业务访问控制；端口白名单还参与面板的安全保护，在启用、重启和高风险规则检查时用于避免关键端口被误封。必要管理端口应放入白名单，不要只依赖普通允许规则。</p>
+</div>
+<h3 id="119">11.9 “丢弃”和“拒绝”有什么区别？<a class="headerlink" href="#119" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<ul>
+<li>丢弃：不回复客户端，扫描者更难判断端口状态，但客户端需要等待超时。</li>
+<li>拒绝：立即向客户端返回失败结果。</li>
+</ul>
+<p>当前系统防火墙规则仅支持丢弃，暂不支持拒绝（REJECT）。</p>
+</div>
+<h3 id="1110-docker">11.10 启停系统防火墙为什么会询问是否重启 Docker？<a class="headerlink" href="#1110-docker" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>firewalld 或 UFW 的启停、重载可能影响 Docker 创建的网络规则。重启 Docker 可以让 Docker 重新建立其规则，但也会影响正在运行的容器业务。请根据维护窗口和实际网络状态决定。</p>
+</div>
+<h3 id="1111">11.11 修改规则后，已有连接为什么没有立即断开？<a class="headerlink" href="#1111" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>已有 TCP 连接可能被连接跟踪视为已建立流量，仍可暂时保持。验证丢弃规则时，应关闭原连接并新建连接；必要时等待连接跟踪状态过期。</p>
+</div>
+<h3 id="1112-docker">11.12 系统防火墙能否完全代替 Docker 端口防护？<a class="headerlink" href="#1112-docker" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>不能保证。Docker 发布端口通常走转发路径，不一定完整经过普通系统入站规则。限制 Docker 发布端口来源时，应使用 Docker 端口防护，并同时检查系统防火墙和云安全组。</p>
+</div>
+<h3 id="1113">11.13 清理后端会删除导入或保存的配置吗？<a class="headerlink" href="#1113" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>清理主要删除当前后端中由 1Panel 创建的规则结构。端口转发和 Docker 防护保存的配置仍可用于重新初始化或同步；系统防火墙执行“重置”时影响更大，应在操作前导出规则。</p>
+</div>
+<h3 id="1114">11.14 不同后端之间可以直接导入同一份规则吗？<a class="headerlink" href="#1114" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>系统防火墙导入时会尝试转换到当前后端，但不同后端能力并不完全一致。高级选项、规则顺序、双栈规则和外部原生规则可能无法完整转换，应以导入检查结果为准。</p>
+</div>
+<h3 id="1115">11.15 同步和导入有什么区别？<a class="headerlink" href="#1115" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<ul>
+<li>同步：用于已有后端或保存配置之间的迁移与收敛，会显示待创建、已存在、将删除和已阻止项目。</li>
+<li>导入：从 JSON 文件新增规则，通常不会用文件内容完整替换目标后端。</li>
+</ul>
+<p>切换后端优先使用同步；跨服务器复制少量规则可以使用导入、导出。</p>
+</div>
+<h3 id="1116-1panel">11.16 云安全组和 1Panel 防火墙谁优先？<a class="headerlink" href="#1116-1panel" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>两者位于不同位置，没有统一的“规则优先级”。流量必须同时通过云安全组和服务器本机防火墙：任意一层拒绝，最终都无法访问。</p>
+</div>
+<h3 id="1117-ipv4-ipv6">11.17 是否需要为 IPv4 和 IPv6 分别添加规则？<a class="headerlink" href="#1117-ipv4-ipv6" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>取决于后端和页面提供的地址族选项。即使后端支持双栈，也应分别验证 IPv4 和 IPv6。只创建 IPv4 规则不会自动保证 IPv6 受到相同限制。</p>
+</div>
+<h3 id="1118">11.18 为什么规则显示端口未使用，但服务实际可以访问？<a class="headerlink" href="#1118" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p>“正在使用”基于当前可识别的本机监听进程和 Docker 发布端口生成，只是辅助信息。代理转发、短生命周期进程、其他网络命名空间或检测权限都可能导致显示不完整，应以实际监听状态和连接测试为准。</p>
+</div>
+<h2 id="12">12 安全建议<a class="headerlink" href="#12" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
+<ul>
+<li>优先使用“只允许指定来源”，不要把数据库、管理后台等敏感端口开放给所有来源。</li>
+<li>添加丢弃规则前，先建立并验证更具体的允许规则。</li>
+<li>IPv4 和 IPv6 应分别检查，避免只限制 IPv4 而遗漏 IPv6。</li>
+<li>定期检查外部规则、漂移规则和孤立 Docker 策略。</li>
+<li>后端切换和重置应在维护窗口进行。</li>
+<li>每次大批量导入前先导出当前规则。</li>
+<li>不要同时让多个防火墙管理工具修改同一组规则。</li>
+<li>Fail2Ban、Docker、VPN、安全软件和云安全组都可能影响最终访问路径，排障时需要一起考虑。</li>
+<li>验证规则时应新建连接；已有 TCP 连接可能暂时不受新规则影响。</li>
+<li>完成高风险操作后，分别从允许来源和不允许来源测试结果。</li>
+</ul>
 </div>
 
 
