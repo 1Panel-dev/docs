@@ -15,7 +15,7 @@
         <link rel="prev" href="../agent/">
       
       
-        <link rel="next" href="../mcp/">
+        <link rel="next" href="../vllm/">
       
       
       <link rel="icon" href="../../../img/facio.ico">
@@ -974,6 +974,14 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
     
     
       
@@ -1139,36 +1147,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#0-prerequisites" class="md-nav__link">
+  <a href="#1-prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      0 Prerequisites
+      1 Prerequisites
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#1-create-model" class="md-nav__link">
+  <a href="#2-create-model" class="md-nav__link">
     <span class="md-ellipsis">
-      1 Create Model
+      2 Create Model
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-view-model-logs" class="md-nav__link">
+  <a href="#3-view-model-logs" class="md-nav__link">
     <span class="md-ellipsis">
-      2 View Model Logs
+      3 View Model Logs
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-other-model-operations" class="md-nav__link">
+  <a href="#4-other-model-operations" class="md-nav__link">
     <span class="md-ellipsis">
-      3 Other Model Operations
+      4 Other Model Operations
     </span>
   </a>
   
@@ -1183,6 +1191,90 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vllm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vLLM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gateway/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Gateway
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../benchmark/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Benchmark
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../skills_hub/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Skills Hub
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -2983,6 +3075,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -3026,6 +3122,48 @@
   
   <span class="md-ellipsis">
     OpenClaw
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appstore/deepseek-harness/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deepseek Harness
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appstore/hermes-agent/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hermes Agent
   </span>
   
 
@@ -3549,36 +3687,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#0-prerequisites" class="md-nav__link">
+  <a href="#1-prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      0 Prerequisites
+      1 Prerequisites
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#1-create-model" class="md-nav__link">
+  <a href="#2-create-model" class="md-nav__link">
     <span class="md-ellipsis">
-      1 Create Model
+      2 Create Model
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-view-model-logs" class="md-nav__link">
+  <a href="#3-view-model-logs" class="md-nav__link">
     <span class="md-ellipsis">
-      2 View Model Logs
+      3 View Model Logs
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-other-model-operations" class="md-nav__link">
+  <a href="#4-other-model-operations" class="md-nav__link">
     <span class="md-ellipsis">
-      3 Other Model Operations
+      4 Other Model Operations
     </span>
   </a>
   
@@ -3656,11 +3794,11 @@
 <li><a href="https://github.com/open-webui/open-webui">OpenWebUI</a></li>
 </ul>
 </div>
-<h3 id="0-prerequisites">0 Prerequisites<a class="headerlink" href="#0-prerequisites" title="Permanent link">¶</a></h3>
+<h3 id="1-prerequisites">1 Prerequisites<a class="headerlink" href="#1-prerequisites" title="Permanent link">¶</a></h3>
 <div class="admonition note">
 <p>Before creating a model with TensorRT LLM, you must first install the NVIDIA GPU driver and configure the NVIDIA Container Toolkit. Refer to the documentation: <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html">Installing the NVIDIA Container Toolkit</a>.</p>
 </div>
-<h3 id="1-create-model">1 Create Model<a class="headerlink" href="#1-create-model" title="Permanent link">¶</a></h3>
+<h3 id="2-create-model">2 Create Model<a class="headerlink" href="#2-create-model" title="Permanent link">¶</a></h3>
 <div class="admonition note">
 <p>On the TensorRT LLM Model Management page, click the <strong>Create</strong> button, enter parameters such as the model name, then click <strong>Confirm</strong> to create the model.</p>
 </div>
@@ -3681,11 +3819,11 @@
 </ul>
 </div>
 <p class="browser-mockup"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../../img/ai/create_trtllm.png" data-desc-position="bottom"><img alt="img.png" src="../../../img/ai/create_trtllm.png"></a></p>
-<h3 id="2-view-model-logs">2 View Model Logs<a class="headerlink" href="#2-view-model-logs" title="Permanent link">¶</a></h3>
+<h3 id="3-view-model-logs">3 View Model Logs<a class="headerlink" href="#3-view-model-logs" title="Permanent link">¶</a></h3>
 <div class="admonition note">
 <p>On the TensorRT LLM Model Management page, click the <strong>View Logs</strong> button in the row of the target model to check the model startup and runtime logs.</p>
 </div>
-<h3 id="3-other-model-operations">3 Other Model Operations<a class="headerlink" href="#3-other-model-operations" title="Permanent link">¶</a></h3>
+<h3 id="4-other-model-operations">4 Other Model Operations<a class="headerlink" href="#4-other-model-operations" title="Permanent link">¶</a></h3>
 <div class="admonition note">
 <p>On the TensorRT LLM Model Management page, you can perform operations such as stop, start, restart, delete, and edit on the model.</p>
 </div>
@@ -3741,7 +3879,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright © 2025 Lingxia (Hong Kong) Software Co., Limited, All Rights Reserved.
+      Copyright © 2026 Lingxia (Hong Kong) Software Co., Limited, All Rights Reserved.
     </div>
   
   

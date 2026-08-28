@@ -967,6 +967,14 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
     
     
       
@@ -1031,6 +1039,90 @@
   
   <span class="md-ellipsis">
     Model
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_manual/ai/vllm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vLLM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_manual/ai/gateway/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Gateway
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_manual/ai/benchmark/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Benchmark
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_manual/ai/skills_hub/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Skills Hub
   </span>
   
 
@@ -2835,6 +2927,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -2878,6 +2974,48 @@
   
   <span class="md-ellipsis">
     OpenClaw
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_manual/appstore/deepseek-harness/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deepseek Harness
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_manual/appstore/hermes-agent/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hermes Agent
   </span>
   
 
@@ -3576,7 +3714,7 @@
 <span class="w">    </span><span class="nx">panelToken</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">GetHeader</span><span class="p">(</span><span class="s">"1Panel-Token"</span><span class="p">)</span>
 <span class="w">    </span><span class="nx">panelTimestamp</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">GetHeader</span><span class="p">(</span><span class="s">"1Panel-Timestamp"</span><span class="p">)</span>
 <span class="w">    </span><span class="nx">systemToken</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">panelToken</span>
-<span class="w">    </span><span class="nx">systemKey</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="o">*******</span><span class="w"> </span><span class="c1">// Panel API key</span>
+<span class="w">    </span><span class="nx">systemKey</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*******</span><span class="w"> </span><span class="c1">// Panel API key</span>
 <span class="w">    </span><span class="nx">expectedToken</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">md5Sum</span><span class="p">(</span><span class="s">"1panel"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">systemKey</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">panelTimestamp</span><span class="p">)</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="nx">systemToken</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nx">expectedToken</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Errorf</span><span class="p">(</span><span class="s">"invalid token"</span><span class="p">)</span>
@@ -3586,7 +3724,7 @@
 
 <span class="kd">func</span><span class="w"> </span><span class="nx">md5Sum</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nx">h</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">md5</span><span class="p">.</span><span class="nx">New</span><span class="p">()</span>
-<span class="w">    </span><span class="nx">h</span><span class="p">.</span><span class="nx">Write</span><span class="p">([]</span><span class="nb">byte</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span>
+<span class="w">    </span><span class="nx">h</span><span class="p">.</span><span class="nx">Write</span><span class="p">([]</span><span class="kt">byte</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">hex</span><span class="p">.</span><span class="nx">EncodeToString</span><span class="p">(</span><span class="nx">h</span><span class="p">.</span><span class="nx">Sum</span><span class="p">(</span><span class="kc">nil</span><span class="p">))</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -3682,7 +3820,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright © 2025 Lingxia (Hong Kong) Software Co., Limited, All Rights Reserved.
+      Copyright © 2026 Lingxia (Hong Kong) Software Co., Limited, All Rights Reserved.
     </div>
   
   
