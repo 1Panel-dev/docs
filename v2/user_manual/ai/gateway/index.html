@@ -6258,7 +6258,7 @@
 <li><strong>外部连接地址</strong>：客户端配置的 Base URL，可直接复制</li>
 </ul>
 </div>
-<p><img alt="AI 网关账号池" src="../../img/ai/ai_gateway_account_pool.png" /></p>
+<p><img alt="AI 网关账号池" src="../../../img/ai/ai_gateway_account_pool.png" /></p>
 <h2 id="2">2 账号池<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p><strong>账号池</strong> 用于维护 AI 网关的上游模型账号。点击 <strong>导入模型账号</strong>，选择已在 <strong>AI -&gt; 模型</strong> 中创建的账号，并配置权重、优先级和模型映射。</p>
@@ -6284,12 +6284,12 @@
 <p><strong>模型组</strong> 用于组合一组真实上游模型，主要应用于用户组模型权限和智能路由。创建模型组时填写名称、请求模型和备注；模型在组内的顺序表示智能路由的选择优先级，组内不进行模型间负载均衡。</p>
 <p><code>auto</code> 是客户端触发智能路由时使用的虚拟模型名，不需要添加到模型组中。</p>
 </div>
-<p><img alt="AI 网关模型组" src="../../img/ai/ai_gateway_model_groups.png" /></p>
+<p><img alt="AI 网关模型组" src="../../../img/ai/ai_gateway_model_groups.png" /></p>
 <h2 id="4">4 用户组<a class="headerlink" href="#4" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p><strong>用户组</strong> 用于统一管理一组 API Key 的调用配额和模型范围。创建用户组后，再将 API Key 绑定到该用户组。</p>
 </div>
-<p><img alt="AI 网关用户组" src="../../img/ai/ai_gateway_user_groups.png" /></p>
+<p><img alt="AI 网关用户组" src="../../../img/ai/ai_gateway_user_groups.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">用户组参数</p>
 <ul>
@@ -6373,7 +6373,7 @@
 <p class="admonition-title">敏感词</p>
 <p>支持创建和批量导入敏感词，并设置敏感词分组、归一化词、状态和备注。归一化词用于将不同写法统一为同一个匹配词。</p>
 </div>
-<p><img alt="AI 网关内容合规" src="../../img/ai/ai_gateway_compliance.png" /></p>
+<p><img alt="AI 网关内容合规" src="../../../img/ai/ai_gateway_compliance.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">敏感词分组</p>
 <p>为一组敏感词设置处理动作、风险等级、状态和描述。处理动作包括 <strong>阻断</strong> 和 <strong>仅记录</strong>。</p>
@@ -6388,7 +6388,7 @@
 <p class="admonition-title">审计日志</p>
 <p>记录 Request ID、请求模型、命中词、命中分组、处理动作、状态码和创建时间，用于追踪被记录或阻断的请求。</p>
 </div>
-<p><img alt="ai_gateway_compliance_log.png" src="../../img/ai/ai_gateway_compliance_log.png" />    </p>
+<p><img alt="ai_gateway_compliance_log.png" src="../../../img/ai/ai_gateway_compliance_log.png" />    </p>
 <h2 id="8">8 用量统计<a class="headerlink" href="#8" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p><strong>用量统计</strong> 提供分布、排行榜和调用日志 3 个视图，并支持按用户、模型供应商、模型和关键字筛选。</p>
@@ -6413,7 +6413,7 @@
 <div class="admonition note">
 <p><strong>基础设置</strong> 用于控制网关开关、监听端口、外部连接地址和负载策略。外部连接地址应填写客户端实际可访问的地址，并包含 <code>/v1</code> 路径。</p>
 </div>
-<p><img alt="AI 网关基础设置" src="../../img/ai/ai_gateway_settings_basic.png" /></p>
+<p><img alt="AI 网关基础设置" src="../../../img/ai/ai_gateway_settings_basic.png" /></p>
 <h3 id="92">9.2 性能设置<a class="headerlink" href="#92" title="Permanent link">⚓︎</a></h3>
 <div class="admonition info">
 <p class="admonition-title">参数说明</p>
@@ -6427,7 +6427,7 @@
 <li><strong>Runtime 刷新间隔</strong>：运行时配置刷新间隔</li>
 </ul>
 </div>
-<p><img alt="AI 网关性能设置" src="../../img/ai/ai_gateway_settings_performance.png" /></p>
+<p><img alt="AI 网关性能设置" src="../../../img/ai/ai_gateway_settings_performance.png" /></p>
 <h3 id="93-embedding">9.3 Embedding 设置<a class="headerlink" href="#93-embedding" title="Permanent link">⚓︎</a></h3>
 <div class="admonition note">
 <p>Embedding 服务同时用于智能路由样本和内容合规审核样本的语义匹配。页面支持配置服务地址、模型、API Key，并提供连接测试。</p>
