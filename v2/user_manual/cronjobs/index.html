@@ -6173,7 +6173,9 @@
 
 
 <h1 id="_1">计划任务<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
+<div class="admonition note">
 <p>计划任务用于按固定周期执行脚本、备份、日志维护和系统运维任务，也支持手动执行。入口为左侧菜单 <strong>计划任务</strong>。社区版、专业版和企业版均可使用；执行失败告警及部分高级任务是否可用取决于许可证和当前功能配置。</p>
+</div>
 <h2 id="1">1 创建任务<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
 <p>点击 <strong>创建计划任务</strong>，选择任务类型并填写任务名称、执行周期及对应参数。创建后可在列表中启用、停用、立即执行、编辑、复制、查看报告或删除任务。</p>
 <div class="admonition info">
@@ -6189,42 +6191,70 @@
 </div>
 <h2 id="2">2 任务类型<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
 <h3 id="21-shell">2.1 Shell 脚本<a class="headerlink" href="#21-shell" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
 <p>填写脚本内容并选择解释器，也可以从脚本库或服务器文件中选择脚本。启用 <strong>在容器中执行</strong> 后，需要选择容器、用户和命令执行器。</p>
+</div>
 <p class="original"><img alt="Shell 计划任务" src="../../img/cronjobs/shell.png" /></p>
 <h3 id="22">2.2 备份应用、网站和数据库<a class="headerlink" href="#22" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
 <p>选择一个、多个或全部对象，并配置备份账号、保留份数及备份选项。数据库任务还会根据数据库类型显示相应的备份参数。</p>
+</div>
 <p class="original"><img alt="应用备份任务" src="../../img/cronjobs/app.png" /></p>
 <div class="admonition warning">
 <p class="admonition-title">备份可恢复性</p>
 <p>任务执行成功只表示备份流程完成。生产环境应定期执行恢复验证，并确认应用版本、数据库版本、压缩密码和远端文件均可用。</p>
 </div>
 <h3 id="23">2.3 备份目录<a class="headerlink" href="#23" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
 <p>选择主机上的文件或目录，并配置压缩、排除规则和备份目标。避免把备份输出目录再次包含进源目录，否则可能造成递归归档或空间快速增长。</p>
+</div>
 <p class="original"><img alt="目录备份任务" src="../../img/cronjobs/dir.png" /></p>
 <h3 id="24">2.4 备份日志<a class="headerlink" href="#24" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
 <p>备份 1Panel 系统日志、SSH 登录日志和网站日志。源日志已被轮转或删除后，任务只能备份当时仍存在的内容。</p>
+</div>
 <h3 id="25-url">2.5 访问 URL<a class="headerlink" href="#25-url" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
 <p>按周期请求一个或多个 URL。该任务适合触发受控接口或健康检查；需要鉴权时，应谨慎处理请求头和凭证，避免把敏感信息暴露在日志中。</p>
+</div>
 <h3 id="26">2.6 切割网站日志<a class="headerlink" href="#26" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
 <p>切割指定网站的日志并保存历史文件。应结合保留份数和磁盘空间设置，防止长期日志占满磁盘。</p>
+</div>
 <h3 id="27">2.7 缓存清理<a class="headerlink" href="#27" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
 <p>按周期执行 <strong>工具箱 -&gt; 缓存清理</strong> 中的清理项目。创建前应确认清理范围，避免删除仍需保留的容器、镜像、日志或临时数据。</p>
+</div>
 <h3 id="28">2.8 系统快照<a class="headerlink" href="#28" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
 <p>按周期创建 1Panel 系统快照。可以配置是否包含镜像以及忽略的应用；具体备份范围和恢复注意事项参见 <a href="../settings/#5">面板设置</a>。</p>
+</div>
 <h3 id="29">2.9 同步服务器时间<a class="headerlink" href="#29" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
 <p>使用 <strong>工具箱 -&gt; 快速设置</strong> 中配置的 NTP 服务器同步当前节点时间。</p>
+</div>
 <h3 id="210-ip">2.10 同步 IP 组<a class="headerlink" href="#210-ip" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
 <p>当页面提供该类型时，可按计划同步 WAF 使用的远程 IP 组。WAF IP 组支持社区版、专业版和企业版，创建任务前需要先完成对应 IP 组配置。</p>
+</div>
 <h3 id="211">2.11 清理日志<a class="headerlink" href="#211" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
 <p>按所选日志类型和保留策略清理日志。清理前应确认合规留存要求；已清理的日志不能从 1Panel 页面恢复。</p>
+</div>
 <h2 id="3">3 任务库<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <p>任务库用于保存可复用的 Shell 脚本模板。创建 Shell 任务时可从任务库选择，也可以将常用脚本维护到任务库后重复使用。导入外部脚本前，应先审查命令和变量。</p>
+</div>
 <h2 id="4">4 执行报告<a class="headerlink" href="#4" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <p>点击计划任务的 <strong>报告</strong> 查看每次执行时间、状态和日志。执行中的任务可查看实时输出；备份类任务还可以查看备份文件并按权限下载。</p>
+</div>
 <p class="original"><img alt="备份文件" src="../../img/cronjobs/backup_list.png" /></p>
 <p class="original"><img alt="执行记录" src="../../img/cronjobs/record.png" /></p>
 <h2 id="5">5 导入和导出<a class="headerlink" href="#5" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <p>计划任务支持通过 JSON 文件导入或导出。导入时，名称已存在的任务会被忽略；引用的网站、数据库、应用、备份账号或其他资源无法匹配时，任务可能进入待编辑状态。导入后应逐项检查目标节点、周期、路径和凭证，再启用任务。</p>
+</div>
 
 
 

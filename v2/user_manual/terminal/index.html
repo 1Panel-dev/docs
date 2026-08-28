@@ -5924,6 +5924,7 @@
 </div>
 <p>快速命令只是命令模板，选择后仍应检查目标主机和命令内容再执行。包含变量、管道或重定向的命令，应先在非生产环境验证。</p>
 <h2 id="4">4 配置<a class="headerlink" href="#4" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <p><strong>配置</strong> 标签页仅管理员可见，主要包括：</p>
 <ul>
 <li>终端字体、字号、行高、字距、前景色、背景色、光标和滚动设置；</li>
@@ -5932,6 +5933,7 @@
 <li>AI 助手设置。</li>
 </ul>
 <p>AI 助手可使用已创建的模型账号，根据“触发前缀 + 空格 + 自然语言”生成并回填命令。Ollama、vLLM 本地模型需要先配置为自定义模型账号。还可配置风险命令拦截列表，命中后阻止生成并以注释形式回填。</p>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">AI 生成命令</p>
 <p>AI 助手只负责生成命令，不代表命令已通过目标环境验证。执行前必须检查命令含义、参数、目标路径和权限范围。</p>

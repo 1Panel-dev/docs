@@ -5909,13 +5909,21 @@
 <p>进入 <strong>WAF -&gt; 黑白名单</strong>，可以配置全局 IP、URL、User-Agent 黑白名单，并维护可复用的 IP 组。规则作用于已启用 WAF 的网站。</p>
 </div>
 <h2 id="1-ip">1 IP<a class="headerlink" href="#1-ip" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <p>IP 规则支持黑名单和白名单，可以填写 IPv4、IPv6、IP 段或已创建的 IP 组。黑名单用于拒绝匹配的来源，白名单允许匹配的来源跳过后续 WAF 规则。</p>
+</div>
 <h2 id="2-url">2 URL<a class="headerlink" href="#2-url" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <p>URL 黑名单用于阻止匹配的请求路径，URL 白名单用于让匹配路径跳过后续 WAF 规则。规则采用页面提示的匹配方式，添加前应确认是否需要包含路径前缀或完整路径。</p>
+</div>
 <h2 id="3-user-agent">3 User-Agent<a class="headerlink" href="#3-user-agent" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <p>User-Agent 黑名单和白名单根据请求头中的 User-Agent 内容进行匹配，可用于限制已知扫描器或放行可信客户端。User-Agent 可以被客户端伪造，不能单独作为身份认证依据。</p>
+</div>
 <h2 id="4-ip">4 IP 组<a class="headerlink" href="#4-ip" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <p>IP 组用于集中维护一组 IPv4、IPv6 或 CIDR 地址，并在 IP 黑白名单中重复引用。页面支持创建、编辑、删除、导入和导出 IP 组；每行填写一个 IP 或 IP 段。</p>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">规则范围</p>
 <p>过宽的黑名单可能阻断正常业务，过宽的白名单会降低防护范围。修改后应验证登录、上传、API 和回调等关键路径；专业版和企业版还可以结合拦截记录确认规则效果。</p>

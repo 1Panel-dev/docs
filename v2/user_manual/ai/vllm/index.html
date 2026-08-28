@@ -5927,13 +5927,14 @@
 </ul>
 </div>
 <blockquote>
-<p>vLLM 服务创建完成后，会以 OpenAI 兼容接口的形式对外提供推理能力，便于后续接入智能体或其他 AI 应用。</p>
+<p>vLLM 服务创建完成后，会以 OpenAI 兼容接口的形式对外提供推理能力，便于后续接入智能体或其他 AI 应用。 
+创建完成后，可将服务同步为 <strong>模型账号</strong>，供智能体及其他 AI 功能选择。同步时应确认 Base URL、API 类型和模型信息与实际服务一致。</p>
 </blockquote>
-<p>创建完成后，可将服务同步为 <strong>模型账号</strong>，供智能体及其他 AI 功能选择。同步时应确认 Base URL、API 类型和模型信息与实际服务一致。</p>
 <h2 id="3">3 高级设置<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>如需对容器运行方式做进一步控制，可展开 <strong>高级设置</strong>。</p>
 </div>
+<p><img alt="img.png" src="../../img/ai/vllm_create_hight.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">高级设置说明</p>
 <ul>
@@ -5947,7 +5948,9 @@
 </ul>
 </div>
 <h2 id="4">4 日常管理<a class="headerlink" href="#4" title="Permanent link">⚓︎</a></h2>
+<blockquote>
 <p>列表支持查看状态和运行目录，并提供编辑、启动、停止、重启、删除、查看日志和任务追踪等操作。修改镜像、启动命令、挂载或资源限制可能触发容器重建；未挂载到主机目录的数据不会随容器保留。</p>
+</blockquote>
 <div class="admonition warning">
 <p class="admonition-title">外部访问</p>
 <p>开启端口外部访问前，应结合防火墙、授权 IP 或反向代理限制访问范围。模型 API 默认不等同于已完成身份认证，不应直接暴露到不受信任的网络。</p>

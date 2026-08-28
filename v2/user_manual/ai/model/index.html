@@ -5988,15 +5988,20 @@
 <div class="admonition note">
 <p>模型账号保存模型服务的连接信息，可供智能体、AI 搜索等功能选择。点击 <strong>创建</strong> 后，按页面提示配置以下信息：</p>
 </div>
+<div class="admonition note">
 <ul>
-<li><strong>名称</strong>：模型账号在 1Panel 中的显示名称。</li>
+<li><strong>名称</strong>：模型账号在 1Panel 中的显示名称。   </li>
 <li><strong>模型提供商</strong>：选择预置提供商，或选择自定义、Ollama、vLLM 等类型。</li>
 <li><strong>API Key</strong>：模型服务的访问凭证。是否需要填写取决于提供商。</li>
 <li><strong>Base URL</strong>：模型服务 API 地址。部分预置提供商使用默认地址，自定义、Ollama 和 vLLM 可按实际服务填写。</li>
 <li><strong>API 类型</strong>：按提供商支持情况选择兼容协议。</li>
 <li><strong>模型池</strong>：维护模型 ID、显示名称、Context Window、Max Tokens、输入类型和推理能力。</li>
 </ul>
+</div>
+<p><img alt="在线模型管理" src="../../img/ai/cloud_model.png" /></p>
+<blockquote>
 <p>创建完成后，可以在列表中验证连接、编辑账号、维护模型池或删除账号。编辑已经被智能体使用的账号时，可按页面选项同步更新相关智能体配置。</p>
+</blockquote>
 <div class="admonition warning">
 <p class="admonition-title">凭证安全</p>
 <p>API Key 属于敏感信息，仅向受信任的管理员开放模型账号管理权限。</p>
@@ -6006,28 +6011,38 @@
 <div class="admonition note">
 <p>使用 Ollama 管理前，需要先从 <strong>应用商店</strong> 安装 Ollama。安装完成后，页面会显示应用运行状态，并提供启动、停止、重启和连接信息等操作。</p>
 </div>
-<p class="original"><img alt="Ollama 管理" src="../../../img/ai/overview.png" /></p>
+<p><img alt="Ollama 管理" src="../../../img/ai/overview.png" /></p>
 <h3 id="22">2.2 添加和运行模型<a class="headerlink" href="#22" title="Permanent link">⚓︎</a></h3>
+<blockquote>
 <p>点击 <strong>添加模型</strong>，输入 <a href="https://ollama.com/search">Ollama 模型库</a>中的模型名称后确认，1Panel 将创建后台拉取任务。模型可用后，可以执行运行、重建或删除等操作。</p>
-<p class="original"><img alt="添加 Ollama 模型" src="../../../img/ai/model_pull.png" /></p>
+</blockquote>
+<p><img alt="添加 Ollama 模型" src="../../../img/ai/model_pull.png" /></p>
+<blockquote>
 <p>点击模型所在行的 <strong>运行</strong>，可在页面内打开终端与模型对话。</p>
-<p class="original"><img alt="运行 Ollama 模型" src="../../../img/ai/model_run.png" /></p>
+</blockquote>
+<p><img alt="运行 Ollama 模型" src="../../../img/ai/model_run.png" /></p>
 <h3 id="23">2.3 连接和同步<a class="headerlink" href="#23" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
 <ul>
 <li><strong>连接信息</strong>：查看不同访问场景下的 Ollama 地址。容器内访问、主机访问和外部访问的地址可能不同，应以页面显示为准。</li>
 <li><strong>从服务器同步</strong>：当模型由其他工具添加或删除后，从 Ollama 服务重新读取模型列表。</li>
 <li><strong>AI 代理增强</strong>：为 Ollama 配置反向代理，可结合域名、HTTPS 和 IP 白名单限制外部访问。</li>
 <li><strong>Open WebUI</strong>：按页面入口跳转至已支持的 Web 管理工具。</li>
 </ul>
+</div>
 <h2 id="3-vllm">3 vLLM<a class="headerlink" href="#3-vllm" title="Permanent link">⚓︎</a></h2>
-<p>vLLM 页面用于创建和维护本地推理服务，支持查看状态、编辑、启动、停止、重启、删除和任务进度。具体配置参见 <a href="../vllm/">vLLM</a>。</p>
+<div class="admonition note">
+<p>vLLM 页面用于创建和维护本地推理服务，支持查看状态、编辑、启动、停止、重启、删除和查看任务进度。具体配置参见 <a href="../vllm/">vLLM</a>。</p>
+</div>
 <h2 id="4">4 模型下载器<a class="headerlink" href="#4" title="Permanent link">⚓︎</a></h2>
 <div class="admonition info">
 <p class="admonition-title">版本说明</p>
 <p>模型下载器需要专业版或企业版许可证。</p>
 </div>
-<p>模型下载器用于搜索和下载 Hugging Face、ModelScope 或兼容镜像站中的模型，并统一查看下载任务和本地模型目录。可按页面配置下载目录、镜像地址和访问令牌；私有或受限模型必须使用具有相应权限的令牌。</p>
-<p>下载任务支持查看进度和错误信息，并可取消或重试。删除本地模型前，应确认该目录未被 vLLM 或其他服务使用。</p>
+<blockquote>
+<p>模型下载器用于搜索和下载 Hugging Face、ModelScope 或兼容镜像站中的模型，并统一查看下载任务和本地模型目录。可按页面配置下载目录、镜像地址和访问令牌；私有或受限模型必须使用具有相应权限的令牌。
+下载任务支持查看进度和错误信息，并可取消或重试。删除本地模型前，应确认该目录未被 vLLM 或其他服务使用。</p>
+</blockquote>
 
 
 

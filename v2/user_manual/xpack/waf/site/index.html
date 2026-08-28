@@ -5910,19 +5910,23 @@
 <p>进入 <strong>WAF -&gt; 网站设置</strong>，选择一个已创建的网站后，可以配置仅作用于该网站的 WAF 开关、执行策略、检测强度、频率限制、默认规则和自定义类配置。</p>
 </div>
 <h2 id="1">1 网站开关与执行策略<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <ul>
 <li><strong>网站开关</strong>：只有 WAF 总开关和当前网站开关同时开启，网站规则才会生效；</li>
 <li><strong>防护模式</strong>：命中规则后按规则动作处理请求；</li>
 <li><strong>观察模式</strong>：记录命中结果但不阻断请求，适合上线前观察；</li>
 <li><strong>检测强度</strong>：可以选择标准或严格。网站使用严格模式前，需要先在全局默认规则的 <strong>其他</strong> 页面开启严格模式。</li>
 </ul>
+</div>
 <h2 id="2">2 频率限制<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <p>网站设置提供 <strong>访问频率限制</strong>，可以为当前网站配置统计周期、请求阈值、封锁时间和统计模式。</p>
 <ul>
 <li><strong>全局模式</strong>：统计单位时间内该 IP 对网站任意 URL 的请求总数；</li>
 <li><strong>URL 模式</strong>：分别统计单位时间内该 IP 对单个 URL 的请求数。</li>
 </ul>
 <p>攻击频率限制、404 频率限制和专业版 URL 频率限制位于 <strong>全局设置 -&gt; 频率限制</strong>，不在网站设置中单独配置。</p>
+</div>
 <h2 id="3">3 默认规则<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
 <table>
 <thead>
@@ -5950,7 +5954,9 @@
 </tr>
 </tbody>
 </table>
+<div class="admonition note">
 <p>全局默认规则用于提供初始配置，已有网站的实际状态以本页为准。HTTP 规则采用允许列表逻辑，关闭某个方法后，该网站使用该方法的正常请求也可能被阻止。</p>
+</div>
 <h2 id="4">4 自定义规则<a class="headerlink" href="#4" title="Permanent link">⚓︎</a></h2>
 <table>
 <thead>

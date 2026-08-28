@@ -5855,12 +5855,18 @@
 
 
 <h1 id="_1">续签证书<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
+<div class="admonition note">
 <p>通过 DNS 账户或 HTTP 验证申请的证书可以启用自动续签；使用手动 DNS 验证或手动上传的证书不能按同样方式自动续签。是否支持自动续签以证书列表开关状态为准。</p>
+</div>
 <h2 id="_2">自动续签<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <p>启用 <strong>自动续签</strong> 后，1Panel 会在证书临近到期时发起续签。续签依赖 ACME 账户、DNS 账户或 HTTP 验证路径持续可用；域名解析、API 凭证、网络或网站配置变化都可能导致失败。</p>
+</div>
 <h2 id="_3">手动续签<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <p>点击证书所在行的 <strong>申请</strong> 可手动触发续签。手动 DNS 类型会显示需要添加的解析记录，完成解析后再继续申请。任务状态和错误信息可在证书日志或任务日志中查看。</p>
-<p class="browser-mockup"><img alt="续签证书" src="../../../img/websites/certificate_renew.png" /></p>
+</div>
+<p><img alt="续签证书" src="../../../img/websites/certificate_renew.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">续签后的网站证书</p>
 <p>续签成功后，应确认使用该证书的网站已经加载新证书，并从客户端检查到期时间。业务侧存在 CDN、负载均衡或外部代理时，还需同步更新对应入口。</p>

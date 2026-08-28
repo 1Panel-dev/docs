@@ -5929,12 +5929,15 @@
 <p>Skills Hub 用于在企业内部导入、审核、发布、安装和维护智能体 Skill，并保留版本与风险检查信息。入口为 <strong>AI -&gt; Skills Hub</strong>。</p>
 </div>
 <h2 id="1-skill">1 导入 Skill<a class="headerlink" href="#1-skill" title="Permanent link">⚓︎</a></h2>
-<p>页面支持以下来源：</p>
-<ul>
-<li>上传 <code>.zip</code>、<code>.7z</code>、<code>.tar</code> 或 <code>.tar.gz</code> 格式的 Skill 压缩包，文件不超过 5 MB，压缩包中需包含 <code>SKILL.md</code>；</li>
-<li>从 GitHub 仓库地址和分支或 Tag 导入；</li>
-<li>从可下载的 <code>.zip</code> 软件包 URL 导入。</li>
-</ul>
+<div class="admonition note">
+<p>页面支持以下来源：
+- 上传 <code>.zip</code>、<code>.7z</code>、<code>.tar</code> 或 <code>.tar.gz</code> 格式的 Skill 压缩包，文件不超过 5 MB，压缩包中需包含 <code>SKILL.md</code>；
+- 从 GitHub 仓库地址和分支或 Tag 导入；
+- 从可下载的 <code>.zip</code> 软件包 URL 导入。</p>
+</div>
+<p><img alt="上传 Skill" src="../../../img/ai/skills_hub_upload.png" /></p>
+<p><img alt="从 GitHub 仓库地址导入" src="../../../img/ai/skills_hub_import_github.png" /></p>
+<p><img alt="从压缩包 URL 导入" src="../../../img/ai/skills_hub_import_url.png" /></p>
 <div class="admonition note">
 <p>导入时填写版本。系统完成解析后会记录 Skill 名称、描述、来源、适用智能体、版本、状态和风险等级。</p>
 </div>
@@ -5942,15 +5945,18 @@
 <div class="admonition note">
 <p>Skill 状态包括待审核、已审核、已上架、已下架、审核未通过和已删除。具备管理权限的用户可以执行审核通过、审核驳回、上架、下架和删除操作。</p>
 </div>
+<p><img alt="Skill 列表" src="../../../img/ai/skills_hub_list_pending.png" /></p>
 <div class="admonition warning">
 <p class="admonition-title">风险检查</p>
 <p>风险检查会展示风险等级、文件路径、规则类型、命中关键字和说明。发布前应人工复核 Skill 内容及其依赖，不应仅根据自动检查结果判断安全性。</p>
 </div>
+<p><img alt="风险等级说明" src="../../../img/ai/skills_hub_risk.png" /></p>
 <h2 id="3">3 版本管理<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>在 Skill 详情中可以查看概览和版本历史。版本列表记录状态、风险等级、创建时间、发布时间和版本标记，并支持下载已发布的软件包。</p>
 </div>
 <h2 id="4">4 自定义智能体<a class="headerlink" href="#4" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <p>在 <strong>自定义智能体</strong> 中点击 <strong>添加智能体</strong>，配置 Skill 的安装位置：</p>
 <ul>
 <li><strong>名称</strong>：用于识别目标；</li>
@@ -5959,7 +5965,11 @@
 <li><strong>安装后命令</strong>：解压完成后执行的可选命令；</li>
 <li><strong>描述和状态</strong>：说明用途并控制目标是否可选。</li>
 </ul>
+</div>
+<p><img alt="自定义智能体列表" src="../../../img/ai/skills_hub_targets.png" /></p>
+<blockquote>
 <p>安装 Skill 时可以选择一个或多个已启用目标。安装后命令会在目标节点执行，配置前应确认命令来源和执行影响。</p>
+</blockquote>
 <h2 id="5">5 离线环境<a class="headerlink" href="#5" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>企业版离线环境不能直接访问外部 GitHub 仓库或软件包地址时，应先在可联网环境准备并审查 Skill 包，再使用上传方式导入。</p>

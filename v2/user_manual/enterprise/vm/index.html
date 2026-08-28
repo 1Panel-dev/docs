@@ -5933,6 +5933,7 @@
 <p>首次进入时，系统会检查虚拟化能力、KVM 辅助服务以及相关依赖。页面提示缺少可安装依赖时，可按引导安装；硬件虚拟化未开启、内核模块不可用或平台不受支持时，需要先在宿主机或固件中处理。</p>
 </div>
 <h2 id="2">2 页面结构<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <ul>
 <li><strong>概览</strong>：查看虚拟机、资源和存储摘要，并扫描孤立资源；</li>
 <li><strong>虚拟机</strong>：创建、编辑、启动、停止、重启、重命名、删除和进入控制台；</li>
@@ -5941,7 +5942,9 @@
 <li><strong>网络</strong>：管理 NAT 或桥接网络；</li>
 <li><strong>存储池</strong>：管理虚拟磁盘存放位置和容量。</li>
 </ul>
+</div>
 <h2 id="3">3 创建虚拟机<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <ol>
 <li>准备可用 ISO 或模板、网络和存储池。</li>
 <li>进入 <strong>虚拟机</strong> 标签，点击 <strong>创建</strong>。</li>
@@ -5949,13 +5952,16 @@
 <li>选择网络及其他启动参数，确认后提交。</li>
 <li>虚拟机启动后，通过控制台完成操作系统安装。</li>
 </ol>
+</div>
 <h2 id="4">4 网络与存储<a class="headerlink" href="#4" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <ul>
 <li>NAT 网络需要配置网段、网关和 DHCP 地址范围；</li>
 <li>桥接网络需要选择宿主机现有桥接接口；</li>
 <li>存储池创建时填写名称、类型、路径和描述；</li>
 <li>删除网络或存储池前，应确认没有虚拟机或磁盘仍在使用。</li>
 </ul>
+</div>
 <div class="admonition danger">
 <p class="admonition-title">宿主机风险</p>
 <p>虚拟机占用宿主机 CPU、内存、磁盘和网络。过量分配、错误桥接或删除虚拟磁盘都可能影响宿主机和业务，生产环境操作前应完成容量评估和备份。</p>

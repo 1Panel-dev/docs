@@ -5968,6 +5968,7 @@
 <p>点击实例选择器中的 <strong>安装 MongoDB</strong>，可跳转到应用商店完成安装。安装完成后，页面会显示本地实例状态，并提供连接信息、从服务器同步和 Mongo Express 等入口。</p>
 </div>
 <h3 id="12">1.2 远程实例<a class="headerlink" href="#12" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
 <p>进入 <strong>远程数据库</strong>，点击 <strong>创建远程数据库</strong>，填写以下参数：</p>
 <ul>
 <li><strong>名称</strong>：1Panel 中用于识别该连接的名称；</li>
@@ -5977,10 +5978,12 @@
 <li><strong>用户名、密码</strong>：远程实例凭据；</li>
 <li><strong>超时时间、描述</strong>：连接超时和备注。</li>
 </ul>
+</div>
 <div class="admonition note">
 <p>保存前必须先点击 <strong>连接测试</strong>。解绑远程实例只会删除 1Panel 中的连接信息，不会删除远程 MongoDB 数据。</p>
 </div>
 <h2 id="2">2 创建数据库<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <p>选择目标实例后点击 <strong>创建数据库</strong>，填写数据库名、用户名、密码、权限和描述。当前页面提供以下权限：</p>
 <ul>
 <li><code>dbOwner</code>：数据库所有者；</li>
@@ -5988,6 +5991,7 @@
 <li><code>readWrite</code>：读写；</li>
 <li><code>userAdmin</code>：用户管理。</li>
 </ul>
+</div>
 <h2 id="3">3 数据库操作<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>列表支持修改密码、调整权限、查看备份、导入备份和删除数据库。数据库被外部删除后，页面会标记异常状态；可以使用 <strong>从服务器同步</strong> 更新 1Panel 中的记录。</p>

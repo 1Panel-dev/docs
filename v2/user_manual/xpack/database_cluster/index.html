@@ -5885,6 +5885,7 @@
 <p>进入 <strong>高级功能 -&gt; 数据库集群</strong>，可以管理 MySQL、PostgreSQL 和 Redis 的主从部署。页面按数据库类型提供独立标签。</p>
 </div>
 <h2 id="1">1 使用前提<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <ul>
 <li>已在节点管理中添加并检查目标节点；</li>
 <li>源节点和目标节点之间网络互通；</li>
@@ -5892,7 +5893,9 @@
 <li>数据库端口未被占用，防火墙策略允许集群内部通信；</li>
 <li>已完成业务数据备份。</li>
 </ul>
+</div>
 <h2 id="2">2 创建集群<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <ol>
 <li>选择 MySQL、PostgreSQL 或 Redis 标签。</li>
 <li>点击 <strong>添加集群</strong>，填写集群名称。</li>
@@ -5900,6 +5903,7 @@
 <li>提交任务并在任务日志中确认安装完成。</li>
 <li>在已有集群中添加从节点，等待初始化和复制状态正常。</li>
 </ol>
+</div>
 <h2 id="3">3 日常管理<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>页面展示集群节点、角色、状态和复制信息，并支持同步状态、添加节点和删除节点。删除集群节点时，页面会检查关联的应用安装；是否同时删除应用和数据以确认对话框为准。</p>

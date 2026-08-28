@@ -5885,12 +5885,15 @@
 <p>进入 <strong>系统 -&gt; 磁盘管理</strong>，可以查看系统盘、未分区磁盘和普通磁盘的容量、分区、文件系统、挂载点、使用率、磁盘类型、型号和序列号。</p>
 </div>
 <h2 id="1">1 磁盘分类<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <ul>
 <li><strong>系统盘</strong>：承载当前系统的磁盘。页面只展示信息，不提供挂载、卸载或分区操作。</li>
 <li><strong>未分区磁盘</strong>：未创建分区且未挂载的磁盘，可以从页面执行分区。</li>
 <li><strong>普通磁盘</strong>：展示现有分区及挂载状态，可以执行挂载或卸载。</li>
 </ul>
+</div>
 <h2 id="2">2 分区并挂载<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <ol>
 <li>在未分区磁盘卡片中点击 <strong>分区</strong>。</li>
 <li>选择文件系统，当前支持 <code>ext4</code> 和 <code>xfs</code>。</li>
@@ -5898,6 +5901,7 @@
 <li>根据需要启用 <strong>自动挂载</strong>；启用后可以同时配置 <code>nofail</code>。</li>
 <li>确认磁盘设备和挂载点无误后提交。</li>
 </ol>
+</div>
 <div class="admonition danger">
 <p class="admonition-title">数据风险</p>
 <p>分区和创建文件系统会清除目标磁盘上的原有数据。1Panel 不会替你判断磁盘中是否存在有效数据，操作前必须核对设备名并完成备份。</p>

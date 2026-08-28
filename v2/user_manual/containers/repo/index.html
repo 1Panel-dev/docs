@@ -5859,9 +5859,13 @@
 <p>镜像仓库用于保存 Docker Registry 连接信息，供镜像拉取和推送使用。入口为 <strong>容器 -&gt; 仓库</strong>，社区版、专业版和企业版均可使用。</p>
 </div>
 <h2 id="1">1 创建仓库<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <p>点击 <strong>创建</strong>，填写名称、协议、下载地址，以及是否认证、用户名和密码。启用认证后，1Panel 会使用所填凭证执行 Docker 登录。</p>
+</div>
 <p class="original"><img alt="创建镜像仓库" src="../../../img/containers/repo_create.png" /></p>
+<div class="admonition warning">
 <p>使用 HTTP 仓库时，1Panel 会按确认提示把地址加入 Docker 不安全仓库配置，并需要重启 Docker 服务。重启会影响当前节点上正在进行的镜像操作，并可能短暂影响容器管理。</p>
+</div>
 <h2 id="2">2 管理仓库<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>列表支持检查连接、编辑和删除。编辑或删除 1Panel 中的仓库记录不会删除仓库服务端已有镜像；凭证变更后应重新检查连接。</p>

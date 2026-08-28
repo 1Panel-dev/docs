@@ -5961,7 +5961,7 @@
 <li><strong>备注</strong>：填写对该站点作用的描述 </li>
 </ul>
 </div>
-<p class="browser-mockup"><img alt="img.png" src="../../../img/websites/auto_create.png" /></p>
+<p><img alt="img.png" src="../../../img/websites/auto_create.png" /></p>
 <h2 id="2">2 运行环境<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>可以利用已添加的运行环境来创建网站。</p>
@@ -5979,7 +5979,7 @@
 <li><strong>备注</strong>：提供该站点的功能描述</li>
 </ul>
 </div>
-<p class="browser-mockup"><img alt="img.png" src="../../../img/websites/website_runtime_create.png" /></p>
+<p><img alt="img.png" src="../../../img/websites/website_runtime_create.png" /></p>
 <h2 id="3">3 反向代理<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>支持创建反向代理网站，允许用户将请求转发到其他服务。</p>
@@ -5994,7 +5994,7 @@
 <li><strong>备注</strong>：描述该站点的功能或用途</li>
 </ul>
 </div>
-<p class="browser-mockup"><img alt="img.png" src="../../../img/websites/proxy_create.png" /></p>
+<p><img alt="img.png" src="../../../img/websites/proxy_create.png" /></p>
 <h2 id="4">4 静态网站<a class="headerlink" href="#4" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>支持快速创建静态网站，提供便捷的部署和管理功能，让用户轻松发布和维护静态内容。</p>
@@ -6009,7 +6009,7 @@
 <li><strong>备注</strong>：简要描述该站点的功能或用途</li>
 </ul>
 </div>
-<p class="browser-mockup"><img alt="img.png" src="../../../img/websites/static_create.png" /></p>
+<p><img alt="img.png" src="../../../img/websites/static_create.png" /></p>
 <h2 id="5">5 子网站<a class="headerlink" href="#5" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>为已有的 PHP 或静态页面类型网站创建子网站，子网站可以选择已存在的 PHP 和静态网站的目录作为主目录。</p>
@@ -6025,8 +6025,9 @@
 <li><strong>备注</strong>：简要描述该站点的功能或用途</li>
 </ul>
 </div>
-<p class="browser-mockup"><img alt="img.png" src="../../../img/websites/subsite_create.png" /></p>
+<p><img alt="img.png" src="../../../img/websites/subsite_create.png" /></p>
 <h2 id="6-tcpudp">6 TCP/UDP 代理<a class="headerlink" href="#6-tcpudp" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <p>TCP/UDP 代理使用 OpenResty Stream 模块转发四层流量，适合数据库、消息服务或其他非 HTTP 服务。当前版本要求 OpenResty 不低于 <code>1.27.1.2-3-3-focal</code>，不满足时页面会禁止创建。</p>
 <ul>
 <li><strong>监听端口</strong>：对外监听的一个或多个端口，多个端口使用英文逗号分隔。</li>
@@ -6035,6 +6036,7 @@
 <li><strong>代号</strong>：用于在 1Panel 中标识该代理配置。</li>
 <li><strong>监听 IPv6</strong>：按服务器网络配置决定是否同时监听 IPv6。</li>
 </ul>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">端口与访问控制</p>
 <p>创建前应确认监听端口未被占用，并在主机防火墙和云安全组中按需放行。TCP/UDP 代理不提供网站 HTTPS 配置，应由上游协议自身负责认证和加密。</p>

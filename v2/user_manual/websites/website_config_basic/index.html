@@ -6192,41 +6192,41 @@
 <div class="admonition note">
 <p>域名设置页面允许用户管理网站的域名和端口配置。</p>
 </div>
-<p class="browser-mockup"><img alt="img.png" src="../../../img/websites/config_basic_domain.png" /></p>
+<p><img alt="img.png" src="../../../img/websites/config_basic_domain.png" /></p>
 <h2 id="2">2 网站目录<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>网站目录页面支持查看网站的根目录，设置运行目录，以及配置运行用户和用户组等选项。</p>
 </div>
-<p class="browser-mockup"><img alt="img.png" src="../../../img/websites/config_basic_folder.png" /></p>
+<p><img alt="img.png" src="../../../img/websites/config_basic_folder.png" /></p>
 <h2 id="3">3 默认文档<a class="headerlink" href="#3" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>配置默认文档，以便在用户访问网站根目录时自动加载指定的文件。</p>
 </div>
-<p class="browser-mockup"><img alt="img_1.png" src="../../../img/websites/basic_config_default.png" /></p>
+<p><img alt="img_1.png" src="../../../img/websites/basic_config_default.png" /></p>
 <h2 id="4">4 流量限制<a class="headerlink" href="#4" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>允许用户配置流量限制，通过选择不同的限制方案，控制网站的带宽和访问流量。</p>
 </div>
-<p class="browser-mockup"><img alt="img.png" src="../../../img/websites/basic_config_limit.png" /></p>
+<p><img alt="img.png" src="../../../img/websites/basic_config_limit.png" /></p>
 <h2 id="5">5 反向代理<a class="headerlink" href="#5" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>反向代理功能允许将网站请求转发到后端服务器，以实现负载均衡、安全控制和内容分发。</p>
 </div>
-<p class="browser-mockup"><img alt="img.png" src="../../../img/websites/basic_config_proxy.png" /></p>
+<p><img alt="img.png" src="../../../img/websites/basic_config_proxy.png" /></p>
 <div class="admonition note">
 <p>用户也可以在当前页面开启并配置反向代理缓存规则，或者清除当前缓存。</p>
 </div>
-<p class="browser-mockup"><img alt="img.png" src="../../../img/websites/basic_config_proxy_cache.png" /></p>
+<p><img alt="img.png" src="../../../img/websites/basic_config_proxy_cache.png" /></p>
 <h2 id="6">6 负载均衡<a class="headerlink" href="#6" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>创建负载均衡规则，用于将当前网站请求转发到多个后端服务。当前页面仅创建负载均衡规则，使用负载均衡规则需要在创建反向代理时使用 <code>http://&lt;负载均衡名称&gt;</code>。</p>
 </div>
-<p class="browser-mockup"><img alt="img.png" src="../../../img/websites/basic_config_upstream.png" /></p>
+<p><img alt="img.png" src="../../../img/websites/basic_config_upstream.png" /></p>
 <h2 id="7">7 密码访问<a class="headerlink" href="#7" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>密码访问功能允许用户为网站设置访问密码，以增强网站的安全性，限制未经授权的访问。支持创建全局配置或按路径配置。</p>
 </div>
-<p class="browser-mockup"><img alt="img.png" src="../../../img/websites/basic_config_password.png" /></p>
+<p><img alt="img.png" src="../../../img/websites/basic_config_password.png" /></p>
 <h2 id="8-cors">8 CORS<a class="headerlink" href="#8-cors" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>配置允许访问网站资源的来源、方法、请求头、凭证和预检请求缓存时间。允许携带凭证时不能把允许来源配置为不受限制的通配范围。</p>
@@ -6256,44 +6256,46 @@
 </ul>
 <p>通过以上配置，用户可以有效提升网站的安全性和访问性能。</p>
 </div>
-<p class="browser-mockup"><img alt="img.png" src="../../../img/websites/basic_config_https.png" /></p>
+<p><img alt="img.png" src="../../../img/websites/basic_config_https.png" /></p>
 <h2 id="10-ip">10 真实 IP<a class="headerlink" href="#10-ip" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>配置客户端 IP 获取方式及可信的 IP 来源，OpenResty 会分析 HTTP Header 中的 IP 信息，准确识别并记录访客的真实 IP 地址，包括在访问日志中。</p>
 </div>
-<p class="browser-mockup"><img alt="img.png" src="../../../img/websites/basic_config_real_ip.png" /></p>
+<p><img alt="img.png" src="../../../img/websites/basic_config_real_ip.png" /></p>
 <h2 id="11">11 伪静态<a class="headerlink" href="#11" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>伪静态功能通过将动态 URL 转换为更友好的静态 URL，提高网站的可读性和搜索引擎优化效果。</p>
 </div>
-<p class="browser-mockup"><img alt="img.png" src="../../../img/websites/basic_config_static.png" /></p>
+<p><img alt="img.png" src="../../../img/websites/basic_config_static.png" /></p>
 <h2 id="12">12 防盗链<a class="headerlink" href="#12" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>防盗链功能通过验证请求来源，阻止非授权用户直接链接和下载网站资源，以保护网站内容安全。</p>
 </div>
-<p class="browser-mockup"><img alt="img.png" src="../../../img/websites/basic_config_protection.png" /></p>
+<p><img alt="img.png" src="../../../img/websites/basic_config_protection.png" /></p>
 <h2 id="13">13 重定向<a class="headerlink" href="#13" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>重定向功能允许将访问特定URL的请求自动转发到另一个URL，以实现链接管理和流量引导。</p>
 </div>
-<p class="browser-mockup"><img alt="img.png" src="../../../img/websites/basic_config_redirect.png" /></p>
+<p><img alt="img.png" src="../../../img/websites/basic_config_redirect.png" /></p>
 <h2 id="14-php">14 PHP<a class="headerlink" href="#14-php" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>静态页面类型的网站可以在此选择 PHP 运行环境切换为 PHP 类型网站，PHP 类型的网站可以切换不同的 PHP 运行环境。</p>
 </div>
-<p class="browser-mockup"><img alt="img.png" src="../../../img/websites/basic_config_php.png" /></p>
+<p><img alt="img.png" src="../../../img/websites/basic_config_php.png" /></p>
 <h2 id="15">15 资源<a class="headerlink" href="#15" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>将当前网站与某一个数据库进行关联，备份网站时将同时备份关联的数据库。切换其他数据库会导致以前的备份无法恢复。</p>
 </div>
-<p class="browser-mockup"><img alt="img.png" src="../../../img/websites/basic_config_resource.png" /></p>
+<p><img alt="img.png" src="../../../img/websites/basic_config_resource.png" /></p>
 <h2 id="16">16 其他<a class="headerlink" href="#16" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>支持更改主域名、切换分组以及更新备注信息等操作。</p>
 </div>
-<p class="browser-mockup"><img alt="img.png" src="../../../img/websites/basic_config_other.png" /></p>
+<p><img alt="img.png" src="../../../img/websites/basic_config_other.png" /></p>
 <h2 id="17-tcpudp">17 TCP/UDP 配置<a class="headerlink" href="#17-tcpudp" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <p>TCP/UDP 代理网站可在此调整协议、监听端口和上游负载均衡配置。修改监听端口后，应同步检查端口占用、防火墙和云安全组。</p>
+</div>
 
 
 

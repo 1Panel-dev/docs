@@ -5885,12 +5885,14 @@
 <p>进入 <strong>高级功能 -&gt; 移动端</strong>，可以生成用于 1Panel 移动端 App 绑定面板的二维码。</p>
 </div>
 <h2 id="1">1 绑定前提<a class="headerlink" href="#1" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <ul>
 <li>移动设备可以访问当前面板地址；</li>
 <li>面板地址、端口、HTTPS 和安全入口配置正确；</li>
 <li>如开启授权 IP、域名绑定或防火墙限制，已允许移动设备访问；</li>
 <li>当前账号已启用 API 接口，并配置 API Key、IP 白名单和接口密钥有效期。</li>
 </ul>
+</div>
 <h2 id="2">2 生成二维码<a class="headerlink" href="#2" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p>页面根据面板别名和当前访问地址生成绑定二维码，二维码中的临时令牌有效期为 1 分钟。请使用移动端 App 在倒计时结束前完成扫描。</p>
@@ -5900,6 +5902,7 @@
 <p>绑定二维码和 API Key 都属于敏感凭据。二维码过期后应重新生成。</p>
 </div>
 <h2 id="3-api">3 API 接口配置<a class="headerlink" href="#3-api" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
 <p>移动端绑定依赖当前账号的 API 接口设置：</p>
 <ul>
 <li><strong>API Key</strong>：移动端请求凭据；</li>
@@ -5907,6 +5910,7 @@
 <li><strong>接口密钥有效期</strong>：校验接口请求时间戳与当前时间的间隔，单位为分钟；设置为 <code>0</code> 时不校验请求时间戳。该设置不会让 API Key 自动失效；如需撤销访问，应重置 API Key 或禁用 API 接口；</li>
 <li><strong>API 接口状态</strong>：禁用后，已绑定客户端无法继续调用。</li>
 </ul>
+</div>
 
 
 
