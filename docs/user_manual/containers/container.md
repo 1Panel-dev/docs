@@ -4,7 +4,7 @@
 
     - 从菜单中选择【容器】，然后单击【创建容器】
     - 根据需要配置容器设置
-    - 镜像需要从镜像镜像菜单手动拉取
+    - 镜像需要从镜像菜单手动拉取
 
 ![img.png](../../img/containers/container_create.png)
 {: .original}

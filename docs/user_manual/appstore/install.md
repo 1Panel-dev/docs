@@ -10,21 +10,17 @@
     （1）点击【安装】按钮进入应用详情页面。
 
 ![img.png](../../img/app/app_detail.png)
-{: .browser-mockup}
 
 !!! note ""
     
     （2）填写数据库、端口等参数。
 
 ![img.png](../../img/app/app_param.png)
-{: .browser-mockup}
 
 
 !!! note ""
     
     （3）配置高级设置选项，例如是否暴露外部端口、资源限制以及编辑 compose文件等。最后，点击【确认】按钮，将弹出应用安装日志界面，等待应用安装完成。
 
-![img.png](../../img/app/installation_log.png){: .browser-mockup}
 
 
-![img.png](../../img/app/app_install.png){: .browser-mockup}

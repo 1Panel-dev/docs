@@ -160,8 +160,8 @@ schema_type: TechArticle
     1. 登录企业微信管理后台  
     2. 进入 【应用管理】 -> 选择为 1Panel 告警创建或指定的自建应用  
     3. 在 **安全设置 / 可调用 IP 白名单** 中：
-        - 如**开启 IP 白名单**，则只允许白名单中的 IP 调用接口，建议将运行 1Panel 的服务器公网 IP 地址加入白名单  
-        - 如**未开启 / 未配置 IP 白名单**，则默认允许任意来源 IP 调用接口  
+        - 如 **开启 IP 白名单** ，则只允许白名单中的 IP 调用接口，建议将运行 1Panel 的服务器公网 IP 地址加入白名单  
+        - 如 **未开启 / 未配置 IP 白名单** ，则默认允许任意来源 IP 调用接口  
     4. 若已配置白名单，需确保服务器网络出口 IP 与白名单配置一致，避免因出口 NAT 导致 IP 不匹配  
 
     配置 IP 白名单后，仅允许来自白名单 IP 的服务器调用相关接口；如果更换服务器或出口 IP，需要同步更新白名单配置。
@@ -294,7 +294,7 @@ schema_type: TechArticle
 ### 4.2 OneDrive 自定义配置
 
 !!! note ""
-    **在调用 Onedrive API 时需要使用到 4 个参数：**
+    **在调用 OneDrive API 时需要使用到 4 个参数：**
 
     - client_id: 客户端ID
     - client_secret: 客户端密码
@@ -303,9 +303,9 @@ schema_type: TechArticle
 
 !!! note ""
 
-    （1）访问并登录 MicroSoft Azure：https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade。
+    （1）访问并登录 Microsoft Azure：https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade。
 
-    （2）点击新注册，并填写注册信息，其中的重定向 URI 作为 重定向 Url 参数。
+    （2）点击新注册，并填写注册信息，其中的重定向 URI 作为 重定向 URL 参数。
 
 ![img.png](../img/settings/onedrive_custom1.png)
 {: .original}
@@ -326,7 +326,7 @@ schema_type: TechArticle
 
 !!! note ""
     
-    （5）在【API 权限】页面选择需要的权限，添加权限，Microsoft Graph，委托的权限，勾选 Files.ReadWrite All、offline_access、User.Read，这将作为 scope 传递。
+    （5）在【API 权限】页面选择需要的权限，添加权限，Microsoft Graph，委托的权限，勾选 Files.ReadWrite.All、offline_access、User.Read，这将作为 scope 传递。
 
 ![img.png](../img/settings/onedrive_custom4.png)
 {: .original}
@@ -421,7 +421,7 @@ schema_type: TechArticle
 {: .original}
 
 !!! note ""
-    （8）点击授权码的获取按钮，登陆谷歌账号，跳转至 1Panel 应用，完成登陆。 
+    （8）点击授权码的获取按钮，登录谷歌账号，跳转至 1Panel 应用，完成登陆。 
 
 ![img.png](../img/settings/google_drive_1.png)
 {: .original}
@@ -504,7 +504,6 @@ schema_type: TechArticle
     版本能力以 [1Panel 官网](https://1panel.cn/)及当前许可证页面显示为准。
 
 ![img.png](../img/settings/licenses.png)
-{: .browser-mockup}
 
 ## 7 关于
 

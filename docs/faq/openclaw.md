@@ -10,7 +10,7 @@
 !!! note ""
     OpenClaw 支持通过 1Panel 的智能体功能快速部署，具体可参考 [安装部署文档](../user_manual/appstore/openclaw.md)。
 
-## 如何通过 Ollama 运行本地模型？
+## 3 如何通过 Ollama 运行本地模型？
 
 
 !!! note ""

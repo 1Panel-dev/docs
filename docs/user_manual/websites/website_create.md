@@ -28,7 +28,6 @@ schema_type: TechArticle
     - **备注**：填写对该站点作用的描述 
 
 ![img.png](../../img/websites/auto_create.png)
-{: .browser-mockup}
 
 ## 2 运行环境
 
@@ -49,7 +48,6 @@ schema_type: TechArticle
     - **备注**：提供该站点的功能描述
 
 ![img.png](../../img/websites/website_runtime_create.png)
-{: .browser-mockup}
 
 ## 3 反向代理
 
@@ -67,7 +65,6 @@ schema_type: TechArticle
     - **备注**：描述该站点的功能或用途
 
 ![img.png](../../img/websites/proxy_create.png)
-{: .browser-mockup}
 
 ## 4 静态网站
 
@@ -85,7 +82,6 @@ schema_type: TechArticle
     - **备注**：简要描述该站点的功能或用途
 
 ![img.png](../../img/websites/static_create.png)
-{: .browser-mockup}
 
 ## 5 子网站
 
@@ -104,17 +100,17 @@ schema_type: TechArticle
     - **备注**：简要描述该站点的功能或用途
 
 ![img.png](../../img/websites/subsite_create.png)
-{: .browser-mockup}
 
 ## 6 TCP/UDP 代理
 
-TCP/UDP 代理使用 OpenResty Stream 模块转发四层流量，适合数据库、消息服务或其他非 HTTP 服务。当前版本要求 OpenResty 不低于 `1.27.1.2-3-3-focal`，不满足时页面会禁止创建。
+!!! note ""
+    TCP/UDP 代理使用 OpenResty Stream 模块转发四层流量，适合数据库、消息服务或其他非 HTTP 服务。当前版本要求 OpenResty 不低于 `1.27.1.2-3-3-focal`，不满足时页面会禁止创建。
 
-- **监听端口**：对外监听的一个或多个端口，多个端口使用英文逗号分隔。
-- **UDP**：开启后使用 UDP，否则使用 TCP。
-- **负载均衡**：配置一个或多个上游服务器，以及权重、失败次数、连接数和失败超时等参数。
-- **代号**：用于在 1Panel 中标识该代理配置。
-- **监听 IPv6**：按服务器网络配置决定是否同时监听 IPv6。
+    - **监听端口**：对外监听的一个或多个端口，多个端口使用英文逗号分隔。
+    - **UDP**：开启后使用 UDP，否则使用 TCP。
+    - **负载均衡**：配置一个或多个上游服务器，以及权重、失败次数、连接数和失败超时等参数。
+    - **代号**：用于在 1Panel 中标识该代理配置。
+    - **监听 IPv6**：按服务器网络配置决定是否同时监听 IPv6。
 
 !!! warning "端口与访问控制"
     创建前应确认监听端口未被占用，并在主机防火墙和云安全组中按需放行。TCP/UDP 代理不提供网站 HTTPS 配置，应由上游协议自身负责认证和加密。

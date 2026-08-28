@@ -13,16 +13,15 @@ schema_type: TechArticle
     列表展示主域名、其他域名、申请方式、ACME 账户、到期时间、状态和自动续签状态，并提供详情、申请/续签、更新、编辑、同步、下载和删除等操作。实际按钮取决于证书来源和当前状态。
 
 ![证书列表](../../img/websites/certificate_list.png)
-{: .browser-mockup}
 
 ## 相关操作
-
-- [申请证书](./certificate_create.md)
-- [上传证书](./certificate_upload.md)
-- [自签证书](./certificate_self_sign.md)
-- [续签证书](./certificate_renew.md)
-- [ACME 账户](./certificate_acme.md)
-- [DNS 账户](./certificate_dns.md)
+!!! note ""
+    - [申请证书](./certificate_create.md)
+    - [上传证书](./certificate_upload.md)
+    - [自签证书](./certificate_self_sign.md)
+    - [续签证书](./certificate_renew.md)
+    - [ACME 账户](./certificate_acme.md)
+    - [DNS 账户](./certificate_dns.md)
 
 !!! warning "删除和下载"
     删除证书前应确认没有网站仍在使用。下载包中可能包含私钥，应通过安全渠道保存和传输。
