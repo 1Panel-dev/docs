@@ -21,10 +21,7 @@ schema_type: TechArticle
 ## 2 下载离线安装包
 
 !!! note ""
-    请根据服务器架构获取对应的离线安装包。
-
-    - **x86_64（amd64）**：请前往 [FIT2CLOUD 开源社区下载页面](https://community.fit2cloud.com/#/products/1panel/downloads) 下载。
-    - **aarch64（arm64）等其他架构**：请填写 [1Panel 企业版试用申请表](https://jsj.top/f/umuYtv) 申请获取安装包。
+    社区版仅提供 x86_64（amd64）架构的离线安装包，请前往 [FIT2CLOUD 开源社区下载页面](https://community.fit2cloud.com/#/products/1panel/downloads) 下载。
 
 ## 3 执行安装命令
 
