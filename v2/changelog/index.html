@@ -3491,6 +3491,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v230" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.3.0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v225" class="md-nav__link">
     <span class="md-ellipsis">
       v2.2.5
@@ -3875,6 +3884,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v230" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.3.0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v225" class="md-nav__link">
     <span class="md-ellipsis">
       v2.2.5
@@ -4238,6 +4256,78 @@
 
 <h1 id="1panel-changelog">1Panel Changelog<a class="headerlink" href="#1panel-changelog" title="Permanent link">¶</a></h1>
 <h2 id="release-notes">Release Notes<a class="headerlink" href="#release-notes" title="Permanent link">¶</a></h2>
+<h3 id="v230">v2.3.0<a class="headerlink" href="#v230" title="Permanent link">¶</a></h3>
+<p>2026-09-14</p>
+<div class="admonition note">
+<p class="admonition-title">New Features</p>
+<ul>
+<li><strong>Models</strong>: Added llmman as a local model provider for model accounts</li>
+<li><strong>Models</strong>: Added DashScope text-to-image API support for custom model accounts</li>
+<li><strong>Models</strong>: Added GB10 images for deploying DeepSeek V4 Flash Vision Exp with vLLM</li>
+<li><strong>Models</strong>: Added an Ascend Qwen3.6-35B-A3B model startup template for vLLM</li>
+<li><strong>Models</strong>: Added support for selecting Ascend device IDs in vLLM</li>
+<li><strong>GPU Monitoring</strong>: Added support for Ascend 910B, AMD, and more accelerator devices</li>
+<li><strong>Websites</strong>: Added automatic compression activation when the OpenResty Brotli module is enabled and improved Gzip defaults</li>
+<li><strong>Runtime</strong>: Added support for bulk environment variable imports</li>
+<li><strong>Runtime</strong>: Added support for changing the version of installed runtimes</li>
+<li><strong>Firewall</strong>: Rebuilt firewall management</li>
+<li><strong>Terminal</strong>: Added support for preserving SSH sessions and recovering them after disconnections</li>
+<li><strong>Terminal</strong>: Added a shortcut in the bottom-right corner of the page with visibility controlled in terminal settings</li>
+<li><strong>Virtual Machine Management</strong>: Added virtual machine management to Professional Edition</li>
+<li><strong>Panel Settings</strong>: Added custom webhook support for alert notifications</li>
+<li><strong>Panel Settings</strong>: Added support for preserving page sessions in menu tabs</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Improvements</p>
+<ul>
+<li><strong>App Store</strong>: Optimized the app upgrade workflow</li>
+<li><strong>Certificates</strong>: Improved key usage configuration for self-signed certificates</li>
+<li><strong>Containers</strong>: Changed the default container list order to sort by name</li>
+<li><strong>Containers</strong>: Improved logging for container startup failures</li>
+<li><strong>System</strong>: Optimized mobile page layouts and file editing</li>
+<li><strong>System</strong>: Optimized footer navigation display</li>
+<li><strong>File Browser</strong>: Improved timeout retries and status prompts for file uploads and cross-node transfers</li>
+<li><strong>File Browser</strong>: Improved progress display and error handling for remote downloads</li>
+<li><strong>File Browser</strong>: Improved filename compatibility and path validation for ZIP extraction</li>
+<li><strong>APP</strong>: Improved connection QR code generation and error messages</li>
+<li><strong>Multi-Node</strong>: Improved prompts for node version mismatches</li>
+<li><strong>Multi-Node</strong>: Improved authentication for node communication</li>
+<li><strong>Interface Settings</strong>: Optimized saving and resetting panel appearance settings</li>
+<li><strong>Panel Settings</strong>: Improved parent-child visibility handling for hidden menus</li>
+<li><strong>System</strong>: Displayed backup upload records in reverse chronological order</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Bug Fixes</p>
+<ul>
+<li><strong>Overview</strong>: Fixed inaccurate disk usage statistics when device aliases are used</li>
+<li><strong>App Store</strong>: Fixed image pull errors when upgrading OpenList</li>
+<li><strong>Agents</strong>: Fixed installation failures for OpenClaw extension channel plugins in some scenarios</li>
+<li><strong>Models</strong>: Fixed validation failures for b.ai model accounts</li>
+<li><strong>Websites</strong>: Fixed an issue where default document names containing underscores or hyphens could not be saved</li>
+<li><strong>Websites</strong>: Fixed SSL port conflicts when creating websites</li>
+<li><strong>Certificates</strong>: Fixed self-signed certificates not being issued by the selected CA</li>
+<li><strong>Containers</strong>: Fixed loss of Compose configuration after deployment failures</li>
+<li><strong>Containers</strong>: Fixed duplicate entries in container port mappings</li>
+<li><strong>Containers</strong>: Fixed missing authentication when pulling images again from private registries</li>
+<li><strong>Containers</strong>: Fixed changes to IP allocation methods after container upgrades or recreation</li>
+<li><strong>Containers</strong>: Fixed disk usage statistics timing out in some scenarios</li>
+<li><strong>System</strong>: Fixed version information not updating after uninstalling and reinstalling while retaining data</li>
+<li><strong>System</strong>: Fixed table selections being unexpectedly cleared when clicking table content</li>
+<li><strong>File Browser</strong>: Fixed file loss when copying or moving large directories</li>
+<li><strong>File Browser</strong>: Fixed a potential bypass of rate limits on public file shares</li>
+<li><strong>Cron</strong>: Fixed scheduled task timeouts accepting values other than positive integers</li>
+<li><strong>Toolbox</strong>: Fixed antivirus scan timeout settings not taking effect</li>
+<li><strong>Multi-Node</strong>: Fixed node status not updating promptly after a successful health check</li>
+<li><strong>Multi-Node</strong>: Fixed forwarding errors for real-time node connections such as terminals</li>
+<li><strong>Interface Settings</strong>: Fixed panel appearance settings being reset when a license is unbound or expires</li>
+<li><strong>Log Audit</strong>: Fixed inaccurate correlation between SSH login and disconnect records</li>
+<li><strong>Panel Settings</strong>: Fixed allowed IP validation errors when accessing the panel through trusted proxies</li>
+<li><strong>Panel Settings</strong>: Fixed documentation source settings not taking effect promptly</li>
+<li><strong>Panel Settings</strong>: Fixed menus disappearing after switching service regions</li>
+</ul>
+</div>
 <h3 id="v225">v2.2.5<a class="headerlink" href="#v225" title="Permanent link">¶</a></h3>
 <p>2026‑08‑07</p>
 <div class="admonition note">
