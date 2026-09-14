@@ -7,6 +7,74 @@ hide:
 
 ## Release Notes
 
+### v2.3.0
+
+2026-09-14
+
+!!! note "New Features"
+
+    - **Models**: Added llmman as a local model provider for model accounts
+    - **Models**: Added DashScope text-to-image API support for custom model accounts
+    - **Models**: Added GB10 images for deploying DeepSeek V4 Flash Vision Exp with vLLM
+    - **Models**: Added an Ascend Qwen3.6-35B-A3B model startup template for vLLM
+    - **Models**: Added support for selecting Ascend device IDs in vLLM
+    - **GPU Monitoring**: Added support for Ascend 910B, AMD, and more accelerator devices
+    - **Websites**: Added automatic compression activation when the OpenResty Brotli module is enabled and improved Gzip defaults
+    - **Runtime**: Added support for bulk environment variable imports
+    - **Runtime**: Added support for changing the version of installed runtimes
+    - **Firewall**: Rebuilt firewall management
+    - **Terminal**: Added support for preserving SSH sessions and recovering them after disconnections
+    - **Terminal**: Added a shortcut in the bottom-right corner of the page with visibility controlled in terminal settings
+    - **Virtual Machine Management**: Added virtual machine management to Professional Edition
+    - **Panel Settings**: Added custom webhook support for alert notifications
+    - **Panel Settings**: Added support for preserving page sessions in menu tabs
+
+!!! note "Improvements"
+
+    - **App Store**: Optimized the app upgrade workflow
+    - **Certificates**: Improved key usage configuration for self-signed certificates
+    - **Containers**: Changed the default container list order to sort by name
+    - **Containers**: Improved logging for container startup failures
+    - **System**: Optimized mobile page layouts and file editing
+    - **System**: Optimized footer navigation display
+    - **File Browser**: Improved timeout retries and status prompts for file uploads and cross-node transfers
+    - **File Browser**: Improved progress display and error handling for remote downloads
+    - **File Browser**: Improved filename compatibility and path validation for ZIP extraction
+    - **APP**: Improved connection QR code generation and error messages
+    - **Multi-Node**: Improved prompts for node version mismatches
+    - **Multi-Node**: Improved authentication for node communication
+    - **Interface Settings**: Optimized saving and resetting panel appearance settings
+    - **Panel Settings**: Improved parent-child visibility handling for hidden menus
+    - **System**: Displayed backup upload records in reverse chronological order
+
+!!! note "Bug Fixes"
+
+    - **Overview**: Fixed inaccurate disk usage statistics when device aliases are used
+    - **App Store**: Fixed image pull errors when upgrading OpenList
+    - **Agents**: Fixed installation failures for OpenClaw extension channel plugins in some scenarios
+    - **Models**: Fixed validation failures for b.ai model accounts
+    - **Websites**: Fixed an issue where default document names containing underscores or hyphens could not be saved
+    - **Websites**: Fixed SSL port conflicts when creating websites
+    - **Certificates**: Fixed self-signed certificates not being issued by the selected CA
+    - **Containers**: Fixed loss of Compose configuration after deployment failures
+    - **Containers**: Fixed duplicate entries in container port mappings
+    - **Containers**: Fixed missing authentication when pulling images again from private registries
+    - **Containers**: Fixed changes to IP allocation methods after container upgrades or recreation
+    - **Containers**: Fixed disk usage statistics timing out in some scenarios
+    - **System**: Fixed version information not updating after uninstalling and reinstalling while retaining data
+    - **System**: Fixed table selections being unexpectedly cleared when clicking table content
+    - **File Browser**: Fixed file loss when copying or moving large directories
+    - **File Browser**: Fixed a potential bypass of rate limits on public file shares
+    - **Cron**: Fixed scheduled task timeouts accepting values other than positive integers
+    - **Toolbox**: Fixed antivirus scan timeout settings not taking effect
+    - **Multi-Node**: Fixed node status not updating promptly after a successful health check
+    - **Multi-Node**: Fixed forwarding errors for real-time node connections such as terminals
+    - **Interface Settings**: Fixed panel appearance settings being reset when a license is unbound or expires
+    - **Log Audit**: Fixed inaccurate correlation between SSH login and disconnect records
+    - **Panel Settings**: Fixed allowed IP validation errors when accessing the panel through trusted proxies
+    - **Panel Settings**: Fixed documentation source settings not taking effect promptly
+    - **Panel Settings**: Fixed menus disappearing after switching service regions
+
 ### v2.2.5
 
 2026‑08‑07
