@@ -7,6 +7,32 @@ hide:
 
 ## Release Notes
 
+### v2.3.1
+
+2026-09-18
+
+!!! note "New Features"
+
+    - **Agents**: Added support for setting a maximum reply length for models in OpenClaw
+    - **Models**: Added a Qwen3.8-Flash-Next model deployment template for dual RTX Pro 5000 GPUs
+    - **File Browser**: Added support for using the filename provided by the server in remote downloads and improved error handling
+    - **Toolbox**: Added panel main service diagnostics and performance data collection to process management
+
+!!! note "Improvements"
+
+    - **Containers**: Improved container network forwarding checks and error messages
+    - **Containers**: Improved the theme display and text layout of container details
+    - **Firewall**: Optimized the firewall startup, restart, and rule synchronization flows
+    - **Firewall**: Optimized port whitelist management, rule recovery, and protection logic
+    - **Firewall**: Improved loading and deletion speed for large rule sets and added support for queued background deletion
+
+!!! note "Bug Fixes"
+
+    - **Websites**: Fixed the issue where related settings could not be saved after enabling Brotli compression in OpenResty
+    - **Terminal**: Fixed interference between the terminal shortcut and terminal page sessions
+    - **Virtual Machine Management**: Fixed forced deletion failures when virtual machine names contain special characters
+    - **Panel Settings**: Fixed excessive CPU usage when accessing the panel with a large authorized IP range
+
 ### v2.3.0
 
 2026-09-14
