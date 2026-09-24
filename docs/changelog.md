@@ -7,6 +7,38 @@ hide:
 
 ## Release Notes
 
+### v2.3.2
+
+2026-09-24
+
+!!! note "New Features"
+
+    - **Panel Settings**: Added support for creating multiple API keys
+    - **Virtual Machine Management**: Added support for mounting multiple CD-ROM ISO images
+
+!!! note "Improvements"
+
+    - **Overview**: Improved logging for disk command failures
+    - **File Browser**: Improved task messages for file copy, move, compress, and decompress
+    - **Firewall**: Optimized firewall state reads and batch verification logic
+    - **System**: Removed the minimum upgrade backup copies limit
+
+!!! note "Bug Fixes"
+
+    - **Models**: Fixed the Ollama page failing to open properly in some scenarios
+    - **Models**: Fixed vLLM uninstall failures in some scenarios
+    - **App Store**: Fixed application upgrade failures in some scenarios
+    - **Websites**: Fixed incorrect priority between HTTP-to-HTTPS redirects and website redirects
+    - **Certificates**: Fixed auto-renewing certificates still triggering expiry alerts
+    - **File Browser**: Fixed file rename failures in some scenarios
+    - **Firewall**: Fixed IPv6 forwarding being disrupted by RA
+    - **Firewall**: Fixed incomplete batch operation and task logs
+    - **Firewall**: Fixed incorrect reporting of port allowances and whitelist synchronization
+    - **Firewall**: Fixed rule synchronization failures in some firewalld scenarios
+    - **Log Audit**: Fixed SSH login logs not being displayed in the server timezone
+    - **Virtual Machine Management**: Fixed abnormal display of some virtual machine states and the inability to wake sleeping virtual machines
+    - **Virtual Machine Management**: Fixed incorrect CPU topology settings for virtual machines
+
 ### v2.3.1
 
 2026-09-18
