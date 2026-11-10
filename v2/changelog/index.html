@@ -3491,6 +3491,33 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v242" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.4.2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v241" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.4.1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v240" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.4.0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v232" class="md-nav__link">
     <span class="md-ellipsis">
       v2.3.2
@@ -3902,6 +3929,33 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v242" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.4.2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v241" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.4.1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v240" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.4.0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v232" class="md-nav__link">
     <span class="md-ellipsis">
       v2.3.2
@@ -4292,6 +4346,96 @@
 
 <h1 id="1panel-changelog">1Panel Changelog<a class="headerlink" href="#1panel-changelog" title="Permanent link">¶</a></h1>
 <h2 id="release-notes">Release Notes<a class="headerlink" href="#release-notes" title="Permanent link">¶</a></h2>
+<h3 id="v242">v2.4.2<a class="headerlink" href="#v242" title="Permanent link">¶</a></h3>
+<p>2026-10-30</p>
+<div class="admonition note">
+<p class="admonition-title">Bug Fixes</p>
+<ul>
+<li><strong>System</strong>: Disabled MPTCP by default to mitigate a Linux kernel remote code execution vulnerability (CVE-2026-98432)</li>
+</ul>
+</div>
+<h3 id="v241">v2.4.1<a class="headerlink" href="#v241" title="Permanent link">¶</a></h3>
+<p>2026-10-22</p>
+<div class="admonition note">
+<p class="admonition-title">Bug Fixes</p>
+<ul>
+<li><strong>System</strong>: Upgraded Go to 1.27.3 to fix the crypto/x509 security vulnerability (CVE-2026-111943)</li>
+</ul>
+</div>
+<h3 id="v240">v2.4.0<a class="headerlink" href="#v240" title="Permanent link">¶</a></h3>
+<p>2026-10-20</p>
+<div class="admonition note">
+<p class="admonition-title">New Features</p>
+<ul>
+<li><strong>Models</strong>: Added vLLM monitoring with real-time metrics, request analysis charts, and history</li>
+<li><strong>Certificates</strong>: Added Netcup as a DNS provider</li>
+<li><strong>Containers</strong>: Added support for uploading local files when importing images</li>
+<li><strong>Monitor</strong>: Added monitoring data export</li>
+<li><strong>Firewall</strong>: Added an IPv6 support switch, along with rule reset backup and startup restore</li>
+<li><strong>Cron</strong>: Added success alerts for scheduled tasks and improved alert content</li>
+<li><strong>Virtual Machine Management</strong>: Added Windows VirtIO driver installation guidance</li>
+<li><strong>Virtual Machine Management</strong>: Added VM disk management and offline expansion</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Improvements</p>
+<ul>
+<li><strong>Overview</strong>: Optimized disk information collection and query performance</li>
+<li><strong>Overview</strong>: Optimized default chart styles and theme adaptation on the homepage</li>
+<li><strong>Agents</strong>: Optimized the Hermes Agent version upgrade logic</li>
+<li><strong>Models</strong>: Improved vLLM monitoring with real-time metrics, historical request statistics, and page layout</li>
+<li><strong>GPU Monitoring</strong>: Improved native monitoring for GPU, NPU, and XPU</li>
+<li><strong>Websites</strong>: Adjusted the order of certificate and private key fields when uploading certificates</li>
+<li><strong>Certificates</strong>: Certificate requests now default to the key algorithm of the ACME account</li>
+<li><strong>Certificates</strong>: Improved the certificate deletion flow, with delete-and-revoke support for ACME certificates</li>
+<li><strong>Database</strong>: Redis remote database terminals now run as background tasks</li>
+<li><strong>Containers</strong>: Improved log output when pulling images</li>
+<li><strong>Containers</strong>: Improved container log text</li>
+<li><strong>Monitor</strong>: Optimized monitoring queries and charts for large time ranges</li>
+<li><strong>Firewall</strong>: Improved compatibility handling for imported firewalld rules</li>
+<li><strong>Terminal</strong>: Improved terminal session detach and grace period expiry handling</li>
+<li><strong>Cron</strong>: Script library interactive column now shows Yes/No text</li>
+<li><strong>Virtual Machine Management</strong>: Added VNC keyboard controls and macvtap network mode, and improved network configuration descriptions</li>
+<li><strong>Virtual Machine Management</strong>: Added support for managing VMs through node agents and improved error messages</li>
+<li><strong>Interface Settings</strong>: Improved user information and node switching entries in the bottom navigation</li>
+<li><strong>Log Audit</strong>: Improved operation log content for firewall and port forwarding operations</li>
+<li><strong>Panel Settings</strong>: Optimized SFTP backup upload speed</li>
+<li><strong>Panel Settings</strong>: Improved database file handling during snapshot recovery and upgrades</li>
+<li><strong>Panel Settings</strong>: Improved log text for alert configuration</li>
+<li><strong>System</strong>: Improved search and pagination state persistence on list pages</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Bug Fixes</p>
+<ul>
+<li><strong>Overview</strong>: Fixed inaccurate monitoring rate calculations on the homepage</li>
+<li><strong>App Store</strong>: Fixed backup and restore handling errors during AI Gateway application upgrades</li>
+<li><strong>Models</strong>: Fixed a stuck vLLM startup state blocking subsequent operations</li>
+<li><strong>Websites</strong>: Fixed existing files being cleared when the target directory already exists during website creation</li>
+<li><strong>Runtime</strong>: Fixed operation logs showing resource IDs instead of names</li>
+<li><strong>Containers</strong>: Fixed protected networks being deleted during network cleanup, leaving containers unable to start</li>
+<li><strong>Containers</strong>: Fixed relative path handling and multi-file project saving issues for Compose</li>
+<li><strong>File Browser</strong>: Fixed layout jitter when closing file tabs</li>
+<li><strong>Firewall</strong>: Fixed read-only APIs being unavailable in demo mode</li>
+<li><strong>Firewall</strong>: Fixed IPv6 RA protection rules being overwritten and legacy system compatibility issues</li>
+<li><strong>Firewall</strong>: Fixed incorrect Fail2Ban rule priority after binding iptables chains</li>
+<li><strong>Firewall</strong>: Fixed panel port whitelist not being synchronized when a node starts</li>
+<li><strong>Firewall</strong>: Fixed access whitelist not being ready before firewall startup</li>
+<li><strong>SSH</strong>: Fixed incomplete validation for imported key pairs</li>
+<li><strong>Multi-Node</strong>: Fixed context switching errors after deleting the current node</li>
+<li><strong>Virtual Machine Management</strong>: Fixed task timeout cleanup failures and command groups not terminating</li>
+<li><strong>Virtual Machine Management</strong>: Fixed incorrect VM autostart configuration and unprotected orphan disk chains</li>
+<li><strong>Virtual Machine Management</strong>: Fixed login state being invalidated on node access errors</li>
+<li><strong>Virtual Machine Management</strong>: Fixed owned snapshot chains not being cleaned up when deleting VMs</li>
+<li><strong>Panel Settings</strong>: Fixed local logins still triggering SSH login alerts</li>
+<li><strong>Panel Settings</strong>: Fixed Webhook response judgment errors and improved configuration and testing experience</li>
+<li><strong>Panel Settings</strong>: Fixed repeated page refreshes after unbinding the current node license</li>
+<li><strong>System</strong>: Fixed selected items being cleared after scheduled list refreshes</li>
+<li><strong>System</strong>: Fixed release notes failing to load in some scenarios</li>
+<li><strong>System</strong>: Fixed incomplete WebSocket origin validation</li>
+<li><strong>System</strong>: Fixed the built-in Default group name being translated</li>
+</ul>
+</div>
 <h3 id="v232">v2.3.2<a class="headerlink" href="#v232" title="Permanent link">¶</a></h3>
 <p>2026-09-24</p>
 <div class="admonition note">
