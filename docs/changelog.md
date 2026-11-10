@@ -7,6 +7,92 @@ hide:
 
 ## Release Notes
 
+### v2.4.2
+
+2026-10-30
+
+!!! note "Bug Fixes"
+
+    - **System**: Disabled MPTCP by default to mitigate a Linux kernel remote code execution vulnerability (CVE-2026-98432)
+
+### v2.4.1
+
+2026-10-22
+
+!!! note "Bug Fixes"
+
+    - **System**: Upgraded Go to 1.27.3 to fix the crypto/x509 security vulnerability (CVE-2026-111943)
+
+### v2.4.0
+
+2026-10-20
+
+!!! note "New Features"
+
+    - **Models**: Added vLLM monitoring with real-time metrics, request analysis charts, and history
+    - **Certificates**: Added Netcup as a DNS provider
+    - **Containers**: Added support for uploading local files when importing images
+    - **Monitor**: Added monitoring data export
+    - **Firewall**: Added an IPv6 support switch, along with rule reset backup and startup restore
+    - **Cron**: Added success alerts for scheduled tasks and improved alert content
+    - **Virtual Machine Management**: Added Windows VirtIO driver installation guidance
+    - **Virtual Machine Management**: Added VM disk management and offline expansion
+
+!!! note "Improvements"
+
+    - **Overview**: Optimized disk information collection and query performance
+    - **Overview**: Optimized default chart styles and theme adaptation on the homepage
+    - **Agents**: Optimized the Hermes Agent version upgrade logic
+    - **Models**: Improved vLLM monitoring with real-time metrics, historical request statistics, and page layout
+    - **GPU Monitoring**: Improved native monitoring for GPU, NPU, and XPU
+    - **Websites**: Adjusted the order of certificate and private key fields when uploading certificates
+    - **Certificates**: Certificate requests now default to the key algorithm of the ACME account
+    - **Certificates**: Improved the certificate deletion flow, with delete-and-revoke support for ACME certificates
+    - **Database**: Redis remote database terminals now run as background tasks
+    - **Containers**: Improved log output when pulling images
+    - **Containers**: Improved container log text
+    - **Monitor**: Optimized monitoring queries and charts for large time ranges
+    - **Firewall**: Improved compatibility handling for imported firewalld rules
+    - **Terminal**: Improved terminal session detach and grace period expiry handling
+    - **Cron**: Script library interactive column now shows Yes/No text
+    - **Virtual Machine Management**: Added VNC keyboard controls and macvtap network mode, and improved network configuration descriptions
+    - **Virtual Machine Management**: Added support for managing VMs through node agents and improved error messages
+    - **Interface Settings**: Improved user information and node switching entries in the bottom navigation
+    - **Log Audit**: Improved operation log content for firewall and port forwarding operations
+    - **Panel Settings**: Optimized SFTP backup upload speed
+    - **Panel Settings**: Improved database file handling during snapshot recovery and upgrades
+    - **Panel Settings**: Improved log text for alert configuration
+    - **System**: Improved search and pagination state persistence on list pages
+
+!!! note "Bug Fixes"
+
+    - **Overview**: Fixed inaccurate monitoring rate calculations on the homepage
+    - **App Store**: Fixed backup and restore handling errors during AI Gateway application upgrades
+    - **Models**: Fixed a stuck vLLM startup state blocking subsequent operations
+    - **Websites**: Fixed existing files being cleared when the target directory already exists during website creation
+    - **Runtime**: Fixed operation logs showing resource IDs instead of names
+    - **Containers**: Fixed protected networks being deleted during network cleanup, leaving containers unable to start
+    - **Containers**: Fixed relative path handling and multi-file project saving issues for Compose
+    - **File Browser**: Fixed layout jitter when closing file tabs
+    - **Firewall**: Fixed read-only APIs being unavailable in demo mode
+    - **Firewall**: Fixed IPv6 RA protection rules being overwritten and legacy system compatibility issues
+    - **Firewall**: Fixed incorrect Fail2Ban rule priority after binding iptables chains
+    - **Firewall**: Fixed panel port whitelist not being synchronized when a node starts
+    - **Firewall**: Fixed access whitelist not being ready before firewall startup
+    - **SSH**: Fixed incomplete validation for imported key pairs
+    - **Multi-Node**: Fixed context switching errors after deleting the current node
+    - **Virtual Machine Management**: Fixed task timeout cleanup failures and command groups not terminating
+    - **Virtual Machine Management**: Fixed incorrect VM autostart configuration and unprotected orphan disk chains
+    - **Virtual Machine Management**: Fixed login state being invalidated on node access errors
+    - **Virtual Machine Management**: Fixed owned snapshot chains not being cleaned up when deleting VMs
+    - **Panel Settings**: Fixed local logins still triggering SSH login alerts
+    - **Panel Settings**: Fixed Webhook response judgment errors and improved configuration and testing experience
+    - **Panel Settings**: Fixed repeated page refreshes after unbinding the current node license
+    - **System**: Fixed selected items being cleared after scheduled list refreshes
+    - **System**: Fixed release notes failing to load in some scenarios
+    - **System**: Fixed incomplete WebSocket origin validation
+    - **System**: Fixed the built-in Default group name being translated
+
 ### v2.3.2
 
 2026-09-24
