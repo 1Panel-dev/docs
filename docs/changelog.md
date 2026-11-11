@@ -7,6 +7,88 @@ hide:
 
 ## Release Notes
 
+### v2.5.0
+
+2026-11-11
+
+!!! note "New Features"
+
+    - **Overview**: Added GPU status views and vLLM token throughput monitoring
+    - **Overview**: Added support for multiple directory shortcuts
+    - **Models**: Completely rebuilt GPU management
+    - **Models**: Completely rebuilt vLLM management
+    - **Models**: Completely rebuilt model services
+    - **Agents**: Added support for DeepSeek Harness and OctoP
+    - **MCP Management**: Added 1Panel MCP service management
+    - **Websites**: Added reverse proxy timeout configuration in performance tuning
+    - **Certificates**: Added support for pushing issued certificates to multiple local directories at once
+    - **Certificates**: Added support for importing self-signed root certificates
+    - **Containers**: Added support for batch file uploads to container directories
+    - **Containers**: Added container image update detection and status indicators
+    - **Containers**: Added support for batch upgrades in the container list
+    - **Containers**: Added support for searching remote images on Docker Hub
+    - **Containers**: Added a switch for NVIDIA GPU runtime configuration
+    - **Virtual Machines**: Added virtual machine management support for Community Edition users
+    - **Cron**: Added support for setting the User-Agent header in URL access tasks
+    - **Multi-Node**: Added support for installing and upgrading nodes using existing installation packages
+    - **Ops Report**: Added operations report support for Professional Edition users
+    - **Resource Sync**: Added support for synchronizing PHP extension templates across nodes
+
+!!! note "Improvements"
+
+    - **App Store**: Added support for including child nodes in local app synchronization
+    - **App Store**: Added independent configuration and enable/disable controls for the image prefix
+    - **App Store**: Reduced resource requests during App Store synchronization
+    - **Agents**: Updated the MiniMax Flash model list and default configuration
+    - **Agents**: Updated the default DeepSeek model name
+    - **Websites**: Improved status messages for Brotli settings that have not yet taken effect
+    - **Runtime**: Updates now wait for image pulls to finish before stopping existing containers
+    - **Database**: Unified database username and password validation rules
+    - **Containers**: Added sorting by creation time and restored the default order when sorting is cleared
+    - **Containers**: Reduced prolonged loading of the container list
+    - **File Browser**: Improved Esc key and cancel handling during file renaming
+    - **File Browser**: Strengthened source validation for sensitive file operations and source tracking in history records
+    - **Terminal**: Improved border display for terminal shortcuts in dark mode
+    - **Multi-Node**: Improved SFTP upload speed between nodes
+    - **Multi-Node**: Extended the retry period for node data synchronization
+    - **Interface Settings**: Unified task log and deletion confirmation dialogs
+    - **Interface Settings**: Updated the Enterprise Edition login page background
+    - **Log Audit**: Improved client IP logging and login information retention when using trusted proxies
+    - **Panel Settings**: Added support for deleting revoked API keys
+    - **Panel Settings**: Improved certificate validation for backup storage and HTTPS proxies with support for custom CA certificates
+    - **System**: Standardized table tooltips to appear below the corresponding content
+    - **System**: Increased the maximum number of items per page and improved responsive table layouts
+    - **System**: Strengthened access restrictions on expired sessions and credential use
+    - **System**: Improved TLS certificate validation for external resource requests
+    - **System**: Upgraded Markdown and HTML parsing dependencies
+
+!!! note "Bug Fixes"
+
+    - **App Store**: Fixed numeric passwords starting with "+" or "-0" being altered during app installation or parameter changes
+    - **App Store**: Fixed environment variable values being altered during app upgrades
+    - **App Store**: Fixed apps being unable to upgrade from unlisted versions
+    - **App Store**: Fixed app icon redirect errors when accessing through a node proxy
+    - **App Store**: Fixed app resource cache refresh errors and incorrect PHP runtime version options
+    - **Agents**: Fixed missing module errors and QR codes not appearing during Hermes WeChat channel setup
+    - **Agents**: Fixed Feishu plugin compatibility issues after OpenClaw upgrades while preserving legacy Feishu configuration
+    - **Websites**: Fixed PHP runtime changes not being synchronized to subsites
+    - **Runtime**: Fixed runtime project terminals reporting missing containers and failing to connect
+    - **Database**: Fixed management tool links not using the app's custom web access URL
+    - **Containers**: Fixed search filters being lost when returning to the list after editing a container
+    - **Containers**: Fixed log cleanup failures for app instance names containing uppercase letters
+    - **File Browser**: Fixed file renaming directly overwriting existing files with the same name
+    - **File Browser**: Fixed downloaded files potentially being saved outside the selected directory
+    - **File Browser**: Fixed argument injection in tar compression commands
+    - **Terminal**: Fixed automatically generated terminal keys not displaying correctly after adding a node and SSH passwords still being required to connect
+    - **Cron**: Fixed script library synchronization using an outdated resource cache
+    - **WAF**: Fixed errors when opening website settings and basic APIs being blocked on Community Edition child nodes
+    - **Website Monitoring**: Fixed request log statistics errors
+    - **Log Audit**: Fixed operation logs showing resource IDs instead of names when switching website PHP versions or deleting PHP runtimes
+    - **Panel Settings**: Fixed panel access failures after re-enabling the security entrance
+    - **Panel Settings**: Fixed backup account searches by name
+    - **System**: Fixed password changes through 1pctl not following password complexity settings
+    - **System**: Fixed time synchronization moving the system clock back by one hour during the repeated time period after daylight saving time ends
+
 ### v2.4.2
 
 2026-10-30
