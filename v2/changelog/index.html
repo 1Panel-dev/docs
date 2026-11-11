@@ -3491,6 +3491,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v250" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.5.0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v242" class="md-nav__link">
     <span class="md-ellipsis">
       v2.4.2
@@ -3929,6 +3938,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v250" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.5.0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v242" class="md-nav__link">
     <span class="md-ellipsis">
       v2.4.2
@@ -4346,6 +4364,92 @@
 
 <h1 id="1panel-changelog">1Panel Changelog<a class="headerlink" href="#1panel-changelog" title="Permanent link">¶</a></h1>
 <h2 id="release-notes">Release Notes<a class="headerlink" href="#release-notes" title="Permanent link">¶</a></h2>
+<h3 id="v250">v2.5.0<a class="headerlink" href="#v250" title="Permanent link">¶</a></h3>
+<p>2026-11-11</p>
+<div class="admonition note">
+<p class="admonition-title">New Features</p>
+<ul>
+<li><strong>Overview</strong>: Added GPU status views and vLLM token throughput monitoring</li>
+<li><strong>Overview</strong>: Added support for multiple directory shortcuts</li>
+<li><strong>Models</strong>: Completely rebuilt GPU management</li>
+<li><strong>Models</strong>: Completely rebuilt vLLM management</li>
+<li><strong>Models</strong>: Completely rebuilt model services</li>
+<li><strong>Agents</strong>: Added support for DeepSeek Harness and OctoP</li>
+<li><strong>MCP Management</strong>: Added 1Panel MCP service management</li>
+<li><strong>Websites</strong>: Added reverse proxy timeout configuration in performance tuning</li>
+<li><strong>Certificates</strong>: Added support for pushing issued certificates to multiple local directories at once</li>
+<li><strong>Certificates</strong>: Added support for importing self-signed root certificates</li>
+<li><strong>Containers</strong>: Added support for batch file uploads to container directories</li>
+<li><strong>Containers</strong>: Added container image update detection and status indicators</li>
+<li><strong>Containers</strong>: Added support for batch upgrades in the container list</li>
+<li><strong>Containers</strong>: Added support for searching remote images on Docker Hub</li>
+<li><strong>Containers</strong>: Added a switch for NVIDIA GPU runtime configuration</li>
+<li><strong>Virtual Machines</strong>: Added virtual machine management support for Community Edition users</li>
+<li><strong>Cron</strong>: Added support for setting the User-Agent header in URL access tasks</li>
+<li><strong>Multi-Node</strong>: Added support for installing and upgrading nodes using existing installation packages</li>
+<li><strong>Ops Report</strong>: Added operations report support for Professional Edition users</li>
+<li><strong>Resource Sync</strong>: Added support for synchronizing PHP extension templates across nodes</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Improvements</p>
+<ul>
+<li><strong>App Store</strong>: Added support for including child nodes in local app synchronization</li>
+<li><strong>App Store</strong>: Added independent configuration and enable/disable controls for the image prefix</li>
+<li><strong>App Store</strong>: Reduced resource requests during App Store synchronization</li>
+<li><strong>Agents</strong>: Updated the MiniMax Flash model list and default configuration</li>
+<li><strong>Agents</strong>: Updated the default DeepSeek model name</li>
+<li><strong>Websites</strong>: Improved status messages for Brotli settings that have not yet taken effect</li>
+<li><strong>Runtime</strong>: Updates now wait for image pulls to finish before stopping existing containers</li>
+<li><strong>Database</strong>: Unified database username and password validation rules</li>
+<li><strong>Containers</strong>: Added sorting by creation time and restored the default order when sorting is cleared</li>
+<li><strong>Containers</strong>: Reduced prolonged loading of the container list</li>
+<li><strong>File Browser</strong>: Improved Esc key and cancel handling during file renaming</li>
+<li><strong>File Browser</strong>: Strengthened source validation for sensitive file operations and source tracking in history records</li>
+<li><strong>Terminal</strong>: Improved border display for terminal shortcuts in dark mode</li>
+<li><strong>Multi-Node</strong>: Improved SFTP upload speed between nodes</li>
+<li><strong>Multi-Node</strong>: Extended the retry period for node data synchronization</li>
+<li><strong>Interface Settings</strong>: Unified task log and deletion confirmation dialogs</li>
+<li><strong>Interface Settings</strong>: Updated the Enterprise Edition login page background</li>
+<li><strong>Log Audit</strong>: Improved client IP logging and login information retention when using trusted proxies</li>
+<li><strong>Panel Settings</strong>: Added support for deleting revoked API keys</li>
+<li><strong>Panel Settings</strong>: Improved certificate validation for backup storage and HTTPS proxies with support for custom CA certificates</li>
+<li><strong>System</strong>: Standardized table tooltips to appear below the corresponding content</li>
+<li><strong>System</strong>: Increased the maximum number of items per page and improved responsive table layouts</li>
+<li><strong>System</strong>: Strengthened access restrictions on expired sessions and credential use</li>
+<li><strong>System</strong>: Improved TLS certificate validation for external resource requests</li>
+<li><strong>System</strong>: Upgraded Markdown and HTML parsing dependencies</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Bug Fixes</p>
+<ul>
+<li><strong>App Store</strong>: Fixed numeric passwords starting with "+" or "-0" being altered during app installation or parameter changes</li>
+<li><strong>App Store</strong>: Fixed environment variable values being altered during app upgrades</li>
+<li><strong>App Store</strong>: Fixed apps being unable to upgrade from unlisted versions</li>
+<li><strong>App Store</strong>: Fixed app icon redirect errors when accessing through a node proxy</li>
+<li><strong>App Store</strong>: Fixed app resource cache refresh errors and incorrect PHP runtime version options</li>
+<li><strong>Agents</strong>: Fixed missing module errors and QR codes not appearing during Hermes WeChat channel setup</li>
+<li><strong>Agents</strong>: Fixed Feishu plugin compatibility issues after OpenClaw upgrades while preserving legacy Feishu configuration</li>
+<li><strong>Websites</strong>: Fixed PHP runtime changes not being synchronized to subsites</li>
+<li><strong>Runtime</strong>: Fixed runtime project terminals reporting missing containers and failing to connect</li>
+<li><strong>Database</strong>: Fixed management tool links not using the app's custom web access URL</li>
+<li><strong>Containers</strong>: Fixed search filters being lost when returning to the list after editing a container</li>
+<li><strong>Containers</strong>: Fixed log cleanup failures for app instance names containing uppercase letters</li>
+<li><strong>File Browser</strong>: Fixed file renaming directly overwriting existing files with the same name</li>
+<li><strong>File Browser</strong>: Fixed downloaded files potentially being saved outside the selected directory</li>
+<li><strong>File Browser</strong>: Fixed argument injection in tar compression commands</li>
+<li><strong>Terminal</strong>: Fixed automatically generated terminal keys not displaying correctly after adding a node and SSH passwords still being required to connect</li>
+<li><strong>Cron</strong>: Fixed script library synchronization using an outdated resource cache</li>
+<li><strong>WAF</strong>: Fixed errors when opening website settings and basic APIs being blocked on Community Edition child nodes</li>
+<li><strong>Website Monitoring</strong>: Fixed request log statistics errors</li>
+<li><strong>Log Audit</strong>: Fixed operation logs showing resource IDs instead of names when switching website PHP versions or deleting PHP runtimes</li>
+<li><strong>Panel Settings</strong>: Fixed panel access failures after re-enabling the security entrance</li>
+<li><strong>Panel Settings</strong>: Fixed backup account searches by name</li>
+<li><strong>System</strong>: Fixed password changes through 1pctl not following password complexity settings</li>
+<li><strong>System</strong>: Fixed time synchronization moving the system clock back by one hour during the repeated time period after daylight saving time ends</li>
+</ul>
+</div>
 <h3 id="v242">v2.4.2<a class="headerlink" href="#v242" title="Permanent link">¶</a></h3>
 <p>2026-10-30</p>
 <div class="admonition note">
