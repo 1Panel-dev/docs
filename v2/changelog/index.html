@@ -3491,6 +3491,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v251" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.5.1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v250" class="md-nav__link">
     <span class="md-ellipsis">
       v2.5.0
@@ -3938,6 +3947,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#v251" class="md-nav__link">
+    <span class="md-ellipsis">
+      v2.5.1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#v250" class="md-nav__link">
     <span class="md-ellipsis">
       v2.5.0
@@ -4364,6 +4382,30 @@
 
 <h1 id="1panel-changelog">1Panel Changelog<a class="headerlink" href="#1panel-changelog" title="Permanent link">¶</a></h1>
 <h2 id="release-notes">Release Notes<a class="headerlink" href="#release-notes" title="Permanent link">¶</a></h2>
+<h3 id="v251">v2.5.1<a class="headerlink" href="#v251" title="Permanent link">¶</a></h3>
+<p>2026-11-12</p>
+<div class="admonition note">
+<p class="admonition-title">New Features</p>
+<ul>
+<li><strong>Models</strong>: Added support for connecting external vLLM instances and including them in Overview monitoring</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Improvements</p>
+<ul>
+<li><strong>Models</strong>: Improved the GPU group card layout with topology-based sorting</li>
+<li><strong>Models</strong>: Improved the vLLM deployment list and disabled the image pull option by default</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Bug Fixes</p>
+<ul>
+<li><strong>Models</strong>: Fixed abnormal custom image synchronization for vLLM and unexpected default image resets when switching versions</li>
+<li><strong>Models</strong>: Fixed version matching errors during vLLM deployment and upgrades on GB10 dual-node setups</li>
+<li><strong>MCP Management</strong>: Fixed installation failures caused by a nonexistent default image version</li>
+<li><strong>Multi-Node</strong>: Fixed prerelease version detection errors during node upgrades</li>
+</ul>
+</div>
 <h3 id="v250">v2.5.0<a class="headerlink" href="#v250" title="Permanent link">¶</a></h3>
 <p>2026-11-11</p>
 <div class="admonition note">
