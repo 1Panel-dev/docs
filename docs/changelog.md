@@ -7,6 +7,26 @@ hide:
 
 ## Release Notes
 
+### v2.5.1
+
+2026-11-12
+
+!!! note "New Features"
+
+    - **Models**: Added support for connecting external vLLM instances and including them in Overview monitoring
+
+!!! note "Improvements"
+
+    - **Models**: Improved the GPU group card layout with topology-based sorting
+    - **Models**: Improved the vLLM deployment list and disabled the image pull option by default
+
+!!! note "Bug Fixes"
+
+    - **Models**: Fixed abnormal custom image synchronization for vLLM and unexpected default image resets when switching versions
+    - **Models**: Fixed version matching errors during vLLM deployment and upgrades on GB10 dual-node setups
+    - **MCP Management**: Fixed installation failures caused by a nonexistent default image version
+    - **Multi-Node**: Fixed prerelease version detection errors during node upgrades
+
 ### v2.5.0
 
 2026-11-11
