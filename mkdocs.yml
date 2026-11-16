@@ -160,6 +160,12 @@ nav:
     - Uptime Kuma: user_manual/appstore/uptime-kuma.md
     - Gitea: user_manual/appstore/gitea.md
     - Stirling-PDF: user_manual/appstore/stirling-pdf.md
+  - FAQ:
+    - General: faq/faq.md
+    - OpenClaw: faq/openclaw.md
+    - Operating System: faq/operating_system.md
+    - Server Architecture: faq/server_architecture.md
+    - System Function: faq/system_function.md
   - API: dev_manual/api_manual.md
   - Changelog: changelog.md
 
