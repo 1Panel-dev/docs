@@ -3508,7 +3508,12 @@
 <span class="w">    </span><span class="kn">proxy_http_version</span><span class="w"> </span><span class="mi">1</span><span class="s">.1</span><span class="p">;</span>
 <span class="w">    </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">Upgrade</span><span class="w"> </span><span class="nv">$http_upgrade</span><span class="p">;</span>
 <span class="w">    </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">Connection</span><span class="w"> </span><span class="s">"upgrade"</span><span class="p">;</span>
+<span class="w">    </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">Host</span><span class="w"> </span><span class="nv">$http_host</span><span class="p">;</span>
 <span class="p">}</span>
+</code></pre></div>
+<p><code>proxy_set_header Host $http_host;</code> forwards the client's original Host header (including the port) to 1Panel. 1Panel validates that the Origin and Host of terminal WebSocket connections match; if the original Host is not forwarded, the validation fails with HTTP 403 and the terminal connection is interrupted. Use <code>$http_host</code> (which preserves the port) rather than <code>$host</code>.</p>
+<p><strong>Special case</strong>: If the OpenResty version is <code>1.31.1.1-2-4-noble</code>, change the Host line in the configuration above to:</p>
+<div class="highlight"><pre><span></span><code><span class="k">proxy_set_header</span><span class="w"> </span><span class="s">Host</span><span class="w"> </span><span class="nv">$host$is_request_port$request_port</span><span class="p">;</span>
 </code></pre></div>
 </div>
 <blockquote>
